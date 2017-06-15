@@ -1,0 +1,35 @@
+.kbc-notifications {
+    position: fixed;
+    z-index: 9999;
+    top: 85px;
+    right: 25px;
+
+    .alert {
+        border: solid 2px @table-border-color;
+        padding: 10px 14px;
+        max-width: 430px;
+        float: right;
+        box-shadow: 0 3px 8px 0 @kbc-grey-3;
+        margin-bottom: 10px;
+        display: inline-block;
+        clear: both;
+
+        a {
+            text-decoration: none;
+        }
+        button.close {
+            margin-left: 15px;
+            opacity: .3;
+            font-weight: 400;
+        }
+    }
+
+    .alert-info {
+      background: #fff;
+      color: #6e727b;
+    }
+
+    .alert-dismissable .close {
+      position: static;
+    }
+}

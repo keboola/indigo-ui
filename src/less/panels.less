@@ -1,0 +1,94 @@
+.row > div > .panel {
+    border: none;
+    border-right: 1px solid @table-border-color;
+    border-radius: 0 !important;
+    margin: 0;
+    box-shadow: none;
+
+    > .panel-body {
+        padding: 30px;
+    }
+}
+.row > div:last-child > .panel {
+    border-right: none;
+}
+
+.panel-group {
+    padding: 0;
+    margin: 15px;
+}
+.panel-body .panel-group {
+    margin: -15px;
+}
+
+.panel-heading {
+    padding: 0;
+    > .panel-title {
+        font-size: 14px;
+        strong {
+            font-weight: 400;
+        }
+    }
+    > .kbc-panel-heading-content {
+        padding: 15px 20px;
+    }
+
+    .kb-collapse-trigger {
+      cursor: pointer;
+    }
+}
+
+
+.panel {
+    margin-bottom: 5px;
+    > .panel-heading > .panel-title > a {
+        display: block;
+        padding: 20px;
+        &, &:hover {
+            text-decoration: none;
+        }
+        > .table {
+            margin: 0;
+            > .tbody > .tr > .td {
+                border: none !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            > .tbody .tr .td .btn {
+              padding-top: 0;
+              padding-bottom: 0;
+            }
+        }
+        > .row {
+            margin-left: 0;
+            margin-right: 0;
+            > [class^="col-"] {
+                padding-top: 15px;
+                padding-bottom: 8px;
+                &:last-child {
+                    padding-right: 0;
+                }
+                > .btn {
+                    margin-top: -7px;
+                }
+            }
+        }
+    }
+}
+.kbc-panel-heading-with-table .panel-heading > .panel-title > a {
+    padding: 0;
+}
+
+.panel-body .kb-tree {
+    overflow: hidden;
+}
+
+.kbc-detail-table .panel-body > .row,
+.panel-body > .row {
+    margin-top: -25px;
+    margin-left: -25px;
+    margin-right: -26px;
+    &:last-child {
+        margin-bottom: -25px;
+    }
+}

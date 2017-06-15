@@ -1,0 +1,52 @@
+/*
+ * Buttons
+ */
+button {
+    background-color: @kbc-grey-bg;
+    color: @kbc-btn-default-color;
+}
+.btn:not(.btn-default) {
+    border: none;
+}
+.btn-lg, .btn-group-lg>.btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.btn-sm, .btn-group-sm>.btn {
+    padding: 5px 10px;
+    font-size: .8em;
+}
+.btn-xs, .btn-group-xs>.btn {
+    padding: 2px 5px;
+    font-size: .7em;
+}
+.kbc-btn-icon > [class^="kbc-icon-"] {
+    margin-left: -6px;
+    font-size: 1.5em;
+    line-height: .7em;
+    position: relative;
+    top: 2px;
+}
+.kbc-btn-icon.btn-lg {
+    padding-top: 9px;
+}
+.kbc-btn-icon.btn-lg > [class^="kbc-icon-"] {
+    margin-left: -6px;
+    top: 3px;
+}
+.kbc-btn-icon.btn-xs > [class^="kbc-icon-"] {
+    margin-left: -2px;
+}
+
+.btn-link {
+    color: @gray;
+}
+.kbc-btn-link-icon {
+    &:extend(.btn-link);
+    &:hover,
+    &:focus {
+        color: @link-hover-color;
+        box-shadow: none;
+    }
+}

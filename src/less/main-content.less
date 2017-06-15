@@ -1,0 +1,218 @@
+.kbc-main {
+    padding: 0;
+    float: none;
+    width: auto;
+
+    > .container-fluid {
+        margin: 15px 15px 0;
+        padding: 0;
+    }
+    &:not(.kbc-main-with-sidebar) > .container-fluid {
+
+    }
+
+    .kbc-header {
+        padding: 22px 22px 15px !important;
+
+        > .kbc-title {
+            h2 {
+                margin: 0 0 .3em;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        button.pull-right {
+            margin-left: 10px;
+            position: relative;
+            top: 3px;
+        }
+    }
+}
+
+.kbc-main-content {
+    padding: 0;
+    border: solid 2px #ededf0;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    background: #fff;
+    min-height: 90vh;
+}
+
+.kbc-main-sidebar {
+    margin-top: 12px;
+    padding-left: 26px;
+    .nav {
+        margin: 15px -15px;
+        > li > a {
+            padding: 8px 12px;
+            font-weight: 400;
+        }
+    }
+    a {
+        color: @link-color;
+    }
+    .kbc-sidebar-jobs {
+        margin-top: 15px;
+        border-top: 1px solid #dddddd;
+    }
+    .list-group-item {
+        &:hover {
+            background: none;
+        }
+        padding: 15px 0 0;
+        background: none;
+        color: #282d38;
+        .table > .tr > .td {
+            vertical-align: top;
+            &:first-child {
+                padding-left: 0;
+                padding-right: 10px;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            small {
+                color: #7e8490;
+            }
+        }
+    }
+}
+
+.kbc-header {
+    display: table;
+    width: 100%;
+    text-align: left;
+
+    > .kbc-title,
+    > .kbc-buttons {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    > .kbc-buttons {
+        text-align: right;
+    }
+    > .kbc-title {
+        > h2 {
+            display: inline;
+        }
+        > .kbc-status-icon {
+            vertical-align: baseline;
+        }
+        .kb-sapi-component-icon {
+            padding-right: 0;
+            margin: 5px 15px 0 0;
+            width: 30px;
+        }
+    }
+}
+
+.kbc-main-content > .row,
+.kbc-main > .container-fluid > form > .row,
+.kbc-main-content-with-nav > .row,
+.kbc-main-content-with-sidebar > .row,
+.kbc-row {
+    margin: 0;
+    padding: 22px;
+    border-bottom: 1px solid @table-border-color;
+    > h2:first-child, > h3:first-child, > h4:first-child {
+        margin-top: 0;
+    }
+}
+
+.kbc-main-content > .row-alert {
+    padding: 0;
+
+    .alert {
+      margin-bottom: 0;
+      border: 0;
+      border-radius: 0;
+    }
+}
+
+
+.kbc-main-nav {
+    padding: 0;
+
+    > .kbc-container {
+        margin-right: -2px;
+        border-right: 1px solid @table-border-color;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .list-group {
+        margin-top: 15px;
+    }
+
+    .list-group-item {
+        color: @gray;
+        font-size: @font-size-small;
+        padding: 25px 15px;
+        overflow: hidden;
+
+        &:hover,
+        &:focus,
+        &.active,
+        &.active:hover,
+        &.active:focus {
+            margin: -1px -10px 0;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-top: solid 1px #dddddd;
+        }
+
+        .kbc-td-status {
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+        strong {
+            display: block;
+            color: @gray-base;
+            font-size: @font-size-base;
+        }
+        em {
+            float: right;
+            display: block;
+            font-style: normal;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .table {
+            margin-bottom: 0;
+        }
+        .td:first-child {
+            padding-left: 0;
+        }
+        .td:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.kbc-main-content-with-nav {
+    padding: 0;
+    border-left: 1px solid @table-border-color;
+    position: relative;
+    left: 1px;
+    min-height: 90vh;
+}
+
+.kbc-main-content-with-sidebar {
+    padding: 0;
+    border-right: 1px solid @table-border-color;
+    position: relative;
+    right: 1px;
+    min-height: 90vh;
+}
+
+.kbc-main-loader {
+    margin-top: 35vh;
+    text-align: center;
+    > .fa-spinner {
+        font-size:54px;
+        margin-bottom: 2vh;
+        display: block;
+    }
+}

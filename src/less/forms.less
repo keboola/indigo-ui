@@ -1,0 +1,208 @@
+
+label {
+    font-weight: 400;
+}
+
+.form-horizontal {
+    @media (min-width: @screen-sm-min) {
+        .control-label {
+            text-align: left;
+            font-weight: 300;
+            font-size: 120%;
+            color: #282d38;
+        }
+    }
+}
+
+textarea.form-control {
+    padding: 10px 15.6px;
+}
+
+select.form-control {
+    height: 44px;
+}
+.form-control:disabled {
+    border-color: #fff;
+    background: none;
+    box-shadow: none;
+}
+.form-control-static {
+    padding-top: 14px;
+    .label {
+        position: relative;
+        top: -3px;
+    }
+}
+.input-sm {
+    height: 20px;
+    padding: 15px;
+}
+
+.form-horizontal [class^="col-"] > .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.td .form-group,
+td .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.kbc-col-button .btn {
+    margin-top: 4px;
+}
+
+
+
+.kbc-inline-edit-dash {
+    position: relative;
+    z-index: 5;
+}
+.kbc-inline-edit-link {
+    padding: 6px 15px 9px;
+    border-radius: 1em;
+    background-color: inherit;
+    cursor: pointer;
+    &:hover {
+        background-color: #e9faff;
+        .kbc-icon-pencil {
+            opacity: 1;
+        }
+    }
+    .kbc-icon-pencil {
+        opacity: 0.3;
+    }
+}
+.kbc-inline-edit {
+    display: inline;
+    position: relative;
+    .form-control {
+        padding: 15px 70px 15px 12px;
+    }
+    .kbc-inline-edit-buttons {
+        position: absolute;
+        right: 10px;
+        top: -3px;
+        .kbc-inline-edit-cancel {
+            padding: 0 5px 0 0;
+            &:hover {
+                text-decoration: none;
+                color: darken(#e1e1e9, 20%);
+            }
+            font-size: 120%;
+            color: #e1e1e9;
+        }
+        .kbc-inline-edit-submit {
+            padding: 5px 10px;
+            font-size: 60%;
+            border-radius: 15px;
+            [class^="kbc-icon-"] {
+                font-size: 200%;
+            }
+        }
+        .fa-spin {
+            position: absolute;
+            top: 5px;
+            right: -35px;
+            background: #fff;
+        }
+    }
+    .kbc-inline-edit-button {
+        top: 7px;
+    }
+}
+.kbc-inline-textarea {
+    display: block;
+    textarea.form-control {
+        padding: 5px 90px 5px 14px;
+        width: 100%;
+    }
+    .kbc-inline-edit-buttons {
+        top: 10px;
+        .kbc-inline-edit-cancel,
+        .kbc-inline-edit-submit {
+            font-size: 90%;
+        }
+        .kbc-inline-edit-cancel {
+            font-size: 180%;
+        }
+        .fa-spin {
+            position: static;
+            font-size: 140%;
+            background: #fff;
+        }
+    }
+}
+
+.kbc-form-control-info {
+    font-size: 90%;
+    .btn {
+        font-size: 90%;
+        padding: 0 6px;
+        vertical-align: inherit;
+    }
+}
+
+.kbc-main-content > .kbc-table-editor-header {
+    > [class^="col-"] {
+        padding: 7px 0 0;
+        &.kbc-buttons {
+            padding-top: 0;
+        }
+    }
+    .checkbox {
+        margin: 0;
+    }
+}
+.kbc-table-editor {
+    .form-control {
+        height: 34px;
+        padding: 5px 7px;
+        font-size: 90%;
+        font-weight: 300;
+    }
+    select.form-control {
+        height: 34px;
+    }
+    > tbody > tr > td {
+        padding-left: 4px;
+        padding-right: 4px;
+        &:not([class='kbc-static-cell']) {
+            vertical-align: top;
+        }
+    }
+    .form-control-static {
+        padding-top: 7px;
+    }
+}
+
+.kbc-form-table {
+    border-bottom: solid 1px @table-border-color;
+    margin-bottom: 30px;
+    width: 100%;
+    .row {
+        margin: 20px;
+    }
+    .td {
+        vertical-align: top !important;
+        width: 50%;
+        padding: 20px 20px !important;
+        .form-group {
+            margin-bottom: 20px;
+            display: block;
+        }
+    }
+    strong {
+        font-weight: 400;
+    }
+}
+
+.panel-body > div > .row:last-child > .form-group {
+    margin-bottom: 0;
+}
+
+.form-group-sm .form-control[type="number"] {
+    height: 30px;
+}
+

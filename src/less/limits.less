@@ -1,0 +1,105 @@
+.kbc-limits-section {
+
+  .kbc-header {
+    border-bottom: 1px solid #e8e8ef;
+  }
+
+
+  .kbc-layout-table > .tbody > .tr .kbc-limit {
+    padding: 0;
+
+    .kbc-limit-inner {
+      padding: 20px 30px;
+      border: 3px solid transparent;
+    }
+
+    .kbc-limit-inner.kbc-limit-alarm {
+      border-color: #ff243e;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    .kbc-switch {
+      position: absolute;
+      top: 50%;
+      margin-left: -40px;
+      margin-top: -20px;
+    }
+
+    .kbc-limit-progress {
+        margin-top: -50px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+    }
+
+    .kbc-limit-values h4 {
+      font-size: 24px;
+      font-weight: 300;
+
+      .kbc-limit-values-minor {
+        vertical-align: top;
+        font-size: 14px;
+      }
+    }
+
+    .kbc-limit-action {
+      margin-top: 20px;
+      min-height: 30px;
+    }
+
+  }
+
+}
+
+.kbc-limit-progress {
+  padding: 10px 0px;
+  margin-bottom: 20px;
+
+  .progress {
+    height: 80px;
+    background-color: #e6f8fe;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: relative;
+
+    color: #fff;
+    line-height: 80px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+
+    .progress-bar {
+      background-color: #0bbcfa;
+      line-height: 80px;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    .progress-value {
+      padding-right: 10px;
+    }
+  }
+
+  .progress.kbc-limit-exceed {
+    background-color: #da2731;
+
+    .progress-bar {
+      background-color: #ff515d;
+    }
+  }
+
+  .kbc-limit-line {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    border: 1px solid #fff;
+    background-color: #ff243e;
+  }
+
+}

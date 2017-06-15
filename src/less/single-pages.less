@@ -1,0 +1,100 @@
+.kbc-single-page {
+    background: url('../img/single-bg.png') #f5f5f7 repeat-x top;
+    padding-top: 74px;
+    > .kbc-navbar {
+        height: 74px;
+        background: #2f3540;
+        > div {
+            margin: 0 auto;
+            float: none;
+            > div {
+                margin-right: 15px;
+                > div {
+                    border-right: solid 1px #3f4552;
+                    height: 74px;
+                }
+            }
+        }
+        .kbc-logo {
+            position: relative;
+            width: auto;
+            background: none;
+            border-bottom: none;
+            border-right: none;
+            padding-top: 23px;
+        }
+        .kbc-project-select {
+            border-left: solid 1px #3f4552;
+            
+            > button {
+                font-size: 16px;
+                padding: 25px 0;
+                background: none;
+                border: none;
+                color: #94969c;
+                width: 100%;
+                font-weight: 400;
+                text-align: left;
+            }
+            > .dropdown-menu {
+                margin-top: 0;
+                background: #2f3540;
+                width: 100%;
+                border-radius: 0 0 5px 5px;
+                .dropdown-header {
+                    padding: 3px 0;
+                    a {
+                        color: #98a2b6;
+                    }
+                }
+                a {
+                    display: block;
+                    color: #fff;
+                    &:hover, &:focus {
+                        background: @link-color;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .kbc-notification {
+
+          font-size: 18px;
+          font-weight: 300;
+          padding-top: 22px;
+          width: auto;
+
+          .kbc-notification-icon {
+            padding: 0px 10px;
+            color: #fff;
+
+            &:hover {
+                color: @link-hover-color;
+                text-decoration: none;
+            }
+
+            .kbc-notification-icon-badge {
+              right: 10px;
+            }
+          }
+
+        }
+    }
+    > .container-fluid {
+        float: none;
+        margin: 0 auto;
+
+        h1.kbc-title {
+            font-size: 18px;
+            margin: 0 15px 10px;
+            padding: 28px 0;
+        }
+
+        .kbc-main {
+            width: auto;
+            margin-left: 0;
+        }
+    }
+}

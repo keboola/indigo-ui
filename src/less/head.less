@@ -1,0 +1,73 @@
+/*
+ * Top nav bar
+ */
+.kbc-navbar {
+    height: 60px;
+    background: url('../img/header-bg.png') repeat-x top;
+}
+
+.kbc-logo {
+    position: fixed;
+    height: 60px;
+    background: #2f3540;
+    color: #f5f5f7;
+    padding: 17px 20px 0;
+    font-size: 24px;
+    border-bottom: solid 2px #1e2129;
+
+    > a {
+        color: #f5f5f7;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        > .kbc-icon-keboola {
+            float: left;
+            margin-right: 7px;
+            font-size: 27px;
+        }
+    }
+
+    .kbc-notification-icon {
+      right: -3px;
+      position: relative;
+      font-size: 16px;
+      float: right;
+      top: 5px;
+    }
+}
+
+.kbc-navbar > .kbc-main-header-container {
+    padding: 0;
+    float: none;
+    width: auto;
+}
+
+.kbc-main-header {
+    padding: 0 20px 0 30px;
+    height: 60px;
+
+    > .kbc-title {
+        font-size: 18px;
+
+        > a {
+            color: @link-color;
+        }
+        > .kbc-icon-arrow-right {
+            margin: 0 5px;
+            color: #d8dbe1;
+        }
+        > h1 {
+            display: inline;
+            margin: 0;
+            font-size: inherit;
+        }
+    }
+
+    .kbc-inline-edit-link {
+        margin-left: -15px;
+    }
+
+
+}
