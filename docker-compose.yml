@@ -6,6 +6,7 @@ services:
     build: .
     ports:
       - "9009:9009"
+      - "35729:35729"
     volumes:
       - ./:/code
     working_dir: /code

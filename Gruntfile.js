@@ -21,7 +21,8 @@ module.exports = function(grunt) {
         files: ['src/kbc-bootstrap/less/kbc.less'],
         tasks: ['less:development'],
         options: {
-          spawn: false
+          spawn: false,
+          livereload: true,
         }
       }
     },
