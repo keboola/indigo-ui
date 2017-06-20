@@ -3,6 +3,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     less: {
       development: {
+        options: {
+          paths: [
+            "node_modules"
+          ],
+          modifyVars: {
+            "libsPath" : ""
+          }
+        },
         files: {
           "public/css/kbc.uncompressed.css": "src/kbc-bootstrap/less/kbc.less"
         }
