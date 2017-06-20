@@ -19,7 +19,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
+    "run-storybook": "start-storybook -p 9009 -s public",
+    "storybook": "npm-run-all -p watch-css run-storybook",
+    "build-css": "grunt build-css",
+    "watch-css": "npm run build-css && grunt watch",
     "build-storybook": "build-storybook -s public"
   }
 }
