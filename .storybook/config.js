@@ -5,6 +5,7 @@ import infoAddon from '@storybook/addon-info';
 
 function loadStories() {
   require('../src/stories/Button');
+  require('../src/stories/Test');
 }
 
 setAddon(infoAddon);
