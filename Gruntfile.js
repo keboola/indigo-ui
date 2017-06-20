@@ -16,6 +16,30 @@ module.exports = function(grunt) {
         }
       },
     },
+    copy: {
+      dev: {
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            src: ['node_modules/font-awesome/fonts/*'],
+            dest: 'public/fonts'
+          },
+          {
+            expand: true,
+            cwd: 'src/kbc-bootstrap',
+            src: ['fonts/*'],
+            dest: 'public/'
+          },
+          {
+            expand: true,
+            cwd: 'src/kbc-bootstrap',
+            src: ['img/*'],
+            dest: 'public/'
+          }
+        ]
+      },
+    },
     watch: {
       less: {
         files: ['src/kbc-bootstrap/less/kbc.less'],
@@ -30,7 +54,8 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('build-css', ['less:development']);
+  grunt.registerTask('build-css', ['copy:dev', 'less:development']);
 
 };
