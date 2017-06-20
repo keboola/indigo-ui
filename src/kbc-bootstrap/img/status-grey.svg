@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #a4b1ba;
+        stroke: #8d9da9;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        filter: url(#gradient-overlay-1);
+      }
+    </style>
+
+    <filter id="gradient-overlay-1" filterUnits="userSpaceOnUse">
+      <feImage x="1" y="1" preserveAspectRatio="none" width="14" height="14" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI3IiB5MT0iMTQiIHgyPSI3IiB5Mj0iMCI+CiAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNjg3ZDhjIi8+CiAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjhmZWZmIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiLz48L3N2Zz4="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="gradientFill"/>
+    </filter>
+  </defs>
+  <g id="greysvg" style="fill: #a4b1ba; filter: url(#gradient-overlay-1);">
+    <circle id="circle-1" class="cls-2" cx="8" cy="8" r="7" style="stroke: inherit; filter: none; fill: inherit;"/>
+  </g>
+  <use xlink:href="#circle-1" style="stroke: #8d9da9; fill: none; filter: none;"/>
+</svg>
