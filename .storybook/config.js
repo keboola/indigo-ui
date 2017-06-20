@@ -1,9 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
 
-import { configure } from '@storybook/react';
+import { configure, setAddon } from '@storybook/react';
+import infoAddon from '@storybook/addon-info';
 
 function loadStories() {
-  require('../src/stories');
+  require('../src/stories/Button');
 }
+
+setAddon(infoAddon);
 
 configure(loadStories, module);
