@@ -1,0 +1,33 @@
+/* FIREFOX BUG */
+/* NO CHECKBOX ICONS IN FIREFOX BECAUSE OF THE BUG */
+/* more info */
+/* http://stackoverflow.com/questions/19693872/custom-css3-checkbox-doesnt-work-on-firefox-or-ie?rq=1 */
+
+@-moz-document url-prefix() {
+    .checkbox,
+    .checkbox-inline,
+    .radio,
+    .radio-inline {
+        input {
+            visibility: visible;
+            margin-top: 0;
+            &:before {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+
+object {
+    width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+
+}
