@@ -7,6 +7,7 @@ function loadStories() {
   require('../src/stories/Button');
   require('../src/stories/Image');
   require('../src/stories/TimeLabel');
+  require('../src/stories/Checkbox');
   require('../src/stories/Test');
 }
 

@@ -1,0 +1,88 @@
+@color-checked: indigo;
+@color-unchecked: gray;
+
+.checkbox,
+.checkbox-inline,
+.radio,
+.radio-inline {
+  padding: 0 4px;
+  input {
+    visibility: hidden;
+    &:before {
+      cursor: pointer;
+      visibility: visible;
+      font-family: "FontAwesome";
+      font-size: 20px;
+      position: relative;
+      top: -4px;
+      left: -4px;
+    }
+  }
+  label {
+    font-weight: 300;
+  }
+}
+
+.checkbox,
+.checkbox-inline {
+  input:before {
+    content: "\f096";
+    color: @color-unchecked;
+  }
+
+  input:checked:before {
+    content: "\f046";
+    color: @color-checked;
+  }
+  input:not(:disabled):hover:before {
+
+    content: "\f046";
+  }
+
+  input:disabled:before {
+    content: "\f096";
+    cursor: not-allowed;
+  }
+}
+
+.checkbox-inline,
+.radio-inline {
+  padding-left: 20px;
+}
+
+.radio,
+.radio-inline {
+  input:before {
+    content: "\e99d";
+    color: @color-unchecked;
+  }
+
+  input:checked:before {
+    content: "\e99e";
+    color: @color-checked;
+  }
+
+  input:not(:disabled):hover:before {
+    content: "\e99e";
+  }
+
+  input:disabled:before {
+    content: "\e95a";
+    cursor: not-allowed;
+  }
+}
+
+
+
+.checkbox,
+.checkbox-inline,
+.radio,
+.radio-inline {
+  input {
+    animation: shrink 0.3s ease-out;
+  }
+
+  input:checked {
+    animation: burst 0.2s ease-out
+  }
+}
