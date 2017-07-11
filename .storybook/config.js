@@ -13,6 +13,9 @@ function loadStories() {
   require('../src/stories/Notification');
   require('../src/stories/Table');
   require('../src/stories/List');
+  require('../src/stories/Radio');
+  require('../src/stories/Tabs');
+  require('../src/stories/StatusLabel');
 }
 
 setAddon(infoAddon);
