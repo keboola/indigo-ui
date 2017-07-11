@@ -9,6 +9,7 @@ function loadStories() {
   require('../src/stories/TimeLabel');
   require('../src/stories/Checkbox');
   require('../src/stories/Avatar');
+  require('../src/stories/ComponentDescription');
 }
 
 setAddon(infoAddon);
