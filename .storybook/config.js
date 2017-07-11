@@ -10,6 +10,9 @@ function loadStories() {
   require('../src/stories/Checkbox');
   require('../src/stories/Avatar');
   require('../src/stories/ComponentDescription');
+  require('../src/stories/Notification');
+  require('../src/stories/Table');
+  require('../src/stories/List');
 }
 
 setAddon(infoAddon);
