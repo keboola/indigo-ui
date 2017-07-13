@@ -4,13 +4,14 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "fixed-data-table": "^0.6.4",
     "font-awesome": "^4.7.0",
+    "moment": "^2.18.0",
+    "moment-timezone": "~0.3.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
-    "react-dom": "^15.6.1",
-    "moment": "^2.18.0",
-    "moment-timezone": "~0.3.1"
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "@storybook/addon-info": "^3.1.4",
@@ -31,6 +32,7 @@
     "storybook": "npm-run-all -p watch-css run-storybook",
     "build-css": "grunt build-css",
     "watch-css": "npm run build-css && grunt watch",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "build-storybook -c .storybook -o .out"
   }
 }
