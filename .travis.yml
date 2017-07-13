@@ -1,0 +1,12 @@
+language: node_js
+node_js: "7"
+branches:
+  only:
+    - master
+script:
+ - yarn deploy-storybook
+deploy:
+- provider: s3
+  access_key_id: nevim
+  secret_access_key:
+    secure: nevim
