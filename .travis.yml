@@ -3,8 +3,14 @@ node_js: "7"
 branches:
   only:
     - master
+install:
+  - time npm install
 script:
  - yarn deploy-storybook
+cache:
+  bundler: true
+  directories:
+    - node_modules
 deploy:
 - provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
