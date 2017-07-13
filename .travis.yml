@@ -10,3 +10,4 @@ deploy:
   access_key_id: nevim
   secret_access_key:
     secure: nevim
+  bucket: indigo-ui-site-services-indigouis3-5izu6yd9zfix
