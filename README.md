@@ -1,5 +1,7 @@
 # Indigo UI
 
+[![Build Status](https://travis-ci.org/keboola/indigo-ui.svg?branch=master)](https://travis-ci.org/keboola/indigo-ui)
+
 Styleguide app Indigo UI
 
 ## Development
