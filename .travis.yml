@@ -1,22 +1,21 @@
 language: node_js
+
 node_js: "7"
-branches:
-  only:
-    - master
+
 install:
-  - time npm install
+  - yarn
+
 script:
- - yarn deploy-storybook
-cache:
-  bundler: true
-  directories:
-    - node_modules
+  - yarn build-storybook
+
+cache: yarn
+
 deploy:
 - provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: indigo-ui-site-services-indigouis3-5izu6yd9zfix
-  local-dir: .out
+  local-dir: build
   on:
-    branch: master
+    tags: true
     repo: keboola/indigo-ui
