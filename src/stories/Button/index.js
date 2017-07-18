@@ -25,13 +25,13 @@ storiesOf('Button')
         {
             inline: true,
         }
-    )
+    )   
     .addWithInfo(
         'Edit button',
         'Desc',
         () => (
-            <Button bsStyle="success">
-                <i className="kbc-icon-pencil"/>
+            <Button bsStyle="edit">
+                <i className="fa fa-fw fa-pencil"/>
                 Edit [entity]
             </Button>
         ),

@@ -50,3 +50,16 @@ button {
         box-shadow: none;
     }
 }
+
+.btn {
+    &-edit {
+        .btn-primary();
+        &:hover i {
+            animation: wrench 2.5s ease infinite;
+            transform-origin-x: 90%;
+            transform-origin-y: 90%;
+            transform-origin-z: initial
+        }
+    }
+}
+
