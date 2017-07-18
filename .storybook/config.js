@@ -9,8 +9,8 @@ function loadStories() {
   require('../src/stories/Checkbox');
   require('../src/stories/ComponentDescription');
   require('../src/stories/Notification');
-  require('../src/stories/Table');
   require('../src/stories/List');
+  require('../src/stories/Table');
   require('../src/stories/Radio');
   require('../src/stories/Tabs');
   require('../src/stories/StatusLabel');
