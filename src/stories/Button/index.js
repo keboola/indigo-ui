@@ -27,12 +27,35 @@ storiesOf('Button')
         }
     )
     .addWithInfo(
-        'Add Button',
+        'Add button',
         'Desc',
         () => (
             <Button bsStyle="success">
                 <i className="kbc-icon-plus"/>
                 Add [entity]
+            </Button>
+        ),
+        {
+            inline: true,
+        }
+    )
+    .addWithInfo(
+        'icon button',
+        'Desc',
+        () => (
+            <Button bsStyle="link">
+                <i className="fa fa-fw fa-play"/>
+            </Button>
+        ),
+        {
+            inline: true,
+        }
+    ).addWithInfo(
+        'show more',
+        'Desc',
+        () => (
+            <Button bsStyle="btn-default">
+                show more ...
             </Button>
         ),
         {
