@@ -1,26 +1,40 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-// import { Table } from 'react-bootstrap';
-// import ReactDOM from 'react-dom';
 import {Table, Column, Cell} from 'fixed-data-table';
 
 const rows = [
     ['a1', 'b1', 'c1'],
     ['a2', 'b2', 'c2'],
     ['a3', 'b3', 'c3'],
-    // .... and more
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
+    ['a3', 'b3', 'c3'],
 ];
 
 storiesOf('DataTable')
     .addWithInfo(
         'default',
-        'Desc',
+        'https://facebook.github.io/fixed-data-table/example-object-data.html',
         () => (
     <Table
         rowHeight={50}
         rowsCount={rows.length}
         width={500}
-        height={500}
+        height={300}
         headerHeight={50}>
         <Column
             header={<Cell>Col 1</Cell>}
