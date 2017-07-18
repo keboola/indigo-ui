@@ -20,6 +20,9 @@ storiesOf('Radio')
             3
         </Radio>
             </span>
-    )
+    ),
+      {
+          inline: true,
+      }
   )
 ;

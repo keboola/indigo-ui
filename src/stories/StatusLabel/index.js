@@ -10,6 +10,9 @@ storiesOf('Label')
     'Desc',
     () => (
         <Label bsStyle="default">Default</Label>
-    )
+    ),
+      {
+          inline: true,
+      }
   )
 ;

@@ -10,6 +10,9 @@ storiesOf('Checkbox')
     'Desc',
     () => (
        <Checkbox>Remember me</Checkbox>
-    )
+    ),
+      {
+          inline: true,
+      }
   )
 ;
