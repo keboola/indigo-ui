@@ -20,6 +20,7 @@ function loadStories() {
   require('../src/stories/Image');
   require('../src/stories/Avatar');
   require('../src/stories/SearchBar');
+  require('../src/stories/Modal');
 }
 
 setAddon(infoAddon);
