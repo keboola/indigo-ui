@@ -1,6 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import {Alert} from 'react-bootstrap';
+import { ListGroup, ListGroupItem, Label } from 'react-bootstrap';
 
 
 storiesOf('List')
@@ -8,25 +8,25 @@ storiesOf('List')
         'simple',
         'Desc',
         () => (
-            <ul>
-                <li>aLook Analytics</li>
-                <li>Created by</li>
-                <li>className</li>
-            </ul>
+            <ListGroup>
+                <ListGroupItem>Item 1</ListGroupItem>
+                <ListGroupItem>Item 2</ListGroupItem>
+                <ListGroupItem>...</ListGroupItem>
+            </ListGroup>
         ),
         {
             inline: true,
         }
     )
     .addWithInfo(
-    'with icon',
+    'with status',
     'Desc',
     () => (
-        <ul>
-            <li>aLook Analytics</li>
-            <li>Created by</li>
-            <li>className</li>
-        </ul>
+        <ListGroup>
+            <ListGroupItem><Label bsStyle="default">1</Label>Item 1</ListGroupItem>
+            <ListGroupItem><Label bsStyle="primary">2</Label>Item 2</ListGroupItem>
+            <ListGroupItem><Label bsStyle="default">1</Label>...</ListGroupItem>
+        </ListGroup>
     ),
     {
         inline: true,

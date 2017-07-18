@@ -5,22 +5,22 @@ import infoAddon from '@storybook/addon-info';
 
 function loadStories() {
   require('../src/stories/Button');
-  require('../src/stories/TimeLabel');
   require('../src/stories/Checkbox');
-  require('../src/stories/ComponentDescription');
-  require('../src/stories/Notification');
+  require('../src/stories/Radio');
   require('../src/stories/List');
   require('../src/stories/Table');
-  require('../src/stories/Radio');
-  require('../src/stories/Tabs');
-  require('../src/stories/StatusLabel');
-  require('../src/stories/DataTable');
-  require('../src/stories/Icons');
+  require('../src/stories/TimeLabel');
   require('../src/stories/Duration');
-  require('../src/stories/Image');
-  require('../src/stories/Avatar');
+  require('../src/stories/Tabs');
   require('../src/stories/SearchBar');
   require('../src/stories/Modal');
+  require('../src/stories/StatusLabel');
+  require('../src/stories/DataTable');
+  require('../src/stories/Icons')
+  require('../src/stories/ComponentDescription');
+  require('../src/stories/Notification');
+  require('../src/stories/Image');
+  require('../src/stories/Avatar');
 }
 
 setAddon(infoAddon);
