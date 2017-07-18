@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          "public/css/kbc.uncompressed.css": "src/kbc-bootstrap/less/kbc.less"
+          "public/css/kbc.uncompressed.css": "src/kbc-bootstrap/less/storybookRenderedWrapper.less"
         }
       },
     },
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     },
     watch: {
       less: {
-        files: ['src/kbc-bootstrap/less/kbc.less'],
+        files: ['src/kbc-bootstrap/less/storybookRenderedWrapper.less'],
         tasks: ['less:development'],
         options: {
           spawn: false,
