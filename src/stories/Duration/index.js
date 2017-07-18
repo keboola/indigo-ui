@@ -10,7 +10,7 @@ storiesOf('Duration')
     'Desc',
     () => (
         <span>
-            <i class="fa fa-clock-o"></i>
+            <i className="fa fa-fw fa-clock-o"></i>
             <span>4 min 33 sec</span>
         </span>
     ),
