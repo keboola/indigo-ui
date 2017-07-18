@@ -17,5 +17,17 @@ storiesOf('TimeLabel')
     {
       inline: true,
     }
+  ).addWithInfo(
+    'synced ago',
+    'Desc',
+    () => (
+        <span title={"synced " + moment(fakeDate).format("YYYY-MM-DD HH:mm:ss")}>
+            <i className="fa fa-fw fa-refresh" />
+            {moment(fakeDate).fromNow()}
+        </span>
+    ),
+    {
+      inline: true,
+    }
   )
 ;
