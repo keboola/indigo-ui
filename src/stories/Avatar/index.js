@@ -1,13 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 
+import imageFile from '../../static/keboola-logo.png';
 storiesOf('Avatar')
   .addWithInfo(
     'default',
     'Desc',
     () => (
-        <img src="" class="kbc-user-avatar" width="40" height="40"/>
+        <img src={imageFile} class="kbc-user-avatar" width="40" height="40"/>
     ),
     {
       inline: true,
