@@ -19,6 +19,7 @@ function loadStories() {
   require('../src/stories/Duration');
   require('../src/stories/Image');
   require('../src/stories/Avatar');
+  require('../src/stories/SearchBar');
 }
 
 setAddon(infoAddon);
