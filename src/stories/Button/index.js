@@ -14,19 +14,6 @@ storiesOf('Button')
         }
     )
     .addWithInfo(
-        'with icon',
-        'Desc',
-        () => (
-            <Button bsStyle="primary">
-                <i className="fa fa-times"></i>
-                Button
-            </Button>
-        ),
-        {
-            inline: true,
-        }
-    )
-    .addWithInfo(
         'Add button',
         'Desc',
         () => (
