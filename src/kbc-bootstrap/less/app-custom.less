@@ -1,0 +1,100 @@
+body {
+  padding-top: 60px;
+}
+
+
+
+
+
+/*
+ * Base structure
+ */
+
+
+.row > :first-child {
+  margin-top: 0;
+}
+
+.kbc-sapi-table-link {
+  color: @link-color;
+  cursor: pointer;
+  &:hover {
+    color: @link-hover-color;
+    text-decoration: none;
+  }
+}
+
+.kbc-detail-table {
+  border-bottom: solid 1px @table-border-color;
+  margin-bottom: 22px;
+  width: 100%;
+  .row {
+    margin: 15px;
+  }
+  .td {
+    vertical-align: top !important;
+    width: 50%;
+    padding: 15px 15px !important;
+    .form-group {
+      margin-bottom: 15px;
+    }
+  }
+  strong {
+    font-weight: 400;
+  }
+}
+
+.kbc-layout-table {
+  > .tbody {
+    > .tr {
+      width: auto;
+      border-bottom: 1px solid @table-border-color;
+      .td {
+        border-top: none;
+        padding: 40px 30px 30px;
+      }
+    }
+  }
+}
+
+.kbc-overview {
+  > .tbody > .tr > .td {
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+  }
+}
+
+.kbc-tasks-list {
+  > tbody >tr > td {
+    padding: 0;
+    a {
+      display: block;
+      color: black;
+      padding: 10px 0;
+      &:hover {
+        text-decoration: none;
+      }
+
+      .kbc-icon-arrow-right {
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+.kbc-user-avatar {
+  border-radius: 50%;
+}
+
+@media (min-width: 1030px) {
+  .kbc-navbar .kbc-logo,
+  .kbc-sidebar {
+    width: 260px;
+  }
+  .kbc-main-header-container,
+  .kbc-main {
+
+    margin-left: 260px;
+  }
+}
