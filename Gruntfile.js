@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          "public/css/indigo.uncompressed.css": "src/kbc-bootstrap/less/indigo-storybook-wrapper.less"
+          "public/css/indigo.uncompressed.css": "src/indigo/less/indigo-storybook-wrapper.less"
         }
       },
     },
@@ -27,13 +27,13 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: 'src/kbc-bootstrap',
+            cwd: 'src/indigo',
             src: ['fonts/*'],
             dest: 'public/'
           },
           {
             expand: true,
-            cwd: 'src/kbc-bootstrap',
+            cwd: 'src/indigo',
             src: ['img/*'],
             dest: 'public/'
           }
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     },
     watch: {
       less: {
-        files: ['src/kbc-bootstrap/less/indigo-storybook-wrapper.less'],
+        files: ['src/indigo/less/indigo-storybook-wrapper.less'],
         tasks: ['less:development'],
         options: {
           spawn: false,
