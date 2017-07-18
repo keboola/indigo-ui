@@ -10,7 +10,6 @@ function loadStories() {
   require('../src/stories/List');
   require('../src/stories/Table');
   require('../src/stories/TimeLabel');
-  require('../src/stories/Duration');
   require('../src/stories/Tabs');
   require('../src/stories/SearchBar');
   require('../src/stories/Modal');

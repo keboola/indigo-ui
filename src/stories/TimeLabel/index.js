@@ -29,5 +29,17 @@ storiesOf('TimeLabel')
     {
       inline: true,
     }
-  )
+  ) .addWithInfo(
+    'duration',
+    'Desc',
+    () => (
+        <span>
+            <i className="fa fa-fw fa-clock-o"></i>
+            <span>4 min 33 sec</span>
+        </span>
+    ),
+    {
+        inline: true,
+    }
+)
 ;
