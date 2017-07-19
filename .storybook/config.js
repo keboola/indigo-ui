@@ -18,7 +18,6 @@ function loadStories() {
   require('../src/stories/ComponentDescription');
   require('../src/stories/Notification');
   require('../src/stories/Image');
-  require('../src/stories/Avatar');
   require('../src/stories/Select');
   require('../src/stories/Datepicker');
   require('../src/stories/Loader');
