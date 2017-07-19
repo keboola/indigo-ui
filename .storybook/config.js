@@ -21,6 +21,7 @@ function loadStories() {
   require('../src/stories/Image');
   require('../src/stories/Avatar');
   require('../src/stories/Select');
+  require('../src/stories/Datepicker');
 }
 
 setAddon(infoAddon);
