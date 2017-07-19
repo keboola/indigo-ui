@@ -9,7 +9,6 @@ function loadStories() {
   require('../src/stories/Radio');
   require('../src/stories/List');
   require('../src/stories/Table');
-  require('../src/stories/DataTable');
   require('../src/stories/TimeLabel');
   require('../src/stories/Tabs');
   require('../src/stories/SearchBar');
