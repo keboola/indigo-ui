@@ -14,8 +14,21 @@ storiesOf('Button')
         }
     )
     .addWithInfo(
+        'New button',
+        'Use case: click on New button will redirect you to a form where you configure new entity.',
+        () => (
+            <Button bsStyle="success">
+                <i className="kbc-icon-plus"/>
+                New [entity]
+            </Button>
+        ),
+        {
+            inline: true,
+        }
+    )
+    .addWithInfo(
         'Add button',
-        'Desc',
+        'Use case: click on Add button will create new entity from pre-filled values.',
         () => (
             <Button bsStyle="success">
                 <i className="kbc-icon-plus"/>
@@ -25,7 +38,7 @@ storiesOf('Button')
         {
             inline: true,
         }
-    )   
+    )
     .addWithInfo(
         'Edit button',
         'Desc',
