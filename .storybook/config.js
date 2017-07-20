@@ -21,6 +21,7 @@ function loadStories() {
   require('../src/stories/Select');
   require('../src/stories/Datepicker');
   require('../src/stories/Loader');
+  require('../src/stories/Collapsible');
 }
 
 setAddon(infoAddon);
