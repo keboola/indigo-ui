@@ -27,12 +27,11 @@ storiesOf('Button')
         }
     )
     .addWithInfo(
-        'Add button',
+        'Create button',
         'Use case: click on Add button will create new entity from pre-filled values.',
         () => (
             <Button bsStyle="success">
-                <i className="kbc-icon-plus"/>
-                Add [entity]
+                Create [entity]
             </Button>
         ),
         {
