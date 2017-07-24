@@ -23,7 +23,7 @@ function loadStories() {
   require('../src/stories/Loader');
   require('../src/stories/Collapsible');
   require('../src/stories/Tooltip');
-  // require('../src/stories/Input');
+  require('../src/stories/Input');
   // require('../src/stories/Forms');
 }
 
