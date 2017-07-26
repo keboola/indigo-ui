@@ -2,8 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Radio } from 'react-bootstrap';
 
-import imageFile from '../../static/keboola-logo.png';
-
 storiesOf('Radio')
   .addWithInfo(
     'default',
