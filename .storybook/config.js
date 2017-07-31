@@ -24,7 +24,7 @@ function loadStories() {
   require('../src/stories/Collapsible');
   require('../src/stories/Tooltip');
   require('../src/stories/Input');
-  // require('../src/stories/Forms');
+  require('../src/stories/Form');
   // require('../src/stories/Typography');
   // require('../src/stories/Guidelines');
 }
