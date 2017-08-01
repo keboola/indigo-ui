@@ -105,7 +105,7 @@ storiesOf('List')
     ) 
     .addWithInfo(
         'settings list',
-        'Desc',
+        'SEEN ON SETTINGS & here: https://connection.keboola.com/admin/projects/2376/storage#/tokens/69940',
         () => (
             <div className="container-fluid kbc-project-details">
                 <div className="row">
