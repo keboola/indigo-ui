@@ -63,15 +63,15 @@ storiesOf('Button')
             inline: true,
         }
     ).addWithInfo(
-        'show more',
-        'Desc',
-        () => (
-            <Button bsStyle="btn-default">
-                show more ...
-            </Button>
-        ),
-        {
-            inline: true,
-        }
-    )
+    'show more',
+    'Desc',
+    () => (
+        <Button bsStyle="btn-link">
+            show more ...
+        </Button>
+    ),
+    {
+        inline: true,
+    }
+)
 ;

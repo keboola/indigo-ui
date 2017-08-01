@@ -25,6 +25,8 @@ function loadStories() {
   require('../src/stories/Tooltip');
   require('../src/stories/Input');
   require('../src/stories/Form');
+  require('../src/stories/DetailRightPanel');
+  require('../src/stories/Breadcrumbs');
   // require('../src/stories/Typography');
   // require('../src/stories/Guidelines');
 }
