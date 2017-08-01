@@ -170,7 +170,7 @@ storiesOf('Table')
     )
 
     .addWithInfo(
-        'table @ ORchestrations',
+        'table @ Orchestrations',
         '',
         () => (
             <div className="table table-striped table-hover">
@@ -313,7 +313,7 @@ storiesOf('Table')
             inline: true,
         }
     ) .addWithInfo(
-        'table @ ORchestration detail',
+        'table @ Orchestration detail',
         '',
         () => (
             <table className="table table-striped table-hover kb-table-jobs kbc-cursor-pointer"
@@ -2862,6 +2862,83 @@ storiesOf('Table')
                         <a href="javascript:void(0)" kb-confirm="" message="Do you really want to delete file 263260911 (in.c-keboola-ex-facebook-253350349.accounts.csv.gz)?" confrim-type="danger" confirm-label="Delete" on-confirm="deleteFile(file.id)" header="Delete file" tooltip="Delete file" className="ng-scope">
                             <span className="fa fa-trash-o"></span>
                         </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        ),
+        {
+            inline: true,
+        }
+    ).addWithInfo(
+        'table @ versions',
+        'seen here: https://connection.keboola.com/admin/projects/2376/extractors/esnerda.ex-ares/282215725/versions',
+        () => (
+            <table className="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th></th>
+                    <th>Description</th>
+                    <th>Changed</th>
+                    <th>Created by</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>3</td>
+                    <td><span className="fa fa-check-circle fa-fw kbc-version-icon last"></span></td>
+                    <td>Add input table in.c-keboola-ex-facebook-253350349.accounts</td>
+                    <td><span title="2017-07-31 16:36:04"><i
+                        className="fa fa-fw fa-calendar"></i><span>a day ago</span></span></td>
+                    <td>jan@keboola.com</td>
+                    <td className="text-right">
+                        <button className="btn btn-link"><span> </span><span className="text-muted"><em
+                            className="fa fa-fw fa-files-o"></em></span>
+                            <noscript></noscript>
+                            <span> </span></button>
+                        <button className="btn btn-link"><em className="fa fa-code-fork fa-fw"></em>
+                            <noscript></noscript>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><span className="fa fa-circle-o fa-fw kbc-version-icon"></span></td>
+                    <td>Add input table in.c-keboola-ex-facebook-253350349.feed</td>
+                    <td><span title="2017-07-31 16:35:36"><i
+                        className="fa fa-fw fa-calendar"></i><span>a day ago</span></span></td>
+                    <td>jan@keboola.com</td>
+                    <td className="text-right">
+                        <button className="btn btn-link"><em className="fa fa-undo fa-fw"></em>
+                            <noscript></noscript>
+                        </button>
+                        <button className="btn btn-link"><span> </span><span className="text-muted"><em
+                            className="fa fa-fw fa-files-o"></em></span>
+                            <noscript></noscript>
+                            <span> </span></button>
+                        <button className="btn btn-link"><em className="fa fa-code-fork fa-fw"></em>
+                            <noscript></noscript>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span className="fa fa-circle-o fa-fw kbc-version-icon"></span></td>
+                    <td>
+                        <small><em>No description</em></small>
+                    </td>
+                    <td><span title="2017-05-31 13:19:45"><i className="fa fa-fw fa-calendar"></i><span>2 months ago</span></span>
+                    </td>
+                    <td>jan@keboola.com</td>
+                    <td className="text-right">
+                        <button className="btn btn-link"><em className="fa fa-undo fa-fw"></em>
+                            <noscript></noscript>
+                        </button>
+                        <button className="btn btn-link"><em className="fa fa-code-fork fa-fw"></em>
+                            <noscript></noscript>
+                        </button>
                     </td>
                 </tr>
                 </tbody>
