@@ -22,11 +22,11 @@ function loadStories() {
   require('../src/stories/Datepicker');
   require('../src/stories/Loader');
   require('../src/stories/Collapsible');
-  require('../src/stories/Tooltip');
   require('../src/stories/Input');
   require('../src/stories/Form');
   require('../src/stories/DetailRightPanel');
   require('../src/stories/Breadcrumbs');
+  require('../src/stories/Hint');
   // require('../src/stories/Typography');
   // require('../src/stories/Guidelines');
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {Button} from 'react-bootstrap';
+import ClipboardButton from 'react-clipboard.js';
 
 storiesOf('Button')
     .addWithInfo(
@@ -52,6 +53,19 @@ storiesOf('Button')
         }
     )
     .addWithInfo(
+        'Edit button small',
+        'Desc',
+        () => (
+            <Button bsStyle="link" >
+                <span className="fa fa-pencil" ></span>
+            </Button>
+
+        ),
+        {
+            inline: true,
+        }
+    )
+    .addWithInfo(
         'icon button',
         'Desc',
         () => (
@@ -66,9 +80,55 @@ storiesOf('Button')
     'show more',
     'Desc',
     () => (
-        <Button bsStyle="btn-link">
+        <Button bsStyle="btn-default">
             show more ...
         </Button>
+    ),
+    {
+        inline: true,
+    }
+).addWithInfo(
+    'Authorize',
+    'Desc',
+    () => (
+        <Button bsStyle="success" >
+            <i className="fa fa-fw fa-user"></i>
+            <span>Authorize Account</span>
+        </Button>
+    ),
+    {
+        inline: true,
+    }
+).addWithInfo(
+    'move to trash',
+    'Desc',
+    () => (
+        <a >
+            <span className="kbc-icon-cup fa fa-fw"></span>
+            <span> Move to Trash</span>
+        </a>
+    ),
+    {
+        inline: true,
+    }
+).addWithInfo(
+    'delete',
+    'Desc',
+    () => (
+            <Button type="button" bsStyle="danger" >
+                Remove [Entity]
+            </Button>
+    ),
+    {
+        inline: true,
+    }
+).addWithInfo(
+    'copy 2 clipboard',
+    'Desc',
+    () => (
+        <ClipboardButton data-clipboard-text='test text test text test text test text '>
+            <span className="fa fa-fw fa-copy"/> Copy 2 clipboard
+        </ClipboardButton>
     ),
     {
         inline: true,

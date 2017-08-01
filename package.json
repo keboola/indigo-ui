@@ -12,6 +12,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
+    "react-clipboard.js": "^1.1.2",
     "react-datepicker": "^0.52.0",
     "react-dom": "^15.6.1",
     "react-select": "^1.0.0-rc.3"

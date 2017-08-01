@@ -200,74 +200,7 @@ storiesOf('List')
             inline: true,
         }
     )
-    .addWithInfo(
-        'tree list @ job detail',
-        'seen here: https://connection.keboola.com/admin/projects/2376/jobs/302856208?q=',
-        () => (
-            <div className="kb-tree" >
-                <ul >
-                    <li ><span
-                        ><strong
-                        >config</strong><span
-                        >: </span><span
-                        >254478952</span></span></li>
-                    <li ><span
-                        ><strong
-                        >orchestration</strong><ul
-                        ><li
-                        ><span
-                        ><strong
-                        >id</strong><span
-                        >: </span><span
-                        >254478952</span></span></li><li
-                        ><span
-                        ><strong
-                        >name</strong><span
-                        >: </span><span
-                        >booooou</span></span></li></ul></span>
-                    </li>
-                    <li ><span
-                        ><strong
-                        >initializedBy</strong><span
-                        >: </span><span
-                        >scheduler</span></span>
-                    </li>
-                    <li ><span
-                        ><strong
-                        >initiator</strong><ul
-                        ><li
-                        ><span
-                        ><strong
-                        >id</strong><span
-                        >: </span><span
-                        >70131</span></span></li><li
-                        ><span
-                        ><strong
-                        >description</strong><span
-                        >: </span><span
-                        >Orchestrator booooou</span></span></li><li
-                        ><span
-                        ><strong
-                        >userAgent</strong><span
-                        >: </span><span
-                        >orchestrator Scheduler</span></span></li></ul></span>
-                    </li>
-                    <li ><span
-                        ><strong
-                        >notificationsEmails</strong><ul
-                        ></ul></span></li>
-                    <li ><span
-                        ><strong
-                        >tasks</strong><span
-                        >: </span><span
-                        >null</span></span></li>
-                </ul>
-            </div>
-        ),
-        {
-            inline: true,
-        }
-    )
+
     .addWithInfo(
         'list @ event detail',
         'seen here: https://connection.keboola.com/admin/projects/2376/storage#/',
@@ -358,6 +291,412 @@ storiesOf('List')
                     </div>
                 </div>
             </div>
+        ),
+        {
+            inline: true,
+        }
+    
+    ).addWithInfo(
+        'list @ right panel',
+        'seen here: https://connection.keboola.com/admin/projects/2376/extractors/esnerda.ex-ares/282215725',
+        () => (
+            <div>
+                <h4><span>Updates</span><span className="pull-right"><span> </span><small
+                   ><em className="fa fa-fw fa-files-o"
+                                                                                        ></em><span
+                   > Compare Latest</span></small><noscript
+                   ></noscript></span></h4>
+                <div className="kbc-sidebar-versions"><a className="list-group-item"
+                                                                                       href="/admin/projects/2376/extractors/esnerda.ex-ares/282215725/versions"
+                                                                                      ><span
+                    className="table"><span className="tr"
+                                                                                ><span
+                    className="td versions-status"><span
+                    className="fa fa-check-circle fa-fw kbc-version-icon last"
+                   ></span></span><span className="td"
+                                                                                      ><div
+                   >Add input table in.c-keboola-ex-facebook-253350349.accounts</div><div
+                   >jan@keboola.com</div><div
+                   ><small className="text-muted pull-left"
+                                                                         ><span
+                   >#</span><span
+                   >3</span></small><small
+                    className="text-muted pull-right"><span
+                    title="2017-07-31 16:36:04"><i
+                    className="fa fa-fw fa-calendar"></i><span
+                   >a day ago</span></span></small></div></span></span></span></a><a
+                    className="list-group-item" href="/admin/projects/2376/extractors/esnerda.ex-ares/282215725/versions"
+                   ><span className="table"><span
+                    className="tr"><span className="td versions-status"
+                                                                               ><span
+                    className="fa fa-circle-o fa-fw kbc-version-icon"></span></span><span
+                    className="td"><div
+                   >Add input table in.c-keboola-ex-facebook-253350349.feed</div><div
+                   >jan@keboola.com</div><div
+                   ><small className="text-muted pull-left"
+                                                                         ><span
+                   >#</span><span
+                   >2</span></small><small
+                    className="text-muted pull-right"><span
+                    title="2017-07-31 16:35:36"><i
+                    className="fa fa-fw fa-calendar"></i><span
+                   >a day ago</span></span></small></div></span></span></span></a><a
+                    className="list-group-item" href="/admin/projects/2376/extractors/esnerda.ex-ares/282215725/versions"
+                   ><span className="table"><span
+                    className="tr"><span className="td versions-status"
+                                                                               ><span
+                    className="fa fa-circle-o fa-fw kbc-version-icon"></span></span><span
+                    className="td"><div
+                   ><small className="text-muted"
+                                                                         >No description</small></div><div
+                   >jan@keboola.com</div><div
+                   ><small className="text-muted pull-left"
+                                                                         ><span
+                   >#</span><span
+                   >1</span></small><small
+                    className="text-muted pull-right"><span
+                    title="2017-05-31 13:19:45"><i
+                    className="fa fa-fw fa-calendar"></i><span
+                   >2 months ago</span></span></small></div></span></span></span></a>
+                    <div className="versions-link"><a className=""
+                                                                                      href="/admin/projects/2376/extractors/esnerda.ex-ares/282215725/versions"
+                                                                                     >Show
+                        all versions</a></div>
+                </div>
+            </div>
+        ),
+        {
+            inline: true,
+        }
+
+    ).addWithInfo(
+        'list @ input mapping',
+        'seen here: https://connection.keboola.com/admin/projects/2376/extractors/esnerda.ex-ares/282215725',
+        () => (
+            <ul className="clearfix list-group">
+                <li className="list-group-item"><strong
+                    className="col-md-4">Source
+                    table</strong><span className="col-md-6"
+                                       ><span
+                   ><span
+                    className="kbc-sapi-table-link"
+                   >in.c-keboola-ex-facebook-253350349.feed</span><span
+                   ></span></span></span></li>
+                <li className="list-group-item"><strong
+                    className="col-md-4"
+                   >Columns</strong><span
+                    className="col-md-6">Use all columns</span>
+                </li>
+                <li className="list-group-item"
+                    ><strong
+                    className="col-md-4">Filters</strong><span
+                    className="col-md-6"
+                   ><span
+                    >N/A</span></span>
+                </li>
+            </ul>
+        ),
+        {
+            inline: true,
+        }
+
+    )
+    .addWithInfo(
+        'tree list @ job detail',
+        'seen here: https://connection.keboola.com/admin/projects/2376/jobs/302856208?q=',
+        () => (
+            <div className="kb-tree" >
+                <ul >
+                    <li ><span
+                    ><strong
+                    >config</strong><span
+                    >: </span><span
+                    >254478952</span></span></li>
+                    <li ><span
+                    ><strong
+                    >orchestration</strong><ul
+                    ><li
+                    ><span
+                    ><strong
+                    >id</strong><span
+                    >: </span><span
+                    >254478952</span></span></li><li
+                    ><span
+                    ><strong
+                    >name</strong><span
+                    >: </span><span
+                    >booooou</span></span></li></ul></span>
+                    </li>
+                    <li ><span
+                    ><strong
+                    >initializedBy</strong><span
+                    >: </span><span
+                    >scheduler</span></span>
+                    </li>
+                    <li ><span
+                    ><strong
+                    >initiator</strong><ul
+                    ><li
+                    ><span
+                    ><strong
+                    >id</strong><span
+                    >: </span><span
+                    >70131</span></span></li><li
+                    ><span
+                    ><strong
+                    >description</strong><span
+                    >: </span><span
+                    >Orchestrator booooou</span></span></li><li
+                    ><span
+                    ><strong
+                    >userAgent</strong><span
+                    >: </span><span
+                    >orchestrator Scheduler</span></span></li></ul></span>
+                    </li>
+                    <li ><span
+                    ><strong
+                    >notificationsEmails</strong><ul
+                    ></ul></span></li>
+                    <li ><span
+                    ><strong
+                    >tasks</strong><span
+                    >: </span><span
+                    >null</span></span></li>
+                </ul>
+            </div>
+        ),
+        {
+            inline: true,
+        }
+    ).addWithInfo(
+        'tree list @ storage',
+        'seen here: https://connection.keboola.com/admin/projects/2376/storage#/',
+        () => (
+            <div className="well well-small sidebar">
+                <ul className="nav nav-list">
+                    <kb-search-filter query="search.query" className="ng-isolate-scope"><div className="form-group form-group-sm search-filter">
+                        <div className="input-group">
+                            <input className="form-control search ng-pristine ng-valid" type="text" kb-focus="focus" placeholder="Search..." ng-model="query"/>
+                                <div className="input-group-addon ng-scope" ng-if="!hasQuery()">
+                                    <span className="fa fa-fw fa-search"></span>
+                                </div>
+                        </div>
+                    </div>
+                    </kb-search-filter>
+
+                    <li className="nav-header">Buckets
+                        <i tooltip="Reload all" ng-click="refreshAll()" ng-className="{'loading': consoleApp.bucketsLoading}" className="fa fa-refresh action ng-scope"></i>
+                        <i tooltip="Link shared bucket to project" ng-show="canLinkBucket()" ng-click="bucketLinkModal()" className="fa fa-random action ng-scope ng-hide"></i>
+                        <i ng-show="canCreateBucket()" ng-click="bucketCreateModal()" className="fa fa-plus action"></i>
+                    </li>
+                    <li ng-repeat="bucket in bucketsFiltered = (bucketsMatch()) track by bucket.id" ng-className="{'opened': bucketToggleOpened(bucket), 'closed': !bucketToggleOpened(bucket), 'empty': !bucket.tables.length }" className="ng-scope closed">
+                        <div className="toggable ng-scope" ng-className="{ 'focused': bucketFocus(bucket), 'disabled': bucket.isMaintenance }" tooltip="" title="in.c-csv-import">
+                            <div className="icons">
+                                <i className="fa fa-refresh action ng-hide" ng-className="{'loading': bucketRefreshing[bucket.id] }" ng-show="bucketRefreshing[bucket.id]"></i>
+                                <i ng-show="canDeleteBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Delete bucket" className="fa hidden-action fa-trash-o primary-action ng-scope"></i>
+                                <i ng-show="canUnlinkBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Unlink bucket" className="fa hidden-action fa-trash-o primary-action ng-scope ng-hide"></i>
+                                <i tooltip="Bucket detail" className="fa fa-info-circle hidden-action ng-scope" ng-click="bucketDetail(bucket, $event)"></i>
+                                <i tooltip="Create new alias table" ng-show="canCreateAliasTable( bucket )" ng-click="tableAliasCreateModal(bucket, $event)" className="fa hidden-action fa-random primary-action ng-scope"></i>
+                                <i tooltip="Create new table" ng-show="canCreateTable( bucket )" ng-click="tableCreateModal(bucket, $event)" className="fa  hidden-action fa-plus primary-action ng-scope"></i>
+                            </div>
+                            <span className="toggle-wrap" click-toggle="bucketToggles[bucket.id]"><i className="toggle"></i></span>
+                            <div className="tableName ng-binding" click-toggle="bucketToggles[bucket.id]">
+                                in.c-csv-import
+                            </div>
+                        </div>
+                        <ul className="nav nav-list ng-hide" ng-show="bucketToggleOpened(bucket)">
+                            <li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                                <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="282218367">
+                                    <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">282218367</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li><li ng-repeat="bucket in bucketsFiltered = (bucketsMatch()) track by bucket.id" ng-className="{'opened': bucketToggleOpened(bucket), 'closed': !bucketToggleOpened(bucket), 'empty': !bucket.tables.length }" className="ng-scope closed">
+                    <div className="toggable ng-scope" ng-className="{ 'focused': bucketFocus(bucket), 'disabled': bucket.isMaintenance }" tooltip="" title="in.c-keboola-ex-facebook-253350349">
+                        <div className="icons">
+                            <i className="fa fa-refresh action ng-hide" ng-className="{'loading': bucketRefreshing[bucket.id] }" ng-show="bucketRefreshing[bucket.id]"></i>
+                            <i ng-show="canDeleteBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Delete bucket" className="fa hidden-action fa-trash-o primary-action ng-scope"></i>
+                            <i ng-show="canUnlinkBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Unlink bucket" className="fa hidden-action fa-trash-o primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Bucket detail" className="fa fa-info-circle hidden-action ng-scope" ng-click="bucketDetail(bucket, $event)"></i>
+                            <i tooltip="Create new alias table" ng-show="canCreateAliasTable( bucket )" ng-click="tableAliasCreateModal(bucket, $event)" className="fa hidden-action fa-random primary-action ng-scope"></i>
+                            <i tooltip="Create new table" ng-show="canCreateTable( bucket )" ng-click="tableCreateModal(bucket, $event)" className="fa  hidden-action fa-plus primary-action ng-scope"></i>
+                        </div>
+                        <span className="toggle-wrap" click-toggle="bucketToggles[bucket.id]"><i className="toggle"></i></span>
+                        <div className="tableName ng-binding" click-toggle="bucketToggles[bucket.id]">
+                            in.c-keboola-ex-facebook-253350349
+                        </div>
+                    </div>
+                    <ul className="nav nav-list ng-hide" ng-show="bucketToggleOpened(bucket)">
+                        <li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                            <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="accounts">
+                                <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">accounts</span>
+                            </a>
+                        </li><li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                        <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="feed">
+                            <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">feed</span>
+                        </a>
+                    </li>
+                    </ul>
+                </li><li ng-repeat="bucket in bucketsFiltered = (bucketsMatch()) track by bucket.id" ng-className="{'opened': bucketToggleOpened(bucket), 'closed': !bucketToggleOpened(bucket), 'empty': !bucket.tables.length }" className="ng-scope closed">
+                    <div className="toggable ng-scope" ng-className="{ 'focused': bucketFocus(bucket), 'disabled': bucket.isMaintenance }" tooltip="" title="out.c-main">
+                        <div className="icons">
+                            <i className="fa fa-refresh action ng-hide" ng-className="{'loading': bucketRefreshing[bucket.id] }" ng-show="bucketRefreshing[bucket.id]"></i>
+                            <i ng-show="canDeleteBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Delete bucket" className="fa hidden-action fa-trash-o primary-action ng-scope"></i>
+                            <i ng-show="canUnlinkBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Unlink bucket" className="fa hidden-action fa-trash-o primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Bucket detail" className="fa fa-info-circle hidden-action ng-scope" ng-click="bucketDetail(bucket, $event)"></i>
+                            <i tooltip="Create new alias table" ng-show="canCreateAliasTable( bucket )" ng-click="tableAliasCreateModal(bucket, $event)" className="fa hidden-action fa-random primary-action ng-scope"></i>
+                            <i tooltip="Create new table" ng-show="canCreateTable( bucket )" ng-click="tableCreateModal(bucket, $event)" className="fa  hidden-action fa-plus primary-action ng-scope"></i>
+                        </div>
+                        <span className="toggle-wrap" click-toggle="bucketToggles[bucket.id]"><i className="toggle"></i></span>
+                        <div className="tableName ng-binding" click-toggle="bucketToggles[bucket.id]">
+                            out.c-main
+                        </div>
+                    </div>
+                    <ul className="nav nav-list ng-hide" ng-show="bucketToggleOpened(bucket)">
+                        <li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                            <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="fb-out">
+                                <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">fb-out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li><li ng-repeat="bucket in bucketsFiltered = (bucketsMatch()) track by bucket.id" ng-className="{'opened': bucketToggleOpened(bucket), 'closed': !bucketToggleOpened(bucket), 'empty': !bucket.tables.length }" className="ng-scope closed">
+                    <div className="toggable ng-scope" ng-className="{ 'focused': bucketFocus(bucket), 'disabled': bucket.isMaintenance }" tooltip="" title="sys.c-ex-salesforce">
+                        <div className="icons">
+                            <i className="fa fa-refresh action ng-hide" ng-className="{'loading': bucketRefreshing[bucket.id] }" ng-show="bucketRefreshing[bucket.id]"></i>
+                            <i ng-show="canDeleteBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Delete bucket" className="fa hidden-action fa-trash-o primary-action ng-scope"></i>
+                            <i ng-show="canUnlinkBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Unlink bucket" className="fa hidden-action fa-trash-o primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Bucket detail" className="fa fa-info-circle hidden-action ng-scope" ng-click="bucketDetail(bucket, $event)"></i>
+                            <i tooltip="Create new alias table" ng-show="canCreateAliasTable( bucket )" ng-click="tableAliasCreateModal(bucket, $event)" className="fa hidden-action fa-random primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Create new table" ng-show="canCreateTable( bucket )" ng-click="tableCreateModal(bucket, $event)" className="fa  hidden-action fa-plus primary-action ng-scope"></i>
+                        </div>
+                        <span className="toggle-wrap" click-toggle="bucketToggles[bucket.id]"><i className="toggle"></i></span>
+                        <div className="tableName ng-binding" click-toggle="bucketToggles[bucket.id]">
+                            sys.c-ex-salesforce
+                        </div>
+                    </div>
+                    <ul className="nav nav-list ng-hide" ng-show="bucketToggleOpened(bucket)">
+                        <li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                            <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="qwe">
+                                <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">qwe</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li><li ng-repeat="bucket in bucketsFiltered = (bucketsMatch()) track by bucket.id" ng-className="{'opened': bucketToggleOpened(bucket), 'closed': !bucketToggleOpened(bucket), 'empty': !bucket.tables.length }" className="ng-scope closed">
+                    <div className="toggable ng-scope" ng-className="{ 'focused': bucketFocus(bucket), 'disabled': bucket.isMaintenance }" tooltip="" title="sys.c-restbox">
+                        <div className="icons">
+                            <i className="fa fa-refresh action ng-hide" ng-className="{'loading': bucketRefreshing[bucket.id] }" ng-show="bucketRefreshing[bucket.id]"></i>
+                            <i ng-show="canDeleteBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Delete bucket" className="fa hidden-action fa-trash-o primary-action ng-scope"></i>
+                            <i ng-show="canUnlinkBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Unlink bucket" className="fa hidden-action fa-trash-o primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Bucket detail" className="fa fa-info-circle hidden-action ng-scope" ng-click="bucketDetail(bucket, $event)"></i>
+                            <i tooltip="Create new alias table" ng-show="canCreateAliasTable( bucket )" ng-click="tableAliasCreateModal(bucket, $event)" className="fa hidden-action fa-random primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Create new table" ng-show="canCreateTable( bucket )" ng-click="tableCreateModal(bucket, $event)" className="fa  hidden-action fa-plus primary-action ng-scope"></i>
+                        </div>
+                        <span className="toggle-wrap" click-toggle="bucketToggles[bucket.id]"><i className="toggle"></i></span>
+                        <div className="tableName ng-binding" click-toggle="bucketToggles[bucket.id]">
+                            sys.c-restbox
+                        </div>
+                    </div>
+                    <ul className="nav nav-list ng-hide" ng-show="bucketToggleOpened(bucket)">
+                        <li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                            <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="qwe">
+                                <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">qwe</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li><li ng-repeat="bucket in bucketsFiltered = (bucketsMatch()) track by bucket.id" ng-className="{'opened': bucketToggleOpened(bucket), 'closed': !bucketToggleOpened(bucket), 'empty': !bucket.tables.length }" className="ng-scope closed">
+                    <div className="toggable ng-scope" ng-className="{ 'focused': bucketFocus(bucket), 'disabled': bucket.isMaintenance }" tooltip="" title="sys.c-table-importer">
+                        <div className="icons">
+                            <i className="fa fa-refresh action ng-hide" ng-className="{'loading': bucketRefreshing[bucket.id] }" ng-show="bucketRefreshing[bucket.id]"></i>
+                            <i ng-show="canDeleteBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Delete bucket" className="fa hidden-action fa-trash-o primary-action ng-scope"></i>
+                            <i ng-show="canUnlinkBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Unlink bucket" className="fa hidden-action fa-trash-o primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Bucket detail" className="fa fa-info-circle hidden-action ng-scope" ng-click="bucketDetail(bucket, $event)"></i>
+                            <i tooltip="Create new alias table" ng-show="canCreateAliasTable( bucket )" ng-click="tableAliasCreateModal(bucket, $event)" className="fa hidden-action fa-random primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Create new table" ng-show="canCreateTable( bucket )" ng-click="tableCreateModal(bucket, $event)" className="fa  hidden-action fa-plus primary-action ng-scope"></i>
+                        </div>
+                        <span className="toggle-wrap" click-toggle="bucketToggles[bucket.id]"><i className="toggle"></i></span>
+                        <div className="tableName ng-binding" click-toggle="bucketToggles[bucket.id]">
+                            sys.c-table-importer
+                        </div>
+                    </div>
+                    <ul className="nav nav-list ng-hide" ng-show="bucketToggleOpened(bucket)">
+                        <li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                            <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="qwe">
+                                <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">qwe</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li><li ng-repeat="bucket in bucketsFiltered = (bucketsMatch()) track by bucket.id" ng-className="{'opened': bucketToggleOpened(bucket), 'closed': !bucketToggleOpened(bucket), 'empty': !bucket.tables.length }" className="ng-scope closed">
+                    <div className="toggable ng-scope" ng-className="{ 'focused': bucketFocus(bucket), 'disabled': bucket.isMaintenance }" tooltip="" title="sys.c-wr-db-redshift-qwe">
+                        <div className="icons">
+                            <i className="fa fa-refresh action ng-hide" ng-className="{'loading': bucketRefreshing[bucket.id] }" ng-show="bucketRefreshing[bucket.id]"></i>
+                            <i ng-show="canDeleteBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Delete bucket" className="fa hidden-action fa-trash-o primary-action ng-scope"></i>
+                            <i ng-show="canUnlinkBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Unlink bucket" className="fa hidden-action fa-trash-o primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Bucket detail" className="fa fa-info-circle hidden-action ng-scope" ng-click="bucketDetail(bucket, $event)"></i>
+                            <i tooltip="Create new alias table" ng-show="canCreateAliasTable( bucket )" ng-click="tableAliasCreateModal(bucket, $event)" className="fa hidden-action fa-random primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Create new table" ng-show="canCreateTable( bucket )" ng-click="tableCreateModal(bucket, $event)" className="fa  hidden-action fa-plus primary-action ng-scope"></i>
+                        </div>
+                        <span className="toggle-wrap" click-toggle="bucketToggles[bucket.id]"><i className="toggle"></i></span>
+                        <div className="tableName ng-binding" click-toggle="bucketToggles[bucket.id]">
+                            sys.c-wr-db-redshift-qwe
+                        </div>
+                    </div>
+                    <ul className="nav nav-list ng-hide" ng-show="bucketToggleOpened(bucket)">
+                        <li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                            <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="in_c-keboola-ex-facebook-253350349_feed">
+                                <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">in_c-keboola-ex-facebook-253350349_feed</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li><li ng-repeat="bucket in bucketsFiltered = (bucketsMatch()) track by bucket.id" ng-className="{'opened': bucketToggleOpened(bucket), 'closed': !bucketToggleOpened(bucket), 'empty': !bucket.tables.length }" className="ng-scope closed empty">
+                    <div className="toggable ng-scope" ng-className="{ 'focused': bucketFocus(bucket), 'disabled': bucket.isMaintenance }" tooltip="" title="sys.c-wr-db-redshift-qweeee">
+                        <div className="icons">
+                            <i className="fa fa-refresh action ng-hide" ng-className="{'loading': bucketRefreshing[bucket.id] }" ng-show="bucketRefreshing[bucket.id]"></i>
+                            <i ng-show="canDeleteBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Delete bucket" className="fa hidden-action fa-trash-o primary-action ng-scope"></i>
+                            <i ng-show="canUnlinkBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Unlink bucket" className="fa hidden-action fa-trash-o primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Bucket detail" className="fa fa-info-circle hidden-action ng-scope" ng-click="bucketDetail(bucket, $event)"></i>
+                            <i tooltip="Create new alias table" ng-show="canCreateAliasTable( bucket )" ng-click="tableAliasCreateModal(bucket, $event)" className="fa hidden-action fa-random primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Create new table" ng-show="canCreateTable( bucket )" ng-click="tableCreateModal(bucket, $event)" className="fa  hidden-action fa-plus primary-action ng-scope"></i>
+                        </div>
+                        <span className="toggle-wrap" click-toggle="bucketToggles[bucket.id]"><i className="toggle"></i></span>
+                        <div className="tableName ng-binding" click-toggle="bucketToggles[bucket.id]">
+                            sys.c-wr-db-redshift-qweeee
+                        </div>
+                    </div>
+                    <ul className="nav nav-list ng-hide" ng-show="bucketToggleOpened(bucket)">
+
+                    </ul>
+                </li><li ng-repeat="bucket in bucketsFiltered = (bucketsMatch()) track by bucket.id" ng-className="{'opened': bucketToggleOpened(bucket), 'closed': !bucketToggleOpened(bucket), 'empty': !bucket.tables.length }" className="ng-scope closed">
+                    <div className="toggable ng-scope" ng-className="{ 'focused': bucketFocus(bucket), 'disabled': bucket.isMaintenance }" tooltip="" title="sys.c-wr-google-drive">
+                        <div className="icons">
+                            <i className="fa fa-refresh action ng-hide" ng-className="{'loading': bucketRefreshing[bucket.id] }" ng-show="bucketRefreshing[bucket.id]"></i>
+                            <i ng-show="canDeleteBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Delete bucket" className="fa hidden-action fa-trash-o primary-action ng-scope"></i>
+                            <i ng-show="canUnlinkBucket(bucket)" ng-click="deleteBucketConfirmation(bucket, $event)" tooltip="Unlink bucket" className="fa hidden-action fa-trash-o primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Bucket detail" className="fa fa-info-circle hidden-action ng-scope" ng-click="bucketDetail(bucket, $event)"></i>
+                            <i tooltip="Create new alias table" ng-show="canCreateAliasTable( bucket )" ng-click="tableAliasCreateModal(bucket, $event)" className="fa hidden-action fa-random primary-action ng-scope ng-hide"></i>
+                            <i tooltip="Create new table" ng-show="canCreateTable( bucket )" ng-click="tableCreateModal(bucket, $event)" className="fa  hidden-action fa-plus primary-action ng-scope"></i>
+                        </div>
+                        <span className="toggle-wrap" click-toggle="bucketToggles[bucket.id]"><i className="toggle"></i></span>
+                        <div className="tableName ng-binding" click-toggle="bucketToggles[bucket.id]">
+                            sys.c-wr-google-drive
+                        </div>
+                    </div>
+                    <ul className="nav nav-list ng-hide" ng-show="bucketToggleOpened(bucket)">
+                        <li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                            <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="mysecondgdrivewriter">
+                                <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">mysecondgdrivewriter</span>
+                            </a>
+                        </li><li ng-repeat="table in tablesMatch(bucket.id) track by table.id" ng-className="{ 'active': consoleApp.selectedTable.id == table.id, 'focused': navigationStates.focusedItem.id == table.id, 'disabled': bucket.isMaintenance }" className="ng-scope">
+                        <a href="javascript:void(0)" ng-click="tableDetail(table, $event)" title="qqq">
+                            <span ng-className="{ 'alias': table.isAlias }" className="ng-binding">qqq</span>
+                        </a>
+                    </li>
+                    </ul>
+                </li>
+                    <li ng-show="bucketsFiltered.length == 0 &amp;&amp; search.query.length > 0" className="ng-hide">No buckets found</li>
+
+                </ul>
+            </div>
+
         ),
         {
             inline: true,
