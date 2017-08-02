@@ -1,48 +1,43 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
+import {storiesOf} from '@storybook/react';
 import CreatedWithIcon from '../../common/CreatedWithIcon.jsx';
+import TimeLabelSynced from '../../common/TimeLabelSynced.jsx';
 
 const fakeDate = "2017-03-28 13:34:08"
 
 storiesOf('TimeLabel')
-  .addWithInfo(
-    'default',
-    'Desc',
-    () => (
-        <CreatedWithIcon createdTime={fakeDate}/>
-    ),
-    {
-      inline: true,
-    }
-  )
-//     .addWithInfo(
-//     'synced ago',
-//     'Desc',
-//     () => (
-//         <span title={"synced " + moment(fakeDate).format("YYYY-MM-DD HH:mm:ss")}>
-//             <i className="fa fa-fw fa-refresh" />
-//             {date.format(fakeDate).fromNow()}
-//         </span>
-//     ),
-//     {
-//       inline: true,
-//     }
-//   ) .addWithInfo(
-//     'duration',
-//     'Desc',
-//     () => (
-//         <span>
-//             <i className="fa fa-fw fa-clock-o"></i>
-//             <span>4 min 33 sec</span>
-//         </span>
-//     ),
-//     {
-//         inline: true,
-//     }
-// )
-// ;
-
-
+    .addWithInfo(
+        'default',
+        'Desc',
+        () => (
+            <CreatedWithIcon createdTime={fakeDate}/>
+        ),
+        {
+            inline: true,
+        }
+    )
+    .addWithInfo(
+        'synced ago',
+        'Desc',
+        () => (
+            <TimeLabelSynced createdTime={fakeDate}/>
+        ),
+        {
+            inline: true,
+        }
+    )
+    // .addWithInfo(
+    //     'duration',
+    //     'Desc',
+    //     () => (
+    //     <TimeLabelDuration startTime={fakeDate} endTime="2017-03-28 13:52:08"/>
+    //
+    //     ),
+    //     {
+    //         inline: true,
+    //     }
+    // )
+;
 
 
 //
