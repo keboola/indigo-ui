@@ -5,7 +5,7 @@ import { Modal, Button } from 'react-bootstrap';
 
 storiesOf('Modal')
   .addWithInfo(
-    'default',
+    '🆕 Modal Yesno',
     'Desc',
     () => (
         <div className="static-modal">
@@ -15,14 +15,13 @@ storiesOf('Modal')
                 </Modal.Header>
 
                 <Modal.Body>
-                    One fine body...
+                    Is this a question?
                 </Modal.Body>
 
                 <Modal.Footer>
-                    <Button>Close</Button>
-                    <Button bsStyle="primary">Save changes</Button>
+                    <Button>No</Button>
+                    <Button bsStyle="primary">Yes</Button>
                 </Modal.Footer>
-
             </Modal.Dialog>
         </div>
     ),

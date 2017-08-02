@@ -4,7 +4,7 @@ import { Checkbox } from 'react-bootstrap';
 
 storiesOf('Checkbox')
   .addWithInfo(
-    'default',
+    '🆕 Checkbox animated',
     'Desc',
     () => (
        <Checkbox>Remember me</Checkbox>

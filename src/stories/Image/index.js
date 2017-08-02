@@ -16,7 +16,7 @@ storiesOf('Image')
         }
     )
     .addWithInfo(
-        'avatar',
+        '🆕 Avatar',
         'Desc',
         () => (
             <Image src={imageFile} rounded width="40" height="40"/>

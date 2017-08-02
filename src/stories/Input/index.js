@@ -16,23 +16,9 @@ storiesOf('Input')
             inline: true,
         }
     )
-    .addWithInfo(
-        'with validation',
-        'Fancy demo here: https://react-bootstrap.github.io/components.html#forms',
-        () => (
 
-            <FormGroup controlId="formValidationSuccess1" validationState="success">
-                <ControlLabel>Input with success</ControlLabel>
-                <FormControl type="text"/>
-                <HelpBlock>Help text with validation state.</HelpBlock>
-            </FormGroup>
-        ),
-        {
-            inline: true,
-        }
-    )
     .addWithInfo(
-        'configuration edit input',
+        'KBC - Configuration edit input',
         'seen here: https://connection.keboola.com/admin/projects/2376/extractors/esnerda.ex-ares/282215725',
         () => (
             <div className="row kbc-header">
@@ -62,9 +48,8 @@ storiesOf('Input')
             inline: true,
         }
     )
-
     .addWithInfo(
-        'configuration edit input (transformation)',
+        'KBC - configuration edit input (transformation)',
         'seen here: https://connection.keboola.com/admin/projects/2376/transformations/bucket/301021305/transformation/301021375',
         () => (
             <div className="kbc-row">
@@ -111,9 +96,8 @@ storiesOf('Input')
             inline: true,
         }
     )
-
     .addWithInfo(
-        'notification input',
+        'KBC - Notification input',
         'seen here: https://connection.keboola.com/admin/projects/2376/orchestrations/263622569/notifications',
         () => (
             <div className="col-xs-4 form-inline kbc-inline-edit">
@@ -129,5 +113,17 @@ storiesOf('Input')
             inline: true,
         }
     )
-
-;
+    .addWithInfo(
+        '🆕 Input & validation',
+        'Fancy demo here: https://react-bootstrap.github.io/components.html#forms',
+        () => (
+            <FormGroup controlId="formValidationSuccess1" validationState="success">
+                <ControlLabel>Input with success</ControlLabel>
+                <FormControl type="text"/>
+                <HelpBlock>Help text with validation state.</HelpBlock>
+            </FormGroup>
+        ),
+        {
+            inline: true,
+        }
+    );

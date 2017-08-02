@@ -7,7 +7,7 @@ const fakeDate = "2017-03-28 13:34:08"
 
 storiesOf('Datepicker')
     .addWithInfo(
-        'default',
+        '🆕 Datepicker for Orchestrator',
         'https://github.com/Hacker0x01/react-datepicker',
         () => (
             <DatePicker

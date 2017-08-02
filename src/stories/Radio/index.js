@@ -4,7 +4,7 @@ import { Radio } from 'react-bootstrap';
 
 storiesOf('Radio')
   .addWithInfo(
-    'default',
+    '🆕 Radio animated',
     'Desc',
     () => (
         <span>

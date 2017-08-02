@@ -5,10 +5,10 @@ import {FormGroup, FormControl, ControlLabel, HelpBlock, FieldGroup, Checkbox, R
 
 storiesOf('Form')
     .addWithInfo(
-        'responsive layout',
+        '🆕 Form horizontal responsive',
         'Desc',
         () => (
-            <form class="form-horizontal">
+            <form className="form-horizontal">
                 <FormGroup>
                     <ControlLabel className="col-sm-2">Select</ControlLabel>
                     <div className="col-sm-10">

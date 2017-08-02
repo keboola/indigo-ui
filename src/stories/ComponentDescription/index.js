@@ -2,10 +2,10 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {Button} from 'react-bootstrap';
 
-storiesOf('ComponentDescription')
+storiesOf('Component Description')
     .addWithInfo(
-        'default',
-        'Desc',
+        'KBC - Component Description',
+        '',
         () => (
             <div className="row">
                 <div className="col-md-6">
@@ -33,7 +33,7 @@ storiesOf('ComponentDescription')
                 </div>
                 <div className="col-md-6">
                     <div className="kbcVendorInfo">
-                        <div data-keboolaid=".0.3.0.1.0.1.1.0.0">
+                        <div>
                             <span>Component developed by</span>
                             <address>
                                 <strong>David Ešner</strong>

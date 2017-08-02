@@ -8,8 +8,8 @@ storiesOf('Icons')
         'Desc',
         () => (
             <div>
-            <i class="kbc-icon-transformations"></i>
-            <i class="kbc-icon-extractors"></i>
+            <i className="kbc-icon-transformations"></i>
+            <i className="kbc-icon-extractors"></i>
             </div>
         ),
         {

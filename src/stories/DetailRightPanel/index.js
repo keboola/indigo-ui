@@ -2,9 +2,9 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {Button} from 'react-bootstrap';
 
-storiesOf('DetailRightPanel')
+storiesOf('Detail Actions')
     .addWithInfo(
-        'default',
+        'KBC - Detail Actions',
         'Desc',
         () => (
             <div className="kbc-main-sidebar" >

@@ -12,14 +12,11 @@ function logChange(val) {
     console.log("Selected: " + JSON.stringify(val));
 }
 
-
-
 storiesOf('Select')
   .addWithInfo(
-    'default',
+    'KBC - Select',
     'https://github.com/JedWatson/react-select',
     () => (
-
         <Select
             name="form-field-name"
             value="one"

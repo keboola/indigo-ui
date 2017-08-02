@@ -4,8 +4,8 @@ import {Button} from 'react-bootstrap';
 
 storiesOf('Breadcrumbs')
     .addWithInfo(
-        'default',
-        'Desc',
+        'KBC - Breadcrumbs @ header',
+        '',
         () => (
             <div className="kbc-title"><span ><span className="kb-sapi-component-icon"><img
                 src="https://d1ycqiwapkz1gh.cloudfront.net/icons/esnerda.ex-ares/32/1.png" width="32" height="32" />

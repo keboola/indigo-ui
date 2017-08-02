@@ -5,7 +5,7 @@ import { Alert } from 'react-bootstrap';
 
 storiesOf('Notification')
     .addWithInfo(
-        'default',
+        'KBC - Notification @ App',
         'Desc',
         () => (
             <div className="kbc-notifications">

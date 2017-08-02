@@ -1,89 +1,11 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import {Button} from 'react-bootstrap';
+import {Button, Accordion, Panel} from 'react-bootstrap';
 
 storiesOf('Collapsible')
-    .addWithInfo(
-        'google writer table',
-        'seen on https://connection.keboola.com/admin/projects/2376/writers/wr-google-drive/mysecondgdrivewriter',
-        () => (
 
-            <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table">
-                <div className="panel panel-default">
-                    <div className="panel-heading">
-                        <span className="panel-title">
-                        <a aria-expanded="false" aria-selected="false" className="collapsed">
-                            <span className="table">
-                                <span className="tbody">
-                                    <span className="tr">
-                                        <span className="td">
-                                            in.c-keboola-ex-facebook-253350349
-                                        </span>
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                        </span>
-                    </div>
-                    <div className="panel-collapse collapse in" aria-hidden="false">
-                        <div className="panel-body">
-                            <div className="row">
-                                <div className="table table-striped table-hover">
-                                    <div className="thead">
-                                        <div className="tr">
-                                            <span className="th"><strong>Table name</strong></span>
-                                            <span className="th"></span>
-                                            <span className="th"><strong>Title</strong></span>
-                                            <span className="th"><strong>Operation</strong></span><span
-                                            className="th"><strong>Type</strong></span><span
-                                            className="th"><strong>Folder</strong></span>
-                                        </div>
-                                    </div>
-                                    <div className="tbody">
-                                        <div className="tr">
-                                <span className="td">
-                                    <span>
-                                        <span className="kbc-sapi-table-link">accounts</span>
-                                        <span></span>
-                                    </span></span>
-                                            <span className="td"><i className="kbc-icon-arrow-right"></i></span>
-                                <span className="td"><span>
-                                    <span>account table</span>
-                                    <div>
-                                        <button className="btn btn-link btn-sm">
-                                            <small>Link To Google Drive</small>
-                                        </button>
-                                    </div>
-                                </span>
-                                </span>
-                                            <span className="td"><span>create</span></span>
-                                            <span className="td"><span>sheet</span></span>
-                                            <span className="td">KEBOOLA</span>
-                                <span className="td text-right kbc-no-wrap"><button className="btn btn-link">
-                                    <i className="fa fa-fw kbc-icon-pencil"></i></button>
-                                    <span>
-                                        <button className="btn btn-link">
-                                        <i className="kbc-icon-cup"></i>
-                                        </button></span>
-                                    <button type="button" className="btn btn-link btn btn-default">
-                                        <i className="fa fa-fw fa fa-play fa-fw"></i><span> </span>
-                                    </button>
-                                </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        ),
-        {
-            inline: true,
-        }
-    )
     .addWithInfo(
-    'input mapping',
+    'KBC - Collapsible @ Input Mapping',
     'seen on https://connection.keboola.com/admin/projects/2376/transformations/bucket/253380663/transformation/259376467',
     () => (
 
@@ -168,7 +90,7 @@ storiesOf('Collapsible')
     }
 )
 .addWithInfo(
-    'job detail',
+    'KBC - Collapsible @ Job Detail',
     'seen on https://connection.keboola.com/admin/projects/2376/jobs/300352618?q=',
     () => (
         <div role="tablist" className="kbc-accordion kbc-panel-heading-with-table panel-group">
@@ -212,7 +134,7 @@ storiesOf('Collapsible')
         inline: true,
     }
 ).addWithInfo(
-    'Transformations  list',
+    'KBC - Collapsible @ Transformations',
     'seen on https://connection.keboola.com/admin/projects/2376/jobs/300352618?q=',
     () => (
         <div className="panel panel-default">
@@ -258,7 +180,7 @@ storiesOf('Collapsible')
     }
 )
 .addWithInfo(
-    'Gdrive Ex - sheet picker',
+    'KBC - Collapsible @ Gdrive EX',
     'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-drive/253384272',
     () => (
         <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table">
@@ -287,9 +209,87 @@ storiesOf('Collapsible')
         inline: true,
     }
 )
+    .addWithInfo(
+        'KBC - Collapsibe @ Gdrive WR',
+        'seen on https://connection.keboola.com/admin/projects/2376/writers/wr-google-drive/mysecondgdrivewriter',
+        () => (
 
+            <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table">
+                <div className="panel panel-default">
+                    <div className="panel-heading">
+                        <span className="panel-title">
+                        <a aria-expanded="false" aria-selected="false" className="collapsed">
+                            <span className="table">
+                                <span className="tbody">
+                                    <span className="tr">
+                                        <span className="td">
+                                            in.c-keboola-ex-facebook-253350349
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        </span>
+                    </div>
+                    <div className="panel-collapse collapse in" aria-hidden="false">
+                        <div className="panel-body">
+                            <div className="row">
+                                <div className="table table-striped table-hover">
+                                    <div className="thead">
+                                        <div className="tr">
+                                            <span className="th"><strong>Table name</strong></span>
+                                            <span className="th"></span>
+                                            <span className="th"><strong>Title</strong></span>
+                                            <span className="th"><strong>Operation</strong></span><span
+                                            className="th"><strong>Type</strong></span><span
+                                            className="th"><strong>Folder</strong></span>
+                                        </div>
+                                    </div>
+                                    <div className="tbody">
+                                        <div className="tr">
+                                <span className="td">
+                                    <span>
+                                        <span className="kbc-sapi-table-link">accounts</span>
+                                        <span></span>
+                                    </span></span>
+                                            <span className="td"><i className="kbc-icon-arrow-right"></i></span>
+                                <span className="td"><span>
+                                    <span>account table</span>
+                                    <div>
+                                        <button className="btn btn-link btn-sm">
+                                            <small>Link To Google Drive</small>
+                                        </button>
+                                    </div>
+                                </span>
+                                </span>
+                                            <span className="td"><span>create</span></span>
+                                            <span className="td"><span>sheet</span></span>
+                                            <span className="td">KEBOOLA</span>
+                                <span className="td text-right kbc-no-wrap"><button className="btn btn-link">
+                                    <i className="fa fa-fw kbc-icon-pencil"></i></button>
+                                    <span>
+                                        <button className="btn btn-link">
+                                        <i className="kbc-icon-cup"></i>
+                                        </button></span>
+                                    <button type="button" className="btn btn-link btn btn-default">
+                                        <i className="fa fa-fw fa fa-play fa-fw"></i><span> </span>
+                                    </button>
+                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ),
+        {
+            inline: true,
+        }
+    )
 .addWithInfo(
-    'Good data writer',
+    'KBC - Collapsibe @ GD WR',
     'seen on https://connection.keboola.com/admin/projects/2376/writers/gooddata-writer/hdfshfsdh',
     () => (
         <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table">
@@ -330,7 +330,7 @@ storiesOf('Collapsible')
 )
 
 .addWithInfo(
-    'Profiles picker',
+    'KBC - Collapsible @ GA EX Profiles',
     'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
     () => (
         <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table'">
@@ -431,5 +431,23 @@ storiesOf('Collapsible')
         inline: true,
     }
 )
-
-;
+.addWithInfo(
+    '🆕 Collapsible working  example',
+    'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
+    () => (
+        <Accordion>
+            <Panel header="Collapsible Group Item #1" eventKey="1">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </Panel>
+            <Panel header="Collapsible Group Item #2" eventKey="2">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </Panel>
+            <Panel header="Collapsible Group Item #3" eventKey="3">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </Panel>
+        </Accordion>
+    ),
+    {
+        inline: true,
+    }
+);

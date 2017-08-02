@@ -4,8 +4,8 @@ import { Loader } from 'kbc-react-components';
 
 storiesOf('Loader')
   .addWithInfo(
-    'default',
-    'Desc',
+    'KBC - Loader',
+    '',
     () => (
       <Loader classNamee="fa-fw" />
     ),
