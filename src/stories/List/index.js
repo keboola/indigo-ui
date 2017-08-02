@@ -2,9 +2,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {ListGroup, ListGroupItem, Label} from 'react-bootstrap';
 
-
 storiesOf('List')
-
     .addWithInfo(
         'KBC - List with actions',
         'Desc',
@@ -77,7 +75,7 @@ storiesOf('List')
         }
     )
     .addWithInfo(
-        'KBC - List @ settings',
+        'KBC - List @ Settings',
         'SEEN ON SETTINGS & here: https://connection.keboola.com/admin/projects/2376/storage#/tokens/69940',
         () => (
             <div className="container-fluid kbc-project-details">
@@ -184,7 +182,7 @@ storiesOf('List')
         }
     )
     .addWithInfo(
-        'KBC - List @ event detail',
+        'KBC - List @ Event Detail',
         'seen here: https://connection.keboola.com/admin/projects/2376/storage#/',
         () => (
             <div className="tab-pane active" id="tableOverview">
@@ -224,7 +222,7 @@ storiesOf('List')
         }
     )
     .addWithInfo(
-        'KBC - List @ job detail',
+        'KBC - List @ Job Detail',
         'seen here: https://connection.keboola.com/admin/projects/2376/jobs/302856208?q=',
         () => (
             <div className="table kbc-table-border-vertical kbc-detail-table"
@@ -282,7 +280,7 @@ storiesOf('List')
         }
     )
     .addWithInfo(
-        'KBC - List @ right panel',
+        'KBC - List @ Detail Actions',
         'seen here: https://connection.keboola.com/admin/projects/2376/extractors/esnerda.ex-ares/282215725',
         () => (
             <div>
@@ -357,7 +355,7 @@ storiesOf('List')
         }
     )
     .addWithInfo(
-        'KBC - List @ input mapping',
+        'KBC - List @ Input Mapping',
         'seen here: https://connection.keboola.com/admin/projects/2376/extractors/esnerda.ex-ares/282215725',
         () => (
             <ul className="clearfix list-group">
@@ -388,7 +386,7 @@ storiesOf('List')
         }
     )
     .addWithInfo(
-        'KBC - Tree List @ job detail',
+        'KBC - Tree List @ Job Detail',
         'seen here: https://connection.keboola.com/admin/projects/2376/jobs/302856208?q=',
         () => (
             <div className="kb-tree">
@@ -456,7 +454,7 @@ storiesOf('List')
         }
     )
     .addWithInfo(
-        'KBC - Tree List @ storage',
+        'KBC - Tree List @ Storage',
         'seen here: https://connection.keboola.com/admin/projects/2376/storage#/',
         () => (
             <div className="well well-small sidebar">
@@ -878,7 +876,6 @@ storiesOf('List')
 
                 </ul>
             </div>
-
         ),
         {
             inline: true,
