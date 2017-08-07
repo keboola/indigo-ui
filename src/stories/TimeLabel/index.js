@@ -1,7 +1,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import CreatedWithIcon from '../../common/CreatedWithIcon.jsx';
-import TimeLabelSynced from '../../common/TimeLabelSynced.jsx';
+import CreatedWithIcon from '../../static/common/CreatedWithIcon.jsx';
+import TimeLabelSynced from '../../static/common/TimeLabelSynced.jsx';
 
 const fakeDate = "2017-03-28 13:34:08"
 

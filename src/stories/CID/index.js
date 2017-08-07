@@ -3,8 +3,8 @@ import {storiesOf} from '@storybook/react';
 import {Image} from 'react-bootstrap';
 
 
-import logoWide from '../../CID/logoWideBitmap.png';
-import logoSquare from '../../CID/logoSquareBitmap.png';
+import logoWide from '../../static/CID/logoWideBitmap.png';
+import logoSquare from '../../static/CID/logoSquareBitmap.png';
 
 storiesOf('CID')
 
@@ -54,7 +54,7 @@ storiesOf('CID')
         'DL jpg http://indigo.keboola.com ',
         () => (
             <div className="">
-                <Image src={logoWide} rounded width="200"/>
+                <Image src={logoWide} rounded width="200" className="center-block"/>
             </div>
         ),
         {
@@ -67,7 +67,7 @@ storiesOf('CID')
         'seen on ',
         () => (
             <div className="">
-                <Image src={logoSquare} rounded width="200"/>
+                <Image src={logoSquare} rounded width="200" className="center-block"/>
             </div>
         ),
         {

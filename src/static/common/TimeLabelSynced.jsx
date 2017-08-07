@@ -1,5 +1,5 @@
 import React from 'react';
-import date from '../static/utils/date.js';
+import date from '../utils/date.js';
 
 export default React.createClass({
     displayName: 'TimeLabelSynced',
