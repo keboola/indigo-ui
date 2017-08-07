@@ -39,6 +39,11 @@ module.exports = function(grunt) {
           }
         ]
       },
+      revision: {
+        expand: true,
+        cwd: 'public/',
+        src: ['**']
+      }
     },
     watch: {
       less: {
@@ -56,6 +61,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
+  grunt.registerTask('read-revision', function() {
+    grunt.task.requires("build");
+    grunt.event.once("git-describe", function(rev) {
+      grunt.log.writeln("Git Revision: " + rev[0]);
+      grunt.config("copy.revision.dest", 'revision/' + rev[0] + '/');
+    });
+    grunt.task.run("git-describe");
+  });
+
   grunt.registerTask('build-css', ['copy:dev', 'less:development']);
+  grunt.registerTask('prepare-revision', ['read-revision', 'copy:revision']);
 
 };
