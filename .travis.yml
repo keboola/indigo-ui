@@ -12,6 +12,7 @@ script:
   - yarn run build-css
   - yarn build-storybook
   - 'if [ "$TRAVIS_BRANCH" = "master" ]; then ./deploy-storybook.sh; fi'
+  - grunt build prepare-revision
 
 cache: yarn
 
