@@ -27,6 +27,7 @@ function loadStories() {
   require('../src/stories/Modal');
   require('../src/stories/Image');
   require('../src/stories/Icons')
+  require('../src/stories/CID')
   // require('../src/stories/Typography');
   // require('../src/stories/Guidelines');
 }
