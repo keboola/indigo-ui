@@ -10,6 +10,12 @@ body {
   padding: 16px 0;
 }
 
+@CIDcolor1: #fff;
+@CIDcolor2: @gray-base;
+@CIDcolor3: #0199F1;
+@CIDcolor4: #6b6b6b;
+@CIDcolor5: #000;
+
 .palette {
   display: flex;
   flex-direction: row;
@@ -24,19 +30,53 @@ body {
     text-align: center;
   }
   &-color-1 {
-    background: @gray-base;
-    color: #fff;
+    background: @CIDcolor1;
+
   }
   &-color-2 {
-    background: @link-color;
+    background: @CIDcolor2;
+    color: #fff;
   }
   &-color-3 {
-    background: @brand-success;
+    background: @CIDcolor3;
+    color: #fff;
   }
   &-color-4 {
-    background: @brand-success;
+    background: @CIDcolor4;
+    color: #fff;
   }
   &-color-5 {
-    background: @brand-success;
+    background: @CIDcolor5;
+    color: #fff;
+  }
+}
+
+.logo{
+  padding: 10px;
+  margin: 10px;
+  &-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+
+  }
+  &-color-1 {
+    background: @CIDcolor5;
+    path {
+      fill: @CIDcolor1;
+    }
+  }
+  &-color-2 path{
+    fill: @CIDcolor2;
+  }
+  &-color-3 path{
+    fill: @CIDcolor3;
+  }
+  &-color-4 path{
+    fill: @CIDcolor4;
+  }
+  &-color-5 path{
+    fill: @CIDcolor5;
   }
 }
