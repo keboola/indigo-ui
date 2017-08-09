@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          "public/css/indigo.uncompressed.css": "src/indigo/less/indigo-storybook-wrapper.less"
+          "public/css/indigo.uncompressed.css": "src/styles/indigo-storybook.less"
         }
       },
     },
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     },
     watch: {
       less: {
-        files: ['src/indigo/less/indigo-storybook-wrapper.less'],
+        files: ['src/styles/indigo-storybook.less'],
         tasks: ['less:development'],
         options: {
           spawn: false,
