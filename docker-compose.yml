@@ -12,3 +12,10 @@ services:
     working_dir: /code
     tty: true
     command: sh -c 'yarn && yarn run storybook'
+
+  aws:
+    image: quay.io/keboola/aws-cli
+    tty: true
+    volumes:
+      - ./:/code
+    working_dir: /code
