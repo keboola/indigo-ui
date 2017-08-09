@@ -8,7 +8,7 @@ Styleguide app Indigo UI
 
 - Install grunt: `npm install -g grunt`
 - Install dependencies: `yarn`
-- Run storybook `yarn run storybook`
+- Run storybook `yarn storybook`
 - Open browser at [http://localhost:9009/](http://localhost:9009/)
 
 ### Docker
