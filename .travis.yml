@@ -8,6 +8,7 @@ install:
 script:
   - yarn run build-css
   - yarn build-storybook
+  - grunt build prepare-revision
 
 cache: yarn
 
