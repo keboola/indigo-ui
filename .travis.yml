@@ -1,5 +1,8 @@
 language: node_js
 
+services:
+  - docker
+
 node_js: "7"
 
 install:
@@ -8,6 +11,7 @@ install:
 script:
   - yarn run build-css
   - yarn build-storybook
+  - 'if [ "$TRAVIS_BRANCH" = "master" ]; then ./deploy-storybook.sh; fi'
 
 cache: yarn
 
