@@ -4,7 +4,7 @@
     width: auto;
 
     > .container-fluid {
-        margin: 15px 15px 0;
+        margin: 15px 15px 15px;
         padding: 0;
     }
     &:not(.kbc-main-with-sidebar) > .container-fluid {
@@ -34,10 +34,9 @@
 .kbc-main-content {
     padding: 0;
     border: solid 2px #ededf0;
-    border-bottom: none;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
     background: #fff;
-    min-height: 90vh;
+    min-height: 88vh;
 }
 
 .kbc-main-sidebar {
@@ -215,4 +214,8 @@
         margin-bottom: 2vh;
         display: block;
     }
+}
+
+.kbc-components-list > div:last-of-type > .table {
+    border-bottom: 0
 }
