@@ -8,7 +8,7 @@ import favicon from '../../static/CID/favicon.png';
 storiesOf('CID')
 
     .addWithInfo(
-        'Palette',
+        '🆕 Palette',
         '',
         () => (
             <div className="palette">
@@ -32,7 +32,7 @@ storiesOf('CID')
     )
 
     .addWithInfo(
-        'Typography',
+        '🆕 Typography',
         'Font Gotham Rounded is available through cloud app https://www.typography.com/',
         () => (
             <div>
@@ -60,7 +60,7 @@ storiesOf('CID')
     )
 
     .addWithInfo(
-        'Logo Wide',
+        '🆕 Logo Wide',
         'Download our CID pack here: https://indigo.keboola.com/Keboola-CID-pack.zip',
         () => (
             <div className="logo-container">
@@ -147,7 +147,7 @@ storiesOf('CID')
     )
 
     .addWithInfo(
-        'Logo Square',
+        '🆕 Logo Square',
         'Download our CID pack here: https://indigo.keboola.com/Keboola-CID-pack.zip',
         () => (
             <div className="logo-container">
@@ -199,7 +199,7 @@ storiesOf('CID')
     )
 
     .addWithInfo(
-        'Logo Extension',
+        '🆕 Logo Extension',
         'Download our CID pack here: https://indigo.keboola.com/Keboola-CID-pack.zip',
         () => (
             <div className="logo-container">
@@ -341,7 +341,7 @@ storiesOf('CID')
     )
 
     .addWithInfo(
-        'Octopussy',
+        '🆕 Octopussy',
         'Download our CID pack here: https://indigo.keboola.com/Keboola-CID-pack.zip',
         () => (
             <div className="logo-container">
@@ -401,7 +401,7 @@ storiesOf('CID')
     )
 
     .addWithInfo(
-        'Favicon',
+        '🆕 Favicon',
         'seen on keboola.connection.com',
         () => (
             <Image src={favicon}/>
