@@ -61,7 +61,7 @@ storiesOf('CID')
 
     .addWithInfo(
         'Logo Wide',
-        'Download our CID pack here: http://indigo.keboola.com/Keboola-CID-pack.zip',
+        'Download our CID pack here: https://indigo.keboola.com/Keboola-CID-pack.zip',
         () => (
             <div className="logo-container">
                 <div className="logo logo-color-1">
@@ -148,7 +148,7 @@ storiesOf('CID')
 
     .addWithInfo(
         'Logo Square',
-        'Download our CID pack here: http://indigo.keboola.com/Keboola-CID-pack.zip',
+        'Download our CID pack here: https://indigo.keboola.com/Keboola-CID-pack.zip',
         () => (
             <div className="logo-container">
                 <div className="logo logo-color-1">
@@ -200,7 +200,7 @@ storiesOf('CID')
 
     .addWithInfo(
         'Logo Extension',
-        'Download our CID pack here: http://indigo.keboola.com/Keboola-CID-pack.zip',
+        'Download our CID pack here: https://indigo.keboola.com/Keboola-CID-pack.zip',
         () => (
             <div className="logo-container">
                 <div className="logo logo-color-1">
@@ -342,7 +342,7 @@ storiesOf('CID')
 
     .addWithInfo(
         'Octopussy',
-        'Download our CID pack here: http://indigo.keboola.com/Keboola-CID-pack.zip',
+        'Download our CID pack here: https://indigo.keboola.com/Keboola-CID-pack.zip',
         () => (
             <div className="logo-container">
                 <div className="logo logo-color-1">
