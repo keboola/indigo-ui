@@ -24,11 +24,12 @@ function loadStories() {
   require('../src/stories/Datepicker');
   require('../src/stories/Hint');
   require('../src/stories/StatusLabel');
-  require('../src/stories/Modal');
+  require('../src/stories/Modal')
+  require('../src/stories/Scrollbar');
   require('../src/stories/Image');
   require('../src/stories/Icons')
   require('../src/stories/CID')
-  // require('../src/stories/Typography');
+  
   // require('../src/stories/Guidelines');
 }
 
