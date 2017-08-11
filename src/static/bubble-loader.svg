@@ -1,0 +1,365 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 120">
+    <style>
+        .octopussy {
+        -webkit-animation: octo 4.5s ease-in infinite;
+        animation: octo 4.5s ease-in infinite;
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+        fill:#25b8eb
+        }
+
+        .bubble {
+        opacity: 0;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+
+        }
+
+        .bubble-wrap {
+        opacity: 0.75
+        }
+
+        .bubble-wrap circle {
+        fill:#25b8eb
+        }
+
+        .bubble1 {
+        -webkit-animation: b1 3s linear infinite;
+        animation: b1 3s linear infinite;
+        }
+
+        .bubble2 {
+        -webkit-animation: b2 4s linear 1.8s infinite;
+        animation: b2 4s linear 1.8s infinite;
+        }
+
+        .bubble2x {
+        -webkit-animation: b2x 2s linear infinite;
+        animation: b2x 2s linear infinite;
+        }
+
+        .bubble3 {
+        -webkit-animation: b3 4s linear 0.3s infinite;
+        animation: b3 4s linear 0.3s infinite;
+        }
+
+        .bubble3x {
+        -webkit-animation: b3x 2s linear 0.3s infinite;
+        animation: b3x 2s linear 0.3s infinite;
+        }
+
+        .bubble4 {
+        -webkit-animation: b4 3s linear 0.8s infinite;
+        animation: b4 3s linear 0.8s infinite;
+        }
+
+        .bubble4x {
+        -webkit-animation: b4x 1s linear 0.8s infinite;
+        animation: b4x 1s linear 0.8s infinite;
+        }
+
+        @-webkit-keyframes octo {
+        0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+        }
+        50% {
+        -webkit-transform: translateY(-4%);
+        transform: translateY(-4%)
+        }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+        }
+        }
+
+        @keyframes octo {
+        0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+        }
+        50% {
+        -webkit-transform: translateY(-4%);
+        transform: translateY(-4%)
+        }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+        }
+        }
+
+        @-webkit-keyframes b1 {
+        0% {
+        -webkit-transform: translateY(0) scale(0.5);
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+        }
+        50% {
+        -webkit-transform: translateY(-350%) scale(1);
+        transform: translateY(-350%) scale(1);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateY(-900%) scale(2);
+        transform: translateY(-900%) scale(2);
+        opacity: 0;
+        }
+        }
+
+        @keyframes b1 {
+        0% {
+        -webkit-transform: translateY(0) scale(0.5);
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+        }
+        50% {
+        -webkit-transform: translateY(-350%) scale(1);
+        transform: translateY(-350%) scale(1);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateY(-900%) scale(2);
+        transform: translateY(-900%) scale(2);
+        opacity: 0;
+        }
+        }
+
+        @-webkit-keyframes b2 {
+        0% {
+        -webkit-transform: translateY(0) scale(0.6);
+        transform: translateY(0) scale(0.6);
+        opacity: 0;
+        }
+        50% {
+        -webkit-transform: translateY(-400%) scale(1);
+        transform: translateY(-400%) scale(1);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateY(-1000%) scale(1.4);
+        transform: translateY(-1000%) scale(1.4);
+        opacity: 0;
+        }
+        }
+
+        @keyframes b2 {
+        0% {
+        -webkit-transform: translateY(0) scale(0.6);
+        transform: translateY(0) scale(0.6);
+        opacity: 0;
+        }
+        50% {
+        -webkit-transform: translateY(-400%) scale(1);
+        transform: translateY(-400%) scale(1);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateY(-1000%) scale(1.4);
+        transform: translateY(-1000%) scale(1.4);
+        opacity: 0;
+        }
+        }
+
+        @-webkit-keyframes b2x {
+        0% {
+        -webkit-transform: translateX(-120%);
+        transform: translateX(-120%);
+        opacity: 1;
+        }
+        50% {
+        -webkit-transform: translateX(-160%);
+        transform: translateX(-160%);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateX(-120%);
+        transform: translateX(-120%);
+        opacity: 1;
+        }
+        }
+
+        @keyframes b2x {
+        0% {
+        -webkit-transform: translateX(-120%);
+        transform: translateX(-120%);
+        opacity: 1;
+        }
+        50% {
+        -webkit-transform: translateX(-160%);
+        transform: translateX(-160%);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateX(-120%);
+        transform: translateX(-120%);
+        opacity: 1;
+        }
+        }
+
+        @-webkit-keyframes b3 {
+        0% {
+        -webkit-transform: translateY(0) scale(0.4);
+        transform: translateY(0) scale(0.4);
+        opacity: 0;
+        }
+        50% {
+        -webkit-transform: translateY(-500%) scale(1.4);
+        transform: translateY(-500%) scale(1.4);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateY(-800%) scale(1.8);
+        transform: translateY(-800%) scale(1.8);
+        opacity: 0;
+        }
+        }
+
+        @keyframes b3 {
+        0% {
+        -webkit-transform: translateY(0) scale(0.4);
+        transform: translateY(0) scale(0.4);
+        opacity: 0;
+        }
+        50% {
+        -webkit-transform: translateY(-500%) scale(1.4);
+        transform: translateY(-500%) scale(1.4);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateY(-800%) scale(1.8);
+        transform: translateY(-800%) scale(1.8);
+        opacity: 0;
+        }
+        }
+
+        @-webkit-keyframes b3x {
+        0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+        }
+        50% {
+        -webkit-transform: translateX(30%);
+        transform: translateX(30%);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+        }
+        }
+
+        @keyframes b3x {
+        0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+        }
+        50% {
+        -webkit-transform: translateX(30%);
+        transform: translateX(30%);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+        }
+        }
+
+        @-webkit-keyframes b4 {
+        0% {
+        -webkit-transform: translateY(0) scale(0.2);
+        transform: translateY(0) scale(0.2);
+        opacity: 0;
+        }
+        50% {
+        -webkit-transform: translateY(-350%) scale(1);
+        transform: translateY(-350%) scale(1);
+        opacity: 0.7;
+        }
+        100% {
+        -webkit-transform: translateY(-850%) scale(2);
+        transform: translateY(-850%) scale(2);
+        opacity: 0;
+        }
+        }
+
+        @keyframes b4 {
+        0% {
+        -webkit-transform: translateY(0) scale(0.2);
+        transform: translateY(0) scale(0.2);
+        opacity: 0;
+        }
+        50% {
+        -webkit-transform: translateY(-350%) scale(1);
+        transform: translateY(-350%) scale(1);
+        opacity: 0.7;
+        }
+        100% {
+        -webkit-transform: translateY(-850%) scale(2);
+        transform: translateY(-850%) scale(2);
+        opacity: 0;
+        }
+        }
+
+        @-webkit-keyframes b4x {
+        0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+        }
+        50% {
+        -webkit-transform: translateX(-30%);
+        transform: translateX(-30%);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+        }
+        }
+
+        @keyframes b4x {
+        0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+        }
+        50% {
+        -webkit-transform: translateX(-30%);
+        transform: translateX(-30%);
+        opacity: 1;
+        }
+        100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+        }
+        }
+
+    </style>
+    <g transform="translate(37 -48)">
+        <path class="octopussy"
+              d="M-20.966 131.797c1.498 0 2.713 1.194 2.713 2.66 0 1.474-1.215 2.67-2.713 2.67-1.504 0-2.722-1.193-2.722-2.666 0-1.472 1.215-2.66 2.72-2.66m7.15 0c1.498 0 2.718 1.188 2.718 2.66 0 1.474-1.22 2.668-2.72 2.668-1.5 0-2.72-1.194-2.72-2.667 0-1.472 1.215-2.66 2.72-2.66m-3.314 9.282c8.432 0 15.856-11.31 15.856-25.635.002-14.316-5.398-16.357-15.86-16.357-10.457 0-16.37 2.04-16.37 16.365 0 14.324 7.097 25.634 16.374 25.634m18.6 13.618c-1.137-1.9-2.413-3.375-3.72-4.592-1.32-1.215-2.637-2.176-3.92-3.135-.608-.456-1.234-.872-1.87-1.255.636-.38 1.262-.8 1.87-1.253 2.932-2.19 5.485-5.143 7.643-8.734.764-1.267.335-2.902-.962-3.65-1.293-.75-2.96-.325-3.722.944-1.868 3.11-3.992 5.514-6.253 7.2-2.42 1.795-4.8 2.687-7.25 2.826-.22-.008-.446-.013-.67-.013-.223 0-.448 0-.672.01-2.444-.14-4.826-1.033-7.248-2.824-2.258-1.678-4.382-4.087-6.253-7.195-.764-1.267-2.43-1.69-3.723-.944-1.292.75-1.723 2.38-.96 3.65 2.157 3.592 4.71 6.546 7.643 8.734.607.455 1.23.874 1.866 1.254-.636.382-1.26.8-1.866 1.256-1.282.956-2.605 1.917-3.917 3.134-1.31 1.215-2.59 2.693-3.727 4.592-.762 1.266-.336 2.9.962 3.644 1.292.75 2.958.328 3.72-.938.88-1.455 1.776-2.486 2.786-3.43 1.008-.94 2.155-1.782 3.468-2.764.64-.476 1.282-.884 1.92-1.236-.077.135-.15.277-.227.42-1.843 3.462-3.747 8.276-3.752 13.757 0 1.473 1.214 2.66 2.718 2.66 1.5 0 2.72-1.187 2.72-2.66-.008-4.23 1.535-8.3 3.134-11.288.486-.91.972-1.713 1.41-2.395.466.716.978 1.568 1.487 2.538 1.577 2.97 3.07 6.982 3.06 11.147 0 1.473 1.215 2.662 2.722 2.662 1.498 0 2.718-1.19 2.718-2.662-.01-5.478-1.912-10.29-3.755-13.757l-.227-.414c.638.35 1.277.76 1.92 1.235 1.31.976 2.455 1.82 3.463 2.764 1.014.94 1.913 1.972 2.786 3.424.507.843 1.414 1.313 2.344 1.313.47 0 .943-.12 1.378-.37 1.292-.75 1.726-2.378.963-3.645"
+              />
+        <g class="bubble-wrap">
+            <circle class="bubble bubble1" r="2"  cx="-10.593" cy="98.384"/>
+            <g class="bubble bubble2x">
+                <circle class="bubble bubble2" r="2"  cx="1.46" cy="95.794"/>
+            </g>
+            <g class="bubble bubble3x">
+                <circle class="bubble bubble3" r="2"  cx="-32.326" cy="98.337"/>
+            </g>
+            <g class="bubble bubble4x">
+                <circle class="bubble bubble4" r="2"  cx="-20.193" cy="95.747"/>
+            </g>
+        </g>
+    </g>
+</svg>
