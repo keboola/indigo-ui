@@ -1,7 +1,7 @@
 {
-  "name": "indigo-ui",
+  "name": "@keboola/indigo-ui",
+  "description": "Keboola UI library",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
     "fixed-data-table": "^0.6.4",
@@ -41,6 +41,22 @@
     "storybook": "npm-run-all -p watch-css run-storybook",
     "build-css": "grunt build-css",
     "watch-css": "npm run build-css && grunt watch",
-    "build-storybook": "build-storybook -s public -o build"
-  }
+    "build-storybook": "build-storybook -s public -o build",
+    "build-dist-css": "grunt build prepare-revision"
+  },
+  "main": "src/components/index.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://github.com/keboola/indigo-ui.git"
+  },
+  "keywords": [
+    "keboola",
+    "ui"
+  ],
+  "author": "Keboola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keboola/indigo-ui/issues"
+  },
+  "homepage": "https://github.com/keboola/indigo-ui"
 }
