@@ -21,6 +21,8 @@ const demoHeaderContent3 = (
 
 const demoHeaderContent4 = "in.c-keboola-ex-facebook-253350349"
 const demoHeaderContent5 = "Keboola Connection"
+const demoHeaderContent6 = "Aug 1,2017 - Aug 14,2017"
+const demoHeaderContent7 = "0.000000430 credits"
 
 const demoHeaderContentMapping = (
     <span>
@@ -105,7 +107,6 @@ storiesOf('Collapsible')
             inline: true,
         }
     )
-
     .addWithInfo(
         'KBC - Collapsible @ Input Mapping',
         'seen on https://connection.keboola.com/admin/projects/2376/transformations/bucket/253380663/transformation/259376467',
@@ -298,7 +299,6 @@ storiesOf('Collapsible')
         '🆕 KBC - Collapsibe @ Gdrive component',
         '',
         () => (
-
             <Collapsible content={demoContent}
                          headerContent={demoHeaderContent4}
                          headerSize="sm"
@@ -351,7 +351,6 @@ storiesOf('Collapsible')
         '🆕 Collapsibe @ GD WR',
         'seen on https://connection.keboola.com/admin/projects/2376/writers/gooddata-writer/hdfshfsdh',
         () => (
-
             <Collapsible content={demoContent}
                          headerContent={demoHeaderContent4}
                          headerStatus={demoHeaderStatus}
@@ -389,6 +388,7 @@ storiesOf('Collapsible')
             inline: true,
         }
     )
+
     .addWithInfo(
         '🆕 Collapsible @ GA EX Profiles',
         'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
@@ -399,6 +399,124 @@ storiesOf('Collapsible')
             >
             </Collapsible>
         ),
+        {
+            inline: true,
+        }
+    )
+
+    .addWithInfo(
+        'KBC - Project Power',
+        'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
+        () => (
+            <div>
+                <h3>
+                    <span>Project Power from</span>
+                    <span>Mar 20, 2017
+                    </span>
+                    <span> to </span>
+                    <span>Aug 14, 2017
+                    </span>
+                </h3>
+                <div className="panel panel-default">
+                    <div className="panel-heading">
+                        <div className="row panel-title">
+                            <a aria-expanded="true" aria-selected="true">
+                                <div className="col-sm-8">
+                                    <strong>Aug 1,2017</strong>
+                                    <span> - </span>
+                                    <strong>
+                                        Aug 14,2017
+                                    </strong>
+                                </div>
+                                <div className="col-sm-4">
+                                    <strong>
+                                        <span>0.000000430 credits</span>
+                                    </strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="panel-collapse" aria-hidden="true">
+                        {demoContent}
+                    </div>
+                </div>
+                <div className="panel panel-default">
+                    <div className="panel-heading">
+                        <div className="row panel-title"
+                        ><a aria-expanded="false"
+                            aria-selected="false"
+                            className="collapsed"
+                        >
+                            <div className="col-sm-8">
+                                <strong>Jul 1,
+                                    2017</strong><span
+                            > - </span><strong
+                            >Jul 31,
+                                2017</strong></div>
+                            <div className="col-sm-4">
+                                <strong><span
+                                >0.004 credits</span></strong>
+                            </div>
+                        </a></div>
+                    </div>
+                    <div className="panel-collapse collapse" aria-hidden="true"
+                    >
+                        {demoContent}
+                    </div>
+                </div>
+                <div className="panel panel-default">
+                    <div className="panel-heading">
+                        <div className="row panel-title"
+                        ><a aria-expanded="false"
+                            aria-selected="false"
+                            className="collapsed"
+                        >
+                            <div className="col-sm-8">
+                                <strong>Jun 1,
+                                    2017</strong><span
+                            > - </span><strong
+                            >Jun 30,
+                                2017</strong></div>
+                            <div className="col-sm-4">
+                                <strong><span
+                                >0.000000527 credits</span></strong>
+                            </div>
+                        </a></div>
+                    </div>
+                    <div className="panel-collapse collapse" aria-hidden="true"
+                    >
+                        {demoContent}
+                    </div>
+                </div>
+            </div>
+        ),
+        {
+            inline: true,
+        }
+    )
+    .addWithInfo(
+        '🆕 Project Power',
+        'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
+        () => (
+            <div>
+            <Collapsible content={demoContent}
+                         headerContent={demoHeaderContent6}
+                         headerStatus={demoHeaderContent7}
+            >
+            </Collapsible>
+            <Collapsible content={demoContent}
+                         headerContent={demoHeaderContent6}
+                         headerStatus={demoHeaderContent7}
+            >
+            </Collapsible>
+            <Collapsible content={demoContent}
+                         headerContent={demoHeaderContent6}
+                         headerStatus={demoHeaderContent7}
+            >
+            </Collapsible>
+            </div>
+        ),
+
         {
             inline: true,
         }
