@@ -6,14 +6,14 @@ import {Button, Accordion, Panel} from "react-bootstrap";
 storiesOf('Collapsible')
 
     .addWithInfo(
-    'KBC - Collapsible @ Input Mapping',
-    'seen on https://connection.keboola.com/admin/projects/2376/transformations/bucket/253380663/transformation/259376467',
-    () => (
+        'KBC - Collapsible @ Input Mapping',
+        'seen on https://connection.keboola.com/admin/projects/2376/transformations/bucket/253380663/transformation/259376467',
+        () => (
 
-        <div className="kbc-panel-heading-with-table panel panel-default">
-            <div className="panel-heading">
-                <div className="panel-title">
-                    <a aria-expanded="true" aria-selected="true">
+            <div className="kbc-panel-heading-with-table panel panel-default">
+                <div className="panel-heading">
+                    <div className="panel-title">
+                        <a aria-expanded="true" aria-selected="true">
                 <span className="table">
                     <span className="tbody">
                         <span className="tr">
@@ -43,26 +43,26 @@ storiesOf('Collapsible')
                         </span>
                     </span>
                 </span>
-                    </a>
+                        </a>
+                    </div>
+                </div>
+                <div className="panel-collapse collapse in" aria-hidden="false">
+                    CONTENT
+
                 </div>
             </div>
-            <div className="panel-collapse collapse in" aria-hidden="false">
-                CONTENT
-
-            </div>
-        </div>
-    ),
-    {
-        inline: true,
-    }
-)
-.addWithInfo(
-    'KBC - Collapsible @ Job Detail',
-    'seen on https://connection.keboola.com/admin/projects/2376/jobs/300352618?q=',
-    () => (
-        <div role="tablist" className="kbc-accordion kbc-panel-heading-with-table panel-group">
-            <div className="panel panel-default">
-                <div className="panel-heading">
+        ),
+        {
+            inline: true,
+        }
+    )
+    .addWithInfo(
+        'KBC - Collapsible @ Job Detail',
+        'seen on https://connection.keboola.com/admin/projects/2376/jobs/300352618?q=',
+        () => (
+            <div role="tablist" className="kbc-accordion kbc-panel-heading-with-table panel-group">
+                <div className="panel panel-default">
+                    <div className="panel-heading">
                     <span className="panel-title">
                         <a role="tab" aria-expanded="true" aria-selected="true">
                             <span className="table">
@@ -79,19 +79,19 @@ storiesOf('Collapsible')
                             </span>
                         </a>
                     </span>
-                </div>
-                <div role="tabpanel" className="panel-collapse" aria-hidden="false">
-                    <div className="panel-body">
-                        CNTNT
+                    </div>
+                    <div role="tabpanel" className="panel-collapse" aria-hidden="false">
+                        <div className="panel-body">
+                            CNTNT
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    ),
-    {
-        inline: true,
-    }
-).addWithInfo(
+        ),
+        {
+            inline: true,
+        }
+    ).addWithInfo(
     'KBC - Collapsible @ Transformations',
     'seen on https://connection.keboola.com/admin/projects/2376/jobs/300352618?q=',
     () => (
@@ -116,28 +116,28 @@ storiesOf('Collapsible')
         inline: true,
     }
 )
-.addWithInfo(
-    'KBC - Collapsible @ Gdrive EX',
-    'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-drive/253384272',
-    () => (
-        <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table">
-            <div className="panel panel-default">
-                <div className="panel-heading"><span className="panel-title"><a aria-expanded="true"
-                                                                                aria-selected="true"><span
-                    className="table"><span className="tbody"><span className="tr"><span className="td"><span>Data analyst skill sets</span><span> </span></span></span></span></span></a></span>
-                </div>
-                <div className="panel-collapse collapse in" aria-hidden="false">
-                    <div className="panel-body">
-                        CONTENT
+    .addWithInfo(
+        'KBC - Collapsible @ Gdrive EX',
+        'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-drive/253384272',
+        () => (
+            <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table">
+                <div className="panel panel-default">
+                    <div className="panel-heading"><span className="panel-title"><a aria-expanded="true"
+                                                                                    aria-selected="true"><span
+                        className="table"><span className="tbody"><span className="tr"><span className="td"><span>Data analyst skill sets</span><span> </span></span></span></span></span></a></span>
+                    </div>
+                    <div className="panel-collapse collapse in" aria-hidden="false">
+                        <div className="panel-body">
+                            CONTENT
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    ),
-    {
-        inline: true,
-    }
-)
+        ),
+        {
+            inline: true,
+        }
+    )
     .addWithInfo(
         'KBC - Collapsibe @ Gdrive WR',
         'seen on https://connection.keboola.com/admin/projects/2376/writers/wr-google-drive/mysecondgdrivewriter',
@@ -162,7 +162,7 @@ storiesOf('Collapsible')
                     </div>
                     <div className="panel-collapse collapse in" aria-hidden="false">
                         <div className="panel-body">
-                           Content
+                            Content
                         </div>
                     </div>
                 </div>
@@ -172,13 +172,13 @@ storiesOf('Collapsible')
             inline: true,
         }
     )
-.addWithInfo(
-    'KBC - Collapsibe @ GD WR',
-    'seen on https://connection.keboola.com/admin/projects/2376/writers/gooddata-writer/hdfshfsdh',
-    () => (
-        <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table">
-            <div className="panel panel-default">
-                <div className="panel-heading">
+    .addWithInfo(
+        'KBC - Collapsibe @ GD WR',
+        'seen on https://connection.keboola.com/admin/projects/2376/writers/gooddata-writer/hdfshfsdh',
+        () => (
+            <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table">
+                <div className="panel panel-default">
+                    <div className="panel-heading">
                     <span className="panel-title">
                         <a aria-expanded="true" aria-selected="true">
                             <span className="table">
@@ -197,42 +197,42 @@ storiesOf('Collapsible')
                             </span>
                         </a>
                     </span>
-                </div>
-                <div className="panel-collapse collapse in" aria-hidden="false">
-                    <div className="panel-body">
-                        CNTNT
+                    </div>
+                    <div className="panel-collapse collapse in" aria-hidden="false">
+                        <div className="panel-body">
+                            CNTNT
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    ),
-    {
-        inline: true,
-    }
-)
+        ),
+        {
+            inline: true,
+        }
+    )
 
-.addWithInfo(
-    'KBC - Collapsible @ GA EX Profiles',
-    'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
-    () => (
-        <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table'">
-            <div className="profile-panel panel panel-default">
-                <div className="panel-heading">
+    .addWithInfo(
+        'KBC - Collapsible @ GA EX Profiles',
+        'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
+        () => (
+            <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table'">
+                <div className="profile-panel panel panel-default">
+                    <div className="panel-heading">
                     <span className="panel-title">
                         <a aria-expanded="true" aria-selected="true">
                             Keboola Connection
                         </a>
                     </span>
-                </div>
-                <div className="panel-collapse collapse in" aria-hidden="false">
-                    <div className="panel-body">
-                        CNTNT
+                    </div>
+                    <div className="panel-collapse collapse in" aria-hidden="false">
+                        <div className="panel-body">
+                            CNTNT
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    ),
-    {
-        inline: true,
-    }
-)
+        ),
+        {
+            inline: true,
+        }
+    )
