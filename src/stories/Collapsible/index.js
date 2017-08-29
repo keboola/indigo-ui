@@ -5,13 +5,13 @@ import Collapsible from "../../static/common/Collapsible";
 
 // DEMO VALUES
 const demoHeaderContent = (
-    <h3>Panel title</h3>
+    <h4>Panel title</h4>
 );
 
 const demoHeaderContent2 = (
     <h4>
         <span className="fa fa-fw fa-angle-right"></span>
-        <span>Parameters &amp; Results</span>
+        Parameters &amp; Results
     </h4>
 );
 
@@ -19,18 +19,18 @@ const demoHeaderContent3 = (
     <h4>My FB 2 GDrive transformation</h4>
 );
 
-const demoHeaderContent4 = "in.c-keboola-ex-facebook-253350349"
-const demoHeaderContent5 = "Keboola Connection"
-const demoHeaderContent6 = "Aug 1,2017 - Aug 14,2017"
-const demoHeaderContent7 = "0.000000430 credits"
+const demoHeaderContent4 = (<h4>in.c-keboola-ex-facebook-253350349</h4>);
+const demoHeaderContent5 = (<h4>Keboola Connection</h4>);
+const demoHeaderContent6 = (<h4>Aug 1,2017 - Aug 14,2017</h4>);
+const demoHeaderContent7 = (<h4>0.000000430 credits</h4>);
 
 const demoHeaderContentMapping = (
-    <span>
+    <h4>
            in.c-keboola-ex-facebook-253350349.accounts
         <span className="fa fa-chevron-right fa-fw"></span>
             <span className="fa fa-table fa-fw" title="Table"></span>
             accounts
-    </span>
+    </h4>
 );
 
 const demoHeaderActions = (
@@ -107,71 +107,7 @@ storiesOf('Collapsible')
             inline: true,
         }
     )
-    .addWithInfo(
-        'KBC - Collapsible @ Input Mapping',
-        'seen on https://connection.keboola.com/admin/projects/2376/transformations/bucket/253380663/transformation/259376467',
-        () => (
-            <div className="kbc-panel-heading-with-table panel panel-default">
-                <div className="panel-heading">
-                    <div className="panel-title">
-                        <a aria-expanded="true" aria-selected="true">
-                <span className="table">
-                    <span className="tbody">
-                        <span className="tr">
-                            <span className="td col-xs-3">
-                                <span className="label label-primary">
-                                    <span>2.05 kB</span>
-                                </span><span> </span>
-                                <span className="label label-default">snowflake</span></span>
-                            <span className="td col-xs-4">in.c-keboola-ex-facebook-253350349.accounts</span>
-                            <span className="td col-xs-1">
-                                <span className="fa fa-chevron-right fa-fw"></span>
-                            </span>
-                            <span className="td col-xs-3">
-                                <span className="fa fa-table fa-fw" title="Table"></span>
-                                <span> </span>
-                                <span>accounts</span></span>
-                            <span className="td col-xs-1 text-right kbc-no-wrap">
-                                <span>
-                                <button className="btn btn-link"><i className="fa kbc-icon-cup"></i></button>
-                            </span>
-                                <span>
-                                    <button type="button" className="btn btn-link">
-                                        <span className="fa fa-pencil"></span>
-                                    </button>
-                                </span>
-                            </span>
-                        </span>
-                    </span>
-                </span>
-                        </a>
-                    </div>
-                </div>
-                <div className="panel-collapse collapse in" aria-hidden="false">
-                    {demoContent}
-                </div>
-            </div>
-        ),
-        {
-            inline: true,
-        }
-    )
-    .addWithInfo(
-        '🆕 Collapsible @ Input Mapping',
-        '',
-        () => (
-            <Collapsible content={demoContent}
-                         headerContent={demoHeaderContentMapping}
-                         headerActions={demoHeaderActions}
-                         headerStatus={demoHeaderStatus}
-                         headerSize="sm"
-            >
-            </Collapsible>
-        ),
-        {
-            inline: true,
-        }
-    )
+
     .addWithInfo(
         'KBC - Collapsible @ Job Detail',
         'seen on https://connection.keboola.com/admin/projects/2376/jobs/300352618?q=',
@@ -260,6 +196,51 @@ storiesOf('Collapsible')
             inline: true,
         }
     )
+
+
+
+    .addWithInfo(
+        'KBC - Collapsible @ GA EX Profiles',
+        'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
+        () => (
+            <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table'">
+                <div className="profile-panel panel panel-default">
+                    <div className="panel-heading">
+                    <span className="panel-title">
+                        <a aria-expanded="true" aria-selected="true">
+                            Keboola Connection
+                        </a>
+                    </span>
+                    </div>
+                    <div className="panel-collapse collapse in" aria-hidden="false">
+                        <div className="panel-body">
+                            {demoContent}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ),
+        {
+            inline: true,
+        }
+    )
+
+
+    .addWithInfo(
+        '🆕 Collapsible @ GA EX Profiles',
+        'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
+        () => (
+            <Collapsible content={demoContent}
+                         headerContent={demoHeaderContent5}
+                         headerSize="sm"
+            >
+            </Collapsible>
+        ),
+        {
+            inline: true,
+        }
+    )
+
     .addWithInfo(
         'KBC - Collapsibe @ Gdrive component',
         'seen on https://connection.keboola.com/admin/projects/2376/writers/wr-google-drive/mysecondgdrivewriter' +
@@ -309,6 +290,7 @@ storiesOf('Collapsible')
             inline: true,
         }
     )
+
     .addWithInfo(
         'KBC - Collapsibe @ GD WR',
         'seen on https://connection.keboola.com/admin/projects/2376/writers/gooddata-writer/hdfshfsdh',
@@ -347,6 +329,8 @@ storiesOf('Collapsible')
             inline: true,
         }
     )
+
+
     .addWithInfo(
         '🆕 Collapsibe @ GD WR',
         'seen on https://connection.keboola.com/admin/projects/2376/writers/gooddata-writer/hdfshfsdh',
@@ -364,23 +348,47 @@ storiesOf('Collapsible')
     )
 
     .addWithInfo(
-        'KBC - Collapsible @ GA EX Profiles',
-        'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
+        'KBC - Collapsible @ Input Mapping',
+        'seen on https://connection.keboola.com/admin/projects/2376/transformations/bucket/253380663/transformation/259376467',
         () => (
-            <div className="kbc-accordion kbc-panel-heading-with-table kbc-panel-heading-with-table'">
-                <div className="profile-panel panel panel-default">
-                    <div className="panel-heading">
-                    <span className="panel-title">
+            <div className="kbc-panel-heading-with-table panel panel-default">
+                <div className="panel-heading">
+                    <div className="panel-title">
                         <a aria-expanded="true" aria-selected="true">
-                            Keboola Connection
-                        </a>
+                <span className="table">
+                    <span className="tbody">
+                        <span className="tr">
+                            <span className="td col-xs-3">
+                                <span className="label label-primary">
+                                    <span>2.05 kB</span>
+                                </span><span> </span>
+                                <span className="label label-default">snowflake</span></span>
+                            <span className="td col-xs-4">in.c-keboola-ex-facebook-253350349.accounts</span>
+                            <span className="td col-xs-1">
+                                <span className="fa fa-chevron-right fa-fw"></span>
+                            </span>
+                            <span className="td col-xs-3">
+                                <span className="fa fa-table fa-fw" title="Table"></span>
+                                <span> </span>
+                                <span>accounts</span></span>
+                            <span className="td col-xs-1 text-right kbc-no-wrap">
+                                <span>
+                                <button className="btn btn-link"><i className="fa kbc-icon-cup"></i></button>
+                            </span>
+                                <span>
+                                    <button type="button" className="btn btn-link">
+                                        <span className="fa fa-pencil"></span>
+                                    </button>
+                                </span>
+                            </span>
+                        </span>
                     </span>
+                </span>
+                        </a>
                     </div>
-                    <div className="panel-collapse collapse in" aria-hidden="false">
-                        <div className="panel-body">
-                            {demoContent}
-                        </div>
-                    </div>
+                </div>
+                <div className="panel-collapse collapse in" aria-hidden="false">
+                    {demoContent}
                 </div>
             </div>
         ),
@@ -390,11 +398,13 @@ storiesOf('Collapsible')
     )
 
     .addWithInfo(
-        '🆕 Collapsible @ GA EX Profiles',
-        'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
+        '🆕 Collapsible @ Input Mapping',
+        '',
         () => (
             <Collapsible content={demoContent}
-                         headerContent={demoHeaderContent5}
+                         headerContent={demoHeaderContentMapping}
+                         headerActions={demoHeaderActions}
+                         headerStatus={demoHeaderStatus}
                          headerSize="sm"
             >
             </Collapsible>
@@ -403,6 +413,7 @@ storiesOf('Collapsible')
             inline: true,
         }
     )
+
 
     .addWithInfo(
         'KBC - Project Power',
@@ -499,21 +510,21 @@ storiesOf('Collapsible')
         'seen on https://connection.keboola.com/admin/projects/2376/extractors/keboola.ex-google-analytics-v4/282223264',
         () => (
             <div>
-            <Collapsible content={demoContent}
-                         headerContent={demoHeaderContent6}
-                         headerStatus={demoHeaderContent7}
-            >
-            </Collapsible>
-            <Collapsible content={demoContent}
-                         headerContent={demoHeaderContent6}
-                         headerStatus={demoHeaderContent7}
-            >
-            </Collapsible>
-            <Collapsible content={demoContent}
-                         headerContent={demoHeaderContent6}
-                         headerStatus={demoHeaderContent7}
-            >
-            </Collapsible>
+                <Collapsible content={demoContent}
+                             headerContent={demoHeaderContent6}
+                             headerStatus={demoHeaderContent7}
+                >
+                </Collapsible>
+                <Collapsible content={demoContent}
+                             headerContent={demoHeaderContent6}
+                             headerStatus={demoHeaderContent7}
+                >
+                </Collapsible>
+                <Collapsible content={demoContent}
+                             headerContent={demoHeaderContent6}
+                             headerStatus={demoHeaderContent7}
+                >
+                </Collapsible>
             </div>
         ),
 
