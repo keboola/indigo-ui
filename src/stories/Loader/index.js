@@ -22,7 +22,7 @@ storiesOf('Loader')
     () => (
       <div className="bubble-loader">
         <Image src={BubbleLoader}/>
-          <p>Loading</p>
+          <p>Diving</p>
       </div>
 
     ),
