@@ -11,22 +11,136 @@ storiesOf('CID')
         '🆕 Palette',
         '',
         () => (
-            <div className="palette">
-                <div className="palette-color palette-color-1">
-                    @gray-base<br/>#ffffff
+            <div className="palette-demo">
+
+                <div className="palette-container">
+                    <h3>Brand Colors</h3>
+
+                    <div className="palette">
+                        <div className="palette-color palette-color-1">#25b8eb</div>
+                        <div className="palette-label">
+                            <h4>Keboola Blue</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-2">#282d38</div>
+                        <div className="palette-label">
+                            <h4>Keboola Indigo</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-3">#eaebed</div>
+                        <div className="palette-label">
+                            <h4>Keboola Air</h4>
+                          
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-4">#6b6b6b</div>
+                        <div className="palette-label">
+                            <h4>Keboola Dark</h4>
+                        </div>
+                    </div>
                 </div>
-                <div className="palette-color palette-color-2">
-                    @link-color<br/>#282d38
+
+                <div className="palette-container">
+                    <h3>Brand Complementary</h3>
+
+                    <div className="palette">
+                        <div className="palette-color palette-color-5">#92dbf5</div>
+                        <div className="palette-label">
+                            <h4>Keboola Light Blue</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-6">#98cf3c</div>
+                        <div className="palette-label">
+                            <h4>Keboola Success</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-7">#ffd452</div>
+                        <div className="palette-label">
+                            <h4>Keboola Warning</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-8">#F74d63</div>
+                        <div className="palette-label">
+                            <h4>Keboola Error</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-9">
+                            #ef1e2d
+                        </div>
+                        <div className="palette-label">
+                            <h4>Keboola Delete</h4>
+                        </div>
+                    </div>
                 </div>
-                <div className="palette-color palette-color-3">
-                    @link-color<br/>#0199F1
+
+                <div className="palette-container">
+                    <h3>Other colors</h3>
+
+                    <div className="palette">
+                        <div className="palette-color palette-color-10">
+                            Keboola Blue<br/>#25b8eb
+                        </div>
+                        <div className="palette-label">
+                            <h4>Keboola Delete</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-11">
+                            Keboola Indigo<br/>#282d38
+                        </div>
+                        <div className="palette-label">
+                            <h4>Keboola Delete</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-12">
+                            Keboola Dark<br/>#eaebed
+                        </div>
+                        <div className="palette-label">
+                            <h4>Keboola Delete</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-13">
+                            Keboola Air<br/>#6b6b6b
+                        </div>
+                        <div className="palette-label">
+                            <h4>Keboola Delete</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-14">
+                            Keboola Air<br/>#6b6b6b
+                        </div>
+                        <div className="palette-label">
+                            <h4>Keboola Delete</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-15">
+                            Keboola Air<br/>#6b6b6b
+                        </div>
+                        <div className="palette-label">
+                            <h4>Keboola Delete</h4>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-16">
+                            Keboola Air<br/>#6b6b6b
+                        </div>
+                        <div className="palette-label">
+                            <h4>Keboola Delete</h4>
+                        </div>
+                    </div>
                 </div>
-                <div className="palette-color palette-color-4">
-                    @link-color<br/>#6b6b6b
-                </div>
-                <div className="palette-color palette-color-5">
-                    @link-color<br/>#000000
-                </div>
+
             </div>
         ),
     )

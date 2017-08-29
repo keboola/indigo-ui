@@ -15,17 +15,46 @@ h1,h2,h3,h4,h5,h6{
   padding: 16px 0;
 }
 
-@CIDcolor1: #fff;
-@CIDcolor2: @gray-base;
-@CIDcolor3: #0199F1;
+@CIDcolor1: #25b8eb;
+@CIDcolor2: #282d38;
+@CIDcolor3: #eaebed;
 @CIDcolor4: #6b6b6b;
-@CIDcolor5: #000;
+
+@CIDcolor5: #92dbf5;
+@CIDcolor6: #98cf3c;
+@CIDcolor7: #ffd452;
+@CIDcolor8: #F74d63;
+@CIDcolor9: #ef1e2d;
+
+@CIDcolor10: #f5f5f7;
+@CIDcolor11: #22262f;
+@CIDcolor12: #bdc1cb;
+@CIDcolor13: #7c8498;
+@CIDcolor14: #1e2129;
+@CIDcolor15: #dce0ec;
+@CIDcolor116: #89959f;
 
 .palette {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-top: 60px;
+  justify-content: flex-start;
+  margin: 20px 0;
+  &-demo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &-container{
+    width: 33%;
+  }
+  &-label{
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   &-color {
     width: 100px;
     height: 100px;
@@ -36,23 +65,45 @@ h1,h2,h3,h4,h5,h6{
   }
   &-color-1 {
     background: @CIDcolor1;
-
   }
   &-color-2 {
     background: @CIDcolor2;
-    color: #fff;
   }
   &-color-3 {
     background: @CIDcolor3;
-    color: #fff;
   }
   &-color-4 {
     background: @CIDcolor4;
-    color: #fff;
   }
   &-color-5 {
     background: @CIDcolor5;
-    color: #fff;
+  }
+  &-color-6 {
+    background: @CIDcolor6;
+  }
+  &-color-7 {
+    background: @CIDcolor7;
+  }
+  &-color-8 {
+    background: @CIDcolor8;
+  }
+  &-color-9 {
+    background: @CIDcolor9;
+  }
+  &-color-10 {
+    background: @CIDcolor10;
+  }
+  &-color-11 {
+    background: @CIDcolor11;
+  }
+  &-color-12 {
+    background: @CIDcolor12;
+  }
+  &-color-13 {
+    background: @CIDcolor13;
+  }
+  &-color-14 {
+    background: @CIDcolor14;
   }
 }
 
@@ -64,7 +115,6 @@ h1,h2,h3,h4,h5,h6{
     flex-direction: row;
     justify-content: space-around;
     margin-top: 60px;
-
   }
   &-color-1 {
     background: @CIDcolor5;
