@@ -28,6 +28,7 @@ function loadStories() {
   require('../src/stories/Scrollbar');
   require('../src/stories/Image');
   require('../src/stories/Icons')
+  require('../src/stories/KbcReactComponents')
   require('../src/stories/CID')
   
   // require('../src/stories/Guidelines');
