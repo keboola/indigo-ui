@@ -1,6 +1,6 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { Image } from 'react-bootstrap';
+import {storiesOf} from '@storybook/react';
+import {Image} from 'react-bootstrap';
 
 storiesOf('Icons')
     .addWithInfo(
@@ -8,8 +8,12 @@ storiesOf('Icons')
         'Desc',
         () => (
             <div>
-            <i className="kbc-icon-transformations"></i>
-            <i className="kbc-icon-extractors"></i>
+                <i className="svg-Options svg-Options-dims"/>
+                <i className="svg-Combined_Shape svg-Combined_Shape-dims"/>
+                <i className="svg-Connection svg-Connection-dims"/>
+                <i className="svg-Keboolas svg-Keboola-dims"/>
+                <i className="svg-Rectangle_8_copy_2 svg-Rectangle_8_copy_2-dims"></i>
+                <i className="svg-Rounded_Rectangle_3 svg-Rounded_Rectangle_3-dims"></i>
             </div>
         ),
         {

@@ -36,6 +36,12 @@ module.exports = function(grunt) {
             cwd: 'src/indigo',
             src: ['img/*'],
             dest: 'public/'
+          },
+          {
+            expand: true,
+            cwd: 'src/indigo/icons/',
+            src: ['icon-sprite/*'],
+            dest: 'public/'
           }
         ]
       },
@@ -50,12 +56,53 @@ module.exports = function(grunt) {
         }
       }
     },
+    svg_sprite: {
+      options: {
+        // Task-specific options go here.
+        //https://github.com/jkphl/grunt-svg-sprite#options
+      },
+      your_target: {
+        expand: true,
+        cwd: 'src/indigo/icons',
+        src: ['**/*.svg'],
+        dest: 'src/indigo/icons',
+        options: {
+          mode: {
+            css: {		// Activate the «css» mode
+              cwd: 'src/indigo/icons',
+              sprite: '../icon-sprite/spriteeeeeee.svg',
+              render: {
+                less: {
+                  dest: '../../../less/svg-icons.less' // LESS location
+                },
+              }
+            }
+          }
+        },
+        // svg: {
+        //   dimensionAttributes: true
+        // },
+        shape: {
+          //   dimension		: {                         // Dimension related options
+          //     maxWidth	: 2000,                     // Max. shape width
+          //     maxHeight	: 2000,                     // Max. shape height
+          //     precision	: 2,                        // Floating point precision
+          //     attributes 	: true,                    // Width and height attributes on embedded shapes
+          //   },
+          spacing: {                         // Spacing related options
+            padding: 2,                        // Padding around all shapes
+            box: 'content'                 // Padding strategy (similar to CSS `box-sizing`)
+          },
+        }
+      },
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-svg-sprite');
 
-  grunt.registerTask('build-css', ['copy:dev', 'less:development']);
+  grunt.registerTask('build-css', ['svg_sprite', 'copy:dev', 'less:development']);
 
 };

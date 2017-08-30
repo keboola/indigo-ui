@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="20px" viewBox="0 0 32 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>switch off</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-KSG-icons" transform="translate(-414.000000, -276.000000)" fill-rule="nonzero" fill="#282D38">
+            <path d="M416,286 C416,290.419332 419.578595,294 423.993372,294 L436.006628,294 C440.415353,294 444,290.415198 444,286 C444,281.580668 440.421405,278 436.006628,278 L423.993372,278 C419.584647,278 416,281.584802 416,286 Z M414,286 C414,280.477153 418.483157,276 423.993372,276 L436.006628,276 C441.525815,276 446,280.475938 446,286 C446,291.522847 441.516843,296 436.006628,296 L423.993372,296 C418.474185,296 414,291.524062 414,286 Z M424,292 C427.313708,292 430,289.313708 430,286 C430,282.686292 427.313708,280 424,280 C420.686292,280 418,282.686292 418,286 C418,289.313708 420.686292,292 424,292 Z" id="switch-off"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-KSG-icons" transform="translate(-341.000000, -360.000000)" fill="#282D38">
+            <path d="M355.5125,364.53 C355.0025,361.9425 352.73,360 350,360 C347.8325,360 345.95,361.23 345.0125,363.03 C342.755,363.27 341,365.1825 341,367.5 C341,369.9825 343.0175,372 345.5,372 L355.25,372 C357.32,372 359,370.32 359,368.25 C359,366.27 357.4625,364.665 355.5125,364.53 L355.5125,364.53 Z" id="cloud"></path>
+        </g>
+    </g>
+</svg>
