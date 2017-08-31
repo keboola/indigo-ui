@@ -57,10 +57,6 @@ module.exports = function(grunt) {
       }
     },
     svg_sprite: {
-      options: {
-        // Task-specific options go here.
-        //https://github.com/jkphl/grunt-svg-sprite#options
-      },
       your_target: {
         expand: true,
         cwd: 'src/indigo/icons',
@@ -71,9 +67,10 @@ module.exports = function(grunt) {
             css: {		// Activate the «css» mode
               cwd: 'src/indigo/icons',
               sprite: '../icon-sprite/spriteeeeeee.svg',
+              prefix: '.icon-%s',
               render: {
                 less: {
-                  dest: '../../../less/svg-icons.less' // LESS location
+                  dest: '../../less/svg-icons.less' // LESS location
                 },
               }
             }
@@ -90,8 +87,8 @@ module.exports = function(grunt) {
           //     attributes 	: true,                    // Width and height attributes on embedded shapes
           //   },
           spacing: {                         // Spacing related options
-            padding: 2,                        // Padding around all shapes
-            box: 'content'                 // Padding strategy (similar to CSS `box-sizing`)
+            padding: 10,                        // Padding around all shapes
+            box: 'padding'                 // Padding strategy (similar to CSS `box-sizing`)
           },
         }
       },
