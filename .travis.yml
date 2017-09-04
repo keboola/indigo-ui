@@ -22,6 +22,7 @@ deploy:
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     bucket: indigo-ui-assets
     local_dir: revision
+    upload-dir: indigo-ui
     skip_cleanup: true
     acl: public_read
     cache_control: 'max-age=31536000'
