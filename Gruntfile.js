@@ -22,7 +22,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          "public/css/indigo.uncompressed.css": "src/styles/indigo-storybook.less"
+          "public/css/indigo.uncompressed.css": "src/indigo/less/indigo.less"
         }
       },
       production: {
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             "libsPath" : ""
           }
         },
-        files: {"tmp/css/kbc.css": "src/kbc-bootstrap/less/kbc.less"}
+        files: {"tmp/css/indigo.css": "src/indigo/less/indigo.less"}
       }
     },
     compress: {
@@ -51,8 +51,8 @@ module.exports = function(grunt) {
     copy: {
       uncompressed: {
         nonull: true,
-        src: 'tmp/css/kbc.css',
-        dest: 'dist/css/kbc.uncompressed.css'
+        src: 'tmp/css/indigo.css',
+        dest: 'dist/css/indigo.uncompressed.css'
       },
       dev: {
         files: [
@@ -92,13 +92,13 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: 'src/kbc-bootstrap',
+            cwd: 'src/indigo',
             src: ['fonts/*'],
             dest: 'dist/'
           },
           {
             expand: true,
-            cwd: 'src/kbc-bootstrap',
+            cwd: 'src/indigo',
             src: ['img/*'],
             dest: 'dist/'
           }
