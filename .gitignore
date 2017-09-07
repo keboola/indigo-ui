@@ -4,6 +4,7 @@
 /dist
 /revision
 /tmp
+/package
 
 npm-debug.log*
 yarn-debug.log*
