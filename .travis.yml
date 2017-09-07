@@ -29,3 +29,8 @@ deploy:
     detect_encoding: true
     on:
       tags: true
+
+notifications:
+  slack:
+    secure: JRncm8bFlfqNDC8DPUJruaE9nqCU33RTOEJoaCkpnbkBAy+whvBCOExsJjj949j6MUgs/ltNizjhNzeBo+PSM8N/YVR6oyj1usBeLANJf/YifCRsTmfcA/DvrCvFRqrDPv7VucTcRfdh9ZeeDfa2zvT8O7nhgHWbL7crWAh/2AAlD5zhD/Ad+5urdQLTD/x1zoESfnEVuhUjvWPoF7dPNFpwQOyMqaSlH3w/MG+11Tu7h9847KBAQGMMSEFjkRSWBTasty65c4gmwmVDfkUWHBjwBKJIpONQij5gDIyowx3FIkNbyirw9TI2hEXhYIqTLJ8LMPcsiV8WtLkRGnDETPmp5/n6e6BRG5dFVO9QDmux0qH/dJzAZeBHKxK/NyhU2lQzrP6/51D6M4sylEclkbwSD42lXfHvsLL7F9YLgR4dr9yjVxu94NgPcKUXuC2H4/shCi8hQ89CR7mY8Y59yMBR5q/mpEA2IucKQ+4UjmZKQ9GGLbvS8Hjt2bEvT2fyA6pDOApT/lurPiez1KuR8ZfUXDszugOVdVZfThZsWgqZUPAHUkxGzHW7Advyj1ZmXK5oH36N9urwnXRfN0BCXsiOwu0THR41pmrTtlgmB3JQUCcMFEV2O5JEJB8QFdpD4A7LXt28G+KXp2uK82qjFd8KBDyWRtN4X/YxgZdv/Pk=
+  email: false
