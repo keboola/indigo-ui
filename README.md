@@ -29,7 +29,7 @@ First, check the content of `.travis.yml` file and documentation about
 - The `deploy-storybook.sh` script is responsible for deploying. Basically, it's "home made"
 replacement for Travis `deploy` section, since that section is used for something else (covered
 bellow).
-- After successful deployment (copy to AWS S3) Storybook build will be available online
+- After successful deployment (copy to AWS S3), the Storybook build will be available online
 
 ### UI library, its CSS and components
 
@@ -43,7 +43,7 @@ and package published to npm.
 #### Releasing new version
 
 - New tagged release is only needed if there's a change in `src/indigo` or `src/components` folders
-and you want to make those change available for users.
+and you want to make those changes available for users.
 - Please respect Semantic versioning
 
 Steps:
