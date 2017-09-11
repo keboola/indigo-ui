@@ -22,7 +22,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          "public/css/indigo.uncompressed.css": "src/indigo/less/indigo.less"
+          "public/css/indigo.uncompressed.css": "src/styles/indigo-storybook.less"
         }
       },
       production: {
