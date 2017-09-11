@@ -65,3 +65,9 @@ This branch was introduced only for compatibility with
 [keboola/kbc-bootstrap](https://github.com/keboola/kbc-bootstrap). Releases from this branch are
 tagged as `v0.1.x` ([check here](https://github.com/keboola/indigo-ui/releases)) and you probably
 won't need to do anything with this branch.
+
+## FAQ
+
+### How to check what will be published to `npm` before pushing new tag?
+
+Run `npm pack`. Check its manual [here](https://docs.npmjs.com/cli/pack).
