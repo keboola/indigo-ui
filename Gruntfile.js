@@ -185,7 +185,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('build', ['clean', 'less', 'copy:uncompressed', 'compress', 'copy:dist']);
-  grunt.registerTask('build-css', ['svg_sprite', 'copy:dev', 'less:development']);
+  grunt.registerTask('build-dev-css', ['svg_sprite', 'copy:dev', 'less:development']);
   grunt.registerTask('prepare-revision', ['read-revision', 'copy:revision']);
 
 };
