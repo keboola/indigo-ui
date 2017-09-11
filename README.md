@@ -43,6 +43,7 @@ and package published to npm.
 #### Releasing new version
 
 - New tagged release is only needed if there's a change in `src/indigo` or `src/components` folders
+and you want to make those change available for users.
 - Please respect Semantic versioning
 
 Steps:
