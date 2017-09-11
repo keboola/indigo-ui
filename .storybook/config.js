@@ -30,6 +30,7 @@ function loadStories() {
   require('../src/stories/Icons')
   require('../src/stories/KbcReactComponents')
   require('../src/stories/CID')
+  require('../src/stories/EditingMode')
   
   // require('../src/stories/Guidelines');
 }
