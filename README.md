@@ -24,32 +24,36 @@ First, check the content of `.travis.yml` file and documentation about
 
 ### Storybook
 
-Storybook is deployed on every push to `master` branch (condition `"$TRAVIS_BRANCH" = "master"` in
-`.travis.yml`). The `deploy-storybook.sh` script is responsible for deploying. Basically, it's
-"home made" replacement for Travis `deploy` section, since that section is used for something else
-(covered bellow).
+- Storybook is deployed on every push to `master` branch (condition `"$TRAVIS_BRANCH" = "master"` in
+`.travis.yml`).
+- The `deploy-storybook.sh` script is responsible for deploying. Basically, it's "home made"
+replacement for Travis `deploy` section, since that section is used for something else (covered
+bellow).
+- After successful deployment (copy to AWS S3) Storybook build will be available online
 
 ### UI library, its CSS and components
 
-When you push new tag (and you should tag only commits in `master` branch) then
-`yarn build-dist-css` command is executed (condition `"$TRAVIS_BRANCH" = "$TRAVIS_TAG"`) and after
-successful build a deployment (`s3` deploy provider) and publishing to npm (`npm` deploy provider)
-is started.
-
-After successful deployment, there will be new version of CSS (available to link from Cloudfront)
+- When you push new tag (and you should tag only commits in `master` branch) then
+`yarn build-dist-css` command is executed (condition `"$TRAVIS_BRANCH" = "$TRAVIS_TAG"`)
+- After successful build a deployment and publishing to npm is started (check `deploy` section in
+`.travis.yml`)
+- After successful deployment, there will be new version of CSS (available to link from Cloudfront)
 and package published to npm.
 
 #### Releasing new version
 
-New tagged release is only needed if there's a change in `src/indigo` or `src/components` folders.
+- New tagged release is only needed if there's a change in `src/indigo` or `src/components` folders
+- Please respect Semantic versioning
+
+Steps:
 
 1. Make sure everything is working as expected
 2. Prepare new version with `npm version ...` command
-(manual [here](https://docs.npmjs.com/cli/version)). That command should create new commit (with
-version change in `package.json`) and tag for you and **there's no need to change `package.json`
+(manual [here](https://docs.npmjs.com/cli/version)). This command should create new commit (with
+version change in `package.json`) and tag for you. **There's no need to change `package.json`
 manually or create tag manually.**
 3. Push to `master` branch (e.g `git push origin master`)
-4. Push newly created tag (e.g. `git push origin v1.0.0-beta-3`)
+4. Push newly created tag (e.g. `git push origin v1.0.0-beta-3`) <- This triggers deploy
 5. Check package on npm, try to install it (or update to newer version from some project)
 6. Write release notes [keboola/indigo-ui/releases](https://github.com/keboola/indigo-ui/releases)
 
