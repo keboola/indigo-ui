@@ -35,10 +35,10 @@ bellow).
 
 - When you push new tag then `yarn build-dist-css` command is executed. There's
 `"$TRAVIS_BRANCH" = "$TRAVIS_TAG"` condition in `.travis.yml`.
-- After successful build a deployment and publishing to npm is started. Check `deploy` section in
+- After successful build, a deployment and publishing to registry is started. Check `deploy` section in
 `.travis.yml`
 - After successful deployment, there will be new version of CSS available to link from Cloudfront
-and package published to npm.
+and package published to npmjs registry.
 
 #### Releasing new version
 
@@ -53,9 +53,9 @@ Steps:
 (manual [here](https://docs.npmjs.com/cli/version)). This command should create new commit (with
 version change in `package.json`) and tag for you. **There's no need to change `package.json`
 manually or create tag manually.**
-3. Push to `master` branch - e.g `git push origin master`)
+3. Push to `master` branch - e.g `git push origin master`
 4. Push newly created tag - e.g. `git push origin v1.0.0-beta-3` <- This triggers deploy
-5. Check package on npm, try to install it or update to newer version from some project
+5. Check package in npmjs registry, try to install it or update to newer version from some project
 6. Write release notes [keboola/indigo-ui/releases](https://github.com/keboola/indigo-ui/releases)
 
 
@@ -69,6 +69,6 @@ available [here](https://github.com/keboola/indigo-ui/releases)
 
 ## FAQ
 
-### How to check what will be published to `npm` before pushing new tag?
+### How to check what will be published to npmjs registry before pushing new tag?
 
 Run `npm pack`. Check its manual [here](https://docs.npmjs.com/cli/pack).
