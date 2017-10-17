@@ -129,41 +129,28 @@ module.exports = function(grunt) {
       }
     },
     svg_sprite: {
-      your_target: {
-        expand: true,
-        cwd: 'src/indigo/icons',
-        src: ['**/*.svg'],
-        dest: 'src/indigo/icons',
-        options: {
-          mode: {
-            css: {		// Activate the «css» mode
-              cwd: 'src/indigo/icons',
-              sprite: '../icon-sprite/spriteeeeeee.svg',
-              prefix: '.icon-%s',
-              render: {
-                less: {
-                  dest: '../../less/svg-icons.less' // LESS location
+        your_target: {
+            expand: true,
+            cwd: 'src/indigo/icons',
+            src: ['**/*.svg'],
+            dest: 'dist/icons',
+            options: {
+                shape: {
+                    dimension: {
+                        // maxWidth: 32,
+                        maxHeight: 32
+                    },
+                    spacing: {
+                        padding: 1
+                    },
                 },
-              }
+                mode: {
+                    symbol: {
+                        bust: false,
+                    },
+                }
             }
-          }
         },
-        // svg: {
-        //   dimensionAttributes: true
-        // },
-        shape: {
-          //   dimension		: {                         // Dimension related options
-          //     maxWidth	: 2000,                     // Max. shape width
-          //     maxHeight	: 2000,                     // Max. shape height
-          //     precision	: 2,                        // Floating point precision
-          //     attributes 	: true,                    // Width and height attributes on embedded shapes
-          //   },
-          spacing: {                         // Spacing related options
-            padding: 10,                        // Padding around all shapes
-            box: 'padding'                 // Padding strategy (similar to CSS `box-sizing`)
-          },
-        }
-      },
     }
   });
 
