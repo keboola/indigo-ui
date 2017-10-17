@@ -63,3 +63,108 @@ button {
     }
 }
 
+// NEW BUTTON OVERRIDES
+
+.btn {
+    padding: 8px 12px;
+    font-family: "Gotham Rounded A", "Gotham Rounded B";
+    border-radius: 3px;
+    border: 0 !important;
+
+    i {
+        margin: 0;
+        font-size: 20px;
+        line-height: 0;
+        position: relative;
+        top: 2px;
+        + .btn-label {
+            margin-left: 8px;
+        }
+    }
+
+    &-success {
+        background-color: #98CF3C;
+        &:hover {
+            background-color: darken(#98CF3C, 8%);
+        }
+        &:active,
+        &.active {
+            background-color: darken(#98CF3C, 16%) !important;
+        }
+        &:focus {
+            background-color: #98CF3C;
+        }
+    }
+
+    &-primary {
+        background-color: #25B8EB;
+        &:hover {
+            background-color: darken(#25B8EB, 8%);
+        }
+        &:active,
+        &.active {
+            background-color: darken(#25B8EB, 16%) !important;
+        }
+        &:focus {
+            background-color: #25B8EB;
+        }
+    }
+
+    &-danger {
+        background-color: #EF1E2D;
+        &:hover {
+            background-color: darken(#EF1E2D, 8%);
+        }
+        &:active,
+        &.active {
+            background-color: darken(#EF1E2D, 16%) !important;
+        }
+        &:focus {
+            background-color: #EF1E2D;
+        }
+    }
+
+    &-link {
+        &:hover {
+            color: #25B8EB;
+            text-decoration: underline;
+        }
+        &:active,
+        &.active {
+            color: #25B8EB;
+            text-decoration: underline;
+        }
+        &:focus {
+            color:#25B8EB;
+        }
+    }
+
+    &:active,
+    &.active {
+        box-shadow: none;
+    }
+
+    &:focus,
+    &:active:focus,
+    &.active:focus,
+    &.focus,
+    &:active.focus,
+    &.active.focus {
+        box-shadow: 0 0 2px 2px #25B8EB;
+        border: 1px solid #227CA7
+    }
+
+    &.disabled,
+    &[disabled] {
+        color: #BDC1CB !important;
+        background-color: #EAEBED !important;
+
+        &.btn-link{
+            background-color: #fff !important;
+        }
+
+        &:hover {
+            background-color: #EAEBED;
+        }
+    }
+}
