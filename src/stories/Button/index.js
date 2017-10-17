@@ -3,6 +3,7 @@ import {storiesOf} from '@storybook/react';
 import {Button} from 'react-bootstrap';
 import Icon from "../../static/common/Icon";
 
+
 storiesOf('Button')
     .addWithInfo(
         'default',
@@ -21,7 +22,7 @@ storiesOf('Button')
         'Use case: click on "New button" will redirect you to a form where you configure new entity.',
         () => (
             <Button bsStyle="success">
-                <i className="kbc-icon-plus"/>
+                <Icon iconClass="plus"/>
                 New [entity]
             </Button>
         ),
@@ -34,7 +35,7 @@ storiesOf('Button')
         'Use case: click on "New button" will redirect you to a form where you configure new entity.',
         () => (
             <Button bsStyle="success">
-                <i className="kbc-icon-plus"/>
+                <Icon iconClass="plus"/>
             </Button>
         ),
         {
@@ -159,13 +160,14 @@ storiesOf('Button')
                         Icon
                     </div>
                 </div>
+
                 <div className="row">
                     <div className="col-md-3">
                             Normal
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="success">
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                             <span className="btn-label">
                                 New Extractor
                             </span>
@@ -180,7 +182,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="success">
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                         </Button>
                     </div>
                 </div>
@@ -190,7 +192,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="success" className="active">
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                             <span className="btn-label">
                                 New Extractor
                             </span>
@@ -205,7 +207,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="success" className="active">
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                         </Button>
                     </div>
                 </div>
@@ -215,7 +217,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="success" disabled>
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                             <span className="btn-label">
                                 New Extractor
                             </span>
@@ -230,7 +232,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="success" disabled>
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                         </Button>
                     </div>
                 </div>
@@ -240,13 +242,14 @@ storiesOf('Button')
                         <br/><br/><br/>
                     </div>
                 </div>
+
                 <div className="row">
                     <div className="col-md-3">
                         Normal
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="primary">
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                             <span className="btn-label">
                                 Add Input
                             </span>
@@ -261,7 +264,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="primary">
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                         </Button>
                     </div>
                 </div>
@@ -271,7 +274,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="primary" className="active">
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                             <span className="btn-label">
                                 Add Input
                             </span>
@@ -286,7 +289,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="primary" className="active">
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                         </Button>
                     </div>
                 </div>
@@ -296,7 +299,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="primary" disabled>
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                             <span className="btn-label">
                                 Add Input
                             </span>
@@ -311,7 +314,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="primary" disabled>
-                            <i className="kbc-icon-plus"/>
+                            <Icon iconClass="plus"/>
                         </Button>
                     </div>
                 </div>
@@ -321,13 +324,14 @@ storiesOf('Button')
                         <br/><br/><br/>
                     </div>
                 </div>
+
                 <div className="row">
                     <div className="col-md-3">
                         Normal
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="danger">
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                             <span className="btn-label">
                                 Delete Project
                             </span>
@@ -342,7 +346,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="danger">
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                         </Button>
                     </div>
                 </div>
@@ -352,7 +356,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="danger" className="active">
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                             <span className="btn-label">
                                 Delete Project
                             </span>
@@ -367,7 +371,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="danger" className="active">
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                         </Button>
                     </div>
                 </div>
@@ -377,7 +381,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="primary" disabled>
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                             <span className="btn-label">
                                 Delete Project
                             </span>
@@ -392,7 +396,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="primary" disabled>
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                         </Button>
                     </div>
                 </div>
@@ -408,7 +412,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="link">
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                             <span className="btn-label">
                                 Delete Project
                             </span>
@@ -423,7 +427,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="link">
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                         </Button>
                     </div>
                 </div>
@@ -433,7 +437,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="link" className="active">
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                             <span className="btn-label">
                                 Delete Project
                             </span>
@@ -448,7 +452,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="link" className="active">
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                         </Button>
                     </div>
                 </div>
@@ -458,7 +462,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="link" disabled>
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                             <span className="btn-label">
                                 Delete Project
                             </span>
@@ -473,7 +477,7 @@ storiesOf('Button')
                     </div>
                     <div className="col-md-3">
                         <Button bsStyle="link" disabled>
-                            <i className="fa fa-trash"/>
+                            <Icon iconClass="trash"/>
                         </Button>
                     </div>
                 </div>
