@@ -202,7 +202,6 @@ button {
     }
 }
 
-
 .btn {
     &-edit {
         .btn-primary();
@@ -217,21 +216,55 @@ button {
     &-new {
         .btn-success();
         &:hover .icon-svg {
-            animation: pulse 1s ease infinite;
-            transform-origin-x: 90%;
-            transform-origin-y: 90%;
-            transform-origin-z: initial
+            animation: pulse 2.5s ease infinite;
         }
     }
+
     &-delete {
         .btn-danger();
         &:hover .icon-svg {
-            animation: pulse 1s ease infinite;
-            transform-origin-x: 90%;
-            transform-origin-y: 90%;
-            transform-origin-z: initial
+            animation: tada 1.5s linear infinite
+        }
+    }
+
+    &-run {
+        .btn-link();
+        .icon-svg{
+            color: #555555 !important; //uffff
+        }
+        &:hover .icon-svg {
+            animation: passing 1s ease infinite;
         }
     }
 }
 
 
+
+.btn-detail {
+    .btn-primary();
+    &:hover .icon-svg {
+        animation: zoom 2.5s ease infinite;
+        transform-origin-x: 15%;
+        transform-origin-y: 15%;
+        transform-origin-z: initial
+    }
+}
+
+.btn-accept {
+    .btn-success();
+    &:hover .icon-svg {
+        animation: bounce 1s ease infinite;
+        transform-origin-x: 90%;
+        transform-origin-y: 35%;
+        transform-origin-z: initial
+    }
+}
+
+
+.btn-file-upload {
+    .btn-primary();
+
+    &:hover .icon-svg {
+        animation: float 1s ease infinite;
+    }
+}

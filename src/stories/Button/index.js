@@ -121,7 +121,7 @@ storiesOf('Button')
                     <Icon iconClass="plus"/>
                     <span className="btn-label">
                                 New [entity]
-                            </span>
+                    </span>
                 </Button>
 
                 <br/>
@@ -129,7 +129,7 @@ storiesOf('Button')
                 <Button bsStyle="new">
                     <span className="btn-label">
                                 Create [entity]
-                            </span>
+                    </span>
                 </Button>
 
                 <br/>
@@ -138,7 +138,7 @@ storiesOf('Button')
                     <Icon iconClass="edit"/>
                     <span className="btn-label">
                                 Edit [entity]
-                            </span>
+                    </span>
                 </Button>
 
                 <br/>
@@ -146,7 +146,7 @@ storiesOf('Button')
                 <Button bsStyle="edit">
                     <span className="btn-label">
                                 Save [entity]
-                            </span>
+                    </span>
                 </Button>
 
                 <br/>
@@ -155,16 +155,15 @@ storiesOf('Button')
                     <Icon iconClass="trash"/>
                     <span className="btn-label">
                                 Move to Trash
-                            </span>
+                    </span>
                 </Button>
 
                 <br/>
 
                 <Button bsStyle="delete">
-                    <Icon iconClass="trash"/>
                     <span className="btn-label">
-                                Delete
-                            </span>
+                                Delete [entity]
+                    </span>
                 </Button>
 
                 <br/>
@@ -173,7 +172,16 @@ storiesOf('Button')
                     <Icon iconClass="user"/>
                     <span className="btn-label">
                                 Authorize
-                            </span>
+                    </span>
+                </Button>
+
+                <br/>
+
+                <Button bsStyle="run">
+                    <Icon iconClass="run"/>
+                    <span className="btn-label">
+                                Run Transformation
+                    </span>
                 </Button>
 
                 <br/>
@@ -181,7 +189,7 @@ storiesOf('Button')
                 <Button bsStyle="link">
                     <span className="btn-label">
                                 Show more ...
-                            </span>
+                    </span>
                 </Button>
 
                 <br/>
@@ -190,7 +198,7 @@ storiesOf('Button')
                     <Icon iconClass="copy"/>
                     <span className="btn-label">
                                 Copy to Clipboard
-                            </span>
+                    </span>
                 </Button>
 
             </div>
