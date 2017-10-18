@@ -1,10 +1,12 @@
 @import '../indigo/less/indigo';
 
-//STORYBOOK SPECIFIC INSIDE RENDER CANVAS
+//STORYBOOK STYLEGUIDE SPECIFIC STYLES INSIDE RENDER CANVAS
 //IF YOU WANT TO USE STORYBOOK STYLES FOR BASIC APP LAYOUT .storybook\manager-head.html
+
 body {
   padding: 0 30px 30px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #fff;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -14,25 +16,6 @@ h1,h2,h3,h4,h5,h6{
 #root > div > div:nth-child(2) {
   padding: 16px 0;
 }
-
-@CIDcolor1: #25b8eb;
-@CIDcolor2: #282d38;
-@CIDcolor3: #eaebed;
-@CIDcolor4: #6b6b6b;
-
-@CIDcolor5: #92dbf5;
-@CIDcolor6: #98cf3c;
-@CIDcolor7: #ffd452;
-@CIDcolor8: #F74d63;
-@CIDcolor9: #ef1e2d;
-
-@CIDcolor10: #f5f5f7;
-@CIDcolor11: #22262f;
-@CIDcolor12: #bdc1cb;
-@CIDcolor13: #7c8498;
-@CIDcolor14: #1e2129;
-@CIDcolor15: #dce0ec;
-@CIDcolor116: #89959f;
 
 .palette {
   display: flex;
@@ -164,5 +147,24 @@ h1,h2,h3,h4,h5,h6{
   & > * {
     width: 50px;
     padding: 0 10px;
+  }
+}
+
+
+.indigo-demo {
+  &-heading{
+
+  }
+
+  &-description{
+
+  }
+
+  &-layout {
+    //TBD
+
+    //&-colors{}
+    //&-btns{}
+    //&-icons{}
   }
 }
