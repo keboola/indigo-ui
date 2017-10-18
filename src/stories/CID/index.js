@@ -26,13 +26,16 @@ storiesOf('CID')
                         <div className="palette-color palette-color-2">#282d38</div>
                         <div className="palette-label">
                             <h4>Keboola Indigo</h4>
+                            <span>KBC sidepanel - bg
+Used for title texts too</span>
                         </div>
                     </div>
                     <div className="palette">
                         <div className="palette-color palette-color-3">#eaebed</div>
                         <div className="palette-label">
                             <h4>Keboola Air</h4>
-                          
+                          <span>KBC content - stroke, border, bg (for jobs and runs box in the right side of extractor)
+EAEBED</span>
                         </div>
                     </div>
                     <div className="palette">
@@ -86,6 +89,7 @@ storiesOf('CID')
                     <div className="palette">
                         <div className="palette-color palette-color-10">
                             Keboola Blue<br/>#25b8eb
+                            <span>KBC content - bg</span>
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Delete</h4>
@@ -94,6 +98,8 @@ storiesOf('CID')
                     <div className="palette">
                         <div className="palette-color palette-color-11">
                             Keboola Indigo<br/>#282d38
+                            <span>KBC sidepanel - project name bg
+22262F</span>
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Delete</h4>

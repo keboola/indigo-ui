@@ -13,10 +13,6 @@ button {
     font-size: 14px;
     border-radius: 3px;
 }
-.btn-sm, .btn-group-sm>.btn {
-    padding: 5px 10px;
-    font-size: .8em;
-}
 .btn-xs, .btn-group-xs>.btn {
     padding: 2px 5px;
     font-size: .7em;
@@ -56,22 +52,17 @@ button {
 // NEW BUTTON OVERRIDES
 
 .btn {
-    padding: 8px 12px;
-    font-size: 14px;
-
-    font-family: "Gotham Rounded A", "Gotham Rounded B";
-    border-radius: 3px;
-    border: 0 !important;
-
     display: flex;
     flex-flow: row;
     align-items: center;
+
+    font-family: "Gotham Rounded A", "Gotham Rounded B";
+    border: 0!important;
 
     &-responsive {
         @media all and (max-width: 40px) {
             .btn-label {
                 display: none;
-                margin: 0;
             }
         }
     }
@@ -80,67 +71,18 @@ button {
         width: 20px;
         height: 20px;
         color: #fff;
-
-        margin: 0;
-        line-height: 0;
         + .btn-label {
-            margin-left: 8px;
+            margin-left: @padding-base-vertical;
         }
     }
 
     &-sm {
-        padding: 7px 12px;
-        font-size: 12px;
-
         .icon-svg {
             width: 18px;
             height: 18px;
-
             + .btn-label {
-                margin-left: 6px;
+                margin-left: @padding-small-vertical;
             }
-        }
-    }
-
-    &-success {
-        background-color: #98CF3C;
-        &:hover {
-            background-color: darken(#98CF3C, 8%);
-        }
-        &:active,
-        &.active {
-            background-color: darken(#98CF3C, 16%) !important;
-        }
-        &:focus {
-            background-color: #98CF3C;
-        }
-    }
-
-    &-primary {
-        background-color: #25B8EB;
-        &:hover {
-            background-color: darken(#25B8EB, 8%);
-        }
-        &:active,
-        &.active {
-            background-color: darken(#25B8EB, 16%) !important;
-        }
-        &:focus {
-            background-color: #25B8EB;
-        }
-    }
-
-    &-danger {
-        background-color: #EF1E2D;
-        &:hover {
-            background-color: darken(#EF1E2D, 8%);
-        }
-        &:active,
-        &.active {
-            background-color: darken(#EF1E2D, 16%) !important;
-        }
-        &:focus {
-            background-color: #EF1E2D;
         }
     }
 
@@ -235,36 +177,5 @@ button {
         &:hover .icon-svg {
             animation: passing 1s ease infinite;
         }
-    }
-}
-
-
-
-.btn-detail {
-    .btn-primary();
-    &:hover .icon-svg {
-        animation: zoom 2.5s ease infinite;
-        transform-origin-x: 15%;
-        transform-origin-y: 15%;
-        transform-origin-z: initial
-    }
-}
-
-.btn-accept {
-    .btn-success();
-    &:hover .icon-svg {
-        animation: bounce 1s ease infinite;
-        transform-origin-x: 90%;
-        transform-origin-y: 35%;
-        transform-origin-z: initial
-    }
-}
-
-
-.btn-file-upload {
-    .btn-primary();
-
-    &:hover .icon-svg {
-        animation: float 1s ease infinite;
     }
 }

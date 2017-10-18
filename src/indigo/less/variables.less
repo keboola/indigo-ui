@@ -1,63 +1,181 @@
-//
-// Variables
-// --------------------------------------------------
-
+//CID Colors
 
 @CIDcolor1: #25b8eb;
 @CIDcolor2: #282d38;
 @CIDcolor3: #eaebed;
 @CIDcolor4: #6b6b6b;
 
-@CIDcolor5: #92dbf5;
+@CIDcolor5: lighten(@CIDcolor1, 50%);
 @CIDcolor6: #98cf3c;
 @CIDcolor7: #ffd452;
+@CIDcolor7777: #FF9D52;
 @CIDcolor8: #F74d63;
 @CIDcolor9: #ef1e2d;
 
+@CIDcolor5a: lighten(@CIDcolor1, 75%);
+@CIDcolor7a: lighten(@CIDcolor7, 80%);
+@CIDcolor8a: lighten(@CIDcolor8, 90%);
+
 @CIDcolor10: #f5f5f7;
-@CIDcolor11: #22262f;
-@CIDcolor12: #bdc1cb;
-@CIDcolor13: #7c8498;
-@CIDcolor14: #1e2129;
 @CIDcolor15: #dce0ec;
+@CIDcolor12: #bdc1cb;
 @CIDcolor116: #89959f;
+@CIDcolor13: #7c8498;
+@CIDcolor11: #22262f;
+@CIDcolor14: #1e2129;
 
 
+//
+// Variables
+// --------------------------------------------------
 
 
-
-//== Colors
-@kbc-grey-1: #606368;
-@kbc-grey-2: #93969b;
-@kbc-grey-3: #a3a9b7;
-
-@kbc-grey-bg: #c4c4d3;
-@kbc-btn-default-color: #fff;
+@gray-base: @CIDcolor2;
+@gray-darker:            @CIDcolor14;
+@gray-dark:              @CIDcolor11;
+@gray:                   @CIDcolor13;
+@gray-light:             @CIDcolor116;
+@gray-lighter:           @CIDcolor15;
 
 
-@gray-base: #282d38;
-@brand-primary: #0199f1;
-@brand-success: #96d130;
-@brand-info: #04bfff;
-@brand-warning: #ffa42e;
-@brand-danger: #ef1e2d;
-@well-bg: #fafafb;
+@brand-primary: @CIDcolor1;
+@brand-success: @CIDcolor6;
+@brand-info: @CIDcolor1;
+@brand-warning: @CIDcolor7;
+@brand-danger: @CIDcolor9;
 
-@table-border-color: #e8e8ef;
 
-@box-shadow: inset 0  8px 8px -8px #e3e3e9;
-@box-shadow-dark: inset 0  8px 8px -8px #252933;
+@body-bg: @CIDcolor10;
+@text-color: @gray-base;
+@link-color: @brand-primary;
 
 
 //== Typography
 
 @font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-base: @font-family-sans-serif;
-@font-size-base: 14px;
+@font-family-sans-serif2: "Gotham Rounded A", "Gotham Rounded B";
+@font-family-base:        @font-family-sans-serif;
 
-@body-bg: #f5f5f7;
-@text-color: #282d38;
-@link-color: #15c3ff;
+@font-size-base:          14px;
+
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 3.42)); // ~48px
+@font-size-h2:            floor((@font-size-base * 1.7)); // ~24px
+@font-size-h3:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+@line-height-base:        1.5; // 20/14
+
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    @font-family-sans-serif2;
+@headings-font-weight:    700;
+@headings-line-height:    1.0;
+
+
+
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     8px;
+@padding-base-horizontal:   12px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  16px;
+
+@padding-small-vertical:    6px;
+@padding-small-horizontal:  10px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-small:         1.5;
+
+@border-radius-base:        3px;
+@border-radius-large:       6px;
+@border-radius-small:       2px;
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color:    #fff;
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg:       @brand-primary;
+
+//** Width of the `border` for generating carets that indicate dropdowns.
+@caret-width-base:          4px;
+//** Carets increase slightly in size for larger components.
+@caret-width-large:         5px;
+
+
+
+
+
+
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-font-weight:                normal;
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+@btn-default-border:             #ccc;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 8%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 8%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 8%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 8%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 8%);
+
+@btn-link-disabled-color:        @gray-light;
+
+// Allows for customizing button radius independently from global border radius
+@btn-border-radius-base:         @border-radius-base;
+@btn-border-radius-large:        @border-radius-base;
+@btn-border-radius-small:        @border-radius-base;
+
+
+
+
+
+
+//======================================================
+
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+
+
+
+
+
+
+
+
+
+
+
 
 @component-active-bg: #e5f4f7;
 @component-active-color: @gray-base;
@@ -90,13 +208,6 @@
 @alert-danger-text: #e70617;
 @alert-danger-border: @state-danger-border;
 
-//== Buttons
-
-@btn-font-weight: 300;
-
-@border-radius-base: 3px;
-@border-radius-large: 5px;
-@border-radius-small: 2px;
 
 
 //== Forms
@@ -133,3 +244,31 @@
 @nav-tabs-active-link-hover-border-color: #e3e3e9;
 @nav-tabs-justified-link-border-color: #e3e3e9;
 @nav-tabs-justified-active-link-border-color: #fff;
+
+
+
+@well-bg: #fafafb;
+
+
+@table-border-color: #e8e8ef;
+
+@box-shadow: inset 0  8px 8px -8px #e3e3e9;
+@box-shadow-dark: inset 0  8px 8px -8px #252933;
+
+
+
+
+
+
+//== Colors KBC DEPRECATED
+@kbc-grey-1: #606368;
+@kbc-grey-2: #93969b;
+@kbc-grey-3: #a3a9b7;
+
+@kbc-grey-bg: #c4c4d3;
+@kbc-btn-default-color: #fff;
+
+
+
+
+
