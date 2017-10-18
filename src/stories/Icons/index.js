@@ -7,11 +7,13 @@ const icons = [
     "arrow-down",
     "arrow-vertical",
     "calendar",
+    "check",
     "cloud",
     "cloud-download",
     "copy",
     "duration",
     "edit",
+    "error",
     "extractor",
     "extractor-to",
     "help",
@@ -36,17 +38,19 @@ const icons = [
     "support-chat",
     "switch-off",
     "switch-on",
+    "times",
     "transformation",
     "transformation-2",
     "transformation-overview",
     "trash",
     "user",
+    "warning",
     "writer"
 ]
 
 storiesOf('Icons')
     .addWithInfo(
-        'default',
+        'Icon gallery',
         'Desc',
         () => (
 
@@ -61,4 +65,34 @@ storiesOf('Icons')
             inline: true,
         }
     )
-;
+    .addWithInfo(
+        'Icon sizing',
+        'Desc',
+        () => (
+
+<div>
+
+                <Icon iconClass="mapping-out" className="icon-size-stack"/>
+    <br/>
+                <Icon iconClass="mapping-in" className="icon-size-stack"/>
+    <br/>
+                <Icon iconClass="extractor-to" className="icon-size-stack"/>
+    <br/>
+                <Icon iconClass="transformation-2" className="icon-size-stack"/>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <Icon iconClass="keboola" className="icon-size-20"/>
+    <Icon iconClass="keboola" className="icon-size-32"/>
+    <Icon iconClass="keboola" className="icon-size-48"/>
+    <Icon iconClass="keboola" className="icon-size-64"/>
+
+
+</div>
+        ),
+        {
+            inline: true,
+        }
+    )

@@ -5,10 +5,11 @@ export default React.createClass({
     displayName: 'Icon',
     propTypes: {
         iconClass: React.PropTypes.string,
+        className: React.PropTypes.string,
     },
     render: function () {
         return (
-            <svg className="icon-svg">
+            <svg className={"icon-svg " + this.props.className}>
                 <use xlinkHref={IconSprite + "#" + this.props.iconClass}/>
             </svg>
         );
