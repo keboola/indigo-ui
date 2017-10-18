@@ -51,22 +51,14 @@ button {
     }
 }
 
-.btn {
-    &-edit {
-        .btn-primary();
-        &:hover i {
-            animation: wrench 2.5s ease infinite;
-            transform-origin-x: 90%;
-            transform-origin-y: 90%;
-            transform-origin-z: initial
-        }
-    }
-}
+
 
 // NEW BUTTON OVERRIDES
 
 .btn {
     padding: 8px 12px;
+    font-size: 14px;
+
     font-family: "Gotham Rounded A", "Gotham Rounded B";
     border-radius: 3px;
     border: 0 !important;
@@ -74,6 +66,15 @@ button {
     display: flex;
     flex-flow: row;
     align-items: center;
+
+    &-responsive {
+        @media all and (max-width: 40px) {
+            .btn-label {
+                display: none;
+                margin: 0;
+            }
+        }
+    }
 
     .icon-svg {
         width: 20px;
@@ -84,6 +85,20 @@ button {
         line-height: 0;
         + .btn-label {
             margin-left: 8px;
+        }
+    }
+
+    &-sm {
+        padding: 7px 12px;
+        font-size: 12px;
+
+        .icon-svg {
+            width: 18px;
+            height: 18px;
+
+            + .btn-label {
+                margin-left: 6px;
+            }
         }
     }
 
@@ -130,14 +145,23 @@ button {
     }
 
     &-link {
+        .icon-svg{
+            color: #7C8498!important;
+        }
         &:hover {
             color: #25B8EB;
             text-decoration: underline;
+            .icon-svg{
+                color: #25B8EB !important;
+            }
         }
         &:active,
         &.active {
             color: #25B8EB;
             text-decoration: underline;
+            .icon-svg{
+                color: #25B8EB !important;
+            }
         }
         &:focus {
             color:#25B8EB;
@@ -164,12 +188,48 @@ button {
         color: #BDC1CB !important;
         background-color: #EAEBED !important;
 
+        .icon-svg{
+            color: #BDC1CB !important;
+        }
+
         &.btn-link{
             background-color: #fff !important;
         }
 
         &:hover {
             background-color: #EAEBED;
+        }
+    }
+}
+
+
+.btn {
+    &-edit {
+        .btn-primary();
+        &:hover .icon-svg {
+            animation: wrench 2.5s ease infinite;
+            transform-origin-x: 90%;
+            transform-origin-y: 90%;
+            transform-origin-z: initial
+        }
+    }
+
+    &-new {
+        .btn-success();
+        &:hover .icon-svg {
+            animation: pulse 1s ease infinite;
+            transform-origin-x: 90%;
+            transform-origin-y: 90%;
+            transform-origin-z: initial
+        }
+    }
+    &-delete {
+        .btn-danger();
+        &:hover .icon-svg {
+            animation: pulse 1s ease infinite;
+            transform-origin-x: 90%;
+            transform-origin-y: 90%;
+            transform-origin-z: initial
         }
     }
 }

@@ -155,14 +155,14 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-.icon-demo{
+.icon-demo {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  &>*{
-    //margin: 20px;
-    path {
-      fill: red;
-    }
+  flex-wrap: wrap;
+
+  & > * {
+    width: 50px;
+    padding: 0 10px;
   }
 }
