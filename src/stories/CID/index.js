@@ -12,10 +12,8 @@ storiesOf('CID')
         '',
         () => (
             <div className="palette-demo">
-
                 <div className="palette-container">
                     <h3>Brand Colors</h3>
-
                     <div className="palette">
                         <div className="palette-color palette-color-1">#25b8eb</div>
                         <div className="palette-label">
@@ -26,16 +24,16 @@ storiesOf('CID')
                         <div className="palette-color palette-color-2">#282d38</div>
                         <div className="palette-label">
                             <h4>Keboola Indigo</h4>
-                            <span>KBC sidepanel - bg
-Used for title texts too</span>
+                            <small>KBC sidepanel - bg
+Used for title texts too</small>
                         </div>
                     </div>
                     <div className="palette">
                         <div className="palette-color palette-color-3">#eaebed</div>
                         <div className="palette-label">
                             <h4>Keboola Air</h4>
-                          <span>KBC content - stroke, border, bg (for jobs and runs box in the right side of extractor)
-EAEBED</span>
+                          <small>KBC content - stroke, border, bg (for jobs and runs box in the right side of extractor)
+EAEBED</small>
                         </div>
                     </div>
                     <div className="palette">
@@ -81,6 +79,33 @@ EAEBED</span>
                             <h4>Keboola Delete</h4>
                         </div>
                     </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-5-a">#C8EDFA</div>
+                        <div className="palette-label">
+                            <h4>KBC select item hover</h4>
+                            <small>
+                                Made from 25% opacity keboola blue on the white backgound
+                            </small>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-a">#FFF6DC</div>
+                        <div className="palette-label">
+                            <h4>Keboola Warning Fill</h4>
+                            <small>
+                                Made from 20% opacity of KBC warning
+                            </small>
+                        </div>
+                    </div>
+                    <div className="palette">
+                        <div className="palette-color palette-color-8-a">#FEEDEF</div>
+                        <div className="palette-label">
+                            <h4>Keboola Error Fill</h4>
+                            <small>
+                                Made from 10% opacity of KBC error
+                            </small>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="palette-container">
@@ -88,21 +113,20 @@ EAEBED</span>
 
                     <div className="palette">
                         <div className="palette-color palette-color-10">
-                            Keboola Blue<br/>#25b8eb
-                            <span>KBC content - bg</span>
+                            #25b8eb
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Delete</h4>
+                            <small>KBC content - bg</small>
                         </div>
                     </div>
                     <div className="palette">
                         <div className="palette-color palette-color-11">
-                            Keboola Indigo<br/>#282d38
-                            <span>KBC sidepanel - project name bg
-22262F</span>
+                            #282d38
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Delete</h4>
+                            <small>KBC sidepanel - project name bg 22262F</small>
                         </div>
                     </div>
                     <div className="palette">
