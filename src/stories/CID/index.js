@@ -3,7 +3,7 @@ import {storiesOf} from '@storybook/react';
 import {Image} from 'react-bootstrap';
 
 
-import favicon from '../../static/CID/favicon.png';
+import favicon from '\../../static/CID/favicon.png';
 
 storiesOf('CID')
 
@@ -11,84 +11,112 @@ storiesOf('CID')
         '🆕 Palette',
         '',
         () => (
-            <div className="palette-demo">
-                <div className="palette-container">
+            <div className="indigo-layout-col">
+                <div>
                     <h3>Brand Colors</h3>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-1">#25b8eb</div>
                         <div className="palette-label">
                             <h4>Keboola Blue</h4>
+                            <small>aaaaaa</small>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-2">#282d38</div>
                         <div className="palette-label">
                             <h4>Keboola Indigo</h4>
-                            <small>KBC sidepanel - bg
-Used for title texts too</small>
+                            <small>sidepanel bg, title texts</small>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-3">#eaebed</div>
                         <div className="palette-label">
                             <h4>Keboola Air</h4>
-                          <small>KBC content - stroke, border, bg (for jobs and runs box in the right side of extractor)
-EAEBED</small>
+                            <small>
+                                stroke, border, bg (jobs & runs)
+                            </small>
                         </div>
                     </div>
-                    <div className="palette">
-                        <div className="palette-color palette-color-4">#6b6b6b</div>
+                    <div>
+                        <div className="palette-color palette-color-4">#7C8498</div>
                         <div className="palette-label">
-                            <h4>Keboola Dark</h4>
+                            <h4>Keboola Gray</h4>
+                            <small>
+                                text, icons
+                            </small>
                         </div>
                     </div>
                 </div>
 
                 <div className="palette-container">
                     <h3>Brand Complementary</h3>
-
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-5">#92dbf5</div>
                         <div className="palette-label">
                             <h4>Keboola Light Blue</h4>
+                            <small>
+                                disabled keboola blue
+                            </small>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-6">#98cf3c</div>
                         <div className="palette-label">
                             <h4>Keboola Success</h4>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-7">#ffd452</div>
                         <div className="palette-label">
                             <h4>Keboola Warning</h4>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
+                        <div className="palette-color palette-color-777">#ff9d52</div>
+                        <div className="palette-label">
+                            <h4>Keboola Warning text</h4>
+                        </div>
+                    </div>
+                    <div>
                         <div className="palette-color palette-color-8">#F74d63</div>
                         <div className="palette-label">
                             <h4>Keboola Error</h4>
                         </div>
                     </div>
-                    <div className="palette">
-                        <div className="palette-color palette-color-9">
-                            #ef1e2d
-                        </div>
+                    <div>
+                        <div className="palette-color palette-color-9">#ef1e2d</div>
                         <div className="palette-label">
                             <h4>Keboola Delete</h4>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-5-a">#C8EDFA</div>
                         <div className="palette-label">
-                            <h4>KBC select item hover</h4>
+                            <h4>Keboola Blueish</h4>
                             <small>
-                                Made from 25% opacity keboola blue on the white backgound
+                                select item hover
                             </small>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
+                        <div className="palette-color palette-color-7-a">#FFF6DC</div>
+                        <div className="palette-label">
+                            <h4>Keboola Yellowish</h4>
+                            <small>
+                                warning fill color
+                            </small>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="palette-color palette-color-8-a">#FEEDEF</div>
+                        <div className="palette-label">
+                            <h4>Keboola Redish</h4>
+                            <small>
+                               Error, fill color
+                            </small>
+                        </div>
+                    </div>
+                    <div>
                         <div className="palette-color palette-color-a">#FFF6DC</div>
                         <div className="palette-label">
                             <h4>Keboola Warning Fill</h4>
@@ -97,7 +125,7 @@ EAEBED</small>
                             </small>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-8-a">#FEEDEF</div>
                         <div className="palette-label">
                             <h4>Keboola Error Fill</h4>
@@ -111,7 +139,7 @@ EAEBED</small>
                 <div className="palette-container">
                     <h3>Other colors</h3>
 
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-10">
                             #25b8eb
                         </div>
@@ -120,7 +148,7 @@ EAEBED</small>
                             <small>KBC content - bg</small>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-11">
                             #282d38
                         </div>
@@ -129,7 +157,7 @@ EAEBED</small>
                             <small>KBC sidepanel - project name bg 22262F</small>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-12">
                             Keboola Dark<br/>#eaebed
                         </div>
@@ -137,15 +165,15 @@ EAEBED</small>
                             <h4>Keboola Delete</h4>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-13">
-                            Keboola Air<br/>#6b6b6b
+                            Keboola Air<br/>#89959f
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Delete</h4>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-14">
                             Keboola Air<br/>#6b6b6b
                         </div>
@@ -153,7 +181,7 @@ EAEBED</small>
                             <h4>Keboola Delete</h4>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-15">
                             Keboola Air<br/>#6b6b6b
                         </div>
@@ -161,7 +189,7 @@ EAEBED</small>
                             <h4>Keboola Delete</h4>
                         </div>
                     </div>
-                    <div className="palette">
+                    <div>
                         <div className="palette-color palette-color-16">
                             Keboola Air<br/>#6b6b6b
                         </div>

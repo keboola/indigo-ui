@@ -17,27 +17,64 @@ h1,h2,h3,h4,h5,h6{
   padding: 16px 0;
 }
 
+
+.indigo {
+  &-heading{
+
+  }
+
+  &-description{
+    color: @gray;
+    font-size:@font-size-small;
+  }
+
+  &-layout {
+    &-col{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      > div {
+        width: 33%;
+        > div {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          margin: 20px 0;
+        }
+      }
+    }
+
+    &-grid{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      > *{
+        width: 50px;
+        padding: 0 10px;
+      }
+    }
+
+    &-3{
+      > div{
+        > div {
+
+        }
+      }
+    }
+  }
+}
+
+
 .palette {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 20px 0;
-  &-demo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  &-container{
-    width: 33%;
-  }
   &-label{
     padding: 20px;
     display: flex;
     flex-flow: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
   }
+
   &-color {
     width: 100px;
     height: 100px;
@@ -46,11 +83,13 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
     text-align: center;
   }
+
   &-color-1 {
     background: @CIDcolor1;
   }
   &-color-2 {
     background: @CIDcolor2;
+    color: #fff
   }
   &-color-3 {
     background: @CIDcolor3;
@@ -61,14 +100,26 @@ h1,h2,h3,h4,h5,h6{
   &-color-5 {
     background: @CIDcolor5;
   }
+  &-color-5-a {
+    background: @CIDcolor5a;
+  }
   &-color-6 {
     background: @CIDcolor6;
   }
   &-color-7 {
     background: @CIDcolor7;
   }
+  &-color-7-a {
+    background: @CIDcolor7a;
+  }
+  &-color-777 {
+    background: @CIDcolor777;
+  }
   &-color-8 {
     background: @CIDcolor8;
+  }
+  &-color-8-a {
+    background: @CIDcolor8a;
   }
   &-color-9 {
     background: @CIDcolor9;
@@ -135,36 +186,5 @@ h1,h2,h3,h4,h5,h6{
   &-style-4 {
     font-style: italic;
     font-weight: 700;
-  }
-}
-
-.icon-demo {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
-  & > * {
-    width: 50px;
-    padding: 0 10px;
-  }
-}
-
-
-.indigo-demo {
-  &-heading{
-
-  }
-
-  &-description{
-
-  }
-
-  &-layout {
-    //TBD
-
-    //&-colors{}
-    //&-btns{}
-    //&-icons{}
   }
 }

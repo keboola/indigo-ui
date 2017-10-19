@@ -54,7 +54,7 @@ storiesOf('Icons')
         'Desc',
         () => (
 
-            <div className="icon-demo">
+            <div className="indigo-layout-grid">
                 {icons.map(function(object, i){
                     return  <Icon iconClass={object}/>;
                 })}
