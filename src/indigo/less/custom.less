@@ -463,3 +463,178 @@ a .kbcComponentIcon-3rdParty-64px {
     margin-left: 260px;
   }
 }
+
+
+
+
+
+
+
+.kbc-header.kbc-expiration,
+.kbc-header.kbc-limits{
+  padding: 30px;
+}
+
+.kbc-overview-component .kbc-header{
+  margin-bottom: 10px;
+}
+
+
+.kbc-expiration {
+  background-color: #FFF6DC;
+  background-image: url('media/ic_error.svg');
+  background-position: calc(~"100% - 30px") 30px;
+  background-size: 75px 75px;
+  background-repeat: no-repeat;
+
+  border: 2px solid #FFD452;
+
+  margin: 5px 0;
+
+  border-radius: 5px;
+
+
+  h3 {
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    color: #FF9D52;
+    font-weight: bold;
+  }
+
+  h4{
+    color: #FF9D52;
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  ul {
+    margin-bottom: 10px;
+    list-style-type:none;
+    padding-left: 32px;
+    padding-top: 4px;
+  }
+
+  li{
+    line-height: 2;
+  }
+
+  .alert {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    min-height: 77px;
+    color:#7C8498;
+  }
+
+  a{
+    color:#7C8498;
+    &:hover{
+      color: #282D38;
+    }
+  }
+
+
+}
+
+.kbc-extractor-icon,
+.kbc-writer-icon{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-bottom: -6px;
+  margin-right: 8px;
+}
+
+.kbc-extractor-icon{
+  background-image: url('media/extractor.svg');
+  background-position: 0 -1px;
+  background-repeat: no-repeat;
+}
+
+.kbc-writer-icon{
+  background-image: url('media/writer.svg');
+  background-repeat: no-repeat;
+}
+
+.kbc-deprecation{
+  h3{
+    margin-bottom: 12px;
+  }
+}
+
+
+.kbc-limits {
+  background-color: #FEEDEF;
+  border: 2px solid #F74D63;
+  background-image: url('../icons/symbol/svg/sprite.symbol.svg#warning');
+  background-position: calc(~"100% - 27px") 28px;
+  background-size: 84px 84px;
+  background-repeat: no-repeat;
+  margin: 5px 0;
+  border-radius: 5px;
+
+  h3 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #f74d63;
+    font-weight: bold;
+  }
+
+  ul {
+    li {
+      line-height: 2;
+    }
+  }
+
+  .alert {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color:#7C8498;
+    min-height: 77px;
+  }
+
+  a {
+    color:#7C8498;
+    &:hover{
+      color: #282D38;
+    }
+  }
+}
+
+
+.migration-row {
+  padding: 30px;
+  border: 2px solid #FFD452;
+  background-color: #FFF6DC;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  .alert {
+    background-image: url('../scripts/modules/home/react/media/ic_error.svg');
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 75px 75px;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  h3 {
+    color: #FF9D52;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  &-content{
+    margin-bottom: 30px;
+    width: 80%;
+    color: #282d38;
+  }
+}

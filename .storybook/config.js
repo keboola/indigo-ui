@@ -29,6 +29,7 @@ function loadStories() {
   require('../src/stories/Image');
   require('../src/stories/Icons')
   require('../src/stories/KbcReactComponents')
+  require('../src/stories/OverviewComponent')
   require('../src/stories/CID')
   require('../src/stories/EditingMode')
   require('../src/stories/CopyClipboard')
