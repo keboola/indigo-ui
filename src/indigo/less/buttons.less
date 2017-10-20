@@ -182,7 +182,6 @@ button {
 }
 
 .btn {
-
     .icon-svg.btn-icon-loading  {
         transform: scale(0);
         position: absolute;
@@ -190,13 +189,12 @@ button {
 }
 
 .btn-loading {
-    .icon-svg {
-        animation: loading-btn-down 1s linear;
-        animation-fill-mode: forwards;
-    }
-    .icon-svg.btn-icon-loading {
-        animation: loading-btn-up 1s linear 1s;
-        animation-fill-mode: forwards;
-    }
-
+  .icon-svg {
+    animation: loading-btn-down 0.3s linear;
+    animation-fill-mode: forwards;
+  }
+  .icon-svg.btn-icon-loading {
+    animation: loading-btn-up 0.3s linear 0.3s, spin 1.5s linear 0.3s infinite;
+    animation-fill-mode: forwards, none;
+  }
 }
