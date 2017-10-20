@@ -9,7 +9,7 @@
             <g id="ic_warning" transform="translate(498.000000, 274.000000)">
                 <g id="Icon-24px">
                     <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
-                    <path d="M1,21 L23,21 L12,2 L1,21 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 L13,14 Z" id="Shape" fill="#354052"></path>
+                    <path d="M1,21 L23,21 L12,2 L1,21 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 L13,14 Z" id="Shape" fill="currentColor"></path>
                 </g>
             </g>
         </g>

@@ -67,7 +67,7 @@ button {
         }
     }
 
-    .icon-svg {
+    .icon {
         width: 20px;
         height: 20px;
         color: #fff;
@@ -77,7 +77,7 @@ button {
     }
 
     &-sm {
-        .icon-svg {
+        .icon {
             width: 18px;
             height: 18px;
             + .btn-label {
@@ -87,13 +87,13 @@ button {
     }
 
     &-link {
-        .icon-svg{
+        .icon{
             color: #7C8498!important;
         }
         &:hover {
             color: #25B8EB;
             text-decoration: underline;
-            .icon-svg{
+            .icon{
                 color: #25B8EB !important;
             }
         }
@@ -101,7 +101,7 @@ button {
         &.active {
             color: #25B8EB;
             text-decoration: underline;
-            .icon-svg{
+            .icon{
                 color: #25B8EB !important;
             }
         }
@@ -130,7 +130,7 @@ button {
         color: #BDC1CB !important;
         background-color: #EAEBED !important;
 
-        .icon-svg{
+        .icon{
             color: #BDC1CB !important;
         }
 
@@ -147,7 +147,7 @@ button {
 .btn {
     &-edit {
         .btn-primary();
-        &:hover .icon-svg {
+        &:hover .icon {
             animation: wrench 2.5s ease infinite;
             transform-origin-x: 90%;
             transform-origin-y: 90%;
@@ -157,24 +157,24 @@ button {
 
     &-new {
         .btn-success();
-        &:hover .icon-svg {
+        &:hover .icon {
             animation: pulse 2.5s ease infinite;
         }
     }
 
     &-delete {
         .btn-danger();
-        &:hover .icon-svg {
+        &:hover .icon {
             animation: tada 1.5s linear infinite
         }
     }
 
     &-run {
         .btn-link();
-        .icon-svg{
+        .icon{
             color: #555555;
         }
-        &:hover .icon-svg {
+        &:hover .icon {
             animation: passing 1s ease infinite;
             color: @CIDcolor1;
         }
@@ -182,19 +182,19 @@ button {
 }
 
 .btn {
-    .icon-svg.btn-icon-loading  {
+    .icon.btn-icon-loading  {
         transform: scale(0);
         position: absolute;
     }
 }
 
 .btn-loading {
-  .icon-svg {
+  .icon {
     animation: loading-btn-down 0.3s linear;
     animation-fill-mode: forwards;
   }
-  .icon-svg.btn-icon-loading {
-    animation: loading-btn-up 0.3s linear 0.3s, spin 1.5s linear 0.3s infinite;
-    animation-fill-mode: forwards, none;
+  .icon.btn-icon-loading {
+    animation:  spin 1.5s linear 0.3s infinite, loading-btn-up 0.3s linear 0.3s;
+    animation-fill-mode: none, forwards;
   }
 }

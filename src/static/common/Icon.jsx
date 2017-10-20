@@ -7,9 +7,12 @@ export default React.createClass({
         iconClass: React.PropTypes.string,
         className: React.PropTypes.string,
     },
+    getAdditionalClasses: function () {
+        return typeof this.props.className === "undefined" ? "" : this.props.className
+    },
     render: function () {
         return (
-            <svg className={"icon-svg " + this.props.className}>
+            <svg className={"icon " + this.getAdditionalClasses()}>
                 <use xlinkHref={IconSprite + "#" + this.props.iconClass}/>
             </svg>
         );
