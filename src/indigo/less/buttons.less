@@ -172,10 +172,31 @@ button {
     &-run {
         .btn-link();
         .icon-svg{
-            color: #555555 !important; //uffff
+            color: #555555;
         }
         &:hover .icon-svg {
             animation: passing 1s ease infinite;
+            color: @CIDcolor1;
         }
     }
+}
+
+.btn {
+
+    .icon-svg.btn-icon-loading  {
+        transform: scale(0);
+        position: absolute;
+    }
+}
+
+.btn-loading {
+    .icon-svg {
+        animation: loading-btn-down 1s linear;
+        animation-fill-mode: forwards;
+    }
+    .icon-svg.btn-icon-loading {
+        animation: loading-btn-up 1s linear 1s;
+        animation-fill-mode: forwards;
+    }
+
 }

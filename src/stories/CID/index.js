@@ -18,14 +18,18 @@ storiesOf('CID')
                         <div className="palette-color palette-color-1">#25b8eb</div>
                         <div className="palette-label">
                             <h4>Keboola Blue</h4>
-                            <div className="indigo-description">basic brand color</div>
+                            <div className="indigo-description">
+                                basic brand color
+                            </div>
                         </div>
                     </div>
                     <div>
                         <div className="palette-color palette-color-2">#282d38</div>
                         <div className="palette-label">
                             <h4>Keboola Indigo</h4>
-                            <div className="indigo-description">texts, titles, sidebar bg </div>
+                            <div className="indigo-description">
+                                texts, titles, sidebar bg
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -47,7 +51,6 @@ storiesOf('CID')
                         </div>
                     </div>
                 </div>
-
                 <div>
                     <h3>Brand Complementary</h3>
                     <div>
@@ -135,7 +138,9 @@ storiesOf('CID')
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Empty</h4>
-                            <div className="indigo-description">icons in empty states</div>
+                            <div className="indigo-description">
+                                icons in empty states
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -144,7 +149,9 @@ storiesOf('CID')
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Disable</h4>
-                            <div className="indigo-description">disabled icons, actions, input border</div>
+                            <div className="indigo-description">
+                                disabled icons, actions, input border
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -153,7 +160,9 @@ storiesOf('CID')
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Light Dark</h4>
-                            <div className="indigo-description">sidebar - arrows, text, icons</div>
+                            <div className="indigo-description">
+                                sidebar - arrows, text, icons
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -162,7 +171,9 @@ storiesOf('CID')
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Dark</h4>
-                            <div className="indigo-description">sidebar - light line</div>
+                            <div className="indigo-description">
+                                sidebar - light line
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -171,7 +182,9 @@ storiesOf('CID')
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Darkside</h4>
-                            <div className="indigo-description">sidebar - project name bg</div>
+                            <div className="indigo-description">
+                                sidebar - project name bg
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -180,8 +193,9 @@ storiesOf('CID')
                         </div>
                         <div className="palette-label">
                             <h4>Keboola Darkest</h4>
-                            <div className="indigo-description">sidebar - dark line</div>
-
+                            <div className="indigo-description">
+                                sidebar - dark line
+                            </div>
                         </div>
                     </div>
 

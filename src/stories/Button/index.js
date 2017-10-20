@@ -43,7 +43,7 @@ storiesOf('Button')
 
                 <Button bsStyle="link">
                     <span className="btn-label">
-                        .btn-label
+                        .btn-link
                     </span>
                 </Button>
             </div>
@@ -117,6 +117,17 @@ storiesOf('Button')
         () => (
             <div>
 
+                <Button bsStyle="primary" className="btn-loadin">
+                    <Icon iconClass="copy"/>
+                    <Icon iconClass="refresh" className="btn-icon-loading"/>
+
+                    <span className="btn-label">
+                                Loading (click)
+                    </span>
+                </Button>
+
+                <br/>
+
                 <Button bsStyle="new">
                     <Icon iconClass="plus"/>
                     <span className="btn-label">
@@ -168,6 +179,15 @@ storiesOf('Button')
 
                 <br/>
 
+                <Button bsStyle="run">
+                    <Icon iconClass="run"/>
+                    <span className="btn-label">
+                                Run Transformation
+                    </span>
+                </Button>
+
+                <br/>
+
                 <Button bsStyle="success">
                     <Icon iconClass="user"/>
                     <span className="btn-label">
@@ -176,13 +196,16 @@ storiesOf('Button')
                 </Button>
 
                 <br/>
+                <br/>
 
-                <Button bsStyle="run">
-                    <Icon iconClass="run"/>
-                    <span className="btn-label">
-                                Run Transformation
-                    </span>
-                </Button>
+                <div className="btn btn-lg btn-default hovering ld-ext-left">
+                    Hover Me
+                    <div className="ld ld-ball ld-flip">
+
+                    </div>
+                </div>
+
+                <br/>
 
                 <br/>
 
@@ -200,6 +223,10 @@ storiesOf('Button')
                                 Copy to Clipboard
                     </span>
                 </Button>
+
+                <br/>
+
+
 
             </div>
 
