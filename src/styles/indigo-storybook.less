@@ -17,19 +17,18 @@ h1,h2,h3,h4,h5,h6{
   padding: 16px 0;
 }
 
-
 .indigo {
-  &-heading{
+  &-heading {
 
   }
 
-  &-description{
+  &-description {
     color: @gray;
-    font-size:@font-size-small;
+    font-size: @font-size-small;
   }
 
   &-layout {
-    &-col{
+    &-col {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -44,23 +43,31 @@ h1,h2,h3,h4,h5,h6{
       }
     }
 
-    &-grid{
+    &-grid {
       display: flex;
       flex-flow: row;
       justify-content: space-around;
       flex-wrap: wrap;
 
-      > div{
+      > div {
         width: 50px;
         padding: 0 10px;
       }
     }
   }
+
+  &-logo {
+    padding: 20px;
+    margin: 50px 10px 10px 10px;
+
+    &-dark-bg {
+      background: @CIDcolor2;
+    }
+  }
 }
 
-
 .palette {
-  &-label{
+  &-label {
     padding: 20px;
     display: flex;
     flex-flow: column;
@@ -140,35 +147,6 @@ h1,h2,h3,h4,h5,h6{
   &-color-20 {
     background: @CIDcolor20;
     color: #ffffff;
-  }
-}
-
-.logo{
-  padding: 10px;
-  margin: 10px;
-  &-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 60px;
-  }
-  &-color-1 {
-    background: @CIDcolor5;
-    path {
-      fill: @CIDcolor1;
-    }
-  }
-  &-color-2 path{
-    fill: @CIDcolor2;
-  }
-  &-color-3 path{
-    fill: @CIDcolor3;
-  }
-  &-color-4 path{
-    fill: @CIDcolor4;
-  }
-  &-color-5 path{
-    fill: @CIDcolor5;
   }
 }
 
