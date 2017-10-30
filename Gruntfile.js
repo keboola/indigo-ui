@@ -133,7 +133,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'src/indigo/icons',
             src: ['**/*.svg'],
-            dest: 'dist/icons',
+            dest: 'public/icons',
             options: {
                 shape: {
                     dimension: {

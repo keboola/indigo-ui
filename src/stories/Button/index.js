@@ -57,24 +57,6 @@ storiesOf('Button')
         'Button sizing',
         () => (
             <div>
-                <Button bsStyle="primary">
-                    <Icon iconClass="plus"/>
-                    <span className="btn-label">
-                        Size .btn
-                    </span>
-                </Button>
-
-                <br/>
-
-                <Button bsStyle="primary" className="btn-sm">
-                    <Icon iconClass="plus"/>
-                    <span className="btn-label">
-                        Size .btn-sm
-                    </span>
-                </Button>
-
-                <br/>
-
                 <Button bsStyle="success">
                     <Icon iconClass="plus"/>
                     <span className="btn-label">
@@ -94,6 +76,24 @@ storiesOf('Button')
 
                 <Button bsStyle="success">
                     <Icon iconClass="plus"/>
+                </Button>
+
+                <br/>
+
+                <Button bsStyle="primary">
+                    <Icon iconClass="plus"/>
+                    <span className="btn-label">
+                        Size .btn
+                    </span>
+                </Button>
+
+                <br/>
+
+                <Button bsStyle="primary" className="btn-sm">
+                    <Icon iconClass="plus"/>
+                    <span className="btn-label">
+                        Size .btn-sm
+                    </span>
                 </Button>
 
                 <br/>
