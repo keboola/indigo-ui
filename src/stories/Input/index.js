@@ -1,6 +1,8 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import {FormGroup, FormControl, ControlLabel, HelpBlock} from 'react-bootstrap';
+import {FormGroup, FormControl, ControlLabel, HelpBlock, InputGroup} from 'react-bootstrap';
+import Icon from "../../static/common/Icon";
+
 
 
 storiesOf('Input')
@@ -122,6 +124,54 @@ storiesOf('Input')
                 <FormControl type="text"/>
                 <HelpBlock>Help text with validation state.</HelpBlock>
             </FormGroup>
+        ),
+        {
+            inline: true,
+        }
+    ).addWithInfo(
+        '🆕 Jack`s Input',
+        '',
+        () => (
+            <div>
+            <FormGroup>
+                <ControlLabel>Input empty</ControlLabel>
+                <FormControl type="text" placeholder="Placeholder..."/>
+                <HelpBlock>Help text — If primary key is set, updates can be done on table by selecting incremental loads. Primary key can consist of multiple columns. Primary key of an existing table cannot be changed.</HelpBlock>
+            </FormGroup>
+            <FormGroup>
+                <ControlLabel>Input Filled</ControlLabel>
+                <FormControl type="text"/>
+            </FormGroup>
+            <FormGroup disabled="disabled">
+                <ControlLabel>Input Disabled</ControlLabel>
+                <FormControl disabled="disabled" type="text" value="Disabled input Placeholder…"/>
+                <HelpBlock>Why is input disabled - optional text</HelpBlock>
+            </FormGroup>
+                <FormGroup validationState="success">
+                    <ControlLabel>Validation Success</ControlLabel>
+                    <FormControl type="text"/>
+                    <FormControl.Feedback>
+                        <Icon iconClass="check" />
+                    </FormControl.Feedback>
+                </FormGroup>
+                <FormGroup validationState="error">
+                    <ControlLabel>Validation Success</ControlLabel>
+                    <FormControl type="text"/>
+                    <HelpBlock>Text about why is this input filled with validation error</HelpBlock>
+                    <FormControl.Feedback>
+                        <Icon iconClass="warning" />
+                    </FormControl.Feedback>
+                </FormGroup>
+                <FormGroup className="form-group-search">
+                    <ControlLabel>Search</ControlLabel>
+
+                    <FormControl type="text"/>
+                    <FormControl.Feedback>
+                        <Icon iconClass="search" />
+                    </FormControl.Feedback>
+                </FormGroup>
+
+            </div>
         ),
         {
             inline: true,

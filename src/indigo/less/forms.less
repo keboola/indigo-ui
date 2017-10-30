@@ -1,3 +1,49 @@
+input, label{
+    font-family: "Gotham Rounded A", "Gotham Rounded B";
+}
+
+.help-block{
+    color: @CIDcolor17;
+}
+
+.form-control:disabled {
+    border-color: transparent;
+    background: @CIDcolor3;
+    color: @CIDcolor17;
+    box-shadow: none;
+}
+
+.has-feedback {
+    label ~ .form-control-feedback {
+        top: (@line-height-computed + 13);
+        right: @padding-base-horizontal;
+        width: 22px;
+        height: 22px;
+
+    }
+
+    .form-control {
+        padding-right: 42px;
+    }
+
+    &.form-group-search {
+        .form-control:focus ~ .icon {
+            color: @CIDcolor1;
+        }
+
+        .form-control {
+            padding-right: 0px;
+            padding-left: 42px;
+        }
+
+        label ~ .form-control-feedback {
+            left: @padding-base-horizontal;
+            right: 0;
+        }
+    }
+}
+
+
 
 label {
     font-weight: 400;
@@ -14,18 +60,6 @@ label {
     }
 }
 
-textarea.form-control {
-    padding: 10px 15.6px;
-}
-
-select.form-control {
-    height: 44px;
-}
-.form-control:disabled {
-    border-color: #fff;
-    background: none;
-    box-shadow: none;
-}
 .form-control-static {
     padding-top: 14px;
     .label {
