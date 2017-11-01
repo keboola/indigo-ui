@@ -638,3 +638,37 @@ a .kbcComponentIcon-3rdParty-64px {
     color: #282d38;
   }
 }
+
+@select-option-selected-bg: @CIDcolor3;
+@select-input-border-color: @CIDcolor16;
+@select-input-border-radius: @border-radius-base;
+@select-padding-horizontal: @padding-base-horizontal;
+@select-option-focused-bg: @CIDcolor11;
+@select-text-color: @CIDcolor2;
+@select-input-placeholder: @CIDcolor16;
+@select-input-internal-height: 40px;
+@select-clear-color: @CIDcolor17;
+@select-arrow-color: @CIDcolor17;
+
+.Select{
+  font-family: "Gotham Rounded A", "Gotham Rounded B";
+  &-clear-zone,
+  &-arrow-zone{
+    .icon{
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &-arrow-zone{
+    transform: rotate(0deg);
+    transition: all 0.2s linear;
+    transform-origin: 43% 47%;
+  }
+  &.is-open{
+    .Select-arrow-zone{
+      transform: rotate(180deg);
+    }
+  }
+}
+
+
