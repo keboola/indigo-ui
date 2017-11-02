@@ -1,5 +1,5 @@
 import React from 'react';
-import IconSprite from '../../../dist/icons/symbol/svg/sprite.symbol.svg';
+import IconSprite from '../../../public/icons/symbol/svg/sprite.symbol.svg';
 
 export default React.createClass({
     displayName: 'Icon',
