@@ -22,8 +22,6 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 First, check the content of `.travis.yml` file and documentation about
 [Travis Deployment](https://docs.travis-ci.com/user/deployment).
 
-Before pushing new tag, make sure you know what are you doing.
-
 ### Storybook
 
 - Storybook is deployed on every push to `master` branch. There's `"$TRAVIS_BRANCH" = "master"`
@@ -49,6 +47,7 @@ TBD
 
 #### Releasing new version
 
+- Before pushing new tag, make sure you know what are you doing.
 - New tagged release is only needed if there's a change in `src/indigo` or `src/components` folders
 and you want to make those changes available for users.
 - Please respect Semantic versioning
@@ -76,7 +75,7 @@ available [here](https://github.com/keboola/indigo-ui/releases)
 
 ## Older, `v1` branch
 
-This branch contains some changed, but we decided to skip it and start with `v2` and smaller,
+This branch contains some changes, but we decided to skip it and start with `v2` and smaller,
 incremental steps.
 
 ## FAQ
