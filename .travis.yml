@@ -14,6 +14,7 @@ script:
   - 'if [ "$TRAVIS_BRANCH" = "master" ]; then ./deploy-storybook.sh; fi'
   - 'if [ "$TRAVIS_BRANCH" = "$TRAVIS_TAG" ]; then yarn build-dist-css; fi'
   - export INDIGO_UI_REVISION=`git describe --tags --always --long | tr -d "\n"`
+  - 'if [ "$TRAVIS_BRANCH" = "$TRAVIS_TAG" ]; then ls -1 revision | grep $INDIGO_UI_REVISION; fi'
 
 cache: yarn
 
