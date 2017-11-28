@@ -30,7 +30,7 @@ deploy:
     on:
       tags: true
       repo: keboola/indigo-ui
-      branch: kbc-bootstrap
+      branch: master
 
   - provider: npm
     email: ujovlado+npm@rekurzia.sk
@@ -39,7 +39,7 @@ deploy:
     on:
       tags: true
       repo: keboola/indigo-ui
-      branch: kbc-bootstrap
+      branch: master
 
 notifications:
   slack:
