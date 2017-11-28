@@ -15,7 +15,7 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 
 1. Build: `docker-compose build` (See `Dockerfile` to check what's inside)
 2. Run container: `docker-compose run --rm --service-ports node`
-3. Continue from step 2. (including)
+3. Continue from step 2. (including) in section above (`yarn`, `yarn storybook`, ...)
 
 ## Deployment
 
