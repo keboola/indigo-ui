@@ -64,13 +64,13 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: 'src/kbc-bootstrap',
+            cwd: 'src/indigo',
             src: ['fonts/*'],
             dest: 'public/'
           },
           {
             expand: true,
-            cwd: 'src/kbc-bootstrap',
+            cwd: 'src/indigo',
             src: ['img/*'],
             dest: 'public/'
           }
@@ -86,13 +86,13 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: 'src/kbc-bootstrap',
+            cwd: 'src/indigo',
             src: ['fonts/*'],
             dest: 'dist/'
           },
           {
             expand: true,
-            cwd: 'src/kbc-bootstrap',
+            cwd: 'src/indigo',
             src: ['img/*'],
             dest: 'dist/'
           }
