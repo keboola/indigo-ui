@@ -47,7 +47,7 @@ deploy:
 after_deploy:
   - echo $INDIGO_UI_REVISION
   - export BODY="{\"manifestUrl\":\"https://assets-cdn.keboola.com/indigo-ui/$INDIGO_UI_REVISION/manifest.json\",\"activate\":true}"
-  - curl -H X-KBC-ManageApiToken:$KBC_MANAGE_API_TOKEN -d $BODY -H "Content-Type:application/json" https://connection.keboola.com/manage/ui-apps
+  - curl -H X-KBC-ManageApiToken:$KBC_MANAGE_API_TOKEN -d $BODY -H "Content-Type:application/json" https://connection.keboola.com/manage/ui-apps | grep $INDIGO_UI_REVISION
 
 notifications:
   slack:
