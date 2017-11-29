@@ -36,7 +36,8 @@
     "build-dev-css": "grunt build-dev-css",
     "watch-dev-css": "npm run build-dev-css && grunt watch",
     "build-storybook": "build-storybook -s public -o build",
-    "build-dist-css": "grunt build prepare-revision"
+    "build-dist-css": "grunt build prepare-revision",
+    "generate-manifest": "node generate-manifest.js"
   },
   "main": "src/components/index.js",
   "repository": {
