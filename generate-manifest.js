@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const revision = process.env.INDIGO_UI_REVISON;
+const revision = process.env.INDIGO_UI_REVISION;
 const s3basePath = 'https://assets-cdn.keboola.com/indigo-ui/' + revision + '/';
 
 const manifest = {
