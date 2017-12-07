@@ -10,10 +10,10 @@ import {
     ResponsiveEmbed,
     Image,
     Popover,
-    TabbedArea,
+    Tab,
+    Tabs,
     DropdownButton,
     MenuItem,
-    TabPane,
     ProgressBar,
     ListGroup,
     ListGroupItem,
@@ -31,8 +31,9 @@ import {
     Panel,
     PanelItem,
     FormControl,
-    Tab,
-    Tabs
+    Label,
+    Badge,
+    Well
 } from 'react-bootstrap'
 
 
@@ -42,12 +43,6 @@ storiesOf('Bootstrap')
         'Desc',
         () => (
             <div className="container bs-docs-container">
-
-                <div className="bs-docs-section">
-                    <h1>Heading</h1>
-                    <h2>Subhead</h2>
-                </div>
-
                 <div className="bs-docs-section">
                     <h1>Buttons</h1>
                     <h2>Style</h2>
@@ -115,7 +110,6 @@ storiesOf('Bootstrap')
                     </div>
                 </div>
 
-
                 <div className="bs-docs-section">
                     <h1>Menu item</h1>
                     <div className="bs-example">
@@ -162,10 +156,11 @@ storiesOf('Bootstrap')
                         </div>
                     </div>
                 </div>
+
                 <div className="bs-docs-section">
-                    <h1>Heading</h1>
+                    <h1>Tabs / Tab</h1>
                     <div className="bs-example">
-                        <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                        <Tabs defaultActiveKey={2}>
                             <Tab eventKey={1} title="Tab 1">Tab 1 content</Tab>
                             <Tab eventKey={2} title="Tab 2">Tab 2 content</Tab>
                             <Tab eventKey={3} title="Tab 3" disabled>Tab 3 content</Tab>
@@ -174,7 +169,6 @@ storiesOf('Bootstrap')
                 </div>
 
                 <div className="bs-docs-section">
-
                     <h1>List Group & List Group Item</h1>
                     <div className="bs-example">
                         <ListGroup>
@@ -182,61 +176,6 @@ storiesOf('Bootstrap')
                             <ListGroupItem>Item 2</ListGroupItem>
                             <ListGroupItem>...</ListGroupItem>
                         </ListGroup>
-
-                    </div>
-                    <h2>States</h2>
-                    <div className="bs-example">
-
-                        <ListGroup>
-                            <ListGroupItem href="#" active>Link 1</ListGroupItem>
-                            <ListGroupItem href="#">Link 2</ListGroupItem>
-                            <ListGroupItem href="#" disabled>Link 3</ListGroupItem>
-                        </ListGroup>
-                    </div>
-                    <h2>Style</h2>
-                    <div className="bs-example">
-
-                        <ListGroup>
-                            <ListGroupItem bsStyle="success">Success</ListGroupItem>
-                            <ListGroupItem bsStyle="info">Info</ListGroupItem>
-                            <ListGroupItem bsStyle="warning">Warning</ListGroupItem>
-                            <ListGroupItem bsStyle="danger">Danger</ListGroupItem>
-                        </ListGroup>
-                    </div>
-                </div>
-
-
-                <div className="bs-docs-section">
-                    <h1>Typography</h1>
-                    <div className="bs-example">
-
-                        <h1>h1. Bootstrap heading</h1>
-                        <h2>h2. Bootstrap heading</h2>
-                        <h3>h3. Bootstrap heading</h3>
-                        <h4>h4. Bootstrap heading</h4>
-                        <h5>h5. Bootstrap heading</h5>
-                        <h6>h6. Bootstrap heading</h6>
-                    </div>
-                    <div className="bs-example">
-                        <h2>List</h2>
-
-                        <ul class="list-unstyled">
-                            <li>...</li>
-                            <li>...</li>
-                            <li>
-                                <ul>
-                                    <li>...</li>
-                                    <li>...</li>
-                                    <li>...</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <h2>Code </h2>
-                    <div className="bs-example">
-
-
-                        <code>Sample text here.. &lt;section&gt; Sample text here..</code>
                     </div>
                 </div>
 
@@ -278,7 +217,7 @@ storiesOf('Bootstrap')
                 </div>
 
                 <div className="bs-docs-section">
-                    <h1>Heading</h1>
+                    <h1>Panel</h1>
                     <div className="bs-example">
                         <Panel header="Panel heading without title">
                             Panel content
@@ -286,10 +225,18 @@ storiesOf('Bootstrap')
                         <Panel header="Panel title">
                             Panel content
                         </Panel>
-                        <h2>Subhead</h2>
                     </div>
                 </div>
 
+                <div className="bs-docs-section">
+                    <h1>Well</h1>
+                    <div className="bs-example">
+                        <Well>
+                            WELL, Well, well ...
+                        </Well>
+
+                    </div>
+                </div>
 
                 <div className="bs-docs-section">
                     <h1>Accordion</h1>
@@ -405,6 +352,7 @@ storiesOf('Bootstrap')
                         </form>
                     </div>
                 </div>
+
                 <div className="bs-docs-section">
                     <h1>InputGroup</h1>
                     <div className="bs-example">
@@ -451,7 +399,7 @@ storiesOf('Bootstrap')
                                 <FormControl type="text"/>
                                 <DropdownButton
                                     componentClass={InputGroup.Button}
-                                    id="input-dropdown-addon"
+
                                     title="Action"
                                 >
                                     <MenuItem key="1">Item</MenuItem>
@@ -507,7 +455,6 @@ storiesOf('Bootstrap')
                             <FormControl type="text"/>
                         </FormGroup>
                     </div>
-
                 </div>
 
                 <div className="bs-docs-section">
@@ -519,10 +466,12 @@ storiesOf('Bootstrap')
 
                 <div className="bs-docs-section">
                     <h1>Images</h1>
+                    <h2>Circle</h2>
                     <div className="bs-example">
-                        <Image src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4" rounded/>
                         <Image src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4" circle/>
-                        <Image src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4" thumbnail/>
+                    </div>
+                    <h2>Responsive</h2>
+                    <div className="bs-example">
                         <Image src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4" responsive/>
                     </div>
                 </div>
@@ -531,7 +480,7 @@ storiesOf('Bootstrap')
                     <h1>ResponsiveEmbed</h1>
                     <div className="bs-example">
                         <ResponsiveEmbed a16by9>
-                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/g-VBfkV4xfc"></iframe>
                         </ResponsiveEmbed>
                     </div>
                 </div>
@@ -540,42 +489,36 @@ storiesOf('Bootstrap')
                     <h1>Tooltip</h1>
 
                     <div className="bs-example">
-                        <Tooltip placement="right" className="in" id="tooltip-right">
+                        <Tooltip placement="right" className="in">
                             Tooltip right
                         </Tooltip>
                         <br/>
                         <br/>
-                        <Tooltip placement="top" className="in" id="tooltip-top">
+                        <Tooltip placement="top" className="in">
                             Tooltip top
                         </Tooltip>
                         <br/>
                         <br/>
-                        <Tooltip placement="left" className="in" id="tooltip-left">
+                        <Tooltip placement="left" className="in">
                             Tooltip left
                         </Tooltip>
                         <br/>
                         <br/>
-                        <Tooltip placement="bottom" className="in" id="tooltip-bottom">
+                        <Tooltip placement="bottom" className="in">
                             Tooltip bottom
                         </Tooltip>
                     </div>
                 </div>
 
-
                 <div className="bs-docs-section">
                     <h1>Popover</h1>
                     <div className="bs-example">
-                        <div style={{height: 120, position: 'relative'}}>
-                            <Popover
-                                id="popover-basic"
-                                placement="right"
-                                positionLeft={200}
-                                positionTop={50}
-                                title="Popover right"
-                            >
-                                And here's some <strong>amazing</strong> content. It's very engaging. right?
-                            </Popover>
-                        </div>
+                        <Popover
+                            placement="right"
+                            title="Popover right"
+                        >
+                            And here's some <strong>amazing</strong> content. It's very engaging. right?
+                        </Popover>
                     </div>
                 </div>
 
@@ -597,12 +540,64 @@ storiesOf('Bootstrap')
                         </Alert>
                     </div>
                 </div>
-            </div>
 
-        ),
-        {
-            inline: true,
-        }
+                <div className="bs-docs-section">
+                    <h1>Typography</h1>
+                    <div className="bs-example">
+                        <h1>h1. Bootstrap heading</h1>
+                        <h2>h2. Bootstrap heading</h2>
+                        <h3>h3. Bootstrap heading</h3>
+                        <h4>h4. Bootstrap heading</h4>
+                        <h5>h5. Bootstrap heading</h5>
+                        <h6>h6. Bootstrap heading</h6>
+                    </div>
+
+                    <h2>List</h2>
+                    <div className="bs-example">
+                        <ul class="list-unstyled">
+                            <li>aaa</li>
+                            <li>aaa</li>
+                            <li>aaa
+                                <ul>
+                                    <li>bbb</li>
+                                    <li>bbb</li>
+                                    <li>bbb
+                                        <ul>
+                                            <li>ccc</li>
+                                            <li>ccc</li>
+                                            <li>ccc</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2>Code </h2>
+                    <div className="bs-example">
+                        <code>Sample text here.. &lt;section&gt; Sample text here..</code>
+                    </div>
+                </div>
+
+                <div className="bs-docs-section">
+                    <h1>Label</h1>
+                    <div className="bs-example">
+                        <Label bsStyle="default">Default</Label>&nbsp;
+                        <Label bsStyle="primary">Primary</Label>&nbsp;
+                        <Label bsStyle="success">Success</Label>&nbsp;
+                        <Label bsStyle="info">Info</Label>&nbsp;
+                        <Label bsStyle="warning">Warning</Label>&nbsp;
+                        <Label bsStyle="danger">Danger</Label>
+                    </div>
+                </div>
+
+                <div className="bs-docs-section">
+                    <h1>Badge</h1>
+                    <div className="bs-example">
+                        <Badge>42</Badge>
+                    </div>
+                </div>
+            </div>
+        )
     )
 
 ;
