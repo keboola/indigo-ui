@@ -106,7 +106,10 @@ module.exports = function(grunt) {
     },
     watch: {
       less: {
-        files: ['src/indigo/less/indigo.less'],
+        files: [
+          'src/styles/indigo-storybook.less',
+          'src/indigo/less/*.less'
+        ],
         tasks: ['less:development'],
         options: {
           spawn: false,
