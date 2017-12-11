@@ -1,7 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
 
-import { configure, setAddon } from '@storybook/react';
+import { configure, setAddon, addDecorator } from '@storybook/react';
 import infoAddon from '@storybook/addon-info';
+import { withKnobs } from '@storybook/addon-knobs';
 
 function loadStories() {
   require('../src/stories/Button');
@@ -12,5 +13,6 @@ function loadStories() {
 }
 
 setAddon(infoAddon);
+addDecorator(withKnobs);
 
 configure(loadStories, module);
