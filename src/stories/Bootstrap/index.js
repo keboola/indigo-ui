@@ -39,7 +39,7 @@ import {
 
 storiesOf('Bootstrap')
     .addWithInfo(
-        'default',
+        'Buttons',
         'Desc',
         () => (
             <div className="container bs-docs-container">
@@ -74,7 +74,13 @@ storiesOf('Bootstrap')
                         <Button href="#">&lt;a/&gt; as button</Button>
                     </div>
                 </div>
-
+            </div>
+        ))
+    .addWithInfo(
+    'Button Toolbar',
+    'Desc',
+    () => (
+        <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Button Toolbar</h1>
                     <div className="bs-example">
@@ -96,7 +102,13 @@ storiesOf('Bootstrap')
                         </div>
                     </div>
                 </div>
-
+        </div>
+    ))
+  .addWithInfo(
+    'DropdownButton',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>DropdownButton</h1>
                     <div className="bs-example">
@@ -109,7 +121,13 @@ storiesOf('Bootstrap')
                         </DropdownButton>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Header',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Menu item</h1>
                     <div className="bs-example">
@@ -133,7 +151,13 @@ storiesOf('Bootstrap')
 
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Modal',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Modal</h1>
                     <div className="bs-example">
@@ -156,7 +180,13 @@ storiesOf('Bootstrap')
                         </div>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Tabs / Tab',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Tabs / Tab</h1>
                     <div className="bs-example">
@@ -167,7 +197,13 @@ storiesOf('Bootstrap')
                         </Tabs>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'List Group & List Group Item',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>List Group & List Group Item</h1>
                     <div className="bs-example">
@@ -178,7 +214,13 @@ storiesOf('Bootstrap')
                         </ListGroup>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Tables',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Tables</h1>
                     <div className="bs-example">
@@ -215,7 +257,13 @@ storiesOf('Bootstrap')
                         </Table>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Panel',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Panel</h1>
                     <div className="bs-example">
@@ -227,7 +275,13 @@ storiesOf('Bootstrap')
                         </Panel>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Well',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Well</h1>
                     <div className="bs-example">
@@ -237,7 +291,13 @@ storiesOf('Bootstrap')
 
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Accordion',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Accordion</h1>
                     <div className="bs-example">
@@ -278,7 +338,13 @@ storiesOf('Bootstrap')
                         </Accordion>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Form',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Form</h1>
                     <div className="bs-example">
@@ -352,7 +418,13 @@ storiesOf('Bootstrap')
                         </form>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'InputGroup',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>InputGroup</h1>
                     <div className="bs-example">
@@ -456,14 +528,26 @@ storiesOf('Bootstrap')
                         </FormGroup>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'ProgressBar',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>ProgressBar</h1>
                     <div className="bs-example">
                         <ProgressBar now="60" label={`60%`}/>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Images',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Images</h1>
                     <h2>Circle</h2>
@@ -475,7 +559,13 @@ storiesOf('Bootstrap')
                         <Image src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4" responsive/>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'ResponsiveEmbed',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>ResponsiveEmbed</h1>
                     <div className="bs-example">
@@ -484,7 +574,13 @@ storiesOf('Bootstrap')
                         </ResponsiveEmbed>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Tooltip',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Tooltip</h1>
 
@@ -509,7 +605,13 @@ storiesOf('Bootstrap')
                         </Tooltip>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Popover',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Popover</h1>
                     <div className="bs-example">
@@ -521,7 +623,13 @@ storiesOf('Bootstrap')
                         </Popover>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Alert',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Alert</h1>
                     <div className="bs-example">
@@ -540,7 +648,13 @@ storiesOf('Bootstrap')
                         </Alert>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Typography',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Typography</h1>
                     <div className="bs-example">
@@ -577,7 +691,13 @@ storiesOf('Bootstrap')
                         <code>Sample text here.. &lt;section&gt; Sample text here..</code>
                     </div>
                 </div>
-
+      </div>
+    ))
+  .addWithInfo(
+    'Label',
+    'Desc',
+    () => (
+      <div className="container bs-docs-container">
                 <div className="bs-docs-section">
                     <h1>Label</h1>
                     <div className="bs-example">
