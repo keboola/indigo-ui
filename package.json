@@ -32,6 +32,10 @@
     "react": "^0.14.9 || ^15.0.0",
     "react-dom": "^0.14.9 || ^15.0.0"
   },
+  "devEngines": {
+    "node": "8.x",
+    "npm": "5.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

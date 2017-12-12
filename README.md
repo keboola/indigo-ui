@@ -6,16 +6,17 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 
 ## Development
 
-1. Install grunt: `npm install -g grunt`
-2. Install dependencies: `yarn`
-3. Run storybook `yarn storybook`
-4. Open browser at [http://localhost:9009/](http://localhost:9009/)
+1. Make sure you have Node 8 installed `node -v`
+2. Install grunt: `npm install -g grunt`
+3. Install dependencies: `yarn`
+4. Run storybook `yarn storybook`
+5. Open browser at [http://localhost:9009/](http://localhost:9009/)
 
 ### Docker
 
 1. Build: `docker-compose build` (See `Dockerfile` to check what's inside)
 2. Run container: `docker-compose run --rm --service-ports node`
-3. Continue from step 2. (including) in section above (`yarn`, `yarn storybook`, ...)
+3. Continue from step 3. (including) in section above (`yarn`, `yarn storybook`, ...)
 
 ## Deployment
 
