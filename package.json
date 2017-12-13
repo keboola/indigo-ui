@@ -43,6 +43,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-lib": "babel src/indigo --out-dir lib --copy-files",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "run-storybook": "start-storybook -p 9009 -s public",
@@ -69,8 +70,7 @@
   },
   "homepage": "https://github.com/keboola/indigo-ui",
   "files": [
-    "src/components",
-    "src/indigo"
+    "lib"
   ],
   "babel": {
     "presets": [
