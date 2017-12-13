@@ -5,6 +5,7 @@
 /revision
 /tmp
 /package
+/lib
 
 npm-debug.log*
 yarn-debug.log*
