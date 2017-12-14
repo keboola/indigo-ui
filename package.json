@@ -54,7 +54,7 @@
     "build-dist-css": "grunt build prepare-revision",
     "generate-manifest": "node generate-manifest.js"
   },
-  "main": "src/components/index.js",
+  "main": "lib/components/index.js",
   "repository": {
     "type": "git",
     "url": "ssh://github.com/keboola/indigo-ui.git"
