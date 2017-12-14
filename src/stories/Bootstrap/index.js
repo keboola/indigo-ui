@@ -32,8 +32,8 @@ import {
   Well,
 } from 'react-bootstrap';
 
-storiesOf('Bootstrap')
-  .addWithInfo('Buttons', 'Desc', () => (
+storiesOf('Bootstrap', module)
+  .add('Buttons', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Buttons</h1>
@@ -67,8 +67,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Button Toolbar', 'Desc', () => (
+  ), module)
+  .add('Button Toolbar', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Button Toolbar</h1>
@@ -92,8 +92,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('DropdownButton', 'Desc', () => (
+  ), module)
+  .add('DropdownButton', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>DropdownButton</h1>
@@ -110,8 +110,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Header', 'Desc', () => (
+  ), module)
+  .add('Header', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Menu item</h1>
@@ -132,8 +132,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Modal', 'Desc', () => (
+  ), module)
+  .add('Modal', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Modal</h1>
@@ -155,8 +155,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Tabs / Tab', 'Desc', () => (
+  ), module)
+  .add('Tabs / Tab', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Tabs / Tab</h1>
@@ -175,8 +175,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('List Group & List Group Item', 'Desc', () => (
+  ), module)
+  .add('List Group & List Group Item', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>List Group & List Group Item</h1>
@@ -189,8 +189,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Tables', 'Desc', () => (
+  ), module)
+  .add('Tables', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Tables</h1>
@@ -229,8 +229,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Panel', 'Desc', () => (
+  ), module)
+  .add('Panel', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Panel</h1>
@@ -240,8 +240,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Well', 'Desc', () => (
+  ), module)
+  .add('Well', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Well</h1>
@@ -250,8 +250,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Accordion', 'Desc', () => (
+  ), module)
+  .add('Accordion', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Accordion</h1>
@@ -291,8 +291,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Form', 'Desc', () => (
+  ), module)
+  .add('Form', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Form</h1>
@@ -351,8 +351,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('InputGroup', 'Desc', () => (
+  ), module)
+  .add('InputGroup', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>InputGroup</h1>
@@ -452,8 +452,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('ProgressBar', 'Desc', () => (
+  ), module)
+  .add('ProgressBar', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>ProgressBar</h1>
@@ -462,8 +462,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Images', 'Desc', () => (
+  ), module)
+  .add('Images', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Images</h1>
@@ -477,8 +477,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('ResponsiveEmbed', 'Desc', () => (
+  ), module)
+  .add('ResponsiveEmbed', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>ResponsiveEmbed</h1>
@@ -493,8 +493,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Tooltip', 'Desc', () => (
+  ), module)
+  .add('Tooltip', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Tooltip</h1>
@@ -521,8 +521,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Popover', 'Desc', () => (
+  ), module)
+  .add('Popover', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Popover</h1>
@@ -533,8 +533,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Alert', 'Desc', () => (
+  ), module)
+  .add('Alert', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Alert</h1>
@@ -554,8 +554,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Typography', 'Desc', () => (
+  ), module)
+  .add('Typography', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Typography</h1>
@@ -596,8 +596,8 @@ storiesOf('Bootstrap')
         </div>
       </div>
     </div>
-  ))
-  .addWithInfo('Label', 'Desc', () => (
+  ), module)
+  .add('Label', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Label</h1>
