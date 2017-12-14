@@ -484,7 +484,11 @@ storiesOf('Bootstrap')
         <h1>ResponsiveEmbed</h1>
         <div className="bs-example">
           <ResponsiveEmbed a16by9>
-            <iframe className="embed-responsive-item" src="//www.youtube.com/embed/g-VBfkV4xfc" />
+            <iframe
+              className="embed-responsive-item"
+              src="//www.youtube.com/embed/g-VBfkV4xfc"
+              title="Youtube Video"
+            />
           </ResponsiveEmbed>
         </div>
       </div>
