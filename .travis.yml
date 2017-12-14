@@ -21,6 +21,9 @@ script:
 
 cache: yarn
 
+before_deploy:
+  - ls -1
+
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY_ID
