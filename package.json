@@ -34,7 +34,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.7"
+    "react-scripts": "^1.0.17"
   },
   "peerDependencies": {
     "react": "^0.14.9 || ^15.0.0",
