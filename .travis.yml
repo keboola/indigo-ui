@@ -17,6 +17,7 @@ script:
     && export INDIGO_UI_REVISION=`git describe --tags --always --long | tr -d "\n"`
     && (if [ "$TRAVIS_BRANCH" = "$TRAVIS_TAG" ]; then ls -1 revision | grep $INDIGO_UI_REVISION; fi)
     && (if [ "$TRAVIS_BRANCH" = "$TRAVIS_TAG" ]; then yarn generate-manifest; fi)
+    && yarn build-lib
 
 cache: yarn
 
