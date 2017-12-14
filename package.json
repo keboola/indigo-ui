@@ -58,7 +58,7 @@
   "main": "lib/components/index.js",
   "repository": {
     "type": "git",
-    "url": "ssh://github.com/keboola/indigo-ui.git"
+    "url": "git+ssh://git@github.com/keboola/indigo-ui.git"
   },
   "keywords": [
     "keboola",
