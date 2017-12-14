@@ -65,7 +65,7 @@
     "ui"
   ],
   "author": "Keboola",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/keboola/indigo-ui/issues"
   },
