@@ -484,7 +484,7 @@ storiesOf('Bootstrap')
         <h1>ResponsiveEmbed</h1>
         <div className="bs-example">
           <ResponsiveEmbed a16by9>
-            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/g-VBfkV4xfc" />
+            <iframe className="embed-responsive-item" src="//www.youtube.com/embed/g-VBfkV4xfc" />
           </ResponsiveEmbed>
         </div>
       </div>
@@ -566,7 +566,7 @@ storiesOf('Bootstrap')
 
         <h2>List</h2>
         <div className="bs-example">
-          <ul class="list-unstyled">
+          <ul className="list-unstyled">
             <li>aaa</li>
             <li>aaa</li>
             <li>
