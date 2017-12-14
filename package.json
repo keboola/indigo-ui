@@ -8,9 +8,11 @@
     "react-bootstrap": "^0.31.5"
   },
   "devDependencies": {
-    "@storybook/addon-info": "^3.1.4",
+    "@storybook/addon-actions": "^3.2.17",
+    "@storybook/addon-info": "^3.2.17",
     "@storybook/addon-knobs": "^3.2.17",
-    "@storybook/react": "^3.1.3",
+    "@storybook/addon-links": "^3.2.17",
+    "@storybook/react": "^3.2.17",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
@@ -41,11 +43,8 @@
     "npm": "5.x"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "build-lib": "babel src/indigo --out-dir lib --copy-files",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
     "run-storybook": "start-storybook -p 9009 -s public",
     "storybook": "npm-run-all -p watch-dev-css run-storybook",
     "build-dev-css": "grunt build-dev-css",
