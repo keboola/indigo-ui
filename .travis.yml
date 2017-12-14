@@ -49,6 +49,8 @@ deploy:
     script: ./register-ui.sh
     on:
       tags: true
+      repo: keboola/indigo-ui
+      branch: master
 
 notifications:
   slack:
