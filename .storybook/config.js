@@ -8,6 +8,12 @@ import components from '../src/indigo/components';
 function loadStories() {
   require('../src/stories/Bootstrap');
   require('../src/stories/Sample');
+  require('../src/stories/Check');
+  require('../src/stories/Loader');
+  require('../src/stories/NewLinToBr');
+  require('../src/stories/Protected');
+  require('../src/stories/RefreshIcon');
+  require('../src/stories/Tree');
 }
 
 setAddon(infoAddon);
