@@ -3168,3 +3168,170 @@ storiesOf('Tabs', module)
             </div>
         </div>
     ), module)
+
+    .add('Tabs @ ex-adform', () => (
+        <div className="kbc-main-content">
+            <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                <Tab eventKey={1} title="1. Credentials">
+                    <div id="wizardtab-pane-credentials" aria-labelledby="wizardtab-tab-credentials" role="tabpanel"
+                         aria-hidden="false" className="tab-pane active">
+                        <div className="row">
+                            <div className="col-md-8">
+                                <div className="form-horizontal"><p
+                                    className="help-block">Please provide your
+                                    Adform credentials.</p>
+                                    <div className="form-group"><label
+                                        className="col-sm-4 control-label">Username</label>
+                                        <div className="col-sm-6">
+                                            <input label="Username" value="" type="text" className="form-control"/>
+                                        </div>
+                                    </div>
+                                    <div className="form-group"><label
+                                        className="col-sm-4 control-label">Password</label>
+                                        <div className="col-sm-6">
+                                            <input label="Password" value="" type="password" className="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="form-horizontal">
+                                <div className="form-group">
+                                    <div className="pull-right"><a
+                                    ><span
+                                        className="kbc-icon-cup fa fa-fw"
+                                    ></span><span
+                                    > Move to Trash</span></a>
+                                        <button style={{marginLeft: 20}} disabled="" type="button"
+                                                className="btn btn-primary">
+                                            Next: Select Template
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Tab>
+                <Tab eventKey={2} title="2. Template">
+                    <div id="wizardtab-pane-template" aria-labelledby="wizardtab-tab-template" role="tabpanel"
+                         aria-hidden="true" className="tab-pane">
+                        <div className="row">
+                            <div className="col-sm-10"><p
+                            >Please select from the predefined templates to
+                                initialize the Adform configuration:</p><p
+                            ></p>
+                                <div className="Select Select--single is-searchable"
+                                >
+                                    <div className="Select-control"><span
+                                        className="Select-multi-value-wrapper" id="react-select-2--value"
+                                    ><div className="Select-placeholder"
+                                    >Select template</div><div
+                                        className="Select-input" style={{display: 'inline-block'}}
+                                    ><input role="combobox"
+                                            aria-expanded="false"
+                                            aria-owns=""
+                                            aria-haspopup="false"
+                                            aria-activedescendant="react-select-2--value"
+                                            value=""
+                                            style={{'width': 5, boxSizing: 'content-box'}}
+                                    /><div
+                                        style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            left: 0,
+                                            visibility: 'hidden',
+                                            height: 0,
+                                            overflow: 'scroll',
+                                            whiteSpace: 'pre',
+                                            fontSize: 14,
+                                            fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
+                                            fontWeight: 300,
+                                            fontStyle: 'normal',
+                                            letterSpacing: 'normal'
+                                        }}
+                                    ></div></div></span><span
+                                        className="Select-arrow-zone"><span
+                                        className="Select-arrow"
+                                    ></span></span></div>
+                                </div>
+                                <p></p><p className="help-block">You can change or
+                                    extend it to fetch more or other data later.</p></div>
+                        </div>
+                        <div className="row">
+                            <div className="pull-right"><span
+                            >&nbsp; &nbsp;</span><a
+                            ><span className="kbc-icon-cup fa fa-fw"
+                            ></span><span
+                            > Move to Trash</span></a>
+                                <button style={{marginLeft: 10}} type="button" className="btn btn-link"
+                                >Previous
+                                </button>
+                                <button disabled="" type="button" className="btn btn-success"
+                                >Create Extractor
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </Tab>
+
+            </Tabs>
+        </div>
+    ), module)
+
+    .add('Tabs @ ex-dropbox', () => (
+        <div className="kbc-main-content">
+
+
+            <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                <Tab eventKey={1} title="Choose From Dropbox">
+                    <div id="ex-dropbox-v2-dropbox-file-selector-modal-tabs-pane-instant"
+                         aria-labelledby="ex-dropbox-v2-dropbox-file-selector-modal-tabs-tab-instant" role="tabpanel"
+                         aria-hidden="false" className="tab-pane active">
+                        <div style={{padding: '1.5em'}}><p
+                        >Please choose a CSV file you want to extract via
+                            Dropbox Chooser that uses a pop up window, hence disable windows pop up blocking for this
+                            site in the browser settings please.</p>
+                            <div className="dropbox-button">
+                                <div>
+                                    <button type="button" className="btn btn-success"
+                                    >
+                                        <i className="fa fa-fw fa-dropbox"
+                                        ></i><span
+                                    >Choose from Dropbox</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Tab>
+                <Tab eventKey={2} title="Insert Link Manually">
+                    <div id="ex-dropbox-v2-dropbox-file-selector-modal-tabs-pane-external"
+                         aria-labelledby="ex-dropbox-v2-dropbox-file-selector-modal-tabs-tab-external" role="tabpanel"
+                         aria-hidden="true" className="tab-pane">
+                        <div className="form form-horizontal">
+                            <div style={{paddingTop: 20}} className="form-group">
+                                <div className="col-xs-12"><label
+                                    className="control-label col-xs-2"
+                                >Link</label>
+                                    <div className="col-xs-9"><input
+                                        className="form-control" type="text" name="link" value=""
+                                    /><span className="help-block"
+                                    >Link to a csv file shared by a dropbox account</span>
+                                    </div>
+                                </div>
+                                <div className="col-xs-12"><label
+                                    className="control-label col-xs-2"
+                                >Name</label>
+                                    <div className="col-xs-9"><input
+                                        className="form-control" type="text" name="name" value=""
+                                    /><span className="help-block"
+                                    >Name of the csv file and output table</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Tab>
+            </Tabs>
+        </div>
+    ), module)
