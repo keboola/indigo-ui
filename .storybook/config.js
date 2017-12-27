@@ -14,6 +14,7 @@ function loadStories() {
   require('../src/stories/Protected');
   require('../src/stories/RefreshIcon');
   require('../src/stories/Tree');
+  require('../src/stories/Tabs');
 }
 
 setAddon(infoAddon);
