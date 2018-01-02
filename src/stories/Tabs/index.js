@@ -13,7 +13,7 @@ storiesOf('Tabs', module)
     .add('Tabs', () => (
         <div className="kbc-main">
             <div className="kbc-main-content">
-                <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="uncontrolled-tab-example">
                     <Tab eventKey={1} title="Tab 1">Tab 1 content</Tab>
                     <Tab eventKey={2} title="Tab 2">Tab 2 content</Tab>
                     <Tab eventKey={3} title="Tab 3" disabled>Tab 3 content</Tab>
@@ -25,9 +25,8 @@ storiesOf('Tabs', module)
     .add('Tabs @ WizardCommon', () => (
         <div className="kbc-main">
             <div className="kbc-main-content">
-                <Tabs
-                    animation={false}
-                    id="ex-twitter-react-wizard-common-tabs"
+                <Tabs className="indigo-temp-tabs" animation={false}
+                      id="ex-twitter-react-wizard-common-tabs"
                 >
                     <Tab eventKey={1} title="Authorization">
                         <div className="row" style={{minHeight: 120}}>
@@ -195,108 +194,111 @@ storiesOf('Tabs', module)
         (() => {
             return (
                 <div className="kbc-main">
-                    <Tabs className="kbc-main-content kbc-project-users">
-                        <Tab eventKey={1} title="Users">
-                            <div className="row kbc-header">
-                                All users have full permissions in the project and can add or remove other users from
-                                it.
-                                <a href="#" className="pull-right kb-add-new-administrator-modal btn btn-success"
-                                   data-options="{&quot;hiddenFields&quot;:{&quot;projectId&quot;:&quot;2376&quot;,&quot;adminWasInvited&quot;:true},&quot;required&quot;:[&quot;email&quot;],&quot;action&quot;:&quot;\/admin\/projects\/add-administrator&quot;}"
-                                   data-toggle="tooltip" title="Add new user">
-                                    <i className="kbc-icon-plus"></i>New User
-                                </a>
-                            </div>
-                            <table className="table table-striped table-hover">
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>MFA <span className="fa fa-question-circle" data-toggle="tooltip"
-                                                  title="Multi-Factor Authentication"></span></th>
-                                    <th>Reason</th>
-                                    <th>Joined</th>
-                                    <th>Expires</th>
-                                    <th className="kbc-action-column"><span className="fa"></span>Actions</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr className="">
-                                    <td style={{position: 'relative'}}>
-                                        <img
-                                            src="https://secure.gravatar.com/avatar/861827b16ace048fcad0058e29c27640?s=40&amp;d=mm"
-                                            width="40" height="40" className="kbc-user-avatar"/>
-                                    </td>
-                                    <td>
-                                        Jan Michek
-                                    </td>
-                                    <td>jan@keboola.com</td>
-                                    <td>
-                                        <span className="fa fa-check"></span>
-                                    </td>
-                                    <td><strong></strong></td>
-                                    <td>
+                    <div className="kbc-main-content">
+                        <Tabs className="indigo-temp-tabs">
+                            <Tab eventKey={1} title="Users">
+                                <div className="row kbc-header">
+                                    All users have full permissions in the project and can add or remove other users
+                                    from
+                                    it.
+                                    <a href="#" className="pull-right kb-add-new-administrator-modal btn btn-success"
+                                       data-options="{&quot;hiddenFields&quot;:{&quot;projectId&quot;:&quot;2376&quot;,&quot;adminWasInvited&quot;:true},&quot;required&quot;:[&quot;email&quot;],&quot;action&quot;:&quot;\/admin\/projects\/add-administrator&quot;}"
+                                       data-toggle="tooltip" title="Add new user">
+                                        <i className="kbc-icon-plus"></i>New User
+                                    </a>
+                                </div>
+                                <table className="table table-striped table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>MFA <span className="fa fa-question-circle" data-toggle="tooltip"
+                                                      title="Multi-Factor Authentication"></span></th>
+                                        <th>Reason</th>
+                                        <th>Joined</th>
+                                        <th>Expires</th>
+                                        <th className="kbc-action-column"><span className="fa"></span>Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr className="">
+                                        <td style={{position: 'relative'}}>
+                                            <img
+                                                src="https://secure.gravatar.com/avatar/861827b16ace048fcad0058e29c27640?s=40&amp;d=mm"
+                                                width="40" height="40" className="kbc-user-avatar"/>
+                                        </td>
+                                        <td>
+                                            Jan Michek
+                                        </td>
+                                        <td>jan@keboola.com</td>
+                                        <td>
+                                            <span className="fa fa-check"></span>
+                                        </td>
+                                        <td><strong></strong></td>
+                                        <td>
                                 <span className="kb-date-convert" data-date="2017-11-08T17:43:42+0100"
                                       title="2017-11-08T17:43:42+0100">2017-11-08 17:43</span>
-                                    </td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                        <div className="kbc-action-column">
-                                            <a href="#" className="kb-confirm text-muted"
-                                               data-options="{&quot;action&quot;:&quot;\/admin\/projects\/remove-administrator&quot;,&quot;title&quot;:&quot;Remove user from project&quot;,&quot;text&quot;:&quot;Do you really want to remove <strong>jan@keboola.com<\/strong> from <strong>Jan Michek<\/strong>?&quot;,&quot;confirmText&quot;:&quot;Leave Project&quot;,&quot;hiddenFields&quot;:{&quot;projectId&quot;:&quot;2376&quot;,&quot;administratorId&quot;:&quot;2807&quot;}}">
-                                                <span className="fa fa-sign-out"></span>Leave </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="">
-                                    <td style={{position: 'relative'}}>
-                                        <img
-                                            src="https://secure.gravatar.com/avatar/0f7ad98cc5b6e8daff602989f0325d63?s=40&amp;d=mm"
-                                            width="40" height="40" className="kbc-user-avatar"/>
-                                    </td>
-                                    <td>
-                                        Martin Halamíček
-                                    </td>
-                                    <td>martin.halamicek@keboola.com</td>
-                                    <td>
-                                        <span className="fa fa-check"></span>
-                                    </td>
-                                    <td><strong></strong></td>
-                                    <td>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <div className="kbc-action-column">
+                                                <a href="#" className="kb-confirm text-muted"
+                                                   data-options="{&quot;action&quot;:&quot;\/admin\/projects\/remove-administrator&quot;,&quot;title&quot;:&quot;Remove user from project&quot;,&quot;text&quot;:&quot;Do you really want to remove <strong>jan@keboola.com<\/strong> from <strong>Jan Michek<\/strong>?&quot;,&quot;confirmText&quot;:&quot;Leave Project&quot;,&quot;hiddenFields&quot;:{&quot;projectId&quot;:&quot;2376&quot;,&quot;administratorId&quot;:&quot;2807&quot;}}">
+                                                    <span className="fa fa-sign-out"></span>Leave </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr className="">
+                                        <td style={{position: 'relative'}}>
+                                            <img
+                                                src="https://secure.gravatar.com/avatar/0f7ad98cc5b6e8daff602989f0325d63?s=40&amp;d=mm"
+                                                width="40" height="40" className="kbc-user-avatar"/>
+                                        </td>
+                                        <td>
+                                            Martin Halamíček
+                                        </td>
+                                        <td>martin.halamicek@keboola.com</td>
+                                        <td>
+                                            <span className="fa fa-check"></span>
+                                        </td>
+                                        <td><strong></strong></td>
+                                        <td>
                                 <span className="kb-date-convert" data-date="2017-03-20T16:20:35+0100"
                                       title="2017-03-20T16:20:35+0100">2017-03-20 16:20</span>
-                                    </td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                        <div className="kbc-action-column">
-                                            <a href="#" className="kb-confirm text-muted"
-                                               data-options="{&quot;action&quot;:&quot;\/admin\/projects\/remove-administrator&quot;,&quot;title&quot;:&quot;Remove user from project&quot;,&quot;text&quot;:&quot;Do you really want to remove <strong>martin.halamicek@keboola.com<\/strong> from <strong>Jan Michek<\/strong>?&quot;,&quot;confirmText&quot;:&quot;Remove User&quot;,&quot;hiddenFields&quot;:{&quot;projectId&quot;:&quot;2376&quot;,&quot;administratorId&quot;:&quot;1&quot;}}">
-                                                <span className="kbc-icon-cup"></span>Remove </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </Tab>
-                        <Tab eventKey={2} title="Settings">
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <div className="kbc-action-column">
+                                                <a href="#" className="kb-confirm text-muted"
+                                                   data-options="{&quot;action&quot;:&quot;\/admin\/projects\/remove-administrator&quot;,&quot;title&quot;:&quot;Remove user from project&quot;,&quot;text&quot;:&quot;Do you really want to remove <strong>martin.halamicek@keboola.com<\/strong> from <strong>Jan Michek<\/strong>?&quot;,&quot;confirmText&quot;:&quot;Remove User&quot;,&quot;hiddenFields&quot;:{&quot;projectId&quot;:&quot;2376&quot;,&quot;administratorId&quot;:&quot;1&quot;}}">
+                                                    <span className="kbc-icon-cup"></span>Remove </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </Tab>
+                            <Tab eventKey={2} title="Settings">
 
-                        </Tab>
-                        <Tab eventKey={3} title="Limits" disabled>
+                            </Tab>
+                            <Tab eventKey={3} title="Limits" disabled>
 
-                        </Tab>
-                        <Tab eventKey={4} title="Project Power" disabled>
+                            </Tab>
+                            <Tab eventKey={4} title="Project Power" disabled>
 
-                        </Tab>
-                        <Tab eventKey={5} title="Trash" disabled>
+                            </Tab>
+                            <Tab eventKey={5} title="Trash" disabled>
 
-                        </Tab>
-                        <Tab eventKey={6} title="Tokens" disabled>
+                            </Tab>
+                            <Tab eventKey={6} title="Tokens" disabled>
 
-                        </Tab>
+                            </Tab>
 
-                    </Tabs>
+                        </Tabs>
+                    </div>
                 </div>
             );
         }))
@@ -310,7 +312,7 @@ storiesOf('Tabs', module)
                 <form action="" className="form form-horizontal">
                     <Modal.Body>
                         <div id="authorizationrowtabs" className="kbc-wrapper-tabs-margin-fix">
-                            <Tabs defaultActiveKey={2} id="authorizationrowtabs">
+                            <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="authorizationrowtabs">
                                 <Tab eventKey={1} title="Instant authorization">
                                     <div>
                                         <div className="form-group"><label
@@ -350,7 +352,7 @@ storiesOf('Tabs', module)
                 </Modal.Header>
 
                 <Modal.Body style={{minHeight: 250}}>
-                    <Tabs defaultActiveKey={1} id="wr-google-sheets-sheet-modal-tabs">
+                    <Tabs className="indigo-temp-tabs" defaultActiveKey={1} id="wr-google-sheets-sheet-modal-tabs">
                         <Tab eventKey={1} title="Source">
                             <div className="form-horizontal">
                                 <div className="row">
@@ -601,7 +603,7 @@ storiesOf('Tabs', module)
     .add('Tabs @ Token Detail', () => (
         <div className="kbc-main">
             <div className="kbc-main-content">
-                <Tabs defaultActiveKey={2} id="token-detail">
+                <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="token-detail">
                     <Tab eventKey={1} title="Overwiev" style={{paddingTop: 0}}>
 
                         <div className="kbc-inner-content-padding-fix">
@@ -1197,7 +1199,7 @@ storiesOf('Tabs', module)
 
                 <Modal.Body>
                     <div style={{maxHeight: '75vh'}} className="pre-scrollable">
-                        <Tabs defaultActiveKey="general" animation={false}
+                        <Tabs className="indigo-temp-tabs" defaultActiveKey="general" animation={false}
                               id="modalin.c-keboola-ex-db-snowflake-335491067.ACCOUNT">
                             <Tab eventKey="description" title="General Info">
                                 <div>
@@ -2753,7 +2755,7 @@ storiesOf('Tabs', module)
             <div className="kbc-main-content">
                 <div className="kb-orchestrations-main">
                     <div className="orchestration-job-detail-tabs">
-                        <Tabs defaultActiveKey={2} id="">
+                        <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="">
                             <Tab eventKey={1} title="Overview" id="orchestration-job-detail-tabs-pane-overview">
                                 <div>
                                     <div className="table kbc-table-border-vertical kbc-detail-table"
@@ -3111,7 +3113,7 @@ storiesOf('Tabs', module)
     .add('Tabs @ ex-adform', () => (
         <div className="kbc-main">
             <div className="kbc-main-content">
-                <Tabs defaultActiveKey={2} id="wizardtab">
+                <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="wizardtab">
                     <Tab eventKey={1} title="1. Credentials">
                         <div className="row">
                             <div className="col-md-8">
@@ -3223,7 +3225,7 @@ storiesOf('Tabs', module)
                 <form action="" className="form form-horizontal">
                     <Modal.Body>
                         <div id="authorizationrowtabs">
-                            <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                            <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="uncontrolled-tab-example">
                                 <Tab eventKey={1} title="Choose From Dropbox"
                                      id="ex-dropbox-v2-dropbox-file-selector-modal-tabs-pane-instant">
                                     <div style={{padding: '1.5em'}}><p
@@ -3293,7 +3295,7 @@ storiesOf('Tabs', module)
                 </Modal.Header>
                 <form action="" className="form form-horizontal">
                     <Modal.Body>
-                        <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                        <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="uncontrolled-tab-example">
                             <Tab eventKey={1} title={<a id="components-migration-row-tabs-tab-general" role="tab"
                                                         aria-controls="components-migration-row-tabs-pane-general"
                                                         aria-selected="true" href="#"
@@ -3454,7 +3456,7 @@ storiesOf('Tabs', module)
         <div className="kbc-main">
             <div className="kbc-main-content">
                 <div className="kbc-inner-content-padding-fix with-bottom-border">
-                    <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                    <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="uncontrolled-tab-example">
                         <Tab eventKey={1} title="General" d="modules-ex-s3-react-pages-index-index-tabbed-area-pane-1">
                             <div className="form-horizontal">
                                 <div className="form-group"><label
@@ -3649,7 +3651,7 @@ storiesOf('Tabs', module)
                 </Modal.Header>
 
                 <Modal.Body>
-                    <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                    <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="uncontrolled-tab-example">
                         <Tab eventKey={1} title="Action" id="controlled-tab-wizard-pane-1">
                             <div className="row form-horizontal clearfix">
                                 <div className="form-group">
@@ -3870,7 +3872,7 @@ storiesOf('Tabs', module)
                 </Modal.Header>
 
                 <Modal.Body>
-                    <Tabs defaultActiveKey={2} id="daterangemodaltab">
+                    <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="daterangemodaltab">
                         <Tab eventKey={1} title="Relative">
                             <form className="form-horizontal">
                                 <h4><span
@@ -3977,7 +3979,7 @@ storiesOf('Tabs', module)
                 <Modal.Body>
                     <span style={{marginTop: 5, marginRight: 9}} className="btn btn-link pull-right" disabled=""
                           aria-describedby="tooltip_4735">Try Query</span>
-                    <Tabs defaultActiveKey={2} id="ex-facebook-query-modal">
+                    <Tabs className="indigo-temp-tabs" defaultActiveKey={2} id="ex-facebook-query-modal">
                         <Tab eventKey={1} title="General">
                             <div className="row form-horizontal clearfix">
                                 <div className="form-group">

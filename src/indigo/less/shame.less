@@ -1,102 +1,104 @@
-.kbc-main-content .nav-tabs {
-    padding: 15px 25px 0;
-}
-.nav-tabs {
-    > li {
-        &.active > a {
-            font-weight: 400;
-        }
-        > a {
-            color: #98a2b5;
-            &:hover {
-                color: @link-color;
-            }
-        }
-    }
+.kbc-main-content .indigo-temp-tabs .nav-tabs {
+  padding: 15px 25px 0;
 }
 
-.tab-pane {
-    padding: 0;
-    .row {
-        margin: 20px;
+.indigo-temp-tabs .nav-tabs {
+  > li {
+    &.active > a {
+      font-weight: 400;
     }
-
-    > div {
-        > * {
-            margin-left: 15px;
-            margin-right: 15px;
-        }
-        > table, > .table {
-            margin-left: 0;
-            margin-right: 0;
-        }
-    }
-}
-
-.nav > li {
     > a {
-        padding: 10px 25px;
-    }
-    > .btn {
-        padding: 10px 15px;
-        text-align: left;
-        display: block;
+      color: #98a2b5;
+      &:hover {
         color: @link-color;
-        font-weight: 300;
-        &:hover {
-            background: #fff;
-            text-decoration: none;
-        }
+      }
     }
+  }
+}
+
+.indigo-temp-tabs .tab-pane {
+  padding: 0;
+  .row {
+    margin: 20px;
+  }
+
+  > div {
+    > * {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    > table, > .table {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.indigo-temp-tabs .nav > li {
+  > a {
+    padding: 10px 25px;
+  }
+  > .btn {
+    padding: 10px 15px;
+    text-align: left;
+    display: block;
+    color: @link-color;
+    font-weight: 300;
+    &:hover {
+      background: #fff;
+      text-decoration: none;
+    }
+  }
 }
 
 // to add padding without incorrect "row" usage and not break anything
 .kbc-inner-content-padding-fix {
-  padding: 22px 22px 15px;
-  &.with-bottom-border {
-    border-bottom: 1px solid #e8e8ef;
+  .indigo-temp-tabs {
+    padding: 22px 22px 15px;
+    &.with-bottom-border {
+      border-bottom: 1px solid #e8e8ef;
+    }
   }
 }
-
 
 // wrapper class to add margin to tablist
 .kbc-wrapper-tabs-margin-fix {
-  .nav {
-    &.nav-tabs {
-      margin-bottom: 1em;
+  .indigo-temp-tabs {
+    .nav {
+      &.nav-tabs {
+        margin-bottom: 1em;
+      }
     }
   }
 }
 
-.kbc-main .tab-pane {
+.kbc-main .tab-pane.indigo-temp-tab-pane {
   padding-top: 15px;
 }
 
-.kbc-main .kb-orchestrations-main .tab-pane {
+.kbc-main .kb-orchestrations-main .tab-pane.indigo-temp-tab-pane {
   padding-top: 0;
 }
 
-
-
 .kbc-authorization-modal {
-  .tab-pane > div > {
-    // WTF fix
-    * {
-      margin-left: 0;
-      margin-right: 0;
-    }
-    // Revert "WTF fix" on form-group
-    .form-group {
-      margin-left: -15px;
-      margin-right: -15px;
+  .indigo-temp-tabs {
+    .tab-pane > div > {
+      // WTF fix
+      * {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      // Revert "WTF fix" on form-group
+      .form-group {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
     }
   }
 }
 
-
-
 //writers/keboola.wr-db-snowflake/[id]/credentials fix
-.kbc-main .container-fluid form .row{
+.kbc-main .container-fluid form .row {
   margin: 0;
   padding: 22px;
   border-bottom: 1px solid #e8e8ef;
