@@ -2,6 +2,10 @@
   padding: 15px 25px 0;
 }
 
+.kbc-main-content>.indigo-temp-tabs>.row{
+  margin: 0;
+}
+
 .indigo-temp-tabs .nav-tabs {
   > li {
     &.active > a {
@@ -20,6 +24,9 @@
   padding: 0;
   .row {
     margin: 20px;
+    &.form-horizontal{
+      margin: 0;
+    }
   }
 
   > div {
@@ -52,8 +59,8 @@
 }
 
 // to add padding without incorrect "row" usage and not break anything
-.kbc-inner-content-padding-fix {
   .indigo-temp-tabs {
+  .kbc-inner-content-padding-fix {
     padding: 22px 22px 15px;
     &.with-bottom-border {
       border-bottom: 1px solid #e8e8ef;
@@ -72,7 +79,7 @@
   }
 }
 
-.kbc-main .tab-pane.indigo-temp-tab-pane {
+.kbc-main .indigo-temp-tabs .tab-pane{
   padding-top: 15px;
 }
 
@@ -103,3 +110,4 @@
   padding: 22px;
   border-bottom: 1px solid #e8e8ef;
 }
+
