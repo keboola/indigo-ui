@@ -12,7 +12,7 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 2. Install grunt: `npm install -g grunt`
 3. Install dependencies: `yarn`
 4. Run storybook `yarn storybook`
-5. Open browser at [http://localhost:9009/](http://localhost:9009/)
+5. Open browser at [https://localhost:9009/](https://localhost:9009/)
 
 ### Docker
 
