@@ -113,10 +113,7 @@ module.exports = function(grunt) {
         tasks: ['less:development'],
         options: {
           spawn: false,
-          livereload: {
-            key: grunt.file.read('./.dev/certs/ssl.key'),
-            cert: grunt.file.read('./.dev/certs/ssl.crt')
-          }
+          livereload: true,
         }
       }
     },
