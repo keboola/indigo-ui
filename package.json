@@ -47,7 +47,7 @@
   "scripts": {
     "build-lib": "babel src/indigo --out-dir lib --copy-files",
     "test": "react-scripts test --env=jsdom",
-    "run-storybook": "start-storybook -p 9009 -s public --https --ssl-cert ./.dev/certs/ssl.crt --ssl-key ./.dev/certs/ssl.key",
+    "run-storybook": "start-storybook -p 9009 -s public",
     "storybook": "npm-run-all -p watch-dev-css run-storybook",
     "build-dev-css": "grunt build-dev-css",
     "watch-dev-css": "npm run build-dev-css && grunt watch",

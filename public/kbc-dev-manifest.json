@@ -1,0 +1,9 @@
+{
+  "name": "indigo-ui",
+  "version": "dev",
+  "basePath": "https://localhost:9010/",
+  "scripts": [],
+  "styles": [
+    "https://localhost:9010/css/indigo.uncompressed.css"
+  ]
+}

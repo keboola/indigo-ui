@@ -19,3 +19,13 @@ services:
     volumes:
       - ./:/code
     working_dir: /code
+
+  https-proxy:
+    image: nginx
+    volumes:
+      - ./.dev/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./.dev/certs:/etc/nginx/ssl
+    ports:
+      - "9010:443"
+    links:
+      - node
