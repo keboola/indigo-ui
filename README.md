@@ -48,11 +48,13 @@ development instance of Keboola Connection:
 ```bash
 curl \
   -X POST \
-  -H X-KBC-ManageApiToken:DEV_KBC_MANAGE_API_TOKEN \
+  -H X-KBC-ManageApiToken:DEV_KBC_SUPER_API_TOKEN \
   -H "Content-Type:application/json" \
   -d '{"manifestUrl":"http://STORYBOOK_HOST_AVAILABLE_FROM_DEV_KBC_HOST:9009/kbc-dev-manifest.json","activate":true}' \
   http://DEV_KBC_HOST:8800/manage/ui-apps
 ```
+
+`DEV_KBC_SUPER_API_TOKEN` can be created in the `Manage Apps` section of your local connection.  You need to provide the token with the scope: `connection:ui-manage`
 
 You can find `kbc-dev-manifest.json` file in `public` folder in this repository.
 
