@@ -58,7 +58,9 @@ curl \
 
 You can find `kbc-dev-manifest.json` file in `public` folder in this repository.
 
-You'll also need to add your local storybook host to Keboola Connection's CSP for styles and fonts.  Update the `public/index.php` and add `STORYBOOK_HOST_AVAILABLE_FROM_DEV_KBC_HOST:9009` to the `style-src` and `font-src` sections.
+You'll also need to add your local storybook host to Keboola Connection's CSP for styles and fonts.  Update the `public/index.php` and add `STORYBOOK_HOST_AVAILABLE_FROM_DEV_KBC_HOST:9010` to the `style-src` and `font-src` sections.
+
+Also, please note that you'll need to visit your `STORYBOOK_HOST_AVAILABLE_FROM_DEV_KBC_HOST:9010` and accept the self signed cert manually so that your browser will begin to allow it.
 
 ## Deployment
 
