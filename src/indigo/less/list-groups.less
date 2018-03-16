@@ -1,5 +1,11 @@
 .list-group {
     border-top: 1px solid @list-group-border;
+    &.list-group-no-border {
+        border: none;
+        .list-group-item {
+            border: none;
+        }
+    }
 }
 .list-group-item {
     padding: 15px 12px;
