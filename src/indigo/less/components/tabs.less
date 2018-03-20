@@ -2,11 +2,25 @@
 // Styles for react-bootstrap/Tabs component
 //
 
-.indigo-ui-tabs {
-  .tab-pane {
-    padding-top: 1em;
-    &.no-top-padding {
-      padding-top: 0;
-    }
+.nav-tabs {
+  margin-bottom: 15px;
+  padding: 15px 25px 0
+}
+
+.tab-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  .no-padding {
+    margin-left: -15px;
+    margin-right: -15px
   }
+}
+
+.modal-body .tab-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tab-content .kbc-row {
+  margin: 0 -15px
 }
