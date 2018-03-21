@@ -16,23 +16,12 @@ const RefreshIcon = React.createClass({
   render() {
     return (
       <span title={this.props.title}>
-          {this.props.isLoading ? this.loader() : this.refreshIcon()}
-        </span>
+        {this.props.isLoading
+          ? <Loader/>
+          : <span {...this.props} className="kbc-refresh kbc-icon-cw" />}
+      </span>
     );
   },
-
-  loader() {
-    return (
-      <Loader/>
-    );
-  },
-
-  refreshIcon() {
-    return (
-      <span {...this.props} className="kbc-refresh kbc-icon-cw" />
-    );
-  }
-
 });
 
 export default RefreshIcon;
