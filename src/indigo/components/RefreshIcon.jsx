@@ -1,19 +1,15 @@
 import React from 'react';
 import Loader from './Loader';
 
-const LEFT = 'left', RIGHT = 'right';
-
 const RefreshIcon = React.createClass({
   propTypes: {
     isLoading: React.PropTypes.bool.isRequired,
-    title: React.PropTypes.string,
-    loaderPosition: React.PropTypes.oneOf([LEFT, RIGHT])
+    title: React.PropTypes.string
   },
 
   getDefaultProps() {
     return {
-      title: 'Refresh',
-      loaderPosition: RIGHT
+      title: 'Refresh'
     };
   },
 
