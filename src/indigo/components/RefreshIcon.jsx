@@ -29,7 +29,7 @@ const RefreshIcon = React.createClass({
 
   refreshIcon() {
     return (
-      <span {...this.props} className="kbc-refresh kbc-icon-cw"></span>
+      <span {...this.props} className="kbc-refresh kbc-icon-cw" />
     );
   }
 
