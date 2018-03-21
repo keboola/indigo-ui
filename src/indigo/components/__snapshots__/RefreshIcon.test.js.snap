@@ -26,9 +26,6 @@ exports[`<RefreshIcon /> RefreshIcon - not loading 1`] = `
 >
   <span
     className="kbc-refresh kbc-icon-cw"
-    isLoading={false}
-    loaderPosition="right"
-    title="Refresh"
   />
 </span>
 `;
