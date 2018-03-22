@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tree /> Tree - default 1`] = `
+<div
+  className="kb-tree"
+  onClick={undefined}
+>
+  <ul>
+    <li>
+      <span>
+        <strong>
+          config
+        </strong>
+        : 
+        337955292
+      </span>
+    </li>
+    <li>
+      <span>
+        <strong>
+          component
+        </strong>
+        : 
+        keboola.ex-db-mysql
+      </span>
+    </li>
+    <li>
+      <span>
+        <strong>
+          mode
+        </strong>
+        : 
+        run
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<Tree /> Tree - with password 1`] = `
+<div
+  className="kb-tree"
+  onClick={undefined}
+>
+  <ul>
+    <li>
+      <span>
+        <strong>
+          config
+        </strong>
+        : 
+        337955292
+      </span>
+    </li>
+    <li>
+      <span>
+        <strong>
+          component
+        </strong>
+        : 
+        keboola.ex-db-mysql
+      </span>
+    </li>
+    <li>
+      <span>
+        <strong>
+          mode
+        </strong>
+        : 
+        run
+      </span>
+    </li>
+    <li>
+      <span>
+        <strong>
+          password
+        </strong>
+        : 
+        <span
+          className="fa fa-fw fa-lock kbc-protected"
+          onClick={[Function]}
+          title="Protected content, click to reveal"
+        />
+      </span>
+    </li>
+  </ul>
+</div>
+`;
