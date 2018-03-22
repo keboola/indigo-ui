@@ -19,7 +19,7 @@ const TreeNode = React.createClass({
 
   renderRow(value, key) {
     return (
-      <li>
+      <li key={key}>
         {Immutable.Iterable.isIterable(value) ? this.renderNode(value, key) : this.renderLeaf(value, key)}
       </li>
     );
