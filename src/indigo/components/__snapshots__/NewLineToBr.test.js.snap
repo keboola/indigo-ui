@@ -15,3 +15,11 @@ exports[`<NewLineToBr /> NewLineToBr - default 1`] = `
   </span>
 </span>
 `;
+
+exports[`<NewLineToBr /> NewLineToBr - no newline 1`] = `
+<span>
+  <span>
+    one
+  </span>
+</span>
+`;
