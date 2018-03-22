@@ -12,7 +12,7 @@ const TreeNode = React.createClass({
   render() {
     return (
         <ul>
-          {this.props.data.map(this.renderRow, this)}
+          {this.props.data.map(this.renderRow, this).valueSeq()}
         </ul>
     );
   },
