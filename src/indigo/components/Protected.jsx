@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 export default React.createClass({
+  propTypes: {
+    children: PropTypes.any
+  },
+
   getInitialState() {
     return {
       isProtected: true

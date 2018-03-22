@@ -1,42 +1,28 @@
 import React from 'react';
 import Loader from './Loader';
 
-const LEFT = 'left', RIGHT = 'right';
-
 const RefreshIcon = React.createClass({
   propTypes: {
     isLoading: React.PropTypes.bool.isRequired,
-    title: React.PropTypes.string,
-    loaderPosition: React.PropTypes.oneOf([LEFT, RIGHT])
+    title: React.PropTypes.string
   },
 
   getDefaultProps() {
     return {
-      title: 'Refresh',
-      loaderPosition: RIGHT
+      title: 'Refresh'
     };
   },
 
   render() {
+    const { isLoading, title, ...remaining } = this.props;
     return (
-      <span title={this.props.title}>
-          {this.props.isLoading ? this.loader() : this.refreshIcon()}
-        </span>
+      <span title={title}>
+        {isLoading
+          ? <Loader/>
+          : <span {...remaining} className="kbc-refresh kbc-icon-cw" />}
+      </span>
     );
   },
-
-  loader() {
-    return (
-      <Loader/>
-    );
-  },
-
-  refreshIcon() {
-    return (
-      <span {...this.props} className="kbc-refresh kbc-icon-cw"></span>
-    );
-  }
-
 });
 
 export default RefreshIcon;

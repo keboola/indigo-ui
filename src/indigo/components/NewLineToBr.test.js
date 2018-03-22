@@ -9,4 +9,8 @@ describe('<NewLineToBr />', () => {
     snapshot(<NewLineToBr text={"one\ntwo\nthree"}/>);
   });
 
+  it('NewLineToBr - no newline', () => {
+    snapshot(<NewLineToBr text={"one"}/>);
+  });
+
 });

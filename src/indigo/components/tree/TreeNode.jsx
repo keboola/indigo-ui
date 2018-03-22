@@ -12,14 +12,14 @@ const TreeNode = React.createClass({
   render() {
     return (
         <ul>
-          {this.props.data.map(this.renderRow, this)}
+          {this.props.data.map(this.renderRow, this).valueSeq()}
         </ul>
     );
   },
 
   renderRow(value, key) {
     return (
-      <li>
+      <li key={key}>
         {Immutable.Iterable.isIterable(value) ? this.renderNode(value, key) : this.renderLeaf(value, key)}
       </li>
     );
