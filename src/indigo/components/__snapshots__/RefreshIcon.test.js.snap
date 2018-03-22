@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RefreshIcon /> RefreshIcon - loading 1`] = `
+<span
+  title="Refresh"
+>
+  <span
+    className="fa fa-spin fa-spinner"
+  />
+</span>
+`;
+
+exports[`<RefreshIcon /> RefreshIcon - loading with custom title 1`] = `
+<span
+  title="Click to reload"
+>
+  <span
+    className="fa fa-spin fa-spinner"
+  />
+</span>
+`;
+
+exports[`<RefreshIcon /> RefreshIcon - not loading 1`] = `
+<span
+  title="Refresh"
+>
+  <span
+    className="kbc-refresh kbc-icon-cw"
+    isLoading={false}
+    loaderPosition="right"
+    title="Refresh"
+  />
+</span>
+`;

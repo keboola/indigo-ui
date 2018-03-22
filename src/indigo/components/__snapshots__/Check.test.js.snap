@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Check /> Checkbox - checked 1`] = `
+<i
+  className="fa fa-fw fa-check"
+/>
+`;
+
+exports[`<Check /> Checkbox - not checked 1`] = `
+<i
+  className="fa fa-fw fa-times"
+/>
+`;

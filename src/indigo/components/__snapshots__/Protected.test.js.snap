@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Protected /> Protected - content hidden (default) 1`] = `
+<span
+  className="fa fa-fw fa-lock kbc-protected"
+  onClick={[Function]}
+  title="Protected content, click to reveal"
+/>
+`;
