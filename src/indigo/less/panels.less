@@ -92,3 +92,40 @@
         margin-bottom: -25px;
     }
 }
+
+.panel-show-details {
+  border: 0;
+  box-shadow: none;
+  .panel-heading {
+    border: 0;
+    background-color: #fff;
+    .panel-title {
+      text-align: center;
+      a {
+        padding: 10px 0 0 0;
+        &:hover {
+          color: @link-hover-color;
+          text-decoration: underline;
+        }
+        &:before {
+          font-family: 'FontAwesome';
+          display: inline-block;
+          content: "\f106";
+          transition: transform 0.5s;
+          padding: 5px;
+          font-size: 18px;
+          &:hover {
+            color: @link-hover-color;
+          }
+        }
+        &.collapsed:before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .panel-body {
+    padding: 20px 0 0 0
+  }
+}
