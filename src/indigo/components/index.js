@@ -4,6 +4,7 @@ import RefreshIcon from './RefreshIcon';
 import Protected from './Protected';
 import Tree from './Tree';
 import NewLineToBr from './NewLineToBr';
+import ExternalLink from './ExternalLink';
 
 export {
   Check,
@@ -11,5 +12,6 @@ export {
   RefreshIcon,
   Protected,
   Tree,
-  NewLineToBr
+  NewLineToBr,
+  ExternalLink
 };
