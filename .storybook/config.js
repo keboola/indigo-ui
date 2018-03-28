@@ -15,6 +15,7 @@ function loadStories() {
   require('../src/stories/RefreshIcon');
   require('../src/stories/Tree');
   require('../src/stories/ExternalLink');
+  require('../src/stories/PanelShowDetails');
 }
 
 setAddon(infoAddon);

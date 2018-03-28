@@ -92,3 +92,33 @@
         margin-bottom: -25px;
     }
 }
+
+.panel-show-details {
+    border: 0;
+    box-shadow: none;
+    .panel-heading {
+        border: 0;
+        background-color: #fff;
+        .panel-title {
+            text-align: center;
+            a {
+                padding: 10px 0 0 0;
+                &:before {
+                    font-family: 'FontAwesome';
+                    display: inline-block;
+                    content: "\f106";
+                    transition: all 0.5s;
+                    padding: 5px;
+                    font-size: 18px;
+                }
+                &.collapsed:before {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    .panel-body {
+        padding: 20px 0 0 0
+    }
+}
