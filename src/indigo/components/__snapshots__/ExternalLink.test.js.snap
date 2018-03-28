@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ExternalLink /> ExternalLink - default 1`] = `
+<a
+  className={undefined}
+  href="https://www.keboola.com"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  keboola.com
+</a>
+`;
+
+exports[`<ExternalLink /> ExternalLink - with classname 1`] = `
+<a
+  className="btn btn-link"
+  href="https://www.keboola.com"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  keboola.com
+</a>
+`;
