@@ -18,6 +18,7 @@ function loadStories() {
   require('../src/stories/Tabs');
   require('../src/stories/ExternalLink');
   require('../src/stories/PanelWithDetails');
+  require('../src/stories/AlertBlock');
 }
 
 setOptions({
