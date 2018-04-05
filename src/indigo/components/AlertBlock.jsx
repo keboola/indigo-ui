@@ -1,10 +1,9 @@
 import React from 'react';
 import {
-    Alert,
-    Button
+    Alert
 } from 'react-bootstrap';
 
-const Check = React.createClass({
+const AlertBlock = React.createClass({
     propTypes: {
         title: React.PropTypes.bool.isRequired,
         style: React.PropTypes.bool.isRequired,
@@ -15,7 +14,7 @@ const Check = React.createClass({
     render() {
         return (
             <Alert className="alert-block" bsStyle={this.props.style}>
-                <h3 className="alert-block-heading">{this.props.title}</h3>
+                <h3 className="alert-block-title">{this.props.title}</h3>
                 <div className="alert-block-body">
                     {this.props.children}
                 </div>
@@ -24,4 +23,4 @@ const Check = React.createClass({
     }
 });
 
-export default Check;
+export default AlertBlock;

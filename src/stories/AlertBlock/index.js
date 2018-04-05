@@ -4,9 +4,109 @@ import {withInfo} from '@storybook/addon-info';
 
 import AlertBlock from '../../indigo/components/AlertBlock';
 
+let content1 = (
+    <a>
+        Keboola Connection - Orchestrations count (39 of 10)
+    </a>
+)
+let content2 = (
+    <div className="row">
+        <div className="col-md-6">
+            <h4>
+                <span className="kbc-writer-icon"/>
+                <span>Writers</span>
+            </h4>
+            <ul className="list-unstyled">
+                <li>
+                    <a>
+                        Custom science PHP
+                    </a>
+                </li>
+                <li>
+                    <a>Custom science Python (v2.x)
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div className="col-md-6">
+            <h4>
+                <span className="kbc-extractor-icon"/>
+                <span>Extractor</span><span>s</span>
+            </h4>
+            <ul className="list-unstyled">
+                <li>
+                    <a>
+                        Gooddata (deprecated)
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Pigeon
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Pigeon Importer (Deprecated)
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+)
+let content3 = (
+    <div>
+        <div className="row">
+            <div className="col-md-12">
+
+                <p>Learn more about the deprecation <a>timeline and reasons</a>.</p>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col-md-6">
+                <h4>
+                    <span className="kbc-transformation-icon"/>
+                    ew
+                </h4>
+                <ul className="list-unstyled">
+                    <li>
+                        <a>rwe</a>
+                    </li>
+                </ul>
+                <h4>
+                    <span className="kbc-transformation-icon"/>
+                    Part 1
+                </h4>
+                <ul className="list-unstyled">
+                    <li>
+                        <a>sadfas</a>
+                    </li>
+                </ul>
+            </div>
+            <div className="col-md-6">
+                <h4>
+                    <span className="kbc-transformation-icon"/>
+                    fasdfas
+                </h4>
+                <ul className="list-unstyled">
+                    <li>
+                        <a>Main</a>
+                    </li>
+                    <li>
+                        <a>Main 2</a>
+                    </li>
+                    <li>
+                        <a>Main 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+)
+
+
 storiesOf('AlertBlock', module)
     .add(
-        'Deptrecated components',
+        'Styles',
         withInfo({
             text: `
         Warnings & Errors
@@ -14,101 +114,50 @@ storiesOf('AlertBlock', module)
             inline: true,
         })(() => {
             return (
-                <div className="kbc-overview-component-container">
+                <div>
                     <AlertBlock
                         style="warning"
                         title="Project contains deprecated components">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <h4>
-                                    <span className="kbc-application-icon"></span>
-                                    <span>Application</span><span>s</span>
-                                </h4>
-                                <ul>
-                                    <li>
-                                        <a>
-                                            Custom science PHP
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>Custom science Python (v2.x)
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col-md-6">
-                                <h4>
-                                    <span className="kbc-extractor-icon"></span>
-                                    <span>Extractor</span><span>s</span>
-                                </h4>
-                                <ul>
-                                    <li>
-                                        <a>
-                                            Gooddata (deprecated)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            Pigeon
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            Pigeon Importer (Deprecated)
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        {content1}
                     </AlertBlock>
 
                     <AlertBlock
                         style="danger"
                         title="Project is over quota">
-                        <ul className="list-unstyled">
-                            <li>
-                                <a>
-                                    <strong>Keboola Connection - Orchestrations count</strong>
-                                    (39 of 10)
-                                </a>
-                            </li>
-                        </ul>
-                    </AlertBlock>
-
-                    <AlertBlock
-                        style="warning"
-                        title="Project contains deprecated MySQL transformations">
-                        <div>
-                            <div>Learn more about the deprecation <a>timeline and reasons</a>.</div>
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <h4><span className="kbc-transformation-icon"></span><span>ew</span></h4>
-                                    <ul>
-                                        <li>
-                                            <a>rwe</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="col-md-6"><h4><span className="kbc-transformation-icon"></span>fasdfas
-                                </h4>
-                                    <ul>
-                                        <li>
-                                            <a>sadfas</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="col-md-6"><h4><span
-                                    className="kbc-transformation-icon"></span>Part 1</h4>
-                                    <ul>
-                                        <li>
-                                            <a>Main</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        {content1}
                     </AlertBlock>
                 </div>
             );
         })
-    );
+    ).add(
+    'Recommended contents',
+    withInfo({
+        text: `
+        Here are show receomended usages of content, please respect them. 
+        If you are missing other demo content, please get in touch with UX crowd .)
+        `,
+        inline: true,
+    })(() => {
+        return (
+            <div>
+                <AlertBlock
+                    style="warning"
+                    title="Alert Block Heading with link content">
+                    {content1}
+                </AlertBlock>
+
+                <AlertBlock
+                    style="warning"
+                    title="Alert Block Heading with list content">
+                    {content2}
+                </AlertBlock>
+
+                <AlertBlock
+                    style="warning"
+                    title="Alert Block Heading with list content & description">
+                    {content3}
+                </AlertBlock>
+            </div>
+        );
+    })
+);
