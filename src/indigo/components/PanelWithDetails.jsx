@@ -7,7 +7,7 @@ export default React.createClass({
     defaultExpanded: PropTypes.bool,
     labelCollapsed: PropTypes.string,
     labelOpen: PropTypes.string,
-    children: PropTypes.any
+    children: PropTypes.any.isRequired,
   },
 
   getDefaultProps() {
@@ -20,7 +20,7 @@ export default React.createClass({
 
   getInitialState() {
     return ({
-      panelHeaderTitle: (this.props.defaultExpanded) ? this.props.labelOpen : this.props.labelCollapsed
+      panelHeaderTitle: this.props.defaultExpanded ? this.props.labelOpen : this.props.labelCollapsed
     });
   },
 
@@ -32,8 +32,9 @@ export default React.createClass({
         header={this.state.panelHeaderTitle}
         defaultExpanded={this.props.defaultExpanded}
         className="panel-show-details"
-        collapsible={true}>
-          {this.props.children}
+        collapsible={true}
+      >
+        {this.props.children}
       </Panel>
     );
   }
