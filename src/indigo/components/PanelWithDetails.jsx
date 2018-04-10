@@ -5,7 +5,7 @@ export default React.createClass({
 
   propTypes: {
     defaultExpanded: PropTypes.bool,
-    labelCollapsed: PropTypes.string,
+    labelCollapse: PropTypes.string,
     labelOpen: PropTypes.string,
     children: PropTypes.any.isRequired,
   },
@@ -13,22 +13,22 @@ export default React.createClass({
   getDefaultProps() {
     return ({
       defaultExpanded: false,
-      labelCollapsed: 'Show details',
-      labelOpen: 'Hide details'
+      labelCollapse: 'Hide details',
+      labelOpen: 'Show details'
     });
   },
 
   getInitialState() {
     return ({
-      panelHeaderTitle: this.props.defaultExpanded ? this.props.labelOpen : this.props.labelCollapsed
+      panelHeaderTitle: this.props.defaultExpanded ? this.props.labelCollapse : this.props.labelOpen
     });
   },
 
   render() {
     return (
       <Panel
-        onEnter={() => this.setState({panelHeaderTitle: this.props.labelOpen})}
-        onExit={() => this.setState({panelHeaderTitle: this.props.labelCollapsed})}
+        onEnter={() => this.setState({panelHeaderTitle: this.props.labelCollapse})}
+        onExit={() => this.setState({panelHeaderTitle: this.props.labelOpen})}
         header={this.state.panelHeaderTitle}
         defaultExpanded={this.props.defaultExpanded}
         className="panel-show-details"

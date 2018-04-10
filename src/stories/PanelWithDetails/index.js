@@ -43,8 +43,9 @@ storiesOf('PanelWithDetails', module)
         })(() => {
             return (
                 <PanelWithDetails
-                    labelCollapsed="More"
-                    labelOpen="Less">
+                    labelCollapse="Less"
+                    labelOpen="More"
+                >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </PanelWithDetails>
             )
