@@ -4,7 +4,7 @@ import PanelWithDetails from '../../indigo/components/PanelWithDetails';
 import { withInfo } from '@storybook/addon-info';
 
 
-storiesOf('[CSS] Panel', module)
+storiesOf('PanelWithDetails', module)
     .add(
         'Basic init',
         withInfo({
