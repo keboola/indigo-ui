@@ -2,111 +2,111 @@
  * Base structure
  */
 html {
-    font-size: @font-size-base;
+  font-size: @font-size-base;
 }
 
 body {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .row > :first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .kbc-sapi-table-link {
-    color: @link-color;
-    cursor: pointer;
-    &:hover {
-        color: @link-hover-color;
-        text-decoration: none;
-    }
+  color: @link-color;
+  cursor: pointer;
+  &:hover {
+    color: @link-hover-color;
+    text-decoration: none;
+  }
 }
 
 .kbc-detail-table {
-    border-bottom: solid 1px @table-border-color;
-    margin-bottom: 22px;
-    width: 100%;
-    .row {
-        margin: 15px;
+  border-bottom: solid 1px @table-border-color;
+  margin-bottom: 22px;
+  width: 100%;
+  .row {
+    margin: 15px;
+  }
+  .td {
+    vertical-align: top !important;
+    width: 50%;
+    padding: 15px 15px !important;
+    .form-group {
+      margin-bottom: 15px;
     }
-    .td {
-        vertical-align: top !important;
-        width: 50%;
-        padding: 15px 15px !important;
-        .form-group {
-            margin-bottom: 15px;
-        }
-    }
-    strong {
-        font-weight: 400;
-    }
+  }
+  strong {
+    font-weight: 400;
+  }
 }
 
 .kbc-layout-table {
-    > .tbody {
-        > .tr {
-            width: auto;
-            border-bottom: 1px solid @table-border-color;
-            .td {
-                border-top: none;
-                padding: 40px 30px 30px;
-            }
-        }
+  > .tbody {
+    > .tr {
+      width: auto;
+      border-bottom: 1px solid @table-border-color;
+      .td {
+        border-top: none;
+        padding: 40px 30px 30px;
+      }
     }
+  }
 }
 
 .kbc-overview {
-    > .tbody > .tr > .td {
-        width: 25%;
-        text-align: center;
-        vertical-align: top;
-    }
+  > .tbody > .tr > .td {
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+  }
 }
 
 .kbc-tasks-list {
-    > tbody >tr > td {
-        padding: 0;
-        a {
-            display: block;
-            color: black;
-            padding: 10px 0;
-            &:hover {
-                text-decoration: none;
-            }
+  > tbody > tr > td {
+    padding: 0;
+    a {
+      display: block;
+      color: black;
+      padding: 10px 0;
+      &:hover {
+        text-decoration: none;
+      }
 
-            .kbc-icon-arrow-right {
-                line-height: 32px;
-            }
-        }
+      .kbc-icon-arrow-right {
+        line-height: 32px;
+      }
     }
+  }
 }
 
 .kbc-user-avatar {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 @media (min-width: 1030px) {
-    .kbc-navbar .kbc-logo,
-    .kbc-sidebar {
-        width: 260px;
-    }
-    .kbc-main-header-container,
-    .kbc-main {
+  .kbc-navbar .kbc-logo,
+  .kbc-sidebar {
+    width: 260px;
+  }
 
-        margin-left: 260px;
-    }
+  .kbc-main-header-container,
+  .kbc-main {
+
+    margin-left: 260px;
+  }
 }
 
-
-.kbc-orchestration-tasks-heading{
+.kbc-orchestration-tasks-heading {
   margin: 0 15px;
 }
+
 .kbc-project-settings {
   .nav-tabs {
     margin-bottom: 0;
   }
 }
-
 
 .event-detail-container {
   padding: 15px;
@@ -120,10 +120,849 @@ body {
   }
 }
 
-
 //for ex-fb, needs to be solved systematically when refactoring
 // .kbc-buttons class
 // all .kbc-buttons can be inline-block later, buts need to abjust layout eg - buttons in header
 .kbc-buttons-inline {
   display: inline-block
+}
+
+// =============================================
+//  FROM KBC - configuration-json.less
+// =============================================
+
+.kbc-configuration-json-edit,
+.kbc-templated-configuration-edit {
+  margin-right: 0px;
+  margin-bottom: -22px;
+  margin-left: 0px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-width: 1px 0 0 0;
+}
+
+.kbc-configuration-json-edit .kbc-configuration-editor,
+.kbc-templated-configuration-edit .kbc-configuration-editor {
+  position: relative;
+}
+
+.kbc-template-editor-toggle {
+  margin-top: 10px;
+}
+
+// =============================================
+//  FROM KBC - configuration.less
+// =============================================
+
+.edit.kbc-configuration-editor {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.edit.kbc-configuration-editor .kbc-buttons {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+// =============================================
+//  FROM KBC - app.less
+// =============================================
+
+.kbc-protected {
+  cursor: pointer;
+}
+
+.kbc-main-content .vertical-center {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.kbc-main-content {
+  .stripe-odd {
+    background-color: #f9f9f9
+  }
+  .stripe-query-has-comment {
+    background-color: rgba(255, 0, 0, .15);
+  }
+}
+
+.kbc-main-content .cm-s-solarized.CodeMirror {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.kbc-main-content .CodeMirror {
+  height: auto;
+  background: none;
+  .CodeMirror-cursors {
+
+  }
+}
+
+.kbc-main-content .edit .CodeMirror {
+  min-height: 100px;
+}
+
+.kbc-main-content .static .CodeMirror-cursor {
+  display: none;
+}
+
+.kbc-main-content .edit .CodeMirror .CodeMirror-scroll {
+  min-height: 100px;
+}
+
+.kbc-main-content .query-number .btn.query-edit {
+  display: none;
+}
+
+.kbc-main-content .row:hover .query-number .btn.query-edit {
+  display: inline;
+}
+
+.kbc-main-content .query-number .query-number-value:before {
+  content: attr(data-query-number);
+}
+
+.kbc-overview {
+
+  h2 {
+    color: #0199f1;
+  }
+
+  > .tbody > .tr > .td {
+    text-align: left;
+  }
+
+}
+
+.kbcNotificationTransition-enter {
+  opacity: 0.01;
+}
+
+.kbcNotificationTransition-enter.kbcNotificationTransition-enter-active {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+.kbcNotificationTransition-leave {
+  opacity: 1;
+}
+
+.kbcNotificationTransition-leave.kbcNotificationTransition-leave-active {
+  opacity: 0.01;
+  transition: opacity .3s ease-in;
+}
+
+.form-group.no-bottom-margin {
+  margin-bottom: 0px;
+}
+
+.help-block.bottom-margin {
+  margin-bottom: 15px;
+}
+
+.kbcLicenseIcon {
+  font-size: 14px;
+  margin-right: 7px;
+}
+
+.kbcLicenseTable td {
+  padding-bottom: 5px;
+}
+
+.kb-sapi-component-icon small.thirdPartyLabel {
+}
+
+.kb-sapi-component-icon small.thirdPartyLabel span {
+}
+
+.kb-orchestrator-task-drag {
+  padding: 0 !important;
+}
+
+.kbcVersionsButton {
+  margin-right: 10px;
+
+}
+
+.kbc-label-rounded.kbc-label-block {
+  display: inline-block;
+  white-space: normal;
+}
+
+//TEMP HACK: ZKOPIROVAT DO INDIGO AZ BUDE PRILEZITOST, ZATIM JE TO BLOKOVANY
+.kbc-main-sidebar {
+  .nav {
+    .kbc-icon-plus {
+      text-align: center;
+      display: inline-block;
+      width: 18px;
+    }
+  }
+}
+
+.kbc-row-orchestration-detail {
+  padding: 0 !important;
+}
+
+.kbc-main .kbc-overview-component .kbc-header {
+  margin-top: 15px;
+}
+
+.kbc-main .kbc-header.kbc-limits,
+.kbc-main .kbc-header.kbc-expiration {
+  padding: 30px 30px !important
+}
+
+.kbc-main .kbc-overview-component {
+  min-height: 90px;
+  .kbc-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.kbc-main .kbc-overview-component:first-of-type {
+  .kbc-header {
+    margin-top: 0;
+  }
+}
+
+.kbc-overview-component-container {
+  & + .kbc-main-content {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+//break content without white spaces
+.alert,
+.table-events > tbody > tr > td,
+.table > .tbody > .tr .td span {
+  word-break: break-word;
+}
+
+// hotfix for: https://github.com/keboola/kbc-ui/issues/1265
+// wil be moved to indigo-ui soon
+.kbc-main-content {
+  overflow: auto;
+}
+
+.migration-row {
+  padding: 30px;
+  border: 2px solid #FFD452;
+  background-color: #FFF6DC;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  .alert {
+    background-image: url('../scripts/modules/home/react/media/ic_error.svg');
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 75px 75px;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  h3 {
+    color: #FF9D52;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  &-content {
+    margin-bottom: 30px;
+    width: 80%;
+    color: #282d38;
+  }
+}
+
+// =============================================
+//  FROM KBC - MetadataEditField.less
+// =============================================
+.kbc-metadata-description {
+  padding: 10px;
+}
+
+// =============================================
+//  FROM KBC - ReadMore.less
+// =============================================
+
+.kbc-readmore {
+  position: relative;
+  overflow: hidden;
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 17px;
+  }
+;
+  h4 {
+    font-weight: bold;
+    font-size: 15px;
+  }
+;
+}
+
+.kbc-readmore-normal {
+  max-height: 300px;
+}
+
+.kbc-readmore-small {
+  max-height: 150px;
+}
+
+.kbc-readmore .kbc-readmore-fadeout {
+  height: 50px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to bottom, transparent, white);
+}
+
+.kbc-readmore-button {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+// =============================================
+//  FROM KBC - DestinationTableSelector.less
+// =============================================
+
+.kbc-dst-table-selector {
+  display: flex;
+
+  .kbc-dot-separator {
+    flex-grow: 0;
+    padding: 0 0.4em;
+    line-height: 36px;
+  }
+
+  .kbc-select-stage {
+    flex-grow: 0;
+    flex-basis: 4.5em;
+  }
+
+  .kbc-select-bucket {
+    flex-grow: 1;
+  }
+
+  .kbc-select-table {
+    flex-grow: 1;
+  }
+}
+
+// =============================================
+//  FROM KBC - expiration.less
+// =============================================
+
+.kbc-expiration {
+  background-color: #FFF6DC;
+  background-image: url('media/ic_error.svg');
+  background-position: calc(~"100% - 30px") 30px;
+  background-size: 75px 75px;
+  background-repeat: no-repeat;
+
+  border: 2px solid #FFD452;
+
+  margin: 5px 0;
+
+  border-radius: 5px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  h3 {
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    color: #FF9D52;
+    font-weight: bold;
+  }
+
+  h4 {
+    color: #FF9D52;
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  ul {
+    margin-bottom: 10px;
+    list-style-type: none;
+    padding-left: 32px;
+    padding-top: 4px;
+  }
+
+  li {
+    line-height: 2;
+  }
+
+  .alert {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    min-height: 77px;
+    color: #7C8498;
+  }
+
+  a {
+    color: #7C8498;
+    &:hover {
+      color: #282D38;
+    }
+  }
+
+}
+
+.kbc-extractor-icon,
+.kbc-writer-icon,
+.kbc-transformation-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-bottom: -6px;
+  margin-right: 8px;
+}
+
+.kbc-extractor-icon {
+  background-image: url('media/extractor.svg');
+  background-position: 0 -1px;
+  background-repeat: no-repeat;
+}
+
+.kbc-writer-icon {
+  background-image: url('media/writer.svg');
+  background-repeat: no-repeat;
+}
+
+.kbc-transformation-icon {
+  background-image: url('media/transformation.svg');
+  background-repeat: no-repeat;
+}
+
+.kbc-deprecation {
+  h3 {
+    margin-bottom: 12px;
+  }
+}
+
+// =============================================
+//  FROM KBC - limits.less
+// =============================================
+
+.kbc-limits {
+  background-color: #FEEDEF;
+  border: 2px solid #F74D63;
+  background-image: url('media/ic_warning.svg');
+  background-position: calc(~"100% - 27px") 28px;
+  background-size: 84px 84px;
+  background-repeat: no-repeat;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  h3 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #f74d63;
+    font-weight: bold;
+  }
+
+  ul {
+    li {
+      line-height: 2;
+    }
+  }
+
+  .alert {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #7C8498;
+    min-height: 77px;
+  }
+
+  a {
+    color: #7C8498;
+    &:hover {
+      color: #282D38;
+    }
+  }
+}
+
+// =============================================
+//  FROM KBC - TrashIndex.less
+// =============================================
+
+.kbc-trash-search {
+  border-bottom: 1px solid #e8e8ef;
+
+  .kbc-trash-controls {
+    padding: 20px 0 !important;
+    margin: 0 -5px 0 -5px;
+
+    .kbc-trash-filter {
+      width: 50%;
+      float: right;
+    }
+
+    .kbc-trash-buttons {
+      padding: 7px 0;
+      float: right;
+    }
+
+    .btn-hide {
+      visibility: hidden;
+    }
+
+    .btn {
+      border-left: 1px solid #e8e8ef;
+      padding-left: 14px;
+      margin-left: 19px;
+    }
+  }
+}
+
+// =============================================
+//  FROM KBC - Markdown.less
+// =============================================
+
+.kbc-markdown {
+  table {
+    background-color: transparent;
+  }
+  caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777;
+    text-align: left;
+  }
+  th {
+    text-align: left;
+  }
+  table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  table > thead > tr > th,
+  table > tbody > tr > th,
+  table > tfoot > tr > th,
+  table > thead > tr > td,
+  table > tbody > tr > td,
+  table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+  }
+  table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+  }
+  table > caption + thead > tr:first-child > th,
+  table > colgroup + thead > tr:first-child > th,
+  table > thead:first-child > tr:first-child > th,
+  table > caption + thead > tr:first-child > td,
+  table > colgroup + thead > tr:first-child > td,
+  table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+  }
+  table > tbody + tbody {
+    border-top: 2px solid #ddd;
+  }
+  table {
+    background-color: #fff;
+  }
+}
+
+// =============================================
+//  FROM KBC - AuthorizationModal.less
+// =============================================
+
+.kbc-authorization-modal {
+  .tab-pane > div > {
+    // WTF fix
+    * {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    // Revert "WTF fix" on form-group
+    .form-group {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+}
+
+// =============================================
+//  FROM KBC - ComponentsSelector.less
+// =============================================
+.kbc-components-selector .Select-value {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+// =============================================
+//  FROM KBC - ModalDialog.less
+// =============================================
+.kbc-table-browser .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.kbc-table-browser .modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+// =============================================
+//  FROM KBC - VendorInfo.less
+// =============================================
+
+.kbcVendorInfo {
+  margin-bottom: 15px;
+}
+
+// =============================================
+//  FROM KBC - TableSelectorForm.less
+// =============================================
+
+.kbc-table-selector.kbc-table-selector-static {
+  position: relative;
+  top: 13px;
+}
+
+// =============================================
+//  FROM KBC - SidebarJobs.less
+// =============================================
+
+.kbc-sidebar-jobs .td.kbc-td-status {
+  width: 31px;
+}
+
+.kbc-main-sidebar div.kbc-sidebar-jobs {
+  margin-bottom: 25px;
+}
+
+.kbc-sidebar-jobs .jobs-link {
+  padding-left: 28px;
+  margin-top: 10px;
+}
+
+.kbc-sidebar-jobs .jobs-link a {
+  color: #7e8490;
+}
+
+// =============================================
+//  FROM KBC - TableSelectorInput.less
+// =============================================
+
+.kbc-table-selector-edit .input-group .form-control {
+  float: none;
+}
+
+// =============================================
+//  FROM KBC - TableSelector.less
+// =============================================
+
+.kbc-table-selector .kbc-icon-pencil {
+  cursor: pointer;
+  opacity: 0.3;
+  margin-left: 0.25em;
+}
+
+.kbc-table-selector:hover .kbc-icon-pencil {
+  opacity: 1;
+}
+
+
+// =============================================
+//  FROM KBC - SidebarVersions.less
+// =============================================
+
+.kbc-sidebar-versions {
+    margin-top: 15px;
+    border-top: 1px solid #dddddd;
+    margin-bottom: 20px;
+}
+
+.kbc-sidebar-versions .version-info {
+  margin-bottom: 10px;
+}
+
+.kbc-sidebar-versions .versions-link {
+  padding-left: 28px;
+  margin-top: 10px;
+}
+
+.kbc-sidebar-versions .versions-link a {
+  color: #7e8490;
+}
+
+.kbc-sidebar-versions .td.versions-status {
+  width: 31px;
+}
+
+
+// =============================================
+//  FROM KBC - TransformationDetailStatic.less
+// =============================================
+
+.add-mapping-button {
+  margin-top: -4px;
+}
+
+small.empty-label {
+  margin-right: 1em;
+  color: #717e9a;
+}
+
+.mapping-rows .kbc-panel-heading-with-table:last-child {
+  margin-bottom: 0px;
+}
+
+.kbc-row h2:first-child {
+  margin-top: 0px;
+}
+
+.kbc-row .mapping {
+  min-height: 100px;
+}
+
+
+// =============================================
+//  FROM KBC - processors.less
+// =============================================
+.popover.popover-wide {
+  max-width: 500px;
+}
+
+.kbc-processors-editor textarea {
+  resize: both;
+  width: 100%;
+  min-height: 300px
+}
+
+
+
+// =============================================
+//  FROM KBC - processors.less
+// =============================================
+
+
+
+.popover.popover-wide {
+  max-width: 500px;
+}
+
+.kbc-processors-editor textarea {
+  resize: both;
+  width: 100%;
+  min-height: 300px
+}
+
+
+
+// =============================================
+//  FROM KBC - VersionIcon.less
+// =============================================
+.kbc-version-icon {
+  color: #7e8490;
+  width: 16px;
+}
+
+.kbc-version-icon.last {
+  color: #96d130;
+}
+
+
+
+
+// =============================================
+//  FROM KBC - AddConfigurationForm.less
+// =============================================
+
+.modal-header.add-configuration-form  {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  min-height: 79px;
+}
+
+.modal-header.add-configuration-form .close {
+  padding-top: 9px;
+}
+
+.modal-header.add-configuration-form .kbc-header {
+  float: left;
+}
+
+
+
+
+// =============================================
+//  FROM KBC - queries.less
+// =============================================
+
+.popover.popover-wide {
+  max-width: 500px;
+}
+
+.kbc-queries-editor textarea {
+  resize: both;
+  width: 100%;
+  min-height: 300px
+}
+
+
+
+// =============================================
+//  FROM KBC - styles.less
+// =============================================
+
+.drag-handle-pending {
+  cursor: not-allowed;
+}
+
+.drag-handle-disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.drag-handle {
+  cursor: move;
+}
+
+.kbc-json-editor textarea {
+  resize: both;
+  width: 100%;
+  min-height: 300px
+}
+
+h2 {
+  line-height: 32px;
+  margin-bottom: 10px;
 }
