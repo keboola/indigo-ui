@@ -7,7 +7,6 @@ const AlertBlock = React.createClass({
     propTypes: {
         title: React.PropTypes.bool.isRequired,
         style: React.PropTypes.bool.isRequired,
-        closable: React.PropTypes.bool,
         children: React.PropTypes.any
     },
 

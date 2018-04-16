@@ -103,6 +103,21 @@ let content3 = (
     </div>
 )
 
+let content4 = (
+    <div className="row">
+        <div className="col-md-9">
+        <span>
+            <p>
+                Migrate your current configurations to new Database Writer. This writer will continue to work until May 2017. Then, all your configurations will be migrated automatically. The migration will also alter your orchestrations to use the new writers. The old configurations will remain intact for now. You can remove them yourself after a successful migration.
+            </p>
+        </span>
+            <button className="btn btn-primary">
+                Proceed to Migration
+            </button>
+        </div>
+    </div>
+)
+
 
 storiesOf('AlertBlock', module)
     .add(
@@ -156,6 +171,12 @@ storiesOf('AlertBlock', module)
                     style="warning"
                     title="Alert Block Heading with list content & description">
                     {content3}
+                </AlertBlock>
+
+                <AlertBlock
+                    style="warning"
+                    title="Alert Block Heading with text paragraph & action">
+                    {content4}
                 </AlertBlock>
             </div>
         );
