@@ -9,12 +9,19 @@ body {
   background-color: #fff;
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: "Gotham Rounded A", "Gotham Rounded B";   //IMPORTED IN preview-head.html
-}
+//h1,h2,h3,h4,h5,h6{
+//  font-family: "Gotham Rounded A", "Gotham Rounded B";
+  //IMPORTED IN preview-head.html
+//}
 
 #root > div > div:nth-child(2) {
-  padding: 16px 0;
+  padding: 16px;
+  border: 1px solid rgb(220, 220, 220);
+  border-top: 0;
+
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 7px, rgba(0, 0, 0, 0.2) 1px, transparent 8px), repeating-linear-gradient(90deg, transparent, transparent 7px, rgba(0, 0, 0, 0.2) 1px, transparent 8px);
+  background-size: 8px 8px;
 }
 
 .indigo {
