@@ -1,6 +1,7 @@
 import { configure, setAddon, addDecorator } from '@storybook/react';
 import infoAddon from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
+import { setOptions } from '@storybook/addon-options';
 
 // Load all components, so we can lint them. Do not remove.
 import components from '../src/indigo/components';
@@ -17,6 +18,11 @@ function loadStories() {
   require('../src/stories/ExternalLink');
   require('../src/stories/PanelWithDetails');
 }
+
+setOptions({
+  name: 'Indigo UI',
+  url: 'https://github.com/keboola/indigo-ui',
+});
 
 setAddon(infoAddon);
 addDecorator(withKnobs);
