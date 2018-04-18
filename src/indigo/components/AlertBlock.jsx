@@ -5,9 +5,9 @@ import {
 
 const AlertBlock = React.createClass({
     propTypes: {
-        title: React.PropTypes.bool.isRequired,
-        style: React.PropTypes.bool.isRequired,
-        children: React.PropTypes.any
+        title: React.PropTypes.string.isRequired,
+        style: React.PropTypes.string.isRequired,
+        children: React.PropTypes.any.isRequired
     },
 
     render() {
