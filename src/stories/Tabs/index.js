@@ -9,7 +9,7 @@ import {
 } from 'react-bootstrap';
 
 
-storiesOf('Tabs', module)
+storiesOf('[CSS] Tabs', module)
     .add(
         'Tabs',
         withInfo({
