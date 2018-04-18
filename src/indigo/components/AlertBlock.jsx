@@ -1,25 +1,22 @@
-import React from 'react';
-import {
-    Alert
-} from 'react-bootstrap';
+import React, { PropTypes } from 'react';
+import { Alert } from 'react-bootstrap';
 
-const AlertBlock = React.createClass({
-    propTypes: {
-        title: React.PropTypes.string.isRequired,
-        style: React.PropTypes.string.isRequired,
-        children: React.PropTypes.any.isRequired
-    },
+export default React.createClass({
+  propTypes: {
+    title: PropTypes.string.isRequired,
+    style: PropTypes.string.isRequired,
+    children: PropTypes.any.isRequired
+  },
 
-    render() {
-        return (
-            <Alert className="alert-block" bsStyle={this.props.style}>
-                <h3 className="alert-block-title">{this.props.title}</h3>
-                <div className="alert-block-body">
-                    {this.props.children}
-                </div>
-            </Alert>
-        );
-    }
+  render() {
+    const { style, title, children } = this.props;
+    return (
+      <Alert className="alert-block" bsStyle={style}>
+        <h3 className="alert-block-title">{title}</h3>
+        <div className="alert-block-body">
+          {children}
+        </div>
+      </Alert>
+    );
+  }
 });
-
-export default AlertBlock;
