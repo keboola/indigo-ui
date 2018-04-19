@@ -4,7 +4,7 @@ import { Alert } from 'react-bootstrap';
 export default React.createClass({
   propTypes: {
     title: PropTypes.string.isRequired,
-    style: PropTypes.string.isRequired,
+    style: PropTypes.oneOf(['warning', 'danger']).isRequired,
     children: PropTypes.any.isRequired
   },
 
