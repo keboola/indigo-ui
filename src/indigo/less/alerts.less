@@ -20,3 +20,58 @@
 .kbc-main > div > .alert {
     margin: 20px;
 }
+
+.alert-block {
+  padding: 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  background-repeat: no-repeat;
+
+  &-title {
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  a {
+    color: #7C8498;
+    &:hover {
+      color: #282D38;
+    }
+  }
+
+  ul {
+    padding-left: 32px;
+    li {
+      line-height: 2;
+    }
+  }
+
+  &.alert-warning {
+    background-color: #FFF6DC;
+    border-color: #FFD452;
+
+    background-image: url('../img/ic_error.svg');
+    background-position: calc(~"100% - 30px") 30px;
+    background-size: 75px 75px;
+
+    .alert-block-title {
+      color: #FF9D52;
+    }
+  }
+
+  &.alert-danger {
+    background-color: #FEEDEF;
+    border-color: #F74D63;
+
+    background-image: url('../img/ic_warning.svg');
+    background-position: calc(~"100% - 27px") 28px;
+    background-size: 84px 84px;
+
+    .alert-block-title {
+      color: #f74d63;
+    }
+  }
+}

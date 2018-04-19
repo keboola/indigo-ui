@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AlertBlock /> AlertBlock - danger 1`] = `
+<div
+  className="alert-block alert alert-danger"
+  role="alert"
+>
+  <h3
+    className="alert-block-title"
+  >
+    This is danger
+  </h3>
+  <div
+    className="alert-block-body"
+  >
+    Danger text
+  </div>
+</div>
+`;
+
+exports[`<AlertBlock /> AlertBlock - warning 1`] = `
+<div
+  className="alert-block alert alert-warning"
+  role="alert"
+>
+  <h3
+    className="alert-block-title"
+  >
+    This is warning
+  </h3>
+  <div
+    className="alert-block-body"
+  >
+    Warning text
+  </div>
+</div>
+`;
