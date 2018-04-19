@@ -1,7 +1,7 @@
 {
   "name": "@keboola/indigo-ui",
   "description": "Keboola UI library",
-  "version": "2.10.0",
+  "version": "2.11.0",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "classnames": "^2.1.0",
@@ -47,7 +47,7 @@
     "npm": "5.x"
   },
   "scripts": {
-    "build-lib": "babel src/indigo --out-dir lib --copy-files",
+    "build-lib": "babel src/indigo --out-dir lib --copy-files --ignore *.test.js",
     "test": "react-scripts test --env=jsdom",
     "run-storybook": "start-storybook -p 9009 -s public",
     "storybook": "npm-run-all -p watch-dev-css run-storybook",
