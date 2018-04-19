@@ -5,9 +5,13 @@ import {withInfo} from '@storybook/addon-info';
 import AlertBlock from '../../indigo/components/AlertBlock';
 
 let content1 = (
-    <a>
-        Keboola Connection - Orchestrations count (39 of 10)
-    </a>
+    <ul className="list-unstyled">
+        <li>
+            <a>
+                Keboola Connection - Orchestrations count (39 of 10)
+            </a>
+        </li>
+    </ul>
 )
 let content2 = (
     <div className="row">
@@ -23,7 +27,8 @@ let content2 = (
                     </a>
                 </li>
                 <li>
-                    <a>Custom science Python (v2.x)
+                    <a>
+                        Custom science Python (v2.x)
                     </a>
                 </li>
             </ul>
