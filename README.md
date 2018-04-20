@@ -76,20 +76,6 @@ replacement for Travis `deploy` section, since that section is used for somethin
 bellow).
 - After successful deployment, the Storybook build will be available online
 
-### UI library, its CSS and components
-
-- When you push new tag then `yarn build-dist-css` command is executed. There's
-`"$TRAVIS_BRANCH" = "$TRAVIS_TAG"` condition in `.travis.yml`.
-- After successful build, a deployment and publishing to registry is started. Check `deploy`
-section in
-`.travis.yml`
-- After successful deployment, there will be new version of CSS available to link from Cloudfront
-and package published to npmjs registry.
-
-### Registration in Keboola Connection
-
-TBD
-
 #### Releasing new version
 
 - Before pushing new tag, make sure you know what are you doing.
@@ -100,8 +86,7 @@ and you want to make those changes available for users.
 Steps:
 
 1. Make sure everything is working as expected
-2. Prepare new version with `npm version ...` command
-(manual [here](https://docs.npmjs.com/cli/version)). This command should create new commit (with
+2. Prepare new version with `yarn version` command. This command should create new commit (with
 version change in `package.json`) and tag for you. **There's no need to change `package.json`
 manually or create tag manually.**
 3. Push to `master` branch - e.g `git push origin master`
