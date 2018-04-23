@@ -36,9 +36,39 @@ module.exports = function(grunt) {
             cwd: 'src/indigo',
             src: ['img/*'],
             dest: 'public/'
+          },
+          {
+            expand: true,
+            cwd: 'src/indigo/icons/',
+            src: ['icon-sprite/*'],
+            dest: 'public/'
           }
         ]
       },
+    },
+    svg_sprite: {
+        your_target: {
+            expand: true,
+            cwd: 'src/indigo/icons',
+            src: ['**/*.svg'],
+            dest: 'public/icons',
+            options: {
+                shape: {
+                    dimension: {
+                        // maxWidth: 32,
+                        maxHeight: 32
+                    },
+                    spacing: {
+                        padding: 1
+                    },
+                },
+                mode: {
+                    symbol: {
+                        bust: false,
+                    },
+                }
+            }
+        },
     },
     watch: {
       less: {
@@ -61,8 +91,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-svg-sprite');
   grunt.loadNpmTasks('grunt-stylelint');
 
-  grunt.registerTask('build-dev-css', ['copy:dev', 'less:development', 'stylelint']);
+  grunt.registerTask('build-dev-css', ['svg_sprite', 'copy:dev', 'less:development', 'stylelint']);
 
 };
