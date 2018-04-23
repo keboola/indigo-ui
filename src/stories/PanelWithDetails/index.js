@@ -8,6 +8,7 @@ storiesOf('PanelWithDetails', module)
     .add(
         'Basic init',
         withInfo({
+            text: `PanelWithDetails serves to reveal more details appended to main content`,
             inline: true,
         })(() => {
             return (

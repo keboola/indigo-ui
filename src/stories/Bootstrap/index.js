@@ -31,6 +31,8 @@ import {
   Badge,
   Well,
 } from 'react-bootstrap';
+import {withInfo} from '@storybook/addon-info';
+
 
 storiesOf('Bootstrap', module)
   .add('Buttons', () => (
@@ -251,7 +253,10 @@ storiesOf('Bootstrap', module)
       </div>
     </div>
   ), module)
-  .add('Accordion', () => (
+  .add('Accordion', withInfo({
+        text: `
+        Accordion servers for categorizing the content into collpasible sections.
+        `})(() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Accordion</h1>
@@ -291,7 +296,7 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
+  )), module)
   .add('Form', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
