@@ -22,13 +22,13 @@
 }
 
 .alert-block {
+  position: relative;
   min-height: 140px;
   padding: 30px;
   margin: 10px 0;
   border-radius: 5px;
   border-width: 2px;
   border-style: solid;
-  background-repeat: no-repeat;
   color: #7C8498;
 
   &:first-of-type {
@@ -43,6 +43,14 @@
     margin: 0 0 24px 0;
     font-size: 18px;
     font-weight: bold;
+  }
+
+  &-icon {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    width: 84px;
+    height: auto;
   }
 
   a {
@@ -74,9 +82,9 @@
     background-color: #FFF6DC;
     border-color: #FFD452;
 
-    background-image: url('../img/ic_error.svg');
-    background-position: calc(~"100% - 30px") 30px;
-    background-size: 75px 75px;
+    .alert-block-icon {
+      color: #FFD452;
+    }
 
     .alert-block-title, h4 {
       color: #FF9D52;
@@ -87,9 +95,9 @@
     background-color: #FEEDEF;
     border-color: #F74D63;
 
-    background-image: url('../img/ic_warning.svg');
-    background-position: calc(~"100% - 27px") 28px;
-    background-size: 84px 84px;
+    .alert-block-icon {
+      color: #f74d63;
+    }
 
     .alert-block-title, h4 {
       color: #f74d63;
