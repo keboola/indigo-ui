@@ -14,7 +14,7 @@ const icons = [
     "copy",
     "duration",
     "edit",
-    "error",
+    "danger",
     "extractor",
     "extractor-to",
     "help",
