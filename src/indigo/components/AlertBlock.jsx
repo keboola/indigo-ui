@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Alert } from 'react-bootstrap';
 
-import Icon from '../../indigo/components/Icon';
+import Icon from './Icon';
 
 class AlertBlock extends React.Component {
   render() {
