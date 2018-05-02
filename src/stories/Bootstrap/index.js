@@ -480,6 +480,12 @@ storiesOf('Bootstrap', module)
         <div className="bs-example">
           <Image src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4" responsive />
         </div>
+        <h2>Centered</h2>
+        <div className="bs-example">
+            <Image className="center-block"
+                   src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4"
+                   responsive/>
+        </div>
       </div>
     </div>
   ), module)
