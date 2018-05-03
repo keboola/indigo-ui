@@ -49,9 +49,9 @@ module.exports = function(grunt) {
     svg_sprite: {
         your_target: {
             expand: true,
-            cwd: 'src/indigo/icons',
+            cwd: 'src/icons',
             src: ['**/*.svg'],
-            dest: 'public/icons',
+            dest: 'src/indigo/img',
             options: {
                 shape: {
                     dimension: {
@@ -74,7 +74,8 @@ module.exports = function(grunt) {
       less: {
         files: [
           'src/styles/indigo-storybook.less',
-          'src/indigo/less/*.less'
+          'src/indigo/less/*.less',
+          'src/icons/*.svg'
         ],
         tasks: ['less:development', 'stylelint'],
         options: {
