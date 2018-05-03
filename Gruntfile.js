@@ -41,7 +41,7 @@ module.exports = function(grunt) {
       },
     },
     svg_sprite: {
-        your_target: {
+        dev: {
             expand: true,
             cwd: 'src/icons',
             src: ['**/*.svg'],
@@ -90,6 +90,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-svg-sprite');
   grunt.loadNpmTasks('grunt-stylelint');
 
-  grunt.registerTask('build-dev-css', ['svg_sprite', 'copy:dev', 'less:development', 'stylelint']);
+  grunt.registerTask('build-dev-css', ['svg_sprite:dev', 'copy:dev', 'less:development', 'stylelint']);
 
 };
