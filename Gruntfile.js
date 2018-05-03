@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   grunt.initConfig({
     less: {
@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             "node_modules"
           ],
           modifyVars: {
-            "libsPath" : ""
+            "libsPath": ""
           }
         },
         files: {
@@ -41,29 +41,29 @@ module.exports = function(grunt) {
       },
     },
     svg_sprite: {
-        dev: {
-            expand: true,
-            cwd: 'src/icons',
-            src: ['**/*.svg'],
-            dest: 'src/indigo/img',
-            options: {
-              log: 'info',
-                shape: {
-                    dimension: {
-                        // maxWidth: 32,
-                        maxHeight: 32
-                    },
-                    spacing: {
-                        padding: 1
-                    },
-                },
-                mode: {
-                    symbol: {
-                        bust: false,
-                    },
-                }
-            }
-        },
+      dev: {
+        expand: true,
+        cwd: 'src/icons',
+        src: ['**/*.svg'],
+        dest: 'src/indigo/img',
+        options: {
+          log: 'info',
+          shape: {
+            dimension: {
+              // maxWidth: 32,
+              maxHeight: 32
+            },
+            spacing: {
+              padding: 1
+            },
+          },
+          mode: {
+            symbol: {
+              bust: false,
+            },
+          }
+        }
+      },
     },
     watch: {
       less: {
