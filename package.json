@@ -1,7 +1,7 @@
 {
   "name": "@keboola/indigo-ui",
   "description": "Keboola UI library",
-  "version": "2.11.1",
+  "version": "3.0.0",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "classnames": "^2.1.0",
