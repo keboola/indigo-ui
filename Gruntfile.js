@@ -47,6 +47,7 @@ module.exports = function(grunt) {
             src: ['**/*.svg'],
             dest: 'src/indigo/img',
             options: {
+              log: 'info',
                 shape: {
                     dimension: {
                         // maxWidth: 32,
