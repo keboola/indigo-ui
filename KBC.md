@@ -1,7 +1,5 @@
 # Simultaneously with Keboola Connection (Docker only)
 
-Check [KBC.md](KBC.md)
-
 Since development version of Keboola Connection is served through https, you need to use indigo-ui
 library with https too.
 

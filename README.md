@@ -48,7 +48,7 @@ and you want to make those changes available for users.
 Steps:
 
 1. Make sure everything is working as expected
-2. Prepare new version with `yarn version` command. This command should create new commit (with
+2. Prepare new version with `yarn version` command. Just follow instructions. This command should create new commit (with
 version change in `package.json`) and tag for you. **There's no need to change `package.json`
 manually or create tag manually.**
 3. Push to `master` branch - e.g `git push origin master`
@@ -57,20 +57,18 @@ manually or create tag manually.**
 5. Check package in npmjs registry, try to install it or update to newer version from some project
 6. Write release notes [keboola/indigo-ui/releases](https://github.com/keboola/indigo-ui/releases)
 
-## Older, `kbc-bootstrap` branch
-
-This branch was introduced only for compatibility with
-[keboola/kbc-bootstrap](https://github.com/keboola/kbc-bootstrap). Releases from this branch are
-tagged as `v0.1.x` and you probably won't need to do anything with this branch. All releases are
-available [here](https://github.com/keboola/indigo-ui/releases)
-
-## Older, `v1` branch
-
-This branch contains some changes, but we decided to skip it and start with `v2` and smaller,
-incremental steps.
-
 ## FAQ
 
 ### How to check what will be published to npmjs registry before pushing new tag?
 
 Run `npm pack`. Check its manual [here](https://docs.npmjs.com/cli/pack).
+
+### How to run tests?
+
+Run `yarn test`. It'll start tests in interactive mode.
+
+### How to create new component?
+
+1. Create new component file in `src/indigo/components` (e.g. `Loader.jsx`).
+2. Add tests (if needed) and snapshots for new component (e.g. `Loader.test.js`).
+3. Add new component to main file `src/indigo/components/index.js` to enable its export.
