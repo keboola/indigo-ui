@@ -35,10 +35,9 @@ import {withInfo} from '@storybook/addon-info';
 
 
 storiesOf('Bootstrap', module)
-  .add('Buttons', () => (
+  .add('Buttons', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Buttons</h1>
         <h2>Style</h2>
         <div className="bs-example">
           <Button>Default</Button>
@@ -69,11 +68,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Button Toolbar', () => (
+  ), module))
+  .add('Button Toolbar', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Button Toolbar</h1>
         <div className="bs-example">
           <ButtonToolbar>
             <Button>some</Button>
@@ -82,7 +80,6 @@ storiesOf('Bootstrap', module)
           </ButtonToolbar>
         </div>
         <div className="bs-docs-section">
-          <h1>Button Group</h1>
           <h2>Subhead</h2>
           <div className="bs-example">
             <ButtonGroup>
@@ -94,11 +91,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('DropdownButton', () => (
+  ), module))
+  .add('DropdownButton', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>DropdownButton</h1>
         <div className="bs-example">
           <DropdownButton title="DropdownButton" id="bootstrap-showcase-dropdown-button">
             <MenuItem eventKey="1">Action</MenuItem>
@@ -112,11 +108,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Header', () => (
+  ), module))
+  .add('Header', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Menu item</h1>
         <div className="bs-example">
           <ul className="dropdown-menu open">
             <MenuItem header>Header</MenuItem>
@@ -134,11 +129,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Modal', () => (
+  ), module))
+  .add('Modal', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Modal</h1>
         <div className="bs-example">
           <div className="static-modal" style={{ position: 'relative' }}>
             <Modal.Dialog>
@@ -157,11 +151,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Tabs / Tab', () => (
+  ), module))
+  .add('Tabs / Tab', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Tabs / Tab</h1>
         <div className="bs-example">
           <Tabs defaultActiveKey={2}>
             <Tab eventKey={1} title="Tab 1">
@@ -177,11 +170,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('List Group & List Group Item', () => (
+  ), module))
+  .add('List Group & List Group Item', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>List Group & List Group Item</h1>
         <div className="bs-example">
           <ListGroup>
             <ListGroupItem>Item 1</ListGroupItem>
@@ -191,11 +183,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Tables', () => (
+  ), module))
+  .add('Tables', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Tables</h1>
         <div className="bs-example">
           <Table striped bordered condensed hover>
             <caption>Optional table caption.</caption>
@@ -231,35 +222,32 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Panel', () => (
+  ), module))
+  .add('Panel', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Panel</h1>
         <div className="bs-example">
           <Panel header="Panel heading without title">Panel content</Panel>
           <Panel header="Panel title">Panel content</Panel>
         </div>
       </div>
     </div>
-  ), module)
-  .add('Well', () => (
+  ), module))
+  .add('Well', withInfo({inline: true}) (() =>  (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Well</h1>
         <div className="bs-example">
           <Well>WELL, Well, well ...</Well>
         </div>
       </div>
     </div>
-  ), module)
+  ), module))
   .add('Accordion', withInfo({
         text: `
-        Accordion servers for categorizing the content into collpasible sections.
-        `})(() => (
+        Accordion servers for categorizing the content into collpasible sections.`,
+        inline: true})(() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Accordion</h1>
         <div className="bs-example">
           <Accordion>
             <Panel header="Collapsible Group Item #1" eventKey="1">
@@ -297,10 +285,9 @@ storiesOf('Bootstrap', module)
       </div>
     </div>
   )), module)
-  .add('Form', () => (
+  .add('Form', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Form</h1>
         <div className="bs-example">
           <form>
             <Checkbox checked readOnly>
@@ -356,11 +343,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('InputGroup', () => (
+  ), module))
+  .add('InputGroup', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>InputGroup</h1>
         <div className="bs-example">
           <FormGroup>
             <InputGroup>
@@ -457,18 +443,17 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('ProgressBar', () => (
+  ), module))
+  .add('ProgressBar', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>ProgressBar</h1>
         <div className="bs-example">
           <ProgressBar now="60" label={`60%`} />
         </div>
       </div>
     </div>
-  ), module)
-  .add('Images', () => (
+  ), module))
+  .add('Images', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Images</h1>
@@ -488,11 +473,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('ResponsiveEmbed', () => (
+  ), module))
+  .add('ResponsiveEmbed', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>ResponsiveEmbed</h1>
         <div className="bs-example">
           <ResponsiveEmbed a16by9>
             <iframe
@@ -504,12 +488,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Tooltip', () => (
+  ), module))
+  .add('Tooltip', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Tooltip</h1>
-
         <div className="bs-example">
           <Tooltip placement="right" className="in">
             Tooltip right
@@ -532,11 +514,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Popover', () => (
+  ), module))
+  .add('Popover', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Popover</h1>
         <div className="bs-example">
           <Popover placement="right" title="Popover right">
             And here's some <strong>amazing</strong> content. It's very engaging. right?
@@ -544,11 +525,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Alert', () => (
+  ), module))
+  .add('Alert', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Alert</h1>
         <div className="bs-example">
           <Alert bsStyle="danger">
             <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
@@ -565,11 +545,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Typography', () => (
+  ), module))
+  .add('Typography', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Typography</h1>
         <div className="bs-example">
           <h1>h1. Bootstrap heading</h1>
           <h2>h2. Bootstrap heading</h2>
@@ -607,11 +586,10 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module)
-  .add('Label', () => (
+  ), module))
+  .add('Label', withInfo({inline: true}) (() => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
-        <h1>Label</h1>
         <div className="bs-example">
           <Label bsStyle="default">Default</Label>&nbsp;
           <Label bsStyle="primary">Primary</Label>&nbsp;
@@ -623,10 +601,9 @@ storiesOf('Bootstrap', module)
       </div>
 
       <div className="bs-docs-section">
-        <h1>Badge</h1>
         <div className="bs-example">
           <Badge>42</Badge>
         </div>
       </div>
     </div>
-  ));
+  )));
