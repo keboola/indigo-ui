@@ -156,7 +156,7 @@ storiesOf('Bootstrap', module)
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
-          <Tabs defaultActiveKey={2}>
+          <Tabs defaultActiveKey={2} id="indigo-ui-bootstrap-tabs-example-1">
             <Tab eventKey={1} title="Tab 1">
               Tab 1 content
             </Tab>
@@ -387,7 +387,7 @@ storiesOf('Bootstrap', module)
           <FormGroup>
             <InputGroup>
               <FormControl type="text" />
-              <DropdownButton componentClass={InputGroup.Button} title="Action">
+              <DropdownButton componentClass={InputGroup.Button} title="Action" id="indigo-ui-bootstrap-input-group-dropdown-button">
                 <MenuItem key="1">Item</MenuItem>
               </DropdownButton>
             </InputGroup>
@@ -448,7 +448,7 @@ storiesOf('Bootstrap', module)
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
-          <ProgressBar now="60" label={`60%`} />
+          <ProgressBar now={60} label={`60%`} />
         </div>
       </div>
     </div>
@@ -493,22 +493,22 @@ storiesOf('Bootstrap', module)
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
-          <Tooltip placement="right" className="in">
+          <Tooltip placement="right" className="in" id="indigo-ui-bootstrap-tooltip-example-1">
             Tooltip right
           </Tooltip>
           <br />
           <br />
-          <Tooltip placement="top" className="in">
+          <Tooltip placement="top" className="in" id="indigo-ui-bootstrap-tooltip-example-2">
             Tooltip top
           </Tooltip>
           <br />
           <br />
-          <Tooltip placement="left" className="in">
+          <Tooltip placement="left" className="in" id="indigo-ui-bootstrap-tooltip-example-3">
             Tooltip left
           </Tooltip>
           <br />
           <br />
-          <Tooltip placement="bottom" className="in">
+          <Tooltip placement="bottom" className="in" id="indigo-ui-bootstrap-tooltip-example-4">
             Tooltip bottom
           </Tooltip>
         </div>
@@ -519,7 +519,7 @@ storiesOf('Bootstrap', module)
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
-          <Popover placement="right" title="Popover right">
+          <Popover placement="right" title="Popover right" id="indigo-ui-bootstrap-popover-example-1">
             And here's some <strong>amazing</strong> content. It's very engaging. right?
           </Popover>
         </div>
