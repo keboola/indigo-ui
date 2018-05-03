@@ -70,9 +70,18 @@ module.exports = function(grunt) {
         files: [
           'src/styles/indigo-storybook.less',
           'src/indigo/less/*.less',
-          'src/icons/*.svg'
         ],
         tasks: ['less:development', 'stylelint'],
+        options: {
+          spawn: false,
+          livereload: true,
+        }
+      },
+      icons: {
+        files: [
+          'src/icons/*.svg'
+        ],
+        tasks: ['svg_sprite:dev'],
         options: {
           spawn: false,
           livereload: true,
