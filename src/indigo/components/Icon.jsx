@@ -2,7 +2,6 @@ import React from 'react';
 import IconSprite from './../img/symbol/svg/sprite.symbol.svg';
 
 export default React.createClass({
-    displayName: 'Icon',
     propTypes: {
         iconClass: React.PropTypes.string,
         className: React.PropTypes.string,
