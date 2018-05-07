@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 export default React.createClass({
     propTypes: {
-        iconClass: React.PropTypes.string,
+        iconClass: React.PropTypes.string.isRequired,
         className: React.PropTypes.string,
     },
     render: function () {
