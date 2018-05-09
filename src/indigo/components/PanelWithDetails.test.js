@@ -29,4 +29,12 @@ describe('<PanelWithDetails />', () => {
     );
   });
 
+  it('Bottom controls', () => {
+    snapshot(
+      <PanelWithDetails placement="bottom">
+        content
+      </PanelWithDetails>
+    );
+  });
+
 });

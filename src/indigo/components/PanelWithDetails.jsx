@@ -8,13 +8,15 @@ export default React.createClass({
     labelCollapse: PropTypes.string,
     labelOpen: PropTypes.string,
     children: PropTypes.any.isRequired,
+    placement: PropTypes.oneOf(['top', 'bottom'])
   },
 
   getDefaultProps() {
     return ({
       defaultExpanded: false,
       labelCollapse: 'Hide details',
-      labelOpen: 'Show details'
+      labelOpen: 'Show details',
+      placement: 'top'
     });
   },
 
@@ -31,7 +33,7 @@ export default React.createClass({
         onExit={() => this.setState({panelHeaderTitle: this.props.labelOpen})}
         header={this.state.panelHeaderTitle}
         defaultExpanded={this.props.defaultExpanded}
-        className="panel-show-details"
+        className={'panel-show-details' + ' panel-show-details-' + this.props.placement }
         collapsible={true}
       >
         {this.props.children}

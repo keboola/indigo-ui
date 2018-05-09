@@ -51,4 +51,21 @@ storiesOf('PanelWithDetails', module)
                 </PanelWithDetails>
             )
         })
+    )
+    .add(
+        'Bottom controls',
+        withInfo({
+            text: `
+        COntrol label forces to bottom
+        `,
+            inline: true,
+        })(() => {
+            return (
+                <PanelWithDetails
+                    placement="bottom"
+                >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </PanelWithDetails>
+            )
+        })
     );
