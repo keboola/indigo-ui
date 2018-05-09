@@ -8,7 +8,7 @@ export default React.createClass({
     labelCollapse: PropTypes.string,
     labelOpen: PropTypes.string,
     children: PropTypes.any.isRequired,
-    placement: PropTypes.string
+    placement: PropTypes.oneOf(['top', 'bottom'])
   },
 
   getDefaultProps() {
