@@ -1,11 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default React.createClass({
-  propTypes: {
-    text: PropTypes.string.isRequired
-  },
-
+class NewLineToBr extends React.Component {
   render() {
     const lines = this.props.text.split('\n');
     let result = [];
@@ -20,5 +16,11 @@ export default React.createClass({
     return (
       <span>{result}</span>
     );
-  },
-});
+  }
+}
+
+NewLineToBr.propTypes = {
+  text: PropTypes.string.isRequired
+};
+
+export default NewLineToBr;

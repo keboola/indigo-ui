@@ -3,12 +3,7 @@ import PropTypes from 'prop-types';
 
 import TreeNode from './tree/TreeNode';
 
-export default React.createClass({
-  propTypes: {
-    data: PropTypes.object.isRequired,
-    onClick: PropTypes.func
-  },
-
+class Tree extends React.Component {
   render() {
     return (
       <div className="kb-tree" onClick={this.props.onClick}>
@@ -16,5 +11,11 @@ export default React.createClass({
       </div>
     );
   }
+}
 
-});
+Tree.propTypes = {
+  data: PropTypes.object.isRequired,
+  onClick: PropTypes.func
+};
+
+export default Tree;

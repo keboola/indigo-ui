@@ -1,20 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default React.createClass({
-  propTypes: {
-    children: PropTypes.any
-  },
-
-  getInitialState() {
-    return {
+class Protected extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       isProtected: true
     };
-  },
+  }
 
   render() {
     return this.state.isProtected ? this.renderProtected() : this.renderRevealed();
-  },
+  }
 
   renderProtected() {
     return (
@@ -22,17 +19,23 @@ export default React.createClass({
             title="Protected content, click to reveal"
             onClick={this.show} />
     );
-  },
+  }
 
   renderRevealed() {
     return (
       <span>{this.props.children}</span>
     );
-  },
+  }
 
   show() {
     this.setState({
       isProtected: false
     });
   }
-});
+}
+
+Protected.propTypes = {
+  children: PropTypes.any
+};
+
+export default Protected;
