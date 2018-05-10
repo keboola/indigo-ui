@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Loader from './Loader';
 
 const RefreshIcon = React.createClass({
   propTypes: {
-    isLoading: React.PropTypes.bool.isRequired,
-    title: React.PropTypes.string
+    isLoading: PropTypes.bool.isRequired,
+    title: PropTypes.string
   },
 
   getDefaultProps() {

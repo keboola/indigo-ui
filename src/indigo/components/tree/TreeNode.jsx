@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Immutable from 'immutable';
+
 import Protected from '../Protected';
 
 const TreeNode = React.createClass({
   propTypes: {
-    data: React.PropTypes.object.isRequired
+    data: PropTypes.object.isRequired
   },
 
   concealedKeys: ["password"],

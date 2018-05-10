@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import TreeNode from './tree/TreeNode';
 
 export default React.createClass({
   propTypes: {
-    data: React.PropTypes.object.isRequired,
-    onClick: React.PropTypes.func
+    data: PropTypes.object.isRequired,
+    onClick: PropTypes.func
   },
 
   render() {
