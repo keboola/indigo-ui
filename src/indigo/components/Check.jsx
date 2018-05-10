@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Check = React.createClass({
   propTypes: {
-    isChecked: React.PropTypes.bool.isRequired
+    isChecked: PropTypes.bool.isRequired
   },
 
   render() {
