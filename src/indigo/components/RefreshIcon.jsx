@@ -3,18 +3,7 @@ import PropTypes from 'prop-types';
 
 import Loader from './Loader';
 
-const RefreshIcon = React.createClass({
-  propTypes: {
-    isLoading: PropTypes.bool.isRequired,
-    title: PropTypes.string
-  },
-
-  getDefaultProps() {
-    return {
-      title: 'Refresh'
-    };
-  },
-
+class RefreshIcon extends React.Component {
   render() {
     const { isLoading, title, ...remaining } = this.props;
     return (
@@ -24,7 +13,16 @@ const RefreshIcon = React.createClass({
           : <span {...remaining} className="kbc-refresh kbc-icon-cw" />}
       </span>
     );
-  },
-});
+  }
+}
+
+RefreshIcon.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
+  title: PropTypes.string
+};
+
+RefreshIcon.defaultProps = {
+  title: 'Refresh'
+};
 
 export default RefreshIcon;

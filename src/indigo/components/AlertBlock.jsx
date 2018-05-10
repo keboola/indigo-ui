@@ -2,13 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Alert } from 'react-bootstrap';
 
-export default React.createClass({
-  propTypes: {
-    title: PropTypes.string.isRequired,
-    type: PropTypes.oneOf(['warning', 'danger']).isRequired,
-    children: PropTypes.any.isRequired
-  },
-
+class AlertBlock extends React.Component {
   render() {
     const { type, title, children } = this.props;
     return (
@@ -20,4 +14,12 @@ export default React.createClass({
       </Alert>
     );
   }
-});
+}
+
+AlertBlock.propTypes = {
+  title: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['warning', 'danger']).isRequired,
+  children: PropTypes.any.isRequired
+};
+
+export default AlertBlock;
