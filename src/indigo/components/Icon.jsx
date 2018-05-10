@@ -1,17 +1,20 @@
 import React from 'react';
-import IconSprite from './../img/symbol/svg/sprite.symbol.svg';
+import PropTypes from 'prop-types';
 import classNames from "classnames";
 
-export default React.createClass({
-    propTypes: {
-        iconClass: React.PropTypes.string.isRequired,
-        className: React.PropTypes.string,
-    },
-    render: function () {
-        return (
-            <svg className={classNames('icon', this.props.className)}>
-                <use xlinkHref={IconSprite + "#" + this.props.iconClass}/>
-            </svg>
-        );
-    },
-});
+import IconSprite from '../img/symbol/svg/sprite.symbol.svg';
+
+const Icon = ({ iconClass, className }) => {
+  return (
+    <svg className={classNames('icon', className)}>
+      <use xlinkHref={IconSprite + "#" + iconClass}/>
+    </svg>
+  );
+};
+
+Icon.propTypes = {
+  iconClass: PropTypes.string.isRequired,
+  className: PropTypes.string,
+};
+
+export default Icon;
