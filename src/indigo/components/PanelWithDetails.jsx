@@ -17,7 +17,7 @@ class PanelWithDetails extends React.Component {
         onExit={() => this.setState({panelHeaderTitle: this.props.labelOpen})}
         header={this.state.panelHeaderTitle}
         defaultExpanded={this.props.defaultExpanded}
-        className={'panel-show-details' + ' panel-show-details-' + this.props.placement }
+        className={'panel-show-details panel-show-details-' + this.props.placement }
         collapsible={true}
       >
         {this.props.children}
