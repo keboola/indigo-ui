@@ -53,12 +53,9 @@ module.exports = function(grunt) {
         }
       }
     },
-      stylelint: {
-        all: ['src/indigo/less/*.less'],
-        options: {
-          failOnError: false
-        }
-      }
+    stylelint: {
+      all: ['src/indigo/less/*.less'],
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
