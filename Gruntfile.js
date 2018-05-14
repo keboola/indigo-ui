@@ -46,16 +46,19 @@ module.exports = function(grunt) {
           'src/styles/indigo-storybook.less',
           'src/indigo/less/*.less'
         ],
-        tasks: ['less:development'],
+        tasks: ['less:development', 'stylelint'],
         options: {
           spawn: false,
           livereload: true,
         }
       }
     },
-    stylelint: {
-      all: ['src/indigo/less/*.less']
-  }
+      stylelint: {
+        all: ['src/indigo/less/*.less'],
+        options: {
+          failOnError: false
+        }
+      }
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
