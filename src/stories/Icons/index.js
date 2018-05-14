@@ -1,5 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
+import {withInfo} from '@storybook/addon-info';
 import Icon from '../../indigo/components/Icon';
 
 
@@ -49,30 +50,34 @@ const icons = [
     "writer"
 ]
 
-storiesOf('Icons')
-    .addWithInfo(
+storiesOf('Icons', module)
+    .add(
         'Icon gallery',
-        'Desc',
-        () => (
-
+        withInfo({
+            text: `
+            Set of Keboola SVG icons. Color can be changed by css 'color' property. When adding new icons to src/icons, you need to re-run svg compilation.
+        `,
+            inline: true,
+        })(() => {
+            return (
             <div className="indigo-layout-grid">
-
                 {icons.map(function(object, i){
                     return  <div><Icon iconClass={object}/></div>;
                 })}
             </div>
-
-        ),
-        {
-            inline: true,
-        }
+            );
+        })
     )
-    .addWithInfo(
+    .add(
         'Icon sizing',
-        'Desc',
-        () => (
-
-<div>
+        withInfo({
+            text: `
+        Description
+        `,
+            inline: true,
+        })(() => {
+            return (
+                <div>
 
                 <Icon iconClass="mapping-out" className="icon-size-stack"/>
     <br/>
@@ -93,8 +98,6 @@ storiesOf('Icons')
 
 
 </div>
-        ),
-        {
-            inline: true,
-        }
+            );
+        })
     )
