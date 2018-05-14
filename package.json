@@ -52,6 +52,7 @@
     "storybook": "npm-run-all -p watch-dev-css run-storybook",
     "build-dev-css": "grunt build-dev-css",
     "watch-dev-css": "npm run build-dev-css && grunt watch",
+    "stylelint": "grunt stylelint",
     "build-storybook": "build-storybook -s public -o build"
   },
   "main": "lib/components/index.js",

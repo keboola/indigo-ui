@@ -10,7 +10,8 @@ install:
 
 script:
   - >-
-    yarn test
+    yarn stylelint
+    && yarn test
     && yarn build-dev-css
     && yarn build-storybook
     && (if [ "$TRAVIS_BRANCH" = "master" ]; then ./deploy-storybook.sh; fi)
