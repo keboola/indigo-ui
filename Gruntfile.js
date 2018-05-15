@@ -46,19 +46,23 @@ module.exports = function(grunt) {
           'src/styles/indigo-storybook.less',
           'src/indigo/less/*.less'
         ],
-        tasks: ['less:development'],
+        tasks: ['less:development', 'stylelint'],
         options: {
           spawn: false,
           livereload: true,
         }
       }
     },
+    stylelint: {
+      all: ['src/indigo/less/*.less'],
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-stylelint');
 
-  grunt.registerTask('build-dev-css', ['copy:dev', 'less:development']);
+  grunt.registerTask('build-dev-css', ['copy:dev', 'less:development', 'stylelint']);
 
 };
