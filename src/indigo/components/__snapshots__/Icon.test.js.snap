@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> Icon - application 1`] = `
+<svg
+  className="icon"
+>
+  <use
+    xlinkHref="sprite.symbol.svg#application"
+  />
+</svg>
+`;
+
+exports[`<Icon /> Icon - calendar 1`] = `
+<svg
+  className="icon"
+>
+  <use
+    xlinkHref="sprite.symbol.svg#calendar"
+  />
+</svg>
+`;
+
+exports[`<Icon /> Icon - check 1`] = `
+<svg
+  className="icon"
+>
+  <use
+    xlinkHref="sprite.symbol.svg#check"
+  />
+</svg>
+`;

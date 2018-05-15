@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   grunt.initConfig({
     less: {
@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             "node_modules"
           ],
           modifyVars: {
-            "libsPath" : ""
+            "libsPath": ""
           }
         },
         files: {
@@ -40,13 +40,48 @@ module.exports = function(grunt) {
         ]
       },
     },
+    svg_sprite: {
+      dev: {
+        expand: true,
+        cwd: 'src/icons',
+        src: ['**/*.svg'],
+        dest: 'src/indigo/img',
+        options: {
+          log: 'info',
+          shape: {
+            dimension: {
+              // maxWidth: 32,
+              maxHeight: 32
+            },
+            spacing: {
+              padding: 1
+            },
+          },
+          mode: {
+            symbol: {
+              bust: false,
+            },
+          }
+        }
+      },
+    },
     watch: {
       less: {
         files: [
           'src/styles/indigo-storybook.less',
-          'src/indigo/less/*.less'
+          'src/indigo/less/*.less',
         ],
         tasks: ['less:development', 'stylelint'],
+        options: {
+          spawn: false,
+          livereload: true,
+        }
+      },
+      icons: {
+        files: [
+          'src/icons/*.svg'
+        ],
+        tasks: ['svg_sprite:dev'],
         options: {
           spawn: false,
           livereload: true,
@@ -61,8 +96,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-svg-sprite');
   grunt.loadNpmTasks('grunt-stylelint');
 
-  grunt.registerTask('build-dev-css', ['copy:dev', 'less:development', 'stylelint']);
+  grunt.registerTask('build-dev-css', ['svg_sprite:dev', 'copy:dev', 'less:development', 'stylelint']);
 
 };

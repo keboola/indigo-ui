@@ -26,6 +26,7 @@
     "grunt-contrib-less": "^1.4.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-stylelint": "^0.10.0",
+    "grunt-svg-sprite": "^1.4.0",
     "moment": "^2.18.0",
     "moment-timezone": "~0.3.1",
     "npm-run-all": "^4.0.2",
@@ -51,6 +52,7 @@
     "run-storybook": "start-storybook -p 9009 -s public",
     "storybook": "npm-run-all -p watch-dev-css run-storybook",
     "build-dev-css": "grunt build-dev-css",
+    "svg-sprite": "grunt svg_sprite:dev",
     "watch-dev-css": "npm run build-dev-css && grunt watch",
     "stylelint": "grunt stylelint",
     "build-storybook": "build-storybook -s public -o build"

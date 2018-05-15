@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 9 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>duration</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-KSG-icons" transform="translate(-346.000000, -679.000000)" fill="currentColor">
+            <path d="M346,679 L346,683.5 L346.0075,683.5 L346,683.5075 L349,686.5 L346,689.5 L346.0075,689.5075 L346,689.5075 L346,694 L355,694 L355,689.5075 L354.9925,689.5075 L355,689.5 L352,686.5 L355,683.5075 L354.9925,683.5 L355,683.5 L355,679 L346,679 L346,679 Z M353.5,689.875 L353.5,692.5 L347.5,692.5 L347.5,689.875 L350.5,686.875 L353.5,689.875 L353.5,689.875 Z M350.5,686.125 L347.5,683.125 L347.5,680.5 L353.5,680.5 L353.5,683.125 L350.5,686.125 L350.5,686.125 Z" id="duration"></path>
+        </g>
+    </g>
+</svg>

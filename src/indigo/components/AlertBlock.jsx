@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Alert } from 'react-bootstrap';
 
+import Icon from './Icon';
+
 class AlertBlock extends React.Component {
   render() {
     const { type, title, children } = this.props;
@@ -9,6 +11,7 @@ class AlertBlock extends React.Component {
       <Alert className="alert-block" bsStyle={type}>
         <h3 className="alert-block-title">{title}</h3>
         <div className="alert-block-body">
+          <Icon iconClass={type} className="alert-block-icon"/>
           {children}
         </div>
       </Alert>

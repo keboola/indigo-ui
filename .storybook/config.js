@@ -19,6 +19,7 @@ function loadStories() {
   require('../src/stories/ExternalLink');
   require('../src/stories/PanelWithDetails');
   require('../src/stories/AlertBlock');
+  require('../src/stories/Icons');
 }
 
 setOptions({
