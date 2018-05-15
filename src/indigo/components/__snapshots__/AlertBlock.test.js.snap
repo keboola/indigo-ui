@@ -13,6 +13,13 @@ exports[`<AlertBlock /> AlertBlock - danger 1`] = `
   <div
     className="alert-block-body"
   >
+    <svg
+      className="icon alert-block-icon"
+    >
+      <use
+        xlinkHref="sprite.symbol.svg#danger"
+      />
+    </svg>
     Danger text
   </div>
 </div>
@@ -31,6 +38,13 @@ exports[`<AlertBlock /> AlertBlock - warning 1`] = `
   <div
     className="alert-block-body"
   >
+    <svg
+      className="icon alert-block-icon"
+    >
+      <use
+        xlinkHref="sprite.symbol.svg#warning"
+      />
+    </svg>
     Warning text
   </div>
 </div>
