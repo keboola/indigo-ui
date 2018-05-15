@@ -60,10 +60,10 @@ storiesOf('Icons', module)
     })(() => {
       return (
         <div className="indigo-layout-grid">
-          {icons.map(function(object, i) {
+          {icons.map(function(icon) {
             return (
-              <div>
-                <Icon iconClass={object} />
+              <div key={icon}>
+                <Icon iconClass={icon} />
               </div>
             );
           })}
