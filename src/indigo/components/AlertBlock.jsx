@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Alert } from 'react-bootstrap';
 
-import Icon from './Icon';
+import IconWarning from './icons/Warning';
+import IconDanger from './icons/Danger';
 
 class AlertBlock extends React.Component {
   render() {
@@ -11,11 +12,18 @@ class AlertBlock extends React.Component {
       <Alert className="alert-block" bsStyle={type}>
         <h3 className="alert-block-title">{title}</h3>
         <div className="alert-block-body">
-          <Icon iconClass={type} className="alert-block-icon"/>
+          {this.renderIcon()}
           {children}
         </div>
       </Alert>
     );
+  }
+
+  renderIcon() {
+    if (this.props.type === 'warning') {
+      return <IconWarning className="icon alert-block-icon" />
+    }
+    return <IconDanger className="icon alert-block-icon" />
   }
 }
 
