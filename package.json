@@ -25,6 +25,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-less": "^1.4.1",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^3.0.0",
     "grunt-stylelint": "^0.10.0",
     "grunt-svg-sprite": "^1.4.0",
     "moment": "^2.18.0",
@@ -35,7 +36,8 @@
     "react-dom": "^15.6.1",
     "react-scripts": "^1.0.17",
     "react-test-renderer": "^15.6",
-    "stylelint": "^9.2.0"
+    "stylelint": "^9.2.0",
+    "svgr": "^1.9.2"
   },
   "peerDependencies": {
     "react": "^0.14.9 || ^15.0.0",
