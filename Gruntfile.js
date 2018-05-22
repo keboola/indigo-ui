@@ -68,7 +68,7 @@ module.exports = function (grunt) {
     },
     exec: {
       'icons-to-react-components': {
-        cmd: 'yarn svgr --ext jsx --single-quote -d src/indigo/components/icons src/icons'
+        cmd: 'yarn svgr --ext jsx --single-quote --no-title -d src/indigo/components/icons src/icons'
       }
     }
   });
