@@ -56,7 +56,7 @@ module.exports = function (grunt) {
         files: [
           'src/icons/*.svg'
         ],
-        tasks: ['svg_sprite:dev'],
+        tasks: ['exec:icons-to-react-components'],
         options: {
           spawn: false,
           livereload: true,
@@ -79,6 +79,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-stylelint');
   grunt.loadNpmTasks('grunt-exec');
 
-  grunt.registerTask('build-dev-css', ['svg_sprite:dev', 'copy:dev', 'less:development', 'stylelint']);
+  grunt.registerTask('build-dev-css', ['exec:icons-to-react-components', 'copy:dev', 'less:development', 'stylelint']);
 
 };
