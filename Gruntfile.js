@@ -56,7 +56,7 @@ module.exports = function (grunt) {
         files: [
           'src/icons/*.svg'
         ],
-        tasks: ['exec:icons-to-react-components'],
+        tasks: ['exec:svg-react-transformer'],
         options: {
           spawn: false,
           livereload: true,
@@ -67,8 +67,8 @@ module.exports = function (grunt) {
       all: ['src/indigo/less/*.less'],
     },
     exec: {
-      'icons-to-react-components': {
-        cmd: 'yarn svgr --ext jsx --single-quote --no-title -d src/indigo/components/icons src/icons'
+      'svg-react-transformer': {
+        cmd: 'yarn svg-react-transformer src/icons/*.svg -d src/indigo/components/icons -c src/svg-react-transformer.config.js'
       }
     }
   });
@@ -79,6 +79,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-stylelint');
   grunt.loadNpmTasks('grunt-exec');
 
-  grunt.registerTask('build-dev-css', ['exec:icons-to-react-components', 'copy:dev', 'less:development', 'stylelint']);
+  grunt.registerTask('build-dev-css', ['exec:svg-react-transformer', 'copy:dev', 'less:development', 'stylelint']);
 
 };
