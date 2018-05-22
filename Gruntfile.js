@@ -90,6 +90,11 @@ module.exports = function (grunt) {
     },
     stylelint: {
       all: ['src/indigo/less/*.less'],
+    },
+    exec: {
+      'icons-to-react-components': {
+        cmd: 'yarn svgr --ext jsx --single-quote -d src/indigo/components/icons src/icons'
+      }
     }
   });
 
@@ -98,6 +103,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-svg-sprite');
   grunt.loadNpmTasks('grunt-stylelint');
+  grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('build-dev-css', ['svg_sprite:dev', 'copy:dev', 'less:development', 'stylelint']);
 
