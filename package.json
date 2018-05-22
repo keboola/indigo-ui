@@ -37,8 +37,7 @@
     "react-dom": "^15.6.1",
     "react-scripts": "^1.0.17",
     "react-test-renderer": "^15.6",
-    "stylelint": "^9.2.0",
-    "svgr": "^1.9.2"
+    "stylelint": "^9.2.0"
   },
   "peerDependencies": {
     "react": "^0.14.9 || ^15.0.0",
