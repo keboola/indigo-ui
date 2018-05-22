@@ -58,50 +58,50 @@ storiesOf('Icons', module)
     })(() => {
       return (
         <div className="indigo-layout-grid">
-          <div><IconApplications className="icon" /></div>
-          <div><IconArrowDown className="icon" /></div>
-          <div><IconArrowVertical className="icon" /></div>
-          <div><IconCalendar className="icon" /></div>
-          <div><IconCheck className="icon" /></div>
-          <div><IconCloudDownload className="icon" /></div>
-          <div><IconCloud className="icon" /></div>
-          <div><IconCopy className="icon" /></div>
-          <div><IconDanger className="icon" /></div>
-          <div><IconDuration className="icon" /></div>
-          <div><IconEdit className="icon" /></div>
-          <div><IconError className="icon" /></div>
-          <div><IconExtractor className="icon" /></div>
-          <div><IconExtractorTo className="icon" /></div>
-          <div><IconHelp className="icon" /></div>
-          <div><IconJobs className="icon" /></div>
-          <div><IconKeboola className="icon" /></div>
-          <div><IconMappingIn className="icon" /></div>
-          <div><IconMappingOut className="icon" /></div>
-          <div><IconMinus className="icon" /></div>
-          <div><IconNotification className="icon" /></div>
-          <div><IconOptions className="icon" /></div>
-          <div><IconOrchestration className="icon" /></div>
-          <div><IconOverview className="icon" /></div>
-          <div><IconPlus className="icon" /></div>
-          <div><IconRefresh className="icon" /></div>
-          <div><IconReset className="icon" /></div>
-          <div><IconRun className="icon" /></div>
-          <div><IconSandbox className="icon" /></div>
-          <div><IconSearch className="icon" /></div>
-          <div><IconSqlDep className="icon" /></div>
-          <div><IconStorage className="icon" /></div>
-          <div><IconSupportBy className="icon" /></div>
-          <div><IconSupportChat className="icon" /></div>
-          <div><IconSwitchOff className="icon" /></div>
-          <div><IconSwitchOn className="icon" /></div>
-          <div><IconTimes className="icon" /></div>
-          <div><IconTransformation2 className="icon" /></div>
-          <div><IconTransformation className="icon" /></div>
-          <div><IconTransformationOverview className="icon" /></div>
-          <div><IconTrash className="icon" /></div>
-          <div><IconUser className="icon" /></div>
-          <div><IconWarning className="icon" /></div>
-          <div><IconWriter className="icon" /></div>
+          <div><IconApplications /></div>
+          <div><IconArrowDown /></div>
+          <div><IconArrowVertical /></div>
+          <div><IconCalendar /></div>
+          <div><IconCheck /></div>
+          <div><IconCloudDownload /></div>
+          <div><IconCloud /></div>
+          <div><IconCopy /></div>
+          <div><IconDanger /></div>
+          <div><IconDuration /></div>
+          <div><IconEdit /></div>
+          <div><IconError /></div>
+          <div><IconExtractor /></div>
+          <div><IconExtractorTo /></div>
+          <div><IconHelp /></div>
+          <div><IconJobs /></div>
+          <div><IconKeboola /></div>
+          <div><IconMappingIn /></div>
+          <div><IconMappingOut /></div>
+          <div><IconMinus /></div>
+          <div><IconNotification /></div>
+          <div><IconOptions /></div>
+          <div><IconOrchestration /></div>
+          <div><IconOverview /></div>
+          <div><IconPlus /></div>
+          <div><IconRefresh /></div>
+          <div><IconReset /></div>
+          <div><IconRun /></div>
+          <div><IconSandbox /></div>
+          <div><IconSearch /></div>
+          <div><IconSqlDep /></div>
+          <div><IconStorage /></div>
+          <div><IconSupportBy /></div>
+          <div><IconSupportChat /></div>
+          <div><IconSwitchOff /></div>
+          <div><IconSwitchOn /></div>
+          <div><IconTimes /></div>
+          <div><IconTransformation2 /></div>
+          <div><IconTransformation /></div>
+          <div><IconTransformationOverview /></div>
+          <div><IconTrash /></div>
+          <div><IconUser /></div>
+          <div><IconWarning /></div>
+          <div><IconWriter /></div>
         </div>
       );
     })
@@ -116,22 +116,22 @@ storiesOf('Icons', module)
     })(() => {
       return (
         <div>
-          <IconMappingOut className="icon icon-size-stack" />
+          <IconMappingOut className="icon-size-stack" />
           <br />
-          <IconMappingIn className="icon icon-size-stack" />
+          <IconMappingIn className="icon-size-stack" />
           <br />
-          <IconExtractorTo className="icon icon-size-stack" />
+          <IconExtractorTo className="icon-size-stack" />
           <br />
-          <IconTransformation2 className="icon icon-size-stack" />
+          <IconTransformation2 className="icon-size-stack" />
 
           <br />
           <br />
           <br />
 
-          <IconKeboola className="icon icon-size-20" />
-          <IconKeboola className="icon icon-size-32" />
-          <IconKeboola className="icon icon-size-48" />
-          <IconKeboola className="icon icon-size-64" />
+          <IconKeboola className="icon-size-20" />
+          <IconKeboola className="icon-size-32" />
+          <IconKeboola className="icon-size-48" />
+          <IconKeboola className="icon-size-64" />
         </div>
       );
     })
