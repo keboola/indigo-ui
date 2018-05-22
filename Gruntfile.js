@@ -40,31 +40,6 @@ module.exports = function (grunt) {
         ]
       },
     },
-    svg_sprite: {
-      dev: {
-        expand: true,
-        cwd: 'src/icons',
-        src: ['**/*.svg'],
-        dest: 'src/indigo/img',
-        options: {
-          log: 'info',
-          shape: {
-            dimension: {
-              // maxWidth: 32,
-              maxHeight: 32
-            },
-            spacing: {
-              padding: 1
-            },
-          },
-          mode: {
-            symbol: {
-              bust: false,
-            },
-          }
-        }
-      },
-    },
     watch: {
       less: {
         files: [
@@ -101,7 +76,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-svg-sprite');
   grunt.loadNpmTasks('grunt-stylelint');
   grunt.loadNpmTasks('grunt-exec');
 
