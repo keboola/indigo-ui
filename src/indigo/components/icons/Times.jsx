@@ -2,7 +2,6 @@ import React from 'react';
 
 const Times = props => (
   <svg width={10} height={10} viewBox="0 0 10 10" {...props}>
-    <title>cross</title>
     <g fill="none" fillRule="evenodd">
       <path d="M-7-7h24v24H-7z" />
       <path

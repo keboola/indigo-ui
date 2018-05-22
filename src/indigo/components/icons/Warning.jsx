@@ -2,7 +2,6 @@ import React from 'react';
 
 const Warning = props => (
   <svg width={20} height={20} viewBox="0 0 20 20" {...props}>
-    <title>ic_error</title>
     <g fill="none" fillRule="evenodd">
       <path d="M-2-2h24v24H-2z" />
       <path

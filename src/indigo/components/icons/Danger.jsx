@@ -2,7 +2,6 @@ import React from 'react';
 
 const Danger = props => (
   <svg width={22} height={19} viewBox="0 0 22 19" {...props}>
-    <title>ic_warning</title>
     <g fill="none" fillRule="evenodd">
       <path d="M-1-2h24v24H-1z" />
       <path

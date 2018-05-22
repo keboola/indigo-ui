@@ -19,9 +19,6 @@ exports[`<AlertBlock /> AlertBlock - danger 1`] = `
       viewBox="0 0 22 19"
       width={22}
     >
-      <title>
-        ic_warning
-      </title>
       <g
         fill="none"
         fillRule="evenodd"
@@ -59,9 +56,6 @@ exports[`<AlertBlock /> AlertBlock - warning 1`] = `
       viewBox="0 0 20 20"
       width={20}
     >
-      <title>
-        ic_error
-      </title>
       <g
         fill="none"
         fillRule="evenodd"

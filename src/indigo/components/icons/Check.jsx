@@ -2,7 +2,6 @@ import React from 'react';
 
 const Check = props => (
   <svg width={16} height={12} viewBox="0 0 16 12" {...props}>
-    <title>ic_check</title>
     <g fill="none" fillRule="evenodd">
       <path d="M-4-6h24v24H-4z" />
       <path
