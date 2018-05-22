@@ -15,9 +15,15 @@ class Protected extends React.Component {
 
   renderProtected() {
     return (
-      <span className="fa fa-fw fa-lock kbc-protected"
-            title="Protected content, click to reveal"
-            onClick={this.show} />
+      <span
+        className="fa fa-fw fa-lock kbc-protected"
+        title="Protected content, click to reveal"
+        onClick={() => {
+          this.setState({
+            isProtected: false
+          })
+        }}
+      />
     );
   }
 
@@ -25,12 +31,6 @@ class Protected extends React.Component {
     return (
       <span>{this.props.children}</span>
     );
-  }
-
-  show() {
-    this.setState({
-      isProtected: false
-    });
   }
 }
 
