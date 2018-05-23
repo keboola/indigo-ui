@@ -9,9 +9,9 @@ import IconApplications from '../../indigo/components/icons/Applications'
 import AlertBlock from '../../indigo/components/AlertBlock';
 
 let content1 = (
-  <p>
+  <span>
     Please <a>contact support</a> for project plan upgrade.
-  </p>
+  </span>
 )
 
 let content2 = (
