@@ -20,7 +20,8 @@ jobs:
 
     - stage: deploy storybook
       script:
-        - ./deploy-storybook.sh
+        - >- yarn build-storybook
+          && ./deploy-storybook.sh
       if: branch = master AND NOT tag IS present
 
     - stage: build library and deploy
