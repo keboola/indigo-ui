@@ -1,19 +1,13 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
-import IconExtractor from '../../indigo/components/icons/Extractor'
-import IconWriter from '../../indigo/components/icons/Writer'
-import IconTransformation from '../../indigo/components/icons/Transformation'
-import IconApplications from '../../indigo/components/icons/Applications'
-import { Row, Col } from 'react-bootstrap';
-
 
 import AlertBlock from '../../indigo/components/AlertBlock';
 
 let content1 = (
-  <span>
+  <p>
     Please <a>contact support</a> for project plan upgrade.
-  </span>
+  </p>
 )
 
 let content2 = (
