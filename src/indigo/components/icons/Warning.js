@@ -24,7 +24,7 @@ const Warning = ({ className, ...props }) => {
 };
 
 Warning.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Warning;

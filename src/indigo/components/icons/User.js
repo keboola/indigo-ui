@@ -22,7 +22,7 @@ const User = ({ className, ...props }) => {
 };
 
 User.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default User;

@@ -22,7 +22,7 @@ const ExtractorTo = ({ className, ...props }) => {
 };
 
 ExtractorTo.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default ExtractorTo;

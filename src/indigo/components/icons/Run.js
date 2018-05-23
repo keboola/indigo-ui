@@ -18,7 +18,7 @@ const Run = ({ className, ...props }) => {
 };
 
 Run.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Run;

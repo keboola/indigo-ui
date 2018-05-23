@@ -22,7 +22,7 @@ const Orchestration = ({ className, ...props }) => {
 };
 
 Orchestration.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Orchestration;

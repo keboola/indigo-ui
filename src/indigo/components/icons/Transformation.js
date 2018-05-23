@@ -22,7 +22,7 @@ const Transformation = ({ className, ...props }) => {
 };
 
 Transformation.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Transformation;

@@ -22,7 +22,7 @@ const Keboola = ({ className, ...props }) => {
 };
 
 Keboola.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Keboola;

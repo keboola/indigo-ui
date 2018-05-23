@@ -22,7 +22,7 @@ const Storage = ({ className, ...props }) => {
 };
 
 Storage.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Storage;

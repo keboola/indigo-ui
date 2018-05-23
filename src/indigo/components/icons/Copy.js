@@ -22,7 +22,7 @@ const Copy = ({ className, ...props }) => {
 };
 
 Copy.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Copy;

@@ -22,7 +22,7 @@ const Options = ({ className, ...props }) => {
 };
 
 Options.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Options;

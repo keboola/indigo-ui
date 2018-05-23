@@ -22,7 +22,7 @@ const SqlDep = ({ className, ...props }) => {
 };
 
 SqlDep.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default SqlDep;

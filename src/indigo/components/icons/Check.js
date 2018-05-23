@@ -25,7 +25,7 @@ const Check = ({ className, ...props }) => {
 };
 
 Check.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Check;

@@ -22,7 +22,7 @@ const Duration = ({ className, ...props }) => {
 };
 
 Duration.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Duration;

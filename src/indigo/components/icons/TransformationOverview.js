@@ -22,7 +22,7 @@ const TransformationOverview = ({ className, ...props }) => {
 };
 
 TransformationOverview.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default TransformationOverview;
