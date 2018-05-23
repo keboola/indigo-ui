@@ -7,6 +7,7 @@ import NewLineToBr from './NewLineToBr';
 import ExternalLink from './ExternalLink';
 import PanelWithDetails from './PanelWithDetails';
 import AlertBlock from './AlertBlock';
+import Icon from './icons'
 
 export {
   Check,
@@ -18,4 +19,5 @@ export {
   RefreshIcon,
   Tree,
   AlertBlock,
+  Icon,
 };
