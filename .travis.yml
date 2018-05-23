@@ -40,7 +40,7 @@ jobs:
             tags: true
             repo: keboola/indigo-ui
             branch: master
-      if: tag IS present
+      if: branch = master AND tag IS present
 
 cache: yarn
 
