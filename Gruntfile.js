@@ -40,31 +40,6 @@ module.exports = function (grunt) {
         ]
       },
     },
-    svg_sprite: {
-      dev: {
-        expand: true,
-        cwd: 'src/icons',
-        src: ['**/*.svg'],
-        dest: 'src/indigo/img',
-        options: {
-          log: 'info',
-          shape: {
-            dimension: {
-              // maxWidth: 32,
-              maxHeight: 32
-            },
-            spacing: {
-              padding: 1
-            },
-          },
-          mode: {
-            symbol: {
-              bust: false,
-            },
-          }
-        }
-      },
-    },
     watch: {
       less: {
         files: [
@@ -81,7 +56,7 @@ module.exports = function (grunt) {
         files: [
           'src/icons/*.svg'
         ],
-        tasks: ['svg_sprite:dev'],
+        tasks: ['exec:svg-react-transformer'],
         options: {
           spawn: false,
           livereload: true,
@@ -90,15 +65,20 @@ module.exports = function (grunt) {
     },
     stylelint: {
       all: ['src/indigo/less/*.less'],
+    },
+    exec: {
+      'svg-react-transformer': {
+        cmd: 'yarn svg-react-transformer src/icons/*.svg -d src/indigo/components/icons -c src/svg-react-transformer.config.js'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-svg-sprite');
   grunt.loadNpmTasks('grunt-stylelint');
+  grunt.loadNpmTasks('grunt-exec');
 
-  grunt.registerTask('build-dev-css', ['svg_sprite:dev', 'copy:dev', 'less:development', 'stylelint']);
+  grunt.registerTask('build-dev-css', ['exec:svg-react-transformer', 'copy:dev', 'less:development', 'stylelint']);
 
 };
