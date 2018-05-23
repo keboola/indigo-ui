@@ -13,12 +13,12 @@ let content1 = (
 let content2 = (
   <ul className="list-unstyled list-no-padding">
     <li>
-      <a className="" href="/admin/projects/232/settings-limits">
+      <a>
           Keboola Connection Storage (13.24 GB of 10 GB)
       </a>
     </li>
     <li>
-      <a className="" href="/admin/projects/232/settings-limits">
+      <a>
           Users count (12 of 10)
       </a>
     </li>
@@ -43,11 +43,9 @@ let content3 = (
           </a>
         </li>
       </ul>
-    </div>
-    <div className="col-md-6">
-      <h4>
-        <span className="kbc-extractor-icon"/>
-        <span>Extractor</span><span>s</span>
+         <h4>
+        <span className="kbc-application-icon"/>
+        <span>Applications</span>
       </h4>
       <ul className="list-unstyled">
         <li>
@@ -67,17 +65,28 @@ let content3 = (
         </li>
       </ul>
     </div>
-  </div>
-)
-let content4 = (
-  <div>
-    <div className="row">
-      <div className="col-md-12">
-        <p>Learn more about the deprecation <a>timeline and reasons</a>.</p>
-      </div>
-    </div>
-    <div className="row">
-      <div className="col-md-6">
+    <div className="col-md-6">
+      <h4>
+        <span className="kbc-extractor-icon"/>
+        <span>Extractors</span>
+      </h4>
+      <ul className="list-unstyled">
+        <li>
+          <a>
+            Gooddata (deprecated)
+          </a>
+        </li>
+        <li>
+          <a>
+            Pigeon
+          </a>
+        </li>
+        <li>
+          <a>
+            Pigeon Importer (Deprecated)
+          </a>
+        </li>
+      </ul>
         <h4>
           <span className="kbc-transformation-icon"/>
           ew
@@ -96,26 +105,19 @@ let content4 = (
             <a>sadfas</a>
           </li>
         </ul>
-      </div>
-      <div className="col-md-6">
-        <h4>
-          <span className="kbc-transformation-icon"/>
-          fasdfas
-        </h4>
-        <ul className="list-unstyled">
-          <li>
-            <a>Main</a>
-          </li>
-          <li>
-            <a>Main 2</a>
-          </li>
-          <li>
-            <a>Main 3</a>
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
+)
+
+let content4 = (
+  <div>
+    <div className="row">
+      <div className="col-md-12">
+        <p>Learn more about the deprecation <a>timeline and reasons</a>.</p>
+      </div>
+    </div>
+      {content3}
+    </div>
 )
 
 let content5 = (
@@ -132,6 +134,7 @@ let content5 = (
     </div>
   </div>
 )
+
 
 
 storiesOf('AlertBlock', module)
@@ -178,7 +181,7 @@ storiesOf('AlertBlock', module)
 
         <AlertBlock
           type="warning"
-          title="Alert Block with list content">F
+          title="Alert Block with list content">
           {content2}
         </AlertBlock>
 
