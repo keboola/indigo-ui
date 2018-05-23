@@ -1,6 +1,10 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
+import IconExtractor from '../../indigo/components/icons/Extractor'
+import IconWriter from '../../indigo/components/icons/Writer'
+import IconTransformation from '../../indigo/components/icons/Transformation'
+import IconApplications from '../../indigo/components/icons/Applications'
 
 import AlertBlock from '../../indigo/components/AlertBlock';
 
@@ -28,7 +32,7 @@ let content3 = (
   <div className="row">
     <div className="col-md-6">
       <h4>
-        <span className="kbc-writer-icon"/>
+        <IconWriter className="icon-category"/>
         <span>Writers</span>
       </h4>
       <ul className="list-unstyled">
@@ -44,7 +48,7 @@ let content3 = (
         </li>
       </ul>
          <h4>
-        <span className="kbc-application-icon"/>
+        <IconApplications className="icon-category"/>
         <span>Applications</span>
       </h4>
       <ul className="list-unstyled">
@@ -67,7 +71,7 @@ let content3 = (
     </div>
     <div className="col-md-6">
       <h4>
-        <span className="kbc-extractor-icon"/>
+        <IconExtractor className="icon-category"/>
         <span>Extractors</span>
       </h4>
       <ul className="list-unstyled">
@@ -88,8 +92,8 @@ let content3 = (
         </li>
       </ul>
         <h4>
-          <span className="kbc-transformation-icon"/>
-          ew
+         <IconTransformation className="icon-category"/>
+          Part 1
         </h4>
         <ul className="list-unstyled">
           <li>
@@ -97,8 +101,8 @@ let content3 = (
           </li>
         </ul>
         <h4>
-          <span className="kbc-transformation-icon"/>
-          Part 1
+          <IconTransformation className="icon-category"/>
+          Part 2
         </h4>
         <ul className="list-unstyled">
           <li>
