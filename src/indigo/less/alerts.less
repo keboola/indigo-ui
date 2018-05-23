@@ -1,29 +1,32 @@
 .alert a {
-    text-decoration: underline;
-    font-weight: 400;
+  text-decoration: underline;
+  font-weight: 400;
 }
 
 .alert-success a {
-    color: @alert-success-text;
+  color: @alert-success-text;
 }
+
 .alert-info a {
-    color: @alert-info-text;
+  color: @alert-info-text;
 }
+
 .alert-warning a {
-    color: @alert-warning-text;
+  color: @alert-warning-text;
 }
+
 .alert-danger a {
-    color: @alert-danger-text;
+  color: @alert-danger-text;
 }
 
 .kbc-main > .alert,
 .kbc-main > div > .alert {
-    margin: 20px;
+  margin: 20px;
 }
 
 .alert-block {
   position: relative;
-  min-height: 140px;
+  min-height: 130px;
   padding: 30px;
   margin: 10px 0;
   border-radius: 5px;
@@ -53,31 +56,6 @@
     height: auto;
   }
 
-  a {
-    color: #7C8498;
-    &:hover {
-      color: #282D38;
-    }
-  }
-
-  h4{
-    margin-bottom: 8px;
-  }
-
-  p{
-    margin: 0 0 20px 0;
-  }
-
-  ul {
-    li {
-      line-height: 1.5;
-      margin-bottom: 8px;
-    }
-    &.list-no-padding {
-      padding-left: 0;
-    }
-  }
-
   &.alert-warning {
     background-color: #FFF6DC;
     border-color: #FFD452;
@@ -101,6 +79,32 @@
 
     .alert-block-title, h4 {
       color: #f74d63;
+    }
+  }
+
+  //Styles for elements inside .alert-block
+  a {
+    color: #7C8498;
+    &:hover {
+      color: #282D38;
+    }
+  }
+
+  h4 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin: 0 0 10px 0;
+  }
+
+  ul {
+    li {
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    &.list-no-padding {
+      padding-left: 0;
     }
   }
 }

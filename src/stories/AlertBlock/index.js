@@ -5,15 +5,26 @@ import {withInfo} from '@storybook/addon-info';
 import AlertBlock from '../../indigo/components/AlertBlock';
 
 let content1 = (
-  <ul className="list-unstyled">
+  <p>
+    Please <a>contact support</a> for project plan upgrade.
+  </p>
+)
+
+let content2 = (
+  <ul className="list-unstyled list-no-padding">
     <li>
-      <a>
-        Keboola Connection - Orchestrations count (39 of 10)
+      <a className="" href="/admin/projects/232/settings-limits">
+          Keboola Connection Storage (13.24 GB of 10 GB)
+      </a>
+    </li>
+    <li>
+      <a className="" href="/admin/projects/232/settings-limits">
+          Users count (12 of 10)
       </a>
     </li>
   </ul>
 )
-let content2 = (
+let content3 = (
   <div className="row">
     <div className="col-md-6">
       <h4>
@@ -58,11 +69,10 @@ let content2 = (
     </div>
   </div>
 )
-let content3 = (
+let content4 = (
   <div>
     <div className="row">
       <div className="col-md-12">
-
         <p>Learn more about the deprecation <a>timeline and reasons</a>.</p>
       </div>
     </div>
@@ -108,7 +118,7 @@ let content3 = (
   </div>
 )
 
-let content4 = (
+let content5 = (
   <div className="row">
     <div className="col-md-9">
         <span>
@@ -162,26 +172,32 @@ storiesOf('AlertBlock', module)
       <div>
         <AlertBlock
           type="warning"
-          title="Alert Block Heading with link content">
+          title="Alert Block with single-line paragraph">
           {content1}
         </AlertBlock>
 
         <AlertBlock
           type="warning"
-          title="Alert Block Heading with list content">
+          title="Alert Block with list content">F
           {content2}
         </AlertBlock>
 
         <AlertBlock
           type="warning"
-          title="Alert Block Heading with list content & description">
+          title="Alert Block with categorized list content">
           {content3}
         </AlertBlock>
 
         <AlertBlock
           type="warning"
-          title="Alert Block Heading with text paragraph & action">
+          title="Alert Block with categorized list content & description">
           {content4}
+        </AlertBlock>
+
+        <AlertBlock
+          type="warning"
+          title="Alert Block with paragraph & action">
+          {content5}
         </AlertBlock>
       </div>
     );
