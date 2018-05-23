@@ -68,7 +68,8 @@ module.exports = function (grunt) {
     },
     exec: {
       'svg-react-transformer': {
-        cmd: 'yarn svg-react-transformer src/icons/*.svg -d src/indigo/components/icons -c src/svg-react-transformer.config.js'
+        cmd: `yarn svg-react-transformer src/icons/*.svg -d src/indigo/components/icons -c src/svg-react-transformer.config.js
+        && node src/generate-icons-index.js`
       }
     }
   });
