@@ -22,7 +22,7 @@ const MappingOut = ({ className, ...props }) => {
 };
 
 MappingOut.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default MappingOut;

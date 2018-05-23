@@ -24,7 +24,7 @@ const Danger = ({ className, ...props }) => {
 };
 
 Danger.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Danger;

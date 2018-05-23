@@ -22,7 +22,7 @@ const Trash = ({ className, ...props }) => {
 };
 
 Trash.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Trash;

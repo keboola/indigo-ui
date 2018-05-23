@@ -22,7 +22,7 @@ const Refresh = ({ className, ...props }) => {
 };
 
 Refresh.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Refresh;

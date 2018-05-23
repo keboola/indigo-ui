@@ -22,7 +22,7 @@ const ArrowDown = ({ className, ...props }) => {
 };
 
 ArrowDown.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default ArrowDown;

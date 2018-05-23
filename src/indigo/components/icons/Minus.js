@@ -18,7 +18,7 @@ const Minus = ({ className, ...props }) => {
 };
 
 Minus.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Minus;

@@ -22,7 +22,7 @@ const Notification = ({ className, ...props }) => {
 };
 
 Notification.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Notification;

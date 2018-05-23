@@ -22,7 +22,7 @@ const Reset = ({ className, ...props }) => {
 };
 
 Reset.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Reset;

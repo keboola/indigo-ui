@@ -22,7 +22,7 @@ const Calendar = ({ className, ...props }) => {
 };
 
 Calendar.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Calendar;

@@ -22,7 +22,7 @@ const SwitchOff = ({ className, ...props }) => {
 };
 
 SwitchOff.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default SwitchOff;

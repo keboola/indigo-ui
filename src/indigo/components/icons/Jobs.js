@@ -22,7 +22,7 @@ const Jobs = ({ className, ...props }) => {
 };
 
 Jobs.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Jobs;

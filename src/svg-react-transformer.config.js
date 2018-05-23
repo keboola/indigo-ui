@@ -34,7 +34,8 @@ ${data.name}.propTypes = {
 export default ${data.name};
 `;
     return prettier.format(js, {
-      singleQuote: true
+      singleQuote: true,
+      trailingComma: 'es5'
     })
   }
 };

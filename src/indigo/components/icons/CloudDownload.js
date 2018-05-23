@@ -22,7 +22,7 @@ const CloudDownload = ({ className, ...props }) => {
 };
 
 CloudDownload.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default CloudDownload;

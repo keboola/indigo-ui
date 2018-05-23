@@ -22,7 +22,7 @@ const Applications = ({ className, ...props }) => {
 };
 
 Applications.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Applications;

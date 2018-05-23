@@ -22,7 +22,7 @@ const Cloud = ({ className, ...props }) => {
 };
 
 Cloud.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Cloud;

@@ -22,7 +22,7 @@ const Writer = ({ className, ...props }) => {
 };
 
 Writer.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Writer;

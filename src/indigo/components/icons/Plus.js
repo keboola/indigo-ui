@@ -22,7 +22,7 @@ const Plus = ({ className, ...props }) => {
 };
 
 Plus.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Plus;

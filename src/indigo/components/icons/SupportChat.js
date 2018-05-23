@@ -22,7 +22,7 @@ const SupportChat = ({ className, ...props }) => {
 };
 
 SupportChat.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default SupportChat;
