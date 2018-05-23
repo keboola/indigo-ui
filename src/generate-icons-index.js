@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const prettier = require('prettier');
 
 const iconsDir = path.resolve(__dirname + '/indigo/components/icons');
 const iconsFile = iconsDir + '/index.js';
@@ -29,7 +30,12 @@ ${fileAssignments}};
 export default Icon;
 `;
 
-  fs.writeFile(iconsFile, fileContent, (err) => {
+  const formattedContent = prettier.format(fileContent, {
+    singleQuote: true,
+    trailingComma: 'es5'
+  });
+
+  fs.writeFile(iconsFile, formattedContent, (err) => {
     if (err) {
       throw err;
     }
