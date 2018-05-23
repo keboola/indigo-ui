@@ -44,51 +44,50 @@ import User from './User';
 import Warning from './Warning';
 import Writer from './Writer';
 
-const Icon = {};
-
-Icon.Applications = Applications;
-Icon.ArrowDown = ArrowDown;
-Icon.ArrowVertical = ArrowVertical;
-Icon.Calendar = Calendar;
-Icon.Check = Check;
-Icon.Cloud = Cloud;
-Icon.CloudDownload = CloudDownload;
-Icon.Copy = Copy;
-Icon.Danger = Danger;
-Icon.Duration = Duration;
-Icon.Edit = Edit;
-Icon.Error = Error;
-Icon.Extractor = Extractor;
-Icon.ExtractorTo = ExtractorTo;
-Icon.Help = Help;
-Icon.Jobs = Jobs;
-Icon.Keboola = Keboola;
-Icon.MappingIn = MappingIn;
-Icon.MappingOut = MappingOut;
-Icon.Minus = Minus;
-Icon.Notification = Notification;
-Icon.Options = Options;
-Icon.Orchestration = Orchestration;
-Icon.Overview = Overview;
-Icon.Plus = Plus;
-Icon.Refresh = Refresh;
-Icon.Reset = Reset;
-Icon.Run = Run;
-Icon.Sandbox = Sandbox;
-Icon.Search = Search;
-Icon.SqlDep = SqlDep;
-Icon.Storage = Storage;
-Icon.SupportBy = SupportBy;
-Icon.SupportChat = SupportChat;
-Icon.SwitchOff = SwitchOff;
-Icon.SwitchOn = SwitchOn;
-Icon.Times = Times;
-Icon.Transformation = Transformation;
-Icon.TransformationOverview = TransformationOverview;
-Icon.Transformation_2 = Transformation_2;
-Icon.Trash = Trash;
-Icon.User = User;
-Icon.Warning = Warning;
-Icon.Writer = Writer;
-
+const Icon = {
+  Applications,
+  ArrowDown,
+  ArrowVertical,
+  Calendar,
+  Check,
+  Cloud,
+  CloudDownload,
+  Copy,
+  Danger,
+  Duration,
+  Edit,
+  Error,
+  Extractor,
+  ExtractorTo,
+  Help,
+  Jobs,
+  Keboola,
+  MappingIn,
+  MappingOut,
+  Minus,
+  Notification,
+  Options,
+  Orchestration,
+  Overview,
+  Plus,
+  Refresh,
+  Reset,
+  Run,
+  Sandbox,
+  Search,
+  SqlDep,
+  Storage,
+  SupportBy,
+  SupportChat,
+  SwitchOff,
+  SwitchOn,
+  Times,
+  Transformation,
+  TransformationOverview,
+  Transformation_2,
+  Trash,
+  User,
+  Warning,
+  Writer,
+};
 export default Icon;
