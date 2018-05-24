@@ -5,6 +5,8 @@ import IconExtractor from '../../indigo/components/icons/Extractor'
 import IconWriter from '../../indigo/components/icons/Writer'
 import IconTransformation from '../../indigo/components/icons/Transformation'
 import IconApplications from '../../indigo/components/icons/Applications'
+import { Row, Col } from 'react-bootstrap';
+
 
 import AlertBlock from '../../indigo/components/AlertBlock';
 
@@ -29,8 +31,8 @@ let content2 = (
   </ul>
 )
 let content3 = (
-  <div className="row">
-    <div className="col-md-6">
+  <Row>
+    <Col md={6}>
       <h4>
         <IconWriter className="icon-category"/>
         <span>Writers</span>
@@ -47,7 +49,7 @@ let content3 = (
           </a>
         </li>
       </ul>
-         <h4>
+      <h4>
         <IconApplications className="icon-category"/>
         <span>Applications</span>
       </h4>
@@ -68,8 +70,8 @@ let content3 = (
           </a>
         </li>
       </ul>
-    </div>
-    <div className="col-md-6">
+    </Col>
+    <Col md={6}>
       <h4>
         <IconExtractor className="icon-category"/>
         <span>Extractors</span>
@@ -91,52 +93,50 @@ let content3 = (
           </a>
         </li>
       </ul>
-        <h4>
-         <IconTransformation className="icon-category"/>
-          Part 1
-        </h4>
-        <ul className="list-unstyled">
-          <li>
-            <a>rwe</a>
-          </li>
-        </ul>
-        <h4>
-          <IconTransformation className="icon-category"/>
-          Part 2
-        </h4>
-        <ul className="list-unstyled">
-          <li>
-            <a>sadfas</a>
-          </li>
-        </ul>
-    </div>
-  </div>
+      <h4>
+       <IconTransformation className="icon-category"/>
+        Part 1
+      </h4>
+      <ul className="list-unstyled">
+        <li>
+          <a>rwe</a>
+        </li>
+      </ul>
+      <h4>
+        <IconTransformation className="icon-category"/>
+        Part 2
+      </h4>
+      <ul className="list-unstyled">
+        <li>
+          <a>sadfas</a>
+        </li>
+      </ul>
+    </Col>
+  </Row>
 )
 
 let content4 = (
-  <div>
-    <div className="row">
-      <div className="col-md-12">
+  <Col>
+    <Row>
+      <Col md={12}>
         <p>Learn more about the deprecation <a>timeline and reasons</a>.</p>
-      </div>
-    </div>
+      </Col>
+    </Row>
       {content3}
-    </div>
+  </Col>
 )
 
 let content5 = (
-  <div className="row">
-    <div className="col-md-9">
-        <span>
-            <p>
-                Migrate your current configurations to new Database Writer. This writer will continue to work until May 2017. Then, all your configurations will be migrated automatically. The migration will also alter your orchestrations to use the new writers. The old configurations will remain intact for now. You can remove them yourself after a successful migration.
-            </p>
-        </span>
+  <Row>
+    <Col md={9}>
+      <p>
+          Migrate your current configurations to new Database Writer. This writer will continue to work until May 2017. Then, all your configurations will be migrated automatically. The migration will also alter your orchestrations to use the new writers. The old configurations will remain intact for now. You can remove them yourself after a successful migration.
+      </p>
       <button className="btn btn-primary">
         Proceed to Migration
       </button>
     </div>
-  </div>
+  <Row>
 )
 
 
