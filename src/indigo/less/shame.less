@@ -255,3 +255,90 @@ a .kbcComponentIcon-3rdParty-64px {
     align-items: center;
   }
 }
+
+
+//moved from TransformationDetailStatic
+
+.add-mapping-button {
+  margin-top: -4px;
+}
+
+small.empty-label {
+  margin-right: 1em;
+  color: #717e9a;
+}
+
+.mapping-rows .kbc-panel-heading-with-table:last-child {
+  margin-bottom: 0px;
+}
+
+.kbc-row h2:first-child {
+  margin-top: 0px;
+}
+
+.kbc-row .mapping {
+  min-height: 100px;
+}
+
+//moved from Readmore.less
+//
+
+//predelat na 'Show More' koncept
+.kbc-readmore {
+  position: relative;
+  overflow: hidden;
+
+  //Ty nadpisy jsou zbytecny stylovat. Kdyz uz, tak pro Markdown
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 17px;
+  }
+  h4{
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+
+.kbc-readmore-normal{
+  max-height: 300px;
+}
+
+
+.kbc-readmore-small{
+  max-height: 150px;
+}
+
+.kbc-readmore .kbc-readmore-fadeout {
+  height: 50px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to bottom, transparent, white);
+}
+
+.kbc-readmore-button {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+
+// moved from VersionIcon.less
+.kbc-version-icon {
+  color: #7e8490;
+  width: 16px;
+}
+
+.kbc-version-icon.last {
+  color: #96d130;
+}
