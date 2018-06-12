@@ -69,11 +69,8 @@
 }
 
 
-svg.kb-graph {
-  margin-top: 10px;
-}
-
 svg.kb-graph  {
+  margin-top: 10px;
   cursor: move;
 }
 
@@ -142,6 +139,10 @@ svg.kb-graph  {
 //nenasel jsem v kbc
 
 .kbc-main-content {
+  // hotfix for: https://github.com/keboola/kbc-ui/issues/1265
+  // wil be moved to indigo-ui soon
+  overflow: auto;
+
   .stripe-odd {
     background-color: #f9f9f9
   }
@@ -271,8 +272,4 @@ a .kbcComponentIcon-3rdParty-64px {
   word-break: break-word;
 }
 
-// hotfix for: https://github.com/keboola/kbc-ui/issues/1265
-// wil be moved to indigo-ui soon
-.kbc-main-content {
-  overflow: auto;
-}
+
