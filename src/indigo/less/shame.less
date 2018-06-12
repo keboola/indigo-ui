@@ -50,3 +50,236 @@
 .list-no-bottom-margin{
   margin-bottom: 0;
 }
+
+
+
+
+.label-canceled {
+  background-color: #000;
+}
+
+//v kbc jsem nenasel
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+svg.kb-graph  {
+  margin-top: 10px;
+  cursor: move;
+}
+
+.kb-graph .node {
+  cursor: pointer;
+}
+
+.kb-graph .node rect {
+  stroke-width: 0px;
+  stroke: #333;
+  fill: #fff;
+}
+
+.kb-graph .node text {
+  background-color: #999999;
+}
+
+.kb-graph .node text,
+.kb-graph .node a {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  fill: white;
+}
+
+//nenasel jsem v kbc
+.kb-graph .controls {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+//nenasel jsem v kbc
+.kb-graph .graph-options select.form-control {
+  width: auto;
+  display: inline;
+}
+
+//nenasel jsem v kbc
+#svgDownload {
+  visibility: hidden;
+}
+
+//nenasel jsem v kbc
+#canvasDownload {
+  display: none;
+}
+
+
+.kbc-protected {
+  cursor: pointer;
+}
+
+//nenasel jsem v kbc
+.kbc-main-content .vertical-center {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+//nenasel jsem v kbc
+
+.kbc-main-content {
+  // hotfix for: https://github.com/keboola/kbc-ui/issues/1265
+  // wil be moved to indigo-ui soon
+  overflow: auto;
+
+  .stripe-odd {
+    background-color: #f9f9f9
+  }
+  .stripe-query-has-comment {
+    background-color: rgba(255, 0, 0, .15);
+  }
+}
+
+//nenasel jsem v kbc
+.kbc-main-content .query-number .btn.query-edit {
+  display: none;
+}
+
+//nenasel jsem v kbc
+.kbc-main-content .row:hover .query-number .btn.query-edit {
+  display: inline;
+}
+
+//nenasel jsem v kbc
+.kbc-main-content .query-number .query-number-value:before {
+  content: attr(data-query-number);
+}
+
+.kbc-overview {
+  h2 {
+    color: #0199f1;
+  }
+
+  > .tbody > .tr > .td {
+    text-align: left;
+  }
+}
+
+.kbcNotificationTransition-enter {
+  opacity: 0.01;
+}
+
+.kbcNotificationTransition-enter.kbcNotificationTransition-enter-active {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+.kbcNotificationTransition-leave {
+  opacity: 1;
+}
+
+.kbcNotificationTransition-leave.kbcNotificationTransition-leave-active {
+  opacity: 0.01;
+  transition: opacity .3s ease-in;
+}
+
+.form-group.no-bottom-margin {
+  margin-bottom: 0px;
+}
+
+.help-block.bottom-margin {
+  margin-bottom: 15px;
+}
+
+//nenasel jsem v kbc
+a .kbcComponentIcon-3rdParty-32px {
+  position: relative;
+  margin-left: -16px;
+  left: 5px;
+  top: -11px;
+  font-size: 14px;
+  color: #282d38;
+}
+
+//nenasel jsem v kbc
+a .kbcComponentIcon-3rdParty-64px {
+  position: relative;
+  margin-left: -22px;
+  left: 10px;
+  top: -29px;
+  font-size: 21px;
+  color: #282d38;
+}
+
+//nenasel jsem v kbc
+.pull-left a .kbcComponentIcon-3rdParty-32px {
+  position: relative;
+  left: 37px;
+  top: -38px;
+  font-size: 14px;
+  color: #282d38;
+}
+
+.kbcLicenseIcon {
+  font-size: 14px;
+  margin-right: 7px;
+}
+
+.kbcLicenseTable td {
+  padding-bottom: 5px;
+}
+
+//nenasel jsem v kbc
+.kb-orchestrator-task-drag{
+  padding: 0 !important;
+}
+
+.kbc-label-rounded.kbc-label-block {
+  display: inline-block;
+  white-space: normal;
+}
+
+//TEMP HACK: ZKOPIROVAT DO INDIGO AZ BUDE PRILEZITOST, ZATIM JE TO BLOKOVANY
+.kbc-main-sidebar {
+  .nav {
+    .kbc-icon-plus {
+      text-align: center;
+      display: inline-block;
+      width: 18px;
+    }
+  }
+}
+
+.kbc-row-orchestration-detail{
+  padding: 0!important;
+}
+
+//break content without white spaces
+.alert,
+.table-events > tbody > tr > td,
+.table > .tbody > .tr .td span{
+  word-break: break-word;
+}
+
+.row-search {
+  display: flex;
+  &-input {
+    margin-right: 10px;
+    flex-grow: 1;
+  }
+  &-action {
+    display: flex;
+    align-items: center;
+  }
+}
