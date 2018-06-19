@@ -30,6 +30,7 @@
   background-image: url('../img/transformation.svg');
   background-repeat: no-repeat;
 }
+
 // because kbc-header is not enough
 .kbc-inner-padding {
   padding: 22px 22px 15px;
@@ -37,7 +38,6 @@
     border-bottom: 1px solid @table-border-color;
   }
 }
-
 
 //for ex-fb, needs to be solved systematically when refactoring
 // .kbc-buttons class
@@ -47,12 +47,9 @@
 }
 
 // For list inside PanelWithDetails, needs to be documented later if the style is applicable
-.list-no-bottom-margin{
+.list-no-bottom-margin {
   margin-bottom: 0;
 }
-
-
-
 
 .label-canceled {
   background-color: #000;
@@ -68,8 +65,7 @@
   user-select: none;
 }
 
-
-svg.kb-graph  {
+svg.kb-graph {
   margin-top: 10px;
   cursor: move;
 }
@@ -123,7 +119,6 @@ svg.kb-graph  {
 #canvasDownload {
   display: none;
 }
-
 
 .kbc-protected {
   cursor: pointer;
@@ -241,7 +236,7 @@ a .kbcComponentIcon-3rdParty-64px {
 }
 
 //nenasel jsem v kbc
-.kb-orchestrator-task-drag{
+.kb-orchestrator-task-drag {
   padding: 0 !important;
 }
 
@@ -261,14 +256,14 @@ a .kbcComponentIcon-3rdParty-64px {
   }
 }
 
-.kbc-row-orchestration-detail{
-  padding: 0!important;
+.kbc-row-orchestration-detail {
+  padding: 0 !important;
 }
 
 //break content without white spaces
 .alert,
 .table-events > tbody > tr > td,
-.table > .tbody > .tr .td span{
+.table > .tbody > .tr .td span {
   word-break: break-word;
 }
 
@@ -283,7 +278,6 @@ a .kbcComponentIcon-3rdParty-64px {
     align-items: center;
   }
 }
-
 
 //moved from TransformationDetailStatic
 
@@ -323,22 +317,21 @@ small.empty-label {
   h2 {
     font-size: 19px;
   }
-  h3{
+  h3 {
     font-weight: bold;
     font-size: 17px;
   }
-  h4{
+  h4 {
     font-weight: bold;
     font-size: 15px;
   }
 }
 
-.kbc-readmore-normal{
+.kbc-readmore-normal {
   max-height: 300px;
 }
 
-
-.kbc-readmore-small{
+.kbc-readmore-small {
   max-height: 150px;
 }
 
@@ -360,7 +353,6 @@ small.empty-label {
   width: 100%;
 }
 
-
 // moved from VersionIcon.less
 .kbc-version-icon {
   color: #7e8490;
@@ -369,4 +361,164 @@ small.empty-label {
 
 .kbc-version-icon.last {
   color: #96d130;
+}
+
+// moved from ModalDialog.less
+.kbc-table-browser .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.kbc-table-browser .modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+// moved from configurations/styles.less
+.drag-handle-pending {
+  cursor: not-allowed;
+}
+
+.drag-handle-disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.drag-handle {
+  cursor: move;
+}
+
+// po pruzkumu a diskuzi s autorem  - Najlosem - jsem dosel k zaveru ze tenhle styl neni potreba
+//.kbc-json-editor textarea {
+//  resize: both;
+//  width: 100%;
+//  min-height: 300px
+//}
+
+//Vyhazuju, nebylo to izolovany a naopak to bylo prestylovany
+// h2 je definovanej asi na milionu mistech
+//h2 {
+//  line-height: 32px;
+//  margin-bottom: 10px;
+//}
+
+//moved form AddConfigurationForm.less
+
+//tohle bude jednoduchy odstranit, je to hotfix na poprasenej bootstrap
+//Zobrazuje se prizalozeni novy konfigurace gdwr
+.modal-header.add-configuration-form {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  min-height: 79px;
+}
+
+.modal-header.add-configuration-form .close {
+  padding-top: 9px;
+}
+
+.modal-header.add-configuration-form .kbc-header {
+  float: left;
+}
+
+//moved form SidebarVersions.less
+// namet na presun dalsi komponenty do indiga - neni to nic nez jinyho nez variace <List> nebo <Media>
+.kbc-sidebar-versions {
+  margin-top: 15px;
+  border-top: 1px solid #dddddd;
+  margin-bottom: 20px;
+}
+
+.kbc-sidebar-versions .version-info {
+  margin-bottom: 10px;
+}
+
+.kbc-sidebar-versions .versions-link {
+  padding-left: 28px;
+  margin-top: 10px;
+}
+
+.kbc-sidebar-versions .versions-link a {
+  color: #7e8490;
+}
+
+.kbc-sidebar-versions .td.versions-status {
+  width: 31px;
+}
+
+
+//moved form SidebarJobs.less
+// namet na presun dalsi komponenty do indiga - stejne jako kbc-sidebar-versions
+.kbc-sidebar-jobs .td.kbc-td-status {
+  width: 31px;
+}
+
+.kbc-main-sidebar div.kbc-sidebar-jobs {
+  margin-bottom: 25px;
+}
+
+.kbc-sidebar-jobs .jobs-link {
+  padding-left: 28px;
+  margin-top: 10px;
+}
+
+.kbc-sidebar-jobs .jobs-link a {
+  color: #7e8490;
+}
+
+
+//moved from AuthorizationModal.less
+// toto muzeme vyhodit. Mensi padding mi nevadi
+.kbc-metadata-description {
+  padding: 10px;
+}
+
+//moved components\configuration.less
+// zobrazuje se napr v ex-adform
+// classname .edit je nicnerikajici
+
+.edit.kbc-configuration-editor {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.edit.kbc-configuration-editor .kbc-buttons {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+//moved tokenEditor\ComponentsSelector.less
+.kbc-components-selector .Select-value {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+
+
+//moved react\common\DestinationTableSelector.less
+// vybiratko tabulek na OM
+//https://github.com/keboola/indigo-ui/issues/99
+.kbc-dst-table-selector {
+  display: flex;
+
+  .kbc-dot-separator {
+    flex-grow: 0;
+    padding: 0 0.4em;
+    line-height: 36px;
+  }
+
+  .kbc-select-stage {
+    flex-grow: 0;
+    flex-basis: 4.5em;
+  }
+
+  .kbc-select-bucket {
+    flex-grow: 1;
+  }
+
+  .kbc-select-table {
+    flex-grow: 1;
+  }
 }
