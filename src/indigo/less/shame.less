@@ -493,3 +493,138 @@ small.empty-label {
     flex-grow: 1;
   }
 }
+
+
+//moved configuration-json.less
+// napriklad v ex-slack
+//
+
+// tohle lze predelat na 'box'
+.kbc-templated-configuration-edit {
+  margin-right: 0px;
+  margin-bottom: -22px;
+  margin-left: 0px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-width: 1px 0 0 0;
+  padding-top: 1em;
+}
+
+//vyhozeni tohoto stylu nevadilo
+.kbc-templated-configuration-edit .kbc-configuration-editor {
+  position: relative;
+}
+
+.kbc-template-editor-toggle {
+  margin-top: 10px;
+}
+
+//moved from TableSelectorInput.less
+// nepritomnost dukazu :( v aplikaci jsem tuhle kompinaci selektoru nenasel
+.kbc-table-selector-edit .input-group .form-control {
+  float: none;
+}
+
+// moved from TableSelector.less
+//predalat na button
+// napr v csv-importu - ikona tuzky
+.kbc-table-selector .kbc-icon-pencil {
+  cursor: pointer;
+  opacity: 0.3;
+  margin-left: 0.25em;
+}
+
+.kbc-table-selector:hover .kbc-icon-pencil {
+  opacity: 1;
+}
+
+// moved from TableSelectorForm.less
+// tohle je custom hovadina, vyhodit - proste takhle formulare vypadaji xD
+// napr v csv-importu
+.kbc-table-selector.kbc-table-selector-static {
+  position: relative;
+  top: 13px;
+}
+
+//moved from queries.less
+//.poover-wide neni v kbc vyhledatelny
+.popover.popover-wide {
+  max-width: 500px;
+}
+
+//DUPLICITNI A NAVIC NEFUNKCNI STYL
+//.kbc-queries-editor textarea {
+//  resize: both;
+//  width: 100%;
+//  min-height: 300px
+//}
+//
+
+
+//moved fro processors.less
+// detto ^^^
+//.popover.popover-wide {
+//  max-width: 500px;
+//}
+//
+//.kbc-processors-editor textarea {
+//  resize: both;
+//  width: 100%;
+//  min-height: 300px
+//}
+
+
+//moved from TrashIndex.less
+.kbc-trash-search {
+  border-bottom: 1px solid #e8e8ef;
+
+  .kbc-trash-controls {
+    padding: 20px 0 !important;
+    margin: 0 -5px 0 -5px;
+
+    .kbc-trash-filter {
+      width: 50%;
+      float: right;
+    }
+
+    .kbc-trash-buttons {
+      padding: 7px 0;
+      float: right;
+    }
+
+    .btn-hide {
+      visibility: hidden;
+    }
+
+    .btn {
+      border-left: 1px solid #e8e8ef;
+      padding-left: 14px;
+      margin-left: 19px;
+    }
+  }
+}
+
+
+//moved from NewComponentSelection
+// taky by to slo udelat lepe ten grid + vyhodit .kbc-*
+.modal-footer .btn-toolbar > a .btn {
+  float: none;
+}
+
+.kbc-components-overview .td {
+  position: relative;
+  padding: 24px;
+  text-decoration: none;
+  transition: 0.08s all ease-out;
+
+  &:hover {
+    background: #c8edfa;
+    box-shadow: inset 0px 0px 0px 2px #25b8eb;
+    h2 {
+      text-decoration: underline;
+    }
+  }
+  .kbc-components-overview-description {
+    color: #282d38;
+  }
+}
