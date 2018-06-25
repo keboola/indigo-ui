@@ -129,8 +129,8 @@ let content5 = (
       <button className="btn btn-primary">
         Proceed to Migration
       </button>
-    </div>
-  <Row>
+    </Col>
+  </Row>
 )
 
 
