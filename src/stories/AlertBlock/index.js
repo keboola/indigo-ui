@@ -51,8 +51,8 @@ let content3 = (
         </li>
       </ul>
       <h4>
-        <Icon.Applications className="icon-category"/>
-        <span>Applications</span>
+        <Icon.Application className="icon-category"/>
+        <span>Application</span>
       </h4>
       <ul className="list-unstyled">
         <li>
