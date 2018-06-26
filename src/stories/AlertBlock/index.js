@@ -1,13 +1,19 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
+import { Icon } from '../../indigo/components';
+import { Row, Col } from 'react-bootstrap';
 
 import AlertBlock from '../../indigo/components/AlertBlock';
 
 let content1 = (
-  <p>
-    Please <a>contact support</a> for project plan upgrade.
-  </p>
+  <ul className="list-unstyled list-no-padding">
+    <li>
+      <a>
+          Keboola Connection Storage (13.24 GB of 10 GB)
+      </a>
+    </li>
+  </ul>
 )
 
 let content2 = (
@@ -24,11 +30,12 @@ let content2 = (
     </li>
   </ul>
 )
+
 let content3 = (
   <Row>
     <Col md={6}>
       <h4>
-        <IconWriter className="icon-category"/>
+        <Icon.Writer className="icon-category"/>
         <span>Writers</span>
       </h4>
       <ul className="list-unstyled">
@@ -44,7 +51,7 @@ let content3 = (
         </li>
       </ul>
       <h4>
-        <IconApplications className="icon-category"/>
+        <Icon.Applications className="icon-category"/>
         <span>Applications</span>
       </h4>
       <ul className="list-unstyled">
@@ -67,7 +74,7 @@ let content3 = (
     </Col>
     <Col md={6}>
       <h4>
-        <IconExtractor className="icon-category"/>
+        <Icon.Extractor className="icon-category"/>
         <span>Extractors</span>
       </h4>
       <ul className="list-unstyled">
@@ -88,7 +95,7 @@ let content3 = (
         </li>
       </ul>
       <h4>
-       <IconTransformation className="icon-category"/>
+       <Icon.Transformation className="icon-category"/>
         Part 1
       </h4>
       <ul className="list-unstyled">
@@ -97,7 +104,7 @@ let content3 = (
         </li>
       </ul>
       <h4>
-        <IconTransformation className="icon-category"/>
+        <Icon.Transformation className="icon-category"/>
         Part 2
       </h4>
       <ul className="list-unstyled">
@@ -171,12 +178,6 @@ storiesOf('AlertBlock', module)
   })(() => {
     return (
       <div>
-        <AlertBlock
-          type="warning"
-          title="Alert Block with single-line paragraph">
-          {content1}
-        </AlertBlock>
-
         <AlertBlock
           type="warning"
           title="Alert Block with list content">
