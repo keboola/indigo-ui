@@ -657,3 +657,185 @@ small.empty-label {
     color: #282d38;
   }
 }
+
+
+//moved from SaveButton.less
+//seen at: ex-aws-s3
+.save-button {
+  min-width: 4.5em;
+}
+
+//moved from TestCredentialsButtonGroup.less
+//seen at: ex-mongodb
+.TestCredentialsButtonGroup-result {
+  margin: 1em 0;
+}
+
+//moved from EmptyStateIndex.less
+//seen at: transformation subpage - empty state
+.transformation-index-empty-state.row {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: #2f3540;
+  .add-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin-top: 0px;
+  }
+  .help {
+    color: #717e9a;
+    padding-top: 30px;
+  }
+}
+
+
+.transformation-bucket-empty-state.row {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: #2f3540;
+  .add-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin-top: 0px;
+  }
+  .help {
+    color: #717e9a;
+    padding-top: 30px;
+  }
+}
+
+
+//moved from ConfigurationSelect.less
+// seen at: Orchestration -> Add new task modal
+.table.configuration-select-header > .tr > .td {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.table.configuration-select-header > .tr > .td > h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+//moved from AddTsksModal.less
+// seen at: Orchestration -> Add new task modal
+.orchestration-task-modal-body {
+  max-height: 370px;
+  overflow: auto;
+}
+
+
+//moved from  Upload.less
+// seen at: csv ex
+.upload-button button {
+  position: relative;
+  top: 6px;
+  min-width: 5em;
+}
+
+
+//moved from  modules\csv-import\react\Index\Index.less
+// seen at: csv ex
+.subform {
+  margin-left: 40px;
+}
+
+
+//moved from  DefaultForm.less
+// seen at: new configuration modal
+.modal-body > .container.col-md-12 {
+  float: none;
+}
+
+
+//moved from  ProfilesManagerModal.less
+// seen at: keboola.ex-google-analytics-v4 - profiles accordion
+.profile-panel > div > .panel-body{
+  padding-right: 0px;
+  padding-left: 7px;
+  padding-top: 3px;
+}
+
+
+//moved from  GaMultiSelect.less
+// seen at: keboola.ex-google-analytics-v4 - New Query - select
+.SearchSuggestMatch {
+  border: solid #eee;
+  border-width: 1px 0 0;
+  line-height: 1.2;
+  list-style: none;
+  overflow: hidden;
+  padding: .5em;
+  word-wrap: break-word;
+}
+.SearchSuggestMatch:first-child {
+  border: 0;
+}
+
+.SearchSuggestMatch-category {
+  color: #bbb;
+  float: right;
+  font-size: .6em;
+  font-weight: 700;
+  letter-spacing: .1em;
+  margin: .1em 0 1em .5em;
+  text-transform: uppercase;
+  text-align: right;
+  max-width: 12em;
+}
+
+.SearchSuggestMatch-content {
+  font-weight: 600;
+}
+
+.SearchSuggestMatch-extra {
+  color: #777;
+  font-size: .8em;
+  font-weight: 300;
+  margin-top: .15em;
+  word-wrap: break-word;
+}
+
+
+.SearchSuggestMatch--selected {
+  border-color: transparent;
+  background: var(--border-color-active);
+}
+.SearchSuggestMatch--selected .SearchSuggestMatch-category,
+.SearchSuggestMatch--selected .SearchSuggestMatch-content,
+.SearchSuggestMatch--selected .SearchSuggestMatch-extra {
+  color: #fff;
+}
+
+//moved from  VendorInfo.less
+// seen at: 3rd party component detail
+.kbcVendorInfo {
+  margin-bottom: 15px;
+}
+
+//moved from  ConfigurationRowsTable.less
+// seen at: ex-aws-s3
+.table.table-config-rows {
+  & > .tbody > .tr.sortable-fallback {
+    display: none;
+  }
+
+  & > .tbody > .tr.sortable-ghost {
+    background-color: #e5f4f7;
+  }
+
+  & > .tbody > .tr {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  & > .tbody > .tr:hover {
+    background-color: #e5f4f7;
+    text-decoration: none;
+  }
+}
