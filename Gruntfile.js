@@ -34,7 +34,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: 'src/indigo',
-            src: ['img/*'],
+            src: ['img/**'],
             dest: 'public/'
           }
         ]

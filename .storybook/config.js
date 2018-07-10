@@ -20,6 +20,7 @@ function loadStories() {
   require('../src/stories/PanelWithDetails');
   require('../src/stories/AlertBlock');
   require('../src/stories/Icons');
+  require('../src/stories/Splash');
 }
 
 setOptions({
