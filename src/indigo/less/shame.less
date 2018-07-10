@@ -2,10 +2,7 @@
   padding: 15px;
 }
 
-//IKONY PRO AlertBlock
-//Casem vznikne keboola icon font, takze toto muzeme vyhodit
 //ANALYZA: muzeme to vyhodit s nasazenim tohoto https://github.com/keboola/indigo-ui/pull/174
-
 .kbc-extractor-icon,
 .kbc-writer-icon,
 .kbc-transformation-icon {
@@ -33,6 +30,7 @@
 }
 
 // because kbc-header is not enough
+//neco jako kbc-row
 //ANALYZA:
 .kbc-inner-padding {
   padding: 22px 22px 15px;
@@ -57,17 +55,6 @@
 //ANALYZA: zdokumentovat
 .label-canceled {
   background-color: #000;
-}
-
-//v kbc jsem nenasel
-//ANALYZA: vyhodit
-.noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 //ANALYZA: zdokumetovat novou komponentu + tyhle custom styly
@@ -116,61 +103,15 @@ svg.kb-graph {
   display: inline;
 }
 
-//nenasel jsem v kbc
-//ANALYZA: vyhodit
-#svgDownload {
-  visibility: hidden;
-}
-
-//nenasel jsem v kbc
-#canvasDownload {
-  display: none;
-}
-
 .kbc-protected {
   cursor: pointer;
 }
 
-//nenasel jsem v kbc
-//ANALYZA: vyhodit
-.kbc-main-content .vertical-center {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-}
-
-//nenasel jsem v kbc
 
 .kbc-main-content {
   // hotfix for: https://github.com/keboola/kbc-ui/issues/1265
   // wil be moved to indigo-ui soon
   overflow: auto;
-
-  //ANALYZA: vyhodit
-  .stripe-odd {
-    background-color: #f9f9f9
-  }
-  .stripe-query-has-comment {
-    background-color: rgba(255, 0, 0, .15);
-  }
-}
-
-//nenasel jsem v kbc
-//ANALYZA: vyhodit
-.kbc-main-content .query-number .btn.query-edit {
-  display: none;
-}
-
-//nenasel jsem v kbc
-//ANALYZA: vyhodit
-.kbc-main-content .row:hover .query-number .btn.query-edit {
-  display: inline;
-}
-
-//nenasel jsem v kbc
-//ANALYZA: vyhodit
-.kbc-main-content .query-number .query-number-value:before {
-  content: attr(data-query-number);
 }
 
 //ANALYZA: predelat na bs scaffolding a lepe oclassovat
@@ -212,56 +153,14 @@ svg.kb-graph {
   margin-bottom: 15px;
 }
 
-//nenasel jsem v kbc
-//ANALYZA: vyhodit
-a .kbcComponentIcon-3rdParty-32px {
-  position: relative;
-  margin-left: -16px;
-  left: 5px;
-  top: -11px;
-  font-size: 14px;
-  color: #282d38;
-}
-
-//nenasel jsem v kbc
-//ANALYZA: vyhodit
-a .kbcComponentIcon-3rdParty-64px {
-  position: relative;
-  margin-left: -22px;
-  left: 10px;
-  top: -29px;
-  font-size: 21px;
-  color: #282d38;
-}
-
-//nenasel jsem v kbc
-//ANALYZA: vyhodit
-.pull-left a .kbcComponentIcon-3rdParty-32px {
-  position: relative;
-  left: 37px;
-  top: -38px;
-  font-size: 14px;
-  color: #282d38;
-}
-
-//ANALYZA: vyhodit
-.kbcLicenseIcon {
-  font-size: 14px;
-  margin-right: 7px;
-}
-
-//ANALYZA: vyhodit, uz se nepouziva
-.kbcLicenseTable td {
-  padding-bottom: 5px;
-}
-
-//nenasel jsem v kbc
-//ANALYZA: vyhodit
+//ANALYZA: hehe, tady je v KBC typo
+// https://github.com/keboola/kbc-ui/blob/5b00f90dd7f340ee393b84912a4e5d6101b9c931/src/scripts/modules/orchestrations/react/pages/orchestration-tasks/TasksEditTableRow.coffee#L31
+//Fixnout typo a odstranit kbc prefix
 .kb-orchestrator-task-drag {
   padding: 0 !important;
 }
 
-//ANALYZA: vyhodit
+//ANALYZA: predelat na Bootstrap label, vyhodit break-word
 .kbc-label-rounded.kbc-label-block {
   display: inline-block;
   white-space: normal;
@@ -279,7 +178,8 @@ a .kbcComponentIcon-3rdParty-64px {
   }
 }
 
-//ANALYZA: az se zrusi master/detail interface v orchestraci, muzem to vyhodit
+//ANALYZA: staci vyhodit tuto obalku row kbc-row-orchestration-detail
+//ANALYZA: napr tady https://github.com/keboola/kbc-ui/blob/55ad82c49c7ee7aa4f45cdb8d5420b9b9c8c4260/src/scripts/modules/orchestrations/react/pages/orchestration-tasks/OrchestrationTasks.coffee#L89
 .kbc-row-orchestration-detail {
   padding: 0 !important;
 }
@@ -318,7 +218,6 @@ small.empty-label {
 
 //ANALYZA: to je asi v pohode jen to chce zdokumentovat
 //ANALYZA: (jeste je tu classa .kbc-panel-heading-with-table)
-
 .mapping-rows .kbc-panel-heading-with-table:last-child {
   margin-bottom: 0px;
 }
@@ -427,22 +326,6 @@ small.empty-label {
   cursor: move;
 }
 
-
-//ANALYZA: vyhodit
-// po pruzkumu a diskuzi s autorem  - Najlosem - jsem dosel k zaveru ze tenhle styl neni potreba
-//.kbc-json-editor textarea {
-//  resize: both;
-//  width: 100%;
-//  min-height: 300px
-//}
-
-//Vyhazuju, nebylo to izolovany a naopak to bylo prestylovany
-// h2 je definovanej asi na milionu mistech
-//h2 {
-//  line-height: 32px;
-//  margin-bottom: 10px;
-//}
-
 //moved form AddConfigurationForm.less
 
 //tohle bude jednoduchy odstranit, je to hotfix na poprasenej bootstrap
@@ -509,37 +392,12 @@ small.empty-label {
   color: #7e8490;
 }
 
-// ANALYZA: ok lze vyhodit
-//moved from AuthorizationModal.less
-// toto muzeme vyhodit. Mensi padding mi nevadi
-.kbc-metadata-description {
-  padding: 10px;
-}
-
-
-//moved components\configuration.less
-// zobrazuje se napr v ex-adform
-// classname .edit je nicnerikajici
-// ANALYZA: tohle lze vyhodit
-.edit.kbc-configuration-editor {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-// ANALYZA: mozna lze vyhodit
-// ANALYZA: este prozkoumat .kbc-buttons
-.edit.kbc-configuration-editor .kbc-buttons {
-  padding-bottom: 1em;
-  padding-top: 1em;
-}
-
 // ANALYZA: zdokumentovat react-select komponentu + tuto variaci, zkusit snake case, lepsi selector
 //moved tokenEditor\ComponentsSelector.less
 .kbc-components-selector .Select-value {
   margin-bottom: 3px;
   margin-top: 3px;
 }
-
 
 //moved react\common\DestinationTableSelector.less
 // vybiratko tabulek na OM
@@ -857,13 +715,6 @@ small.empty-label {
 .SearchSuggestMatch--selected .SearchSuggestMatch-content,
 .SearchSuggestMatch--selected .SearchSuggestMatch-extra {
   color: #fff;
-}
-
-//ANALYZA: zkusit vyhodit nebo predelat na grid
-//moved from  VendorInfo.less
-// seen at: 3rd party component detail
-.kbcVendorInfo {
-  margin-bottom: 15px;
 }
 
 //ANALYZA: souvisi s config rows
