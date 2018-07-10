@@ -4,6 +4,7 @@
 
 //IKONY PRO AlertBlock
 //Casem vznikne keboola icon font, takze toto muzeme vyhodit
+//ANALYZA: muzeme to vyhodit s nasazenim tohoto https://github.com/keboola/indigo-ui/pull/174
 
 .kbc-extractor-icon,
 .kbc-writer-icon,
@@ -32,9 +33,11 @@
 }
 
 // because kbc-header is not enough
+//ANALYZA:
 .kbc-inner-padding {
   padding: 22px 22px 15px;
   &-with-bottom-border {
+    //ANALYZA: tohle je vetsinou kvuli descriptionv detailu - lepsi bude oclassovat vnitrek (descriptionovadlo)
     border-bottom: 1px solid @table-border-color;
   }
 }
@@ -51,11 +54,13 @@
   margin-bottom: 0;
 }
 
+//ANALYZA: zdokumentovat
 .label-canceled {
   background-color: #000;
 }
 
 //v kbc jsem nenasel
+//ANALYZA: vyhodit
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -65,6 +70,7 @@
   user-select: none;
 }
 
+//ANALYZA: zdokumetovat novou komponentu + tyhle custom styly
 svg.kb-graph {
   margin-top: 10px;
   cursor: move;
@@ -111,6 +117,7 @@ svg.kb-graph {
 }
 
 //nenasel jsem v kbc
+//ANALYZA: vyhodit
 #svgDownload {
   visibility: hidden;
 }
@@ -125,6 +132,7 @@ svg.kb-graph {
 }
 
 //nenasel jsem v kbc
+//ANALYZA: vyhodit
 .kbc-main-content .vertical-center {
   display: inline-block;
   vertical-align: middle;
@@ -138,6 +146,7 @@ svg.kb-graph {
   // wil be moved to indigo-ui soon
   overflow: auto;
 
+  //ANALYZA: vyhodit
   .stripe-odd {
     background-color: #f9f9f9
   }
@@ -147,20 +156,24 @@ svg.kb-graph {
 }
 
 //nenasel jsem v kbc
+//ANALYZA: vyhodit
 .kbc-main-content .query-number .btn.query-edit {
   display: none;
 }
 
 //nenasel jsem v kbc
+//ANALYZA: vyhodit
 .kbc-main-content .row:hover .query-number .btn.query-edit {
   display: inline;
 }
 
 //nenasel jsem v kbc
+//ANALYZA: vyhodit
 .kbc-main-content .query-number .query-number-value:before {
   content: attr(data-query-number);
 }
 
+//ANALYZA: predelat na bs scaffolding a lepe oclassovat
 .kbc-overview {
   h2 {
     color: #0199f1;
@@ -170,6 +183,8 @@ svg.kb-graph {
     text-align: left;
   }
 }
+
+//ANALYZA: zdokumentovat, udelat jako 3rd party theme, nesel by zmenit na snake-case?
 
 .kbcNotificationTransition-enter {
   opacity: 0.01;
@@ -198,6 +213,7 @@ svg.kb-graph {
 }
 
 //nenasel jsem v kbc
+//ANALYZA: vyhodit
 a .kbcComponentIcon-3rdParty-32px {
   position: relative;
   margin-left: -16px;
@@ -208,6 +224,7 @@ a .kbcComponentIcon-3rdParty-32px {
 }
 
 //nenasel jsem v kbc
+//ANALYZA: vyhodit
 a .kbcComponentIcon-3rdParty-64px {
   position: relative;
   margin-left: -22px;
@@ -218,6 +235,7 @@ a .kbcComponentIcon-3rdParty-64px {
 }
 
 //nenasel jsem v kbc
+//ANALYZA: vyhodit
 .pull-left a .kbcComponentIcon-3rdParty-32px {
   position: relative;
   left: 37px;
@@ -226,26 +244,31 @@ a .kbcComponentIcon-3rdParty-64px {
   color: #282d38;
 }
 
+//ANALYZA: vyhodit
 .kbcLicenseIcon {
   font-size: 14px;
   margin-right: 7px;
 }
 
+//ANALYZA: vyhodit, uz se nepouziva
 .kbcLicenseTable td {
   padding-bottom: 5px;
 }
 
 //nenasel jsem v kbc
+//ANALYZA: vyhodit
 .kb-orchestrator-task-drag {
   padding: 0 !important;
 }
 
+//ANALYZA: vyhodit
 .kbc-label-rounded.kbc-label-block {
   display: inline-block;
   white-space: normal;
 }
 
 //TEMP HACK: ZKOPIROVAT DO INDIGO AZ BUDE PRILEZITOST, ZATIM JE TO BLOKOVANY
+//ANALYZA: predelat na svg ikonu
 .kbc-main-sidebar {
   .nav {
     .kbc-icon-plus {
@@ -256,6 +279,7 @@ a .kbcComponentIcon-3rdParty-64px {
   }
 }
 
+//ANALYZA: az se zrusi master/detail interface v orchestraci, muzem to vyhodit
 .kbc-row-orchestration-detail {
   padding: 0 !important;
 }
@@ -267,6 +291,7 @@ a .kbcComponentIcon-3rdParty-64px {
   word-break: break-word;
 }
 
+//ANALYZA: zdokumentovat
 .row-search {
   display: flex;
   &-input {
@@ -280,24 +305,31 @@ a .kbcComponentIcon-3rdParty-64px {
 }
 
 //moved from TransformationDetailStatic
-
+//ANALYZA: tohle by melo jit soupnout do gridu
 .add-mapping-button {
   margin-top: -4px;
 }
 
+//ANALYZA: tohle by melo jit soupnout do gridu
 small.empty-label {
   margin-right: 1em;
   color: #717e9a;
 }
 
+//ANALYZA: to je asi v pohode jen to chce zdokumentovat
+//ANALYZA: (jeste je tu classa .kbc-panel-heading-with-table)
+
 .mapping-rows .kbc-panel-heading-with-table:last-child {
   margin-bottom: 0px;
 }
 
+//ANALYZA: kbc-row je obecne ten oddelovac contentu
+//ANALYZA: s timhle nadpisem je to jnejaky divny, lepe oclassovat
 .kbc-row h2:first-child {
   margin-top: 0px;
 }
 
+//ANALYZA: asi ok, jenom to chce lip pojmenovat
 .kbc-row .mapping {
   min-height: 100px;
 }
@@ -305,7 +337,8 @@ small.empty-label {
 //moved from Readmore.less
 //
 
-//predelat na 'Show More' koncept
+//ANALYZA: predelat na 'Show More' koncept
+//https://github.com/keboola/indigo-ui/issues/180
 .kbc-readmore {
   position: relative;
   overflow: hidden;
@@ -353,6 +386,7 @@ small.empty-label {
   width: 100%;
 }
 
+//ANALYZA: nahradit svg ikonkama
 // moved from VersionIcon.less
 .kbc-version-icon {
   color: #7e8490;
@@ -363,6 +397,7 @@ small.empty-label {
   color: #96d130;
 }
 
+//ANALYZA: to je ten fuj celostrankovy modal. Primarne bych zrusil tenhle UI antipattern
 // moved from ModalDialog.less
 .kbc-table-browser .modal-dialog {
   width: 100%;
@@ -377,6 +412,7 @@ small.empty-label {
   border-radius: 0;
 }
 
+//ANALYZA: zobecnit a zdokumentovat
 // moved from configurations/styles.less
 .drag-handle-pending {
   cursor: not-allowed;
@@ -391,6 +427,8 @@ small.empty-label {
   cursor: move;
 }
 
+
+//ANALYZA: vyhodit
 // po pruzkumu a diskuzi s autorem  - Najlosem - jsem dosel k zaveru ze tenhle styl neni potreba
 //.kbc-json-editor textarea {
 //  resize: both;
@@ -423,6 +461,8 @@ small.empty-label {
   float: left;
 }
 
+// ANALYZA: ok, ale zdokumentovat, pripadne pretvorit na react-bootstrap elementy,odsranit nazev sidebar,
+
 //moved form SidebarVersions.less
 // namet na presun dalsi komponenty do indiga - neni to nic nez jinyho nez variace <List> nebo <Media>
 .kbc-sidebar-versions {
@@ -448,7 +488,8 @@ small.empty-label {
   width: 31px;
 }
 
-
+// ANALYZA: ok, ale zdokumentovat, pripadne pretvorit na react-bootstrap elementy,
+// odsranit nazev sidebar, stejne jako sidebar-versions
 //moved form SidebarJobs.less
 // namet na presun dalsi komponenty do indiga - stejne jako kbc-sidebar-versions
 .kbc-sidebar-jobs .td.kbc-td-status {
@@ -468,27 +509,31 @@ small.empty-label {
   color: #7e8490;
 }
 
-
+// ANALYZA: ok lze vyhodit
 //moved from AuthorizationModal.less
 // toto muzeme vyhodit. Mensi padding mi nevadi
 .kbc-metadata-description {
   padding: 10px;
 }
 
+
 //moved components\configuration.less
 // zobrazuje se napr v ex-adform
 // classname .edit je nicnerikajici
-
+// ANALYZA: tohle lze vyhodit
 .edit.kbc-configuration-editor {
   position: relative;
   margin-bottom: 40px;
 }
 
+// ANALYZA: mozna lze vyhodit
+// ANALYZA: este prozkoumat .kbc-buttons
 .edit.kbc-configuration-editor .kbc-buttons {
   padding-bottom: 1em;
   padding-top: 1em;
 }
 
+// ANALYZA: zdokumentovat react-select komponentu + tuto variaci, zkusit snake case, lepsi selector
 //moved tokenEditor\ComponentsSelector.less
 .kbc-components-selector .Select-value {
   margin-bottom: 3px;
@@ -496,10 +541,10 @@ small.empty-label {
 }
 
 
-
 //moved react\common\DestinationTableSelector.less
 // vybiratko tabulek na OM
 //https://github.com/keboola/indigo-ui/issues/99
+// ANALYZA: zdokumentovat, dat prihodne jmeno pro classu
 .kbc-dst-table-selector {
   display: flex;
 
@@ -540,20 +585,24 @@ small.empty-label {
 }
 
 //vyhozeni tohoto stylu nevadilo
+//souvisi s .edit.kbc-configuration-editor
 .kbc-templated-configuration-edit .kbc-configuration-editor {
   position: relative;
 }
 
+// tohle bych zrusil, nebo to zkusil dat na jeden radek
 .kbc-template-editor-toggle {
   margin-top: 10px;
 }
 
 //moved from TableSelectorInput.less
-// nepritomnost dukazu :( v aplikaci jsem tuhle kompinaci selektoru nenasel
+// ANALYZA: je to v \kbc-ui\src\scripts\modules\transformations\react\components\mapping\AutoSuggestWrapper.jsx
+// ANALYZA: jeste zjistit
 .kbc-table-selector-edit .input-group .form-control {
   float: none;
 }
 
+// ANALYZA: tohle se da zobecnit
 // moved from TableSelector.less
 //predalat na button
 // napr v csv-importu - ikona tuzky
@@ -567,6 +616,7 @@ small.empty-label {
   opacity: 1;
 }
 
+// ANALYZA: vyhodit
 // moved from TableSelectorForm.less
 // tohle je custom hovadina, vyhodit - proste takhle formulare vypadaji xD
 // napr v csv-importu
@@ -575,8 +625,10 @@ small.empty-label {
   top: 13px;
 }
 
+// ANALYZA: vyhodit
 //moved from queries.less
 
+// ANALYZA: vyhodit
 //DUPLICITNI A NAVIC NEFUNKCNI STYL
 //.kbc-queries-editor textarea {
 //  resize: both;
@@ -585,7 +637,7 @@ small.empty-label {
 //}
 //
 
-
+// ANALYZA: vyhodit
 //moved fro processors.less
 //
 //.kbc-processors-editor textarea {
@@ -625,7 +677,7 @@ small.empty-label {
   }
 }
 
-
+// ANALYZA: predelat na grid
 //moved from NewComponentSelection
 // taky by to slo udelat lepe ten grid + vyhodit .kbc-*
 .modal-footer .btn-toolbar > a .btn {
@@ -650,19 +702,21 @@ small.empty-label {
   }
 }
 
-
+//ANALYZA: souvisi s kbc-buttons kbc-save-buttons a editing state
 //moved from SaveButton.less
 //seen at: ex-aws-s3
 .save-button {
   min-width: 4.5em;
 }
 
+//ANALYZA:predelat na alert nebo notifikaci
 //moved from TestCredentialsButtonGroup.less
 //seen at: ex-mongodb
 .TestCredentialsButtonGroup-result {
   margin: 1em 0;
 }
 
+//ANALYZA: tohle mi prijde docela legit, jen bych to zobecnil, dal dohromady s .transformation-bucket-empty-state
 //moved from EmptyStateIndex.less
 //seen at: transformation subpage - empty state
 .transformation-index-empty-state.row {
@@ -721,7 +775,7 @@ small.empty-label {
   overflow: auto;
 }
 
-
+//ANALYZA: predelat na grid
 //moved from  Upload.less
 // seen at: csv ex
 .upload-button button {
@@ -730,7 +784,7 @@ small.empty-label {
   min-width: 5em;
 }
 
-
+//ANALYZA: predelat na form
 //moved from  modules\csv-import\react\Index\Index.less
 // seen at: csv ex
 .subform {
@@ -754,6 +808,7 @@ small.empty-label {
 }
 
 
+//ANALYZA: zdokumentovat jako variaci react-selectu
 //moved from  GaMultiSelect.less
 // seen at: keboola.ex-google-analytics-v4 - New Query - select
 .SearchSuggestMatch {
@@ -804,12 +859,14 @@ small.empty-label {
   color: #fff;
 }
 
+//ANALYZA: zkusit vyhodit nebo predelat na grid
 //moved from  VendorInfo.less
 // seen at: 3rd party component detail
 .kbcVendorInfo {
   margin-bottom: 15px;
 }
 
+//ANALYZA: souvisi s config rows
 //moved from  ConfigurationRowsTable.less
 // seen at: ex-aws-s3
 .table.table-config-rows {
