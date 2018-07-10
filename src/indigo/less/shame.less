@@ -616,6 +616,7 @@ small.empty-label {
   opacity: 1;
 }
 
+// ANALYZA: vyhodit
 // moved from TableSelectorForm.less
 // tohle je custom hovadina, vyhodit - proste takhle formulare vypadaji xD
 // napr v csv-importu
@@ -624,12 +625,14 @@ small.empty-label {
   top: 13px;
 }
 
+// ANALYZA: vyhodit
 //moved from queries.less
 //.poover-wide neni v kbc vyhledatelny
 .popover.popover-wide {
   max-width: 500px;
 }
 
+// ANALYZA: vyhodit
 //DUPLICITNI A NAVIC NEFUNKCNI STYL
 //.kbc-queries-editor textarea {
 //  resize: both;
@@ -638,7 +641,7 @@ small.empty-label {
 //}
 //
 
-
+// ANALYZA: vyhodit
 //moved fro processors.less
 // detto ^^^
 //.popover.popover-wide {
@@ -682,7 +685,7 @@ small.empty-label {
   }
 }
 
-
+// ANALYZA: predelat na grid
 //moved from NewComponentSelection
 // taky by to slo udelat lepe ten grid + vyhodit .kbc-*
 .modal-footer .btn-toolbar > a .btn {
@@ -707,19 +710,21 @@ small.empty-label {
   }
 }
 
-
+//ANALYZA: souvisi s kbc-buttons kbc-save-buttons a editing state
 //moved from SaveButton.less
 //seen at: ex-aws-s3
 .save-button {
   min-width: 4.5em;
 }
 
+//ANALYZA:predelat na alert nebo notifikaci
 //moved from TestCredentialsButtonGroup.less
 //seen at: ex-mongodb
 .TestCredentialsButtonGroup-result {
   margin: 1em 0;
 }
 
+//ANALYZA: tohle mi prijde docela legit, jen bych to zobecnil, dal dohromady s .transformation-bucket-empty-state
 //moved from EmptyStateIndex.less
 //seen at: transformation subpage - empty state
 .transformation-index-empty-state.row {
@@ -778,7 +783,7 @@ small.empty-label {
   overflow: auto;
 }
 
-
+//ANALYZA: predelat na grid
 //moved from  Upload.less
 // seen at: csv ex
 .upload-button button {
@@ -787,7 +792,7 @@ small.empty-label {
   min-width: 5em;
 }
 
-
+//ANALYZA: predelat na form
 //moved from  modules\csv-import\react\Index\Index.less
 // seen at: csv ex
 .subform {
@@ -811,6 +816,7 @@ small.empty-label {
 }
 
 
+//ANALYZA: zdokumentovat jako variaci react-selectu
 //moved from  GaMultiSelect.less
 // seen at: keboola.ex-google-analytics-v4 - New Query - select
 .SearchSuggestMatch {
@@ -861,12 +867,14 @@ small.empty-label {
   color: #fff;
 }
 
+//ANALYZA: zkusit vyhodit nebo predelat na grid
 //moved from  VendorInfo.less
 // seen at: 3rd party component detail
 .kbcVendorInfo {
   margin-bottom: 15px;
 }
 
+//ANALYZA: souvisi s config rows
 //moved from  ConfigurationRowsTable.less
 // seen at: ex-aws-s3
 .table.table-config-rows {
