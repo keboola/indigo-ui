@@ -15,7 +15,7 @@ storiesOf('Icons', module)
     })(() => {
       return (
         <div className="indigo-layout-grid">
-          <div><Icon.Applications /></div>
+          <div><Icon.Application /></div>
           <div><Icon.ArrowDown /></div>
           <div><Icon.ArrowVertical /></div>
           <div><Icon.Calendar /></div>
