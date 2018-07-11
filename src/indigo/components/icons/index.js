@@ -8,6 +8,7 @@ import Cloud from './Cloud';
 import CloudDownload from './CloudDownload';
 import Copy from './Copy';
 import Danger from './Danger';
+import DragHandle from './DragHandle';
 import Duration from './Duration';
 import Edit from './Edit';
 import Error from './Error';
@@ -54,6 +55,8 @@ const Icon = {
   CloudDownload,
   Copy,
   Danger,
+  DragHandle,
+  DragIcon,
   Duration,
   Edit,
   Error,

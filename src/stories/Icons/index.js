@@ -24,6 +24,7 @@ storiesOf('Icons', module)
           <div><Icon.Cloud /></div>
           <div><Icon.Copy /></div>
           <div><Icon.Danger /></div>
+          <div><Icon.DragHandle /></div>
           <div><Icon.Duration /></div>
           <div><Icon.Edit /></div>
           <div><Icon.Error /></div>
