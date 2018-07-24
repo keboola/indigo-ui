@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Applications = ({ className, ...props }) => {
+const Application = ({ className, ...props }) => {
   return (
     <svg
       width="32"
@@ -21,8 +21,8 @@ const Applications = ({ className, ...props }) => {
   );
 };
 
-Applications.propTypes = {
+Application.propTypes = {
   className: PropTypes.string,
 };
 
-export default Applications;
+export default Application;
