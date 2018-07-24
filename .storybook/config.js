@@ -16,6 +16,7 @@ function loadStories() {
   require('../src/stories/RefreshIcon');
   require('../src/stories/Tree');
   require('../src/stories/Tabs');
+  require('../src/stories/Popover');
   require('../src/stories/ExternalLink');
   require('../src/stories/PanelWithDetails');
   require('../src/stories/AlertBlock');
