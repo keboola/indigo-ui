@@ -1,24 +1,27 @@
 .alert a {
-    text-decoration: underline;
-    font-weight: 400;
+  text-decoration: underline;
+  font-weight: 400;
 }
 
 .alert-success a {
-    color: @alert-success-text;
+  color: @alert-success-text;
 }
+
 .alert-info a {
-    color: @alert-info-text;
+  color: @alert-info-text;
 }
+
 .alert-warning a {
-    color: @alert-warning-text;
+  color: @alert-warning-text;
 }
+
 .alert-danger a {
-    color: @alert-danger-text;
+  color: @alert-danger-text;
 }
 
 .kbc-main > .alert,
 .kbc-main > div > .alert {
-    margin: 20px;
+  margin: 20px;
 }
 
 .alert-block {
@@ -30,6 +33,7 @@
   border-width: 2px;
   border-style: solid;
   color: #7C8498;
+
 
   &:first-of-type {
     margin-top: 0
@@ -45,44 +49,19 @@
     font-weight: bold;
   }
 
-  &-icon {
+  &-background {
     position: absolute;
-    top: 25px;
+    top: 26px;
     right: 25px;
     width: 84px;
     height: auto;
-  }
-
-  a {
-    color: #7C8498;
-    &:hover {
-      color: #282D38;
-    }
-  }
-
-  h4{
-    margin-bottom: 8px;
-  }
-
-  p{
-    margin: 0 0 20px 0;
-  }
-
-  ul {
-    li {
-      line-height: 1.5;
-      margin-bottom: 8px;
-    }
-    &.list-no-padding {
-      padding-left: 0;
-    }
   }
 
   &.alert-warning {
     background-color: #FFF6DC;
     border-color: #FFD452;
 
-    .alert-block-icon {
+    .alert-block-background {
       color: #FFD452;
     }
 
@@ -95,12 +74,47 @@
     background-color: #FEEDEF;
     border-color: #F74D63;
 
-    .alert-block-icon {
+    .alert-block-background {
       color: #f74d63;
     }
 
     .alert-block-title, h4 {
       color: #f74d63;
+    }
+  }
+
+  //Styles for elements inside .alert-block
+  .icon-category{
+    color:#ff9d52;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-bottom: -6px;
+    margin-right: 8px;
+  }
+
+  a {
+    color: #7C8498;
+    &:hover {
+      color: #282D38;
+    }
+  }
+
+  h4 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin: 0 0 20px 0;
+  }
+
+  ul {
+    li {
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    &.list-no-padding {
+      padding-left: 0;
     }
   }
 }

@@ -21,9 +21,9 @@ class AlertBlock extends React.Component {
 
   renderIcon() {
     if (this.props.type === 'warning') {
-      return <IconWarning className="alert-block-icon" />
+      return <IconWarning className="alert-block-background" />
     }
-    return <IconDanger className="alert-block-icon" />
+    return <IconDanger className="alert-block-background" />
   }
 }
 
