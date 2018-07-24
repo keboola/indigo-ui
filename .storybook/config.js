@@ -21,6 +21,7 @@ function loadStories() {
   require('../src/stories/AlertBlock');
   require('../src/stories/Icons');
   require('../src/stories/Splash');
+  require('../src/stories/Popover');
 }
 
 setOptions({
