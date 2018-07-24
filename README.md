@@ -24,6 +24,15 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 
 Check [KBC.md](KBC.md)
 
+## Local Development (KBC <-> Indigo)
+
+1. Checkout desired branch in KBC
+2. Checkout branch with dependant styles to KBC branch
+3. run `yarn link` in Indigo root
+4. run `yarn storybook '@keboola/indigo-ui'` in kbc-ui root
+5. run `yarn start` in kbc-ui
+6. run `yarn build-lib` in Indigo (also run it after every change of styles in Indigo)
+
 ## Deployment
 
 First, check the content of `.travis.yml` file and documentation about
