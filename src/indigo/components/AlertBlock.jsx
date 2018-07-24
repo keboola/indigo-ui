@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Alert } from 'react-bootstrap';
-
-import IconWarning from './icons/Warning';
-import IconDanger from './icons/Danger';
+import { Icon } from '../../indigo/components';
 
 class AlertBlock extends React.Component {
   render() {
@@ -21,9 +19,9 @@ class AlertBlock extends React.Component {
 
   renderIcon() {
     if (this.props.type === 'warning') {
-      return <IconWarning className="alert-block-icon" />
+      return <Icon.Warning className="alert-block-background-icon" />
     }
-    return <IconDanger className="alert-block-icon" />
+    return <Icon.Danger className="alert-block-background-icon" />
   }
 }
 

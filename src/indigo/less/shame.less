@@ -2,43 +2,6 @@
   padding: 15px;
 }
 
-//IKONY PRO AlertBlock
-//Casem vznikne keboola icon font, takze toto muzeme vyhodit
-
-.kbc-extractor-icon,
-.kbc-writer-icon,
-.kbc-transformation-icon {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  margin-bottom: -6px;
-  margin-right: 8px;
-}
-
-.kbc-extractor-icon {
-  background-image: url('../img/extractor.svg');
-  background-position: 0 -1px;
-  background-repeat: no-repeat;
-}
-
-.kbc-writer-icon {
-  background-image: url('../img/writer.svg');
-  background-repeat: no-repeat;
-}
-
-.kbc-transformation-icon {
-  background-image: url('../img/transformation.svg');
-  background-repeat: no-repeat;
-}
-
-// because kbc-header is not enough
-.kbc-inner-padding {
-  padding: 22px 22px 15px;
-  &-with-bottom-border {
-    border-bottom: 1px solid @table-border-color;
-  }
-}
-
 //for ex-fb, needs to be solved systematically when refactoring
 // .kbc-buttons class
 // all .kbc-buttons can be inline-block later, buts need to abjust layout eg - buttons in header
@@ -254,6 +217,22 @@ a .kbcComponentIcon-3rdParty-64px {
       width: 18px;
     }
   }
+}
+
+
+
+.dropdown .dropdown-menu {
+    transition: max-height 0.6s , opacity 0.3s ;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 2000px;
+    opacity: 1;
 }
 
 .kbc-row-orchestration-detail {
