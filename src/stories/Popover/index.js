@@ -4,7 +4,7 @@ import {Popover} from 'react-bootstrap';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
 
-storiesOf('Popover', module)
+storiesOf('[CSS] Popover', module)
   .add(
     'Popover - basic init',
     withInfo({
