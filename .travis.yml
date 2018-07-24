@@ -34,7 +34,7 @@ jobs:
         - provider: npm
           email: ujovlado+npm@rekurzia.sk
           api_key:
-            secure: R31snMEOWrfbuJb0sn6Q+XbaFF7sEDZ0CO8mvHx9zZg9YvcBug7DgL61KzTg1n99IuRZAKhAzAjbAoqoinLmyhooRsj6PP4bqdJRLlDn7xvz7DyJL3UoLYw3vS+XspSWpbeQyUvKAaDpVwQEIKFnwZyuQnd7Cr/HANsoKLzinq6+xUrxLazCTXxz3lKHbh+/8770nWtRCczxPhO8nh+09022qSehvqdEBkMwmWccohvToXJv5cQFL1Fvo1Ox9Wj/KHARDLsy3bDSa4mRBXyEV1QskLMr8naiQ61EOFOysytvChQvd8X+AkcLf7lpAfYpZ+E1eEigA/x+OIoYRLPn/+vbvSqXcZPExe9vEXahZ7cEiVoqle8bghCJItppavgJ0O0R0sEWBGBGjTNfvm2gzXJ5aDPVuA1gNh5QyNDAQf8Wjxqe1mZOgAWoyYETeQPuWMvaakhKDkvQvkBsKsoiNLWAGI6Eqv1/IEnuwLQ30FRGnUaSrNHRqAmwBc0MKbZIR4czG4Qq+X/3f7c49YcbDks8gEEhh579GYblAV7mQVU40umJzjvuy1km2VmvHhDKJSXoBoNQauTrh/VZXNpxzqH54mr0Bp4nzil/Jkl29WNa1fCa30R4w4RtxkneS5qLLy8AXEdsDLFo4inKU5bC21b9U/xs6syhjlrBbQD4xh0=
+            secure: "Nni4pkTB5XMpRo4/l4HKXCtQjDbWD3rbpEOg/VPr38bIIebrhLzrooHjvIkWBvM/MeHw18g7F6EOsAgp3/qralDgAFYIKeL76pk2k5nbR0pthWLFNgEKwusbV2P8kbmjwcH1PTVzlfiiX3ZDmyDrEo8vfXmVEMvwmt3oUA7Xf/jl9D3zwU4m4aH1RGAAYu0tWDYjPbLqRHCc7oD5LUPu2OLn4S54i41KUTGHjHTFIkbxi4w85sZ1tWAKbaxe9kEVyPXuZ44W2twXELNLkSuB/TF6qtC9Vt9EHNSQjaVMapNnBYrhAsQ0fN5R2SrfGe60oAOubuCE3pIBnDn/1fqGLLW9UPLe0aoibcHUUEHus/v2c2up8mDdSpqjCbfs6BzwaiN6KGDKDoBQt9cEyLrOFnB/D+SVzUmZUCquyAKwvuOGjJFtRAvIP07KpfiyClPMYaYMDWSq9uzp68zmK4Jc5YToMOhZIhQ53upk6A7IRV7WIPfyysWzlMIKPmIQTJrk3YT1Y4cFvh9rg+O5nNx4I7d0iHeSdOVA2ot3RjO8RE5k+AMWUTz3fXC5OczzDbU1tNpdB4IkQors056BJ8s5oyrlfVShjbftHwgqUP8oH+kNN+J//Nv7CcxbVn2d7MQ4SZPawByQ2Gbx0jv752c70ocnAqRCd6+pbgJ9q4RbJzo="
           skip_cleanup: true
           on:
             tags: true
