@@ -21,7 +21,8 @@ jobs:
     - stage: deploy storybook
       script:
         - >-
-          yarn build-storybook
+          yarn prepare-prod-resources
+          && yarn build-storybook
           && ./deploy-storybook.sh
       if: branch = master AND NOT tag IS present
 

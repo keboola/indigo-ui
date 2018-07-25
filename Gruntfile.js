@@ -81,5 +81,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('build-dev-css', ['exec:svg-react-transformer', 'copy:dev', 'less:development', 'stylelint']);
+  grunt.registerTask('prepare-prod-resources', ['copy:dev', 'less:development']);
 
 };

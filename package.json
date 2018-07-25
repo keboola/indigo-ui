@@ -54,6 +54,7 @@
     "run-storybook": "start-storybook -p 9009 -s public",
     "storybook": "npm-run-all -p watch-dev-css run-storybook",
     "build-dev-css": "grunt build-dev-css",
+    "prepare-prod-resources": "grunt prepare-prod-resources",
     "svg-sprite": "grunt svg_sprite:dev",
     "watch-dev-css": "npm run build-dev-css && grunt watch",
     "stylelint": "grunt stylelint",
