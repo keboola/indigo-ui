@@ -75,17 +75,17 @@ storiesOf('Splash', module)
       inline: false,
     })(() => {
       return (
-        <body className={"kbc-outer-page splash splash-" + randomNumber + " splash-background"}>
-        <div className="kbc-outer-container ">
-          <div className="kbc-outer-logo">
-            <a href="/admin/projects"><span className="kbc-icon-keboola-logo"></span></a>
+        <div className={"kbc-outer-page splash splash-" + randomNumber + " splash-background"}>
+          <div className="kbc-outer-container ">
+            <div className="kbc-outer-logo">
+              <a href="/admin/projects"><span className="kbc-icon-keboola-logo"></span></a>
+            </div>
+            <form className="kbc-outer-content well" method="post" action="">
+      
+            </form>
+            {descriptionContent}
           </div>
-          <form className="kbc-outer-content well" method="post" action="">
-          
-          </form>
-          {descriptionContent}
         </div>
-        </body>
       );
     })
   );
