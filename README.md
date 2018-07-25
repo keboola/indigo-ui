@@ -72,3 +72,11 @@ Run `yarn test`. It'll start tests in interactive mode.
 1. Create new component file in `src/indigo/components` (e.g. `Loader.jsx`).
 2. Add tests (if needed) and snapshots for new component (e.g. `Loader.test.js`).
 3. Add new component to main file `src/indigo/components/index.js` to enable its export.
+
+### How to check local build of `indigo-ui` in `kbc-ui`
+
+TL;DR Use `yarn add file:/path/to/local/folder`. [Read more](https://yarnpkg.com/lang/en/docs/cli/add/)
+
+- [indigo-ui] yarn build-lib
+- [indigo-ui] rm -rf node_modules
+- [kbc-ui] yarn add file:/path/to/indigo-ui
