@@ -77,6 +77,6 @@ Run `yarn test`. It'll start tests in interactive mode.
 
 TL;DR Use `yarn add file:/path/to/local/folder`. [Read more](https://yarnpkg.com/lang/en/docs/cli/add/)
 
-- [indigo-ui] yarn build-lib
-- [indigo-ui] rm -rf node_modules
-- [kbc-ui] yarn add file:/path/to/indigo-ui
+- [indigo-ui] `yarn build-lib`
+- [indigo-ui] `rm -rf node_modules`
+- [kbc-ui] `yarn add file:/path/to/indigo-ui`
