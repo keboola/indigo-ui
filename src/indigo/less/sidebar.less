@@ -19,51 +19,45 @@
         cursor: pointer;
         font-size: 16px;
         font-weight: 400;
+        width: 100%;
 
-        > button {
+        button {
             padding: 3px 2px 0;
             border: none;
             background: #22262f;
-            color: @link-color;
+            color: @link-color !important;
             width: 99.5%;
             text-align: left;
+            font-size: 16px;
+
+
 
             &:focus {
                 outline: none;
+                 background: #303541;
             }
 
             > span {
-                display: block;
+                    display: block;
                 border: solid 2px #22262f;
                 border-bottom: none;
                 padding: 16px 12px;
                 > .kbc-project-name {
                     display: block;
-                    width: 90%;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
-                > .kbc-icon-picker-double {
-                    float: right;
-                    position: relative;
-                    top: 3px;
-                    color: #7c8498;
-                }
+
+            }
+            > .icon {
+                position: relative;
+                top: 20px;
+                right: 20px;
             }
         }
 
-        &.open {
-            border-bottom: none;
-
-            > button {
-                background: none;
-
-                > span {
-                    background: #303541;
-                }
-            }
-            > .dropdown-menu {
+        .dropdown-menu {
                 background: #303541;
                 border: solid 2px #20232b;
                 border-top-width: 1px;
@@ -74,24 +68,25 @@
                 width: 98%;
 
 
-                ul {
 
-                    > .kbc-search {
+
+                     .kbc-search {
                         color: #7f8188;
 
-                        > .kbc-icon-search {
+                         .kbc-icon-search {
                             top: 10px;
                         }
 
-                        > input {
+                        input {
                             background: #292d38;
                             color: #FFFFFF;
                             border-color: #252933;
                             box-shadow: @box-shadow-dark;
+                            margin-bottom: 12px;
                         }
                     }
 
-                    > li {
+                    li {
 
                         &.dropdown-header {
                             padding: 3px 0;
@@ -103,7 +98,7 @@
                             }
                         }
 
-                        > a, span.disabled {
+                         a, span.disabled {
                             display: block;
                             text-decoration: none;
                             padding: 5px 10px;
@@ -126,7 +121,7 @@
                             }
                         }
                     }
-                }
+
 
                 > .kbc-project-select-results {
                     max-height: 60vh;
@@ -144,8 +139,22 @@
                     }
                 }
             }
-        }
 
+        &.open {
+
+            button {
+                background: none;
+
+                &:hover, &:focus {
+                    background: none;
+
+                }
+
+                > span {
+                    background: #303541;
+                }
+            }
+        }
     }
 }
 
