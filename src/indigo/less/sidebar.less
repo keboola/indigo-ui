@@ -34,7 +34,7 @@
 
             &:focus {
                 outline: none;
-                 background: #303541;
+                 background: #22262F;
             }
 
             > span {
@@ -50,11 +50,14 @@
                 }
 
             }
-            > .icon {
-                position: relative;
-                top: 20px;
-                right: 20px;
+          > .icon {
+            position: relative;
+            top: 20px;
+            right: 20px;
+            @media all and (max-height: 750px) {
+              top: 12px;
             }
+          }
         }
 
         .dropdown-menu {
