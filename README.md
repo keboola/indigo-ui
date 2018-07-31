@@ -80,3 +80,17 @@ TL;DR Use `yarn add file:/path/to/local/folder`. [Read more](https://yarnpkg.com
 - [indigo-ui] `yarn build-lib`
 - [indigo-ui] `rm -rf node_modules`
 - [kbc-ui] `yarn add file:/path/to/indigo-ui`
+
+### How to check react-bootstrap documentation at specific version
+
+If published version does not match installed version.
+
+```console
+git clone git@github.com:react-bootstrap/react-bootstrap.git
+cd react-bootstrap
+git fetch --all
+git checkout v0.31.5 # use version you need
+
+npm run docs
+```
+Open browser at `localhost:4000`
