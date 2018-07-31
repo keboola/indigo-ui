@@ -103,6 +103,10 @@ svg.kb-graph {
   display: inline;
 }
 
+#canvasDownload {
+  display: none;
+}
+
 .kbc-protected {
   cursor: pointer;
 }
@@ -152,6 +156,11 @@ svg.kb-graph {
 .help-block.bottom-margin {
   margin-bottom: 15px;
 }
+
+.kbcLicenseTable td {
+  padding-bottom: 5px;
+}
+
 
 //ANALYZA: hehe, tady je v KBC typo
 // https://github.com/keboola/kbc-ui/blob/5b00f90dd7f340ee393b84912a4e5d6101b9c931/src/scripts/modules/orchestrations/react/pages/orchestration-tasks/TasksEditTableRow.coffee#L31
@@ -390,6 +399,23 @@ small.empty-label {
 
 .kbc-sidebar-jobs .jobs-link a {
   color: #7e8490;
+}
+
+
+//moved components\configuration.less
+// zobrazuje se napr v ex-adform
+// classname .edit je nicnerikajici
+// ANALYZA: tohle lze vyhodit
+.edit.kbc-configuration-editor {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+// ANALYZA: mozna lze vyhodit
+// ANALYZA: este prozkoumat .kbc-buttons
+.edit.kbc-configuration-editor .kbc-buttons {
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 // ANALYZA: zdokumentovat react-select komponentu + tuto variaci, zkusit snake case, lepsi selector
@@ -715,6 +741,13 @@ small.empty-label {
 .SearchSuggestMatch--selected .SearchSuggestMatch-content,
 .SearchSuggestMatch--selected .SearchSuggestMatch-extra {
   color: #fff;
+}
+
+//ANALYZA: zkusit vyhodit nebo predelat na grid
+//moved from  VendorInfo.less
+// seen at: 3rd party component detail
+.kbcVendorInfo {
+  margin-bottom: 15px;
 }
 
 //ANALYZA: souvisi s config rows
