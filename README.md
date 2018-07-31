@@ -20,6 +20,14 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 2. Run container: `docker-compose run --rm --service-ports node`
 3. Continue from step 3. (including) in section above (`yarn`, `yarn storybook`, ...)
 
+### Available commands
+
+- `yarn storybook`: Start Storybook server
+- `yarn test`: Run tests
+- `yarn build-lib`: Build package prepared for publishing to npmjs registry
+- `yarn build-storybook`: Prepare Storybook for deployment
+- `yarn stylelint`: Check less files for errors
+
 ### Simultaneously with Keboola Connection (Docker only)
 
 Check [KBC.md](KBC.md)
