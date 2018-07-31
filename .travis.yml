@@ -13,8 +13,7 @@ jobs:
     - stage: test
       script:
         - >-
-          yarn stylelint
-          && yarn test
+          yarn test
           && yarn build-dev-css
           && yarn build-storybook
 
