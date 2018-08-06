@@ -182,6 +182,7 @@
     }
 }
 
+
 .kbc-projects-list {
     > .kbc-outer-container {
         > .kbc-outer-logo {
@@ -281,6 +282,43 @@
         }
     }
 }
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.kbc-projects-list {
+    > .kbc-outer-container.indigo-temp  {
+        > .kbc-outer-content {
+                .kbc-project-select-results {
+                    margin-top: 20px;
+                    padding-top: 0;
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-header {
+
+        > a, span.disabled {
+            font-size: 12px!important;
+        }
+    }
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.kbc-projects-list {
+    /* stylelint-disable-next-line no-duplicate-selectors */
+    > .kbc-outer-container.indigo-temp {
+        /* stylelint-disable-next-line no-duplicate-selectors */
+        > .kbc-outer-content {
+            .kbc-project-select-new {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
 
 .splash {
     &-1 {
