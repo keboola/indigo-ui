@@ -23,6 +23,278 @@
       font-weight: 400;
       width: 100%;
 
+      .dropdown-toggle {
+        padding: 3px 2px 0;
+        border: none;
+        background: #22262f;
+        color: @link-color !important;
+        width: 100%;
+        text-align: left;
+        font-size: 16px;
+
+        &:focus {
+          outline: none;
+          background: #22262F;
+        }
+
+        > .kbc-project-name {
+          display: block;
+          border: solid 2px #22262f;
+          border-bottom: none;
+          padding: 16px 32px 16px 12px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100%;
+        }
+        > .icon {
+          position: absolute;
+          top: 24px;
+          right: 20px;
+          @media all and (max-height: 750px) {
+            top: 18px;
+            right: 16px;
+          }
+        }
+      }
+
+      .dropdown-menu {
+        background: #303541;
+        border: solid 2px #20232b;
+        border-top-width: 1px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin: 0 .15vw;
+        padding: 6px;
+        width: 98%;
+
+
+
+        .kbc-search {
+          color: #7f8188;
+
+          .kbc-icon-search {
+            top: 10px;
+          }
+
+          input {
+            background: #292d38;
+            color: #FFFFFF;
+            border-color: #252933;
+            box-shadow: @box-shadow-dark;
+            margin-bottom: 12px;
+          }
+        }
+
+        li {
+
+          &.dropdown-header {
+            padding: 3px 0;
+
+            > a, span.disabled {
+              padding: 5px 10px;
+              color: #a7bac2;
+              font-size: 12px;
+              font-style: normal;
+            }
+          }
+
+          a, span.disabled {
+            padding: 5px 10px 5px 18px;
+            display: block;
+            text-decoration: none;
+            font-weight: 300;
+            color: #fff;
+            font-size: 15px;
+
+            &:hover, &.active {
+              background-color: @link-color;
+              color: #fff;
+            }
+          }
+          span.disabled {
+            color: @kbc-grey-1;
+            font-style: italic;
+            &:hover, &.active {
+              cursor: not-allowed;
+              background-color: inherit;
+              color: @kbc-grey-1;
+            }
+          }
+        }
+
+        > .kbc-project-select-results {
+          max-height: 60vh;
+          overflow-y: scroll;
+        }
+
+        .kbc-project-select-new {
+          margin: 0 -8px;
+          padding: 10px 8px 0;
+          border-top: solid 1px #20232b;
+
+          span.fa {
+            font-size: 130%;
+            color: #96d130;
+          }
+           a {
+             padding: 5px 10px;
+           }
+        }
+      }
+
+      &.open {
+
+        button {
+          background: none;
+
+          &:hover, &:focus {
+            background: none;
+
+          }
+
+                > span {
+                    background: #303541;
+                }
+            }
+        }
+    }
+  }
+
+
+/* Sidebar navigation */
+.kbc-nav-sidebar {
+    font-size: 14px;
+
+     li {
+        margin: 8px 0;
+
+        > a {
+            padding: 3px 14px;
+            border-left: solid 2px #282d38;
+            line-height: 34px;
+        }
+
+        @media all and (max-height: 750px) {
+            > a {
+                padding: 0 14px;
+            }
+
+            [class^="kbc-icon-"] {
+                font-size: 26px;
+            }
+        }
+    }
+    a, a:hover, a:focus {
+        color: #fff;
+    }
+    > li.active > a,
+    > li > a:hover,
+    > li > a:focus {
+        border-left: solid 2px @link-color;
+        color: @link-color;
+        background: none;
+    }
+    > .active {
+        > a, a:hover, a:focus {
+            background: none;
+        }
+    }
+
+    [class^="kbc-icon-"] {
+        font-size: 30px;
+        margin-right: 12px;
+        position: relative;
+        top: 7px;
+    }
+}
+
+.kbc-sidebar-footer {
+    background: #282d38;
+    color: #89959f;
+    font-size: .8em;
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+
+    > div {
+        border-top: solid 1px #373b46;
+        padding: 10px 12px 20px 12px;
+    }
+}
+
+@media all and (max-height: 645px) {
+  .kbc-sidebar-footer {
+      position: relative;
+      width: 100%;
+  }
+}
+
+@media all and (max-height: 750px) {
+
+    .kbc-user img {
+        display: none;
+    }
+
+    .kbc-sidebar .kbc-project-select > .dropdown-toggle > .kbc-project-name {
+      padding: 10px 36px 10px 12px;
+    }
+
+}
+
+.kbc-user-links {
+    font-size: 13px;
+
+    > .nav > li > a {
+        padding: 0 0 3px;
+        color: #89959f;
+
+        &:hover {
+            background: none;
+            color: @link-color;
+        }
+
+        span.fa {
+            font-size: 15px;
+            width: 18px;
+        }
+    }
+}
+
+.kbc-powered-by {
+    font-size: 11px;
+}
+
+
+
+
+
+//TEMP STYLES
+/*
+ * Sidebar
+ */
+
+.kbc-sidebar {
+    background: #282d38;
+    color: #fff;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+
+    .kbc-project-select {
+      border-bottom: solid 1px #373b46;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
+
       button {
         padding: 3px 2px 0;
         border: none;
