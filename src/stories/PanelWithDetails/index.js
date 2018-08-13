@@ -3,6 +3,82 @@ import { storiesOf } from '@storybook/react';
 import PanelWithDetails from '../../indigo/components/PanelWithDetails';
 import { withInfo } from '@storybook/addon-info';
 
+const demoContent = (
+  <div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut eos fugit, illo ipsam porro
+      rerum similique unde? Corporis eveniet iusto necessitatibus odit reprehenderit rerum sit? Inventore
+      ipsum totam ut?
+    </div>
+    <div>Alias amet assumenda consectetur consequuntur dicta doloremque eligendi error facere fugiat
+      magnam minus natus non, nostrum nulla obcaecati, officia omnis placeat provident quae quia quos
+      ratione repellat reprehenderit similique tempora.
+    </div>
+    <div>Autem consequatur culpa dicta dolores earum eius eveniet fuga modi necessitatibus officia,
+      possimus quas quasi quia, reprehenderit temporibus ullam unde? Cumque delectus dignissimos et nobis
+      nostrum quas quidem quo vero!
+    </div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut eos fugit, illo ipsam porro
+      rerum similique unde? Corporis eveniet iusto necessitatibus odit reprehenderit rerum sit? Inventore
+      ipsum totam ut?
+    </div>
+    <div>Alias amet assumenda consectetur consequuntur dicta doloremque eligendi error facere fugiat
+      magnam minus natus non, nostrum nulla obcaecati, officia omnis placeat provident quae quia quos
+      ratione repellat reprehenderit similique tempora.
+    </div>
+    <div>Autem consequatur culpa dicta dolores earum eius eveniet fuga modi necessitatibus officia,
+      possimus quas quasi quia, reprehenderit temporibus ullam unde? Cumque delectus dignissimos et nobis
+      nostrum quas quidem quo vero!
+    </div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut eos fugit, illo ipsam porro
+      rerum similique unde? Corporis eveniet iusto necessitatibus odit reprehenderit rerum sit? Inventore
+      ipsum totam ut?
+    </div>
+    <div>Alias amet assumenda consectetur consequuntur dicta doloremque eligendi error facere fugiat
+      magnam minus natus non, nostrum nulla obcaecati, officia omnis placeat provident quae quia quos
+      ratione repellat reprehenderit similique tempora.
+    </div>
+    <div>Autem consequatur culpa dicta dolores earum eius eveniet fuga modi necessitatibus officia,
+      possimus quas quasi quia, reprehenderit temporibus ullam unde? Cumque delectus dignissimos et nobis
+      nostrum quas quidem quo vero!
+    </div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut eos fugit, illo ipsam porro
+      rerum similique unde? Corporis eveniet iusto necessitatibus odit reprehenderit rerum sit? Inventore
+      ipsum totam ut?
+    </div>
+    <div>Alias amet assumenda consectetur consequuntur dicta doloremque eligendi error facere fugiat
+      magnam minus natus non, nostrum nulla obcaecati, officia omnis placeat provident quae quia quos
+      ratione repellat reprehenderit similique tempora.
+    </div>
+    <div>Autem consequatur culpa dicta dolores earum eius eveniet fuga modi necessitatibus officia,
+      possimus quas quasi quia, reprehenderit temporibus ullam unde? Cumque delectus dignissimos et nobis
+      nostrum quas quidem quo vero!
+    </div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut eos fugit, illo ipsam porro
+      rerum similique unde? Corporis eveniet iusto necessitatibus odit reprehenderit rerum sit? Inventore
+      ipsum totam ut?
+    </div>
+    <div>Alias amet assumenda consectetur consequuntur dicta doloremque eligendi error facere fugiat
+      magnam minus natus non, nostrum nulla obcaecati, officia omnis placeat provident quae quia quos
+      ratione repellat reprehenderit similique tempora.
+    </div>
+    <div>Autem consequatur culpa dicta dolores earum eius eveniet fuga modi necessitatibus officia,
+      possimus quas quasi quia, reprehenderit temporibus ullam unde? Cumque delectus dignissimos et nobis
+      nostrum quas quidem quo vero!
+    </div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut eos fugit, illo ipsam porro
+      rerum similique unde? Corporis eveniet iusto necessitatibus odit reprehenderit rerum sit? Inventore
+      ipsum totam ut?
+    </div>
+    <div>Alias amet assumenda consectetur consequuntur dicta doloremque eligendi error facere fugiat
+      magnam minus natus non, nostrum nulla obcaecati, officia omnis placeat provident quae quia quos
+      ratione repellat reprehenderit similique tempora.
+    </div>
+    <div>Autem consequatur culpa dicta dolores earum eius eveniet fuga modi necessitatibus officia,
+      possimus quas quasi quia, reprehenderit temporibus ullam unde? Cumque delectus dignissimos et nobis
+      nostrum quas quidem quo vero!
+    </div>
+  </div>
+)
 
 storiesOf('PanelWithDetails', module)
     .add(
@@ -101,6 +177,42 @@ storiesOf('PanelWithDetails', module)
             </ul>
           </PanelWithDetails>
         </div>
+      )
+    })
+  )
+  .add(
+    'Content preview',
+    withInfo({
+      text: `
+        Reveal preview of the content based on height (300px)
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <PanelWithDetails
+          placement="bottom"
+          preview="normal"
+        >
+          {demoContent}
+        </PanelWithDetails>
+      )
+    })
+  )
+  .add(
+    'Content preview small',
+    withInfo({
+      text: `
+        Reveal small preview of the content based on height (150px)
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <PanelWithDetails
+          placement="bottom"
+          preview="small"
+        >
+          {demoContent}
+        </PanelWithDetails>
       )
     })
   );
