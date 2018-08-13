@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import {Panel} from 'react-bootstrap';
 
 class PanelWithDetails extends React.Component {
@@ -9,7 +10,7 @@ class PanelWithDetails extends React.Component {
       panelHeaderTitle: props.defaultExpanded ? props.labelCollapse : props.labelOpen
     };
   }
-
+  
   render() {
     return (
       <Panel
@@ -17,7 +18,13 @@ class PanelWithDetails extends React.Component {
         onExit={() => this.setState({panelHeaderTitle: this.props.labelOpen})}
         header={this.state.panelHeaderTitle}
         defaultExpanded={this.props.defaultExpanded}
-        className={'panel-show-details panel-show-details-' + this.props.placement }
+        className={classNames(
+          'panel-show-details',
+          [`panel-show-details-${this.props.placement}`],
+          {'panel-preview': this.props.preview},
+          {[`panel-preview-${this.props.preview}`]: this.props.preview}
+          )
+        }
         collapsible={true}
       >
         {this.props.children}
@@ -31,14 +38,16 @@ PanelWithDetails.propTypes = {
   labelCollapse: PropTypes.string,
   labelOpen: PropTypes.string,
   children: PropTypes.any.isRequired,
-  placement: PropTypes.oneOf(['top', 'bottom'])
+  placement: PropTypes.oneOf(['top', 'bottom']),
+  preview: PropTypes.string
 };
 
 PanelWithDetails.defaultProps = {
   defaultExpanded: false,
   labelCollapse: 'Hide details',
   labelOpen: 'Show details',
-  placement: 'top'
+  placement: 'top',
+  preview: null
 };
 
 export default PanelWithDetails;
