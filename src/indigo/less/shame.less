@@ -284,6 +284,32 @@ small.empty-label {
   }
 }
 
+.kbc-readmore-normal {
+  max-height: 300px;
+}
+
+.kbc-readmore-small {
+  max-height: 150px;
+}
+
+.kbc-readmore .kbc-readmore-fadeout {
+  height: 50px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to bottom, transparent, white);
+}
+
+.kbc-readmore-button {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
 //ANALYZA: nahradit svg ikonkama
 // moved from VersionIcon.less
 .kbc-version-icon {
