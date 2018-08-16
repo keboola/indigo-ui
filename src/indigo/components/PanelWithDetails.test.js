@@ -29,9 +29,17 @@ describe('<PanelWithDetails />', () => {
     );
   });
 
-  it('Bottom controls', () => {
+  it('PanelWithDetails - bottom controls', () => {
     snapshot(
       <PanelWithDetails placement="bottom">
+        content
+      </PanelWithDetails>
+    );
+  });
+
+  it('PanelWithDetails - small preview', () => {
+    snapshot(
+      <PanelWithDetails preview="small">
         content
       </PanelWithDetails>
     );
