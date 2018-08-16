@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PanelWithDetails /> Bottom controls 1`] = `
+exports[`<PanelWithDetails /> PanelWithDetails - bottom controls 1`] = `
 <div
   className="panel-show-details panel-show-details-bottom panel panel-default"
   id={null}

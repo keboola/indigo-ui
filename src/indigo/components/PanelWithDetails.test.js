@@ -29,7 +29,7 @@ describe('<PanelWithDetails />', () => {
     );
   });
 
-  it('Bottom controls', () => {
+  it('PanelWithDetails - bottom controls', () => {
     snapshot(
       <PanelWithDetails placement="bottom">
         content
