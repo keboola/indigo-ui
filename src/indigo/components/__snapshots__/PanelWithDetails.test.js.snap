@@ -163,3 +163,44 @@ exports[`<PanelWithDetails /> PanelWithDetails - default expanded 1`] = `
   </div>
 </div>
 `;
+
+exports[`<PanelWithDetails /> PanelWithDetails - small preview 1`] = `
+<div
+  className="panel-show-details panel-show-details-top panel-preview panel-preview-small panel panel-default"
+  id={null}
+>
+  <div
+    className="panel-heading"
+  >
+    <h4
+      className="panel-title"
+      role="presentation"
+    >
+      <a
+        aria-controls={undefined}
+        aria-expanded={false}
+        aria-selected={false}
+        className="collapsed"
+        href={undefined}
+        onClick={[Function]}
+        role={undefined}
+      >
+        Show details
+      </a>
+    </h4>
+  </div>
+  <div
+    aria-expanded={null}
+    aria-hidden={true}
+    className="panel-collapse collapse"
+    id={undefined}
+    role={undefined}
+  >
+    <div
+      className="panel-body"
+    >
+      content
+    </div>
+  </div>
+</div>
+`;

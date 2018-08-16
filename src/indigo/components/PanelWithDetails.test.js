@@ -37,4 +37,12 @@ describe('<PanelWithDetails />', () => {
     );
   });
 
+  it('PanelWithDetails - small preview', () => {
+    snapshot(
+      <PanelWithDetails preview="small">
+        content
+      </PanelWithDetails>
+    );
+  });
+
 });
