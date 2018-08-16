@@ -22,7 +22,7 @@ class PanelWithDetails extends React.Component {
           'panel-show-details',
           [`panel-show-details-${this.props.placement}`],
           {'panel-preview': this.props.preview},
-          {[`panel-preview-${this.props.preview}`]: this.props.preview}
+          {[`panel-preview-${this.props.preview}`]: !!this.props.preview}
           )
         }
         collapsible={true}
@@ -39,15 +39,14 @@ PanelWithDetails.propTypes = {
   labelOpen: PropTypes.string,
   children: PropTypes.any.isRequired,
   placement: PropTypes.oneOf(['top', 'bottom']),
-  preview: PropTypes.string
+  preview: PropTypes.oneOf(['normal', 'small'])
 };
 
 PanelWithDetails.defaultProps = {
   defaultExpanded: false,
   labelCollapse: 'Hide details',
   labelOpen: 'Show details',
-  placement: 'top',
-  preview: null
+  placement: 'top'
 };
 
 export default PanelWithDetails;
