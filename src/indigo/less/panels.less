@@ -112,7 +112,7 @@
         position: absolute;
         bottom: 38px;
         left: 0;
-        background-image: linear-gradient(to bottom, transparent, white);
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 78%,rgba(255,255,255,1) 100%);
       }
       &.in {
         height: auto;
@@ -122,7 +122,7 @@
       }
       &.collapsing {
         &:before {
-          background-image: none; //animation fix
+          background: none; //animation fix
         }
       }
     }
