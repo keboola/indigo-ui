@@ -10,7 +10,7 @@ class PanelWithDetails extends React.Component {
       panelHeaderTitle: props.defaultExpanded ? props.labelCollapse : props.labelOpen
     };
   }
-  
+
   render() {
     return (
       <Panel
@@ -18,13 +18,12 @@ class PanelWithDetails extends React.Component {
         onExit={() => this.setState({panelHeaderTitle: this.props.labelOpen})}
         header={this.state.panelHeaderTitle}
         defaultExpanded={this.props.defaultExpanded}
-        className={classNames(
-          'panel-show-details',
-          [`panel-show-details-${this.props.placement}`],
-          {'panel-preview': this.props.preview},
-          {[`panel-preview-${this.props.preview}`]: !!this.props.preview}
-          )
-        }
+        className={classNames({
+          'panel-show-details': true,
+          [`panel-show-details-${this.props.placement}`]: true,
+          'panel-preview': !!this.props.preview,
+          [`panel-preview-${this.props.preview}`]: !!this.props.preview
+        })}
         collapsible={true}
       >
         {this.props.children}
