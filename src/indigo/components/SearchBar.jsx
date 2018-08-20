@@ -2,7 +2,6 @@ import React from 'react';
 import { ButtonToolbar, FormControl } from 'react-bootstrap';
 import { Icon } from '../../indigo/components';
 
-
 export default React.createClass({
 
   propTypes: {
