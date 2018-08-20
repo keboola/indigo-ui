@@ -1,5 +1,7 @@
 import React from 'react';
-import classNames from 'classnames';
+import { ButtonToolbar, FormControl } from 'react-bootstrap';
+import { Icon } from '../../indigo/components';
+
 
 export default React.createClass({
 
@@ -8,7 +10,8 @@ export default React.createClass({
     onChange: React.PropTypes.func,
     onSubmit: React.PropTypes.func,
     className: React.PropTypes.string,
-    placeholder: React.PropTypes.string
+    placeholder: React.PropTypes.string,
+    actions: React.PropTypes.object
   },
 
   getInitialState() {
@@ -39,17 +42,22 @@ export default React.createClass({
 
   render() {
     return (
-      <form className={classNames('kbc-search', this.props.className)} onSubmit={this.onSubmit}>
-        <span className="kbc-icon-search" />
-        <input
-          type="text"
+      <form className="searchbar" onSubmit={this.onSubmit}>
+        <Icon.Search className="searchbar-icon icon-size-20"/>
+        <FormControl
           value={this.state.query}
-          className="form-control"
           placeholder={this.props.placeholder}
-          ref="searchInput"
           onChange={this.onChange}
+          className="searchbar-input"
+          ref="searchInput"
+          type="text"
           autoFocus
         />
+        {!!this.props.actions &&
+        <ButtonToolbar className="searchbar-actions">
+          {this.props.actions}
+        </ButtonToolbar>
+        }
       </form>
     );
   }

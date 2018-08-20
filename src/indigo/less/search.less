@@ -1,3 +1,27 @@
+.searchbar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  position: relative;
+
+  &-input {
+    padding-left: 32px;
+    width: auto;
+    flex-grow: 999;
+  }
+
+  &-actions {
+    flex-grow: 1;
+    margin-left: 8px;
+  }
+
+  &-icon {
+    position: absolute;
+    left: 10px;
+    color: @kbc-grey-3;
+  }
+}
+
 .kbc-search-row {
     padding: 20px 30px !important;
 
