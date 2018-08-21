@@ -3,7 +3,7 @@ import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
 import {Button} from 'react-bootstrap';
 import {Icon} from '../../indigo/components';
-import { action } from '@storybook/addon-actions';
+import {action} from '@storybook/addon-actions';
 
 import SearchBar from '../../indigo/components/SearchBar';
 
@@ -23,7 +23,9 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar/>
+        <SearchBar
+          query=""
+        />
       );
     })
   )
@@ -36,7 +38,10 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar actions={demoContent}/>
+        <SearchBar
+          query=""
+          actions={demoContent}
+        />
       );
     })
   )
@@ -51,6 +56,7 @@ storiesOf('SearchBar', module)
     })(() => {
       return (
         <SearchBar
+          query=""
           placeholder="Search by component name, desription or id"
         />
       );
@@ -66,23 +72,9 @@ storiesOf('SearchBar', module)
     })(() => {
       return (
         <SearchBar
+          query=""
           onChange={action('changed content')}
           onSubmit={action('submitted')}
-        />
-      );
-    })
-  )
-  .add(
-    'Prefilled query',
-    withInfo({
-      text: `
-        Prefilled query
-        `,
-      inline: true,
-    })(() => {
-      return (
-        <SearchBar
-          query="Look ma` I am prefilled"
         />
       );
     })
