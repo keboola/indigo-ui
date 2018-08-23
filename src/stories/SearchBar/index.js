@@ -2,15 +2,14 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
 import {Button} from 'react-bootstrap';
-import {Icon} from '../../indigo/components';
 import {action} from '@storybook/addon-actions';
 
 import SearchBar from '../../indigo/components/SearchBar';
 
 
 const demoContent = (
-  <Button bsStyle="default">
-    <Icon.Help className={'icon-size-20'}/> Demo Button
+  <Button>
+    Demo Button
   </Button>
 )
 storiesOf('SearchBar', module)
@@ -23,9 +22,7 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar
-          query=""
-        />
+        <SearchBar/>
       );
     })
   )
@@ -38,10 +35,7 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar
-          query=""
-          actions={demoContent}
-        />
+        <SearchBar additionalActions={demoContent}/>
       );
     })
   )
@@ -55,10 +49,7 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar
-          query=""
-          placeholder="Search by component name, desription or id"
-        />
+        <SearchBar placeholder="Search by component name, desription or id"/>
       );
     })
   )
@@ -72,7 +63,6 @@ storiesOf('SearchBar', module)
     })(() => {
       return (
         <SearchBar
-          query=""
           onChange={action('changed content')}
           onSubmit={action('submitted')}
         />
