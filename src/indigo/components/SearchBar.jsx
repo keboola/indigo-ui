@@ -2,10 +2,10 @@ import React from 'react';
 import {ButtonToolbar, FormControl} from 'react-bootstrap';
 import Icon from './icons'
 import PropTypes from 'prop-types';
+import classNames from "classnames";
 
 
 class SearchBar extends React.Component {
-  
   constructor(props) {
     super(props);
     this.state = {query: this.props.query};
@@ -15,6 +15,7 @@ class SearchBar extends React.Component {
   
   changeQuery(event) {
     this.setState({query: event.target.value})
+    this.props.onChange(event.target.value)
   }
   
   submitQuery(event) {
@@ -24,20 +25,19 @@ class SearchBar extends React.Component {
   
   render() {
     return (
-      <form className="searchbar" onSubmit={(event) => this.submitQuery(event)}>
-        <Icon.Search className="searchbar-icon icon-size-20"/>
+      <form className={classNames("searchbar", this.props.className)} onSubmit={(event) => this.submitQuery(event)}>
         <FormControl
           value={this.state.query}
           placeholder={this.props.placeholder}
           onChange={(event) => this.changeQuery(event)}
           className="searchbar-input"
-          ref="searchInput"
           type="text"
           autoFocus
         />
-        {!!this.props.actions &&
+        <Icon.Search className="searchbar-icon icon-size-20"/>
+        {!!this.props.additionalActions &&
         <ButtonToolbar className="searchbar-actions">
-          {this.props.actions}
+          {this.props.additionalActions}
         </ButtonToolbar>
         }
       </form>
@@ -54,12 +54,12 @@ SearchBar.defaultProps = {
 
 
 SearchBar.propTypes = {
-  query: PropTypes.string.isRequired,
+  query: PropTypes.string,
   onChange: PropTypes.func,
   onSubmit: PropTypes.func,
   className: PropTypes.string,
   placeholder: PropTypes.string,
-  actions: PropTypes.object
+  additionalActions: PropTypes.object
 };
 
 export default SearchBar;
