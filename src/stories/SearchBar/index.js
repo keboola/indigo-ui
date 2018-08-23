@@ -8,9 +8,14 @@ import SearchBar from '../../indigo/components/SearchBar';
 
 
 const demoContent = (
-  <Button>
-    Demo Button
-  </Button>
+  <div className="searchbar-actions">
+    <Button>
+      Demo Button
+    </Button>
+    <Button bsStyle="primary">
+      Demo Button
+    </Button>
+  </div>
 )
 storiesOf('SearchBar', module)
   .add(
@@ -30,7 +35,7 @@ storiesOf('SearchBar', module)
     'Searchbar with actions',
     withInfo({
       text: `
-        usage: config rows, config detail
+        additional actions element needs to be wrapped in <div className="searchbar-actions">
         `,
       inline: true,
     })(() => {

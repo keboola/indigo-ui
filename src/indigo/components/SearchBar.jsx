@@ -36,9 +36,7 @@ class SearchBar extends React.Component {
         />
         <Icon.Search className="searchbar-icon icon-size-20"/>
         {!!this.props.additionalActions &&
-        <ButtonToolbar className="searchbar-actions">
-          {this.props.additionalActions}
-        </ButtonToolbar>
+          this.props.additionalActions
         }
       </form>
     );
