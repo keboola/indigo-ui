@@ -76,7 +76,7 @@ storiesOf('SearchBar', module)
     })
   )
   .add(
-    'Select project',
+    'Dark theme',
     withInfo({
       text: `
         to be done
@@ -84,12 +84,7 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <ul className="list-unstyled">
-          <li className="dropdown-header kb-nav-search kbc-search">
-            <span className="kbc-icon-search"></span>
-            <input className="form-control" placeholder="Search your projects" value=""/>
-          </li>
-        </ul>
+        <SearchBar className="searchbar-inverse"/>
       );
     })
   );
