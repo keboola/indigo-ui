@@ -9,8 +9,14 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {query: this.props.query};
+    this.keyDown = this.keyDown.bind(this)
     this.changeQuery = this.changeQuery.bind(this)
     this.submitQuery = this.submitQuery.bind(this)
+  }
+  
+  keyDown(event) {
+    this.setState({keyDown: event.key})
+    this.props.onKeyDown(event.key)
   }
   
   changeQuery(event) {
@@ -29,7 +35,9 @@ class SearchBar extends React.Component {
         <FormControl
           value={this.state.query}
           placeholder={this.props.placeholder}
+          ref={this.props.ref}
           onChange={(event) => this.changeQuery(event)}
+          onKeyDown={(event) => this.keyDown(event)}
           className="searchbar-input"
           type="text"
           autoFocus
@@ -44,6 +52,8 @@ class SearchBar extends React.Component {
 }
 
 SearchBar.defaultProps = {
+  onKeyDown: () => {
+  },
   onChange: () => {
   },
   onSubmit: (query) => query,
@@ -52,8 +62,10 @@ SearchBar.defaultProps = {
 
 
 SearchBar.propTypes = {
+  ref: PropTypes.string,
   query: PropTypes.string,
   onChange: PropTypes.func,
+  onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
   className: PropTypes.string,
   placeholder: PropTypes.string,
