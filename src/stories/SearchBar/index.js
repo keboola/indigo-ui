@@ -21,9 +21,6 @@ storiesOf('SearchBar', module)
   .add(
     'Basic usage',
     withInfo({
-      text: `
-        usage: ex, tr, wr, orch, versions
-        `,
       inline: true,
     })(() => {
       return (
@@ -48,9 +45,6 @@ storiesOf('SearchBar', module)
   .add(
     'Custom placeholder',
     withInfo({
-      text: `
-        usage: ex, tr, wr, orch, versions
-        `,
       inline: true,
     })(() => {
       return (
@@ -79,7 +73,7 @@ storiesOf('SearchBar', module)
     'Dark theme',
     withInfo({
       text: `
-        to be done
+        inverse theme for sidebar
         `,
       inline: true,
     })(() => {
