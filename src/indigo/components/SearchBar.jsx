@@ -56,7 +56,8 @@ SearchBar.defaultProps = {
   },
   onChange: () => {
   },
-  onSubmit: (query) => query,
+  onSubmit: () => {
+  },
   placeholder: 'Search'
 };
 
