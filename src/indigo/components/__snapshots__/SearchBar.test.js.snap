@@ -13,7 +13,7 @@ exports[`<SearchBar /> SearchBar - inverse theme 1`] = `
     onKeyDown={[Function]}
     placeholder="Search"
     type="text"
-    value={undefined}
+    value=""
   />
   <svg
     className="icon searchbar-icon icon-size-20"
@@ -43,7 +43,7 @@ exports[`<SearchBar /> SearchBar 1`] = `
     onKeyDown={[Function]}
     placeholder="Search"
     type="text"
-    value={undefined}
+    value=""
   />
   <svg
     className="icon searchbar-icon icon-size-20"

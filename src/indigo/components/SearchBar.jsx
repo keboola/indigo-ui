@@ -7,7 +7,9 @@ import classNames from "classnames";
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {query: this.props.query};
+    this.state = {
+      query: this.props.query,
+    };
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -59,7 +61,8 @@ SearchBar.defaultProps = {
   onKeyDown: () => {},
   onChange: () => {},
   onSubmit: () => {},
-  placeholder: 'Search'
+  placeholder: 'Search',
+  query: '',
 };
 
 SearchBar.propTypes = {
