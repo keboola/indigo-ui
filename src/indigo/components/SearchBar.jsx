@@ -48,9 +48,11 @@ class SearchBar extends React.Component {
           autoFocus
         />
         <Icon.Search className="searchbar-icon icon-size-20" />
-        {!!this.props.additionalActions &&
-          this.props.additionalActions
-        }
+        {this.props.additionalActions && (
+          <div className="searchbar-actions">
+            {this.props.additionalActions}
+          </div>
+        )}
       </form>
     );
   }
@@ -72,7 +74,10 @@ SearchBar.propTypes = {
   onSubmit: PropTypes.func,
   className: PropTypes.string,
   placeholder: PropTypes.string,
-  additionalActions: PropTypes.object,
+  additionalActions: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.element,
+  ]),
   theme: PropTypes.oneOf(['inverse']),
 };
 
