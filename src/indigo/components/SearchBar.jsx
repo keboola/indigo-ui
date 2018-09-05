@@ -8,22 +8,22 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {query: this.props.query};
-    this.keyDown = this.keyDown.bind(this);
-    this.changeQuery = this.changeQuery.bind(this);
-    this.submitQuery = this.submitQuery.bind(this);
+    this.handleKeyDown = this.handleKeyDown.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   
-  keyDown(event) {
+  handleKeyDown(event) {
     this.setState({keyDown: event.key});
     this.props.onKeyDown(event.key);
   }
   
-  changeQuery(event) {
+  handleChange(event) {
     this.setState({query: event.target.value});
     this.props.onChange(event.target.value);
   }
   
-  submitQuery(event) {
+  handleSubmit(event) {
     event.preventDefault();
     this.props.onSubmit(this.state.query);
   }
@@ -32,14 +32,14 @@ class SearchBar extends React.Component {
     return (
       <form
         className={classNames("searchbar", this.props.className)}
-        onSubmit={(event) => this.submitQuery(event)}
+        onSubmit={this.handleSubmit}
       >
         <FormControl
           value={this.state.query}
           placeholder={this.props.placeholder}
           ref={this.props.ref}
-          onChange={(event) => this.changeQuery(event)}
-          onKeyDown={(event) => this.keyDown(event)}
+          onChange={this.handleChange}
+          onKeyDown={this.handleKeyDown}
           className="searchbar-input"
           type="text"
           autoFocus
