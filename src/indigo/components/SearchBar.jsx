@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonToolbar, FormControl} from 'react-bootstrap';
+import { FormControl } from 'react-bootstrap';
 import Icon from './icons'
 import PropTypes from 'prop-types';
 import classNames from "classnames";
