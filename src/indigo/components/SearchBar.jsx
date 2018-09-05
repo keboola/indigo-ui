@@ -16,7 +16,6 @@ class SearchBar extends React.Component {
   }
   
   handleKeyDown(event) {
-    this.setState({keyDown: event.key});
     this.props.onKeyDown(event.key);
   }
   
