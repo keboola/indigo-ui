@@ -9,4 +9,8 @@ describe('<SearchBar />', () => {
     snapshot(<SearchBar />);
   });
 
+  it('SearchBar - inverse theme', () => {
+    snapshot(<SearchBar theme="inverse" />);
+  });
+
 });

@@ -31,7 +31,9 @@ class SearchBar extends React.Component {
   render() {
     return (
       <form
-        className={classNames("searchbar", this.props.className)}
+        className={classNames("searchbar", {
+          [`searchbar-${this.props.theme}`]: !!this.props.theme,
+        }, this.props.className)}
         onSubmit={this.handleSubmit}
       >
         <FormControl
@@ -68,7 +70,8 @@ SearchBar.propTypes = {
   onSubmit: PropTypes.func,
   className: PropTypes.string,
   placeholder: PropTypes.string,
-  additionalActions: PropTypes.object
+  additionalActions: PropTypes.object,
+  theme: PropTypes.oneOf(['inverse']),
 };
 
 export default SearchBar;

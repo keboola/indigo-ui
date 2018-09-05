@@ -78,7 +78,7 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar className="searchbar-inverse"/>
+        <SearchBar theme="inverse"/>
       );
     })
   );
