@@ -30,8 +30,7 @@ storiesOf('SearchBar', module)
     'Searchbar with actions',
     withInfo({
       text: `
-        Single action element can be passed as object. <br>
-        Multiple additional action elements needs to be passed in array.
+        Single action element can be passed as object. Multiple additional action elements needs to be passed in array.
         `,
       inline: true,
     })(() => {
