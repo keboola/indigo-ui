@@ -40,7 +40,6 @@ class SearchBar extends React.Component {
         <FormControl
           value={this.state.query}
           placeholder={this.props.placeholder}
-          ref={this.props.ref}
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDown}
           className="searchbar-input"
@@ -67,7 +66,6 @@ SearchBar.defaultProps = {
 };
 
 SearchBar.propTypes = {
-  ref: PropTypes.string,
   query: PropTypes.string,
   onChange: PropTypes.func,
   onKeyDown: PropTypes.func,
