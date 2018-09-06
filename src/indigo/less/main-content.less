@@ -223,3 +223,17 @@
 .kbc-components-list > div:last-of-type > .table {
     border-bottom: 0
 }
+
+.container-bordered {
+    .row {
+        > div[class^="col-"] {
+            border-right: 1px solid #e8e8ef;
+            &:last-of-type {
+                border-right: none;
+            }
+        }
+        &:first-of-type > div[class^="col-"] {
+            padding-top: 15px
+        }
+    }
+}
