@@ -6,6 +6,15 @@ import {action} from '@storybook/addon-actions';
 
 import SearchBar from '../../indigo/components/SearchBar';
 
+const demoAdditionalActions = [
+  <Button key="button-default">
+    Demo Button
+  </Button>,
+  <Button bsStyle="primary" key="button-primary">
+    Demo Button
+  </Button>
+]
+
 storiesOf('SearchBar', module)
   .add(
     'Basic usage',
@@ -21,19 +30,13 @@ storiesOf('SearchBar', module)
     'Searchbar with actions',
     withInfo({
       text: `
-        additional actions element needs to be wrapped in <div className="searchbar-actions">
+        Single action element can be passed as object. <br>
+        Multiple additional action elements needs to be passed in array.
         `,
       inline: true,
     })(() => {
       return (
-        <SearchBar additionalActions={[
-          <Button key="button-default">
-            Demo Button
-          </Button>,
-          <Button bsStyle="primary" key="button-primary">
-            Demo Button
-          </Button>
-        ]} />
+        <SearchBar additionalActions={demoAdditionalActions} />
       );
     })
   )
