@@ -1,3 +1,51 @@
+.searchbar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  position: relative;
+
+  &-input {
+    padding-left: 34px!important; //temp solution override selector
+    font-size: 16px;
+    width: 100%;
+  }
+
+  &-actions {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    & > * {
+      margin-left: 8px;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    left: 10px;
+    color: @kbc-grey-3;
+  }
+
+  &-inverse {
+    .searchbar-icon {
+      color: #7f8188;
+    }
+
+    .searchbar-input {
+      background: #292d38;
+      color: #FFFFFF;
+      border-color: #252933;
+      font-size: 14px;
+      box-shadow: @box-shadow-dark;
+      padding-bottom: 12px;
+    }
+  }
+}
+
+
+//TEMP SOLUTION CAN BE DELTED
+// also line number 8 from this file
+// odstranit .kbc-trash-search z shame.less
+// odstranit .row-search  z shame.less
 .kbc-search-row {
     padding: 20px 30px !important;
 
