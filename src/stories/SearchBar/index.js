@@ -1,7 +1,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
-import {Button} from 'react-bootstrap';
+import {Button, FormControl} from 'react-bootstrap';
 import {action} from '@storybook/addon-actions';
 
 import SearchBar from '../../indigo/components/SearchBar';
@@ -13,7 +13,55 @@ const demoAdditionalActions = [
   <Button bsStyle="primary" key="button-primary">
     Demo Button
   </Button>
-]
+];
+
+class ExampleWithRef extends React.Component {
+  constructor(props) {
+    super(props);
+    this.fillSecondInput = this.fillSecondInput.bind(this);
+    this.setSecondValue = this.setSecondValue.bind(this);
+    this.state = {
+      secondValue: '',
+    };
+    this.searchInput = null;
+  }
+
+  fillSecondInput() {
+    action('submitted')();
+    if (this.searchInput) {
+      this.setSecondValue(this.searchInput.value);
+    }
+  }
+
+  setSecondValue(value) {
+    this.setState({
+      secondValue: value
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <SearchBar
+          onSubmit={this.fillSecondInput}
+          inputRef={(element) => {
+            this.searchInput = element;
+          }}
+        />
+        <div>
+          Submit input above (with Enter) and value will be propagated to input bellow.
+        </div>
+        <FormControl
+          type="text"
+          value={this.state.secondValue}
+          onChange={(event) => {
+            this.setSecondValue(event.target.value)
+          }}
+        />
+      </div>
+    );
+  }
+}
 
 storiesOf('SearchBar', module)
   .add(
@@ -64,6 +112,19 @@ storiesOf('SearchBar', module)
           onSubmit={action('submitted')}
           onKeyDown={action('keydown')}
         />
+      );
+    })
+  )
+  .add(
+    'Callback Refs',
+    withInfo({
+      text: `
+        Passing inputRef
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <ExampleWithRef />
       );
     })
   )
