@@ -45,6 +45,7 @@ class SearchBar extends React.Component {
           className="searchbar-input"
           type="text"
           autoFocus
+          inputRef={this.props.inputRef}
         />
         <Icon.Search className="searchbar-icon icon-size-20" />
         {this.props.additionalActions && (
@@ -70,6 +71,7 @@ SearchBar.propTypes = {
   onChange: PropTypes.func,
   onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
+  inputRef: PropTypes.func,
   className: PropTypes.string,
   placeholder: PropTypes.string,
   additionalActions: PropTypes.oneOfType([
