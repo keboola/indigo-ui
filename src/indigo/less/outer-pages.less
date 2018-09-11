@@ -204,9 +204,11 @@
         > .kbc-outer-content {
             text-align: left;
             padding: 30px 30px 10px;
-            //Temp selector. Should be isolated, not dependent on parent comonent
-            .dropdown-header{
-              padding: 0;
+            .kbc-search {
+                padding-top: 0;
+                > .kbc-icon-search {
+                    top: 10px;
+                }
             }
             .kbc-project-select-results {
                 margin: 0 -30px;
