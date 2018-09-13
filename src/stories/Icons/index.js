@@ -74,22 +74,46 @@ storiesOf('Icons', module)
     })(() => {
       return (
         <div>
-          <Icon.MappingOut className="icon-size-stack" />
-          <br />
-          <Icon.MappingIn className="icon-size-stack" />
-          <br />
-          <Icon.ExtractorTo className="icon-size-stack" />
-          <br />
-          <Icon.Transformation_2 className="icon-size-stack" />
-
-          <br />
-          <br />
-          <br />
-
-          <Icon.Keboola className="icon-size-20" />
-          <Icon.Keboola className="icon-size-32" />
-          <Icon.Keboola className="icon-size-48" />
-          <Icon.Keboola className="icon-size-64" />
+          <p>
+            <Icon.Keboola className="icon-size-12"/>
+            <Icon.Keboola className="icon-size-14"/>
+            <Icon.Keboola className="icon-size-16"/>
+            <Icon.Keboola className="icon-size-20"/>
+            <Icon.Keboola className="icon-size-32"/>
+            <Icon.Keboola className="icon-size-48"/>
+            <Icon.Keboola className="icon-size-64"/>
+            <Icon.Keboola className="icon-size-120"/>
+            <Icon.Keboola className="icon-size-180"/>
+            <Icon.Keboola className="icon-size-240"/>
+          </p>
+          <p>
+            <Icon.Search className="icon-size-12"/>
+            <Icon.Search className="icon-size-14"/>
+            <Icon.Search className="icon-size-16"/>
+            <Icon.Search className="icon-size-20"/>
+            <Icon.Search className="icon-size-32"/>
+            <Icon.Search className="icon-size-48"/>
+            <Icon.Search className="icon-size-64"/>
+            <Icon.Search className="icon-size-120"/>
+            <Icon.Search className="icon-size-180"/>
+            <Icon.Search className="icon-size-240"/>
+          </p>
+          <p>
+            <Icon.Search className="icon-size-block"/>
+          </p>
+          <p>
+            Lorem MIDDLE dolor <Icon.Search className="icon-size-14"/> sit amet, MIDDLE adipisicing <Icon.Keboola
+            className="icon-size-64"/> elit. MIDDLE libero magni modi quos, sapiente vitae MIDDLE voluptatibus? Aliquam
+            enim nostrum MIDDLE? A dolorum MIDDLE hic odit officia MIDDLE quidem sed.
+          </p>
+          <p>
+          </p>
+          <p>
+            Lorem BASE dolor <Icon.Search className="icon-size-14 icon-align-base"/> sit BASE, <Icon.Keboola
+            className="icon-size-24 icon-align-base"/> consectetur BASE <Icon.Keboola
+            className="icon-size-64 icon-align-base "/> elit. Dolorum libero BASE modi quos, sapiente vitae voluptate
+            BASE? Aliquam enim nostrum BASE? A dolorum earum hic odit BASE perferendis quidem sed.
+          </p>
         </div>
       );
     })
