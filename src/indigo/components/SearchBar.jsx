@@ -31,29 +31,30 @@ class SearchBar extends React.Component {
   
   render() {
     return (
-      <form
+      <div
         className={classNames("searchbar", {
           [`searchbar-${this.props.theme}`]: !!this.props.theme,
         }, this.props.className)}
-        onSubmit={this.handleSubmit}
       >
-        <FormControl
-          value={this.state.query}
-          placeholder={this.props.placeholder}
-          onChange={this.handleChange}
-          onKeyDown={this.handleKeyDown}
-          className="searchbar-input"
-          type="text"
-          autoFocus
-          inputRef={this.props.inputRef}
-        />
-        <Icon.Search className="searchbar-icon icon-size-20" />
+        <form onSubmit={this.handleSubmit}>
+          <FormControl
+            value={this.state.query}
+            placeholder={this.props.placeholder}
+            onChange={this.handleChange}
+            onKeyDown={this.handleKeyDown}
+            className="searchbar-input"
+            type="text"
+            autoFocus
+            inputRef={this.props.inputRef}
+          />
+          <Icon.Search className="searchbar-icon icon-size-20" />
+        </form>
         {this.props.additionalActions && (
           <div className="searchbar-actions">
             {this.props.additionalActions}
           </div>
         )}
-      </form>
+      </div>
     );
   }
 }
