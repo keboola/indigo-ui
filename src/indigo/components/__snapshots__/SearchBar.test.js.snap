@@ -5,6 +5,7 @@ exports[`<SearchBar /> SearchBar - inverse theme 1`] = `
   className="searchbar searchbar-inverse"
 >
   <form
+    className="searchbar-form"
     onSubmit={[Function]}
   >
     <input
@@ -38,6 +39,7 @@ exports[`<SearchBar /> SearchBar - with one additional button 1`] = `
   className="searchbar"
 >
   <form
+    className="searchbar-form"
     onSubmit={[Function]}
   >
     <input
@@ -80,6 +82,7 @@ exports[`<SearchBar /> SearchBar - with two additional buttons 1`] = `
   className="searchbar"
 >
   <form
+    className="searchbar-form"
     onSubmit={[Function]}
   >
     <input
@@ -127,6 +130,7 @@ exports[`<SearchBar /> SearchBar 1`] = `
   className="searchbar"
 >
   <form
+    className="searchbar-form"
     onSubmit={[Function]}
   >
     <input

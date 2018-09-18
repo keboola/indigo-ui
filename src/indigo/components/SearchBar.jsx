@@ -36,7 +36,7 @@ class SearchBar extends React.Component {
           [`searchbar-${this.props.theme}`]: !!this.props.theme,
         }, this.props.className)}
       >
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className="searchbar-form">
           <FormControl
             value={this.state.query}
             placeholder={this.props.placeholder}
