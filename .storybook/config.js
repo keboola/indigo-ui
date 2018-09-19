@@ -17,6 +17,7 @@ function loadStories() {
   require('../src/stories/Tree');
   require('../src/stories/Tabs');
   require('../src/stories/Popover');
+  require('../src/stories/InlineEditTextInput');
   require('../src/stories/RegionSelector');
   require('../src/stories/ModalConfiguration');
   require('../src/stories/BtnLinkInline');
@@ -31,7 +32,7 @@ function loadStories() {
 
 setOptions({
   name: 'Indigo UI',
-  url: 'https://github.com/keboola/indigo-ui',
+  url: 'https://github.com/keboola/indigo-ui'
 });
 
 setAddon(infoAddon);
