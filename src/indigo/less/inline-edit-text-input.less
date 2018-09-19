@@ -1,0 +1,77 @@
+.inline-edit-text-input {
+  display: inline;
+  position: relative;
+
+  &-form {
+    display: inline;
+  }
+
+  &-buttons {
+    position: absolute;
+    right: 10px;
+    top: -3px;
+
+    .fa-spin {
+      position: absolute;
+      top: 5px;
+      right: -35px;
+      background: #fff;
+    }
+  }
+
+  &-cancel {
+    padding: 0 5px 0 5px;
+    font-size: 120%;
+    color: #e1e1e9;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      color: darken(#e1e1e9, 20%);
+    }
+
+    .kbc-icon-cross {
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &-submit {
+    padding: 5px 10px;
+    font-size: 60%;
+    border-radius: 15px;
+    [class^="kbc-icon-"] {
+      font-size: 200%;
+    }
+  }
+
+  &-link {
+    padding: 6px 15px 9px;
+    border-radius: 1em;
+    background-color: inherit;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #e9faff;
+
+        .kbc-icon-pencil {
+            opacity: 1;
+        }
+    }
+
+    .kbc-icon-pencil {
+      margin-left: 10px;
+      opacity: 0.3;
+    }
+  }
+
+  .form-control {
+    display: inline-block;
+    width: auto;
+    padding: 15px 80px 15px 12px;
+    vertical-align: middle;
+  }
+}
