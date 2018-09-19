@@ -2,7 +2,7 @@
 
 exports[`<InlineEditTextInput /> InlineEditTextInput - default 1`] = `
 <span
-  className="kbc-inline-edit-link"
+  className="inline-edit-text-input-link"
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -22,9 +22,10 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - default 1`] = `
 
 exports[`<InlineEditTextInput /> InlineEditTextInput - disabled save button when text is not valid 1`] = `
 <div
-  className="form-inline kbc-inline-edit"
+  className="inline-edit-text-input"
 >
   <form
+    className="inline-edit-text-input-form"
     onSubmit={[Function]}
   >
     <input
@@ -37,10 +38,10 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - disabled save button when
       value={undefined}
     />
     <div
-      className="kbc-inline-edit-buttons"
+      className="inline-edit-text-input-buttons"
     >
       <button
-        className="kbc-inline-edit-cancel btn btn-link"
+        className="inline-edit-text-input-cancel btn btn-link"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -50,7 +51,7 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - disabled save button when
         />
       </button>
       <button
-        className="kbc-inline-edit-submit btn btn-info"
+        className="inline-edit-text-input-submit btn btn-info"
         disabled={true}
         type="submit"
       >
@@ -63,9 +64,10 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - disabled save button when
 
 exports[`<InlineEditTextInput /> InlineEditTextInput - edit mode 1`] = `
 <div
-  className="form-inline kbc-inline-edit"
+  className="inline-edit-text-input"
 >
   <form
+    className="inline-edit-text-input-form"
     onSubmit={[Function]}
   >
     <input
@@ -78,10 +80,10 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - edit mode 1`] = `
       value={undefined}
     />
     <div
-      className="kbc-inline-edit-buttons"
+      className="inline-edit-text-input-buttons"
     >
       <button
-        className="kbc-inline-edit-cancel btn btn-link"
+        className="inline-edit-text-input-cancel btn btn-link"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -91,7 +93,7 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - edit mode 1`] = `
         />
       </button>
       <button
-        className="kbc-inline-edit-submit btn btn-info"
+        className="inline-edit-text-input-submit btn btn-info"
         disabled={true}
         type="submit"
       >
@@ -104,7 +106,7 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - edit mode 1`] = `
 
 exports[`<InlineEditTextInput /> InlineEditTextInput - read mode 1`] = `
 <span
-  className="kbc-inline-edit-link"
+  className="inline-edit-text-input-link"
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -124,9 +126,10 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - read mode 1`] = `
 
 exports[`<InlineEditTextInput /> InlineEditTextInput - saving in edit mode 1`] = `
 <div
-  className="form-inline kbc-inline-edit"
+  className="inline-edit-text-input"
 >
   <form
+    className="inline-edit-text-input-form"
     onSubmit={[Function]}
   >
     <input
@@ -139,10 +142,10 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - saving in edit mode 1`] =
       value={undefined}
     />
     <div
-      className="kbc-inline-edit-buttons"
+      className="inline-edit-text-input-buttons"
     >
       <button
-        className="kbc-inline-edit-cancel btn btn-link"
+        className="inline-edit-text-input-cancel btn btn-link"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -152,7 +155,7 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - saving in edit mode 1`] =
         />
       </button>
       <button
-        className="kbc-inline-edit-submit btn btn-info"
+        className="inline-edit-text-input-submit btn btn-info"
         disabled={true}
         type="submit"
       >
