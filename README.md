@@ -28,6 +28,31 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 - `yarn build-storybook`: Prepare Storybook for deployment
 - `yarn stylelint`: Check less files for errors
 
+### Creating new component
+
+1. Create new component file in `src/indigo/components` (e.g. `Loader.jsx`).
+2. Add tests (if needed) and snapshots for new component (e.g. `Loader.test.js`).
+3. Add new component to main file `src/indigo/components/index.js` to enable its export.
+
+### Check local build of `indigo-ui` in `kbc-ui`
+
+Make sure you have package prepared `yarn build-lib`.
+
+#### Using `yarn link` (preferred)
+
+- [indigo-ui] `yarn link`
+- [kbc-ui] `yarn link "@keboola/indigo-ui"`
+
+[See `yarn link` docs](https://yarnpkg.com/en/docs/cli/link)
+
+Similar (but reversed) process applies for `yarn unlink`.
+
+#### Using `yarn add`
+
+- [kbc-ui] `yarn add file:/path/to/indigo-ui`
+
+[See `yarn add` docs](https://yarnpkg.com/lang/en/docs/cli/add/)
+
 ### Simultaneously with Keboola Connection (Advanced, Docker only)
 
 Check [KBC.md](KBC.md)
@@ -67,38 +92,13 @@ manually or create tag manually.**
 
 ## FAQ
 
-### How to check what will be published to npmjs registry before pushing new tag?
-
-Run `npm pack`. Check its manual [here](https://docs.npmjs.com/cli/pack).
-
 ### How to run tests?
 
 Run `yarn test`. It'll start tests in interactive mode.
 
-### How to create new component?
+### How to check what will be published to npmjs registry before pushing new tag?
 
-1. Create new component file in `src/indigo/components` (e.g. `Loader.jsx`).
-2. Add tests (if needed) and snapshots for new component (e.g. `Loader.test.js`).
-3. Add new component to main file `src/indigo/components/index.js` to enable its export.
-
-### How to check local build of `indigo-ui` in `kbc-ui`
-
-Make sure you have package prepared `yarn build-lib`.
-
-#### Using `yarn link` (preferred)
-
-- [indigo-ui] `yarn link`
-- [kbc-ui] `yarn link "@keboola/indigo-ui"`
-
-[See `yarn link` docs](https://yarnpkg.com/en/docs/cli/link)
-
-Similar (but reversed) process applies for `yarn unlink`.
-
-#### Using `yarn add`
-
-- [kbc-ui] `yarn add file:/path/to/indigo-ui`
-
-[See `yarn add` docs](https://yarnpkg.com/lang/en/docs/cli/add/)
+Run `npm pack`. Check its manual [here](https://docs.npmjs.com/cli/pack).
 
 ### How to check react-bootstrap documentation at specific version
 
