@@ -28,7 +28,7 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 - `yarn build-storybook`: Prepare Storybook for deployment
 - `yarn stylelint`: Check less files for errors
 
-### Simultaneously with Keboola Connection (Docker only)
+### Simultaneously with Keboola Connection (Advanced, Docker only)
 
 Check [KBC.md](KBC.md)
 
@@ -83,11 +83,22 @@ Run `yarn test`. It'll start tests in interactive mode.
 
 ### How to check local build of `indigo-ui` in `kbc-ui`
 
-TL;DR Use `yarn add file:/path/to/local/folder`. [Read more](https://yarnpkg.com/lang/en/docs/cli/add/)
+Make sure you have package prepared `yarn build-lib`.
 
-- [indigo-ui] `yarn build-lib`
-- [indigo-ui] `rm -rf node_modules`
+#### Using `yarn link` (preferred)
+
+- [indigo-ui] `yarn link`
+- [kbc-ui] `yarn link "@keboola/indigo-ui"`
+
+[See `yarn link` docs](https://yarnpkg.com/en/docs/cli/link)
+
+Similar (but reversed) process applies for `yarn unlink`.
+
+#### Using `yarn add`
+
 - [kbc-ui] `yarn add file:/path/to/indigo-ui`
+
+[See `yarn add` docs](https://yarnpkg.com/lang/en/docs/cli/add/)
 
 ### How to check react-bootstrap documentation at specific version
 
