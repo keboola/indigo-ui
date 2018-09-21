@@ -23,9 +23,10 @@ class InlineEditTextInput extends React.Component {
 
   _renderEditInput() {
     return (
-      <div className="inline-edit-text-input">
-        <form className="inline-edit-text-input-form" onSubmit={this._onSubmit}>
+      <div className="inline-edit-input">
+        <form className="inline-edit-input-form" onSubmit={this._onSubmit}>
           <FormControl
+            className="inline-edit-input-control"
             type="text"
             value={this.props.text}
             disabled={this.props.isSaving}
@@ -33,9 +34,9 @@ class InlineEditTextInput extends React.Component {
             onChange={this._onChange}
           />
 
-          <div className="inline-edit-text-input-buttons">
+          <div className="inline-edit-input-buttons">
             <Button
-              className="inline-edit-text-input-cancel"
+              className="inline-edit-input-cancel"
               bsStyle="link"
               disabled={this.props.isSaving}
               onClick={this.props.onEditCancel}
@@ -43,7 +44,7 @@ class InlineEditTextInput extends React.Component {
               <span className="kbc-icon-cross" />
             </Button>
             <Button
-              className="inline-edit-text-input-submit"
+              className="inline-edit-input-submit"
               bsStyle="info"
               disabled={this.props.isSaving || !this.props.isValid}
               type="submit"
@@ -59,14 +60,14 @@ class InlineEditTextInput extends React.Component {
 
   _renderStaticInput() {
     const tooltip = (
-      <Tooltip id="inline-edit-text-input-tooltip">
+      <Tooltip id="inline-edit-input-tooltip">
         {this.props.editTooltip}
       </Tooltip>
     );
 
     return (
       <OverlayTrigger placement={this.props.tooltipPlacement} overlay={tooltip}>
-        <span className="inline-edit-text-input-link" onClick={this.props.onEditStart}>
+        <span className="inline-edit-input-link" onClick={this.props.onEditStart}>
           {this.props.text ? (
             <span>{this.props.text}</span>
           ) : (

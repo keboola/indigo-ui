@@ -10,7 +10,7 @@ import PanelWithDetails from './PanelWithDetails';
 import AlertBlock from './AlertBlock';
 import Icon from './icons';
 import Finished from './Finished';
-import InlineEditTextInput from './InlineEditTextInput';
+import InlineEditInput from './InlineEditInput';
 
 export {
   Check,
@@ -25,5 +25,5 @@ export {
   Icon,
   SearchBar,
   Finished,
-  InlineEditTextInput
+  InlineEditInput
 };

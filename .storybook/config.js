@@ -17,7 +17,6 @@ function loadStories() {
   require('../src/stories/Tree');
   require('../src/stories/Tabs');
   require('../src/stories/Popover');
-  require('../src/stories/InlineEditTextInput');
   require('../src/stories/RegionSelector');
   require('../src/stories/ModalConfiguration');
   require('../src/stories/BtnLinkInline');
@@ -28,7 +27,7 @@ function loadStories() {
   require('../src/stories/Splash');
   require('../src/stories/SearchBar');
   require('../src/stories/Finished');
-  require('../src/stories/InlineEditTextInput');
+  require('../src/stories/InlineEditInput');
 }
 
 setOptions({

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<InlineEditTextInput /> InlineEditTextInput - default 1`] = `
+exports[`<InlineEditInput /> InlineEditInput - default 1`] = `
 <span
-  className="inline-edit-text-input-link"
+  className="inline-edit-input-link"
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -20,16 +20,16 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - default 1`] = `
 </span>
 `;
 
-exports[`<InlineEditTextInput /> InlineEditTextInput - disabled save button when text is not valid 1`] = `
+exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is not valid 1`] = `
 <div
-  className="inline-edit-text-input"
+  className="inline-edit-input"
 >
   <form
-    className="inline-edit-text-input-form"
+    className="inline-edit-input-form"
     onSubmit={[Function]}
   >
     <input
-      className="form-control"
+      className="inline-edit-input-control form-control"
       disabled={false}
       id={undefined}
       onChange={[Function]}
@@ -38,10 +38,10 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - disabled save button when
       value={undefined}
     />
     <div
-      className="inline-edit-text-input-buttons"
+      className="inline-edit-input-buttons"
     >
       <button
-        className="inline-edit-text-input-cancel btn btn-link"
+        className="inline-edit-input-cancel btn btn-link"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -51,7 +51,7 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - disabled save button when
         />
       </button>
       <button
-        className="inline-edit-text-input-submit btn btn-info"
+        className="inline-edit-input-submit btn btn-info"
         disabled={true}
         type="submit"
       >
@@ -62,16 +62,16 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - disabled save button when
 </div>
 `;
 
-exports[`<InlineEditTextInput /> InlineEditTextInput - edit mode 1`] = `
+exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
 <div
-  className="inline-edit-text-input"
+  className="inline-edit-input"
 >
   <form
-    className="inline-edit-text-input-form"
+    className="inline-edit-input-form"
     onSubmit={[Function]}
   >
     <input
-      className="form-control"
+      className="inline-edit-input-control form-control"
       disabled={false}
       id={undefined}
       onChange={[Function]}
@@ -80,10 +80,10 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - edit mode 1`] = `
       value={undefined}
     />
     <div
-      className="inline-edit-text-input-buttons"
+      className="inline-edit-input-buttons"
     >
       <button
-        className="inline-edit-text-input-cancel btn btn-link"
+        className="inline-edit-input-cancel btn btn-link"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -93,7 +93,7 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - edit mode 1`] = `
         />
       </button>
       <button
-        className="inline-edit-text-input-submit btn btn-info"
+        className="inline-edit-input-submit btn btn-info"
         disabled={true}
         type="submit"
       >
@@ -104,9 +104,9 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - edit mode 1`] = `
 </div>
 `;
 
-exports[`<InlineEditTextInput /> InlineEditTextInput - read mode 1`] = `
+exports[`<InlineEditInput /> InlineEditInput - read mode 1`] = `
 <span
-  className="inline-edit-text-input-link"
+  className="inline-edit-input-link"
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -124,16 +124,16 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - read mode 1`] = `
 </span>
 `;
 
-exports[`<InlineEditTextInput /> InlineEditTextInput - saving in edit mode 1`] = `
+exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
 <div
-  className="inline-edit-text-input"
+  className="inline-edit-input"
 >
   <form
-    className="inline-edit-text-input-form"
+    className="inline-edit-input-form"
     onSubmit={[Function]}
   >
     <input
-      className="form-control"
+      className="inline-edit-input-control form-control"
       disabled={true}
       id={undefined}
       onChange={[Function]}
@@ -142,10 +142,10 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - saving in edit mode 1`] =
       value={undefined}
     />
     <div
-      className="inline-edit-text-input-buttons"
+      className="inline-edit-input-buttons"
     >
       <button
-        className="inline-edit-text-input-cancel btn btn-link"
+        className="inline-edit-input-cancel btn btn-link"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -155,7 +155,7 @@ exports[`<InlineEditTextInput /> InlineEditTextInput - saving in edit mode 1`] =
         />
       </button>
       <button
-        className="inline-edit-text-input-submit btn btn-info"
+        className="inline-edit-input-submit btn btn-info"
         disabled={true}
         type="submit"
       >

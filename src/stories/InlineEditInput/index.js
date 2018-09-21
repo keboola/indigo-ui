@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-import InlineEditTextInput from '../../indigo/components/InlineEditTextInput';
+import InlineEditInput from '../../indigo/components/InlineEditInput';
 
-storiesOf('InlineEditTextInput', module)
+storiesOf('InlineEditInput', module)
   .add(
     'Read mode',
     withInfo({
@@ -14,7 +14,7 @@ storiesOf('InlineEditTextInput', module)
       inline: true
     })(() => {
       return (
-        <InlineEditTextInput
+        <InlineEditInput
           isEditing={false}
           isValid={true}
           onEditStart={() => null}
@@ -37,7 +37,7 @@ storiesOf('InlineEditTextInput', module)
       inline: true
     })(() => {
       return (
-        <InlineEditTextInput
+        <InlineEditInput
           isEditing={true}
           isValid={true}
           onEditStart={() => null}
@@ -59,7 +59,7 @@ storiesOf('InlineEditTextInput', module)
       inline: true
     })(() => {
       return (
-        <InlineEditTextInput
+        <InlineEditInput
           isEditing={true}
           isValid={true}
           isSaving={true}
