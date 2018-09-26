@@ -67,8 +67,8 @@
     "watch-dev-css": "npm run build-dev-css && grunt watch",
     "stylelint": "grunt stylelint",
     "build-storybook": "build-storybook -s public -o build",
-    "eslint": "eslint src\\indigo\\components",
-    "eslint:fix": "yarn eslint --fix "
+    "eslint": "eslint src",
+    "eslint:fix": "eslint src --fix "
   },
   "main": "lib/components/index.js",
   "repository": {

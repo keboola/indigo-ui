@@ -1,0 +1,4 @@
+src/*
+!src/indigo
+src/indigo/*
+!src/indigo/components
