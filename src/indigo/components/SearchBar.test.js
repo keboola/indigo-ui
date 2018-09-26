@@ -1,10 +1,9 @@
 import React from 'react';
 
-import { snapshot } from "../../tests";
+import { snapshot } from '../../tests';
 import SearchBar from './SearchBar';
 
 describe('<SearchBar />', () => {
-  
   it('SearchBar', () => {
     snapshot(<SearchBar />);
   });
@@ -18,10 +17,17 @@ describe('<SearchBar />', () => {
   });
 
   it('SearchBar - with two additional buttons', () => {
-    snapshot(<SearchBar additionalActions={[
-      <button key="submit-button" className="btn btn-primary">Submit</button>,
-      <button key="reset-button" className="btn btn-default">Reset</button>
-    ]} />);
+    snapshot(
+      <SearchBar
+        additionalActions={[
+          <button key="submit-button" className="btn btn-primary">
+            Submit
+          </button>,
+          <button key="reset-button" className="btn btn-default">
+            Reset
+          </button>,
+        ]}
+      />
+    );
   });
-
 });

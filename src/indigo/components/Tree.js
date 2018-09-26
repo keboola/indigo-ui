@@ -7,7 +7,7 @@ class Tree extends React.Component {
   render() {
     return (
       <div className="kb-tree" onClick={this.props.onClick}>
-        <TreeNode data={this.props.data}/>
+        <TreeNode data={this.props.data} />
       </div>
     );
   }
@@ -15,7 +15,7 @@ class Tree extends React.Component {
 
 Tree.propTypes = {
   data: PropTypes.object.isRequired,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 export default Tree;

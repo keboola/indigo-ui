@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { snapshot } from "../../tests";
+import { snapshot } from '../../tests';
 import Check from './Check';
 
 describe('<Check />', () => {

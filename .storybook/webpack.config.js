@@ -1,11 +1,21 @@
 const genDefaultConfig = require('@storybook/react/dist/server/config/defaults/webpack.config.js');
-const reactScriptsConfig = require('react-scripts/config/webpack.config.dev');
 
 module.exports = (baseConfig, env) => {
   const config = genDefaultConfig(baseConfig, env);
 
-  // This is a linter. The first rule from react-scripts dev config
-  config.module.rules.unshift(reactScriptsConfig.module.rules[0]);
+  config.module.rules.unshift({
+    test: /\.(js|jsx|mjs)$/,
+    enforce: 'pre',
+    exclude: /node_modules/,
+    use: [
+      {
+        loader: 'eslint-loader',
+        options: {
+          failOnError: true,
+        },
+      },
+    ],
+  });
 
   return config;
 };

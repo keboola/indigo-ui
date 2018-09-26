@@ -5,7 +5,7 @@ class Protected extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isProtected: true
+      isProtected: true,
     };
   }
 
@@ -20,22 +20,20 @@ class Protected extends React.Component {
         title="Protected content, click to reveal"
         onClick={() => {
           this.setState({
-            isProtected: false
-          })
+            isProtected: false,
+          });
         }}
       />
     );
   }
 
   renderRevealed() {
-    return (
-      <span>{this.props.children}</span>
-    );
+    return <span>{this.props.children}</span>;
   }
 }
 
 Protected.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
 };
 
 export default Protected;

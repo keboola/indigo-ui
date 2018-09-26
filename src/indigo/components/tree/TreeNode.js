@@ -4,21 +4,19 @@ import Immutable from 'immutable';
 
 import Protected from '../Protected';
 
-const concealedKeys = ["password"];
+const concealedKeys = ['password'];
 
 class TreeNode extends React.Component {
   render() {
-    return (
-      <ul>
-        {this.props.data.map(this.renderRow, this).valueSeq()}
-      </ul>
-    );
+    return <ul>{this.props.data.map(this.renderRow, this).valueSeq()}</ul>;
   }
 
   renderRow(value, key) {
     return (
       <li key={key}>
-        {Immutable.Iterable.isIterable(value) ? this.renderNode(value, key) : this.renderLeaf(value, key)}
+        {Immutable.Iterable.isIterable(value)
+          ? this.renderNode(value, key)
+          : this.renderLeaf(value, key)}
       </li>
     );
   }
@@ -27,19 +25,16 @@ class TreeNode extends React.Component {
     return (
       <span>
         <strong>{key}</strong>
-        <TreeNode data={value}/>
+        <TreeNode data={value} />
       </span>
     );
   }
 
   renderValue(value, key) {
     if (concealedKeys.indexOf(key) >= 0) {
-      return (
-        <Protected>{String(value)}</Protected>
-      );
-    } else {
-      return String(value);
+      return <Protected>{String(value)}</Protected>;
     }
+    return String(value);
   }
 
   renderLeaf(value, key) {
@@ -52,7 +47,7 @@ class TreeNode extends React.Component {
 }
 
 TreeNode.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 };
 
 export default TreeNode;
