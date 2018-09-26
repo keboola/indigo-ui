@@ -23,14 +23,14 @@ storiesOf('[CSS] Region Selector', module)
               <div className="kbc-outer-header">
                 <h2>Please Sign In
                   <ButtonGroup className="btn-group-region-selector">
-                    <Button href="#" bsStyle="default">
+                    <Button href="#" bsStyle="default" className="btn-default-active">
                       US
                     </Button>
                     <Button href="#" bsStyle="default">
                       EU
                     </Button>
-                    <Button href="#" bsStyle="default" className="btn-default-active">
-                      SYD
+                    <Button href="#" bsStyle="default">
+                      AU
                     </Button>
                   </ButtonGroup>
                 </h2>
