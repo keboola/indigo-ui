@@ -8,9 +8,7 @@ class RefreshIcon extends React.Component {
     const { isLoading, title, ...remaining } = this.props;
     return (
       <span title={title}>
-        {isLoading
-          ? <Loader/>
-          : <span {...remaining} className="kbc-refresh kbc-icon-cw" />}
+        {isLoading ? <Loader /> : <span {...remaining} className="kbc-refresh kbc-icon-cw" />}
       </span>
     );
   }
@@ -18,11 +16,11 @@ class RefreshIcon extends React.Component {
 
 RefreshIcon.propTypes = {
   isLoading: PropTypes.bool.isRequired,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 RefreshIcon.defaultProps = {
-  title: 'Refresh'
+  title: 'Refresh',
 };
 
 export default RefreshIcon;

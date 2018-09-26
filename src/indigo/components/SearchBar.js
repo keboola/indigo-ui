@@ -1,8 +1,8 @@
 import React from 'react';
 import { FormControl } from 'react-bootstrap';
-import Icon from './icons'
 import PropTypes from 'prop-types';
-import classNames from "classnames";
+import classNames from 'classnames';
+import Icon from './icons';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -14,27 +14,31 @@ class SearchBar extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  
+
   handleKeyDown(event) {
     this.props.onKeyDown(event.key);
   }
-  
+
   handleChange(event) {
-    this.setState({query: event.target.value});
+    this.setState({ query: event.target.value });
     this.props.onChange(event.target.value);
   }
-  
+
   handleSubmit(event) {
     event.preventDefault();
     this.props.onSubmit();
   }
-  
+
   render() {
     return (
       <div
-        className={classNames("searchbar", {
-          [`searchbar-${this.props.theme}`]: !!this.props.theme,
-        }, this.props.className)}
+        className={classNames(
+          'searchbar',
+          {
+            [`searchbar-${this.props.theme}`]: !!this.props.theme,
+          },
+          this.props.className
+        )}
       >
         <form onSubmit={this.handleSubmit} className="searchbar-form">
           <FormControl
@@ -50,9 +54,7 @@ class SearchBar extends React.Component {
           <Icon.Search className="searchbar-icon icon-size-20" />
         </form>
         {this.props.additionalActions && (
-          <div className="searchbar-actions">
-            {this.props.additionalActions}
-          </div>
+          <div className="searchbar-actions">{this.props.additionalActions}</div>
         )}
       </div>
     );
@@ -75,10 +77,7 @@ SearchBar.propTypes = {
   inputRef: PropTypes.func,
   className: PropTypes.string,
   placeholder: PropTypes.string,
-  additionalActions: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.element,
-  ]),
+  additionalActions: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
   theme: PropTypes.oneOf(['inverse']),
 };
 

@@ -8,7 +8,7 @@ import SearchBar from './SearchBar';
 import ExternalLink from './ExternalLink';
 import PanelWithDetails from './PanelWithDetails';
 import AlertBlock from './AlertBlock';
-import Icon from './icons'
+import Icon from './icons';
 
 export {
   Check,
@@ -21,5 +21,5 @@ export {
   Tree,
   AlertBlock,
   Icon,
-  SearchBar
+  SearchBar,
 };

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { snapshot } from "../../tests";
+import { snapshot } from '../../tests';
 import Loader from './Loader';
 
 describe('<Loader />', () => {
   it('Loader - default', () => {
-    snapshot(<Loader/>);
+    snapshot(<Loader />);
   });
 
   it('Loader - with classname', () => {

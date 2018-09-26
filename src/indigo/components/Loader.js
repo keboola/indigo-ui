@@ -4,14 +4,12 @@ import classNames from 'classnames';
 
 class Loader extends React.Component {
   render() {
-    return (
-      <span className={classNames('fa fa-spin fa-spinner', this.props.className)}/>
-    );
+    return <span className={classNames('fa fa-spin fa-spinner', this.props.className)} />;
   }
 }
 
 Loader.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Loader;
