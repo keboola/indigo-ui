@@ -1,6 +1,8 @@
 const pascalCase = require('pascal-case');
 const prettier = require('prettier');
 
+const options = prettier.resolveConfig.sync(process.cwd());
+
 module.exports = {
   svgoPlugins: [
     {
@@ -21,11 +23,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames'
 
-const ${data.name} = ({ className, ...props }) => {
-  return (
-    ${jsxSvgWithProps}
-  )
-};
+const ${data.name} = ({ className, ...props }) => (
+  ${jsxSvgWithProps}
+);
 
 ${data.name}.propTypes = {
   className: PropTypes.string
@@ -33,9 +33,6 @@ ${data.name}.propTypes = {
 
 export default ${data.name};
 `;
-    return prettier.format(js, {
-      singleQuote: true,
-      trailingComma: 'es5'
-    })
+    return prettier.format(js, options);
   }
 };
