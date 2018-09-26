@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Transformation_2 = ({ className, ...props }) => {
+const TransformationAlt = ({ className, ...props }) => {
   return (
     <svg
       width="32"
@@ -21,8 +21,8 @@ const Transformation_2 = ({ className, ...props }) => {
   );
 };
 
-Transformation_2.propTypes = {
+TransformationAlt.propTypes = {
   className: PropTypes.string,
 };
 
-export default Transformation_2;
+export default TransformationAlt;

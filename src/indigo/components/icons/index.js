@@ -38,8 +38,8 @@ import SwitchOff from './SwitchOff';
 import SwitchOn from './SwitchOn';
 import Times from './Times';
 import Transformation from './Transformation';
+import TransformationAlt from './TransformationAlt';
 import TransformationOverview from './TransformationOverview';
-import Transformation_2 from './Transformation_2';
 import Trash from './Trash';
 import User from './User';
 import Warning from './Warning';
@@ -85,8 +85,8 @@ const Icon = {
   SwitchOn,
   Times,
   Transformation,
+  TransformationAlt,
   TransformationOverview,
-  Transformation_2,
   Trash,
   User,
   Warning,
