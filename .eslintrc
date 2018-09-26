@@ -9,7 +9,10 @@
   "rules": {
     "linebreak-style": 0,
     "class-methods-use-this": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/prefer-stateless-function": 0,
     "react/destructuring-assignment": 0,
     "react/forbid-prop-types": 0,
     "react/sort-comp": 0
