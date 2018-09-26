@@ -62,8 +62,8 @@ class SearchBar extends React.Component {
 }
 
 SearchBar.defaultProps = {
-  onKeyDown: (eventKey) => {},
-  onChange: (query) => {},
+  onKeyDown: () => {},
+  onChange: () => {},
   onSubmit: () => {},
   placeholder: 'Search',
   query: '',
