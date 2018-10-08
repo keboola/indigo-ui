@@ -98,6 +98,9 @@
   box-shadow: none;
   .panel-collapse {
     overflow: hidden;
+    &.in{
+      overflow: visible; //children elements can overflow
+    }
   }
   &.panel-preview {
     position: relative;
