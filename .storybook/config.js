@@ -24,6 +24,7 @@ function loadStories() {
   require('../src/stories/Icons');
   require('../src/stories/Splash');
   require('../src/stories/SearchBar');
+  require('../src/stories/ModalConfiguration');
 }
 
 setOptions({
