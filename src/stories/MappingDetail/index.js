@@ -5,37 +5,35 @@ import {Panel, Button, Form, FormGroup, FormControl, ControlLabel, Col, Label} f
 
 
 const headerContent = (
-  <a aria-expanded="false" aria-selected="false" className="collapsed">
-    <span className="table" style={{wordBreak: "break-word;"}}>
-      <span className="tbody">
-        <span className="tr">
-          <span className="td col-xs-3">
-            <Label bsStyle="primary">
-              <span>1.02 kB</span>
-            </Label>
-          </span>
-          <span className="td col-xs-4">
-              in.c-csv-import.407799760
-          </span>
-          <span className="td col-xs-1">
-              <span className="fa fa-chevron-right fa-fw"/>
-          </span>
-          <span className="td col-xs-3">
-            <span className="fa fa-file-text-o fa-fw" title="File"></span>
-            <span>in/tables/407799760.csv</span>
-          </span>
-          <span className="td col-xs-1 text-right kbc-no-wrap">
-            <Button bsStyle="link">
-              <i className="fa kbc-icon-cup"></i>
-            </Button>
-            <Button bsStyle="link">
-              <span className="fa fa-pencil"></span>
-            </Button>
-          </span>
+  <span className="table" style={{wordBreak: "break-word;"}}>
+    <span className="tbody">
+      <span className="tr">
+        <span className="td col-xs-3">
+          <Label bsStyle="primary">
+            <span>1.02 kB</span>
+          </Label>
+        </span>
+        <span className="td col-xs-4">
+            in.c-csv-import.407799760
+        </span>
+        <span className="td col-xs-1">
+            <span className="fa fa-chevron-right fa-fw"/>
+        </span>
+        <span className="td col-xs-3">
+          <span className="fa fa-file-text-o fa-fw" title="File"></span>
+          <span>in/tables/407799760.csv</span>
+        </span>
+        <span className="td col-xs-1 text-right kbc-no-wrap">
+          <Button bsStyle="link">
+            <i className="fa kbc-icon-cup"></i>
+          </Button>
+          <Button bsStyle="link">
+            <span className="fa fa-pencil"></span>
+          </Button>
         </span>
       </span>
     </span>
-  </a>
+  </span>
 )
 
 storiesOf('MappingDetail', module)
