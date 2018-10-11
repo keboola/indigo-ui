@@ -1,7 +1,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
-import {Panel, Button} from 'react-bootstrap';
+import {Panel, Button, Form, FormGroup, FormControl, ControlLabel, Col, Label} from 'react-bootstrap';
 
 
 const headerContent = (
@@ -10,32 +10,28 @@ const headerContent = (
       <span className="tbody">
         <span className="tr">
           <span className="td col-xs-3">
-      <span className="label label-primary">
-        <span>1.02 kB</span>
-      </span>
-        </span>
-        <span className="td col-xs-4">
-          in.c-csv-import.407799760
-        </span>
-        <span className="td col-xs-1">
-          <span className="fa fa-chevron-right fa-fw"/>
-        </span>
-        <span className="td col-xs-3">
-          <span className="fa fa-file-text-o fa-fw" title="File"></span>
-          <span>in/tables/407799760.csv</span>
-        </span>
-        <span className="td col-xs-1 text-right kbc-no-wrap">
-          <span>
-            <button className="btn btn-link">
+            <Label bsStyle="primary">
+              <span>1.02 kB</span>
+            </Label>
+          </span>
+            <span className="td col-xs-4">
+              in.c-csv-import.407799760
+            </span>
+            <span className="td col-xs-1">
+              <span className="fa fa-chevron-right fa-fw"/>
+            </span>
+          <span className="td col-xs-3">
+            <span className="fa fa-file-text-o fa-fw" title="File"></span>
+            <span>in/tables/407799760.csv</span>
+          </span>
+          <span className="td col-xs-1 text-right kbc-no-wrap">
+            <Button bsStyle="link">
               <i className="fa kbc-icon-cup"></i>
               <span></span>
-            </button>
-          </span>
-          <span>
-            <button type="button" className="btn btn-link">
+            </Button>
+            <Button bsStyle="link">
               <span className="fa fa-pencil"></span>
-            </button>
-          </span>
+            </Button>
         </span>
         </span>
       </span>
@@ -67,37 +63,36 @@ storiesOf('MappingDetail', module)
               className="kbc-panel-heading-with-table"
               collapsible
             >
-              <ul className="clearfix list-group">
-                <li className="row list-group-item">
-                  <strong className="col-md-4">Source table</strong>
-                  <span className="col-md-6">
-                      <span>
-                        <span className="kbc-sapi-table-link">in.c-csv-import.407799760</span>
-                      </span>
-                    </span>
-                </li>
-                <li className="row list-group-item">
-                  <strong className="col-md-4">Columns</strong>
-                  <span className="col-md-6">longitude</span>
-                </li>
-                <li className="row list-group-item">
-                  <strong className="col-md-4">Filters</strong>
-                  <span className="col-md-6">
-                      <span>
-                        <span>Where </span>
-                        <strong>longitude</strong>
-                        <span>not in</span>
-                        <span> </span>
-                        <strong>[space character]</strong>
-                      </span>
-                      <span> and </span>
-                      <span>
-                        <span>changed in last </span>
-                        <span>45 minutes</span>
-                    </span>
-                    </span>
-                </li>
-              </ul>
+              <Form horizontal>
+                <FormGroup controlId="formHorizontalEmail">
+                  <Col componentClass={ControlLabel} sm={2}>
+                    Source Table
+                  </Col>
+                  <Col sm={10}>
+                    <FormControl.Static componentClass="div">in.c-csv-import.407799760</FormControl.Static>
+                  </Col>
+                </FormGroup>
+                
+                <FormGroup controlId="formHorizontalPassword">
+                  <Col componentClass={ControlLabel} sm={2}>
+                    Columns
+                  </Col>
+                  <Col sm={10}>
+                    <FormControl.Static componentClass="div">Longitude</FormControl.Static>
+                  </Col>
+                </FormGroup>
+                <FormGroup controlId="formHorizontalPassword">
+                  <Col componentClass={ControlLabel} sm={2}>
+                    Filters
+                  </Col>
+                  <Col sm={10}>
+                    <FormControl.Static componentClass="div">
+                      Where longitudenot in [space character] and changed in last
+                      45 minutes
+                    </FormControl.Static>
+                  </Col>
+                </FormGroup>
+              </Form>
             </Panel>
           </div>
         </div>
