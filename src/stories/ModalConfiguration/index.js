@@ -17,16 +17,17 @@ storiesOf('ModalConfiguration', module).add(
               <Col xs={3}>
                 <span
                   className="kb-sapi-component-icon modal-configuration-icon">
-                <img src="https://assets-cdn.keboola.com/developer-portal/icons/keboola.ex-aws-s3/64/20.png"
-                     width="64" height="64"/>
+                  <img src="https://avatars2.githubusercontent.com/u/1424387?s=200&amp;v=4" width="64" height="64"/>
                 </span>
               </Col>
               <Col xs={9}>
                 <Modal.Title componentClass={'h2'} className="modal-configuration-title">
-                  AWS S3
+                  Keboola
                 </Modal.Title>
-                <p>Object storage built to store and retrieve any amount of data
-                  from anywhere.</p>
+                <p>A new way to acquire, aggregate and distribute data to teams. SQL Based ETL, Analytical Storage,
+                  Data Science Notebooks.
+                  All in One Login!
+                </p>
               </Col>
             </Row>
           </Modal.Header>
@@ -37,7 +38,7 @@ storiesOf('ModalConfiguration', module).add(
                   Name
                 </Col>
                 <Col xs={9}>
-                  <FormControl label="Name" value="" placeholder="My AWS S3 extractor" type="text"/>
+                  <FormControl label="Name" value="" placeholder="My Keboola" type="text"/>
                 </Col>
               </FormGroup>
               <FormGroup>
