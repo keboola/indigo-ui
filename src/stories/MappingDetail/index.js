@@ -14,12 +14,12 @@ const headerContent = (
               <span>1.02 kB</span>
             </Label>
           </span>
-            <span className="td col-xs-4">
+          <span className="td col-xs-4">
               in.c-csv-import.407799760
-            </span>
-            <span className="td col-xs-1">
+          </span>
+          <span className="td col-xs-1">
               <span className="fa fa-chevron-right fa-fw"/>
-            </span>
+          </span>
           <span className="td col-xs-3">
             <span className="fa fa-file-text-o fa-fw" title="File"></span>
             <span>in/tables/407799760.csv</span>
@@ -27,12 +27,11 @@ const headerContent = (
           <span className="td col-xs-1 text-right kbc-no-wrap">
             <Button bsStyle="link">
               <i className="fa kbc-icon-cup"></i>
-              <span></span>
             </Button>
             <Button bsStyle="link">
               <span className="fa fa-pencil"></span>
             </Button>
-        </span>
+          </span>
         </span>
       </span>
     </span>
@@ -50,11 +49,9 @@ storiesOf('MappingDetail', module)
         <div className="mapping">
           <h2><span>Input Mapping</span>
             <span className="pull-right add-mapping-button">
-              <span>
-                  <Button bsStyle="success">
-                    <i className="kbc-icon-plus"></i>New Input
-                  </Button>
-              </span>
+              <Button bsStyle="success">
+                <i className="kbc-icon-plus"></i>New Input
+              </Button>
             </span>
           </h2>
           <div className="mapping-rows">
