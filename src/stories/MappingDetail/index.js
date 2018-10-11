@@ -1,44 +1,34 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
-import {Panel, Button, Form, FormGroup, FormControl, ControlLabel, Col, Label} from 'react-bootstrap';
-
+import {Panel, Button, Form, FormGroup, FormControl, ControlLabel, Col, Row} from 'react-bootstrap';
+import {Icon} from '../../indigo/components';
 
 const headerContent = (
-  <span className="table" style={{wordBreak: "break-word;"}}>
-    <span className="tbody">
-      <span className="tr">
-        <span className="td col-xs-3">
-          <Label bsStyle="primary">
-            <span>1.02 kB</span>
-          </Label>
-        </span>
-        <span className="td col-xs-4">
-            in.c-csv-import.407799760
-        </span>
-        <span className="td col-xs-1">
-            <span className="fa fa-chevron-right fa-fw"/>
-        </span>
-        <span className="td col-xs-3">
-          <span className="fa fa-file-text-o fa-fw" title="File"></span>
-          <span>in/tables/407799760.csv</span>
-        </span>
-        <span className="td col-xs-1 text-right kbc-no-wrap">
-          <Button bsStyle="link">
-            <i className="fa kbc-icon-cup"></i>
-          </Button>
-          <Button bsStyle="link">
-            <span className="fa fa-pencil"></span>
-          </Button>
-        </span>
-      </span>
-    </span>
-  </span>
+  <Row>
+    <Col xs={5}>
+      in.c-csv-import.407799760
+    </Col>
+    <Col xs={1}>
+      <i className="fa fa-chevron-right"/>
+    </Col>
+    <Col xs={4}>
+      <i className="fa fa-table"/> commit_parents
+    </Col>
+    <Col xs={2}>
+      <Button bsStyle="link">
+        <Icon.Trash className="icon-size-16"/>
+      </Button>
+      <Button bsStyle="link">
+        <Icon.Edit className="icon-size-16"/>
+      </Button>
+    </Col>
+  </Row>
 )
 
 storiesOf('MappingDetail', module)
   .add(
-    'Basic init',
+    'Input Mapping Header',
     withInfo({
       text: `dummy`,
       inline: true,
@@ -54,8 +44,7 @@ storiesOf('MappingDetail', module)
           </h2>
           <div className="mapping-rows">
             <Panel
-              header={headerContent}
-              className="kbc-panel-heading-with-table"
+              header={headerInputContent}
               collapsible
             >
               <Form horizontal>
