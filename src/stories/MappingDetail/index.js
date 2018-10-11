@@ -44,7 +44,7 @@ storiesOf('MappingDetail', module)
           </h2>
           <div className="mapping-rows">
             <Panel
-              header={headerInputContent}
+              header={headerContent}
               collapsible
             >
               <Form horizontal>
