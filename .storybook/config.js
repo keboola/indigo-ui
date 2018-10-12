@@ -18,13 +18,13 @@ function loadStories() {
   require('../src/stories/Tabs');
   require('../src/stories/Popover');
   require('../src/stories/RegionSelector');
+  require('../src/stories/ModalConfiguration');
   require('../src/stories/ExternalLink');
   require('../src/stories/PanelWithDetails');
   require('../src/stories/AlertBlock');
   require('../src/stories/Icons');
   require('../src/stories/Splash');
   require('../src/stories/SearchBar');
-  require('../src/stories/ModalConfiguration');
 }
 
 setOptions({

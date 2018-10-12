@@ -4,7 +4,7 @@ import {withInfo} from '@storybook/addon-info';
 
 import {Form, Modal, Row, Col, Button, ButtonToolbar, FormControl, ControlLabel, FormGroup, Checkbox} from "react-bootstrap";
 
-storiesOf('ModalConfiguration', module).add(
+storiesOf('[CSS] ModalConfiguration', module).add(
   'Modal Configuration',
   withInfo({
     inline: true,
