@@ -139,7 +139,7 @@
     padding: 0;
 
     > .kbc-container {
-        margin-right: -2px;
+        margin-right: -1px;
         border-right: 1px solid @table-border-color;
         padding-left: 10px;
         padding-right: 10px;
@@ -198,7 +198,6 @@
     padding: 0;
     border-left: 1px solid @table-border-color;
     position: relative;
-    left: 1px;
     min-height: 90vh;
 }
 
@@ -231,15 +230,24 @@
             &:last-of-type {
                 border-right: none;
             }
-            @media screen and (max-width: 991px) {
+            .form-group:last-of-type {
+                margin-bottom: 25px;
+            }
+            @media screen and (max-width: @screen-sm-max) {
                 border-right: none;
+                .form-group:last-of-type {
+                    margin-bottom: 15px;
+                }
             }
         }
         &:first-of-type > div[class^="col-"] {
-            padding-top: 15px;
+            padding-top: 25px;
             &:not(:first-of-type) {
-                @media screen and (max-width: 991px) {
+                @media screen and (max-width: @screen-sm-max) {
                     padding-top: 0;
+                    .form-group:last-of-type {
+                        margin-bottom: 25px;
+                    }
                 }
             }
         }
@@ -247,7 +255,6 @@
     // udelat lepe pri snejdnoceni layoutu
     &-orchestration {
         border-bottom: 1px solid #e8e8ef;
-
     }
 }
 
