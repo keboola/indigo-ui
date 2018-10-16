@@ -54,11 +54,21 @@ button {
 .btn-group {
   &-region-selector {
     margin-left: 20px;
-    .btn{
+    .btn {
       font-weight: 600;
-      &-default{
-       color: #b6bdc3;
+      text-decoration: none;
+      &-default {
+        color: #b6bdc3;
+        &-active {
+          .btn-primary();
+          color: #ffffff;
+        }
       }
     }
   }
+}
+
+//TrashIndex
+.btn-hide {
+  display: none !important;
 }

@@ -4,6 +4,21 @@
 .kbc-navbar {
     height: 60px;
     background: url('../img/header-bg.png') repeat-x top;
+
+    > .kbc-main-header-container {
+        padding: 0;
+        float: none;
+        width: auto;
+        @media screen and (max-width: @screen-xs-max) {
+            float: left;
+            width: 100%;
+            background: white;
+        }
+    }
+    @media screen and (max-width: @screen-xs-max) {
+        height: 120px;
+        background: none;
+    }
 }
 
 .kbc-logo {
@@ -15,7 +30,16 @@
     font-size: 24px;
     border-bottom: solid 2px #1e2129;
 
-    > a {
+    @media screen and (max-width: @screen-xs-max) {
+        position: initial;
+        border-bottom: none;
+
+        .kbc-notification-access {
+            display: none;
+        }
+    }
+
+    .kbc-notification-access {
         color: #f5f5f7;
 
         &:hover {
@@ -36,12 +60,6 @@
       float: right;
       top: 5px;
     }
-}
-
-.kbc-navbar > .kbc-main-header-container {
-    padding: 0;
-    float: none;
-    width: auto;
 }
 
 .kbc-main-header {
@@ -68,6 +86,4 @@
     .kbc-inline-edit-link {
         margin-left: -15px;
     }
-
-
 }

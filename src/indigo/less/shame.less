@@ -187,21 +187,6 @@ svg.kb-graph {
   }
 }
 
-.dropdown .dropdown-menu {
-  transition: max-height 0.6s, opacity 0.15s;
-
-  max-height: 0;
-  display: block;
-  overflow: hidden;
-  opacity: 0;
-}
-
-.dropdown.open .dropdown-menu {
-  max-height: 20000px;
-  opacity: 1;
-}
-
-
 //ANALYZA: staci vyhodit tuto obalku row kbc-row-orchestration-detail
 //ANALYZA: napr tady https://github.com/keboola/kbc-ui/blob/55ad82c49c7ee7aa4f45cdb8d5420b9b9c8c4260/src/scripts/modules/orchestrations/react/pages/orchestration-tasks/OrchestrationTasks.coffee#L89
 //ANALYZA: az se zrusi master/detail interface v orchestraci, muzem to vyhodit
@@ -214,19 +199,6 @@ svg.kb-graph {
 .table-events > tbody > tr > td,
 .table > .tbody > .tr .td span {
   word-break: break-word;
-}
-
-//ANALYZA: zdokumentovat
-.row-search {
-  display: flex;
-  &-input {
-    margin-right: 10px;
-    flex-grow: 1;
-  }
-  &-action {
-    display: flex;
-    align-items: center;
-  }
 }
 
 //moved from TransformationDetailStatic
@@ -256,32 +228,6 @@ small.empty-label {
 //ANALYZA: asi ok, jenom to chce lip pojmenovat
 .kbc-row .mapping {
   min-height: 100px;
-}
-
-//moved from Readmore.less
-//
-
-//ANALYZA: predelat na 'Show More' koncept
-//https://github.com/keboola/indigo-ui/issues/180
-.kbc-readmore {
-  position: relative;
-  overflow: hidden;
-
-  //Ty nadpisy jsou zbytecny stylovat. Kdyz uz, tak pro Markdown
-  h1 {
-    font-size: 25px;
-  }
-  h2 {
-    font-size: 19px;
-  }
-  h3 {
-    font-weight: bold;
-    font-size: 17px;
-  }
-  h4 {
-    font-weight: bold;
-    font-size: 15px;
-  }
 }
 
 //ANALYZA: nahradit svg ikonkama
@@ -476,29 +422,6 @@ small.empty-label {
   float: none;
 }
 
-// ANALYZA: tohle se da zobecnit
-// moved from TableSelector.less
-//predalat na button
-// napr v csv-importu - ikona tuzky
-.kbc-table-selector .kbc-icon-pencil {
-  cursor: pointer;
-  opacity: 0.3;
-  margin-left: 0.25em;
-}
-
-.kbc-table-selector:hover .kbc-icon-pencil {
-  opacity: 1;
-}
-
-// ANALYZA: vyhodit
-// moved from TableSelectorForm.less
-// tohle je custom hovadina, vyhodit - proste takhle formulare vypadaji xD
-// napr v csv-importu
-.kbc-table-selector.kbc-table-selector-static {
-  position: relative;
-  top: 13px;
-}
-
 // ANALYZA: vyhodit
 //moved from queries.less
 
@@ -519,37 +442,6 @@ small.empty-label {
 //  width: 100%;
 //  min-height: 300px
 //}
-
-
-//moved from TrashIndex.less
-.kbc-trash-search {
-  border-bottom: 1px solid #e8e8ef;
-
-  .kbc-trash-controls {
-    padding: 20px 0 !important;
-    margin: 0 -5px 0 -5px;
-
-    .kbc-trash-filter {
-      width: 50%;
-      float: right;
-    }
-
-    .kbc-trash-buttons {
-      padding: 7px 0;
-      float: right;
-    }
-
-    .btn-hide {
-      visibility: hidden;
-    }
-
-    .btn {
-      border-left: 1px solid #e8e8ef;
-      padding-left: 14px;
-      margin-left: 19px;
-    }
-  }
-}
 
 // ANALYZA: predelat na grid
 //moved from NewComponentSelection
@@ -761,4 +653,45 @@ small.empty-label {
     background-color: #e5f4f7;
     text-decoration: none;
   }
+}
+
+
+// temp solution for searchbar in master-detail interface
+.layout-master-detail-search{
+  padding-top: 15px;
+  padding-bottom: 4px;
+}
+
+// settings trash temp solution
+.settings-trash-select{
+  min-width: 150px;
+}
+
+//temp solution to pad layout
+.orchestration-job-detail-tabs {
+  padding-top: 16px;
+}
+
+// vyresit lepe pri sjednocovani layoutovych class
+.row-searchbar {
+  padding: 20px 26px;
+  border-bottom: 1px solid #e8e8ef;
+  &-no-border-bottom {
+     //ComponentsIndex layout patch
+    border-bottom: 0;
+  }
+  &-no-padding {
+    //Trashindex layout patch
+    margin: -15px -15px 0 -15px;
+  }
+}
+
+// vyresit lepe pri sjednocovani layoutovych class
+.col-searchbar-padded, .col-searchbar-events-padded {
+  margin: 10px 0;
+}
+
+// odmazání default margin u bootstrap tabulky
+.table-no-margin {
+  margin: 0;
 }

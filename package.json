@@ -1,7 +1,7 @@
 {
   "name": "@keboola/indigo-ui",
   "description": "Keboola UI library",
-  "version": "5.3.2",
+  "version": "6.1.3",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "classnames": "^2.1.0",
@@ -18,9 +18,18 @@
     "@storybook/addon-options": "^3.4.1",
     "@storybook/react": "^3.2.17",
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "eslint": "5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "7.11.1",
     "fixed-data-table": "^0.6.4",
     "grunt": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
@@ -31,7 +40,7 @@
     "moment": "^2.18.0",
     "moment-timezone": "~0.3.1",
     "npm-run-all": "^4.0.2",
-    "prettier": "^1.12.1",
+    "prettier": "^1.14.3",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^15.6.1",
@@ -58,7 +67,9 @@
     "svg-sprite": "grunt svg_sprite:dev",
     "watch-dev-css": "npm run build-dev-css && grunt watch",
     "stylelint": "grunt stylelint",
-    "build-storybook": "build-storybook -s public -o build"
+    "build-storybook": "build-storybook -s public -o build",
+    "eslint": "eslint src",
+    "eslint:fix": "eslint src --fix "
   },
   "main": "lib/components/index.js",
   "repository": {

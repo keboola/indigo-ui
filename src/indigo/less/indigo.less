@@ -71,9 +71,9 @@
 @import 'navs';
 @import 'notifications';
 @import 'panels';
-@import 'search';
 @import 'tables';
 @import 'type';
+@import 'search';
 
 @import 'head';
 @import 'main-content';
@@ -97,6 +97,11 @@ html {
 
 body {
     padding-top: 60px;
+    min-width: 360px;
+
+    @media screen and (max-width: @screen-xs-max) {
+      padding-top: 120px;
+    }
 }
 
 .row > :first-child {

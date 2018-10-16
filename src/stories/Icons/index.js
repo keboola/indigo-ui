@@ -53,7 +53,7 @@ storiesOf('Icons', module)
           <div><Icon.SwitchOff /></div>
           <div><Icon.SwitchOn /></div>
           <div><Icon.Times /></div>
-          <div><Icon.Transformation_2 /></div>
+          <div><Icon.TransformationAlt /></div>
           <div><Icon.Transformation /></div>
           <div><Icon.TransformationOverview /></div>
           <div><Icon.Trash /></div>
@@ -80,7 +80,7 @@ storiesOf('Icons', module)
           <br />
           <Icon.ExtractorTo className="icon-size-stack" />
           <br />
-          <Icon.Transformation_2 className="icon-size-stack" />
+          <Icon.TransformationAlt className="icon-size-stack" />
 
           <br />
           <br />

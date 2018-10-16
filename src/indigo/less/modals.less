@@ -14,3 +14,29 @@
     width: 635px;
   }
 }
+
+.modal {
+  &-configuration {
+    &-icon {
+      padding-right: 0;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+    }
+    &-header {
+      position: relative;
+      padding: 24px 24px 14px;
+    }
+    &-title {
+      margin: 0 0 12px;
+    }
+    &-body {
+      padding: 24px 24px 0px;
+    }
+    .close {
+      position: absolute;
+      right: 20px;
+      z-index: 1;
+    }
+  }
+}

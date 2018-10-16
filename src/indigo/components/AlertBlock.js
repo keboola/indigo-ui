@@ -21,16 +21,16 @@ class AlertBlock extends React.Component {
 
   renderIcon() {
     if (this.props.type === 'warning') {
-      return <IconWarning className="alert-block-icon" />
+      return <IconWarning className="alert-block-icon" />;
     }
-    return <IconDanger className="alert-block-icon" />
+    return <IconDanger className="alert-block-icon" />;
   }
 }
 
 AlertBlock.propTypes = {
   title: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['warning', 'danger']).isRequired,
-  children: PropTypes.any.isRequired
+  children: PropTypes.any.isRequired,
 };
 
 export default AlertBlock;

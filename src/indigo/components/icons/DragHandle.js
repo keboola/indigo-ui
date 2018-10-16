@@ -3,25 +3,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const DragHandle = ({ className, ...props }) => {
-  return (
-    <svg
-      width="6"
-      height="14"
-      viewBox="0 0 6 14"
-      className={classNames('icon', className)}
-      {...props}
-    >
-      <g fill="none" fillRule="evenodd">
-        <path d="M-6-2h18v18H-6z" />
-        <path
-          fill="#7C8498"
-          d="M4 0h2v2H4V0zm0 4h2v2H4V4zm0 4h2v2H4V8zm0 4h2v2H4v-2zM0 0h2v2H0V0zm0 4h2v2H0V4zm0 4h2v2H0V8zm0 4h2v2H0v-2z"
-        />
-      </g>
-    </svg>
-  );
-};
+const DragHandle = ({ className, ...props }) => (
+  <svg
+    width="6"
+    height="14"
+    viewBox="0 0 6 14"
+    className={classNames('icon', className)}
+    {...props}
+  >
+    <g fill="none" fillRule="evenodd">
+      <path d="M-6-2h18v18H-6z" />
+      <path
+        fill="#7C8498"
+        d="M4 0h2v2H4V0zm0 4h2v2H4V4zm0 4h2v2H4V8zm0 4h2v2H4v-2zM0 0h2v2H0V0zm0 4h2v2H0V4zm0 4h2v2H0V8zm0 4h2v2H0v-2z"
+      />
+    </g>
+  </svg>
+);
 
 DragHandle.propTypes = {
   className: PropTypes.string,
