@@ -51,9 +51,14 @@
           position: absolute;
           top: 24px;
           right: 20px;
+
           @media all and (max-height: 770px) {
             top: 18px;
             right: 16px;
+          }
+
+          @media screen and (max-width: @screen-xs-max) {
+            top: 19px;
           }
         }
       }
@@ -222,6 +227,35 @@
       padding: 10px 36px 10px 12px;
     }
 
+}
+
+@media screen and (max-width: @screen-xs-max) {
+  .sidebar-offset-row {
+    position: relative;
+
+    &-open {
+      .sidebar-offset {
+        transform: translate3d(0, 0, 0);
+      }
+
+      .kbc-main > .container-fluid {
+        opacity: 0.3;
+        overflow: hidden;
+        max-height: calc(100vh - 150px);
+        transition: all 0.15s ease-out;
+      }
+    }
+  }
+
+  .sidebar-offset {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    z-index: 1040;
+    width: 100%;
+    transition: all 0.15s ease-out;
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 
 .kbc-user-links {
