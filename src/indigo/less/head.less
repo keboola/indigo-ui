@@ -5,15 +5,19 @@
     height: 60px;
     background: url('../img/header-bg.png') repeat-x top;
 
-    @media screen and (max-width: @screen-xs-max) {
-        height: 120px;
-        background: none;
-
-        & > .kbc-main-header-container {
+    > .kbc-main-header-container {
+        padding: 0;
+        float: none;
+        width: auto;
+        @media screen and (max-width: @screen-xs-max) {
             float: left;
             width: 100%;
             background: white;
         }
+    }
+    @media screen and (max-width: @screen-xs-max) {
+        height: 120px;
+        background: none;
     }
 }
 
@@ -56,12 +60,6 @@
       float: right;
       top: 5px;
     }
-}
-
-.kbc-navbar > .kbc-main-header-container {
-    padding: 0;
-    float: none;
-    width: auto;
 }
 
 .kbc-main-header {
