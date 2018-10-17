@@ -1,11 +1,34 @@
-.mapping-rows .kbc-panel-heading-with-table:last-child {
-  margin-bottom: 0px;
-}
-
-.kbc-row .mapping {
+.mapping {
   min-height: 100px;
-}
+  &:last-child {
+    margin-bottom: 0px;
+  }
 
-.add-mapping-button {
-  margin-top: -4px;
+  &-header {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+  }
+
+  &-action:hover {
+    color: #0094c7;
+    .icon {
+      color: inherit
+    }
+  }
+
+  &-panel-title {
+    padding: 12px 12px 12px 24px;
+    a {
+      text-decoration: none;
+      display: block;
+    }
+  }
 }
