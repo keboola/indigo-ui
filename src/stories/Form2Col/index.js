@@ -11,7 +11,7 @@ import {
 } from 'react-bootstrap';
 
 const formContent = (
-    <FormGroup controlId="formHorizontalEmail">
+  <FormGroup>
     <Col componentClass={ControlLabel} sm={4}>
       Email
     </Col>
@@ -25,6 +25,74 @@ const formContent = (
 
 storiesOf('Form2Col', module)
   .add(
+    'text content 2 columns',
+    withInfo({
+      text: `
+        Responsive multiple column divided by border. Try to move with browser width.
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <div style={{background: '#fff'}}>
+          <div className="container-fluid">
+            <Row className="row-eq-height">
+              <Col md={6} xs={12} className="col-bordered">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eius eveniet illum ut voluptatum?
+                  Debitis distinctio eligendi, eos ex expedita, fuga minima molestiae, necessitatibus neque nulla
+                  reiciendis sequi similique tempora?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eius eveniet illum ut voluptatum?
+                  Debitis distinctio eligendi, eos ex expedita, fuga minima molestiae, necessitatibus neque nulla
+                  reiciendis sequi similique tempora?</p>
+              </Col>
+              <Col md={6} xs={12} className="col-bordered">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eius eveniet illum ut voluptatum?
+                  Debitis distinctio eligendi, eos ex expedita, fuga minima molestiae, necessitatibus neque nulla
+                  reiciendis sequi similique tempora?</p>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      );
+    })
+  )
+  .add(
+    'text content 3 columns',
+    withInfo({
+      text: `
+        Responsive multiple column divided by border. Try to move with browser width.
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <div style={{background: '#fff'}}>
+          <div className="container-fluid">
+            <Row className="row-eq-height">
+              <Col md={4} xs={12} className="col-bordered">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eius eveniet illum ut voluptatum?
+                  Debitis distinctio eligendi, eos ex expedita, fuga minima molestiae, necessitatibus neque nulla
+                  reiciendis sequi similique tempora?</p>
+              
+              </Col>
+              <Col md={4} xs={12} className="col-bordered">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eius eveniet illum ut voluptatum?
+                  Debitis distinctio eligendi, eos ex expedita, fuga minima molestiae, necessitatibus neque nulla
+                  reiciendis sequi similique tempora?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eius eveniet illum ut voluptatum?
+                  Debitis distinctio eligendi, eos ex expedita, fuga minima molestiae, necessitatibus neque nulla
+                  reiciendis sequi similique tempora?</p>
+              </Col>
+              <Col md={4} xs={12} className="col-bordered">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eius eveniet illum ut voluptatum?
+                  Debitis distinctio eligendi, eos ex expedita, fuga minima molestiae, necessitatibus neque nulla
+                  reiciendis sequi similique tempora?</p>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      );
+    })
+  )
+  .add(
     'form',
     withInfo({
       text: `
@@ -33,17 +101,17 @@ storiesOf('Form2Col', module)
       inline: true,
     })(() => {
       return (
-        <div style={{background: '#fff', padding: '16px'}}>
-          <Form horizontal>
-            <div className="container-fluid container-bordered">
-              <Row>
-                <Col md={6}>
-                  {formContent}
+        <div style={{background: '#fff'}}>
+          <Form horizontal className="form-bordered">
+            <div className="container-fluid">
+              <Row className="row-eq-height">
+                <Col md={6} sm={12} xs={12} className="col-bordered">
                   {formContent}
                   {formContent}
                   {formContent}
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={12} xs={12} className="col-bordered">
+                  {formContent}
                   {formContent}
                   {formContent}
                   {formContent}
