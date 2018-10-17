@@ -24,7 +24,7 @@ function loadStories() {
   require('../src/stories/AlertBlock');
   require('../src/stories/Icons');
   require('../src/stories/Splash');
-  require('../src/stories/Form2Col');
+  require('../src/stories/BorderedContent');
   require('../src/stories/SearchBar');
 }
 

@@ -23,9 +23,9 @@ const formContent = (
   </FormGroup>
 );
 
-storiesOf('Form2Col', module)
+storiesOf('Bordered column content', module)
   .add(
-    'text content 2 columns',
+    'Text content 2 columns',
     withInfo({
       text: `
         Responsive multiple column divided by border. Try to move with browser width.
@@ -56,7 +56,7 @@ storiesOf('Form2Col', module)
     })
   )
   .add(
-    'text content 3 columns',
+    'Text content 3 columns',
     withInfo({
       text: `
         Responsive multiple column divided by border. Try to move with browser width.
@@ -93,7 +93,7 @@ storiesOf('Form2Col', module)
     })
   )
   .add(
-    'form',
+    'Form content 2 columns',
     withInfo({
       text: `
         Responsive multiple column divided by border. Try to move with browser height.
