@@ -113,10 +113,10 @@ const OutputMappingHeader = (
       <Col xs={1}>
         <i className="fa fa-chevron-right"/>
       </Col>
-      <Col xs={4}>
+      <Col xs={3}>
         commit_parents_test_example
       </Col>
-      <Col xs={2}>
+      <Col xs={3}>
         <Label className="pull-right">Incremental</Label>
         <Label className="pull-right">65.04 MB</Label>
         <Label className="pull-right" title="2017-08-01 12:23:45">22 min</Label>
