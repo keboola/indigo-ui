@@ -183,7 +183,6 @@ storiesOf('MappingDetail', module)
   .add(
     'Input Mapping',
     withInfo({
-      text: `dummy`,
       inline: true,
     })(() => {
       return (
@@ -213,7 +212,6 @@ storiesOf('MappingDetail', module)
   .add(
     'Output Mapping',
     withInfo({
-      text: `dummy`,
       inline: true,
     })(() => {
       return (
@@ -239,4 +237,52 @@ storiesOf('MappingDetail', module)
       )
     })
   )
-    
+  
+  .add(
+    'Input Mapping - empty state',
+    withInfo({
+      inline: true,
+    })(() => {
+      return (
+        <div className="mapping">
+          <div className="mapping-header">
+            <h2>
+              Input Mapping
+            </h2>
+            <Button bsStyle="success">
+              <i className="kbc-icon-plus"></i>New Input
+            </Button>
+          </div>
+          <div className="mapping-empty-state">
+            <small>No Input assigned</small>
+            <Icon.MappingOut className="icon-size-64"/>
+          </div>
+        </div>
+      )
+    })
+  )
+  
+  .add(
+    'Output Mapping - empty state',
+    withInfo({
+      inline: true,
+    })(() => {
+      return (
+        <div className="mapping">
+          <div className="mapping-header">
+            <h2>
+              Output Mapping
+            </h2>
+            <Button bsStyle="success">
+              <i className="kbc-icon-plus"></i>New Output
+            </Button>
+          </div>
+          <div className="mapping-empty-state">
+            <small>No Output assigned</small>
+            <Icon.MappingIn className="icon-size-64"/>
+          </div>
+        </div>
+      )
+    })
+  )
+  
