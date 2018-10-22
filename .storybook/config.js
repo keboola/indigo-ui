@@ -19,6 +19,7 @@ function loadStories() {
   require('../src/stories/Popover');
   require('../src/stories/RegionSelector');
   require('../src/stories/ModalConfiguration');
+  require('../src/stories/BtnLinkInline');
   require('../src/stories/ExternalLink');
   require('../src/stories/PanelWithDetails');
   require('../src/stories/AlertBlock');
