@@ -39,7 +39,7 @@ const InputMappingContent = (
         Source Table
       </Col>
       <Col sm={10}>
-        <FormControl.Static>
+        <FormControl.Static componentClass="div">
           <a href="#">
             in.c-csv-import.407799760
           </a>
@@ -51,7 +51,7 @@ const InputMappingContent = (
         Columns
       </Col>
       <Col sm={10}>
-        <FormControl.Static>longitude, key, value</FormControl.Static>
+        <FormControl.Static componentClass="div">longitude, key, value</FormControl.Static>
       </Col>
     </FormGroup>
     <FormGroup>
@@ -59,7 +59,7 @@ const InputMappingContent = (
         Filters
       </Col>
       <Col sm={10}>
-        <FormControl.Static>
+        <FormControl.Static componentClass="div">
           Where longitudenot in [space character] and changed in last
           45 minutes
         </FormControl.Static>
@@ -70,7 +70,7 @@ const InputMappingContent = (
         Data Types
       </Col>
       <Col sm={10}>
-        <FormControl.Static>
+        <FormControl.Static componentClass="div">
           <ul className="list-unstyled">
             <li>
               <span>
@@ -141,7 +141,7 @@ const OutputMappingContent = (
         Destination table
       </Col>
       <Col sm={10}>
-        <FormControl.Static>
+        <FormControl.Static componentClass="div">
           <a href="#">
             out.c-test.fsdfdsfsd
           </a>
@@ -153,7 +153,7 @@ const OutputMappingContent = (
         Primary key
       </Col>
       <Col sm={10}>
-        <FormControl.Static>dsf, fsdf, sdfsd</FormControl.Static>
+        <FormControl.Static componentClass="div">dsf, fsdf, sdfsd</FormControl.Static>
       </Col>
     </FormGroup>
     <FormGroup>
@@ -161,7 +161,7 @@ const OutputMappingContent = (
         Incremental
       </Col>
       <Col sm={10}>
-        <FormControl.Static>
+        <FormControl.Static componentClass="div">
           <Icon.Check className="icon-size-16"/>
         </FormControl.Static>
       </Col>
@@ -171,7 +171,7 @@ const OutputMappingContent = (
         Data Types
       </Col>
       <Col sm={10}>
-        <FormControl.Static>
+        <FormControl.Static componentClass="div">
           Where dfs in [empty string], [space character]
         </FormControl.Static>
       </Col>
