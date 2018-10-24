@@ -15,6 +15,15 @@ const demoAdditionalActions = [
   </Button>
 ];
 
+const demoRecomendedRoutes = [
+  <a>
+    Demo Link
+  </a>,
+  <a>
+    Demo Link
+  </a>
+];
+
 class ExampleWithRef extends React.Component {
   constructor(props) {
     super(props);
@@ -83,11 +92,21 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar additionalActions={demoAdditionalActions} />
+        <SearchBar additionalActions={demoAdditionalActions}/>
       );
     })
   )
   
+  .add(
+    'Recommended Searches',
+    withInfo({
+      inline: true,
+    })(() => {
+      return (
+        <SearchBar recommendedSearches={demoRecomendedRoutes}  additionalActions={demoAdditionalActions}/>
+      );
+    })
+  )
   .add(
     'Custom placeholder',
     withInfo({
