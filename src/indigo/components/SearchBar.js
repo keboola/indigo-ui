@@ -60,7 +60,7 @@ class SearchBar extends React.Component {
             autoFocus
             inputRef={this.props.inputRef}
           />
-          <Icon.Search className="searchbar-form-icon icon-size-20" />
+          <Icon.Search className="searchbar-icon icon-size-20" />
         </form>
         {this.props.additionalActions && (
           <div className="searchbar-actions">{this.props.additionalActions}</div>
