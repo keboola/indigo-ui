@@ -29,9 +29,9 @@ class SearchBar extends React.Component {
     this.props.onSubmit();
   }
 
-  renderRecommendedLink(linkElement) {
+  renderRecommendedLink(linkElement, index) {
     return (
-      <span className="searchbar-recommended-link">
+      <span className="searchbar-recommended-link" key={index}>
         <Icon.Search className="searchbar-recommended-link-icon icon-size-16" />
         {linkElement}
       </span>
@@ -68,7 +68,7 @@ class SearchBar extends React.Component {
         {this.props.recommendedSearches && (
           <div className="searchbar-recommended-link-list">
             {this.props.recommendedSearches
-              .map((link) => this.renderRecommendedLink(link))
+              .map((link, index) => this.renderRecommendedLink(link, index))
               .reduce((prev, curr) => [prev, ', ', curr])}
           </div>
         )}
