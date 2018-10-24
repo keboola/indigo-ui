@@ -1,13 +1,23 @@
 .searchbar {
   display: flex;
-  flex-flow: row;
-  align-items: center;
+  flex-flow: column;
   position: relative;
+
+  &-row {
+    display: flex;
+    flex-flow: row;
+  }
 
   &-form {
     display: flex;
-    align-items: center;
     flex: 1;
+    align-items: center;
+
+    &-icon {
+      position: absolute;
+      left: 10px;
+      color: @kbc-grey-3;
+    }
   }
 
   &-input {
@@ -17,18 +27,18 @@
   }
 
   &-actions {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
     & > * {
       margin-left: 8px;
     }
   }
 
-  &-icon {
-    position: absolute;
-    left: 10px;
-    color: @kbc-grey-3;
+  &-recommended-link {
+    &-list {
+      margin: 8px 0 0;
+    }
+    &-icon {
+      color: #15c3ff;
+    }
   }
 
   &-inverse {

@@ -29,6 +29,15 @@ class SearchBar extends React.Component {
     this.props.onSubmit();
   }
 
+  renderLink(link) {
+    return (
+      <span>
+        <Icon.Search className="searchbar-recommended-link-icon icon-size-16" />
+        {link}
+      </span>
+    );
+  }
+
   render() {
     return (
       <div
@@ -40,21 +49,32 @@ class SearchBar extends React.Component {
           this.props.className
         )}
       >
-        <form onSubmit={this.handleSubmit} className="searchbar-form">
-          <FormControl
-            value={this.state.query}
-            placeholder={this.props.placeholder}
-            onChange={this.handleChange}
-            onKeyDown={this.handleKeyDown}
-            className="searchbar-input"
-            type="text"
-            autoFocus
-            inputRef={this.props.inputRef}
-          />
-          <Icon.Search className="searchbar-icon icon-size-20" />
-        </form>
-        {this.props.additionalActions && (
-          <div className="searchbar-actions">{this.props.additionalActions}</div>
+        <div className="searchbar-row">
+          <form onSubmit={this.handleSubmit} className="searchbar-form">
+            <FormControl
+              value={this.state.query}
+              placeholder={this.props.placeholder}
+              onChange={this.handleChange}
+              onKeyDown={this.handleKeyDown}
+              className="searchbar-input"
+              type="text"
+              autoFocus
+              inputRef={this.props.inputRef}
+            />
+            <Icon.Search className="searchbar-form-icon icon-size-20" />
+          </form>
+          {this.props.additionalActions && (
+            <div className="searchbar-actions">{this.props.additionalActions}</div>
+          )}
+        </div>
+        {this.props.recommendedSearches && (
+          <div className="searchbar-row">
+            <div className="searchbar-recommended-link-list">
+              {this.props.recommendedSearches
+                .map((link) => this.renderLink(link))
+                .reduce((prev, curr) => [prev, ', ', curr])}
+            </div>
+          </div>
         )}
       </div>
     );
@@ -78,6 +98,7 @@ SearchBar.propTypes = {
   className: PropTypes.string,
   placeholder: PropTypes.string,
   additionalActions: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
+  recommendedSearches: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
   theme: PropTypes.oneOf(['inverse']),
 };
 
