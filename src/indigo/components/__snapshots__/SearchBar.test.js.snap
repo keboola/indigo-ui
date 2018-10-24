@@ -19,7 +19,7 @@ exports[`<SearchBar /> SearchBar - inverse theme 1`] = `
       value=""
     />
     <svg
-      className="icon searchbar-icon icon-size-20"
+      className="icon searchbar-form-icon icon-size-20"
       height="32"
       viewBox="0 0 18 18"
       width="32"
@@ -53,7 +53,7 @@ exports[`<SearchBar /> SearchBar - with one additional button 1`] = `
       value=""
     />
     <svg
-      className="icon searchbar-icon icon-size-20"
+      className="icon searchbar-form-icon icon-size-20"
       height="32"
       viewBox="0 0 18 18"
       width="32"
@@ -96,7 +96,7 @@ exports[`<SearchBar /> SearchBar - with two additional buttons 1`] = `
       value=""
     />
     <svg
-      className="icon searchbar-icon icon-size-20"
+      className="icon searchbar-form-icon icon-size-20"
       height="32"
       viewBox="0 0 18 18"
       width="32"
@@ -144,7 +144,7 @@ exports[`<SearchBar /> SearchBar 1`] = `
       value=""
     />
     <svg
-      className="icon searchbar-icon icon-size-20"
+      className="icon searchbar-form-icon icon-size-20"
       height="32"
       viewBox="0 0 18 18"
       width="32"
