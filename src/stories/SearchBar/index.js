@@ -100,10 +100,13 @@ storiesOf('SearchBar', module)
   .add(
     'Recommended Searches',
     withInfo({
+      text: `
+        Option for add recommended searches links
+        `,
       inline: true,
     })(() => {
       return (
-        <SearchBar recommendedSearches={demoRecomendedRoutes}  additionalActions={demoAdditionalActions}/>
+        <SearchBar recommendedSearches={demoRecomendedRoutes}/>
       );
     })
   )
