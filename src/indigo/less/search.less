@@ -1,16 +1,11 @@
 .searchbar {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   position: relative;
 
-  &-row {
-    display: flex;
-    flex-flow: row;
-  }
-
   &-form {
+    flex: 1 0px;
     display: flex;
-    flex: 1;
     align-items: center;
 
     &-icon {
@@ -27,6 +22,7 @@
   }
 
   &-actions {
+    flex: 0 auto;
     & > * {
       margin-left: 8px;
     }
@@ -35,6 +31,7 @@
   &-recommended-link {
     white-space: nowrap;
     &-list {
+      flex: 1 100%;
       margin: 8px 0 0;
     }
     &-icon {

@@ -49,31 +49,27 @@ class SearchBar extends React.Component {
           this.props.className
         )}
       >
-        <div className="searchbar-row">
-          <form onSubmit={this.handleSubmit} className="searchbar-form">
-            <FormControl
-              value={this.state.query}
-              placeholder={this.props.placeholder}
-              onChange={this.handleChange}
-              onKeyDown={this.handleKeyDown}
-              className="searchbar-input"
-              type="text"
-              autoFocus
-              inputRef={this.props.inputRef}
-            />
-            <Icon.Search className="searchbar-form-icon icon-size-20" />
-          </form>
-          {this.props.additionalActions && (
-            <div className="searchbar-actions">{this.props.additionalActions}</div>
-          )}
-        </div>
+        <form onSubmit={this.handleSubmit} className="searchbar-form">
+          <FormControl
+            value={this.state.query}
+            placeholder={this.props.placeholder}
+            onChange={this.handleChange}
+            onKeyDown={this.handleKeyDown}
+            className="searchbar-input"
+            type="text"
+            autoFocus
+            inputRef={this.props.inputRef}
+          />
+          <Icon.Search className="searchbar-form-icon icon-size-20" />
+        </form>
+        {this.props.additionalActions && (
+          <div className="searchbar-actions">{this.props.additionalActions}</div>
+        )}
         {this.props.recommendedSearches && (
-          <div className="searchbar-row">
-            <div className="searchbar-recommended-link-list">
-              {this.props.recommendedSearches
-                .map((link) => this.renderLink(link))
-                .reduce((prev, curr) => [prev, ', ', curr])}
-            </div>
+          <div className="searchbar-recommended-link-list">
+            {this.props.recommendedSearches
+              .map((link) => this.renderLink(link))
+              .reduce((prev, curr) => [prev, ', ', curr])}
           </div>
         )}
       </div>
