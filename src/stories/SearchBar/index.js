@@ -92,7 +92,7 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar additionalActions={demoAdditionalActions}/>
+        <SearchBar additionalActions={demoAdditionalActions} />
       );
     })
   )
