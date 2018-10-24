@@ -17,10 +17,10 @@ const demoAdditionalActions = [
 
 const demoRecomendedRoutes = [
   <a>
-    Demo Link
+    Demo Link Lorem Ipsum
   </a>,
   <a>
-    Demo Link
+    Demo Link Lorem Ipsum
   </a>
 ];
 

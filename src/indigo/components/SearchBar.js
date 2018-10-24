@@ -31,7 +31,7 @@ class SearchBar extends React.Component {
 
   renderLink(link) {
     return (
-      <span>
+      <span className="searchbar-recommended-link">
         <Icon.Search className="searchbar-recommended-link-icon icon-size-16" />
         {link}
       </span>
