@@ -2,9 +2,9 @@
   display: flex;
   flex-flow: row;
   align-items: center;
-  position: relative;
 
   &-form {
+    position: relative;
     display: flex;
     align-items: center;
     flex: 1;
@@ -12,6 +12,7 @@
 
   &-input {
     padding-left: 34px;
+    padding-right: 40px;
     font-size: 16px;
     width: 100%;
   }
@@ -31,6 +32,19 @@
     color: @kbc-grey-3;
   }
 
+  &-clear {
+    &-btn {
+      display: flex;
+      position: absolute;
+      right: 0px;
+      &:active:focus{
+        outline: 0
+      }
+    }
+    &-icon {
+      color: inherit
+    }
+  }
   &-inverse {
     .searchbar-icon {
       color: #7f8188;

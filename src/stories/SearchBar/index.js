@@ -15,6 +15,8 @@ const demoAdditionalActions = [
   </Button>
 ];
 
+
+
 class ExampleWithRef extends React.Component {
   constructor(props) {
     super(props);
@@ -87,7 +89,6 @@ storiesOf('SearchBar', module)
       );
     })
   )
-  
   .add(
     'Custom placeholder',
     withInfo({
