@@ -103,7 +103,7 @@ storiesOf('SearchBar', module)
     'Events demo',
     withInfo({
       text: `
-        onChange & onSubmit & onKeyDown & onClear demo
+        onChange & onSubmit & onKeyDown demo
         `,
       inline: true,
     })(() => {
@@ -112,7 +112,6 @@ storiesOf('SearchBar', module)
           onChange={action('changed content')}
           onSubmit={action('submitted')}
           onKeyDown={action('keydown')}
-          onClear={action('cleared')}
         />
       );
     })
