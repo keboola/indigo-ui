@@ -141,4 +141,20 @@ storiesOf('SearchBar', module)
         <SearchBar theme="inverse"/>
       );
     })
+  )
+  .add(
+    'Searchbar with autosubmit on clear',
+    withInfo({
+      text: `
+        onSubmit is called after clear
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <SearchBar
+          onSubmit={action('auto submit - submitted')}
+          onChange={action('auto submit - changed')}
+        />
+      );
+    })
   );

@@ -34,6 +34,9 @@ class SearchBar extends React.Component {
     event.preventDefault();
     this.setState({ query: '' });
     this.props.onChange('');
+    if (this.props.onSubmit) {
+      this.props.onSubmit();
+    }
     this.searchbarInput.focus();
   }
 
