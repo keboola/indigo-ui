@@ -34,6 +34,7 @@ class SearchBar extends React.Component {
     event.preventDefault();
     this.setState({ query: '' });
     this.props.onClear();
+    this.searchbarInput.focus();
   }
 
   render() {
@@ -58,7 +59,12 @@ class SearchBar extends React.Component {
             })}
             type="text"
             autoFocus
-            inputRef={this.props.inputRef}
+            inputRef={(input) => {
+              this.searchbarInput = input;
+              if (this.props.inputRef) {
+                this.props.inputRef(input);
+              }
+            }}
           />
           <Icon.Search className="searchbar-icon icon-size-20" />
           {this.props.clearable && (
