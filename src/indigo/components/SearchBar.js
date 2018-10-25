@@ -64,10 +64,12 @@ class SearchBar extends React.Component {
               }
             }}
           />
-          <Icon.Search className="searchbar-icon icon-size-20"/>
-          <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
-            <Icon.Times className="searchbar-clear-icon icon-size-16"/>
-          </Button>
+          <Icon.Search className="searchbar-icon icon-size-20" />
+          {this.state.query.length > 0 && (
+            <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
+              <Icon.Times className="searchbar-clear-icon icon-size-16" />
+            </Button>
+          )}
         </form>
         {this.props.additionalActions && (
           <div className="searchbar-actions">{this.props.additionalActions}</div>
