@@ -90,17 +90,6 @@ storiesOf('SearchBar', module)
     })
   )
   .add(
-    'Clearable',
-    withInfo({
-      inline: true,
-    })(() => {
-      return (
-        <SearchBar clearable/>
-      );
-    })
-  )
-  
-  .add(
     'Custom placeholder',
     withInfo({
       inline: true,

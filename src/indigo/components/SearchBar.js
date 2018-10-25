@@ -54,9 +54,7 @@ class SearchBar extends React.Component {
             placeholder={this.props.placeholder}
             onChange={this.handleChange}
             onKeyDown={this.handleKeyDown}
-            className={classNames('searchbar-input', {
-              'searchbar-input-clearable': this.props.clearable,
-            })}
+            className="searchbar-input"
             type="text"
             autoFocus
             inputRef={(input) => {
@@ -66,12 +64,10 @@ class SearchBar extends React.Component {
               }
             }}
           />
-          <Icon.Search className="searchbar-icon icon-size-20" />
-          {this.props.clearable && (
-            <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
-              <Icon.Times className="searchbar-clear-icon icon-size-16" />
-            </Button>
-          )}
+          <Icon.Search className="searchbar-icon icon-size-20"/>
+          <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
+            <Icon.Times className="searchbar-clear-icon icon-size-16"/>
+          </Button>
         </form>
         {this.props.additionalActions && (
           <div className="searchbar-actions">{this.props.additionalActions}</div>
@@ -101,7 +97,6 @@ SearchBar.propTypes = {
   placeholder: PropTypes.string,
   additionalActions: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
   theme: PropTypes.oneOf(['inverse']),
-  clearable: PropTypes.any,
 };
 
 export default SearchBar;
