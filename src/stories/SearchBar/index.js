@@ -83,7 +83,17 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar additionalActions={demoAdditionalActions} />
+        <SearchBar clearable additionalActions={demoAdditionalActions} />
+      );
+    })
+  )
+  .add(
+    'Clearable',
+    withInfo({
+      inline: true,
+    })(() => {
+      return (
+        <SearchBar clearable/>
       );
     })
   )
@@ -102,15 +112,17 @@ storiesOf('SearchBar', module)
     'Events demo',
     withInfo({
       text: `
-        onChange & onSubmit & onKeyDown demo
+        onChange & onSubmit & onKeyDown & onClear demo
         `,
       inline: true,
     })(() => {
       return (
         <SearchBar
+          clearable
           onChange={action('changed content')}
           onSubmit={action('submitted')}
           onKeyDown={action('keydown')}
+          onClear={action('cleared')}
         />
       );
     })

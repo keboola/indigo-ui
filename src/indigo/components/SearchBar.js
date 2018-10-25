@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormControl } from 'react-bootstrap';
+import { FormControl, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Icon from './icons';
@@ -13,6 +13,7 @@ class SearchBar extends React.Component {
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClear = this.handleClear.bind(this);
   }
 
   handleKeyDown(event) {
@@ -27,6 +28,12 @@ class SearchBar extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.onSubmit();
+  }
+
+  handleClear(event) {
+    event.preventDefault();
+    this.setState({ query: '' });
+    this.props.onClear();
   }
 
   render() {
@@ -46,12 +53,19 @@ class SearchBar extends React.Component {
             placeholder={this.props.placeholder}
             onChange={this.handleChange}
             onKeyDown={this.handleKeyDown}
-            className="searchbar-input"
+            className={classNames('searchbar-input', {
+              'searchbar-input-clearable': this.props.clearable,
+            })}
             type="text"
             autoFocus
             inputRef={this.props.inputRef}
           />
           <Icon.Search className="searchbar-icon icon-size-20" />
+          {this.props.clearable && (
+            <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
+              <Icon.Times className="searchbar-clear-icon icon-size-16" />
+            </Button>
+          )}
         </form>
         {this.props.additionalActions && (
           <div className="searchbar-actions">{this.props.additionalActions}</div>
@@ -65,6 +79,7 @@ SearchBar.defaultProps = {
   onKeyDown: () => {},
   onChange: () => {},
   onSubmit: () => {},
+  onClear: () => {},
   placeholder: 'Search',
   query: '',
 };
@@ -74,11 +89,13 @@ SearchBar.propTypes = {
   onChange: PropTypes.func,
   onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
+  onClear: PropTypes.func,
   inputRef: PropTypes.func,
   className: PropTypes.string,
   placeholder: PropTypes.string,
   additionalActions: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
   theme: PropTypes.oneOf(['inverse']),
+  clearable: PropTypes.any,
 };
 
 export default SearchBar;
