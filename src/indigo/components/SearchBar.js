@@ -33,7 +33,7 @@ class SearchBar extends React.Component {
   handleClear(event) {
     event.preventDefault();
     this.setState({ query: '' });
-    this.props.onClear();
+    this.props.onChange('');
     this.searchbarInput.focus();
   }
 
@@ -83,7 +83,6 @@ SearchBar.defaultProps = {
   onKeyDown: () => {},
   onChange: () => {},
   onSubmit: () => {},
-  onClear: () => {},
   placeholder: 'Search',
   query: '',
 };
@@ -93,7 +92,6 @@ SearchBar.propTypes = {
   onChange: PropTypes.func,
   onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
-  onClear: PropTypes.func,
   inputRef: PropTypes.func,
   className: PropTypes.string,
   placeholder: PropTypes.string,
