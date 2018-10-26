@@ -14,7 +14,9 @@ class SearchBar extends React.Component {
   }
 
   handleKeyDown(event) {
-    this.props.onKeyDown(event.key);
+    if (this.props.onKeyDown) {
+      this.props.onKeyDown(event.key);
+    }
   }
 
   handleChange(event) {
@@ -23,7 +25,9 @@ class SearchBar extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.onSubmit();
+    if (this.props.onSubmit) {
+      this.props.onSubmit();
+    }
   }
 
   handleClear(event) {
