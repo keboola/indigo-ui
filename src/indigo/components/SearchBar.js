@@ -37,7 +37,7 @@ class SearchBar extends React.Component {
     if (this.props.onSubmit) {
       this.props.onSubmit();
     }
-    this.searchbarInput.focus();
+    this.internalInputRef.focus();
   }
 
   render() {
@@ -61,7 +61,7 @@ class SearchBar extends React.Component {
             type="text"
             autoFocus
             inputRef={(input) => {
-              this.searchbarInput = input;
+              this.internalInputRef = input;
               if (this.props.inputRef) {
                 this.props.inputRef(input);
               }
