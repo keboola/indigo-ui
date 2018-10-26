@@ -84,7 +84,7 @@ SearchBar.defaultProps = {
 
 SearchBar.propTypes = {
   query: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
   onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
   inputRef: PropTypes.func,
