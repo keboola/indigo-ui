@@ -7,9 +7,6 @@ import Icon from './icons';
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      query: this.props.query,
-    };
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,27 +14,29 @@ class SearchBar extends React.Component {
   }
 
   handleKeyDown(event) {
-    this.props.onKeyDown(event.key);
+    if (this.props.onKeyDown) {
+      this.props.onKeyDown(event.key);
+    }
   }
 
   handleChange(event) {
-    this.setState({ query: event.target.value });
     this.props.onChange(event.target.value);
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.onSubmit();
+    if (this.props.onSubmit) {
+      this.props.onSubmit();
+    }
   }
 
   handleClear(event) {
     event.preventDefault();
-    this.setState({ query: '' });
     this.props.onChange('');
     if (this.props.onSubmit) {
       this.props.onSubmit();
     }
-    this.searchbarInput.focus();
+    this.internalInputRef.focus();
   }
 
   render() {
@@ -53,7 +52,7 @@ class SearchBar extends React.Component {
       >
         <form onSubmit={this.handleSubmit} className="searchbar-form">
           <FormControl
-            value={this.state.query}
+            value={this.props.query}
             placeholder={this.props.placeholder}
             onChange={this.handleChange}
             onKeyDown={this.handleKeyDown}
@@ -61,14 +60,14 @@ class SearchBar extends React.Component {
             type="text"
             autoFocus
             inputRef={(input) => {
-              this.searchbarInput = input;
+              this.internalInputRef = input;
               if (this.props.inputRef) {
                 this.props.inputRef(input);
               }
             }}
           />
           <Icon.Search className="searchbar-icon icon-size-20" />
-          {this.state.query.length > 0 && (
+          {this.props.query && (
             <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
               <Icon.Times className="searchbar-clear-icon icon-size-16" />
             </Button>
@@ -83,16 +82,13 @@ class SearchBar extends React.Component {
 }
 
 SearchBar.defaultProps = {
-  onKeyDown: () => {},
-  onChange: () => {},
-  onSubmit: () => {},
   placeholder: 'Search',
   query: '',
 };
 
 SearchBar.propTypes = {
   query: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
   onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
   inputRef: PropTypes.func,

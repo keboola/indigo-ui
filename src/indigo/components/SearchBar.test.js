@@ -5,20 +5,21 @@ import SearchBar from './SearchBar';
 
 describe('<SearchBar />', () => {
   it('SearchBar', () => {
-    snapshot(<SearchBar />);
+    snapshot(<SearchBar onChange={() => null} />);
   });
 
   it('SearchBar - inverse theme', () => {
-    snapshot(<SearchBar theme="inverse" />);
+    snapshot(<SearchBar onChange={() => null} theme="inverse" />);
   });
 
   it('SearchBar - with one additional button', () => {
-    snapshot(<SearchBar additionalActions={<button className="btn btn-default">Submit</button>} />);
+    snapshot(<SearchBar onChange={() => null} additionalActions={<button className="btn btn-default">Submit</button>} />);
   });
 
   it('SearchBar - with two additional buttons', () => {
     snapshot(
       <SearchBar
+        onChange={() => null}
         additionalActions={[
           <button key="submit-button" className="btn btn-primary">
             Submit

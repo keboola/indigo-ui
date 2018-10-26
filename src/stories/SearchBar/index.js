@@ -1,91 +1,25 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
-import {Button, FormControl} from 'react-bootstrap';
-import {action} from '@storybook/addon-actions';
 
 import SearchBar from '../../indigo/components/SearchBar';
 
-const demoAdditionalActions = [
-  <Button key="button-default">
-    Demo Button
-  </Button>,
-  <Button bsStyle="primary" key="button-primary">
-    Demo Button
-  </Button>
-];
+import BasicUsage from "./examples/BasicUsage";
+import WithButtons from "./examples/WithButtons";
+import Events from "./examples/Events";
+import WithRef from "./examples/WithRef";
+import AutoSubmitOnClear from "./examples/AutoSubmitOnClear";
+import WithExternalButtons from "./examples/WithExternalButtons";
 
-
-
-class ExampleWithRef extends React.Component {
-  constructor(props) {
-    super(props);
-    this.fillSecondInput = this.fillSecondInput.bind(this);
-    this.setSecondValue = this.setSecondValue.bind(this);
-    this.state = {
-      secondValue: '',
-    };
-    this.searchInput = null;
-  }
-
-  fillSecondInput() {
-    action('submitted')();
-    if (this.searchInput) {
-      this.setSecondValue(this.searchInput.value);
-    }
-  }
-
-  setSecondValue(value) {
-    this.setState({
-      secondValue: value
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <SearchBar
-          onSubmit={this.fillSecondInput}
-          inputRef={(element) => {
-            this.searchInput = element;
-          }}
-        />
-        <div>
-          Submit input above (with Enter) and value will be propagated to input bellow.
-        </div>
-        <FormControl
-          type="text"
-          value={this.state.secondValue}
-          onChange={(event) => {
-            this.setSecondValue(event.target.value)
-          }}
-        />
-      </div>
-    );
-  }
-}
 
 storiesOf('SearchBar', module)
   .add(
-    'Basic usage',
+    'Minimal',
     withInfo({
       inline: true,
     })(() => {
       return (
-        <SearchBar/>
-      );
-    })
-  )
-  .add(
-    'Searchbar with actions',
-    withInfo({
-      text: `
-        Single action element can be passed as object. Multiple additional action elements needs to be passed in array.
-        `,
-      inline: true,
-    })(() => {
-      return (
-        <SearchBar additionalActions={demoAdditionalActions} />
+        <SearchBar onChange={()=>null} query="Test"/>
       );
     })
   )
@@ -95,37 +29,7 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar placeholder="Search by component name, desription or id"/>
-      );
-    })
-  )
-  .add(
-    'Events demo',
-    withInfo({
-      text: `
-        onChange & onSubmit & onKeyDown demo
-        `,
-      inline: true,
-    })(() => {
-      return (
-        <SearchBar
-          onChange={action('changed content')}
-          onSubmit={action('submitted')}
-          onKeyDown={action('keydown')}
-        />
-      );
-    })
-  )
-  .add(
-    'Callback Refs',
-    withInfo({
-      text: `
-        Passing inputRef
-        `,
-      inline: true,
-    })(() => {
-      return (
-        <ExampleWithRef />
+        <SearchBar placeholder="Search by component name, description or id" onChange={()=>null} />
       );
     })
   )
@@ -138,12 +42,61 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar theme="inverse"/>
+        <SearchBar theme="inverse" onChange={()=>null}/>
       );
     })
   )
   .add(
-    'Searchbar with autosubmit on clear',
+    'Basic usage',
+    withInfo({
+      inline: true,
+    })(() => {
+      return (
+        <BasicUsage />
+      );
+    })
+  )
+  .add(
+    'SearchBar with buttons',
+    withInfo({
+      text: `
+        Single action element can be passed as object. Multiple additional action elements needs to be passed in array.
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <WithButtons />
+      );
+    })
+  )
+  .add(
+    'Events demo',
+    withInfo({
+      text: `
+        onChange & onSubmit & onKeyDown demo
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <Events />
+      );
+    })
+  )
+  .add(
+    'Callback Refs',
+    withInfo({
+      text: `
+        Passing inputRef
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <WithRef />
+      );
+    })
+  )
+  .add(
+    'SearchBar with autosubmit on clear',
     withInfo({
       text: `
         onSubmit is called after clear
@@ -151,10 +104,20 @@ storiesOf('SearchBar', module)
       inline: true,
     })(() => {
       return (
-        <SearchBar
-          onSubmit={action('auto submit - submitted')}
-          onChange={action('auto submit - changed')}
-        />
+        <AutoSubmitOnClear />
+      );
+    })
+  )
+  .add(
+    'SearchBar with predefined searches',
+    withInfo({
+      text: `
+        SearchBar value can be modified via query prop
+        `,
+      inline: true,
+    })(() => {
+      return (
+        <WithExternalButtons />
       );
     })
   );
