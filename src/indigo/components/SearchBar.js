@@ -7,9 +7,6 @@ import Icon from './icons';
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      query: this.props.query,
-    };
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,7 +18,6 @@ class SearchBar extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({ query: event.target.value });
     this.props.onChange(event.target.value);
   }
 
@@ -32,7 +28,6 @@ class SearchBar extends React.Component {
 
   handleClear(event) {
     event.preventDefault();
-    this.setState({ query: '' });
     this.props.onChange('');
     if (this.props.onSubmit) {
       this.props.onSubmit();
@@ -53,7 +48,7 @@ class SearchBar extends React.Component {
       >
         <form onSubmit={this.handleSubmit} className="searchbar-form">
           <FormControl
-            value={this.state.query}
+            value={this.props.query}
             placeholder={this.props.placeholder}
             onChange={this.handleChange}
             onKeyDown={this.handleKeyDown}
@@ -68,7 +63,7 @@ class SearchBar extends React.Component {
             }}
           />
           <Icon.Search className="searchbar-icon icon-size-20" />
-          {this.state.query.length > 0 && (
+          {this.props.query && (
             <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
               <Icon.Times className="searchbar-clear-icon icon-size-16" />
             </Button>
