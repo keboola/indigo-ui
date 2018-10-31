@@ -675,3 +675,10 @@ small.empty-label {
 .table-no-margin {
   margin: 0;
 }
+
+// fixes: https://github.com/keboola/kbc-ui/issues/1461
+// bootstrap přidává automaticky padding-right 17px pro body při otevřeném modalu to ale neplatí
+// pro navbar-fixed-top, který je pozicován fixně, je teda potřeba přidat padding přímo i tam
+body.modal-open .navbar-fixed-top.kbc-navbar {
+  padding-right: 17px;
+}
