@@ -34,7 +34,9 @@ class SearchBar extends React.Component {
     event.preventDefault();
     this.props.onChange('');
     if (this.props.onSubmit) {
-      this.props.onSubmit();
+      setTimeout(() => {
+        this.props.onSubmit();
+      }, 50);
     }
     this.internalInputRef.focus();
   }
