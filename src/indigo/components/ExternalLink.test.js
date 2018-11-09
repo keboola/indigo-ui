@@ -15,4 +15,20 @@ describe('<ExternalLink />', () => {
       </ExternalLink>
     );
   });
+
+  it('ExternalLink - disabled', () => {
+    snapshot(
+      <ExternalLink href="https://www.keboola.com" disabled>
+        keboola.com
+      </ExternalLink>
+    );
+  });
+
+  it('ExternalLink - onClick', () => {
+    snapshot(
+      <ExternalLink href="https://www.keboola.com" onClick={() => null}>
+        keboola.com
+      </ExternalLink>
+    );
+  });
 });

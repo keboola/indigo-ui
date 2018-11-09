@@ -2,8 +2,29 @@
 
 exports[`<ExternalLink /> ExternalLink - default 1`] = `
 <a
-  className={undefined}
   href="https://www.keboola.com"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  keboola.com
+</a>
+`;
+
+exports[`<ExternalLink /> ExternalLink - disabled 1`] = `
+<a
+  disabled={true}
+  href="https://www.keboola.com"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  keboola.com
+</a>
+`;
+
+exports[`<ExternalLink /> ExternalLink - onClick 1`] = `
+<a
+  href="https://www.keboola.com"
+  onClick={[Function]}
   rel="noopener noreferrer"
   target="_blank"
 >
