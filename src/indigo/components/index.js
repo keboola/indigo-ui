@@ -12,6 +12,7 @@ import Icon from './icons';
 import Finished from './Finished';
 import InlineEditInput from './InlineEditInput';
 import Duration from './Duration';
+import JobStatusCircle from './JobStatusCircle';
 
 export {
   Check,
@@ -28,4 +29,5 @@ export {
   Finished,
   InlineEditInput,
   Duration,
+  JobStatusCircle,
 };
