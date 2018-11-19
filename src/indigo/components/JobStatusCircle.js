@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const statusColorMap = {
   success: 'success',
-  danger: 'danger',
+  error: 'danger',
   warn: 'danger',
   warning: 'danger',
   processing: 'warning',
