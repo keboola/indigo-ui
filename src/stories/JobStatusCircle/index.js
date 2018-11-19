@@ -32,4 +32,11 @@ storiesOf('JobStatusCircle', module).add(
   })(() => {
     return <JobStatusCircle status="processing"/>;
   })
+).add(
+  'Job Status - undefined status',
+  withInfo({
+    inline: true,
+  })(() => {
+    return <JobStatusCircle/>;
+  })
 );

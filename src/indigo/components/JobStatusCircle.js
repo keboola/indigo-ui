@@ -19,7 +19,7 @@ class JobStatusCircle extends React.Component {
     return (
       <i
         className={classNames('fa fa-circle job-status-circle', {
-          [`job-status-circle-${statusColorMap[this.props.status]}`]: true,
+          [`job-status-circle-${statusColorMap[this.props.status]}`]: !!this.props.status,
         })}
       />
     );
