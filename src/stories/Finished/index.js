@@ -22,14 +22,4 @@ storiesOf('Finished', module).add(
   })(() => {
     return <Finished hasIcon={true} endTime={demoTimestamp}/>;
   })
-).add(
-  'custom datetime format',
-  withInfo({
-    text: `
-        Ability to change datetime format of exact time of event on mouse hover
-        `,
-    inline: true,
-  })(() => {
-    return <Finished endTime={demoTimestamp} dateTimeFormat="LLLL"/>;
-  })
 );

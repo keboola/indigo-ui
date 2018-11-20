@@ -6,9 +6,7 @@ class Finished extends React.Component {
   render() {
     return (
       <span
-        title={
-          this.props.endTime ? moment(this.props.endTime).format(this.props.dateTimeFormat) : ''
-        }
+        title={this.props.endTime ? moment(this.props.endTime).format('YYYY-MM-DD HH:mm:ss') : ''}
       >
         {!!this.props.hasIcon && (
           <span>
@@ -23,12 +21,10 @@ class Finished extends React.Component {
 
 Finished.propTypes = {
   endTime: PropTypes.string,
-  dateTimeFormat: PropTypes.string,
   hasIcon: PropTypes.bool,
 };
 
 Finished.defaultProps = {
-  dateTimeFormat: 'YYYY-MM-DD HH:mm:ss',
   hasIcon: false,
 };
 
