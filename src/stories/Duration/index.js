@@ -42,4 +42,15 @@ storiesOf('Duration', module)
     })(() => {
       return <Duration startTime={demoDatetime1}/>;
     })
+  )
+  .add(
+    'Duration with icon',
+    withInfo({
+      text: `
+      Active duration counter. Counts from start time given till 24h. Accepts props in datetime string format.
+      `,
+      inline: true,
+    })(() => {
+      return <Duration startTime={demoDatetime1} endTime={demoDatetime2} hasIcon={true}/>;
+    })
   );

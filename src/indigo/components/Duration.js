@@ -62,17 +62,30 @@ class Duration extends React.Component {
   render() {
     if (!this.props.endTime) {
       return (
-        <span>{timeInWords(durationFrom(this.props.startTime, this.state.endTime), true)}</span>
+        <span>
+          {!!this.props.hasIcon && <i className="fa fa-clock-o duration-icon" />}
+          {timeInWords(durationFrom(this.props.startTime, this.state.endTime), true)}
+        </span>
       );
     }
 
-    return <span>{timeInWords(durationFrom(this.props.startTime, this.props.endTime), true)}</span>;
+    return (
+      <span>
+        {!!this.props.hasIcon && <i className="fa fa-clock-o duration-icon" />}
+        {timeInWords(durationFrom(this.props.startTime, this.props.endTime), true)}
+      </span>
+    );
   }
 }
 
 Duration.propTypes = {
   startTime: PropTypes.string.isRequired,
   endTime: PropTypes.string,
+  hasIcon: PropTypes.bool,
+};
+
+Duration.defaultProps = {
+  hasIcon: false,
 };
 
 export default Duration;
