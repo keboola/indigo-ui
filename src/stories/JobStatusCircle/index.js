@@ -23,7 +23,7 @@ storiesOf('JobStatusCircle', module).add(
   withInfo({
     inline: true,
   })(() => {
-    return <JobStatusCircle status="danger"/>;
+    return <JobStatusCircle status="error"/>;
   })
 ).add(
   'Job Status - Warning',
