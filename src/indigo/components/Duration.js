@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-/* eslint-disable arrow-body-style */
 
 export const durationFrom = (started, finished) => {
-  return (new Date(finished).getTime() - new Date(started).getTime()) / 1000;
+  const duration = (new Date(finished).getTime() - new Date(started).getTime()) / 1000;
+  return duration;
 };
 
 export const timeInWords = (duration, round) => {
