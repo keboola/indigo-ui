@@ -4,7 +4,7 @@ import {withInfo} from '@storybook/addon-info';
 
 import Finished from '../../indigo/components/Finished';
 
-const demoTimestamp = 1542630208
+const demoTimestamp = 1542632032608
 storiesOf('Finished', module).add(
   'Basic Init',
   withInfo({
