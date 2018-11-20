@@ -4,28 +4,42 @@ import { withInfo } from '@storybook/addon-info';
 
 import Duration from '../../indigo/components/Duration';
 
-const date = new Date();
-const date2 = new Date(date.getTime() + 123456)
+const now = new Date();
+const demoDatetime1 = now.toString();
+const demoDatetime2 = new Date(now.getTime() + 123456).toString();
+const demoDatetime3 = new Date(now.getTime() + 123456789).toString();
 
-storiesOf('Duration', module).add(
-  'Duration',
-  withInfo({
-    text: `
-      Show if something is enabled or not.
-      `,
-    inline: true,
-  })(() => {
-    return <Duration startTime={date.toString()} endTime={date2.toString()}  />;
-  })
-)
+storiesOf('Duration', module)
   .add(
-  'Duration Dynamix',
-  withInfo({
-    text: `
-      Show if something is enabled or not.
+    'Duration',
+    withInfo({
+      text: `
+      Static duration component for start and end time set. Accepts props in datetime string format.
       `,
-    inline: true,
-  })(() => {
-    return <Duration startTime={date.toString()} />;
-  })
-);
+      inline: true,
+    })(() => {
+      return <Duration startTime={demoDatetime1} endTime={demoDatetime2}/>;
+    })
+  )
+  .add(
+    'Duration > 24h',
+    withInfo({
+      text: `
+      Static duration component for start and end time set. Accepts props in datetime string format.
+      `,
+      inline: true,
+    })(() => {
+      return <Duration startTime={demoDatetime1} endTime={demoDatetime3}/>;
+    })
+  )
+  .add(
+    'Duration Dynamic',
+    withInfo({
+      text: `
+      Active duration counter. Counts from start time given till 24h. Accepts props in datetime string format.
+      `,
+      inline: true,
+    })(() => {
+      return <Duration startTime={demoDatetime1}/>;
+    })
+  );
