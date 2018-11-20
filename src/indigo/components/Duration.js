@@ -60,10 +60,6 @@ class Duration extends React.Component {
   }
 
   render() {
-    if (!this.props.startTime) {
-      return null;
-    }
-
     if (!this.props.endTime) {
       return (
         <span>{timeInWords(durationFrom(this.props.startTime, this.state.endTime), true)}</span>
@@ -75,7 +71,7 @@ class Duration extends React.Component {
 }
 
 Duration.propTypes = {
-  startTime: PropTypes.string,
+  startTime: PropTypes.string.isRequired,
   endTime: PropTypes.string,
 };
 
