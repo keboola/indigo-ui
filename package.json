@@ -7,7 +7,7 @@
     "classnames": "^2.1.0",
     "font-awesome": "^4.7.0",
     "immutable": "^3.7.3",
-    "moment": "^2.18.0",
+    "moment": "^2.22.2",
     "prop-types": "^15.6.1"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-exec": "^3.0.0",
     "grunt-stylelint": "^0.10.0",
-    "moment-timezone": "~0.3.1",
+    "moment-timezone": "^0.5.23",
     "npm-run-all": "^4.0.2",
     "prettier": "^1.14.3",
     "react": "^15.6.1",
