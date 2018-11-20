@@ -51,6 +51,6 @@ storiesOf('Duration', module)
       `,
       inline: true,
     })(() => {
-      return <Duration startTime={demoDatetime1} endTime={demoDatetime2} hasIcon={true}/>;
+      return <Duration startTime={demoDatetime1} endTime={demoDatetime2} hasIcon/>;
     })
   );
