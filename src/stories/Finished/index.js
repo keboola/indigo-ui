@@ -22,4 +22,11 @@ storiesOf('Finished', module).add(
   })(() => {
     return <Finished hasIcon={true} endTime={demoTimestamp}/>;
   })
+).add(
+  'No datetime provided',
+  withInfo({
+    inline: true,
+  })(() => {
+    return <Finished/>;
+  })
 );
