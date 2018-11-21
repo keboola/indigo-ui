@@ -68,6 +68,7 @@ class Duration extends React.Component {
           timeInWords(durationFrom(this.props.startTime, this.props.endTime), true)}
         {!this.props.endTime &&
           timeInWords(durationFrom(this.props.startTime, this.state.endTime), true)}
+        {!this.props.startTime && !this.props.duration && 'N/A'}
       </span>
     );
   }

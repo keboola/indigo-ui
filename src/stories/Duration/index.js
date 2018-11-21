@@ -44,7 +44,6 @@ storiesOf('Duration', module)
       return <Duration duration={demoSecondCount}/>;
     })
   )
-  
   .add(
     'Duration > 24h',
     withInfo({
@@ -56,7 +55,6 @@ storiesOf('Duration', module)
       return <Duration startTime={demoDatetime1} endTime={demoDatetime3}/>;
     })
   )
-  
   .add(
     'Duration with icon',
     withInfo({
@@ -66,5 +64,16 @@ storiesOf('Duration', module)
       inline: true,
     })(() => {
       return <Duration startTime={demoDatetime1} endTime={demoDatetime2} showIcon/>;
+    })
+  )
+  .add(
+    'Duration - empty state',
+    withInfo({
+      text: `
+      When no duration and start time given.
+      `,
+      inline: true,
+    })(() => {
+      return <Duration />;
     })
   );
