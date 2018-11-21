@@ -4,12 +4,14 @@ import {withInfo} from '@storybook/addon-info';
 
 import Finished from '../../indigo/components/Finished';
 
-const demoTimestamp = 1542632032608
+const now = new Date();
+const demoTimestamp = new Date(now.getTime() - 123456).toString();
+
 storiesOf('Finished', module).add(
   'Basic Init',
   withInfo({
     text: `
-        Shows how much time ago event occured. Shows exact time of event on mouse hover
+        Shows how much time ago event occured. Shows exact time of event on mouse hover. Accepts prop in datetime string format.
         `,
     inline: true,
   })(() => {
