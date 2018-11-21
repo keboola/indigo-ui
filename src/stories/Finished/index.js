@@ -1,11 +1,11 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
-
 import Finished from '../../indigo/components/Finished';
+import moment from "moment";
 
 const now = new Date();
-const demoTimestamp = new Date(now.getTime() - 123456).toString();
+const demoTimestamp = moment(now.getTime() - 123456).format('YYYY-MM-DD HH:mm:ss').toString();
 
 storiesOf('Finished', module).add(
   'Basic Init',
