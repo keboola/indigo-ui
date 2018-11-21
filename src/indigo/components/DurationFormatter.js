@@ -3,7 +3,7 @@ export const durationFrom = (started, finished) => {
   return duration;
 };
 
-export const timeInWords = (duration, round) => {
+export const timeInWords = (duration) => {
   const days = Math.floor(duration / 86400);
   const hours = Math.floor((duration % 86400) / 3600);
   const minutes = Math.floor((duration % 3600) / 60);
@@ -24,7 +24,7 @@ export const timeInWords = (duration, round) => {
   if (minutes > 0) {
     result.push(`${minutes} min`);
   }
-  if (seconds > 0 && (!round || hours === 0)) {
+  if (seconds > 0) {
     result.push(`${seconds} sec`);
   }
   if (result.length > 0) {
