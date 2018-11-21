@@ -2,7 +2,7 @@
 
 exports[`<Finished /> Basic Init 1`] = `
 <span
-  title="2018-11-21 11:09:23"
+  title="2016-01-01 01:00:00"
 >
   a few seconds ago
 </span>
@@ -10,7 +10,7 @@ exports[`<Finished /> Basic Init 1`] = `
 
 exports[`<Finished /> Finished with icon 1`] = `
 <span
-  title="2018-11-21 11:09:23"
+  title="2016-01-01 01:00:00"
 >
   <i
     className="fa fa-calendar finished-icon"
