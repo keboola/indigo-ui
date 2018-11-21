@@ -4,7 +4,7 @@ import moment from 'moment';
 import { snapshot } from '../../tests';
 import Finished from "./Finished";
 
-const DATE_TO_USE = new Date('2016');
+const DATE_TO_USE = new Date('2016-01-01 00:00:00');
 const _Date = Date;
 global.Date = jest.fn(() => DATE_TO_USE);
 global.Date.UTC = _Date.UTC;
