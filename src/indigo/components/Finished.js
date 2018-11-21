@@ -8,7 +8,7 @@ class Finished extends React.Component {
       <span
         title={this.props.endTime ? moment(this.props.endTime).format('YYYY-MM-DD HH:mm:ss') : ''}
       >
-        {!!this.props.hasIcon && <i className="fa fa-calendar finished-icon" />}
+        {!!this.props.showIcon && <i className="fa fa-calendar finished-icon" />}
         {this.props.endTime ? moment(this.props.endTime).fromNow() : 'N/A'}
       </span>
     );
@@ -17,11 +17,11 @@ class Finished extends React.Component {
 
 Finished.propTypes = {
   endTime: PropTypes.string,
-  hasIcon: PropTypes.bool,
+  showIcon: PropTypes.bool,
 };
 
 Finished.defaultProps = {
-  hasIcon: false,
+  showIcon: false,
 };
 
 export default Finished;

@@ -20,7 +20,7 @@ storiesOf('Finished', module).add(
   withInfo({
     inline: true,
   })(() => {
-    return <Finished hasIcon endTime={demoTimestamp}/>;
+    return <Finished showIcon endTime={demoTimestamp}/>;
   })
 ).add(
   'No datetime provided',
