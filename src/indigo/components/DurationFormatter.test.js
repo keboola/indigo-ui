@@ -51,7 +51,3 @@ describe('Duration Formatter', () => {
     });
   });
 });
-
-
-
-
