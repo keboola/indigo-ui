@@ -79,7 +79,7 @@ class Duration extends React.Component {
 }
 
 Duration.propTypes = {
-  startTime: PropTypes.string.isRequired,
+  startTime: PropTypes.string,
   endTime: PropTypes.string,
   hasIcon: PropTypes.bool,
 };
