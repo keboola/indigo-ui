@@ -19,7 +19,9 @@ class JobStatusCircle extends React.Component {
     return (
       <i
         className={classNames('fa fa-circle job-status-circle', {
-          [`job-status-circle-${statusColorMap[this.props.status]}`]: !!this.props.status,
+          [`job-status-circle-${
+            statusColorMap[this.props.status]
+          }`]: Object.prototype.hasOwnProperty.call(statusColorMap, this.props.status),
         })}
       />
     );
@@ -27,7 +29,17 @@ class JobStatusCircle extends React.Component {
 }
 
 JobStatusCircle.propTypes = {
-  status: PropTypes.string.isRequired,
+  status: PropTypes.oneOf([
+    'success',
+    'error',
+    'warn',
+    'warning',
+    'processing',
+    'cancelled',
+    'waiting',
+    'terminating',
+    'terminated',
+  ]).isRequired,
 };
 
 export default JobStatusCircle;
