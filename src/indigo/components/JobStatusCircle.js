@@ -27,7 +27,7 @@ class JobStatusCircle extends React.Component {
 }
 
 JobStatusCircle.propTypes = {
-  status: PropTypes.string,
+  status: PropTypes.string.isRequired,
 };
 
 export default JobStatusCircle;
