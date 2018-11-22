@@ -5,13 +5,6 @@ import {withInfo} from '@storybook/addon-info';
 import JobStatusCircle from '../../indigo/components/JobStatusCircle';
 
 storiesOf('JobStatusCircle', module).add(
-  'Job Status - Default',
-  withInfo({
-    inline: true,
-  })(() => {
-    return <JobStatusCircle status="default"/>;
-  })
-).add(
   'Job Status - Success',
   withInfo({
     inline: true,
@@ -19,7 +12,7 @@ storiesOf('JobStatusCircle', module).add(
     return <JobStatusCircle status="success"/>;
   })
 ).add(
-  'Job Status - Danger',
+  'Job Status - Error',
   withInfo({
     inline: true,
   })(() => {
@@ -31,5 +24,12 @@ storiesOf('JobStatusCircle', module).add(
     inline: true,
   })(() => {
     return <JobStatusCircle status="processing"/>;
+  })
+).add(
+  'Job Status - Cancelled',
+  withInfo({
+    inline: true,
+  })(() => {
+    return <JobStatusCircle status="cancelled"/>;
   })
 );
