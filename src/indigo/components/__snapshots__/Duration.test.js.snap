@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Duration /> Duration > 24h 1`] = `
+<span>
+  more than 24 hrs
+</span>
+`;
+
+exports[`<Duration /> Duration - empty state 1`] = `
+<span>
+  
+  N/A
+</span>
+`;
+
+exports[`<Duration /> Duration 1`] = `
+<span>
+  1 hr 2 min 2 sec
+</span>
+`;
+
+exports[`<Duration /> Duration Dynamic 1`] = `
+<span>
+  2 min 4 sec
+</span>
+`;
+
+exports[`<Duration /> Duration only 1`] = `
+<span>
+  26 min 26 sec
+  
+</span>
+`;
+
+exports[`<Duration /> Duration with icon 1`] = `
+<span>
+  <i
+    className="fa fa-clock-o duration-icon"
+  />
+  1 hr 2 min 2 sec
+</span>
+`;
