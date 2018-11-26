@@ -16,12 +16,12 @@ const statusColorMap = {
 
 class JobStatusCircle extends React.Component {
   render() {
+    const statusColor = statusColorMap[this.props.status];
+
     return (
       <i
         className={classNames('fa fa-circle job-status-circle', {
-          [`job-status-circle-${
-            statusColorMap[this.props.status]
-          }`]: Object.prototype.hasOwnProperty.call(statusColorMap, this.props.status),
+          [`job-status-circle-${statusColor}`]: !!statusColor,
         })}
       />
     );
