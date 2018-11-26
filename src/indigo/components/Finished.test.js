@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment';
 
 import { snapshot } from '../../tests';
 import Finished from "./Finished";
