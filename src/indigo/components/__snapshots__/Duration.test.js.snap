@@ -15,13 +15,13 @@ exports[`<Duration /> Duration - empty state 1`] = `
 
 exports[`<Duration /> Duration 1`] = `
 <span>
-  1 hr 2 min 2 sec
+  42 min 16 sec
 </span>
 `;
 
 exports[`<Duration /> Duration Dynamic 1`] = `
 <span>
-  2 min 4 sec
+  more than 24 hrs
 </span>
 `;
 
@@ -37,6 +37,6 @@ exports[`<Duration /> Duration with icon 1`] = `
   <i
     className="fa fa-clock-o duration-icon"
   />
-  1 hr 2 min 2 sec
+  42 min 16 sec
 </span>
 `;
