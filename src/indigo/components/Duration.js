@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 import { timeInWords, durationFrom } from './DurationFormatter';
 
 class Duration extends React.Component {
@@ -7,7 +8,9 @@ class Duration extends React.Component {
     super(props);
     this.tick = this.tick.bind(this);
     this.state = {
-      endTime: new Date().toString(),
+      endTime: moment()
+        .format('YYYY-MM-DDTHH:MM:ssZZ')
+        .toString(),
     };
   }
 
@@ -21,7 +24,9 @@ class Duration extends React.Component {
 
   tick() {
     this.setState({
-      endTime: new Date().toString(),
+      endTime: moment()
+        .format('YYYY-MM-DDTHH:MM:ssZZ')
+        .toString(),
     });
   }
 
