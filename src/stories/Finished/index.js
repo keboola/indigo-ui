@@ -5,7 +5,7 @@ import Finished from '../../indigo/components/Finished';
 import moment from "moment";
 
 const now = new Date();
-const demoTimestamp = moment(now.getTime() - 123456).format('YYYY-MM-DD HH:mm:ss').toString();
+const demoTimestamp = moment(now.getTime() - 123456).format('YYYY-MM-DDTHH:MM:ssZZ').toString();
 
 storiesOf('Finished', module).add(
   'Basic Init',

@@ -4,7 +4,7 @@ exports[`<Finished /> Basic Init 1`] = `
 <span
   title="2016-01-01 00:00:00"
 >
-  a few seconds ago
+  5 minutes ago
 </span>
 `;
 
@@ -15,7 +15,7 @@ exports[`<Finished /> Finished with icon 1`] = `
   <i
     className="fa fa-calendar finished-icon"
   />
-  a few seconds ago
+  5 minutes ago
 </span>
 `;
 

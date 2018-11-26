@@ -4,21 +4,18 @@ import moment from 'moment';
 import { snapshot } from '../../tests';
 import Finished from "./Finished";
 
-const DATE_TO_USE = new Date('2016-01-01 00:00:00');
-const _Date = Date;
-global.Date = jest.fn(() => DATE_TO_USE);
-global.Date.UTC = _Date.UTC;
-global.Date.parse = _Date.parse;
-global.Date.now = _Date.now;
-const timeMock = moment(DATE_TO_USE).format('YYYY-MM-DD HH:mm:ss').toString()
+const DATE_NOW = '2016-01-01T00:05:21+0100';
+const DATE_PAST = '2016-01-01T00:00:00+0100';
+
+global.Date.now = jest.fn(() => new Date(DATE_NOW).valueOf());
 
 describe('<Finished />', () => {
   it('Basic Init', () => {
-    snapshot(<Finished endTime={timeMock}/>);
+    snapshot(<Finished endTime={DATE_PAST}/>);
   });
 
   it('Finished with icon', () => {
-    snapshot(<Finished showIcon endTime={timeMock}/>);
+    snapshot(<Finished showIcon endTime={DATE_PAST}/>);
   });
 
   it('No datetime provided', () => {
