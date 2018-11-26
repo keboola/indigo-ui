@@ -1,15 +1,21 @@
 import React from 'react';
-import moment from 'moment';
 
 import { snapshot } from '../../tests';
 import Duration from "./Duration";
+import moment from "moment";
 
-const DATE_NOW = '2016-01-01T02:00:00+0100';
-const DATE_PAST = '2016-01-01T00:00:00+0100';
-const DATE_FUTURE_1 = '2016-01-01T02:42:16+0100';
-const DATE_FUTURE_2 = '2016-01-21T00:00:00+0100';
 
-global.Date.now = jest.fn(() => new Date(DATE_NOW).valueOf());
+
+const DATE_NOW = '2018-11-26T15:11:05+0100';
+
+const DATE_FUTURE_1 = '2018-11-26T15:11:09+0100';
+const DATE_FUTURE_2 = '2018-11-29T15:11:09+0100';
+
+
+
+global.Date.now = jest.fn(() => moment().valueOf());
+const DATE_PAST = moment(new Date().getTime() -123456).format('YYYY-MM-DDTHH:MM:ssZZ').toString();
+
 
 describe('<Duration />', () => {
   it('Duration', () => {
@@ -35,3 +41,5 @@ describe('<Duration />', () => {
     snapshot(<Duration />);
   });
 });
+
+
