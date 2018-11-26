@@ -21,7 +21,7 @@ exports[`<Duration /> Duration 1`] = `
 
 exports[`<Duration /> Duration Dynamic 1`] = `
 <span>
-  18 min 4 sec
+  27 min 3 sec
 </span>
 `;
 
