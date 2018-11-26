@@ -7,9 +7,9 @@ const time1 = '2018-11-26T15:11:05+0100';
 const time2 = '2018-11-26T15:11:09+0100';
 const time3 = '2018-11-29T15:11:09+0100';
 
-const fakeTimeNow = moment().valueOf()
+const fakeTimeNow = moment(time1).valueOf()
 global.Date.now = jest.fn(() => fakeTimeNow);
-const timePast = moment(fakeTimeNow - 123456).format('YYYY-MM-DDTHH:MM:ssZZ').toString();
+const timePast = moment(fakeTimeNow - 123456).format('YYYY-MM-DDTHH:mm:ssZZ').toString();
 
 describe('<Duration />', () => {
   it('Duration', () => {

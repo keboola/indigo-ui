@@ -5,9 +5,9 @@ import moment from "moment";
 import Duration from '../../indigo/components/Duration';
 
 const now = new Date();
-const demoDatetime1 = moment(now).format('YYYY-MM-DDTHH:MM:ssZZ').toString();
-const demoDatetime2 = moment(now.getTime() + 123456).format('YYYY-MM-DDTHH:MM:ssZZ').toString();
-const demoDatetime3 = moment(now.getTime() + 123456789).format('YYYY-MM-DDTHH:MM:ssZZ').toString();
+const demoDatetime1 = moment(now).format('YYYY-MM-DDTHH:mm:ssZZ').toString();
+const demoDatetime2 = moment(now.getTime() + 123456).format('YYYY-MM-DDTHH:mm:ssZZ').toString();
+const demoDatetime3 = moment(now.getTime() + 123456789).format('YYYY-MM-DDTHH:mm:ssZZ').toString();
 const demoSecondCount = 1586.36943;
 
 

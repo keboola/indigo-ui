@@ -9,7 +9,7 @@ class Duration extends React.Component {
     this.tick = this.tick.bind(this);
     this.state = {
       endTime: moment()
-        .format('YYYY-MM-DDTHH:MM:ssZZ')
+        .format('YYYY-MM-DDTHH:mm:ssZZ')
         .toString(),
     };
   }
@@ -25,7 +25,7 @@ class Duration extends React.Component {
   tick() {
     this.setState({
       endTime: moment()
-        .format('YYYY-MM-DDTHH:MM:ssZZ')
+        .format('YYYY-MM-DDTHH:mm:ssZZ')
         .toString(),
     });
   }
