@@ -10,7 +10,6 @@ class ConfirmButtons extends React.Component {
       <ButtonToolbar className={classnames('kbc-buttons', this.props.className)}>
         {this.loader()}
         {this.props.children}
-        {!this.props.showCancel && ' '}
         {this.cancelButton()}
         {this.saveButton()}
       </ButtonToolbar>
