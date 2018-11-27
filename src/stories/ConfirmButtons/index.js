@@ -13,7 +13,7 @@ storiesOf('ConfirmButtons', module)
     })(() => {
       return (
         <ConfirmButtons
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={false}
         />
       );
@@ -26,7 +26,7 @@ storiesOf('ConfirmButtons', module)
     })(() => {
       return (
         <ConfirmButtons
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={true}
         />
       );
@@ -43,7 +43,7 @@ storiesOf('ConfirmButtons', module)
       return (
         <ConfirmButtons
           isDisabled={true}
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={false}
         />
       );
@@ -57,7 +57,7 @@ storiesOf('ConfirmButtons', module)
       return (
         <ConfirmButtons
           showSave={false}
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={false}
         />
       );
@@ -71,7 +71,7 @@ storiesOf('ConfirmButtons', module)
       return (
         <ConfirmButtons
           showCancel={false}
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={false}
         />
       );
@@ -87,7 +87,7 @@ storiesOf('ConfirmButtons', module)
     })(() => {
       return (
         <ConfirmButtons
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={false}
         >
           <Button>Try Query</Button>
@@ -103,7 +103,7 @@ storiesOf('ConfirmButtons', module)
       return (
         <ConfirmButtons
           cancelLabel="Reset"
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={false}
         />
       );
@@ -117,7 +117,7 @@ storiesOf('ConfirmButtons', module)
       return (
         <ConfirmButtons
           saveLabel="Save Configuration"
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={false}
         />
       );
@@ -131,7 +131,7 @@ storiesOf('ConfirmButtons', module)
       return (
         <ConfirmButtons
           saveStyle="primary"
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={false}
         />
       );
@@ -148,7 +148,7 @@ storiesOf('ConfirmButtons', module)
       return (
         <ConfirmButtons
           saveButtonType="submit"
-          onSave={(() => {})}
+          onSave={() => null}
           isSaving={false}
         />
       );
@@ -166,7 +166,7 @@ storiesOf('ConfirmButtons', module)
         <div className="clearfix">
           <ConfirmButtons
             className="pull-right"
-            onSave={(() => {})}
+            onSave={() => null}
             isSaving={false}
           />
         </div>
