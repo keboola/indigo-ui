@@ -13,6 +13,7 @@ import Finished from './Finished';
 import InlineEditInput from './InlineEditInput';
 import Duration from './Duration';
 import JobStatusCircle from './JobStatusCircle';
+import ConfirmButtons from './ConfirmButtons';
 
 export {
   Check,
@@ -30,4 +31,5 @@ export {
   InlineEditInput,
   Duration,
   JobStatusCircle,
+  ConfirmButtons,
 };
