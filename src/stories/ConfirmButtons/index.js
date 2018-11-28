@@ -141,7 +141,7 @@ storiesOf('ConfirmButtons', module)
     'Save button type',
     withInfo({
       text: `
-        Use type="submit" attribute
+        Uses type="submit" attribute. So it can be wrapped by <form> and submitted by pressing Enter key
         `,
       inline: true,
     })(() => {
