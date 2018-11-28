@@ -7,7 +7,7 @@ import Loader from './Loader';
 class ConfirmButtons extends React.Component {
   render() {
     return (
-      <ButtonToolbar className={classnames('kbc-buttons', this.props.className)}>
+      <ButtonToolbar className={classnames('btn-toolbar-confirm', this.props.className)}>
         {this.loader()}
         {this.props.children}
         {this.cancelButton()}
@@ -29,6 +29,7 @@ class ConfirmButtons extends React.Component {
           bsStyle={this.props.saveStyle}
           disabled={this.props.isSaving || this.props.isDisabled}
           onClick={this.props.onSave}
+          className="btn-toolbar-confirm-btn"
         >
           {this.props.saveLabel}
         </Button>
@@ -40,7 +41,12 @@ class ConfirmButtons extends React.Component {
   cancelButton() {
     if (this.props.showCancel) {
       return (
-        <Button bsStyle="link" disabled={this.props.isSaving} onClick={this.props.onCancel}>
+        <Button
+          bsStyle="link"
+          disabled={this.props.isSaving}
+          onClick={this.props.onCancel}
+          className="btn-toolbar-confirm-btn"
+        >
           {this.props.cancelLabel}
         </Button>
       );
