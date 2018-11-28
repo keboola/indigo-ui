@@ -2,7 +2,7 @@
 
 exports[`<Check /> Additional buttons 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <button
@@ -13,7 +13,7 @@ exports[`<Check /> Additional buttons 1`] = `
     Try Query
   </button>
   <button
-    className="btn btn-link"
+    className="btn-confirm btn btn-link"
     disabled={false}
     onClick={undefined}
     type="button"
@@ -21,7 +21,7 @@ exports[`<Check /> Additional buttons 1`] = `
     Cancel
   </button>
   <button
-    className="btn btn-success"
+    className="btn-confirm btn btn-success"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -36,11 +36,11 @@ exports[`<Check /> Additional class 1`] = `
   className="clearfix"
 >
   <div
-    className="kbc-buttons pull-right btn-toolbar"
+    className="btn-toolbar-confirm pull-right btn-toolbar"
     role="toolbar"
   >
     <button
-      className="btn btn-link"
+      className="btn-confirm btn btn-link"
       disabled={false}
       onClick={undefined}
       type="button"
@@ -48,7 +48,7 @@ exports[`<Check /> Additional class 1`] = `
       Cancel
     </button>
     <button
-      className="btn btn-success"
+      className="btn-confirm btn btn-success"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -61,11 +61,11 @@ exports[`<Check /> Additional class 1`] = `
 
 exports[`<Check /> Basic Init 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <button
-    className="btn btn-link"
+    className="btn-confirm btn btn-link"
     disabled={false}
     onClick={undefined}
     type="button"
@@ -73,7 +73,7 @@ exports[`<Check /> Basic Init 1`] = `
     Cancel
   </button>
   <button
-    className="btn btn-success"
+    className="btn-confirm btn btn-success"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -85,11 +85,11 @@ exports[`<Check /> Basic Init 1`] = `
 
 exports[`<Check /> Cancel label 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <button
-    className="btn btn-link"
+    className="btn-confirm btn btn-link"
     disabled={false}
     onClick={undefined}
     type="button"
@@ -97,7 +97,7 @@ exports[`<Check /> Cancel label 1`] = `
     Reset
   </button>
   <button
-    className="btn btn-success"
+    className="btn-confirm btn btn-success"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -109,11 +109,11 @@ exports[`<Check /> Cancel label 1`] = `
 
 exports[`<Check /> Disabled 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <button
-    className="btn btn-link"
+    className="btn-confirm btn btn-link"
     disabled={false}
     onClick={undefined}
     type="button"
@@ -121,7 +121,7 @@ exports[`<Check /> Disabled 1`] = `
     Cancel
   </button>
   <button
-    className="btn btn-success"
+    className="btn-confirm btn btn-success"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -133,11 +133,11 @@ exports[`<Check /> Disabled 1`] = `
 
 exports[`<Check /> Save button style 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <button
-    className="btn btn-link"
+    className="btn-confirm btn btn-link"
     disabled={false}
     onClick={undefined}
     type="button"
@@ -145,7 +145,7 @@ exports[`<Check /> Save button style 1`] = `
     Cancel
   </button>
   <button
-    className="btn btn-primary"
+    className="btn-confirm btn btn-primary"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -157,11 +157,11 @@ exports[`<Check /> Save button style 1`] = `
 
 exports[`<Check /> Save button type 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <button
-    className="btn btn-link"
+    className="btn-confirm btn btn-link"
     disabled={false}
     onClick={undefined}
     type="button"
@@ -169,7 +169,7 @@ exports[`<Check /> Save button type 1`] = `
     Cancel
   </button>
   <button
-    className="btn btn-success"
+    className="btn-confirm btn btn-success"
     disabled={false}
     onClick={[Function]}
     type="submit"
@@ -181,11 +181,11 @@ exports[`<Check /> Save button type 1`] = `
 
 exports[`<Check /> Save label 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <button
-    className="btn btn-link"
+    className="btn-confirm btn btn-link"
     disabled={false}
     onClick={undefined}
     type="button"
@@ -193,7 +193,7 @@ exports[`<Check /> Save label 1`] = `
     Cancel
   </button>
   <button
-    className="btn btn-success"
+    className="btn-confirm btn btn-success"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -205,14 +205,14 @@ exports[`<Check /> Save label 1`] = `
 
 exports[`<Check /> Saving 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <span
     className="fa fa-spin fa-spinner"
   />
   <button
-    className="btn btn-link"
+    className="btn-confirm btn btn-link"
     disabled={true}
     onClick={undefined}
     type="button"
@@ -220,7 +220,7 @@ exports[`<Check /> Saving 1`] = `
     Cancel
   </button>
   <button
-    className="btn btn-success"
+    className="btn-confirm btn btn-success"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -232,11 +232,11 @@ exports[`<Check /> Saving 1`] = `
 
 exports[`<Check /> Show Cancel button 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <button
-    className="btn btn-success"
+    className="btn-confirm btn btn-success"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -248,11 +248,11 @@ exports[`<Check /> Show Cancel button 1`] = `
 
 exports[`<Check /> Show Save button 1`] = `
 <div
-  className="kbc-buttons btn-toolbar"
+  className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
   <button
-    className="btn btn-link"
+    className="btn-confirm btn btn-link"
     disabled={false}
     onClick={undefined}
     type="button"
