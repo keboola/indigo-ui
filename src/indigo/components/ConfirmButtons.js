@@ -29,7 +29,7 @@ class ConfirmButtons extends React.Component {
           bsStyle={this.props.saveStyle}
           disabled={this.props.isSaving || this.props.isDisabled}
           onClick={this.props.onSave}
-          className="btn-toolbar-confirm-btn"
+          className="btn-confirm"
         >
           {this.props.saveLabel}
         </Button>
@@ -45,7 +45,7 @@ class ConfirmButtons extends React.Component {
           bsStyle="link"
           disabled={this.props.isSaving}
           onClick={this.props.onCancel}
-          className="btn-toolbar-confirm-btn"
+          className="btn-confirm"
         >
           {this.props.cancelLabel}
         </Button>
