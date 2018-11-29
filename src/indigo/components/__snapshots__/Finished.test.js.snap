@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Finished /> Basic Init 1`] = `
+<span
+  title="2018-11-26 15:57:56"
+>
+  2 minutes ago
+</span>
+`;
+
+exports[`<Finished /> Finished with icon 1`] = `
+<span
+  title="2018-11-26 15:57:56"
+>
+  <i
+    className="fa fa-calendar finished-icon"
+  />
+  2 minutes ago
+</span>
+`;
+
+exports[`<Finished /> No datetime provided 1`] = `
+<span
+  title=""
+>
+  N/A
+</span>
+`;

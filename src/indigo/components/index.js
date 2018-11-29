@@ -9,6 +9,7 @@ import ExternalLink from './ExternalLink';
 import PanelWithDetails from './PanelWithDetails';
 import AlertBlock from './AlertBlock';
 import Icon from './icons';
+import Finished from './Finished';
 
 export {
   Check,
@@ -22,4 +23,5 @@ export {
   AlertBlock,
   Icon,
   SearchBar,
+  Finished,
 };
