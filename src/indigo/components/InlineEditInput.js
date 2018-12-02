@@ -4,6 +4,12 @@ import { Button, FormControl, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import Loader from './Loader';
 
 class InlineEditTextInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleOnSubmit = this.handleOnSubmit.bind(this);
+    this.handleOnChange = this.handleOnChange.bind(this);
+  }
+
   render() {
     if (this.props.isEditing) {
       return this.renderEditInput();
