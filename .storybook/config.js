@@ -27,11 +27,12 @@ function loadStories() {
   require('../src/stories/Splash');
   require('../src/stories/SearchBar');
   require('../src/stories/Finished');
+  require('../src/stories/InlineEditInput');
 }
 
 setOptions({
   name: 'Indigo UI',
-  url: 'https://github.com/keboola/indigo-ui',
+  url: 'https://github.com/keboola/indigo-ui'
 });
 
 setAddon(infoAddon);

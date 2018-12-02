@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InlineEditInput /> InlineEditInput - default 1`] = `
+<span
+  className="inline-edit-input-link"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <span
+    className="text-muted"
+  >
+    Click to edit
+  </span>
+  <span
+    className="kbc-icon-pencil"
+  />
+</span>
+`;
+
+exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is not valid 1`] = `
+<div
+  className="inline-edit-input"
+>
+  <form
+    className="inline-edit-input-form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="inline-edit-input-control form-control"
+      disabled={false}
+      id={undefined}
+      onChange={[Function]}
+      placeholder="Click to edit"
+      type="text"
+      value={undefined}
+    />
+    <div
+      className="inline-edit-input-buttons"
+    >
+      <button
+        className="inline-edit-input-cancel btn btn-link"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="kbc-icon-cross"
+        />
+      </button>
+      <button
+        className="inline-edit-input-submit btn btn-info"
+        disabled={true}
+        type="submit"
+      >
+        Save
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
+<div
+  className="inline-edit-input"
+>
+  <form
+    className="inline-edit-input-form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="inline-edit-input-control form-control"
+      disabled={false}
+      id={undefined}
+      onChange={[Function]}
+      placeholder="Click to edit"
+      type="text"
+      value={undefined}
+    />
+    <div
+      className="inline-edit-input-buttons"
+    >
+      <button
+        className="inline-edit-input-cancel btn btn-link"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="kbc-icon-cross"
+        />
+      </button>
+      <button
+        className="inline-edit-input-submit btn btn-info"
+        disabled={true}
+        type="submit"
+      >
+        Save
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`<InlineEditInput /> InlineEditInput - read mode 1`] = `
+<span
+  className="inline-edit-input-link"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <span
+    className="text-muted"
+  >
+    Click to edit
+  </span>
+  <span
+    className="kbc-icon-pencil"
+  />
+</span>
+`;
+
+exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
+<div
+  className="inline-edit-input"
+>
+  <form
+    className="inline-edit-input-form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="inline-edit-input-control form-control"
+      disabled={true}
+      id={undefined}
+      onChange={[Function]}
+      placeholder="Click to edit"
+      type="text"
+      value={undefined}
+    />
+    <div
+      className="inline-edit-input-buttons"
+    >
+      <button
+        className="inline-edit-input-cancel btn btn-link"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="kbc-icon-cross"
+        />
+      </button>
+      <button
+        className="inline-edit-input-submit btn btn-info"
+        disabled={true}
+        type="submit"
+      >
+        Save
+      </button>
+      <span
+        className="fa fa-spin fa-spinner"
+      />
+    </div>
+  </form>
+</div>
+`;
