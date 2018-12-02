@@ -13,7 +13,12 @@ describe('<SearchBar />', () => {
   });
 
   it('SearchBar - with one additional button', () => {
-    snapshot(<SearchBar onChange={() => null} additionalActions={<button className="btn btn-default">Submit</button>} />);
+    snapshot(
+      <SearchBar
+        onChange={() => null}
+        additionalActions={<button className="btn btn-default">Submit</button>}
+      />
+    );
   });
 
   it('SearchBar - with two additional buttons', () => {
