@@ -25,5 +25,5 @@ export {
   Icon,
   SearchBar,
   Finished,
-  InlineEditInput
+  InlineEditInput,
 };

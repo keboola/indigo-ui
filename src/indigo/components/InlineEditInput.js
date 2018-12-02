@@ -6,32 +6,32 @@ import Loader from './Loader';
 class InlineEditTextInput extends React.Component {
   render() {
     if (this.props.isEditing) {
-      return this._renderEditInput();
+      return this.renderEditInput();
     }
 
-    return this._renderStaticInput();
+    return this.renderStaticInput();
   }
 
-  _onChange(e) {
+  handleOnChange(e) {
     return this.props.onEditChange(e.target.value);
   }
 
-  _onSubmit(e) {
+  handleOnSubmit(e) {
     e.preventDefault();
     return this.props.onEditSubmit();
   }
 
-  _renderEditInput() {
+  renderEditInput() {
     return (
       <div className="inline-edit-input">
-        <form className="inline-edit-input-form" onSubmit={this._onSubmit}>
+        <form className="inline-edit-input-form" onSubmit={this.handleOnSubmit}>
           <FormControl
             className="inline-edit-input-control"
             type="text"
             value={this.props.text}
             disabled={this.props.isSaving}
             placeholder={this.props.placeholder}
-            onChange={this._onChange}
+            onChange={this.handleOnChange}
           />
 
           <div className="inline-edit-input-buttons">
@@ -58,12 +58,8 @@ class InlineEditTextInput extends React.Component {
     );
   }
 
-  _renderStaticInput() {
-    const tooltip = (
-      <Tooltip id="inline-edit-input-tooltip">
-        {this.props.editTooltip}
-      </Tooltip>
-    );
+  renderStaticInput() {
+    const tooltip = <Tooltip id="inline-edit-input-tooltip">{this.props.editTooltip}</Tooltip>;
 
     return (
       <OverlayTrigger placement={this.props.tooltipPlacement} overlay={tooltip}>
@@ -91,7 +87,7 @@ InlineEditTextInput.propTypes = {
   isValid: PropTypes.bool,
   editTooltip: PropTypes.string,
   tooltipPlacement: PropTypes.string,
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
 };
 
 InlineEditTextInput.defaultProps = {
@@ -99,7 +95,7 @@ InlineEditTextInput.defaultProps = {
   editTooltip: 'Click to edit',
   tooltipPlacement: 'top',
   isSaving: false,
-  isEditing: false
+  isEditing: false,
 };
 
 export default InlineEditTextInput;
