@@ -3,6 +3,7 @@ import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
 import Finished from '../../indigo/components/Finished';
 import moment from "moment";
+import {boolean} from "@storybook/addon-knobs";
 
 const now = new Date();
 const demoTimestamp = moment(now.getTime() - 123456).format('YYYY-MM-DDTHH:mm:ssZZ').toString();
@@ -22,7 +23,8 @@ storiesOf('Finished', module).add(
   withInfo({
     inline: true,
   })(() => {
-    return <Finished showIcon endTime={demoTimestamp}/>;
+    const hasIcon = boolean('showIcon', true);
+    return <Finished showIcon={hasIcon} endTime={demoTimestamp}/>;
   })
 ).add(
   'No datetime provided',
