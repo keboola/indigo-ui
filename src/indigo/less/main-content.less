@@ -45,17 +45,18 @@
     padding-left: 26px;
     .nav {
         margin: 15px -15px;
-        > li > a, .btn-link {
+        li a {
             padding: 8px 12px;
             font-weight: 400;
+            display: block;
+            width: 100%;
+            color: @link-color;
+
+            &:hover {
+                text-decoration: none;
+                background-color: #fff
+            }
         }
-    }
-    a, .btn-link {
-        color: @link-color;
-    }
-    .btn-link:hover {
-        text-decoration: none;
-        background-color: #fff;
     }
     .kbc-sidebar-jobs {
         margin-top: 15px;
