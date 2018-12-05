@@ -39,3 +39,24 @@ exports[`<Duration /> Duration with icon 1`] = `
   4 sec
 </span>
 `;
+
+exports[`<Duration /> should render 12 sec (ignore end time) 1`] = `
+<span>
+  12 sec
+  
+</span>
+`;
+
+exports[`<Duration /> should render 12 sec (ignore start time and end time) 1`] = `
+<span>
+  12 sec
+  4 sec
+</span>
+`;
+
+exports[`<Duration /> should render 12 sec (ignore start time) 1`] = `
+<span>
+  12 sec
+  0 sec
+</span>
+`;

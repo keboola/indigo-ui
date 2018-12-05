@@ -34,6 +34,16 @@ describe('<Duration />', () => {
   it('Duration - empty state', () => {
     snapshot(<Duration />);
   });
+
+  it('should render 12 sec (ignore start time and end time)', () => {
+    snapshot(<Duration duration={12} startTime={time1} endTime={time2} />);
+  });
+  it('should render 12 sec (ignore start time)', () => {
+    snapshot(<Duration duration={12} startTime={time1} />);
+  });
+  it('should render 12 sec (ignore end time)', () => {
+    snapshot(<Duration duration={12} endTime={time2} />);
+  });
 });
 
 
