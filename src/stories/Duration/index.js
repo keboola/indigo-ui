@@ -3,6 +3,7 @@ import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
 import moment from "moment";
 import Duration from '../../indigo/components/Duration';
+import { boolean } from '@storybook/addon-knobs';
 
 const now = new Date();
 const demoDatetime1 = moment(now).format('YYYY-MM-DDTHH:mm:ssZZ').toString();
@@ -20,7 +21,7 @@ storiesOf('Duration', module)
       `,
       inline: true,
     })(() => {
-      return <Duration startTime={demoDatetime1} endTime={demoDatetime2}/>;
+      return <Duration startTime={demoDatetime1} endTime={demoDatetime2} showIcon={boolean('showIcon', true)}/>;
     })
   )
   .add(
@@ -31,7 +32,7 @@ storiesOf('Duration', module)
       `,
       inline: true,
     })(() => {
-      return <Duration startTime={demoDatetime1}/>;
+      return <Duration startTime={demoDatetime1} showIcon={boolean('showIcon', true)}/>;
     })
   )
   .add(
@@ -42,7 +43,7 @@ storiesOf('Duration', module)
       `,
       inline: true,
     })(() => {
-      return <Duration duration={demoSecondCount}/>;
+      return <Duration duration={demoSecondCount} showIcon={boolean('showIcon', true)}/>;
     })
   )
   .add(
@@ -53,18 +54,7 @@ storiesOf('Duration', module)
       `,
       inline: true,
     })(() => {
-      return <Duration startTime={demoDatetime1} endTime={demoDatetime3}/>;
-    })
-  )
-  .add(
-    'Duration with icon',
-    withInfo({
-      text: `
-      Adds icon in front of text.
-      `,
-      inline: true,
-    })(() => {
-      return <Duration startTime={demoDatetime1} endTime={demoDatetime2} showIcon/>;
+      return <Duration startTime={demoDatetime1} endTime={demoDatetime3} showIcon={boolean('showIcon', true)}/>;
     })
   )
   .add(
