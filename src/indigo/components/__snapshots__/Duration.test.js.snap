@@ -8,7 +8,6 @@ exports[`<Duration /> Duration > 24h 1`] = `
 
 exports[`<Duration /> Duration - empty state 1`] = `
 <span>
-  
   N/A
 </span>
 `;
