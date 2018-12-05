@@ -1,9 +1,7 @@
-export const durationFrom = (started, finished) => {
-  const duration = (new Date(finished).getTime() - new Date(started).getTime()) / 1000;
-  return duration;
-};
+const durationFrom = (started, finished) =>
+  (new Date(finished).getTime() - new Date(started).getTime()) / 1000;
 
-export const timeInWords = (duration) => {
+const timeInWords = (duration, round) => {
   const days = Math.floor(duration / 86400);
   const hours = Math.floor((duration % 86400) / 3600);
   const minutes = Math.floor((duration % 3600) / 60);
@@ -24,7 +22,7 @@ export const timeInWords = (duration) => {
   if (minutes > 0) {
     result.push(`${minutes} min`);
   }
-  if (seconds > 0) {
+  if (seconds > 0 && (!round || hours === 0)) {
     result.push(`${seconds} sec`);
   }
   if (result.length > 0) {
@@ -32,3 +30,5 @@ export const timeInWords = (duration) => {
   }
   return '';
 };
+
+export { durationFrom, timeInWords };
