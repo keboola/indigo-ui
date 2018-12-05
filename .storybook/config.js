@@ -28,6 +28,7 @@ function loadStories() {
   require('../src/stories/SearchBar');
   require('../src/stories/Finished');
   require('../src/stories/InlineEditInput');
+  require('../src/stories/Duration');
 }
 
 setOptions({

@@ -11,6 +11,7 @@ import AlertBlock from './AlertBlock';
 import Icon from './icons';
 import Finished from './Finished';
 import InlineEditInput from './InlineEditInput';
+import Duration from './Duration';
 
 export {
   Check,
@@ -26,4 +27,5 @@ export {
   SearchBar,
   Finished,
   InlineEditInput,
+  Duration,
 };
