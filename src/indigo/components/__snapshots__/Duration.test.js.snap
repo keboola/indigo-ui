@@ -24,6 +24,15 @@ exports[`<Duration /> Duration Dynamic 1`] = `
 </span>
 `;
 
+exports[`<Duration /> Duration Dynamic with icon 1`] = `
+<span>
+  <i
+    className="fa fa-clock-o duration-icon"
+  />
+  2 min 4 sec
+</span>
+`;
+
 exports[`<Duration /> Duration only 1`] = `
 <span>
   26 min 26 sec

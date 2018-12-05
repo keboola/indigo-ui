@@ -20,6 +20,10 @@ describe('<Duration />', () => {
     snapshot(<Duration startTime={timePast}/>);
   });
 
+  it('Duration Dynamic with icon', () => {
+    snapshot(<Duration startTime={timePast} showIcon />);
+  });
+
   it('Duration only', () => {
     snapshot(<Duration duration={1586.36943}/>);
   });
