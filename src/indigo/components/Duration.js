@@ -42,14 +42,18 @@ class Duration extends React.Component {
         </span>
       );
     }
-
+    if (!this.props.endTime) {
+      return (
+        <span>
+          {this.props.showIcon && <i className="fa fa-clock-o duration-icon" />}
+          {timeInWords(durationFrom(this.props.startTime, this.state.endTime), true)}
+        </span>
+      );
+    }
     return (
       <span>
-        {!!this.props.showIcon && <i className="fa fa-clock-o duration-icon" />}
-        {!!this.props.endTime &&
-          timeInWords(durationFrom(this.props.startTime, this.props.endTime), true)}
-        {!this.props.endTime &&
-          timeInWords(durationFrom(this.props.startTime, this.state.endTime), true)}
+        {this.props.showIcon && <i className="fa fa-clock-o duration-icon" />}
+        {timeInWords(durationFrom(this.props.startTime, this.props.endTime), true)}
       </span>
     );
   }
