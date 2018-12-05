@@ -51,7 +51,7 @@ exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is
         />
       </button>
       <button
-        className="inline-edit-input-submit btn btn-info"
+        className="inline-edit-input-submit btn btn-sm btn-info"
         disabled={true}
         type="submit"
       >
@@ -93,7 +93,7 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
         />
       </button>
       <button
-        className="inline-edit-input-submit btn btn-info"
+        className="inline-edit-input-submit btn btn-sm btn-info"
         disabled={true}
         type="submit"
       >
@@ -155,7 +155,7 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
         />
       </button>
       <button
-        className="inline-edit-input-submit btn btn-info"
+        className="inline-edit-input-submit btn btn-sm btn-info"
         disabled={true}
         type="submit"
       >

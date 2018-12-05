@@ -1,28 +1,30 @@
 .inline-edit-input {
+  font-size: 16px;
   display: inline;
-  position: relative;
 
   &-form {
     display: inline;
+    position: relative;
   }
 
   &-buttons {
     display: flex;
+    align-items: center;
     position: absolute;
-    right: 10px;
-    top: -3px;
+    right: 4px;
+    top: -4px;
 
     .fa-spin {
       position: absolute;
       top: 5px;
-      right: -35px;
+      right: -30px;
       background: #fff;
     }
   }
 
   &-cancel {
     padding: 0 5px 0 5px;
-    font-size: 120%;
+    font-size: 18px;
     color: #e1e1e9;
 
     &:hover,
@@ -39,17 +41,13 @@
   }
 
   &-submit {
-    padding: 5px 10px;
-    font-size: 60%;
-    border-radius: 15px;
-    [class^="kbc-icon-"] {
-      font-size: 200%;
-    }
+    padding: 3px 10px;
+    font-size: 12px;
   }
 
   &-link {
     padding: 6px 15px 9px;
-    border-radius: 1em;
+    border-radius: 3px;
     background-color: inherit;
     cursor: pointer;
 
@@ -72,7 +70,7 @@
   &-control {
     display: inline-block;
     width: auto;
-    padding: 15px 80px 15px 12px;
+    padding: 6px 80px 6px 12px;
     vertical-align: middle;
 
     &:disabled {
