@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import { timeInWords, durationFrom } from './DurationFormatter';
+import { timeInWords, durationFrom } from './durationHelpers';
 
 class Duration extends React.Component {
   constructor(props) {

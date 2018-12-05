@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {timeInWords, durationFrom} from './DurationFormatter';
+import {timeInWords, durationFrom} from './durationHelpers';
 
 describe('Duration Formatter', () => {
   describe('Time in words function', () => {
