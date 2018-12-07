@@ -2,33 +2,6 @@
   padding: 15px;
 }
 
-//ANALYZA: muzeme to vyhodit s nasazenim tohoto https://github.com/keboola/indigo-ui/pull/174
-.kbc-extractor-icon,
-.kbc-writer-icon,
-.kbc-transformation-icon {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  margin-bottom: -6px;
-  margin-right: 8px;
-}
-
-.kbc-extractor-icon {
-  background-image: url('../img/extractor.svg');
-  background-position: 0 -1px;
-  background-repeat: no-repeat;
-}
-
-.kbc-writer-icon {
-  background-image: url('../img/writer.svg');
-  background-repeat: no-repeat;
-}
-
-.kbc-transformation-icon {
-  background-image: url('../img/transformation.svg');
-  background-repeat: no-repeat;
-}
-
 // because kbc-header is not enough
 //neco jako kbc-row
 //ANALYZA:
@@ -160,18 +133,6 @@ svg.kb-graph {
   white-space: normal;
 }
 
-//TEMP HACK: ZKOPIROVAT DO INDIGO AZ BUDE PRILEZITOST, ZATIM JE TO BLOKOVANY
-//ANALYZA: predelat na svg ikonu
-.kbc-main-sidebar {
-  .nav {
-    .kbc-icon-plus {
-      text-align: center;
-      display: inline-block;
-      width: 18px;
-    }
-  }
-}
-
 //ANALYZA: staci vyhodit tuto obalku row kbc-row-orchestration-detail
 //ANALYZA: napr tady https://github.com/keboola/kbc-ui/blob/55ad82c49c7ee7aa4f45cdb8d5420b9b9c8c4260/src/scripts/modules/orchestrations/react/pages/orchestration-tasks/OrchestrationTasks.coffee#L89
 //ANALYZA: az se zrusi master/detail interface v orchestraci, muzem to vyhodit
@@ -213,17 +174,6 @@ small.empty-label {
 //ANALYZA: asi ok, jenom to chce lip pojmenovat
 .kbc-row .mapping {
   min-height: 100px;
-}
-
-//ANALYZA: nahradit svg ikonkama
-// moved from VersionIcon.less
-.kbc-version-icon {
-  color: #7e8490;
-  width: 16px;
-}
-
-.kbc-version-icon.last {
-  color: #96d130;
 }
 
 //ANALYZA: to je ten fuj celostrankovy modal. Primarne bych zrusil tenhle UI antipattern
