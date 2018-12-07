@@ -29,6 +29,7 @@ exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is
     onSubmit={[Function]}
   >
     <input
+      autoFocus={true}
       className="inline-edit-input-control form-control"
       disabled={false}
       id={undefined}
@@ -71,6 +72,7 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
     onSubmit={[Function]}
   >
     <input
+      autoFocus={true}
       className="inline-edit-input-control form-control"
       disabled={false}
       id={undefined}
@@ -133,6 +135,7 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
     onSubmit={[Function]}
   >
     <input
+      autoFocus={true}
       className="inline-edit-input-control form-control"
       disabled={true}
       id={undefined}

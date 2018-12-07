@@ -38,6 +38,7 @@ class InlineEditTextInput extends React.Component {
             disabled={this.props.isSaving}
             placeholder={this.props.placeholder}
             onChange={this.handleOnChange}
+            autoFocus
           />
 
           <div className="inline-edit-input-buttons">
