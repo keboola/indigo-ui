@@ -596,3 +596,109 @@ small.empty-label {
 .kbc-buttons.btn-toolbar .btn {
   float: none;
 }
+
+//TEMPORARY SOLUTION FOR https: //github.com/keboola/kbc-ui/pull/2511
+//WHEN MERGED, THIS BLOCK CAN BE DELETED
+.kbc-limits-section {
+
+  .kbc-header {
+    border-bottom: 1px solid #e8e8ef;
+  }
+
+
+  .kbc-layout-table > .tbody > .tr .kbc-limit {
+    padding: 0;
+
+    .kbc-limit-inner {
+      padding: 20px 30px;
+      border: 3px solid transparent;
+    }
+
+    .kbc-limit-inner.kbc-limit-alarm {
+      border-color: #ff243e;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    .kbc-switch {
+      position: absolute;
+      top: 50%;
+      margin-left: -40px;
+      margin-top: -20px;
+    }
+
+    .kbc-limit-progress {
+      margin-top: -50px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+    }
+
+    .kbc-limit-values h4 {
+      font-size: 24px;
+      font-weight: 300;
+
+      .kbc-limit-values-minor {
+        vertical-align: top;
+        font-size: 14px;
+      }
+    }
+
+    .kbc-limit-action {
+      margin-top: 20px;
+      min-height: 30px;
+    }
+
+  }
+
+}
+
+
+.kbc-components-overview .td {
+  position: relative;
+  padding: 24px;
+  text-decoration: none;
+  transition: 0.08s all ease-out;
+
+  &:hover {
+    background: #c8edfa;
+    box-shadow: inset 0px 0px 0px 2px #25b8eb;
+
+    h2 {
+      text-decoration: underline;
+    }
+  }
+
+  .kbc-components-overview-description {
+    color: #282d38;
+  }
+}
+
+
+.kbc-components-overview {
+  > .tbody > .tr {
+    > .td {
+      width: 33.3%;
+      text-align: center;
+      vertical-align: top;
+      border-right: solid 1px @table-border-color;
+
+      &:nth-child(3):nth-last-child(1) {
+        border-right: solid 1px transparent;
+      }
+
+      .kb-sapi-component-icon {
+        padding: 0;
+      }
+    }
+
+    &:nth-child(1):nth-last-child(1) {
+      .td {
+        border-right: none;
+      }
+    }
+  }
+}
