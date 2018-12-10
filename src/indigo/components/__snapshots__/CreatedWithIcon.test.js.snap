@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreatedWithIcon /> Absolute time 1`] = `
+<span
+  title="2 minutes ago"
+>
+  <i
+    className="fa fa-fw fa-calendar"
+  />
+   
+  2018-11-26 15:09:00
+</span>
+`;
+
+exports[`<CreatedWithIcon /> Relative time 1`] = `
+<span
+  title="2018-11-26 15:09:00"
+>
+  <i
+    className="fa fa-fw fa-calendar"
+  />
+   
+  2 minutes ago
+</span>
+`;
