@@ -29,6 +29,7 @@ function loadStories() {
   require('../src/stories/Finished');
   require('../src/stories/InlineEditInput');
   require('../src/stories/Duration');
+  require('../src/stories/Description');
 }
 
 setOptions({
