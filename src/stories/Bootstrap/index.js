@@ -7,7 +7,6 @@ import {
   Checkbox,
   Radio,
   ControlLabel,
-  ResponsiveEmbed,
   Image,
   Popover,
   Tab,
@@ -470,21 +469,6 @@ storiesOf('Bootstrap', module)
             <Image className="center-block"
                    src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4"
                    responsive/>
-        </div>
-      </div>
-    </div>
-  ), module))
-  .add('ResponsiveEmbed', withInfo({inline: true}) (() => (
-    <div className="container bs-docs-container">
-      <div className="bs-docs-section">
-        <div className="bs-example">
-          <ResponsiveEmbed a16by9>
-            <iframe
-              className="embed-responsive-item"
-              src="//www.youtube.com/embed/g-VBfkV4xfc"
-              title="Youtube Video"
-            />
-          </ResponsiveEmbed>
         </div>
       </div>
     </div>
