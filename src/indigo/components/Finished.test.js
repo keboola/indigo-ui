@@ -3,7 +3,7 @@ import moment from 'moment';
 import { snapshot } from '../../tests';
 import Finished from './Finished';
 
-const fakeNow = '2018-11-26T15:11:05+0100';
+const fakeNow = '2018-11-26T15:11:05+0000';
 const fakeNowMs = moment(fakeNow).valueOf();
 
 global.Date.now = jest.fn(() => fakeNowMs);
