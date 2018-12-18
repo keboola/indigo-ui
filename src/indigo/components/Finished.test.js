@@ -3,11 +3,14 @@ import moment from 'moment';
 import { snapshot } from '../../tests';
 import Finished from './Finished';
 
-const fakeTimeNow = moment('2018-11-26T16:00:00+0000').valueOf();
-global.Date.now = jest.fn(() => fakeTimeNow);
-const timePast = moment(fakeTimeNow - 123456)
-  .format('YYYY-MM-DDTHH:mm:ssZZ')
-  .toString();
+const fakeNow = '2018-11-26T15:11:05+0000';
+const fakeNowMs = moment(fakeNow).valueOf();
+
+global.Date.now = jest.fn(() => fakeNowMs);
+
+const timePast = moment()
+  .subtract(124, 'seconds')
+  .format();
 
 describe('<Finished />', () => {
   it('Basic Init', () => {
