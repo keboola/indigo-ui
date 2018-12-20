@@ -1,70 +1,36 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
-import moment from "moment";
-import Duration from '../../indigo/components/Duration';
+import ValidUntil from '../../indigo/components/ValidUntil';
 import { boolean } from '@storybook/addon-knobs';
 
 const now = new Date();
-const demoDatetime1 = moment(now).format('YYYY-MM-DDTHH:mm:ssZZ').toString();
-const demoDatetime2 = moment(now.getTime() + 123456).format('YYYY-MM-DDTHH:mm:ssZZ').toString();
-const demoDatetime3 = moment(now.getTime() + 123456789).format('YYYY-MM-DDTHH:mm:ssZZ').toString();
-const demoSecondCount = 1586.36943;
+const timeNow = now.getTime();
+const timePast = now.getTime() - 50000000;
+const timeFuture = now.getTime() + 50000000;
 
-
-storiesOf('Duration', module)
+storiesOf('ValidUntil', module)
   .add(
-    'Duration',
+    'ValidUntil',
     withInfo({
-      text: `
-      Static duration component. Renders duration from start till end time given. Accepts props in datetime string format.
-      `,
       inline: true,
     })(() => {
-      return <Duration startTime={demoDatetime1} endTime={demoDatetime2} showIcon={boolean('showIcon', true)}/>;
+      return <ValidUntil validUntil={timePast} showIcon={boolean('showIcon', true)}/>;
     })
   )
   .add(
-    'Duration Dynamic',
+    'ValidUntil - valid any time',
     withInfo({
-      text: `
-      Active duration counter. Renders duration from start time till now.
-      `,
       inline: true,
     })(() => {
-      return <Duration startTime={demoDatetime1} showIcon={boolean('showIcon', true)}/>;
+      return <ValidUntil validUntil={timeFuture} showIcon={boolean('showIcon', true)}/>;
     })
   )
   .add(
-    'Duration only',
+    'ValidUntil - empty state',
     withInfo({
-      text: `
-      Only formats and rounds for seconds count given. Accepts props in number format - number of seconds.
-      `,
       inline: true,
     })(() => {
-      return <Duration duration={demoSecondCount} showIcon={boolean('showIcon', true)}/>;
-    })
-  )
-  .add(
-    'Duration > 24h',
-    withInfo({
-      text: `
-      For duration longer than 24h limits the counter.
-      `,
-      inline: true,
-    })(() => {
-      return <Duration startTime={demoDatetime1} endTime={demoDatetime3} showIcon={boolean('showIcon', true)}/>;
-    })
-  )
-  .add(
-    'Duration - empty state',
-    withInfo({
-      text: `
-      When no duration and start time given.
-      `,
-      inline: true,
-    })(() => {
-      return <Duration />;
+      return <ValidUntil showIcon={boolean('showIcon', true)} />;
     })
   );
