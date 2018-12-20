@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ValidUntil /> should render \`14 hours ago\` 1`] = `
+<span
+  title="2018-12-20 02:57:57"
+>
+  14 hours ago
+</span>
+`;
+
+exports[`<ValidUntil /> should render \`any time now\` 1`] = `
+<span
+  title="2018-12-21 06:44:37"
+>
+  any time now
+</span>
+`;
+
+exports[`<ValidUntil /> should render N/A 1`] = `
+<span>
+  N/A
+</span>
+`;

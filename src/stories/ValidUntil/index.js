@@ -5,7 +5,6 @@ import ValidUntil from '../../indigo/components/ValidUntil';
 import { boolean } from '@storybook/addon-knobs';
 
 const now = new Date();
-const timeNow = now.getTime();
 const timePast = now.getTime() - 50000000;
 const timeFuture = now.getTime() + 50000000;
 
