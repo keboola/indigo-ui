@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ValidUntil /> should render 'N/A' 1`] = `
-<span>
-  N/A
-</span>
-`;
-
-exports[`<ValidUntil /> should render 'a day ago' 1`] = `
+exports[`<ValidUntil /> should render '15 hours ago' 1`] = `
 <span
   title="2018-12-30 22:40:44"
 >
-  14 hours ago
+  15 hours ago
+</span>
+`;
+
+exports[`<ValidUntil /> should render 'N/A' 1`] = `
+<span>
+  N/A
 </span>
 `;
 
