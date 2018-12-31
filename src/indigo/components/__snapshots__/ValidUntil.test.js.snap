@@ -2,7 +2,7 @@
 
 exports[`<ValidUntil /> should render \`14 hours ago\` 1`] = `
 <span
-  title="2018-12-20 02:57:57"
+  title="2018-11-26 02:17:45"
 >
   14 hours ago
 </span>
@@ -10,7 +10,7 @@ exports[`<ValidUntil /> should render \`14 hours ago\` 1`] = `
 
 exports[`<ValidUntil /> should render \`any time now\` 1`] = `
 <span
-  title="2018-12-21 06:44:37"
+  title="2018-11-27 06:04:25"
 >
   any time now
 </span>
