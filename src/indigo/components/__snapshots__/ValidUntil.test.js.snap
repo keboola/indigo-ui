@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ValidUntil /> should render \`14 hours ago\` 1`] = `
+exports[`<ValidUntil /> should render '2 minutes ago' 1`] = `
 <span
-  title="2018-11-26 02:17:45"
+  title="2018-11-26 16:09:01"
 >
-  14 hours ago
+  2 minutes ago
 </span>
 `;
 
-exports[`<ValidUntil /> should render \`any time now\` 1`] = `
-<span
-  title="2018-11-27 06:04:25"
->
-  any time now
-</span>
-`;
-
-exports[`<ValidUntil /> should render N/A 1`] = `
+exports[`<ValidUntil /> should render 'N/A' 1`] = `
 <span>
   N/A
+</span>
+`;
+
+exports[`<ValidUntil /> should render 'any time now' 1`] = `
+<span
+  title="2018-11-26 16:13:09"
+>
+  any time now
 </span>
 `;
