@@ -1,23 +1,15 @@
 import React from 'react';
-import moment from 'moment';
 import {snapshot} from '../../tests';
 import ValidUntil from './ValidUntil';
 
-const fakeNow = '2018-11-26T15:11:05+0000';
-const fakeNowMs = moment(fakeNow).valueOf();
+const timeNow = new Date('2018-11-26T15:11:09+0000').valueOf();
+const timePast = new Date('2018-11-25T15:11:09+0000').valueOf();
+const timeFuture = new Date('2018-11-29T15:11:09+0000').valueOf();
 
-global.Date.now = jest.fn(() => fakeNowMs);
-
-const timePast = moment()
-  .subtract(124, 'seconds')
-  .valueOf()
-
-const timeFuture = moment()
-  .add(124, 'seconds')
-  .valueOf()
+global.Date.now = jest.fn(() => timeNow);
 
 describe('<ValidUntil />', () => {
-  it("should render '2 minutes ago'", () => {
+  it("should render 'a day ago'", () => {
     snapshot(<ValidUntil validUntil={timePast} />);
   });
   it("should render 'any time now'", () => {
