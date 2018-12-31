@@ -1,16 +1,15 @@
 import React from 'react';
-import moment from 'moment';
 import {snapshot} from '../../tests';
 import ValidUntil from './ValidUntil';
 
-const fakeTimeNow = moment('2018-11-26T15:11:05+0000').valueOf();
-const timePast = moment('2018-11-25T15:11:09+0000').valueOf();
-const timeFuture = moment('2018-11-29T15:09:09+0000').valueOf();
+const fakeTimeNow = new Date(Date.UTC(2018, 4, 23)).valueOf();
+const timePast = fakeTimeNow - 5555555;
+const timeFuture = fakeTimeNow + 5555555;
 
 global.Date.now = jest.fn(() => fakeTimeNow);
 
 describe('<ValidUntil />', () => {
-  it("should render 'a day ago'", () => {
+  it("should render '2 hours'", () => {
     snapshot(<ValidUntil validUntil={timePast} />);
   });
   it("should render 'any time now'", () => {
