@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobStatusCircle /> Job Status - Cancelled 1`] = `
+<i
+  className="fa fa-circle job-status-circle job-status-circle-default"
+/>
+`;
+
+exports[`<JobStatusCircle /> Job Status - Error 1`] = `
+<i
+  className="fa fa-circle job-status-circle job-status-circle-danger"
+/>
+`;
+
+exports[`<JobStatusCircle /> Job Status - Success 1`] = `
+<i
+  className="fa fa-circle job-status-circle job-status-circle-success"
+/>
+`;
+
+exports[`<JobStatusCircle /> Job Status - Warning 1`] = `
+<i
+  className="fa fa-circle job-status-circle job-status-circle-warning"
+/>
+`;
