@@ -1,5 +1,4 @@
 import React from 'react';
-import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 const statusColorMap = {
@@ -17,29 +16,12 @@ const statusColorMap = {
 class JobStatusCircle extends React.Component {
   render() {
     const statusColor = statusColorMap[this.props.status] || 'default';
-
-    return (
-      <i
-        className={classNames('fa fa-circle job-status-circle', {
-          [`job-status-circle-${statusColor}`]: !!statusColor,
-        })}
-      />
-    );
+    return <i className={`fa fa-circle job-status-circle-${statusColor}`} />;
   }
 }
 
 JobStatusCircle.propTypes = {
-  status: PropTypes.oneOf([
-    'success',
-    'error',
-    'warn',
-    'warning',
-    'processing',
-    'cancelled',
-    'waiting',
-    'terminating',
-    'terminated',
-  ]).isRequired,
+  status: PropTypes.string,
 };
 
 export default JobStatusCircle;
