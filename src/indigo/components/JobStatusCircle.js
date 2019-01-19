@@ -16,7 +16,7 @@ const statusColorMap = {
 
 class JobStatusCircle extends React.Component {
   render() {
-    const statusColor = statusColorMap[this.props.status];
+    const statusColor = statusColorMap[this.props.status] || 'default';
 
     return (
       <i
