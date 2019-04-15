@@ -21,3 +21,15 @@ exports[`<ExternalLink /> ExternalLink - with classname 1`] = `
   keboola.com
 </a>
 `;
+
+exports[`<ExternalLink /> ExternalLink - with random props 1`] = `
+<a
+  className="btn btn-link"
+  href="https://www.keboola.com"
+  id="external-link-id-prop"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  keboola.com
+</a>
+`;
