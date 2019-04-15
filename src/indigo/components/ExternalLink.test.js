@@ -15,4 +15,16 @@ describe('<ExternalLink />', () => {
       </ExternalLink>
     );
   });
+
+  it('ExternalLink - with random props', () => {
+    snapshot(
+      <ExternalLink
+        href="https://www.keboola.com"
+        className="btn btn-link"
+        id="external-link-id-prop"
+      >
+        keboola.com
+      </ExternalLink>
+    );
+  });
 });

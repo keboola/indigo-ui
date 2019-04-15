@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ExternalLink = ({ href, children, className }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+const ExternalLink = ({ href, children, className, ...props }) => (
+  <a {...props} href={href} target="_blank" rel="noopener noreferrer" className={className}>
     {children}
   </a>
 );
