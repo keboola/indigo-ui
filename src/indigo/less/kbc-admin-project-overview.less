@@ -91,6 +91,17 @@
       }
     }
 
+    .lineage-reability {
+      display: flex;
+      align-items: center;
+
+      & > .progress {
+        flex: 1;
+        margin-right: 10px;
+        margin-bottom: 0px;
+      }
+    }
+
     .group-label {
       position: absolute;
       top: 18px;
@@ -156,6 +167,21 @@
         color: #fff;
         border: 2px solid #32b9e9;
       }
+    }
+  }
+
+  .issues-table {
+    tbody tr td {
+      vertical-align: top;
+    }
+  }
+
+  .progress.progress-big {
+    height: 32px;
+
+    .progress-bar {
+      font-size: 14px;
+      line-height: 32px;
     }
   }
 }
