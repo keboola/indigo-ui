@@ -91,6 +91,17 @@
       }
     }
 
+    .lineage-reability {
+      display: flex;
+      align-items: center;
+
+      & > .progress {
+        flex: 1;
+        margin-right: 10px;
+        margin-bottom: 0px;
+      }
+    }
+
     .group-label {
       position: absolute;
       top: 18px;
@@ -99,15 +110,26 @@
   }
 
   .graph {
+    position: relative;
+
+    .graph-search {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 250px;
+    }
+
     .kb-graph {
       background: #f5f5f7;
       margin: 0;
 
       .node {
         a {
-          font-size: 14px;
+          display: block;
+          font-size: 18px;
           font-weight: 400;
           color: #333;
+          padding: 10px;
           text-decoration: none;
           text-shadow: none;
         }
@@ -120,6 +142,10 @@
         &.origin-project a {
           color: #fff;
         }
+      }
+
+      .label {
+        font-size: 14px;
       }
     }
 
@@ -141,6 +167,21 @@
         color: #fff;
         border: 2px solid #32b9e9;
       }
+    }
+  }
+
+  .issues-table {
+    tbody tr td {
+      vertical-align: top;
+    }
+  }
+
+  .progress.progress-big {
+    height: 32px;
+
+    .progress-bar {
+      font-size: 14px;
+      line-height: 32px;
     }
   }
 }
