@@ -31,11 +31,9 @@ import {
   Badge,
   Well,
 } from 'react-bootstrap';
-import {withInfo} from '@storybook/addon-info';
-
 
 storiesOf('Bootstrap', module)
-  .add('Buttons', withInfo({inline: true}) (() => (
+  .add('Buttons', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h2>Style</h2>
@@ -68,8 +66,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Button Toolbar', withInfo({inline: true}) (() => (
+  ))
+  .add('Button Toolbar', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -91,8 +89,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('DropdownButton', withInfo({inline: true}) (() => (
+  ))
+  .add('DropdownButton', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -108,8 +106,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Header', withInfo({inline: true}) (() => (
+  ))
+  .add('Header', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -129,8 +127,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Modal', withInfo({inline: true}) (() => (
+  ))
+  .add('Modal', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -151,8 +149,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Tabs / Tab', withInfo({inline: true}) (() => (
+  ))
+  .add('Tabs / Tab', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -170,8 +168,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('List Group & List Group Item', withInfo({inline: true}) (() => (
+  ))
+  .add('List Group & List Group Item', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -183,47 +181,47 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Tables', withInfo({inline: true}) (() => (
+  ))
+  .add('Tables', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
           <Table striped bordered condensed hover>
             <caption>Optional table caption.</caption>
             <thead>
-            <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
-            </tr>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
             </thead>
             <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
             </tbody>
           </Table>
         </div>
       </div>
     </div>
-  ), module))
-  .add('Panel', withInfo({inline: true}) (() => (
+  ))
+  .add('Panel', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -232,8 +230,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Well', withInfo({inline: true}) (() =>  (
+  ))
+  .add('Well', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -241,51 +239,56 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Accordion', withInfo({
-        text: `
-        Accordion servers for categorizing the content into collpasible sections.`,
-        inline: true})(() => (
-    <div className="container bs-docs-container">
-      <div className="bs-docs-section">
-        <div className="bs-example">
-          <Accordion>
-            <Panel header="Collapsible Group Item #1" eventKey="1">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
-              ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
-              it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
-            </Panel>
-            <Panel header="Collapsible Group Item #2" eventKey="2">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
-              ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
-              it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
-            </Panel>
-            <Panel header="Collapsible Group Item #3" eventKey="3">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
-              ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
-              it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-              excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
-            </Panel>
-          </Accordion>
+  ))
+  .add(
+    'Accordion',
+    () => (
+      <div className="container bs-docs-container">
+        <div className="bs-docs-section">
+          <div className="bs-example">
+            <Accordion>
+              <Panel header="Collapsible Group Item #1" eventKey="1">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                accusamus labore sustainable VHS.
+              </Panel>
+              <Panel header="Collapsible Group Item #2" eventKey="2">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                accusamus labore sustainable VHS.
+              </Panel>
+              <Panel header="Collapsible Group Item #3" eventKey="3">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                accusamus labore sustainable VHS.
+              </Panel>
+            </Accordion>
+          </div>
         </div>
       </div>
-    </div>
-  )), module)
-  .add('Form', withInfo({inline: true}) (() => (
+    ),
+    {
+      info: {
+        text: 'Accordion servers for categorizing the content into collpasible sections.`',
+      },
+    }
+  )
+  .add('Form', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -343,8 +346,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('InputGroup', withInfo({inline: true}) (() => (
+  ))
+  .add('InputGroup', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -387,7 +390,11 @@ storiesOf('Bootstrap', module)
           <FormGroup>
             <InputGroup>
               <FormControl type="text" />
-              <DropdownButton componentClass={InputGroup.Button} title="Action" id="indigo-ui-bootstrap-input-group-dropdown-button">
+              <DropdownButton
+                componentClass={InputGroup.Button}
+                title="Action"
+                id="indigo-ui-bootstrap-input-group-dropdown-button"
+              >
                 <MenuItem key="1">Item</MenuItem>
               </DropdownButton>
             </InputGroup>
@@ -443,17 +450,17 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('ProgressBar', withInfo({inline: true}) (() => (
+  ))
+  .add('ProgressBar', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
-          <ProgressBar now={60} label={`60%`} />
+          <ProgressBar now={60} label="60%" />
         </div>
       </div>
     </div>
-  ), module))
-  .add('Images', withInfo({inline: true}) (() => (
+  ))
+  .add('Images', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <h1>Images</h1>
@@ -467,14 +474,16 @@ storiesOf('Bootstrap', module)
         </div>
         <h2>Centered</h2>
         <div className="bs-example">
-            <Image className="center-block"
-                   src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4"
-                   responsive/>
+          <Image
+            className="center-block"
+            src="https://avatars2.githubusercontent.com/u/1424387?s=200&v=4"
+            responsive
+          />
         </div>
       </div>
     </div>
-  ), module))
-  .add('ResponsiveEmbed', withInfo({inline: true}) (() => (
+  ))
+  .add('ResponsiveEmbed', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -488,8 +497,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Tooltip', withInfo({inline: true}) (() => (
+  ))
+  .add('Tooltip', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -514,19 +523,23 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Popover', withInfo({inline: true}) (() => (
+  ))
+  .add('Popover', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
-          <Popover placement="right" title="Popover right" id="indigo-ui-bootstrap-popover-example-1">
+          <Popover
+            placement="right"
+            title="Popover right"
+            id="indigo-ui-bootstrap-popover-example-1"
+          >
             And here's some <strong>amazing</strong> content. It's very engaging. right?
           </Popover>
         </div>
       </div>
     </div>
-  ), module))
-  .add('Alert', withInfo({inline: true}) (() => (
+  ))
+  .add('Alert', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -545,8 +558,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Typography', withInfo({inline: true}) (() => (
+  ))
+  .add('Typography', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -586,8 +599,8 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  ), module))
-  .add('Label', withInfo({inline: true}) (() => (
+  ))
+  .add('Label', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
@@ -606,4 +619,4 @@ storiesOf('Bootstrap', module)
         </div>
       </div>
     </div>
-  )));
+  ));

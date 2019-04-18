@@ -1,8 +1,4 @@
-const genDefaultConfig = require('@storybook/react/dist/server/config/defaults/webpack.config.js');
-
-module.exports = (baseConfig, env) => {
-  const config = genDefaultConfig(baseConfig, env);
-
+module.exports = ({ config }) => {
   config.module.rules.unshift({
     test: /\.(js|jsx|mjs)$/,
     enforce: 'pre',

@@ -1,7 +1,7 @@
-import { configure, setAddon, addDecorator } from '@storybook/react';
-import infoAddon from '@storybook/addon-info';
+import { configure, addParameters, addDecorator } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
-import { setOptions } from '@storybook/addon-options';
+import { create } from '@storybook/theming/create';
 
 // Load all components, so we can lint them. Do not remove.
 import components from '../src/indigo/components';
@@ -31,12 +31,18 @@ function loadStories() {
   require('../src/stories/ConfirmButtons');
 }
 
-setOptions({
-  name: 'Indigo UI',
-  url: 'https://github.com/keboola/indigo-ui',
+addParameters({
+  options: {
+    hierarchyRootSeparator: null,
+    hierarchySeparator: null,
+    theme: create({
+      brandTitle: 'Indigo UI',
+      brandUrl: 'https://github.com/keboola/indigo-ui',
+    }),
+  },
 });
 
-setAddon(infoAddon);
+addDecorator(withInfo({ inline: true }));
 addDecorator(withKnobs);
 
 configure(loadStories, module);

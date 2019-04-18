@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
 import { fromJS } from 'immutable';
 
 import Tree from '../../indigo/components/Tree';
@@ -8,12 +7,7 @@ import Tree from '../../indigo/components/Tree';
 storiesOf('Tree', module)
   .add(
     'Tree - simple structure',
-    withInfo({
-      text: `
-        Render Immutable data structure as unordered list.
-        `,
-      inline: true,
-    })(() => {
+    () => {
       return (
         <Tree
           data={fromJS({
@@ -23,16 +17,12 @@ storiesOf('Tree', module)
           })}
         />
       );
-    })
+    },
+    { info: { text: 'Render Immutable data structure as unordered list.' } }
   )
   .add(
     'Tree - advanced structure',
-    withInfo({
-      text: `
-        Render Immutable data structure as unordered list.
-        `,
-      inline: true,
-    })(() => {
+    () => {
       return (
         <Tree
           data={fromJS({
@@ -49,5 +39,6 @@ storiesOf('Tree', module)
           })}
         />
       );
-    })
+    },
+    { info: { text: 'Render Immutable data structure as unordered list.' } }
   );

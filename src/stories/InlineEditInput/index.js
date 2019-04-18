@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import {action} from "@storybook/addon-actions";
+import { action } from '@storybook/addon-actions';
 
 import InlineEditInput from '../../indigo/components/InlineEditInput';
 
@@ -12,7 +11,7 @@ export default class InlineEditInputExample extends React.Component {
       initialText: '',
       text: '',
       isEditing: false,
-      isSaving: false
+      isSaving: false,
     };
   }
 
@@ -24,20 +23,20 @@ export default class InlineEditInputExample extends React.Component {
         onEditStart={() => {
           action('editing started')();
           this.setState({
-            isEditing: true
-          })
+            isEditing: true,
+          });
         }}
         onEditCancel={() => {
           action('editing cancelled')();
           this.setState({
             isEditing: false,
-            text: this.state.initialText
-          })
+            text: this.state.initialText,
+          });
         }}
         onEditChange={(text) => {
           this.setState({
-            text
-          })
+            text,
+          });
         }}
         onEditSubmit={() => {
           action('form submitted')();
@@ -49,7 +48,7 @@ export default class InlineEditInputExample extends React.Component {
               initialText: this.state.text,
               isEditing: false,
               isSaving: false,
-            })
+            });
           }, 1000);
         }}
         text={this.state.text}
@@ -64,16 +63,11 @@ export default class InlineEditInputExample extends React.Component {
 storiesOf('InlineEditInput', module)
   .add(
     'Read mode',
-    withInfo({
-      text: `
-        Input in read only.
-        `,
-      inline: true
-    })(() => {
+    () => {
       return (
         <InlineEditInput
           isEditing={false}
-          isValid={true}
+          isValid
           onEditStart={() => null}
           onEditCancel={() => null}
           onEditChange={() => null}
@@ -83,20 +77,16 @@ storiesOf('InlineEditInput', module)
           placeholder="Click to edit"
         />
       );
-    })
+    },
+    { info: { text: 'Input in read only.' } }
   )
   .add(
     'Edit mode',
-    withInfo({
-      text: `
-        Input in editing mode.
-        `,
-      inline: true
-    })(() => {
+    () => {
       return (
         <InlineEditInput
-          isEditing={true}
-          isValid={true}
+          isEditing
+          isValid
           onEditStart={() => null}
           onEditCancel={() => null}
           onEditChange={() => null}
@@ -106,21 +96,17 @@ storiesOf('InlineEditInput', module)
           placeholder="Click to edit"
         />
       );
-    })
+    },
+    { info: { text: 'Input in editing mode.' } }
   )
   .add(
     'Edit mode - saving',
-    withInfo({
-      text: `
-        Input in editing mode.
-        `,
-      inline: true
-    })(() => {
+    () => {
       return (
         <InlineEditInput
-          isEditing={true}
-          isValid={true}
-          isSaving={true}
+          isEditing
+          isValid
+          isSaving
           onEditStart={() => null}
           onEditCancel={() => null}
           onEditChange={() => null}
@@ -130,20 +116,17 @@ storiesOf('InlineEditInput', module)
           placeholder="Click to edit"
         />
       );
-    })
+    },
+    { info: { text: 'Input in editing mode.' } }
   )
   .add(
     'Working example',
-    withInfo({
-      text: `
-        Full example with actions, etc.
-        `,
-      inline: true
-    })(() => {
+    () => {
       return (
         <div>
           some text <InlineEditInputExample />
         </div>
       );
-    })
+    },
+    { info: { text: 'Full example with actions, etc.' } }
   );

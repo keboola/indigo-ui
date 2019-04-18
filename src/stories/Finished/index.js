@@ -1,9 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import Finished from '../../indigo/components/Finished';
 import moment from 'moment';
 import { boolean } from '@storybook/addon-knobs';
+import Finished from '../../indigo/components/Finished';
 
 const now = new Date();
 const demoTimestamp = moment(now.getTime() - 123456)
@@ -13,20 +12,16 @@ const demoTimestamp = moment(now.getTime() - 123456)
 storiesOf('Finished', module)
   .add(
     'Basic Init',
-    withInfo({
-      text: `
-        Shows how much time ago event occurred. Shows exact time of event on mouse hover. Accepts prop in datetime string format.
-        `,
-      inline: true
-    })(() => {
+    () => {
       return <Finished endTime={demoTimestamp} showIcon={boolean('showIcon', true)} />;
-    })
+    },
+    {
+      info: {
+        text:
+          'Shows how much time ago event occurred. Shows exact time of event on mouse hover. Accepts prop in datetime string format.',
+      },
+    }
   )
-  .add(
-    'No datetime provided',
-    withInfo({
-      inline: true
-    })(() => {
-      return <Finished />;
-    })
-  );
+  .add('No datetime provided', () => {
+    return <Finished />;
+  });
