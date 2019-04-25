@@ -1,18 +1,34 @@
 @import (inline) '@{libsPath}react-select/dist/react-select.css';
 
-// due to codemirror
-.Select-menu-outer {
-  z-index: 5;
-}
+.Select {
+  // Use flexbox because "display: table" can not handle half pixels correctly
+  .Select-control {
+    display: flex;
+    align-items: center;
 
-.Select-input {
-  width: 100%;
-  display: inline!important;
-  > input {
-    padding: 8px 0 10px;
+    & > .Select-multi-value-wrapper {
+      flex: 1 1 0%;
+    }
+
+    & > .Select-arrow-zone {
+      display: inline-block;
+    }
   }
-}
 
-.Select-option {
-  word-wrap: break-word;
+  // due to codemirror
+  .Select-menu-outer {
+    z-index: 5;
+  }
+
+  .Select-input {
+    display: inline !important;
+
+    > input {
+      padding: 8px 0 10px;
+    }
+  }
+
+  .Select-option {
+    word-wrap: break-word;
+  }
 }
