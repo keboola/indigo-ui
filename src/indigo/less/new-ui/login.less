@@ -166,8 +166,28 @@
       text-decoration: none;
     }
 
-    header {
+    .header {
+      position: relative;
       margin-top: 100px;
+
+      .back-link {
+        position: absolute;
+        display: inline-block;
+        width: 14px;
+        height: 24px;
+        top: 2px;
+        left: -32px;
+
+        &:hover path,
+        &:active path,
+        &:focus path {
+          opacity: 1;
+        }
+
+        path {
+          opacity: 0.6;
+        }
+      }
     }
 
     h1 {
@@ -229,7 +249,7 @@
     .main {
       padding: 40px 20px 20px 20px;
 
-      header {
+      .header {
         margin-top: 60px;
       }
     }
