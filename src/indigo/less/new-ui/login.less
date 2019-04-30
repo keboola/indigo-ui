@@ -1,4 +1,6 @@
 .login-page {
+  background: linear-gradient(137.7deg, #007bff 0%, #9bcbff 90.44%);
+
   .top-content {
     display: flex;
     justify-content: space-between;
@@ -86,7 +88,8 @@
       }
 
       &:focus + .form-control-placeholder,
-      &:valid + .form-control-placeholder {
+      &:valid + .form-control-placeholder,
+      &:-webkit-autofill + .form-control-placeholder {
         font-size: 80%;
         transform: translate3d(0, -100%, 0);
         opacity: 1;
@@ -199,7 +202,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(137.7deg, #007bff 0%, #9bcbff 90.44%);
     min-height: 100vh;
     padding: 30px;
     color: @new-ui-white;
