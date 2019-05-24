@@ -134,21 +134,23 @@
     font-weight: 500;
   }
 
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    padding: 13px 20px;
+  form {
+    .btn.btn-lg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      padding: 13px 20px;
 
-    & > * {
-      margin-left: 5px;
-      margin-right: 5px;
+      & > * {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
     }
   }
 
@@ -247,7 +249,7 @@
 @media all and (max-width: @screen-xs-max) {
   .login-page {
     .main {
-      padding: 40px 20px 20px 20px;
+      padding: 30px 20px 40px 40px;
 
       .header {
         margin-top: 60px;
