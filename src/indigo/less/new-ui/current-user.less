@@ -1,0 +1,47 @@
+.current-user {
+  #current-user-dropdown {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dropdown {
+    &.open {
+      .dropdown-menu {
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.175);
+        border: none;
+        margin-top: 5px;
+        border-radius: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    &:hover .current-user-avatar {
+      opacity: 1;
+    }
+  }
+
+  .current-user-avatar {
+    margin-left: 10px;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+
+  .current-user-name,
+  .current-user-email {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: @new-ui-black;
+    text-transform: none;
+    text-align: right;
+  }
+
+  .current-user-email {
+    color: @new-ui-greyer;
+  }
+}
