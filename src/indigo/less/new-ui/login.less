@@ -12,6 +12,7 @@
     font-size: 12px;
 
     .Select-control {
+      cursor: pointer;
       border: 1px solid #e6e6e7;
     }
 
@@ -51,6 +52,7 @@
 
     .form-group {
       position: relative;
+      margin-top: 42px;
       margin-bottom: 42px;
 
       &:last-of-type {
@@ -99,6 +101,7 @@
       &.has-error:focus,
       &.has-error:active,
       &.has-error:hover {
+        color: @new-ui-danger-light;
         border-color: @new-ui-danger;
 
         & + .form-control-placeholder {
