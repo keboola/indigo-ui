@@ -1,7 +1,35 @@
-.btn-info {
-  .button-variant(@new-ui-border; @new-ui-primary; @new-ui-primary);
-}
+.btn {
+  border-radius: 4px;
 
-.btn-info-outline {
-  .button-variant(@new-ui-primary; @new-ui-white; @new-ui-primary);
+  &.btn-info {
+    .button-variant(@new-ui-border; @new-ui-primary; @new-ui-primary);
+  }
+
+  &.btn-info-outline {
+    .button-variant(@new-ui-primary; @new-ui-white; @new-ui-primary);
+  }
+
+  &.btn-success {
+    .button-variant(@new-ui-border; @new-ui-success; @new-ui-success);
+  }
+
+  &.btn-success-outline {
+    .button-variant(@new-ui-success; @new-ui-white; @new-ui-success);
+  }
+
+  &.btn-danger {
+    .button-variant(@new-ui-border; @new-ui-danger; @new-ui-danger);
+  }
+
+  &.btn-danger-outline {
+    .button-variant(@new-ui-danger; @new-ui-white; @new-ui-danger);
+  }
+
+  &.btn-warning {
+    .button-variant(@new-ui-border; @new-ui-warning; @new-ui-warning);
+  }
+
+  &.btn-warning-outline {
+    .button-variant(@new-ui-warning; @new-ui-white; @new-ui-warning);
+  }
 }

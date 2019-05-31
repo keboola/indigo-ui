@@ -1,0 +1,38 @@
+.modal {
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 12px 21px 12px;
+    border-bottom: 1px solid #e6e6e7;
+
+    &:before,
+    &:after {
+      content: none;
+    }
+
+    .close {
+      font-size: 26px;
+    }
+  }
+
+  .modal-body,
+  .modal-footer {
+    padding: 18px 12px 0px 12px;
+    border: none;
+  }
+
+  .modal-content {
+    box-shadow: 0px 10px 20px rgba(100, 135, 153, 0.18);
+    border-radius: 8px;
+  }
+
+  .modal-title {
+    font-size: 16px;
+  }
+}
