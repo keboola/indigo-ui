@@ -24,7 +24,7 @@
 
   &.alert-info {
     color: @new-ui-primary;
-    background: lighten(@new-ui-primary, 35%);
+    background: @new-ui-primary-light;
     border-color: @new-ui-primary;
 
     &:before {
@@ -34,7 +34,7 @@
 
   &.alert-success {
     color: @new-ui-success;
-    background: lighten(@new-ui-success, 54%);
+    background: @new-ui-success-light;
     border-color: @new-ui-success;
 
     &:before {
@@ -44,7 +44,7 @@
 
   &.alert-danger {
     color: @new-ui-danger;
-    background: lighten(@new-ui-danger, 48%);
+    background: @new-ui-danger-lighter;
     border-color: @new-ui-danger;
 
     &:before {
@@ -54,7 +54,7 @@
 
   &.alert-warning {
     color: @new-ui-black;
-    background: lighten(@new-ui-warning, 38%);
+    background: @new-ui-warning-light;
     border-color: @new-ui-warning;
 
     &:before {
@@ -62,7 +62,7 @@
     }
 
     &.alert-as-link {
-      border-right: 48px solid lighten(@new-ui-warning, 38%);
+      border-right: 48px solid @new-ui-warning-light;
       transition: all 200ms ease-in-out;
 
       &:hover,
