@@ -232,6 +232,10 @@
     padding: 30px;
     color: @new-ui-white;
 
+    & > div {
+      position: fixed;
+    }
+
     .overview-text {
       position: relative;
       top: -32px;
@@ -250,11 +254,32 @@
   }
 }
 
-@media all and (max-width: @screen-xs-max) {
+@media all and (max-width: 1600px) {
+  .login-page {
+    .main {
+      padding: 60px 30px 50px 50px;
+    }
+  }
+}
+
+
+@media all and (max-width: @screen-lg-min) {
   .login-page {
     .main {
       padding: 30px 20px 40px 40px;
+    }
 
+    .overview {
+      & > div {
+        position: initial;
+      }
+    }
+  }
+}
+
+@media all and (max-width: @screen-xs-max) {
+  .login-page {
+    .main {
       .header {
         margin-top: 60px;
       }
