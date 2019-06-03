@@ -33,15 +33,28 @@
 
   .current-user-name,
   .current-user-email {
+    width: 220px;
     display: block;
     font-weight: 500;
     font-size: 16px;
     color: @new-ui-black;
     text-transform: none;
     text-align: right;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .current-user-email {
     color: @new-ui-greyer;
+  }
+}
+
+@media all and (max-width: 1600px) {
+  .current-user {
+    .current-user-name,
+    .current-user-email {
+      width: 160px;
+    }
   }
 }
