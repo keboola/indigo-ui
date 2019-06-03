@@ -232,6 +232,10 @@
     padding: 30px;
     color: @new-ui-white;
 
+    & > div {
+      position: fixed;
+    }
+
     .overview-text {
       position: relative;
       top: -32px;
@@ -263,6 +267,12 @@
   .login-page {
     .main {
       padding: 30px 20px 40px 40px;
+    }
+
+    .overview {
+      & > div {
+        position: initial;
+      }
     }
   }
 }
