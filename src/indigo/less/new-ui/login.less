@@ -1,6 +1,15 @@
 .login-page {
   background: linear-gradient(137.7deg, #007bff 0%, #9bcbff 90.44%);
 
+  a {
+    color: @new-ui-primary;
+
+    &:hover,
+    &:focus {
+      color: darken(@new-ui-primary, 10%);
+    }
+  }
+
   .top-content {
     display: flex;
     justify-content: space-between;
@@ -206,7 +215,7 @@
 
       & + p {
         font-size: 18px;
-        color: #ababad;
+        color: @new-ui-text-grey;
       }
     }
 

@@ -1,0 +1,267 @@
+.guide-status-bar ~ .container-kbc-topbar {
+    margin-top: 50px;
+}
+
+.container-kbc-topbar {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+
+  & > .container-fluid {
+    padding: 0;
+  }
+
+  .kbc-topbar {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid @new-ui-border;
+
+    .kbc-topbar-left {
+      float: left;
+      display: flex;
+      align-items: center;
+    }
+
+    .kbc-topbar-right {
+      height: 42px;
+      float: right;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-toggle {
+      margin: 0;
+    }
+
+    .kbc-icon-keboola-link {
+      display: inline-block;
+      margin: 5px 15px;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    .kbc-icon-keboola-logo {
+      color: @new-ui-primary;
+      font-size: 24px;
+    }
+
+    #select-project-dropdown-button {
+      height: 42px;
+      padding: 0px 20px 0px 0px;
+      display: flex;
+      align-items: center;
+      border: none;
+      text-decoration: none;
+
+      .kbc-project-name {
+        display: block;
+        max-width: 200px;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 15px;
+        margin-right: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        span {
+          color: @new-ui-text-grey;
+        }
+
+        strong {
+          color: #282d38;
+          font-size: 16px;
+        }
+      }
+
+      .kbc-icon-picker {
+        color: #d7dce0;
+        width: 30px;
+      }
+
+      + .dropdown-menu {
+        left: 10px;
+        right: 20px;
+        padding: 15px;
+      }
+    }
+
+    .kbc-user {
+      .kbc-user-name {
+        font-size: 16px;
+        color: @new-ui-black;
+        text-align: left;
+        padding-left: 10px;
+      }
+      
+      .kbc-user-email {
+        font-size: 14px;
+        color: @new-ui-text-grey;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .kbc-navbar {
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 2px 10px 0px @new-ui-border;
+    border: none;
+    margin-bottom: 0;
+
+    #navbar-applications {
+      background: #fff;
+      padding: 0px;
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .navbar-collapse {
+      margin-right: -15px;
+      margin-left: -15px;
+
+      .navbar {
+        margin: 0px;
+        border: none;
+
+        .dropdown-menu {
+          margin-top: -5px;
+
+          & > li {
+            display: block;
+            height: auto;
+            padding: 0px;
+
+            a {
+              display: flex;
+              align-items: center;
+              color: #7f8198;
+              padding: 6px 20px;
+            }
+          }
+        }
+
+        li:first-of-type > .navbar-link {
+          padding-left: 0;
+        }
+
+        .navbar-link,
+        .dropdown > button > span {
+          height: 68px;
+          color: #a2a2a2;
+          display: flex;
+          align-items: center;
+          padding: 24px 20px 23px 20px;
+          font-size: 16px;
+          font-weight: 500;
+
+          svg path {
+            fill: #7f8198;
+            transition: fill 100ms ease-in-out;
+          }
+
+          &:hover svg path,
+          &:focus svg path {
+            fill: @new-ui-svg-hover;
+          }
+
+          &.active svg path {
+            fill: @new-ui-primary;
+          }
+
+          svg {
+            margin-right: 9px;
+          }
+        }
+
+        .dropdown > button {
+          text-decoration: none;
+          width: 100%;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .navbar-setting {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding-top: 15px;
+
+    & > * {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      transition: all 200ms ease-in-out;
+
+      &:hover svg path,
+      &:focus svg path {
+        fill: @new-ui-svg-hover;
+      }
+
+      button {
+        padding: 0;
+      }
+
+      .dropdown-menu {
+        padding: 10px 0;
+
+        a:hover,
+        a:focus {
+          background: transparent;
+          padding: 8px 20px;
+          color: @new-ui-svg-hover !important;
+        }
+      }
+    }
+
+    .kbc-notification-access {
+      position: relative;
+
+      .kbc-notification-icon-badge {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 15px;
+        height: 15px;
+
+        .kbc-notification-icon-badge-inner {
+          color: #fff;
+          background-color: @new-ui-primary;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: @screen-md-min) {
+  .container-kbc-topbar {
+    .kbc-navbar {
+      .navbar-collapse {
+        .navbar {
+          display: flex;
+          flex-direction: column-reverse;
+
+          li:first-of-type > .navbar-link {
+            padding: 25px 20px 24px 20px;
+          }
+        }
+      }
+    }
+  }
+}

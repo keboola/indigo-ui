@@ -1,34 +1,23 @@
-.kbc-main {
-    padding: 0;
-    float: none;
-    width: auto;
+.kbc-header {
+    padding: 22px 22px 15px !important;
 
-    > .container-fluid {
-        margin: 15px 15px 15px;
-        padding: 0;
+    > .kbc-title {
+        h2 {
+            margin: 0 0 .3em;
+        }
+        p {
+            font-size: 16px;
+        }
     }
 
-    .kbc-header {
-        padding: 22px 22px 15px !important;
+    button.pull-right {
+        margin-left: 10px;
+        position: relative;
+        top: 3px;
+    }
 
-        > .kbc-title {
-            h2 {
-                margin: 0 0 .3em;
-            }
-            p {
-                font-size: 16px;
-            }
-        }
-
-        button.pull-right {
-            margin-left: 10px;
-            position: relative;
-            top: 3px;
-        }
-
-        &-with-bottom-border {
-            border-bottom: 1px solid @table-border-color;
-        }
+    &-with-bottom-border {
+        border-bottom: 1px solid @table-border-color;
     }
 }
 

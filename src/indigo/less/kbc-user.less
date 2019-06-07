@@ -53,17 +53,16 @@
     white-space: initial;
     padding: 0;
     color: #89959f;
-    max-width: 184px;
+    max-width: 200px;
     border-width: 0;
+
     .kbc-icon-picker {
+      color: #d7dce0;
       width: 36px;
       height: 38px;
       float: right;
       line-height: 38px;
       text-align: center;
-    }
-    @media all and (max-height: 750px) {
-      max-width: 236px;
     }
   }
 
@@ -110,32 +109,6 @@
     }
     .dropdown-menu {
       border-radius: 5px 5px 0 5px;
-    }
-  }
-}
-
-.kbc-sidebar-footer {
-  .kbc-user {
-    .kbc-user-avatar {
-      float: left;
-      margin-right: .75em;
-    }
-    .kbc-user-menu {
-      &.dropup {
-        float: right;
-
-        .dropdown-toggle {
-          .kbc-icon-picker {
-            border-radius: 0 0 5px 5px;
-          }
-        }
-        .dropdown-menu {
-          border-radius: 5px 5px 0 5px;
-        }
-      }
-    }
-    .kbc-user-name, .kbc-user-email {
-      text-align: left;
     }
   }
 }

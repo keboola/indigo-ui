@@ -1,3 +1,11 @@
+@screen-sm: 868px;
+@screen-md: 1092px;
+@screen-lg: 1360px;
+@container-sm: 850px;
+@container-md: 1070px;
+@container-lg: 1330px;
+@grid-float-breakpoint: @screen-md-min;
+
 @new-ui-primary: #228dff;
 @new-ui-primary-light: #daecff;
 @new-ui-success: #07be07;
@@ -12,18 +20,27 @@
 @new-ui-black: #333333;
 @new-ui-white: #ffffff;
 @new-ui-border: #e6e6e7;
+@new-ui-border-ligth: rgba(162, 165, 169, 0.15);
+@new-ui-text-grey: #ababad;
+@new-ui-svg-hover: #272837;
+
+@link-color: @new-ui-primary;
 
 body.new-ui {
   font-family: 'Roboto', sans-serif;
-  padding: 0;
+  padding: 0px 0px 30px 0px;
+  margin: 0;
   min-height: 100%;
 
   @import 'helpers';
-  @import 'basis';
+  @import 'main';
+  @import 'header';
   @import 'buttons';
   @import 'login';
   @import 'alerts';
   @import 'current-user';
   @import 'projects-list';
   @import 'modal';
+  @import 'breadcrumb';
+  @import 'project-select-results';
 }
