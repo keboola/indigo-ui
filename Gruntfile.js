@@ -6,10 +6,7 @@ module.exports = function (grunt) {
         options: {
           paths: [
             "node_modules"
-          ],
-          modifyVars: {
-            "libsPath": ""
-          }
+          ]
         },
         files: {
           "public/css/indigo.uncompressed.css": "src/styles/indigo-storybook.less"
