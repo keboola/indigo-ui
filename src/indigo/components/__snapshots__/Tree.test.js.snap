@@ -3,7 +3,6 @@
 exports[`<Tree /> Tree - default 1`] = `
 <div
   className="kb-tree"
-  onClick={undefined}
 >
   <ul>
     <li>
@@ -40,7 +39,6 @@ exports[`<Tree /> Tree - default 1`] = `
 exports[`<Tree /> Tree - with password 1`] = `
 <div
   className="kb-tree"
-  onClick={undefined}
 >
   <ul>
     <li>

@@ -13,13 +13,10 @@ exports[`<PanelWithDetails /> PanelWithDetails - bottom controls 1`] = `
       role="presentation"
     >
       <a
-        aria-controls={undefined}
         aria-expanded={false}
         aria-selected={false}
         className="collapsed"
-        href={undefined}
         onClick={[Function]}
-        role={undefined}
       >
         Show details
       </a>
@@ -29,8 +26,6 @@ exports[`<PanelWithDetails /> PanelWithDetails - bottom controls 1`] = `
     aria-expanded={null}
     aria-hidden={true}
     className="panel-collapse collapse"
-    id={undefined}
-    role={undefined}
   >
     <div
       className="panel-body"
@@ -54,13 +49,10 @@ exports[`<PanelWithDetails /> PanelWithDetails - custom labels 1`] = `
       role="presentation"
     >
       <a
-        aria-controls={undefined}
         aria-expanded={false}
         aria-selected={false}
         className="collapsed"
-        href={undefined}
         onClick={[Function]}
-        role={undefined}
       >
         Show
       </a>
@@ -70,8 +62,6 @@ exports[`<PanelWithDetails /> PanelWithDetails - custom labels 1`] = `
     aria-expanded={null}
     aria-hidden={true}
     className="panel-collapse collapse"
-    id={undefined}
-    role={undefined}
   >
     <div
       className="panel-body"
@@ -95,13 +85,10 @@ exports[`<PanelWithDetails /> PanelWithDetails - default 1`] = `
       role="presentation"
     >
       <a
-        aria-controls={undefined}
         aria-expanded={false}
         aria-selected={false}
         className="collapsed"
-        href={undefined}
         onClick={[Function]}
-        role={undefined}
       >
         Show details
       </a>
@@ -111,8 +98,6 @@ exports[`<PanelWithDetails /> PanelWithDetails - default 1`] = `
     aria-expanded={null}
     aria-hidden={true}
     className="panel-collapse collapse"
-    id={undefined}
-    role={undefined}
   >
     <div
       className="panel-body"
@@ -136,13 +121,10 @@ exports[`<PanelWithDetails /> PanelWithDetails - default expanded 1`] = `
       role="presentation"
     >
       <a
-        aria-controls={undefined}
         aria-expanded={true}
         aria-selected={true}
         className={null}
-        href={undefined}
         onClick={[Function]}
-        role={undefined}
       >
         Hide details
       </a>
@@ -152,8 +134,6 @@ exports[`<PanelWithDetails /> PanelWithDetails - default expanded 1`] = `
     aria-expanded={null}
     aria-hidden={false}
     className="panel-collapse collapse in"
-    id={undefined}
-    role={undefined}
   >
     <div
       className="panel-body"
@@ -177,13 +157,10 @@ exports[`<PanelWithDetails /> PanelWithDetails - small preview 1`] = `
       role="presentation"
     >
       <a
-        aria-controls={undefined}
         aria-expanded={false}
         aria-selected={false}
         className="collapsed"
-        href={undefined}
         onClick={[Function]}
-        role={undefined}
       >
         Show details
       </a>
@@ -193,8 +170,6 @@ exports[`<PanelWithDetails /> PanelWithDetails - small preview 1`] = `
     aria-expanded={null}
     aria-hidden={true}
     className="panel-collapse collapse"
-    id={undefined}
-    role={undefined}
   >
     <div
       className="panel-body"
