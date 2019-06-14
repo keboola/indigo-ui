@@ -1,12 +1,10 @@
 import React from 'react';
 import moment from 'moment';
+import MockDate from 'mockdate';
 import { snapshot } from '../../tests';
 import Finished from './Finished';
 
-const fakeNow = '2018-11-26T15:11:05+0000';
-const fakeNowMs = moment(fakeNow).valueOf();
-
-global.Date.now = jest.fn(() => fakeNowMs);
+MockDate.set('2018-11-26T15:11:05');
 
 const timePast = moment()
   .subtract(124, 'seconds')
