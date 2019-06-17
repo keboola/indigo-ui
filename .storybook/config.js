@@ -17,14 +17,12 @@ function loadStories() {
   require('../src/stories/Tree');
   require('../src/stories/Tabs');
   require('../src/stories/Popover');
-  require('../src/stories/RegionSelector');
   require('../src/stories/ModalConfiguration');
   require('../src/stories/BtnLinkInline');
   require('../src/stories/ExternalLink');
   require('../src/stories/PanelWithDetails');
   require('../src/stories/AlertBlock');
   require('../src/stories/Icons');
-  require('../src/stories/Splash');
   require('../src/stories/SearchBar');
   require('../src/stories/Finished');
   require('../src/stories/InlineEditInput');
