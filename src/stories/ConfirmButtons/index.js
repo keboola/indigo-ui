@@ -1,8 +1,8 @@
 import React from 'react';
-import {storiesOf} from '@storybook/react';
-import {withInfo} from '@storybook/addon-info';
-import {Button} from 'react-bootstrap';
-import {action} from "@storybook/addon-actions";
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { Button } from 'react-bootstrap';
+import { action } from '@storybook/addon-actions';
 import ConfirmButtons from '../../indigo/components/ConfirmButtons';
 
 storiesOf('ConfirmButtons', module)
@@ -10,27 +10,13 @@ storiesOf('ConfirmButtons', module)
     'Basic Init',
     withInfo({
       inline: true,
-    })(() => {
-      return (
-        <ConfirmButtons
-          onSave={() => null}
-          isSaving={false}
-        />
-      );
-    })
+    })(() => <ConfirmButtons />)
   )
   .add(
     'Saving',
     withInfo({
       inline: true,
-    })(() => {
-      return (
-        <ConfirmButtons
-          onSave={() => null}
-          isSaving={true}
-        />
-      );
-    })
+    })(() => <ConfirmButtons isSaving />)
   )
   .add(
     'Disabled',
@@ -39,43 +25,19 @@ storiesOf('ConfirmButtons', module)
         Use for validating
         `,
       inline: true,
-    })(() => {
-      return (
-        <ConfirmButtons
-          isDisabled={true}
-          onSave={() => null}
-          isSaving={false}
-        />
-      );
-    })
+    })(() => <ConfirmButtons isDisabled />)
   )
   .add(
     'Show Save button',
     withInfo({
       inline: true,
-    })(() => {
-      return (
-        <ConfirmButtons
-          showSave={false}
-          onSave={() => null}
-          isSaving={false}
-        />
-      );
-    })
+    })(() => <ConfirmButtons showSave={false} />)
   )
   .add(
     'Show Cancel button',
     withInfo({
       inline: true,
-    })(() => {
-      return (
-        <ConfirmButtons
-          showCancel={false}
-          onSave={() => null}
-          isSaving={false}
-        />
-      );
-    })
+    })(() => <ConfirmButtons showCancel={false} />)
   )
   .add(
     'Additional buttons',
@@ -84,58 +46,29 @@ storiesOf('ConfirmButtons', module)
       text: `
         Option to add additional class names eg: "pull-right" for alignment
         `,
-    })(() => {
-      return (
-        <ConfirmButtons
-          onSave={() => null}
-          isSaving={false}
-        >
-          <Button>Try Query</Button>
-        </ConfirmButtons>
-      );
-    })
+    })(() => (
+      <ConfirmButtons>
+        <Button>Try Query</Button>
+      </ConfirmButtons>
+    ))
   )
   .add(
     'Cancel label',
     withInfo({
       inline: true,
-    })(() => {
-      return (
-        <ConfirmButtons
-          cancelLabel="Reset"
-          onSave={() => null}
-          isSaving={false}
-        />
-      );
-    })
+    })(() => <ConfirmButtons cancelLabel="Reset" />)
   )
   .add(
     'Save label',
     withInfo({
       inline: true,
-    })(() => {
-      return (
-        <ConfirmButtons
-          saveLabel="Save Configuration"
-          onSave={() => null}
-          isSaving={false}
-        />
-      );
-    })
+    })(() => <ConfirmButtons saveLabel="Save Configuration" />)
   )
   .add(
     'Save button style',
     withInfo({
       inline: true,
-    })(() => {
-      return (
-        <ConfirmButtons
-          saveStyle="primary"
-          onSave={() => null}
-          isSaving={false}
-        />
-      );
-    })
+    })(() => <ConfirmButtons saveStyle="primary" />)
   )
   .add(
     'Save button type',
@@ -144,15 +77,7 @@ storiesOf('ConfirmButtons', module)
         Uses type="submit" attribute. So it can be wrapped by <form> and submitted by pressing Enter key
         `,
       inline: true,
-    })(() => {
-      return (
-        <ConfirmButtons
-          saveButtonType="submit"
-          onSave={() => null}
-          isSaving={false}
-        />
-      );
-    })
+    })(() => <ConfirmButtons saveButtonType="submit" />)
   )
   .add(
     'Additional class',
@@ -161,17 +86,11 @@ storiesOf('ConfirmButtons', module)
       text: `
         Option to add additional class for styling eg: "pull-right" for alignment
         `,
-    })(() => {
-      return (
-        <div className="clearfix">
-          <ConfirmButtons
-            className="pull-right"
-            onSave={() => null}
-            isSaving={false}
-          />
-        </div>
-      );
-    })
+    })(() => (
+      <div className="clearfix">
+        <ConfirmButtons className="pull-right" />
+      </div>
+    ))
   )
   .add(
     'Events demo',
@@ -180,15 +99,9 @@ storiesOf('ConfirmButtons', module)
       text: `
         onSave & onCancel
         `,
-    })(() => {
-      return (
-        <div className="clearfix">
-          <ConfirmButtons
-            onSave={action('event - save')}
-            onCancel={action('event - cancel')}
-            isSaving={false}
-          />
-        </div>
-      );
-    })
+    })(() => (
+      <div className="clearfix">
+        <ConfirmButtons onSave={action('event - save')} onCancel={action('event - cancel')} />
+      </div>
+    ))
   );

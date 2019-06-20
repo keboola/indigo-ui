@@ -8,71 +8,80 @@ class ConfirmButtons extends React.Component {
   render() {
     return (
       <ButtonToolbar className={classnames('btn-toolbar-confirm', this.props.className)}>
-        {this.loader()}
+        {this.renderLoader()}
         {this.props.children}
-        {this.cancelButton()}
-        {this.saveButton()}
+        {!this.props.showCancel && ' '}
+        {this.renderCancelButton()}
+        {this.renderSaveButton()}
       </ButtonToolbar>
     );
   }
 
-  loader() {
-    if (this.props.isSaving) return <Loader />;
-    return null;
+  renderLoader() {
+    if (!this.props.isSaving) {
+      return null;
+    }
+
+    return <Loader />;
   }
 
-  saveButton() {
-    if (this.props.showSave) {
-      return (
-        <Button
-          type={this.props.saveButtonType}
-          bsStyle={this.props.saveStyle}
-          disabled={this.props.isSaving || this.props.isDisabled}
-          onClick={this.props.onSave}
-          className="btn-confirm"
-        >
-          {this.props.saveLabel}
-        </Button>
-      );
+  renderSaveButton() {
+    if (!this.props.showSave) {
+      return null;
     }
-    return null;
+
+    return (
+      <Button
+        className="btn-confirm"
+        type={this.props.saveButtonType}
+        bsStyle={this.props.saveStyle}
+        disabled={this.props.isSaving || this.props.isDisabled}
+        onClick={this.props.onSave}
+      >
+        {this.props.saveLabel}
+      </Button>
+    );
   }
 
-  cancelButton() {
-    if (this.props.showCancel) {
-      return (
-        <Button
-          bsStyle="link"
-          disabled={this.props.isSaving}
-          onClick={this.props.onCancel}
-          className="btn-confirm"
-        >
-          {this.props.cancelLabel}
-        </Button>
-      );
+  renderCancelButton() {
+    if (!this.props.showCancel) {
+      return null;
     }
-    return null;
+
+    return (
+      <Button
+        className="btn-confirm"
+        bsStyle="link"
+        disabled={this.props.isSaving}
+        onClick={this.props.onCancel}
+      >
+        {this.props.cancelLabel}
+      </Button>
+    );
   }
 }
 
 ConfirmButtons.defaultProps = {
+  onSave: () => {},
+  onCancel: () => {},
   saveLabel: 'Save',
   saveStyle: 'success',
   cancelLabel: 'Cancel',
   saveButtonType: 'button',
+  isSaving: false,
   isDisabled: false,
   showSave: true,
   showCancel: true,
 };
 
 ConfirmButtons.propTypes = {
-  isSaving: PropTypes.bool.isRequired,
+  isSaving: PropTypes.bool,
   isDisabled: PropTypes.bool,
   cancelLabel: PropTypes.string,
   saveLabel: PropTypes.string,
   saveStyle: PropTypes.string,
   onCancel: PropTypes.func,
-  onSave: PropTypes.func.isRequired,
+  onSave: PropTypes.func,
   saveButtonType: PropTypes.oneOf(['button', 'submit']),
   showCancel: PropTypes.bool,
   showSave: PropTypes.bool,

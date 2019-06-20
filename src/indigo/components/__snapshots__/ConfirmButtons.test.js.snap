@@ -15,7 +15,7 @@ exports[`<Check /> Additional buttons 1`] = `
   <button
     className="btn-confirm btn btn-link"
     disabled={false}
-    onClick={undefined}
+    onClick={[Function]}
     type="button"
   >
     Cancel
@@ -42,7 +42,7 @@ exports[`<Check /> Additional class 1`] = `
     <button
       className="btn-confirm btn btn-link"
       disabled={false}
-      onClick={undefined}
+      onClick={[Function]}
       type="button"
     >
       Cancel
@@ -67,7 +67,7 @@ exports[`<Check /> Basic Init 1`] = `
   <button
     className="btn-confirm btn btn-link"
     disabled={false}
-    onClick={undefined}
+    onClick={[Function]}
     type="button"
   >
     Cancel
@@ -91,7 +91,7 @@ exports[`<Check /> Cancel label 1`] = `
   <button
     className="btn-confirm btn btn-link"
     disabled={false}
-    onClick={undefined}
+    onClick={[Function]}
     type="button"
   >
     Reset
@@ -115,7 +115,7 @@ exports[`<Check /> Disabled 1`] = `
   <button
     className="btn-confirm btn btn-link"
     disabled={false}
-    onClick={undefined}
+    onClick={[Function]}
     type="button"
   >
     Cancel
@@ -139,7 +139,7 @@ exports[`<Check /> Save button style 1`] = `
   <button
     className="btn-confirm btn btn-link"
     disabled={false}
-    onClick={undefined}
+    onClick={[Function]}
     type="button"
   >
     Cancel
@@ -163,7 +163,7 @@ exports[`<Check /> Save button type 1`] = `
   <button
     className="btn-confirm btn btn-link"
     disabled={false}
-    onClick={undefined}
+    onClick={[Function]}
     type="button"
   >
     Cancel
@@ -187,7 +187,7 @@ exports[`<Check /> Save label 1`] = `
   <button
     className="btn-confirm btn btn-link"
     disabled={false}
-    onClick={undefined}
+    onClick={[Function]}
     type="button"
   >
     Cancel
@@ -214,7 +214,7 @@ exports[`<Check /> Saving 1`] = `
   <button
     className="btn-confirm btn btn-link"
     disabled={true}
-    onClick={undefined}
+    onClick={[Function]}
     type="button"
   >
     Cancel
@@ -235,6 +235,7 @@ exports[`<Check /> Show Cancel button 1`] = `
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
+   
   <button
     className="btn-confirm btn btn-success"
     disabled={false}
@@ -254,7 +255,7 @@ exports[`<Check /> Show Save button 1`] = `
   <button
     className="btn-confirm btn btn-link"
     disabled={false}
-    onClick={undefined}
+    onClick={[Function]}
     type="button"
   >
     Cancel
