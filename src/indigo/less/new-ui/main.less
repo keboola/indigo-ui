@@ -51,3 +51,20 @@ strong {
     }
   }
 }
+
+.nav-tabs > li {
+  & > a,
+  & > a:hover,
+  & > a:focus {
+    color: @new-ui-black;
+  }
+
+  &.active {
+    & > a,
+    & > a:hover,
+    & > a:focus {
+      color: @new-ui-black;
+      font-weight: 500;
+    }
+  }
+}
