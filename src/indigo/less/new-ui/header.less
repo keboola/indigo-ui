@@ -90,20 +90,31 @@
     }
 
     .kbc-user {
+      .dropdown-toggle {
+        height: 44px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        text-decoration: none;
+        padding: 0px;
+      }
+
+      .current-user-box {
+        max-width: 180px;
+        padding: 0px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
       .kbc-user-name {
         font-size: 16px;
         color: @new-ui-black;
-        text-align: left;
-        padding-left: 10px;
       }
-      
+
       .kbc-user-email {
         font-size: 14px;
         color: @new-ui-text-grey;
-        white-space: nowrap;
-        overflow: hidden;
-        text-align: left;
-        padding-left: 10px;
       }
     }
   }
@@ -174,8 +185,14 @@
             fill: @new-ui-svg-hover;
           }
 
-          &.active svg path {
-            fill: @new-ui-primary;
+          &.active {
+            & > span {
+              color: @new-ui-primary;
+            }
+
+            svg path {
+              fill: @new-ui-primary;
+            }
           }
 
           svg {
@@ -261,6 +278,14 @@
             padding: 25px 20px 24px 20px;
           }
         }
+      }
+    }
+
+    .kbc-user {
+      margin-right: 15px;
+
+      .kbc-icon-picker {
+        margin-left: 5px;
       }
     }
   }
