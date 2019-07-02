@@ -26,7 +26,7 @@
 
 @link-color: @new-ui-primary;
 
-body.new-ui {
+body {
   font-family: 'Roboto', sans-serif;
   padding: 0px 0px 30px 0px;
   margin: 0;
@@ -34,13 +34,19 @@ body.new-ui {
 
   @import 'helpers';
   @import 'main';
-  @import 'header';
-  @import 'buttons';
-  @import 'login';
-  @import 'alerts';
-  @import 'current-user';
-  @import 'projects-list';
-  @import 'modal';
-  @import 'breadcrumb';
-  @import 'project-select-results';
+
+  &.new-ui {
+    @import 'buttons';
+    @import 'login';
+    @import 'alerts';
+    @import 'modal';
+  }
+
+  &.new-ui-menu {
+    @import 'header';
+    @import 'current-user';
+    @import 'projects-list';
+    @import 'breadcrumb';
+    @import 'project-select-results';
+  }
 }
