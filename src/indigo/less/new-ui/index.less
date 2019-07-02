@@ -33,6 +33,19 @@ body {
   @import 'helpers';
   @import 'main';
 
+  &.new-ui,
+  &.new-ui-menu {
+    a {
+      color: @new-ui-primary;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: darken(@new-ui-primary, 15%);
+      }
+    }
+  }
+
   &.new-ui {
     @import 'buttons';
     @import 'login';
