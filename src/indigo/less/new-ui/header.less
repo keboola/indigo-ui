@@ -157,26 +157,56 @@
       .navbar {
         margin: 0px;
         border: none;
+        display: flex;
 
         .navbar-nav {
-          line-height: 68px;
+
+          @media (min-width: @screen-sm-min) {
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 58px;
+          }
+
+          @media (min-width: @screen-md-min) {
+            line-height: 68px;
+          }
         }
 
-        li:first-of-type > .navbar-link {
-          padding-left: 0;
+        @media (min-width: @screen-sm-min) {
+          li:first-of-type > .navbar-link {
+            padding-left: 0;
+          }
         }
 
         .navbar-link {
-          height: 68px;
           color: #a2a2a2;
           display: flex;
           align-items: center;
-          padding: 0 12px 0 12px;
-          font-size: 16px;
+          padding: 12px 18px;
+          font-size: 14px;
           font-weight: 500;
 
+          @media (min-width: @screen-sm-min) {
+            height: 58px;
+            padding: 0 10px;
+          }
+
+          @media (min-width: @screen-md-min) {
+            height: 68px;
+          }
+
+          @media (min-width: @screen-lg-min) {
+            font-size: 16px;
+            padding: 0 12px;
+          }
+
           svg {
-            max-width: 20px;
+            max-width: 18px;
+            margin-right: 7px;
+            @media (min-width: @screen-lg-min) {
+              max-width: 20px;
+              margin-right: 9px;
+            }
 
             path {
               fill: #7f8198;
@@ -198,10 +228,6 @@
               fill: @new-ui-primary;
             }
           }
-
-          svg {
-            margin-right: 9px;
-          }
         }
       }
     }
@@ -211,7 +237,16 @@
     display: flex;
     align-items: baseline;
     justify-content: flex-end;
-    padding-top: 12px;
+    padding-top: 2px;
+    flex-grow: 1;
+    align-self: center;
+
+    svg {
+      max-width: 18px;
+      @media (min-width: @screen-lg-min) {
+        max-width: 20px;
+      }
+    }
 
     & > * {
       display: flex;
@@ -266,24 +301,8 @@
 
 @media all and (max-width: @screen-md-min) {
   .container-kbc-topbar {
-    .kbc-navbar {
-      .navbar-collapse {
-        .navbar {
-          display: flex;
-          flex-direction: column-reverse;
-
-          .navbar-link,
-          li:first-of-type .navbar-link {
-            height: auto;
-            padding: 12px 20px;
-          }
-        }
-      }
-    }
-
     .kbc-user {
       margin-right: 15px;
-
       .kbc-icon-picker {
         margin-left: 5px;
       }
