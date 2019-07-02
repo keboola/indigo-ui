@@ -77,10 +77,10 @@
 
 @import 'head';
 @import 'main-content';
+@import 'sidebar';
 
 @import 'components';
 @import 'legacy';
-@import 'sidebar';
 @import 'single-pages';
 @import 'limits';
 @import 'finished';
@@ -177,6 +177,17 @@ body {
     border-radius: 50%;
 }
 
+@media (min-width: 1030px) {
+    .kbc-navbar .kbc-logo,
+    .kbc-sidebar {
+        width: 260px;
+    }
+    .kbc-main-header-container,
+    .kbc-main {
+
+        margin-left: 260px;
+    }
+}
 .kbc-orchestration-tasks-heading{
   margin: 0 15px;
 }
