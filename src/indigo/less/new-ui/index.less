@@ -1,3 +1,10 @@
+@screen-sm: 868px;
+@screen-md: 1092px;
+@screen-lg: 1300px;
+@container-sm: 850px;
+@container-md: 1070px;
+@container-lg: 1270px;
+
 @new-ui-primary: #228dff;
 @new-ui-primary-light: #daecff;
 @new-ui-success: #07be07;
@@ -12,18 +19,38 @@
 @new-ui-black: #333333;
 @new-ui-white: #ffffff;
 @new-ui-border: #e6e6e7;
+@new-ui-border-ligth: rgba(162, 165, 169, 0.15);
+@new-ui-shadow: rgba(86, 86, 90, 0.05);
+@new-ui-text-grey: #ababad;
+@new-ui-svg-hover: #272837;
 
-body.new-ui {
+body {
   font-family: 'Roboto', sans-serif;
-  padding: 0;
+  margin: 0;
   min-height: 100%;
 
   @import 'helpers';
-  @import 'basis';
-  @import 'buttons';
-  @import 'login';
-  @import 'alerts';
-  @import 'current-user';
-  @import 'projects-list';
-  @import 'modal';
+
+  &.new-ui,
+  &.new-ui-menu {
+    padding: 0;
+  }
+
+  &.new-ui {
+    @import 'buttons';
+    @import 'login';
+    @import 'alerts';
+    @import 'modal';
+  }
+
+  &.new-ui-menu {
+    padding-bottom: 30px;
+
+    @import 'main';
+    @import 'header';
+    @import 'current-user';
+    @import 'projects-list';
+    @import 'breadcrumb';
+    @import 'project-select-results';
+  }
 }

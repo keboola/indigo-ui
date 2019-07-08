@@ -1,0 +1,338 @@
+.guide-status-bar ~ .container-kbc-topbar {
+    margin-top: 50px;
+}
+
+.kbc-header {
+  padding: 22px 22px 15px !important;
+  
+  > .kbc-title {
+    > h2 {
+      margin: 0 0 .3em;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.container-kbc-topbar {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+
+  & > .container-fluid {
+    padding: 0;
+  }
+
+  .kbc-icon-picker {
+    color: #c8cad9;
+    font-weight: 700;
+    width: 30px;
+  }
+
+  .dropdown-toggle:hover,
+  .dropdown-toggle:focus {
+    .kbc-icon-picker {
+      color: #272837;
+    }
+  }
+
+  .kbc-topbar {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid @new-ui-border;
+
+    .kbc-topbar-left {
+      float: left;
+      display: flex;
+      align-items: center;
+    }
+
+    .kbc-topbar-right {
+      height: 42px;
+      float: right;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-toggle {
+      margin: 0;
+    }
+
+    .kbc-icon-keboola-link {
+      display: inline-block;
+      margin: 5px 15px;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    .kbc-icon-keboola-logo {
+      color: @new-ui-primary;
+      font-size: 24px;
+    }
+
+    #select-project-dropdown-button {
+      height: 42px;
+      padding: 0px 20px 0px 0px;
+      display: flex;
+      align-items: center;
+      border: none;
+      text-decoration: none;
+
+      .kbc-project-name {
+        display: block;
+        max-width: 200px;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 15px;
+        margin-right: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        span {
+          color: @new-ui-text-grey;
+        }
+
+        strong {
+          color: #282d38;
+          font-size: 16px;
+        }
+      }
+
+      + .dropdown-menu {
+        left: 10px;
+        right: 20px;
+        padding: 15px;
+      }
+    }
+
+    .kbc-user {
+      .dropdown-toggle {
+        height: 44px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        text-decoration: none;
+        padding: 0px;
+      }
+
+      .dropdown-menu {
+        a {
+          padding: 6px 20px;
+          color: @new-ui-black;
+
+          &:hover,
+          &:focus {
+            background: transparent;
+            padding: 6px 20px;
+            color: @new-ui-primary !important;
+          }
+        }
+      }
+
+      .current-user-box {
+        max-width: 180px;
+        padding: 0px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .kbc-user-name {
+        font-size: 16px;
+        color: @new-ui-black;
+      }
+
+      .kbc-user-email {
+        font-size: 14px;
+        color: @new-ui-text-grey;
+      }
+    }
+  }
+
+  .kbc-navbar {
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 4px 8px @new-ui-shadow;
+    border-top: 1px solid @new-ui-shadow;
+
+    #navbar-applications {
+      background: #fff;
+      padding: 0px;
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .navbar-collapse {
+      margin-right: -15px;
+      margin-left: -15px;
+      border-top: 0;
+
+      .navbar {
+        margin: 0px;
+        border: none;
+        display: flex;
+
+        .navbar-nav {
+
+          @media (min-width: @screen-sm-min) {
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 58px;
+          }
+
+          @media (min-width: @screen-md-min) {
+            line-height: 68px;
+          }
+        }
+
+        @media (min-width: @screen-sm-min) {
+          li:first-of-type > .navbar-link {
+            padding-left: 0;
+          }
+        }
+
+        .navbar-link {
+          color: #a2a2a2;
+          display: flex;
+          align-items: center;
+          padding: 12px 18px;
+          font-size: 14px;
+          font-weight: 500;
+
+          @media (min-width: @screen-sm-min) {
+            height: 58px;
+            padding: 0 10px;
+          }
+
+          @media (min-width: @screen-md-min) {
+            height: 68px;
+          }
+
+          @media (min-width: @screen-lg-min) {
+            font-size: 16px;
+            padding: 0 12px;
+          }
+
+          svg {
+            max-width: 18px;
+            margin-right: 7px;
+            @media (min-width: @screen-lg-min) {
+              max-width: 20px;
+              margin-right: 9px;
+            }
+
+            path {
+              fill: #7f8198;
+              transition: fill 100ms ease-in-out;
+            }
+          }
+
+          &:hover svg path,
+          &:focus svg path {
+            fill: @new-ui-svg-hover;
+          }
+
+          &.active {
+            & > span {
+              color: @new-ui-primary;
+            }
+
+            svg path {
+              fill: @new-ui-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-setting {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding-top: 2px;
+    flex-grow: 1;
+    align-self: center;
+
+    svg {
+      max-width: 18px;
+      @media (min-width: @screen-lg-min) {
+        max-width: 20px;
+      }
+    }
+
+    & > * {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      transition: all 200ms ease-in-out;
+
+      &:hover svg path,
+      &:focus svg path {
+        fill: @new-ui-svg-hover;
+      }
+
+      button {
+        padding: 0;
+      }
+
+      .dropdown-menu {
+        padding: 10px 0;
+
+        a {
+          padding: 6px 20px;
+          color: @new-ui-black;
+
+          &:hover,
+          &:focus {
+            background: transparent;
+            padding: 6px 20px;
+            color: @new-ui-primary !important;
+          }
+        }
+      }
+    }
+
+    .kbc-notification-access {
+      position: relative;
+
+      .kbc-notification-icon-badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15px;
+        height: 15px;
+
+        .kbc-notification-icon-badge-inner {
+          color: #fff;
+          background-color: @new-ui-primary;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: @screen-md-min) {
+  .container-kbc-topbar {
+    .kbc-user {
+      margin-right: 15px;
+    }
+
+    .kbc-icon-picker {
+      margin-left: 5px;
+    }
+  }
+}
