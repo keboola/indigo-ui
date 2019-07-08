@@ -1,4 +1,9 @@
 .kbc-project-select {
+  .no-project-found {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
   .kbc-project-select-results,
   .kbc-project-select-new {
     margin-top: 15px;
@@ -8,18 +13,24 @@
       span {
         display: block;
         font-size: 14px;
-        font-weight: 500;
         color: @new-ui-black;
         padding: 6px 0px;
+        text-transform: capitalize;
+        text-decoration: none;
 
-        b {
-          font-size: 13px;
+        &.organization {
+          margin-top: 5px;
+          font-size: 12px;
           font-weight: 400;
-          color: #7F8198;
+          color: #98a2b6;
+        }
+
+        &:not(.disabled):hover,
+        &:not(.disabled):focus {
+          color: @new-ui-primary;
         }
 
         &.disabled {
-          opacity: 0.8;
           cursor: not-allowed;
         }
       }
