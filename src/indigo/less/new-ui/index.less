@@ -30,7 +30,6 @@ body {
   min-height: 100%;
 
   @import 'helpers';
-  @import 'main';
 
   &.new-ui,
   &.new-ui-menu {
@@ -47,6 +46,7 @@ body {
   &.new-ui-menu {
     padding-bottom: 30px;
 
+    @import 'main';
     @import 'header';
     @import 'current-user';
     @import 'projects-list';
