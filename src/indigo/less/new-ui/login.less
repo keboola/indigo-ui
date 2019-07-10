@@ -100,7 +100,12 @@
       }
 
       &:focus + .form-control-placeholder,
-      &:valid + .form-control-placeholder,
+      &:valid + .form-control-placeholder {
+        font-size: 80%;
+        transform: translate3d(0, -100%, 0);
+        opacity: 1;
+      }
+
       &:-webkit-autofill + .form-control-placeholder {
         font-size: 80%;
         transform: translate3d(0, -100%, 0);
