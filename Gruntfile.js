@@ -8,7 +8,7 @@ module.exports = function (grunt) {
             "node_modules"
           ],
           modifyVars: {
-            "libsPath": ""
+            libsPath: ""
           }
         },
         files: {

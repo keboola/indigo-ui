@@ -32,11 +32,9 @@ exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is
       autoFocus={true}
       className="inline-edit-input-control form-control"
       disabled={false}
-      id={undefined}
       onChange={[Function]}
       placeholder="Click to edit"
       type="text"
-      value={undefined}
     />
     <div
       className="inline-edit-input-buttons"
@@ -75,11 +73,9 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
       autoFocus={true}
       className="inline-edit-input-control form-control"
       disabled={false}
-      id={undefined}
       onChange={[Function]}
       placeholder="Click to edit"
       type="text"
-      value={undefined}
     />
     <div
       className="inline-edit-input-buttons"
@@ -138,11 +134,9 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
       autoFocus={true}
       className="inline-edit-input-control form-control"
       disabled={true}
-      id={undefined}
       onChange={[Function]}
       placeholder="Click to edit"
       type="text"
-      value={undefined}
     />
     <div
       className="inline-edit-input-buttons"

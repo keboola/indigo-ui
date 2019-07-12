@@ -11,7 +11,6 @@ exports[`<SearchBar /> SearchBar - inverse theme 1`] = `
     <input
       autoFocus={true}
       className="searchbar-input form-control"
-      id={undefined}
       onChange={[Function]}
       onKeyDown={[Function]}
       placeholder="Search"
@@ -46,7 +45,6 @@ exports[`<SearchBar /> SearchBar - with one additional button 1`] = `
     <input
       autoFocus={true}
       className="searchbar-input form-control"
-      id={undefined}
       onChange={[Function]}
       onKeyDown={[Function]}
       placeholder="Search"
@@ -90,7 +88,6 @@ exports[`<SearchBar /> SearchBar - with two additional buttons 1`] = `
     <input
       autoFocus={true}
       className="searchbar-input form-control"
-      id={undefined}
       onChange={[Function]}
       onKeyDown={[Function]}
       placeholder="Search"
@@ -139,7 +136,6 @@ exports[`<SearchBar /> SearchBar 1`] = `
     <input
       autoFocus={true}
       className="searchbar-input form-control"
-      id={undefined}
       onChange={[Function]}
       onKeyDown={[Function]}
       placeholder="Search"
