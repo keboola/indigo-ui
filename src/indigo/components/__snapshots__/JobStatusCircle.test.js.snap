@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<JobStatusCircle /> Job Status - Canceled 1`] = `
+exports[`<JobStatusCircle /> Job Status - Cancelled 1`] = `
 <i
   className="fa fa-circle job-status-circle-canceled"
 />

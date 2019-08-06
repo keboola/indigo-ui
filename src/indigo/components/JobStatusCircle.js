@@ -8,7 +8,7 @@ const statusColorMap = {
   warning: 'danger',
   processing: 'warning',
   waiting: 'default',
-  canceled: 'canceled',
+  cancelled: 'canceled',
   terminating: 'canceled',
   terminated: 'canceled',
 };
