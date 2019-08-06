@@ -4,8 +4,8 @@ import { snapshot } from '../../tests';
 import JobStatusCircle from './JobStatusCircle';
 
 describe('<JobStatusCircle />', () => {
-  it('Job Status - Cancelled', () => {
-    snapshot(<JobStatusCircle status="cancelled" />);
+  it('Job Status - Canceled', () => {
+    snapshot(<JobStatusCircle status="canceled" />);
   });
 
   it('Job Status - Success', () => {
@@ -18,6 +18,10 @@ describe('<JobStatusCircle />', () => {
 
   it('Job Status - Warning', () => {
     snapshot(<JobStatusCircle status="processing" />);
+  });
+
+  it('Job Status - Terminated', () => {
+    snapshot(<JobStatusCircle status="terminated" />);
   });
 
   it('Job Status - not provided', () => {
