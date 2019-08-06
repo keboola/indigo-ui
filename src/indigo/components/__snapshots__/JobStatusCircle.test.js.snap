@@ -2,7 +2,7 @@
 
 exports[`<JobStatusCircle /> Job Status - Cancelled 1`] = `
 <i
-  className="fa fa-circle job-status-circle-default"
+  className="fa fa-circle job-status-circle-canceled"
 />
 `;
 
@@ -15,6 +15,12 @@ exports[`<JobStatusCircle /> Job Status - Error 1`] = `
 exports[`<JobStatusCircle /> Job Status - Success 1`] = `
 <i
   className="fa fa-circle job-status-circle-success"
+/>
+`;
+
+exports[`<JobStatusCircle /> Job Status - Terminated 1`] = `
+<i
+  className="fa fa-circle job-status-circle-canceled"
 />
 `;
 

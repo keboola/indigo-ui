@@ -20,6 +20,10 @@ describe('<JobStatusCircle />', () => {
     snapshot(<JobStatusCircle status="processing" />);
   });
 
+  it('Job Status - Terminated', () => {
+    snapshot(<JobStatusCircle status="terminated" />);
+  });
+
   it('Job Status - not provided', () => {
     snapshot(<JobStatusCircle />);
   });

@@ -7,10 +7,10 @@ const statusColorMap = {
   warn: 'danger',
   warning: 'danger',
   processing: 'warning',
-  cancelled: 'default',
   waiting: 'default',
-  terminating: 'default',
-  terminated: 'default',
+  cancelled: 'canceled',
+  terminating: 'canceled',
+  terminated: 'canceled',
 };
 
 class JobStatusCircle extends React.Component {
