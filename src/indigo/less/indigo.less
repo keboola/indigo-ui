@@ -48,45 +48,51 @@
 @import "@{libsPath}bootstrap/less/utilities";
 @import "@{libsPath}bootstrap/less/responsive-utilities";
 
-
 @import "@{libsPath}font-awesome/less/font-awesome";
 
-@import 'variables';
+@import "variables";
+@import "icons";
 
-@import 'icons';
+@import "accordion";
+@import "alerts";
+@import "buttons";
+@import "forms";
+@import "labels";
+@import "list-groups";
+@import "modals";
+@import "navs";
+@import "notifications";
+@import "panels";
+@import "tables";
+@import "type";
+@import "search";
 
-@import 'accordion';
-@import 'alerts';
-@import 'buttons';
-@import 'forms';
-@import 'labels';
-@import 'list-groups';
-@import 'modals';
-@import 'navs';
-@import 'notifications';
-@import 'panels';
-@import 'tables';
-@import 'type';
-@import 'search';
+@import "head";
+@import "main-content";
+@import "sidebar";
 
-@import 'head';
-@import 'main-content';
-@import 'sidebar';
+@import "components";
+@import "legacy";
+@import "single-pages";
+@import "limits";
+@import "finished";
+@import "duration";
 
-@import 'components';
-@import 'legacy';
-@import 'single-pages';
-@import 'limits';
-@import 'finished';
-@import 'duration';
+@import "settings";
+@import "job-status-circle";
 
-@import 'settings';
-@import 'job-status-circle';
+@import "kbc-admin-module";
+@import "kbc-admin-project-overview";
+@import "kbc-user";
 
+@import "components/tabs";
+@import "components/popover";
+@import "shame";
+@import "inline-edit-input";
+@import "not-available";
+@import "react-select";
+@import "new-ui/index";
 
-/*
- * Base structure
- */
 html {
     font-size: @font-size-base;
 }
@@ -178,29 +184,16 @@ body {
     }
     .kbc-main-header-container,
     .kbc-main {
-
         margin-left: 260px;
     }
 }
 
-
 .kbc-orchestration-tasks-heading{
   margin: 0 15px;
 }
+
 .kbc-project-settings {
   .nav-tabs {
     margin-bottom: 0;
   }
 }
-
-@import 'kbc-admin-module';
-@import 'kbc-admin-project-overview';
-@import 'kbc-user';
-
-@import "components/tabs";
-@import "components/popover";
-@import "shame";
-@import "inline-edit-input";
-@import "not-available";
-@import "react-select";
-@import "new-ui/index";
