@@ -48,7 +48,7 @@ storiesOf('[CSS] ModalConfiguration', module).add('Modal Configuration', () => {
                 Name
               </Col>
               <Col xs={9}>
-                <FormControl label="Name" value="" placeholder="My Keboola" type="text" />
+                <FormControl label="Name" placeholder="My Keboola" type="text" />
               </Col>
             </FormGroup>
             <FormGroup>
