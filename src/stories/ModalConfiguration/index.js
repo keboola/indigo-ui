@@ -26,6 +26,7 @@ storiesOf('[CSS] ModalConfiguration', module).add('Modal Configuration', () => {
                   src="https://avatars2.githubusercontent.com/u/1424387?s=200&amp;v=4"
                   width="64"
                   height="64"
+                  alt="component logo"
                 />
               </span>
             </Col>
@@ -62,7 +63,7 @@ storiesOf('[CSS] ModalConfiguration', module).add('Modal Configuration', () => {
               <Col xsOffset={3} xs={9}>
                 <Checkbox>
                   I agree with these terms and conditions and with{' '}
-                  <a href="#">vendor license terms and conditions</a>
+                  <a href="https://indigo.keboola.com">vendor license terms and conditions</a>
                 </Checkbox>
               </Col>
             </FormGroup>

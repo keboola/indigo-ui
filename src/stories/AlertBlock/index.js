@@ -5,7 +5,7 @@ import AlertBlock from '../../indigo/components/AlertBlock';
 const content1 = (
   <ul className="list-unstyled">
     <li>
-      <a>Keboola Connection - Orchestrations count (39 of 10)</a>
+      <a href="https://indigo.keboola.com">Keboola Connection - Orchestrations count (39 of 10)</a>
     </li>
   </ul>
 );
@@ -18,10 +18,10 @@ const content2 = (
       </h4>
       <ul className="list-unstyled">
         <li>
-          <a>Custom science PHP</a>
+          <a href="https://indigo.keboola.com">Custom science PHP</a>
         </li>
         <li>
-          <a>Custom science Python (v2.x)</a>
+          <a href="https://indigo.keboola.com">Custom science Python (v2.x)</a>
         </li>
       </ul>
     </div>
@@ -33,13 +33,13 @@ const content2 = (
       </h4>
       <ul className="list-unstyled">
         <li>
-          <a>Gooddata (deprecated)</a>
+          <a href="https://indigo.keboola.com">Gooddata (deprecated)</a>
         </li>
         <li>
-          <a>Pigeon</a>
+          <a href="https://indigo.keboola.com">Pigeon</a>
         </li>
         <li>
-          <a>Pigeon Importer (Deprecated)</a>
+           <a href="https://indigo.keboola.com">Pigeon Importer (Deprecated)</a>
         </li>
       </ul>
     </div>
@@ -50,7 +50,7 @@ const content3 = (
     <div className="row">
       <div className="col-md-12">
         <p>
-          Learn more about the deprecation <a>timeline and reasons</a>.
+          Learn more about the deprecation  <a href="https://indigo.keboola.com">timeline and reasons</a>.
         </p>
       </div>
     </div>
@@ -62,7 +62,7 @@ const content3 = (
         </h4>
         <ul className="list-unstyled">
           <li>
-            <a>rwe</a>
+             <a href="https://indigo.keboola.com">rwe</a>
           </li>
         </ul>
         <h4>
@@ -71,7 +71,7 @@ const content3 = (
         </h4>
         <ul className="list-unstyled">
           <li>
-            <a>sadfas</a>
+             <a href="https://indigo.keboola.com">sadfas</a>
           </li>
         </ul>
       </div>
@@ -82,13 +82,13 @@ const content3 = (
         </h4>
         <ul className="list-unstyled">
           <li>
-            <a>Main</a>
+             <a href="https://indigo.keboola.com">Main</a>
           </li>
           <li>
-            <a>Main 2</a>
+             <a href="https://indigo.keboola.com">Main 2</a>
           </li>
           <li>
-            <a>Main 3</a>
+             <a href="https://indigo.keboola.com">Main 3</a>
           </li>
         </ul>
       </div>
