@@ -28,6 +28,7 @@ function loadStories() {
   require('../src/stories/InlineEditInput');
   require('../src/stories/Duration');
   require('../src/stories/JobStatusCircle');
+  require('../src/stories/ConfirmButtons');
 }
 
 setOptions({

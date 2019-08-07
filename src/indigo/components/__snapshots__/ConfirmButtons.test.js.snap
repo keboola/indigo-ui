@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Check /> Additional buttons 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+  <button
+    className="btn btn-default"
+    disabled={false}
+    type="button"
+  >
+    Try Query
+  </button>
+  <button
+    className="btn-confirm btn btn-link"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+  <button
+    className="btn-confirm btn btn-success"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Save
+  </button>
+</div>
+`;
+
+exports[`<Check /> Additional class 1`] = `
+<div
+  className="clearfix"
+>
+  <div
+    className="btn-toolbar-confirm pull-right btn-toolbar"
+    role="toolbar"
+  >
+    <button
+      className="btn-confirm btn btn-link"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Cancel
+    </button>
+    <button
+      className="btn-confirm btn btn-success"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Save
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Check /> Basic Init 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+  <button
+    className="btn-confirm btn btn-link"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+  <button
+    className="btn-confirm btn btn-success"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Save
+  </button>
+</div>
+`;
+
+exports[`<Check /> Cancel label 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+  <button
+    className="btn-confirm btn btn-link"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Reset
+  </button>
+  <button
+    className="btn-confirm btn btn-success"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Save
+  </button>
+</div>
+`;
+
+exports[`<Check /> Disabled 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+  <button
+    className="btn-confirm btn btn-link"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+  <button
+    className="btn-confirm btn btn-success"
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Save
+  </button>
+</div>
+`;
+
+exports[`<Check /> Save button style 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+  <button
+    className="btn-confirm btn btn-link"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+  <button
+    className="btn-confirm btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Save
+  </button>
+</div>
+`;
+
+exports[`<Check /> Save button type 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+  <button
+    className="btn-confirm btn btn-link"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+  <button
+    className="btn-confirm btn btn-success"
+    disabled={false}
+    onClick={[Function]}
+    type="submit"
+  >
+    Save
+  </button>
+</div>
+`;
+
+exports[`<Check /> Save label 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+  <button
+    className="btn-confirm btn btn-link"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+  <button
+    className="btn-confirm btn btn-success"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Save Configuration
+  </button>
+</div>
+`;
+
+exports[`<Check /> Saving 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+  <span
+    className="fa fa-spin fa-spinner"
+  />
+  <button
+    className="btn-confirm btn btn-link"
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+  <button
+    className="btn-confirm btn btn-success"
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    Save
+  </button>
+</div>
+`;
+
+exports[`<Check /> Show Cancel button 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+   
+  <button
+    className="btn-confirm btn btn-success"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Save
+  </button>
+</div>
+`;
+
+exports[`<Check /> Show Save button 1`] = `
+<div
+  className="btn-toolbar-confirm btn-toolbar"
+  role="toolbar"
+>
+  <button
+    className="btn-confirm btn btn-link"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Cancel
+  </button>
+</div>
+`;
