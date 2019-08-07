@@ -12,11 +12,13 @@ jobs:
   include:
     - stage: test
       script:
-        - >-
-          yarn stylelint
-          && yarn test
-          && yarn build-dev-css
-          && yarn build-storybook
+        - set -e
+        - yarn stylelint
+        - yarn test
+        - yarn build-dev-css
+        - yarn build-storybook
+    - stage: test
+      script: yarn build-lib
 
     - stage: deploy storybook
       script:
@@ -47,4 +49,3 @@ cache: yarn
 notifications:
   slack:
     secure: X0wYeqBChl4sNOjmjQXxy1ZiDb2ZFSYgr8+vYB5eDlKO9ocOEaapKVhZ6bpringMORposJrzb6wWWeCGiAsgT9Pq1/+wTSE/sVXdqEA5QZbvATJe4wKmvFRmwounZhxRg6UoO+cxgPjA4LRmgg/vCZ/hY/UAlaWZWH45e5pbOgACPCHCvVRjNNDWx7RwVo2xsLlO4ZrZZN81kjqj65kaIeWuM1bo5Bjy85HFodY2oj0WLQ5KFTY9/vlG4kFOhpQvHsBz9pEmbLrBF6cgkWHaTm3E+9SxqKZoj0BJyQgFzUyoz3vpIXjyGDqlqm9tUDf+3hCI0H/V/zY/F1/mevN8i7lEmz/9pGiyk5YvWJ+f0h+lWPEypPsEW0PuYCUOAzU1ZbvKEQUu8joW09ox0ZJmEHNyEk1j4+4ByBteg2p5pJR5kC7Ew17W4hj3siqNc1Be1vMagrGUxZ5efpU8K2LGzhtkCbeE+54ff5Eo6sISlm66hcDY3BpuCRcTGhVObxZcrfyG8j02XY+0S6yt5VI8c2PcglCWIBDTGvhn+BUfKsMpDjGmsdzLvwSUEMt5i97juP4OCxckx171IsMNTt6rPfjeSH3XaNJlzslfYa1srkkcQ6nuuzaZ5N6GyYC/ByYUTkSC4Pds1AWxGkQbHnhtCCC8dEloXDm27fmq0WajU3A=
-
