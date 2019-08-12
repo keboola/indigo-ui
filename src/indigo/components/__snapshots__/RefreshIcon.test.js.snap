@@ -24,7 +24,7 @@ exports[`<RefreshIcon /> RefreshIcon - not loading 1`] = `
 <span
   title="Refresh"
 >
-  <span
+  <i
     className="kbc-refresh fa fa-fw fa-refresh"
   />
 </span>

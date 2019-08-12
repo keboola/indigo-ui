@@ -8,11 +8,7 @@ class RefreshIcon extends React.Component {
     const { isLoading, title, ...remaining } = this.props;
     return (
       <span title={title}>
-        {isLoading ? (
-          <Loader />
-        ) : (
-          <span {...remaining} className="kbc-refresh fa fa-fw fa-refresh" />
-        )}
+        {isLoading ? <Loader /> : <i {...remaining} className="kbc-refresh fa fa-fw fa-refresh" />}
       </span>
     );
   }
