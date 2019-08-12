@@ -8,7 +8,6 @@ import components from '../src/indigo/components';
 
 function loadStories() {
   require('../src/stories/Bootstrap');
-  require('../src/stories/Sample');
   require('../src/stories/Check');
   require('../src/stories/Loader');
   require('../src/stories/NewLinToBr');
@@ -22,7 +21,6 @@ function loadStories() {
   require('../src/stories/ExternalLink');
   require('../src/stories/PanelWithDetails');
   require('../src/stories/AlertBlock');
-  require('../src/stories/Icons');
   require('../src/stories/SearchBar');
   require('../src/stories/Finished');
   require('../src/stories/InlineEditInput');
