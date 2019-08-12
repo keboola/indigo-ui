@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 class Loader extends React.Component {
   render() {
-    return <span className={classNames('fa fa-fw fa-spin fa-spinner', this.props.className)} />;
+    return <i className={classNames('fa fa-fw fa-spin fa-spinner', this.props.className)} />;
   }
 }
 

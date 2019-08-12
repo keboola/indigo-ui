@@ -158,8 +158,8 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
       >
         Save
       </button>
-      <span
-        className="fa fa-spin fa-spinner"
+      <i
+        className="fa fa-fw fa-spin fa-spinner"
       />
     </div>
   </form>

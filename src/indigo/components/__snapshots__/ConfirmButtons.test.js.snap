@@ -208,8 +208,8 @@ exports[`<Check /> Saving 1`] = `
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
 >
-  <span
-    className="fa fa-spin fa-spinner"
+  <i
+    className="fa fa-fw fa-spin fa-spinner"
   />
   <button
     className="btn-confirm btn btn-link"
