@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Loader /> Loader - default 1`] = `
-<span
-  className="fa fa-spin fa-spinner"
+<i
+  className="fa fa-fw fa-spin fa-spinner"
 />
 `;
 
 exports[`<Loader /> Loader - with classname 1`] = `
-<span
-  className="fa fa-spin fa-spinner additional-class"
+<i
+  className="fa fa-fw fa-spin fa-spinner additional-class"
 />
 `;
