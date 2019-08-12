@@ -45,14 +45,6 @@
     font-weight: bold;
   }
 
-  &-icon {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 84px;
-    height: auto;
-  }
-
   a {
     color: #7C8498;
     &:hover {
@@ -78,11 +70,18 @@
     }
   }
 
+  .fa-exclamation-triangle {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 6em;
+  }
+
   &.alert-warning {
     background-color: #FFF6DC;
     border-color: #FFD452;
 
-    .alert-block-icon {
+    .fa-exclamation-triangle {
       color: #FFD452;
     }
 
@@ -95,7 +94,7 @@
     background-color: #FEEDEF;
     border-color: #F74D63;
 
-    .alert-block-icon {
+    .fa-exclamation-triangle {
       color: #f74d63;
     }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { FormControl, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Icon from './icons';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -68,10 +67,10 @@ class SearchBar extends React.Component {
               }
             }}
           />
-          <Icon.Search className="searchbar-icon icon-size-20" />
+          <i className="fa fa-search" />
           {this.props.query && (
             <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
-              <Icon.Times className="searchbar-clear-icon icon-size-16" />
+              <i className="fa fa-times" />
             </Button>
           )}
         </form>

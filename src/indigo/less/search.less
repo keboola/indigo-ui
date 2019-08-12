@@ -25,24 +25,32 @@
     }
   }
 
-  &-icon {
+  &-clear-btn {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .fa-search {
     position: absolute;
     left: 10px;
     color: @kbc-grey-3;
+    font-size: 1.35em;
   }
 
-  &-clear {
-    &-btn {
-      display: flex;
-      position: absolute;
-      right: 0px;
-    }
-    &-icon {
-      color: inherit
-    }
+  .fa-times {
+    color: inherit;
+    font-size: 1.5em;
   }
+
   &-inverse {
-    .searchbar-icon {
+    .fa-search {
       color: #7f8188;
     }
 
