@@ -14,8 +14,8 @@ exports[`<InlineEditInput /> InlineEditInput - default 1`] = `
   >
     Click to edit
   </span>
-  <span
-    className="kbc-icon-pencil"
+  <i
+    className="fa fa-fw fa-pencil"
   />
 </span>
 `;
@@ -45,8 +45,8 @@ exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is
         onClick={[Function]}
         type="button"
       >
-        <span
-          className="kbc-icon-cross"
+        <i
+          className="fa fa-fw fa-times-circle"
         />
       </button>
       <button
@@ -86,8 +86,8 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
         onClick={[Function]}
         type="button"
       >
-        <span
-          className="kbc-icon-cross"
+        <i
+          className="fa fa-fw fa-times-circle"
         />
       </button>
       <button
@@ -116,8 +116,8 @@ exports[`<InlineEditInput /> InlineEditInput - read mode 1`] = `
   >
     Click to edit
   </span>
-  <span
-    className="kbc-icon-pencil"
+  <i
+    className="fa fa-fw fa-pencil"
   />
 </span>
 `;
@@ -147,8 +147,8 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
         onClick={[Function]}
         type="button"
       >
-        <span
-          className="kbc-icon-cross"
+        <i
+          className="fa fa-fw fa-times-circle"
         />
       </button>
       <button

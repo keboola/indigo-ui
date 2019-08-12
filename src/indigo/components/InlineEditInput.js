@@ -48,7 +48,7 @@ class InlineEditTextInput extends React.Component {
               disabled={this.props.isSaving}
               onClick={this.props.onEditCancel}
             >
-              <span className="kbc-icon-cross" />
+              <i className="fa fa-fw fa-times-circle" />
             </Button>
             <Button
               className="inline-edit-input-submit"
@@ -77,7 +77,7 @@ class InlineEditTextInput extends React.Component {
           ) : (
             <span className="text-muted">{this.props.placeholder}</span>
           )}
-          <span className="kbc-icon-pencil" />
+          <i className="fa fa-fw fa-pencil" />
         </span>
       </OverlayTrigger>
     );
