@@ -24,7 +24,6 @@ export {
   RefreshIcon,
   Tree,
   AlertBlock,
-  Icon,
   SearchBar,
   Finished,
   InlineEditInput,
