@@ -13,7 +13,6 @@ const content2 = (
   <div className="row">
     <div className="col-md-6">
       <h4>
-        <span className="kbc-writer-icon" />
         <span>Writers</span>
       </h4>
       <ul className="list-unstyled">
@@ -27,7 +26,6 @@ const content2 = (
     </div>
     <div className="col-md-6">
       <h4>
-        <span className="kbc-extractor-icon" />
         <span>Extractor</span>
         <span>s</span>
       </h4>
@@ -57,7 +55,6 @@ const content3 = (
     <div className="row">
       <div className="col-md-6">
         <h4>
-          <span className="kbc-transformation-icon" />
           ew
         </h4>
         <ul className="list-unstyled">
@@ -66,7 +63,6 @@ const content3 = (
           </li>
         </ul>
         <h4>
-          <span className="kbc-transformation-icon" />
           Part 1
         </h4>
         <ul className="list-unstyled">
@@ -77,7 +73,6 @@ const content3 = (
       </div>
       <div className="col-md-6">
         <h4>
-          <span className="kbc-transformation-icon" />
           fasdfas
         </h4>
         <ul className="list-unstyled">

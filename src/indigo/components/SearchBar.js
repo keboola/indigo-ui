@@ -2,6 +2,8 @@ import React from 'react';
 import { FormControl, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -67,10 +69,10 @@ class SearchBar extends React.Component {
               }
             }}
           />
-          <i className="fa fa-search" />
+          <FontAwesomeIcon icon={faSearch} />
           {this.props.query && (
             <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
-              <i className="fa fa-times" />
+              <FontAwesomeIcon icon={faTimes} />
             </Button>
           )}
         </form>

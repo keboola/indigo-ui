@@ -14,8 +14,6 @@ function loadStories() {
   require('../src/stories/Protected');
   require('../src/stories/RefreshIcon');
   require('../src/stories/Tree');
-  require('../src/stories/Tabs');
-  require('../src/stories/Popover');
   require('../src/stories/ModalConfiguration');
   require('../src/stories/BtnLinkInline');
   require('../src/stories/ExternalLink');

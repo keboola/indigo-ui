@@ -1,14 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSync } from '@fortawesome/free-solid-svg-icons';
 import Loader from './Loader';
 
 class RefreshIcon extends React.Component {
   render() {
     const { isLoading, title, ...remaining } = this.props;
+
     return (
       <span title={title}>
-        {isLoading ? <Loader /> : <i {...remaining} className="kbc-refresh fa fa-fw fa-refresh" />}
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <FontAwesomeIcon
+            icon={faSync}
+            className="icon-fixed-width icon-clickable"
+            {...remaining}
+          />
+        )}
       </span>
     );
   }

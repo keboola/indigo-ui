@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const statusColorMap = {
   success: 'success',
@@ -16,7 +18,7 @@ const statusColorMap = {
 class JobStatusCircle extends React.Component {
   render() {
     const statusColor = statusColorMap[this.props.status] || 'default';
-    return <i className={`fa fa-circle job-status-circle-${statusColor}`} />;
+    return <FontAwesomeIcon icon={faCircle} className={`job-status-circle-${statusColor}`} />;
   }
 }
 

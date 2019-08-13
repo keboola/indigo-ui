@@ -18,13 +18,6 @@ storiesOf('SearchBar', module)
       <SearchBar placeholder="Search by component name, description or id" onChange={() => null} />
     );
   })
-  .add(
-    'Dark theme',
-    () => {
-      return <SearchBar theme="inverse" onChange={() => null} />;
-    },
-    { info: { text: 'inverse theme for sidebar' } }
-  )
   .add('Basic usage', () => {
     return <BasicUsage />;
   })

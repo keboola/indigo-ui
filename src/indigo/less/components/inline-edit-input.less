@@ -16,7 +16,6 @@
       position: absolute;
       top: 5px;
       right: -30px;
-      background: #fff;
     }
   }
 
@@ -34,14 +33,14 @@
   }
 
   &-submit {
-    padding: 3px 10px;
     font-size: 12px;
+    line-height: 1.35;
   }
 
   &-link {
-    padding: 6px 15px 9px;
-    border-radius: 3px;
-    background-color: inherit;
+    display: inline-block;
+    padding: 11px 15px 11px;
+    border-radius: 4px;
     cursor: pointer;
 
     &:hover,
@@ -49,13 +48,12 @@
     &:active {
       background-color: #e9faff;
 
-      .fa-pencil {
+      .fa-edit {
         opacity: 1;
       }
     }
 
-    .fa-pencil {
-      margin-left: 10px;
+    .fa-edit {
       opacity: 0.3;
     }
   }

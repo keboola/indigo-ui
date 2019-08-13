@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Alert } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 
 class AlertBlock extends React.Component {
   render() {
-    const { type, title, children } = this.props;
     return (
-      <Alert className="alert-block" bsStyle={type}>
-        <h3 className="alert-block-title">{title}</h3>
+      <Alert className="alert-block alert-no-icon" bsStyle={this.props.type}>
+        <h3 className="alert-block-title">{this.props.title}</h3>
         <div className="alert-block-body">
-          <i className="fa fa-exclamation-triangle" />
-          {children}
+          <FontAwesomeIcon icon={faExclamationTriangle} />
+          {this.props.children}
         </div>
       </Alert>
     );

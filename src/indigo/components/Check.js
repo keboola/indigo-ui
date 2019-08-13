@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 class Check extends React.Component {
   render() {
-    return <i className={this.props.isChecked ? 'fa fa-fw fa-check' : 'fa fa-fw fa-times'} />;
+    return <FontAwesomeIcon icon={this.props.isChecked ? faCheck : faTimes} />;
   }
 }
 

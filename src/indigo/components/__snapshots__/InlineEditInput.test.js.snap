@@ -14,9 +14,23 @@ exports[`<InlineEditInput /> InlineEditInput - default 1`] = `
   >
     Click to edit
   </span>
-  <i
-    className="fa fa-fw fa-pencil"
-  />
+  <svg
+    aria-hidden="true"
+    className="svg-inline--fa fa-edit fa-w-18 icon-fixed-width icon-addon-left"
+    data-icon="edit"
+    data-prefix="fas"
+    focusable="false"
+    role="img"
+    style={Object {}}
+    viewBox="0 0 576 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"
+      fill="currentColor"
+      style={Object {}}
+    />
+  </svg>
 </span>
 `;
 
@@ -45,12 +59,26 @@ exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is
         onClick={[Function]}
         type="button"
       >
-        <i
-          className="fa fa-fw fa-times-circle"
-        />
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times-circle fa-w-16 "
+          data-icon="times-circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
       </button>
       <button
-        className="inline-edit-input-submit btn btn-sm btn-info"
+        className="inline-edit-input-submit btn btn-sm btn-primary"
         disabled={true}
         type="submit"
       >
@@ -86,12 +114,26 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
         onClick={[Function]}
         type="button"
       >
-        <i
-          className="fa fa-fw fa-times-circle"
-        />
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times-circle fa-w-16 "
+          data-icon="times-circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
       </button>
       <button
-        className="inline-edit-input-submit btn btn-sm btn-info"
+        className="inline-edit-input-submit btn btn-sm btn-primary"
         disabled={true}
         type="submit"
       >
@@ -116,9 +158,23 @@ exports[`<InlineEditInput /> InlineEditInput - read mode 1`] = `
   >
     Click to edit
   </span>
-  <i
-    className="fa fa-fw fa-pencil"
-  />
+  <svg
+    aria-hidden="true"
+    className="svg-inline--fa fa-edit fa-w-18 icon-fixed-width icon-addon-left"
+    data-icon="edit"
+    data-prefix="fas"
+    focusable="false"
+    role="img"
+    style={Object {}}
+    viewBox="0 0 576 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"
+      fill="currentColor"
+      style={Object {}}
+    />
+  </svg>
 </span>
 `;
 
@@ -147,20 +203,48 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
         onClick={[Function]}
         type="button"
       >
-        <i
-          className="fa fa-fw fa-times-circle"
-        />
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times-circle fa-w-16 "
+          data-icon="times-circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
       </button>
       <button
-        className="inline-edit-input-submit btn btn-sm btn-info"
+        className="inline-edit-input-submit btn btn-sm btn-primary"
         disabled={true}
         type="submit"
       >
         Save
       </button>
-      <i
-        className="fa fa-fw fa-spin fa-spinner"
-      />
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-spinner fa-w-16 fa-spin icon-fixed-width"
+        data-icon="spinner"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
     </div>
   </form>
 </div>

@@ -1,0 +1,63 @@
+.alert-block {
+  position: relative;
+  min-height: 140px;
+  padding: 30px;
+  margin: 10px 0;
+  border: 2px solid @gray-light;
+  color: @text-color;
+
+  &-body {
+    width: ~"calc(100% - 96px)";
+
+    a,
+    p,
+    ul li {
+      color: @text-color;
+    }
+  }
+
+  &-title {
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 84px;
+    height: auto;
+  }
+
+  .fa-exclamation-triangle {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 6em;
+  }
+
+  &.alert-warning {
+    .fa-exclamation-triangle {
+      color: @alert-warning-border;
+    }
+
+    .alert-block-title {
+      color: darken(@brand-warning, 8%);
+    }
+
+    h4 {
+      color: @text-color;
+    }
+  }
+
+  &.alert-danger {
+    .fa-exclamation-triangle {
+      color: @alert-danger-border;
+    }
+
+    .alert-block-title, h4 {
+      color: @alert-danger-text;
+    }
+  }
+}
