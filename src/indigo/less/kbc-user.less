@@ -30,6 +30,24 @@
     }
   }
 
+  .kbc-user-menu {
+    .dropdown-toggle {
+      text-decoration: none;
+      height: 38px;
+    }
+
+    &.open {
+      .dropdown-toggle {
+        .kbc-icon-picker {
+          background-color: #404857;
+        }
+      }
+    }
+    .dropdown-menu {
+      right: 0;
+      left: inherit;
+    }
+  }
 
   .dropdown-toggle {
     white-space: initial;
@@ -142,6 +160,17 @@
     .kbc-user-avatar {
       float: left;
       margin: 9px .75em 0 0;
+    }
+    .kbc-user-menu {
+      float: right;
+      .dropdown-toggle {
+        .kbc-icon-picker {
+          border-radius: 5px 5px 0 0;
+        }
+      }
+      .dropdown-menu {
+        border-radius: 5px 0 5px 5px;
+      }
     }
   }
   .dropdown {
