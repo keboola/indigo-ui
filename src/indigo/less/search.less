@@ -25,15 +25,25 @@
     }
   }
 
-  &-clear-btn {
-    display: flex;
+  &-icon {
     position: absolute;
-    right: 0px;
-    
+    left: 10px;
+    color: @kbc-grey-3;
+  }
 
-    &:hover,
-    &:focus {
-      text-decoration: none;
+  &-clear {
+    &-btn {
+      display: flex;
+      position: absolute;
+      right: 0px;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+    &-icon {
+      color: inherit
     }
   }
 
@@ -50,6 +60,7 @@
   }
 
   &-inverse {
+    .searchbar-icon,
     .fa-search {
       color: #7f8188;
     }
