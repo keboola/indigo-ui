@@ -3,20 +3,20 @@
   flex-flow: row;
   align-items: center;
 
-  &-form {
+  .searchbar-form {
     position: relative;
     display: flex;
     align-items: center;
     flex: 1;
   }
 
-  &-input {
+  .searchbar-input {
     padding-left: 34px;
     padding-right: 40px;
     width: 100%;
   }
 
-  &-actions {
+  .searchbar-actions {
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -25,22 +25,20 @@
     }
   }
 
-  &-icon {
+  .searchbar-icon {
     position: absolute;
     left: 10px;
     color: @gray-light;
   }
 
-  &-clear {
-    &-btn {
-      display: flex;
-      position: absolute;
-      right: 0px;
+  .searchbar-clear-btn {
+    display: flex;
+    position: absolute;
+    right: 0px;
 
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
+    &:hover,
+    &:focus {
+      text-decoration: none;
     }
   }
 
