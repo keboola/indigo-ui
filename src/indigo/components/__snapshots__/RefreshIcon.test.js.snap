@@ -6,7 +6,7 @@ exports[`<RefreshIcon /> RefreshIcon - loading 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-spinner fa-w-16 fa-spin icon-fixed-width"
+    className="svg-inline--fa fa-spinner fa-w-16 fa-spin fa-fw "
     data-icon="spinner"
     data-prefix="fas"
     focusable="false"
@@ -30,7 +30,7 @@ exports[`<RefreshIcon /> RefreshIcon - loading with custom title 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-spinner fa-w-16 fa-spin icon-fixed-width"
+    className="svg-inline--fa fa-spinner fa-w-16 fa-spin fa-fw "
     data-icon="spinner"
     data-prefix="fas"
     focusable="false"
@@ -54,7 +54,7 @@ exports[`<RefreshIcon /> RefreshIcon - not loading 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-sync fa-w-16 icon-fixed-width icon-clickable"
+    className="svg-inline--fa fa-sync fa-w-16 fa-fw icon-clickable"
     data-icon="sync"
     data-prefix="fas"
     focusable="false"

@@ -13,11 +13,7 @@ class RefreshIcon extends React.Component {
         {isLoading ? (
           <Loader />
         ) : (
-          <FontAwesomeIcon
-            icon={faSync}
-            className="icon-fixed-width icon-clickable"
-            {...remaining}
-          />
+          <FontAwesomeIcon icon={faSync} fixedWidth className="icon-clickable" {...remaining} />
         )}
       </span>
     );

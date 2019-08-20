@@ -10,7 +10,8 @@ class Loader extends React.Component {
       <FontAwesomeIcon
         spin
         icon={faSpinner}
-        className={classNames('icon-fixed-width', this.props.className)}
+        fixedWidth
+        className={classNames(this.props.className)}
       />
     );
   }

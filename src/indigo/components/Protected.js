@@ -24,7 +24,8 @@ class Protected extends React.Component {
       <span title="Protected content, click to reveal">
         <FontAwesomeIcon
           icon={faLock}
-          className="icon-fixed-width icon-clickable"
+          fixedWidth
+          className="icon-clickable"
           onClick={() => this.setState({ isProtected: false })}
         />
       </span>

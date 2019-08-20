@@ -6,7 +6,7 @@ exports[`<Protected /> Protected - content hidden (default) 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-lock fa-w-14 icon-fixed-width icon-clickable"
+    className="svg-inline--fa fa-lock fa-w-14 fa-fw icon-clickable"
     data-icon="lock"
     data-prefix="fas"
     focusable="false"

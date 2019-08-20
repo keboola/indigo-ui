@@ -210,7 +210,7 @@ exports[`<Check /> Saving 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-spinner fa-w-16 fa-spin icon-fixed-width"
+    className="svg-inline--fa fa-spinner fa-w-16 fa-spin fa-fw "
     data-icon="spinner"
     data-prefix="fas"
     focusable="false"

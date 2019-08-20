@@ -3,7 +3,7 @@
 exports[`<Loader /> Loader - default 1`] = `
 <svg
   aria-hidden="true"
-  className="svg-inline--fa fa-spinner fa-w-16 fa-spin icon-fixed-width"
+  className="svg-inline--fa fa-spinner fa-w-16 fa-spin fa-fw "
   data-icon="spinner"
   data-prefix="fas"
   focusable="false"
@@ -23,7 +23,7 @@ exports[`<Loader /> Loader - default 1`] = `
 exports[`<Loader /> Loader - with classname 1`] = `
 <svg
   aria-hidden="true"
-  className="svg-inline--fa fa-spinner fa-w-16 fa-spin icon-fixed-width additional-class"
+  className="svg-inline--fa fa-spinner fa-w-16 fa-spin fa-fw additional-class"
   data-icon="spinner"
   data-prefix="fas"
   focusable="false"

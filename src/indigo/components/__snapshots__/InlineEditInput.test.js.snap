@@ -16,7 +16,7 @@ exports[`<InlineEditInput /> InlineEditInput - default 1`] = `
   </span>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-edit fa-w-18 icon-fixed-width icon-addon-left"
+    className="svg-inline--fa fa-edit fa-w-18 fa-fw icon-addon-left"
     data-icon="edit"
     data-prefix="fas"
     focusable="false"
@@ -160,7 +160,7 @@ exports[`<InlineEditInput /> InlineEditInput - read mode 1`] = `
   </span>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-edit fa-w-18 icon-fixed-width icon-addon-left"
+    className="svg-inline--fa fa-edit fa-w-18 fa-fw icon-addon-left"
     data-icon="edit"
     data-prefix="fas"
     focusable="false"
@@ -230,7 +230,7 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
       </button>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-spinner fa-w-16 fa-spin icon-fixed-width"
+        className="svg-inline--fa fa-spinner fa-w-16 fa-spin fa-fw "
         data-icon="spinner"
         data-prefix="fas"
         focusable="false"

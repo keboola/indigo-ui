@@ -80,7 +80,7 @@ class InlineEditTextInput extends React.Component {
           ) : (
             <span className="text-muted">{this.props.placeholder}</span>
           )}
-          <FontAwesomeIcon icon={faEdit} className="icon-fixed-width icon-addon-left" />
+          <FontAwesomeIcon icon={faEdit} fixedWidth className="icon-addon-left" />
         </span>
       </OverlayTrigger>
     );
