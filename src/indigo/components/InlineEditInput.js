@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, FormControl, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimesCircle, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons/faTimesCircle';
+import { faEdit } from '@fortawesome/free-solid-svg-icons/faEdit';
 import Loader from './Loader';
 
 class InlineEditTextInput extends React.Component {

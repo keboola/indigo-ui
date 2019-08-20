@@ -3,7 +3,8 @@ import { FormControl, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons/faSearch';
+import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
 
 class SearchBar extends React.Component {
   constructor(props) {
