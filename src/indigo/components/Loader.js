@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons/faSpinner';
 
@@ -11,14 +11,14 @@ class Loader extends React.Component {
         spin
         icon={faSpinner}
         fixedWidth
-        className={classNames(this.props.className)}
+        className={classnames(this.props.className)}
       />
     );
   }
 }
 
 Loader.propTypes = {
-  className: PropTypes.string,
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 };
 
 export default Loader;

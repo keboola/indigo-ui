@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { Panel } from 'react-bootstrap';
 
 class PanelWithDetails extends React.Component {
@@ -18,7 +18,7 @@ class PanelWithDetails extends React.Component {
         onExit={() => this.setState({ panelHeaderTitle: this.props.labelOpen })}
         header={this.state.panelHeaderTitle}
         defaultExpanded={this.props.defaultExpanded}
-        className={classNames({
+        className={classnames({
           'panel-show-details': true,
           [`panel-show-details-${this.props.placement}`]: true,
           'panel-preview': !!this.props.preview,
