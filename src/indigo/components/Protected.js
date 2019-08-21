@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons/faLock';
 
@@ -16,7 +17,7 @@ class Protected extends React.Component {
       return this.renderProtected();
     }
 
-    return <span>{this.props.children}</span>;
+    return this.props.children;
   }
 
   renderProtected() {
@@ -25,7 +26,7 @@ class Protected extends React.Component {
         <FontAwesomeIcon
           icon={faLock}
           fixedWidth
-          className="icon-clickable"
+          className={classnames('icon-clickable', this.props.className)}
           onClick={() => this.setState({ isProtected: false })}
         />
       </span>
@@ -35,6 +36,7 @@ class Protected extends React.Component {
 
 Protected.propTypes = {
   children: PropTypes.any,
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 };
 
 export default Protected;
