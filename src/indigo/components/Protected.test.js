@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import Protected from './Protected';
 
 describe('<Protected />', () => {
   it('Protected - content hidden (default)', () => {
-    snapshot(<Protected>This is protected</Protected>);
+    matchesSnapshot(<Protected>This is protected</Protected>);
   });
 
   // TODO: mock state?

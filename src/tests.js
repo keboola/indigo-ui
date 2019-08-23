@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 
-export const snapshot = (component) => {
+export const matchesSnapshot = (component) => {
   const tree = renderer
     .create(component)
     .toJSON();

@@ -1,34 +1,34 @@
 import React from 'react';
 
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import JobStatusCircle from './JobStatusCircle';
 
 describe('<JobStatusCircle />', () => {
   it('Job Status - Cancelled', () => {
-    snapshot(<JobStatusCircle status="cancelled" />);
+    matchesSnapshot(<JobStatusCircle status="cancelled" />);
   });
 
   it('Job Status - Success', () => {
-    snapshot(<JobStatusCircle status="success" />);
+    matchesSnapshot(<JobStatusCircle status="success" />);
   });
 
   it('Job Status - Error', () => {
-    snapshot(<JobStatusCircle status="error" />);
+    matchesSnapshot(<JobStatusCircle status="error" />);
   });
 
   it('Job Status - Warning', () => {
-    snapshot(<JobStatusCircle status="processing" />);
+    matchesSnapshot(<JobStatusCircle status="processing" />);
   });
 
   it('Job Status - Terminated', () => {
-    snapshot(<JobStatusCircle status="terminated" />);
+    matchesSnapshot(<JobStatusCircle status="terminated" />);
   });
 
   it('Job Status - not provided', () => {
-    snapshot(<JobStatusCircle />);
+    matchesSnapshot(<JobStatusCircle />);
   });
 
   it('Job Status - random status', () => {
-    snapshot(<JobStatusCircle status="random-status" />);
+    matchesSnapshot(<JobStatusCircle status="random-status" />);
   });
 });

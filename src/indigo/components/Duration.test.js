@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import Duration from './Duration';
 
 const time1 = '2018-11-26T15:11:05+0100';
@@ -15,39 +15,39 @@ const timePast = moment(fakeTimeNow - 123456)
 
 describe('<Duration />', () => {
   it('Duration', () => {
-    snapshot(<Duration startTime={time1} endTime={time2} />);
+    matchesSnapshot(<Duration startTime={time1} endTime={time2} />);
   });
 
   it('Duration Dynamic', () => {
-    snapshot(<Duration startTime={timePast} />);
+    matchesSnapshot(<Duration startTime={timePast} />);
   });
 
   it('Duration Dynamic with icon', () => {
-    snapshot(<Duration startTime={timePast} showIcon />);
+    matchesSnapshot(<Duration startTime={timePast} showIcon />);
   });
 
   it('Duration only', () => {
-    snapshot(<Duration duration={1586.36943} />);
+    matchesSnapshot(<Duration duration={1586.36943} />);
   });
 
   it('Duration > 24h', () => {
-    snapshot(<Duration startTime={time1} endTime={time3} />);
+    matchesSnapshot(<Duration startTime={time1} endTime={time3} />);
   });
 
   it('Duration with icon', () => {
-    snapshot(<Duration startTime={time1} endTime={time2} showIcon />);
+    matchesSnapshot(<Duration startTime={time1} endTime={time2} showIcon />);
   });
   it('Duration - empty state', () => {
-    snapshot(<Duration />);
+    matchesSnapshot(<Duration />);
   });
 
   it('should render 12 sec (ignore start time and end time)', () => {
-    snapshot(<Duration duration={12} startTime={time1} endTime={time2} />);
+    matchesSnapshot(<Duration duration={12} startTime={time1} endTime={time2} />);
   });
   it('should render 12 sec (ignore start time)', () => {
-    snapshot(<Duration duration={12} startTime={time1} />);
+    matchesSnapshot(<Duration duration={12} startTime={time1} />);
   });
   it('should render 12 sec (ignore end time)', () => {
-    snapshot(<Duration duration={12} endTime={time2} />);
+    matchesSnapshot(<Duration duration={12} endTime={time2} />);
   });
 });

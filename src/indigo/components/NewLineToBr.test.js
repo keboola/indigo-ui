@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import NewLineToBr from './NewLineToBr';
 
 describe('<NewLineToBr />', () => {
   it('NewLineToBr - default', () => {
-    snapshot(<NewLineToBr text={'one\ntwo\nthree'} />);
+    matchesSnapshot(<NewLineToBr text={'one\ntwo\nthree'} />);
   });
 
   it('NewLineToBr - no newline', () => {
-    snapshot(<NewLineToBr text="one" />);
+    matchesSnapshot(<NewLineToBr text="one" />);
   });
 });

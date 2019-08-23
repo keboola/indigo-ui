@@ -1,12 +1,12 @@
 import React from 'react';
 import { fromJS } from 'immutable';
 
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import Tree from './Tree';
 
 describe('<Tree />', () => {
   it('Tree - default', () => {
-    snapshot(
+    matchesSnapshot(
       <Tree
         data={fromJS({
           config: '337955292',
@@ -18,7 +18,7 @@ describe('<Tree />', () => {
   });
 
   it('Tree - with password', () => {
-    snapshot(
+    matchesSnapshot(
       <Tree
         data={fromJS({
           config: '337955292',

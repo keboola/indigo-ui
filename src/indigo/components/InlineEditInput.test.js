@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import InlineEditInput from './InlineEditInput';
 
 describe('<InlineEditInput />', () => {
@@ -12,22 +12,22 @@ describe('<InlineEditInput />', () => {
   };
 
   it('InlineEditInput - default', () => {
-    snapshot(<InlineEditInput {...compulsoryProps} />);
+    matchesSnapshot(<InlineEditInput {...compulsoryProps} />);
   });
 
   it('InlineEditInput - read mode', () => {
-    snapshot(<InlineEditInput {...compulsoryProps} isEditing={false} />);
+    matchesSnapshot(<InlineEditInput {...compulsoryProps} isEditing={false} />);
   });
 
   it('InlineEditInput - edit mode', () => {
-    snapshot(<InlineEditInput {...compulsoryProps} isEditing />);
+    matchesSnapshot(<InlineEditInput {...compulsoryProps} isEditing />);
   });
 
   it('InlineEditInput - saving in edit mode', () => {
-    snapshot(<InlineEditInput {...compulsoryProps} isEditing isSaving />);
+    matchesSnapshot(<InlineEditInput {...compulsoryProps} isEditing isSaving />);
   });
 
   it('InlineEditInput - disabled save button when text is not valid', () => {
-    snapshot(<InlineEditInput {...compulsoryProps} isEditing isValid={false} />);
+    matchesSnapshot(<InlineEditInput {...compulsoryProps} isEditing isValid={false} />);
   });
 });
