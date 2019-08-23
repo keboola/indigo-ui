@@ -2,6 +2,7 @@
 
 exports[`<ExternalLink /> ExternalLink - default 1`] = `
 <a
+  className=""
   href="https://www.keboola.com"
   rel="noopener noreferrer"
   target="_blank"

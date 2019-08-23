@@ -107,27 +107,6 @@ storiesOf('Bootstrap', module)
       </div>
     </div>
   ))
-  .add('Header', () => (
-    <div className="container bs-docs-container">
-      <div className="bs-docs-section">
-        <div className="bs-example">
-          <ul className="dropdown-menu open">
-            <MenuItem header>Header</MenuItem>
-            <MenuItem>link</MenuItem>
-            <MenuItem divider />
-            <MenuItem header>Header</MenuItem>
-            <MenuItem>link</MenuItem>
-            <MenuItem disabled>disabled</MenuItem>
-            <MenuItem title="See? I have a title.">link with title</MenuItem>
-            <MenuItem eventKey={1} href="#someHref">
-              link that alerts
-            </MenuItem>
-          </ul>
-          <div className="clearfix" />
-        </div>
-      </div>
-    </div>
-  ))
   .add('Modal', () => (
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
@@ -186,34 +165,49 @@ storiesOf('Bootstrap', module)
     <div className="container bs-docs-container">
       <div className="bs-docs-section">
         <div className="bs-example">
-          <Table striped bordered condensed hover>
-            <caption>Optional table caption.</caption>
+          <Table hover>
             <thead>
               <tr>
                 <th>#</th>
                 <th>First Name</th>
                 <th>Last Name</th>
-                <th>Username</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
+                <td>1</td>
                 <td>Mark</td>
                 <td>Otto</td>
-                <td>@mdo</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <td>2</td>
                 <td>Jacob</td>
                 <td>Thornton</td>
-                <td>@fat</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <td className="active">4</td>
+                <td className="active">Larry</td>
+                <td className="active">the Bird</td>
+              </tr>
+              <tr>
+                <td className="success">5</td>
+                <td className="success">Larry</td>
+                <td className="success">the Bird</td>
+              </tr>
+              <tr>
+                <td className="warning">6</td>
+                <td className="warning">Larry</td>
+                <td className="warning">the Bird</td>
+              </tr>
+              <tr>
+                <td className="danger">7</td>
+                <td className="danger">Larry</td>
+                <td className="danger">the Bird</td>
+              </tr>
+              <tr>
+                <td className="info">8</td>
+                <td className="info">Larry</td>
+                <td className="info">the Bird</td>
               </tr>
             </tbody>
           </Table>
@@ -293,27 +287,11 @@ storiesOf('Bootstrap', module)
       <div className="bs-docs-section">
         <div className="bs-example">
           <form>
-            <Checkbox checked readOnly>
-              Checkbox
-            </Checkbox>
-            <Radio checked readOnly>
-              Radio
-            </Radio>
+            <Checkbox>Checkbox</Checkbox>
 
             <FormGroup>
-              <Checkbox inline>1</Checkbox> <Checkbox inline>2</Checkbox>{' '}
-              <Checkbox inline>3</Checkbox>
-            </FormGroup>
-            <FormGroup>
-              <Radio name="radioGroup" inline>
-                1
-              </Radio>{' '}
-              <Radio name="radioGroup" inline>
-                2
-              </Radio>{' '}
-              <Radio name="radioGroup" inline>
-                3
-              </Radio>
+              <Radio name="radioGroup">1</Radio> <Radio name="radioGroup">2</Radio>{' '}
+              <Radio name="radioGroup">3</Radio>
             </FormGroup>
 
             <FormGroup controlId="formControlsSelect">
@@ -323,12 +301,15 @@ storiesOf('Bootstrap', module)
                 <option value="other">...</option>
               </FormControl>
             </FormGroup>
-            <FormGroup controlId="formControlsSelectMultiple">
-              <ControlLabel>Multiple select</ControlLabel>
-              <FormControl componentClass="select" multiple>
-                <option value="select">select (multiple)</option>
-                <option value="other">...</option>
-              </FormControl>
+
+            <FormGroup>
+              <ControlLabel>Input</ControlLabel>
+              <FormControl type="text" value="email@example.com" />
+            </FormGroup>
+
+            <FormGroup>
+              <ControlLabel>Disabled Input</ControlLabel>
+              <FormControl disabled type="text" value="email@example.com" />
             </FormGroup>
 
             <FormGroup controlId="formControlsTextarea">
@@ -546,13 +527,25 @@ storiesOf('Bootstrap', module)
           <Alert bsStyle="danger">
             <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
           </Alert>
+          <Alert bsStyle="danger" className="alert-as-link">
+            <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+          </Alert>
           <Alert bsStyle="warning">
+            <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+          </Alert>
+          <Alert bsStyle="warning" className="alert-as-link">
             <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
           </Alert>
           <Alert bsStyle="success">
             <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
           </Alert>
+          <Alert bsStyle="success" className="alert-as-link">
+            <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+          </Alert>
           <Alert bsStyle="info">
+            <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+          </Alert>
+          <Alert bsStyle="info" className="alert-as-link">
             <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
           </Alert>
         </div>

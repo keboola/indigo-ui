@@ -1,0 +1,56 @@
+.searchbar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+
+  .searchbar-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  .searchbar-input {
+    padding-left: 34px;
+    padding-right: 40px;
+    width: 100%;
+  }
+
+  .searchbar-actions {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    & > * {
+      margin-left: 8px;
+    }
+  }
+
+  .searchbar-icon {
+    position: absolute;
+    left: 10px;
+    color: @gray-light;
+  }
+
+  .searchbar-clear-btn {
+    display: flex;
+    position: absolute;
+    right: 0px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .fa-search {
+    position: absolute;
+    left: 10px;
+    color: @gray-light;
+    font-size: 1.35em;
+  }
+
+  .fa-times {
+    color: inherit;
+    font-size: 1.5em;
+  }
+}

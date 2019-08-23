@@ -1,7 +1,10 @@
 import React from 'react';
 import { FormControl, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import classnames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons/faSearch';
+import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -43,7 +46,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div
-        className={classNames(
+        className={classnames(
           'searchbar',
           {
             [`searchbar-${this.props.theme}`]: !!this.props.theme,
@@ -67,10 +70,10 @@ class SearchBar extends React.Component {
               }
             }}
           />
-          <i className="fa fa-search" />
+          <FontAwesomeIcon icon={faSearch} />
           {this.props.query && (
             <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
-              <i className="fa fa-times" />
+              <FontAwesomeIcon icon={faTimes} />
             </Button>
           )}
         </form>
@@ -93,7 +96,7 @@ SearchBar.propTypes = {
   onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
   inputRef: PropTypes.func,
-  className: PropTypes.string,
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   placeholder: PropTypes.string,
   additionalActions: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
   theme: PropTypes.oneOf(['inverse']),

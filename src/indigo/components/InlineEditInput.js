@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, FormControl, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons/faTimesCircle';
+import { faPencilAlt } from '@fortawesome/free-solid-svg-icons/faPencilAlt';
 import Loader from './Loader';
 
 class InlineEditTextInput extends React.Component {
@@ -48,11 +51,11 @@ class InlineEditTextInput extends React.Component {
               disabled={this.props.isSaving}
               onClick={this.props.onEditCancel}
             >
-              <i className="fa fa-fw fa-times-circle" />
+              <FontAwesomeIcon icon={faTimesCircle} />
             </Button>
             <Button
               className="inline-edit-input-submit"
-              bsStyle="info"
+              bsStyle="primary"
               bsSize="sm"
               disabled={this.props.isSaving || !this.props.isValid}
               type="submit"
@@ -77,7 +80,7 @@ class InlineEditTextInput extends React.Component {
           ) : (
             <span className="text-muted">{this.props.placeholder}</span>
           )}
-          <i className="fa fa-fw fa-pencil" />
+          <FontAwesomeIcon icon={faPencilAlt} fixedWidth className="icon-addon-left" />
         </span>
       </OverlayTrigger>
     );

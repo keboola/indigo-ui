@@ -1,55 +1,17 @@
-/*
- * Buttons
- */
-button {
-    background-color: @kbc-grey-bg;
-    color: @kbc-btn-default-color;
+.btn-link {
+  color: @text-color;
 }
-.btn {
-  padding: 7px 12px;
-  &-link {
-    color: @gray;
 
-    // Inline button
-    &-inline {
-      padding: 0;
-      border: none;
-      color: @link-hover-color;
-      display: inline;
-      vertical-align: inherit;
-      &:hover {
-        text-decoration: underline;
-      }
-      text-align: start;
-      white-space: normal;
-    }
+.btn-link-inline {
+  padding: 0;
+  border: none;
+  color: @link-hover-color;
+  display: inline;
+  vertical-align: inherit;
+  text-align: start;
+  white-space: normal;
+
+  &:hover {
+    text-decoration: underline;
   }
-}
-.btn-lg, .btn-group-lg>.btn {
-    padding: 12px 20px;
-    font-size: 14px;
-    border-radius: 3px;
-}
-.btn-sm, .btn-group-sm>.btn {
-    padding: 5px 10px;
-    font-size: .8em;
-}
-.btn-xs, .btn-group-xs>.btn {
-    padding: 2px 5px;
-    font-size: .7em;
-}
-
-//TrashIndex
-.btn-hide {
-  display: none !important;
-}
-
-.btn-toolbar-confirm {
-  .btn-confirm {
-    float: none;
-  }
-}
-
-.modal-dialog .modal-footer .btn-toolbar > .btn {
-  float: none;
 }

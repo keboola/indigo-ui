@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons/faClock';
 import { timeInWords, durationFrom } from './durationHelpers';
 import DynamicDuration from './DurationDynamic';
 
@@ -11,7 +13,7 @@ class Duration extends React.Component {
     if (this.props.duration) {
       return (
         <span>
-          {this.props.showIcon && <i className="fa fa-clock-o duration-icon" />}
+          {this.props.showIcon && <FontAwesomeIcon icon={faClock} className="icon-addon-right" />}
           {timeInWords(Math.round(this.props.duration))}
         </span>
       );
@@ -19,14 +21,14 @@ class Duration extends React.Component {
     if (!this.props.endTime) {
       return (
         <span>
-          {this.props.showIcon && <i className="fa fa-clock-o duration-icon" />}
+          {this.props.showIcon && <FontAwesomeIcon icon={faClock} className="icon-addon-right" />}
           <DynamicDuration startTime={this.props.startTime} />
         </span>
       );
     }
     return (
       <span>
-        {this.props.showIcon && <i className="fa fa-clock-o duration-icon" />}
+        {this.props.showIcon && <FontAwesomeIcon icon={faClock} className="icon-addon-right" />}
         {timeInWords(durationFrom(this.props.startTime, this.props.endTime), true)}
       </span>
     );

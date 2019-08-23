@@ -85,7 +85,7 @@ ConfirmButtons.propTypes = {
   saveButtonType: PropTypes.oneOf(['button', 'submit']),
   showCancel: PropTypes.bool,
   showSave: PropTypes.bool,
-  className: PropTypes.string,
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   children: PropTypes.any,
 };
 
