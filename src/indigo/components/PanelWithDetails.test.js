@@ -1,19 +1,19 @@
 import React from 'react';
 
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import PanelWithDetails from './PanelWithDetails';
 
 describe('<PanelWithDetails />', () => {
   it('PanelWithDetails - default', () => {
-    snapshot(<PanelWithDetails>content</PanelWithDetails>);
+    matchesSnapshot(<PanelWithDetails>content</PanelWithDetails>);
   });
 
   it('PanelWithDetails - default expanded', () => {
-    snapshot(<PanelWithDetails defaultExpanded>content</PanelWithDetails>);
+    matchesSnapshot(<PanelWithDetails defaultExpanded>content</PanelWithDetails>);
   });
 
   it('PanelWithDetails - custom labels', () => {
-    snapshot(
+    matchesSnapshot(
       <PanelWithDetails labelOpen="Show" labelCollapse="Hide">
         content
       </PanelWithDetails>
@@ -21,10 +21,10 @@ describe('<PanelWithDetails />', () => {
   });
 
   it('PanelWithDetails - bottom controls', () => {
-    snapshot(<PanelWithDetails placement="bottom">content</PanelWithDetails>);
+    matchesSnapshot(<PanelWithDetails placement="bottom">content</PanelWithDetails>);
   });
 
   it('PanelWithDetails - small preview', () => {
-    snapshot(<PanelWithDetails preview="small">content</PanelWithDetails>);
+    matchesSnapshot(<PanelWithDetails preview="small">content</PanelWithDetails>);
   });
 });

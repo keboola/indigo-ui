@@ -1,19 +1,19 @@
 import React from 'react';
 
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import SearchBar from './SearchBar';
 
 describe('<SearchBar />', () => {
   it('SearchBar', () => {
-    snapshot(<SearchBar onChange={() => null} />);
+    matchesSnapshot(<SearchBar onChange={() => null} />);
   });
 
   it('SearchBar - inverse theme', () => {
-    snapshot(<SearchBar onChange={() => null} theme="inverse" />);
+    matchesSnapshot(<SearchBar onChange={() => null} theme="inverse" />);
   });
 
   it('SearchBar - with one additional button', () => {
-    snapshot(
+    matchesSnapshot(
       <SearchBar
         onChange={() => null}
         additionalActions={<button className="btn btn-default">Submit</button>}
@@ -22,7 +22,7 @@ describe('<SearchBar />', () => {
   });
 
   it('SearchBar - with two additional buttons', () => {
-    snapshot(
+    matchesSnapshot(
       <SearchBar
         onChange={() => null}
         additionalActions={[

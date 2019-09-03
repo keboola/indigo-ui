@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import Loader from './Loader';
 
 describe('<Loader />', () => {
   it('Loader - default', () => {
-    snapshot(<Loader />);
+    matchesSnapshot(<Loader />);
   });
 
   it('Loader - with classname', () => {
-    snapshot(<Loader className="additional-class" />);
+    matchesSnapshot(<Loader className="additional-class" />);
   });
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import DurationDynamic from './DurationDynamic';
 
 const fakeNow = '2018-11-26T15:11:05+0100';
@@ -14,6 +14,6 @@ const timePast = moment()
 
 describe('<DurationDynamic />', () => {
   it('should render dynamic 2 min 4 sec', () => {
-    snapshot(<DurationDynamic startTime={timePast} />);
+    matchesSnapshot(<DurationDynamic startTime={timePast} />);
   });
 });

@@ -1,18 +1,18 @@
 import React from 'react';
 
-import { snapshot } from '../../tests';
+import { matchesSnapshot } from '../../tests';
 import RefreshIcon from './RefreshIcon';
 
 describe('<RefreshIcon />', () => {
   it('RefreshIcon - loading', () => {
-    snapshot(<RefreshIcon isLoading />);
+    matchesSnapshot(<RefreshIcon isLoading />);
   });
 
   it('RefreshIcon - not loading', () => {
-    snapshot(<RefreshIcon isLoading={false} />);
+    matchesSnapshot(<RefreshIcon isLoading={false} />);
   });
 
   it('RefreshIcon - loading with custom title', () => {
-    snapshot(<RefreshIcon isLoading title="Click to reload" />);
+    matchesSnapshot(<RefreshIcon isLoading title="Click to reload" />);
   });
 });
