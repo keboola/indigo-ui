@@ -48,20 +48,21 @@
 @state-danger-bg: @brand-danger-light;
 @state-danger-border: @brand-danger;
 
-@padding-base-vertical: 10px;
-@padding-base-horizontal: 12px;
+@padding-base: 4px;
+@padding-base-vertical: @padding-base * 3;
+@padding-base-horizontal: @padding-base * 4;
 
-@table-cell-padding: 16px 12px;
+@table-cell-padding: @padding-base * 4 @padding-base * 3;
 @table-border-color: @border-color;
 @table-bg: #fff;
 @table-bg-hover: @input-bg;
 
-@alert-padding: 15px 16px;
+@alert-padding: @padding-base * 4;
 
 @input-color: @text-color;
 @input-border: transparent;
 @input-height-base: 40px;
 
-@modal-title-padding: 13px 12px 21px 12px;
-@modal-inner-padding: 18px 12px 0px 12px;
+@modal-title-padding: @padding-base * 3 @padding-base * 3 @padding-base * 5 @padding-base * 3;
+@modal-inner-padding: @padding-base * 4 @padding-base * 3 0px @padding-base * 3;
 @modal-header-border-color: #e6e6e7;

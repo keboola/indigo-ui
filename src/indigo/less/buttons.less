@@ -1,17 +1,27 @@
-.btn-link {
-  color: @text-color;
-}
+.btn {
+  .button-size(@padding-base * 3; @padding-base * 4; 11px; 1.2727272; @border-radius);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.09091px;
 
-.btn-link-inline {
-  padding: 0;
-  border: none;
-  color: @link-hover-color;
-  display: inline;
-  vertical-align: inherit;
-  text-align: start;
-  white-space: normal;
+  .btn-link {
+    color: @text-color;
+  }
 
-  &:hover {
-    text-decoration: underline;
+  .btn-link-inline {
+    font-weight: initial;
+    letter-spacing: initial;
+    padding: 0;
+    border: none;
+    color: @link-hover-color;
+    display: inline;
+    vertical-align: inherit;
+    text-align: start;
+    white-space: normal;
+    text-transform: initial;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
