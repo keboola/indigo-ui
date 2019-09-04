@@ -1,5 +1,30 @@
 .table {
   thead tr {
     box-shadow: @box-shadow;
+
+    th {
+      border-bottom: none;
+    }
+  }
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        line-height: 1.28571429;
+        vertical-align: middle;
+        border-top: none;
+
+        &:first-of-type {
+          padding-left: 28px;
+        }
+
+        &:last-of-type {
+          padding-right: 28px;
+        }
+      }
+    }
   }
 }
