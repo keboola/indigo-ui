@@ -11,8 +11,12 @@
   }
 
   .searchbar-input {
-    padding-left: 34px;
-    padding-right: 40px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: @letter-spacing-wider;
+    color: @text-color-gray;
+    padding: 12px 40px 10px 34px;
     width: 100%;
   }
 
@@ -25,12 +29,6 @@
     }
   }
 
-  .searchbar-icon {
-    position: absolute;
-    left: 10px;
-    color: @gray-light;
-  }
-
   .searchbar-clear-btn {
     display: flex;
     position: absolute;
@@ -39,18 +37,24 @@
     &:hover,
     &:focus {
       text-decoration: none;
+
+      .fa-times {
+        color: inherit;
+      }
+    }
+
+    .fa-times {
+      color: @text-color-gray;
+      width: 12px;
+      height: 12px;
     }
   }
 
   .fa-search {
     position: absolute;
     left: 10px;
-    color: @gray-light;
-    font-size: 1.35em;
-  }
-
-  .fa-times {
-    color: inherit;
-    font-size: 1.5em;
+    color: @text-color-gray;
+    width: 16px;
+    height: 16px;
   }
 }
