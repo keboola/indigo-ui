@@ -13,6 +13,9 @@ storiesOf('SearchBar', module)
   .add('Minimal', () => {
     return <SearchBar onChange={() => null} query="Test" />;
   })
+  .add('Minimal with border', () => {
+    return <SearchBar onChange={() => null} query="Test" bordered />;
+  })
   .add('Custom placeholder', () => {
     return (
       <SearchBar placeholder="Search by component name, description or id" onChange={() => null} />
