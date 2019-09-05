@@ -8,10 +8,6 @@ describe('<SearchBar />', () => {
     matchesSnapshot(<SearchBar onChange={() => null} />);
   });
 
-  it('SearchBar - inverse theme', () => {
-    matchesSnapshot(<SearchBar onChange={() => null} theme="inverse" />);
-  });
-
   it('SearchBar - with one additional button', () => {
     matchesSnapshot(
       <SearchBar
