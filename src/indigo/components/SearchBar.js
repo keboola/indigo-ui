@@ -48,9 +48,7 @@ class SearchBar extends React.Component {
       <div
         className={classnames(
           'searchbar',
-          {
-            [`searchbar-${this.props.theme}`]: !!this.props.theme,
-          },
+          { 'with-border': this.props.bordered },
           this.props.className
         )}
       >
@@ -88,6 +86,7 @@ class SearchBar extends React.Component {
 SearchBar.defaultProps = {
   placeholder: 'Search',
   query: '',
+  bordered: false,
 };
 
 SearchBar.propTypes = {
@@ -99,7 +98,7 @@ SearchBar.propTypes = {
   className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   placeholder: PropTypes.string,
   additionalActions: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
-  theme: PropTypes.oneOf(['inverse']),
+  bordered: PropTypes.bool,
 };
 
 export default SearchBar;
