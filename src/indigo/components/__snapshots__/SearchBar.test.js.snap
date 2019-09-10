@@ -9,7 +9,7 @@ exports[`<SearchBar /> SearchBar - with one additional button 1`] = `
     onSubmit={[Function]}
   >
     <input
-      autoFocus={true}
+      autoFocus={false}
       className="searchbar-input form-control"
       onChange={[Function]}
       onKeyDown={[Function]}
@@ -57,7 +57,7 @@ exports[`<SearchBar /> SearchBar - with two additional buttons 1`] = `
     onSubmit={[Function]}
   >
     <input
-      autoFocus={true}
+      autoFocus={false}
       className="searchbar-input form-control"
       onChange={[Function]}
       onKeyDown={[Function]}
@@ -110,7 +110,7 @@ exports[`<SearchBar /> SearchBar 1`] = `
     onSubmit={[Function]}
   >
     <input
-      autoFocus={true}
+      autoFocus={false}
       className="searchbar-input form-control"
       onChange={[Function]}
       onKeyDown={[Function]}
@@ -149,7 +149,7 @@ exports[`<SearchBar /> SearchBar with border 1`] = `
     onSubmit={[Function]}
   >
     <input
-      autoFocus={true}
+      autoFocus={false}
       className="searchbar-input form-control"
       onChange={[Function]}
       onKeyDown={[Function]}

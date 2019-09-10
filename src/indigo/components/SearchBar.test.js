@@ -8,6 +8,10 @@ describe('<SearchBar />', () => {
     matchesSnapshot(<SearchBar onChange={() => null} />);
   });
 
+  it('SearchBar with autofocus', () => {
+    matchesSnapshot(<SearchBar autoFocus onChange={() => null} />);
+  });
+
   it('SearchBar with border', () => {
     matchesSnapshot(<SearchBar onChange={() => null} bordered />);
   });
