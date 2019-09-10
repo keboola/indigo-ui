@@ -60,7 +60,7 @@ class SearchBar extends React.Component {
             onKeyDown={this.handleKeyDown}
             className="searchbar-input"
             type="text"
-            autoFocus
+            autoFocus={this.props.autoFocus}
             inputRef={(input) => {
               this.internalInputRef = input;
               if (this.props.inputRef) {
@@ -87,6 +87,7 @@ SearchBar.defaultProps = {
   placeholder: 'Search',
   query: '',
   bordered: false,
+  autoFocus: false,
 };
 
 SearchBar.propTypes = {
@@ -99,6 +100,7 @@ SearchBar.propTypes = {
   placeholder: PropTypes.string,
   additionalActions: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
   bordered: PropTypes.bool,
+  autoFocus: PropTypes.bool,
 };
 
 export default SearchBar;
