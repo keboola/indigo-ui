@@ -18,7 +18,6 @@ function loadStories() {
   require('../src/stories/BtnLinkInline');
   require('../src/stories/ExternalLink');
   require('../src/stories/PanelWithDetails');
-  require('../src/stories/AlertBlock');
   require('../src/stories/SearchBar');
   require('../src/stories/Finished');
   require('../src/stories/InlineEditInput');
