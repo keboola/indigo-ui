@@ -22,7 +22,7 @@ function loadStories() {
   require('../src/stories/Finished');
   require('../src/stories/InlineEditInput');
   require('../src/stories/Duration');
-  require('../src/stories/JobStatusCircle');
+  require('../src/stories/StatusCircle');
   require('../src/stories/ConfirmButtons');
 }
 
