@@ -19,6 +19,21 @@
     background-color: #fff;
     padding: 12px 40px 10px 34px;
     width: 100%;
+
+    &::-webkit-input-placeholder {
+      letter-spacing: @letter-spacing-wider;
+      text-transform: uppercase;
+    }
+
+    &::-moz-placeholder {
+      letter-spacing: @letter-spacing-wider;
+      text-transform: uppercase;
+    }
+
+    &:-ms-input-placeholder {
+      letter-spacing: @letter-spacing-wider;
+      text-transform: uppercase;
+    }
   }
 
   &.with-border .searchbar-input {
