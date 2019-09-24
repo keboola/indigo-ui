@@ -4,6 +4,14 @@
   text-transform: uppercase;
   letter-spacing: 1.09091px;
 
+  &.btn-default {
+    padding: 11px 16px;
+  }
+
+  &:not(.btn-default) {
+    border: none;
+  }
+
   &.btn-link {
     color: @text-color;
   }
@@ -13,14 +21,16 @@
     letter-spacing: initial;
     padding: 0;
     border: none;
-    color: @link-hover-color;
+    color: @link-color;
     display: inline;
     vertical-align: inherit;
     text-align: start;
     white-space: normal;
     text-transform: initial;
 
-    &:hover {
+    &:hover,
+    &:focus {
+      color: @link-hover-color;
       text-decoration: underline;
     }
   }
