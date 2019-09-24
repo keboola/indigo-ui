@@ -6,7 +6,7 @@ import TreeNode from './tree/TreeNode';
 class Tree extends React.Component {
   render() {
     return (
-      <div className="kb-tree" onClick={this.props.onClick}>
+      <div className="tree" onClick={this.props.onClick}>
         <TreeNode data={this.props.data} />
       </div>
     );
