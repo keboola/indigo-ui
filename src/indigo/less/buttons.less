@@ -4,6 +4,15 @@
   text-transform: uppercase;
   letter-spacing: 1.09091px;
 
+  &.btn-default {
+    padding-top: @padding-base * 3 - 1;
+    padding-bottom: @padding-base * 3 - 1;
+  }
+
+  &:not(.btn-default) {
+    border: none;
+  }
+
   &.btn-link {
     color: @text-color;
   }
