@@ -19,7 +19,7 @@ exports[`<PanelWithDetails /> PanelWithDetails - bottom controls 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-angle-right fa-w-8 fa-fw icon-addong-right"
+          className="svg-inline--fa fa-angle-right fa-w-8 fa-fw icon-addon-right"
           data-icon="angle-right"
           data-prefix="fas"
           focusable="false"
@@ -71,7 +71,7 @@ exports[`<PanelWithDetails /> PanelWithDetails - custom labels 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-angle-right fa-w-8 fa-fw icon-addong-right"
+          className="svg-inline--fa fa-angle-right fa-w-8 fa-fw icon-addon-right"
           data-icon="angle-right"
           data-prefix="fas"
           focusable="false"
@@ -123,7 +123,7 @@ exports[`<PanelWithDetails /> PanelWithDetails - default 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-angle-right fa-w-8 fa-fw icon-addong-right"
+          className="svg-inline--fa fa-angle-right fa-w-8 fa-fw icon-addon-right"
           data-icon="angle-right"
           data-prefix="fas"
           focusable="false"
@@ -175,7 +175,7 @@ exports[`<PanelWithDetails /> PanelWithDetails - default expanded 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-angle-down fa-w-10 fa-fw icon-addong-right"
+          className="svg-inline--fa fa-angle-down fa-w-10 fa-fw icon-addon-right"
           data-icon="angle-down"
           data-prefix="fas"
           focusable="false"
@@ -227,7 +227,7 @@ exports[`<PanelWithDetails /> PanelWithDetails - small preview 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-angle-right fa-w-8 fa-fw icon-addong-right"
+          className="svg-inline--fa fa-angle-right fa-w-8 fa-fw icon-addon-right"
           data-icon="angle-right"
           data-prefix="fas"
           focusable="false"

@@ -41,7 +41,7 @@ class PanelWithDetails extends React.Component {
         <FontAwesomeIcon
           fixedWidth
           icon={this.state.expanded ? faAngleDown : faAngleRight}
-          className="icon-addong-right"
+          className="icon-addon-right"
         />
         {this.state.panelHeaderTitle}
       </div>
