@@ -1,68 +1,69 @@
 .inline-edit-input {
   display: inline;
 
-  &-form {
+  .inline-edit-input-form {
     display: inline;
     position: relative;
-  }
-
-  &-buttons {
-    position: absolute;
-    right: 4px;
     top: -3px;
 
-    .fa-spin {
+    .inline-edit-input-buttons {
       position: absolute;
-      top: 5px;
-      right: -30px;
-    }
-  }
+      right: 4px;
+      top: -3px;
 
-  &-cancel {
-    padding: 0 5px 0 5px;
-    font-size: 16px;
-    color: #e1e1e9;
+      .fa-spin {
+        position: absolute;
+        top: 5px;
+        right: -30px;
+      }
 
-    &:hover,
-    &:focus,
-    &:active {
-      text-decoration: none;
-      color: darken(#e1e1e9, 20%);
-    }
-  }
+      .inline-edit-input-cancel {
+        padding: 0 5px 0 5px;
+        font-size: 16px;
+        color: #e1e1e9;
 
-  &-submit {
-    padding: 5px 10px;
-  }
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+          color: darken(#e1e1e9, 20%);
+        }
+      }
 
-  &-link {
-    display: inline-block;
-    padding: 11px 15px 11px;
-    border-radius: 4px;
-    cursor: pointer;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: #e9faff;
-
-      .fa-edit {
-        opacity: 1;
+      .inline-edit-input-submit {
+        padding: 5px 10px;
       }
     }
 
+    .inline-edit-input-control {
+      display: inline-block;
+      width: auto;
+      padding-right: 80px;
+
+      &:disabled {
+        border-color: @input-border;
+      }
+    }
+  }
+}
+
+.inline-edit-input-link {
+  display: inline-block;
+  padding: 10px 0px;
+  border-radius: @border-radius;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #e9faff;
+
     .fa-edit {
-      opacity: 0.3;
+      opacity: 1;
     }
   }
 
-  &-control {
-    display: inline-block;
-    width: auto;
-    padding: 6px 80px 6px 12px;
-
-    &:disabled {
-      border-color: @input-border;
-    }
+  .fa-edit {
+    opacity: 0.3;
   }
 }

@@ -78,7 +78,7 @@ exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is
         </svg>
       </button>
       <button
-        className="inline-edit-input-submit btn btn-sm btn-primary"
+        className="inline-edit-input-submit btn btn-primary"
         disabled={true}
         type="submit"
       >
@@ -133,7 +133,7 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
         </svg>
       </button>
       <button
-        className="inline-edit-input-submit btn btn-sm btn-primary"
+        className="inline-edit-input-submit btn btn-primary"
         disabled={true}
         type="submit"
       >
@@ -222,7 +222,7 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
         </svg>
       </button>
       <button
-        className="inline-edit-input-submit btn btn-sm btn-primary"
+        className="inline-edit-input-submit btn btn-primary"
         disabled={true}
         type="submit"
       >

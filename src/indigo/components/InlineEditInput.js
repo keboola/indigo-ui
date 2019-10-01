@@ -56,7 +56,6 @@ class InlineEditTextInput extends React.Component {
             <Button
               className="inline-edit-input-submit"
               bsStyle="primary"
-              bsSize="sm"
               disabled={this.props.isSaving || !this.props.isValid}
               type="submit"
             >
