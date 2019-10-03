@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Button, FormControl, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons/faTimesCircle';
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons/faPencilAlt';
+import { faPen } from '@fortawesome/free-solid-svg-icons/faPen';
 import Loader from './Loader';
 
 class InlineEditTextInput extends React.Component {
@@ -79,7 +79,7 @@ class InlineEditTextInput extends React.Component {
           ) : (
             <span className="text-muted">{this.props.placeholder}</span>
           )}
-          <FontAwesomeIcon icon={faPencilAlt} fixedWidth className="icon-addon-left" />
+          <FontAwesomeIcon icon={faPen} fixedWidth className="icon-addon-left" />
         </span>
       </OverlayTrigger>
     );
