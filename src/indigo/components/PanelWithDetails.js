@@ -65,8 +65,8 @@ class PanelWithDetails extends React.Component {
 
 PanelWithDetails.propTypes = {
   defaultExpanded: PropTypes.bool,
-  labelCollapse: PropTypes.string,
-  labelOpen: PropTypes.string,
+  labelCollapse: PropTypes.node,
+  labelOpen: PropTypes.node,
   children: PropTypes.any.isRequired,
   placement: PropTypes.oneOf([PLACEMENT_BOTTOM, PLACEMENT_TOP]),
   preview: PropTypes.oneOf(['normal', 'small']),
