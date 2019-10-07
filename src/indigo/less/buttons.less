@@ -12,10 +12,20 @@
   }
 
   &.btn-default {
-    padding: 13px 16px 11px 16px;
+    color: @text-color-gray;
+    border-color: @gray-light;
+    background: transparent;
+    padding: 13px 15px 11px 15px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken(@text-color-gray, 30%);
+      border-color: darken(@gray-light, 30%);
+    }
 
     &.btn-sm {
-      padding: 11px 16px 9px 16px;
+      padding: 11px 15px 9px 15px;
     }
   }
 
