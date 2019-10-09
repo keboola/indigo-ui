@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, FormControl, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Button, Form, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons/faTimesCircle';
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons/faPencilAlt';
+import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
+import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
+import { faPen } from '@fortawesome/free-solid-svg-icons/faPen';
+import AutosizeInput from 'react-input-autosize';
 import Loader from './Loader';
 
 class InlineEditTextInput extends React.Component {
   constructor(props) {
     super(props);
-    this.handleOnSubmit = this.handleOnSubmit.bind(this);
-    this.handleOnChange = this.handleOnChange.bind(this);
+
+    this.controlRef = null;
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   render() {
@@ -21,69 +26,64 @@ class InlineEditTextInput extends React.Component {
     return this.renderStaticInput();
   }
 
-  handleOnChange(e) {
-    return this.props.onEditChange(e.target.value);
-  }
-
-  handleOnSubmit(e) {
-    e.preventDefault();
-    return this.props.onEditSubmit();
+  componentDidUpdate(prevProps) {
+    if (!prevProps.isEditing && this.props.isEditing) {
+      this.controlRef.focus();
+    }
   }
 
   renderEditInput() {
     return (
-      <div className="inline-edit-input">
-        <form className="inline-edit-input-form" onSubmit={this.handleOnSubmit}>
-          <FormControl
-            className="inline-edit-input-control"
-            type="text"
-            value={this.props.text}
-            disabled={this.props.isSaving}
-            placeholder={this.props.placeholder}
-            onChange={this.handleOnChange}
-            autoFocus
-          />
-
-          <div className="inline-edit-input-buttons">
-            <Button
-              className="inline-edit-input-cancel"
-              bsStyle="link"
-              disabled={this.props.isSaving}
-              onClick={this.props.onEditCancel}
-            >
-              <FontAwesomeIcon icon={faTimesCircle} />
-            </Button>
-            <Button
-              className="inline-edit-input-submit"
-              bsStyle="primary"
-              bsSize="sm"
-              disabled={this.props.isSaving || !this.props.isValid}
-              type="submit"
-            >
-              Save
-            </Button>
-            {this.props.isSaving && <Loader />}
-          </div>
-        </form>
-      </div>
+      <Form inline className="inline-edit-input" onSubmit={this.handleSubmit}>
+        <AutosizeInput
+          inputClassName="form-control"
+          value={this.props.text}
+          onChange={this.handleChange}
+          inputRef={(ref) => {
+            this.controlRef = ref;
+          }}
+        />
+        <Button
+          type="submit"
+          bsStyle="primary"
+          disabled={this.props.isSaving || !this.props.isValid}
+          onClick={this.handleSubmit}
+        >
+          {this.props.isSaving ? <Loader /> : <FontAwesomeIcon icon={faCheck} />}
+        </Button>
+        <Button type="reset" disabled={this.props.isSaving} onClick={this.props.onEditCancel}>
+          <FontAwesomeIcon icon={faTimes} />
+        </Button>
+      </Form>
     );
   }
 
   renderStaticInput() {
-    const tooltip = <Tooltip id="inline-edit-input-tooltip">{this.props.editTooltip}</Tooltip>;
-
     return (
-      <OverlayTrigger placement={this.props.tooltipPlacement} overlay={tooltip}>
-        <span className="inline-edit-input-link" onClick={this.props.onEditStart}>
+      <OverlayTrigger placement={this.props.tooltipPlacement} overlay={this.renderTooltip()}>
+        <span className="icon-clickable" onClick={this.props.onEditStart}>
           {this.props.text ? (
-            <span>{this.props.text}</span>
+            this.props.text
           ) : (
             <span className="text-muted">{this.props.placeholder}</span>
           )}
-          <FontAwesomeIcon icon={faPencilAlt} fixedWidth className="icon-addon-left" />
+          <FontAwesomeIcon icon={faPen} fixedWidth className="icon-addon-left" />
         </span>
       </OverlayTrigger>
     );
+  }
+
+  renderTooltip() {
+    return <Tooltip id="inline-edit-input-tooltip">{this.props.editTooltip}</Tooltip>;
+  }
+
+  handleChange(e) {
+    this.props.onEditChange(e.target.value);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.onEditSubmit();
   }
 }
 
