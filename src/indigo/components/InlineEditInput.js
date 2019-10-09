@@ -61,7 +61,7 @@ class InlineEditTextInput extends React.Component {
   renderStaticInput() {
     return (
       <OverlayTrigger placement={this.props.tooltipPlacement} overlay={this.renderTooltip()}>
-        <span className="icon-clickable" onClick={this.props.onEditStart}>
+        <span className="inline-edit-input-edit" onClick={this.props.onEditStart}>
           {this.props.text ? (
             this.props.text
           ) : (
