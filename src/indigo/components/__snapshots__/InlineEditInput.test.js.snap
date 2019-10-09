@@ -2,7 +2,7 @@
 
 exports[`<InlineEditInput /> InlineEditInput - default 1`] = `
 <span
-  className="icon-clickable"
+  className="inline-edit-input-edit"
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
@@ -214,7 +214,7 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
 
 exports[`<InlineEditInput /> InlineEditInput - read mode 1`] = `
 <span
-  className="icon-clickable"
+  className="inline-edit-input-edit"
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
