@@ -1,68 +1,76 @@
 .inline-edit-input {
+  position: relative;
   display: inline;
 
-  &-form {
-    display: inline;
+  .form-control {
+    max-width: 400px;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    background: transparent;
+    padding: 0px 28px 0px 0px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid @gray-light;
+  }
+
+  &:hover .form-control,
+  & > .form-control:hover,
+  & > .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid @brand-primary;
+  }
+
+  .btn[type="submit"],
+  .btn[type="reset"] {
     position: relative;
-  }
+    left: -22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
 
-  &-buttons {
-    position: absolute;
-    right: 4px;
-    top: -3px;
-
-    .fa-spin {
-      position: absolute;
-      top: 5px;
-      right: -30px;
+    .svg-inline--fa {
+      width: 12px;
+      height: 12px;
     }
   }
 
-  &-cancel {
-    padding: 0 5px 0 5px;
-    font-size: 16px;
-    color: #e1e1e9;
+  .btn[type="reset"] {
+    color: @gray-light;
+    background: transparent;
+    border: none;
+    margin-left: 8px;
 
     &:hover,
     &:focus,
     &:active {
-      text-decoration: none;
-      color: darken(#e1e1e9, 20%);
+      color: darken(@gray-light, 20%);
+      background: transparent;
+      border: none;
     }
   }
+}
 
-  &-submit {
-    padding: 5px 10px;
+.inline-edit-input-edit {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+
+  .fa-pen {
+    color: #fff;
+    background: @gray-light;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border-radius: 2px;
   }
 
-  &-link {
-    display: inline-block;
-    padding: 11px 15px 11px;
-    border-radius: 4px;
-    cursor: pointer;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: #e9faff;
-
-      .fa-edit {
-        opacity: 1;
-      }
-    }
-
-    .fa-edit {
-      opacity: 0.3;
-    }
-  }
-
-  &-control {
-    display: inline-block;
-    width: auto;
-    padding: 6px 80px 6px 12px;
-
-    &:disabled {
-      border-color: @input-border;
-    }
+  &:hover .fa-pen {
+    background: darken(@gray-light, 20%);
   }
 }
