@@ -12,10 +12,21 @@
   }
 
   &.btn-default {
-    padding: 13px 16px 11px 16px;
+    color: @text-color-gray;
+    border-color: @gray-light;
+    background: transparent;
+    padding: 13px 15px 11px 15px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: @text-color;
+      border-color: darken(@gray-light, 20%);
+      background: transparent;
+    }
 
     &.btn-sm {
-      padding: 11px 16px 9px 16px;
+      padding: 11px 15px 9px 15px;
     }
   }
 
@@ -28,8 +39,9 @@
   }
 
   &.btn-link-inline {
-    font-weight: initial;
-    letter-spacing: initial;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
     padding: 0;
     border: none;
     color: @link-color;
@@ -37,7 +49,7 @@
     vertical-align: inherit;
     text-align: start;
     white-space: normal;
-    text-transform: initial;
+    text-transform: inherit;
 
     &:hover,
     &:focus {

@@ -48,10 +48,8 @@ storiesOf('Bootstrap', module)
         </div>
         <h2>Size</h2>
         <div className="bs-example">
-          <Button bsSize="large">Large button</Button>
           <Button>Default button</Button>
-          <Button bsSize="small">Small button</Button>
-          <Button bsSize="xsmall">Extra small button</Button>
+          <Button bsSize="sm">Small button</Button>
           <br />
           <Button block>Block</Button>
         </div>
