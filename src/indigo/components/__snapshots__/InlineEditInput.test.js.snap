@@ -47,7 +47,7 @@ exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is
     }
   >
     <input
-      className="form-control"
+      className="form-control inline-edit-input-control"
       onChange={[Function]}
       style={
         Object {
@@ -136,7 +136,7 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
     }
   >
     <input
-      className="form-control"
+      className="form-control inline-edit-input-control"
       onChange={[Function]}
       style={
         Object {
@@ -259,7 +259,7 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
     }
   >
     <input
-      className="form-control"
+      className="form-control inline-edit-input-control"
       onChange={[Function]}
       style={
         Object {
