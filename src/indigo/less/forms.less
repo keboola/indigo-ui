@@ -24,36 +24,5 @@ label,
     height: 20px;
     margin-top: 0px;
     margin-left: -32px;
-
-    &:after {
-      content: '';
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      visibility: visible;
-      font-size: 12px;
-      text-align: center;
-      border: 1px solid @gray-light;
-      background-color: #fff;
-    }
-
-    &:checked:after {
-      content: "\2714";
-      background-color: @brand-primary;
-      color: #FFF;
-    }
-
-    &:not(:checked):hover:after {
-      content: "\2714";
-      color: @gray-light;
-    }
-  }
-
-  input[type="checkbox"]:after {
-    border-radius: @input-border-radius;
-  }
-
-  input[type="radio"]:after {
-    border-radius: 50%;
   }
 }
