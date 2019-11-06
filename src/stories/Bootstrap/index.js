@@ -285,11 +285,30 @@ storiesOf('Bootstrap', module)
       <div className="bs-docs-section">
         <div className="bs-example">
           <form>
-            <Checkbox>Checkbox</Checkbox>
+            <Checkbox>
+              <span>Checkbox</span>
+            </Checkbox>
+
+            <Checkbox className="compact">
+              <span>Smaller Checkbox</span>
+            </Checkbox>
 
             <FormGroup>
-              <Radio name="radioGroup">1</Radio> <Radio name="radioGroup">2</Radio>{' '}
-              <Radio name="radioGroup">3</Radio>
+              <Radio name="radioGroup">
+                <span>1</span>
+              </Radio>
+              <Radio name="radioGroup">
+                <span>2</span>
+              </Radio>
+            </FormGroup>
+
+            <FormGroup>
+              <Radio name="radioGroup2" className="compact">
+                <span>3</span>
+              </Radio>
+              <Radio name="radioGroup2" className="compact">
+                <span>4</span>
+              </Radio>
             </FormGroup>
 
             <FormGroup controlId="formControlsSelect">

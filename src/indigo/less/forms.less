@@ -11,3 +11,92 @@ label,
 .input-group-addon {
   background: darken(@input-bg, 5%);
 }
+
+.checkbox,
+.radio {
+  min-height: 24px;
+
+  label {
+    padding-left: 32px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    opacity: 0;
+
+    &:not(:hover):focus + span:before {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+
+    &:checked + span {
+      &:before {
+        background-color: @brand-primary;
+      }
+
+      &:after {
+        content: '';
+      }
+    }
+
+    & + span {
+      position: relative;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        border: 1px solid @gray-light;
+        border-radius: 4px;
+        position: absolute;
+        left: -32px;
+        top: -4px;
+      }
+
+      &:after {
+        content: none;
+        display: inline-block;
+        height: 7px;
+        width: 14px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(-45deg);
+        position: absolute;
+        left: -27px;
+        top: 3px;
+      }
+    }
+  }
+
+  input[type="radio"] + span:before {
+    border-radius: 50%;
+  }
+
+  &.compact {
+    min-height: 20px;
+
+    input[type="checkbox"],
+    input[type="radio"] {
+
+      & + span {
+        position: relative;
+
+        &:before {
+          content: "";
+          height: 16px;
+          width: 16px;
+          left: -28px;
+          top: 0px;
+        }
+
+        &:after {
+          height: 5px;
+          width: 10px;
+          left: -25px;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
