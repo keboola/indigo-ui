@@ -1,16 +1,30 @@
 .btn {
   height: 40px;
   font-size: 11px;
-  line-height: 14px;
+  line-height: 17px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.09091px;
-  padding: 8px 16px 6px 16px;
+  padding: 12px 16px 11px 16px;
   border-radius: @border-radius;
+
+  .svg-inline--fa {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 12px;
+    margin-bottom: 2px;
+  }
 
   &.btn-sm {
     height: 32px;
-    padding: 6px 16px 4px 16px;
+    line-height: 15px;
+    padding: 9px 16px 8px 16px;
+
+    .svg-inline--fa {
+      font-size: 14px;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
   }
 
   &.btn-default {
@@ -57,18 +71,6 @@
     &:focus {
       color: @link-hover-color;
       text-decoration: underline;
-    }
-  }
-
-  .svg-inline--fa {
-    min-height: 14px;
-    min-width: ~"calc(14px * 0.875)";
-
-    &.fa-w-16 {
-      min-height: 16px;
-      min-width: 16px;
-      position: relative;
-      top: 1px;
     }
   }
 }
