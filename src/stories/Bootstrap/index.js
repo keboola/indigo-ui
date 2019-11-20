@@ -1,5 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCog } from '@fortawesome/free-solid-svg-icons/faCog';
+import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus';
+import { faTrash } from '@fortawesome/free-solid-svg-icons/faTrash';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons/faCheckCircle';
 import {
   Button,
   ButtonGroup,
@@ -38,19 +43,50 @@ storiesOf('Bootstrap', module)
       <div className="bs-docs-section">
         <h2>Style</h2>
         <div className="bs-example">
-          <Button>Default</Button>
-          <Button bsStyle="primary">Primary</Button>
-          <Button bsStyle="success">Success</Button>
-          <Button bsStyle="info">Info</Button>
-          <Button bsStyle="warning">Warning</Button>
-          <Button bsStyle="danger">Danger</Button>
-          <Button bsStyle="link">Link</Button>
+          <ButtonToolbar>
+            <Button>Default</Button>
+            <Button bsStyle="primary">Primary</Button>
+            <Button bsStyle="success">Success</Button>
+            <Button bsStyle="info">Info</Button>
+            <Button bsStyle="warning">Warning</Button>
+            <Button bsStyle="danger">Danger</Button>
+            <Button bsStyle="link">Link</Button>
+          </ButtonToolbar>
+        </div>
+        <h2>With icon</h2>
+        <div className="bs-example">
+          <ButtonToolbar>
+            <Button>
+              <FontAwesomeIcon icon={faCog} className="icon-addon-right" />
+              Default
+            </Button>
+            <Button bsStyle="primary">
+              <FontAwesomeIcon icon={faCheckCircle} className="icon-addon-right" />
+              Primary
+            </Button>
+            <Button bsStyle="success">
+              <FontAwesomeIcon icon={faPlus} className="icon-addon-right" />
+              Success
+            </Button>
+            <Button bsStyle="danger">
+              <FontAwesomeIcon icon={faTrash} className="icon-addon-right" />
+              Success
+            </Button>
+          </ButtonToolbar>
         </div>
         <h2>Size</h2>
         <div className="bs-example">
-          <Button>Default button</Button>
-          <Button bsSize="sm">Small button</Button>
-          <br />
+          <ButtonToolbar>
+            <Button bsStyle="success">Default button</Button>
+            <Button bsSize="sm" bsStyle="success">
+              Small button
+            </Button>
+            <Button bsSize="sm" bsStyle="danger">
+              <FontAwesomeIcon icon={faTrash} className="icon-addon-right" />
+              Success
+            </Button>
+          </ButtonToolbar>
+          <hr />
           <Button block>Block</Button>
         </div>
         <h2>State</h2>

@@ -1,21 +1,23 @@
 .btn {
+  height: 40px;
   font-size: 11px;
   line-height: 14px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.09091px;
-  padding: 14px 16px 12px 16px;
+  padding: 8px 16px 6px 16px;
   border-radius: @border-radius;
 
   &.btn-sm {
-    padding: 12px 16px 10px 16px;
+    height: 32px;
+    padding: 6px 16px 4px 16px;
   }
 
   &.btn-default {
     color: @text-color-gray;
     border-color: @gray-light;
     background: transparent;
-    padding: 13px 15px 11px 15px;
+    padding: 7px 15px 5px 15px;
 
     &:hover,
     &:focus,
@@ -26,7 +28,7 @@
     }
 
     &.btn-sm {
-      padding: 11px 15px 9px 15px;
+      padding: 5px 15px 3px 15px;
     }
   }
 
@@ -55,6 +57,18 @@
     &:focus {
       color: @link-hover-color;
       text-decoration: underline;
+    }
+  }
+
+  .svg-inline--fa {
+    min-height: 14px;
+    min-width: ~"calc(14px * 0.875)";
+
+    &.fa-w-16 {
+      min-height: 16px;
+      min-width: 16px;
+      position: relative;
+      top: 1px;
     }
   }
 }
