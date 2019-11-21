@@ -71,18 +71,46 @@ storiesOf('Bootstrap', module)
             <Button bsStyle="danger">
               <FontAwesomeIcon icon={faTrash} fixedWidth />
             </Button>
+            <Button bsStyle="link">
+              <FontAwesomeIcon icon={faTrash} fixedWidth />
+            </Button>
           </ButtonToolbar>
         </div>
-        <h2>Size</h2>
+        <h2>Small</h2>
         <div className="bs-example">
           <ButtonToolbar>
-            <Button bsStyle="success">Default button</Button>
+            <Button bsSize="sm">Default</Button>
             <Button bsSize="sm" bsStyle="success">
+              Small button
+            </Button>
+            <Button bsSize="sm" bsStyle="primary">
+              Primary
+            </Button>
+            <Button bsSize="sm" bsStyle="danger">
+              Success
+            </Button>
+          </ButtonToolbar>
+        </div>
+        <h2>Small with icon</h2>
+        <div className="bs-example">
+          <ButtonToolbar>
+            <Button bsSize="sm">
+              <FontAwesomeIcon icon={faCog} className="icon-addon-right"/>
+              Default
+            </Button>
+            <Button bsSize="sm" bsStyle="success">
+              <FontAwesomeIcon icon={faPlus} className="icon-addon-right"/>
               Small button
             </Button>
             <Button bsSize="sm" bsStyle="danger">
               <FontAwesomeIcon icon={faTrash} className="icon-addon-right" />
               Success
+            </Button>
+            <Button bsSize="sm" bsStyle="danger">
+              <FontAwesomeIcon icon={faTrash} fixedWidth />
+            </Button>
+            <Button bsSize="sm" bsStyle="link">
+              <FontAwesomeIcon icon={faTrash} fixedWidth />
             </Button>
           </ButtonToolbar>
           <hr />
