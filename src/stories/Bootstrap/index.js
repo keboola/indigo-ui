@@ -69,8 +69,7 @@ storiesOf('Bootstrap', module)
               Success
             </Button>
             <Button bsStyle="danger">
-              <FontAwesomeIcon icon={faTrash} />
-              Success
+              <FontAwesomeIcon icon={faTrash} fixedWidth />
             </Button>
           </ButtonToolbar>
         </div>
