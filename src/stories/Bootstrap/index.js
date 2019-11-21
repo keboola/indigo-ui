@@ -57,15 +57,15 @@ storiesOf('Bootstrap', module)
         <div className="bs-example">
           <ButtonToolbar>
             <Button>
-              <FontAwesomeIcon icon={faCog} />
+              <FontAwesomeIcon icon={faCog} className="icon-addon-right"/>
               Default
             </Button>
             <Button bsStyle="primary">
-              <FontAwesomeIcon icon={faCheckCircle} />
+              <FontAwesomeIcon icon={faCheckCircle} className="icon-addon-right"/>
               Primary
             </Button>
             <Button bsStyle="success">
-              <FontAwesomeIcon icon={faPlus} />
+              <FontAwesomeIcon icon={faPlus} className="icon-addon-right"/>
               Success
             </Button>
             <Button bsStyle="danger">
@@ -81,7 +81,7 @@ storiesOf('Bootstrap', module)
               Small button
             </Button>
             <Button bsSize="sm" bsStyle="danger">
-              <FontAwesomeIcon icon={faTrash} />
+              <FontAwesomeIcon icon={faTrash} className="icon-addon-right" />
               Success
             </Button>
           </ButtonToolbar>
