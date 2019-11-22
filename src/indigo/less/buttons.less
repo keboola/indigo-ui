@@ -3,16 +3,22 @@
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1.09091px;
+  letter-spacing: @letter-spacing-wider;
   padding: 12px 16px 10px 16px;
   border-radius: @border-radius;
 
   .svg-inline--fa {
     font-size: 16px;
     vertical-align: middle;
-    margin-bottom: 2px;
+    position: relative;
+    bottom: 1px;
+
     &.icon-addon-right {
       margin-right: 12px;
+    }
+
+    &.icon-addon-left {
+      margin-left: 12px;
     }
   }
 
@@ -22,7 +28,6 @@
 
     .svg-inline--fa {
       font-size: 16px;
-      vertical-align: middle;
     }
   }
 
