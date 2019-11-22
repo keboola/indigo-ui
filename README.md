@@ -109,7 +109,6 @@ git clone git@github.com:react-bootstrap/react-bootstrap.git
 cd react-bootstrap
 git fetch --all
 git checkout v0.31.5 # use version you need
-
 npm run docs
 ```
 Open browser at `localhost:4000`
