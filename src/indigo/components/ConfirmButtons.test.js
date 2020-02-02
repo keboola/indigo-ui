@@ -47,7 +47,9 @@ describe('<Check />', () => {
   });
 
   it('Save button type', () => {
-    matchesSnapshot(<ConfirmButtons saveButtonType="submit" onSave={() => null} isSaving={false} />);
+    matchesSnapshot(
+      <ConfirmButtons saveButtonType="submit" onSave={() => null} isSaving={false} />
+    );
   });
 
   it('Additional class', () => {
