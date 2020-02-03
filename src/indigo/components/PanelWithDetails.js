@@ -25,26 +25,21 @@ class PanelWithDetails extends React.Component {
   render() {
     return (
       <Panel
-        collapsible
+        onToggle={this.toggleExpanded}
         expanded={this.state.expanded}
-        onSelect={this.toggleExpanded}
-        header={this.renderHeader()}
         className={classnames('panel-show-details', `panel-show-details-${this.props.placement}`, {
           'panel-preview': !!this.props.preview,
           [`panel-preview-${this.props.preview}`]: !!this.props.preview,
         })}
       >
-        {this.props.children}
+        <Panel.Heading>
+          <Panel.Title toggle>
+            <FontAwesomeIcon fixedWidth icon={this.getIcon()} className="icon-addon-right" />
+            {this.state.panelHeaderTitle}
+          </Panel.Title>
+        </Panel.Heading>
+        <Panel.Body collapsible>{this.props.children}</Panel.Body>
       </Panel>
-    );
-  }
-
-  renderHeader() {
-    return (
-      <div>
-        <FontAwesomeIcon fixedWidth icon={this.getIcon()} className="icon-addon-right" />
-        {this.state.panelHeaderTitle}
-      </div>
     );
   }
 
