@@ -9,8 +9,6 @@ import components from '../src/indigo/components';
 
 addParameters({
   options: {
-    hierarchyRootSeparator: null,
-    hierarchySeparator: null,
     theme: create({
       brandTitle: 'Indigo UI',
       brandUrl: 'https://github.com/keboola/indigo-ui',
