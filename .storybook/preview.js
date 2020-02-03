@@ -1,3 +1,4 @@
+import React from 'react';
 import { addParameters, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
@@ -19,3 +20,4 @@ addParameters({
 
 addDecorator(withInfo({ inline: true }));
 addDecorator(withKnobs);
+addDecorator((storyFn) => <div className="container">{storyFn()}</div>);
