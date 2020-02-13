@@ -39,6 +39,7 @@ jobs:
           email: $NPM_EMAIL
           api_token: $NPM_API_KEY
           cleanup: false
+          access: public
           on:
             tags: true
             repo: keboola/indigo-ui
