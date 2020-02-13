@@ -174,11 +174,15 @@ storiesOf('Bootstrap', module)
         <div className="bs-example">
           <div className="static-modal" style={{ position: 'relative' }}>
             <Modal.Dialog>
-              <Modal.Header>
+              <Modal.Header closeButton>
                 <Modal.Title>Modal title</Modal.Title>
               </Modal.Header>
 
-              <Modal.Body>One fine body...</Modal.Body>
+              <Modal.Body>
+                One fine body...
+                <hr />
+                Content after hr
+              </Modal.Body>
 
               <Modal.Footer>
                 <Button>Close</Button>
