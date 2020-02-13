@@ -35,9 +35,10 @@ jobs:
         - ls -1
       deploy:
         - provider: npm
+          edge: true
           email: $NPM_EMAIL
-          api_key: $NPM_API_KEY
-          skip_cleanup: true
+          api_token: $NPM_API_KEY
+          cleanup: false
           on:
             tags: true
             repo: keboola/indigo-ui
