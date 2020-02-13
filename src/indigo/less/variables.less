@@ -9,6 +9,7 @@
 
 @gray-base: #151515;
 @gray-dark: #272837;
+@gray-medium: #7F8198;
 @gray-light: #C8CAD9;
 @brand-primary: #228DFF;
 @brand-primary-light: #DAECFF;
@@ -27,7 +28,7 @@
 
 @font-family-sans-serif: "Roboto", sans-serif;
 @text-color: @gray-dark;
-@text-color-gray: #7F8198;
+@text-color-gray: @gray-medium;
 @link-color: @brand-primary;
 @link-hover-color: darken(@link-color, 15%);
 @border-color: #E3E9F3;
@@ -69,7 +70,7 @@
 
 @modal-title-padding: @padding-base * 3 @padding-base * 3 @padding-base * 5 @padding-base * 3;
 @modal-inner-padding: @padding-base * 4 @padding-base * 3 0px @padding-base * 3;
-@modal-header-border-color: #e6e6e7;
+@modal-header-border-color: @border-color;
 
 @letter-spacing-narrower: 0.576923px;
 @letter-spacing-wider: 1.09091px;
