@@ -13,4 +13,4 @@ RUN apt-get update -q \
   && apt-get update && apt-get install yarn -y \
   && yarn --version
 
-RUN npm install -g grunt-cli
+RUN yarn global add grunt-cli
