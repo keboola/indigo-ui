@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Immutable from 'immutable';
+import { Iterable } from 'immutable';
 
 import Protected from '../Protected';
 
@@ -14,9 +14,7 @@ class TreeNode extends React.Component {
   renderRow(value, key) {
     return (
       <li key={key}>
-        {Immutable.Iterable.isIterable(value)
-          ? this.renderNode(value, key)
-          : this.renderLeaf(value, key)}
+        {Iterable.isIterable(value) ? this.renderNode(value, key) : this.renderLeaf(value, key)}
       </li>
     );
   }
