@@ -1,4 +1,6 @@
-# Indigo UI [![Build Status](https://travis-ci.org/keboola/indigo-ui.svg?branch=master)](https://travis-ci.org/keboola/indigo-ui) [![npm](https://img.shields.io/npm/v/@keboola/indigo-ui.svg)](https://yarnpkg.com/en/package/@keboola/indigo-ui) [![license](https://img.shields.io/github/license/keboola/indigo-ui.svg)](https://github.com/keboola/indigo-ui/blob/master/LICENSE)
+# Indigo UI
+
+[![Build Status](https://travis-ci.com/keboola/indigo-ui.svg?branch=master)](https://travis-ci.com/keboola/indigo-ui) [![npm](https://img.shields.io/npm/v/@keboola/indigo-ui.svg)](https://yarnpkg.com/en/package/@keboola/indigo-ui) [![license](https://img.shields.io/github/license/keboola/indigo-ui.svg)](https://github.com/keboola/indigo-ui/blob/master/LICENSE)
 
 Indigo UI library, its CSS and React components. Also Styleguide app showing usages of this library.
 
