@@ -57,15 +57,15 @@ storiesOf('Bootstrap', module)
         <div className="bs-example">
           <ButtonToolbar>
             <Button>
-              <FontAwesomeIcon icon={faCog} className="icon-addon-right"/>
+              <FontAwesomeIcon icon={faCog} className="icon-addon-right" />
               Default
             </Button>
             <Button bsStyle="primary">
-              <FontAwesomeIcon icon={faCheckCircle} className="icon-addon-right"/>
+              <FontAwesomeIcon icon={faCheckCircle} className="icon-addon-right" />
               Primary
             </Button>
             <Button bsStyle="success">
-              <FontAwesomeIcon icon={faPlus} className="icon-addon-right"/>
+              <FontAwesomeIcon icon={faPlus} className="icon-addon-right" />
               Success
             </Button>
             <Button bsStyle="danger">
@@ -95,11 +95,11 @@ storiesOf('Bootstrap', module)
         <div className="bs-example">
           <ButtonToolbar>
             <Button bsSize="sm">
-              <FontAwesomeIcon icon={faCog} className="icon-addon-right"/>
+              <FontAwesomeIcon icon={faCog} className="icon-addon-right" />
               Default
             </Button>
             <Button bsSize="sm" bsStyle="success">
-              <FontAwesomeIcon icon={faPlus} className="icon-addon-right"/>
+              <FontAwesomeIcon icon={faPlus} className="icon-addon-right" />
               Small button
             </Button>
             <Button bsSize="sm" bsStyle="danger">
@@ -177,16 +177,15 @@ storiesOf('Bootstrap', module)
               <Modal.Header closeButton>
                 <Modal.Title>Modal title</Modal.Title>
               </Modal.Header>
-
               <Modal.Body>
                 One fine body...
                 <hr />
                 Content after hr
               </Modal.Body>
-
               <Modal.Footer>
-                <Button>Close</Button>
-                <Button bsStyle="primary">Save changes</Button>
+                <Button block bsStyle="success">
+                  Save Changes
+                </Button>
               </Modal.Footer>
             </Modal.Dialog>
           </div>
