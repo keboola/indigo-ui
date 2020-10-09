@@ -2,6 +2,7 @@
   display: flex;
   flex-flow: row;
   align-items: center;
+  margin-bottom: 1em;
 
   .searchbar-form {
     position: relative;
@@ -31,6 +32,10 @@
     &:-ms-input-placeholder {
       letter-spacing: @letter-spacing-narrower;
     }
+  }
+
+  &.bordered {
+    border: 1px solid @border-color;
   }
 
   &.with-border .searchbar-input {
