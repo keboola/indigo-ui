@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import MockDate from 'mockdate';
 import { matchesSnapshot } from '../../tests';
 import Duration from './Duration';
 
@@ -7,9 +8,9 @@ const time1 = '2018-11-26T15:11:05+0100';
 const time2 = '2018-11-26T15:11:09+0100';
 const time3 = '2018-11-29T15:11:09+0100';
 
-const fakeTimeNow = moment(time1).valueOf();
-global.Date.now = jest.fn(() => fakeTimeNow);
-const timePast = moment(fakeTimeNow - 123456)
+MockDate.set(time1);
+
+const timePast = moment(moment(time1).valueOf() - 123456)
   .format('YYYY-MM-DDTHH:mm:ssZZ')
   .toString();
 
