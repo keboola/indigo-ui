@@ -31,6 +31,8 @@ jobs:
     - stage: build library and deploy
       script:
         - yarn build-lib
+        - yarn remove-snapshots-from-lib
+        - find lib
       before_deploy:
         - ls -1
       deploy:

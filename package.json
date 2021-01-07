@@ -68,6 +68,7 @@
   },
   "scripts": {
     "build-lib": "babel src/indigo --out-dir lib --copy-files --no-copy-ignored --ignore src/**/*.test.js",
+    "remove-snapshots-from-lib": "find lib -type d -name __snapshots__ | xargs rm -rf",
     "test": "react-scripts test --env=jsdom",
     "run-storybook": "start-storybook -p 9009 -s public",
     "storybook": "npm-run-all -p watch-dev-css run-storybook",
