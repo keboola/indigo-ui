@@ -3,5 +3,6 @@
   "singleQuote": true,
   "trailingComma": "es5",
   "arrowParens": "always",
-  "parser": "babel"
+  "parser": "babel",
+  "endOfLine": "auto"
 }

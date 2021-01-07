@@ -6,9 +6,7 @@ import Finished from './Finished';
 
 MockDate.set('2018-11-26T15:11:05');
 
-const timePast = moment()
-  .subtract(124, 'seconds')
-  .format();
+const timePast = moment().subtract(124, 'seconds').format();
 
 describe('<Finished />', () => {
   it('Basic Init', () => {
