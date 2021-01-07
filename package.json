@@ -58,9 +58,9 @@
     "immutable": "^3.8.2",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
-    "react": "~16.8.6",
+    "react": "^16.8.6",
     "react-bootstrap": "^0.31.5",
-    "react-dom": "~16.8.6"
+    "react-dom": "^16.8.6"
   },
   "devEngines": {
     "node": "8.x",
