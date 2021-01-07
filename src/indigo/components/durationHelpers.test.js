@@ -80,12 +80,10 @@ describe('timeInWords', () => {
   });
 
   describe('Duration function', () => {
-    test('test', () => {
+    test('should calculate valid duration', () => {
       expect(
         durationFrom('Wed Nov 21 2018 14:50:24 GMT+0100', 'Wed Nov 21 2018 15:50:24 GMT+0100')
       ).toBe(3600);
-    });
-    test('test', () => {
       expect(
         durationFrom('Wed Nov 21 2018 14:50:24 GMT+0100', 'Wed Nov 21 2018 13:50:24 GMT+0100')
       ).toBe(-3600);

@@ -21,17 +21,7 @@
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "5.3.10",
     "@storybook/theming": "5.3.10",
-    "babel-eslint": "10.1.0",
-    "babel-loader": "8.1.0",
     "classnames": "^2.2.6",
-    "eslint": "^7.17.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "7.22.0",
     "grunt": "^1.3.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-less": "^2.0.0",
@@ -62,10 +52,6 @@
     "react-bootstrap": "^0.33.1",
     "react-dom": "^16.8.6"
   },
-  "devEngines": {
-    "node": "8.x",
-    "npm": "5.x"
-  },
   "scripts": {
     "build-lib": "babel src/indigo --out-dir lib --copy-files --no-copy-ignored --ignore src/**/*.test.js",
     "remove-snapshots-from-lib": "find lib -type d -name __snapshots__ | xargs rm -rf",
@@ -79,6 +65,11 @@
     "build-storybook": "build-storybook -s public -o build",
     "eslint": "eslint src",
     "eslint:fix": "eslint src --fix "
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
   },
   "main": "lib/components/index.js",
   "repository": {
