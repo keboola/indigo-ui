@@ -35,7 +35,7 @@ describe('<SearchBar />', () => {
           </button>,
           <button key="reset-button" className="btn btn-default">
             Reset
-          </button>,
+          </button>
         ]}
       />
     );

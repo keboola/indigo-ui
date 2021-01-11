@@ -8,7 +8,7 @@ class DurationDynamic extends React.Component {
     super(props);
     this.tick = this.tick.bind(this);
     this.state = {
-      endTime: moment().format(),
+      endTime: moment().format()
     };
   }
 
@@ -22,7 +22,7 @@ class DurationDynamic extends React.Component {
 
   tick() {
     this.setState({
-      endTime: moment().format(),
+      endTime: moment().format()
     });
   }
 
@@ -32,7 +32,7 @@ class DurationDynamic extends React.Component {
 }
 
 DurationDynamic.propTypes = {
-  startTime: PropTypes.string,
+  startTime: PropTypes.string
 };
 
 export default DurationDynamic;

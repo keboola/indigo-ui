@@ -27,5 +27,5 @@ export {
   InlineEditInput,
   Duration,
   StatusCircle,
-  ConfirmButtons,
+  ConfirmButtons
 };

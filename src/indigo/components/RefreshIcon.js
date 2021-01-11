@@ -29,11 +29,11 @@ class RefreshIcon extends React.Component {
 RefreshIcon.propTypes = {
   isLoading: PropTypes.bool.isRequired,
   title: PropTypes.string,
-  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 };
 
 RefreshIcon.defaultProps = {
-  title: 'Refresh',
+  title: 'Refresh'
 };
 
 export default RefreshIcon;

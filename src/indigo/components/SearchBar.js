@@ -87,7 +87,7 @@ SearchBar.defaultProps = {
   placeholder: 'Search',
   query: '',
   bordered: false,
-  autoFocus: false,
+  autoFocus: false
 };
 
 SearchBar.propTypes = {
@@ -100,7 +100,7 @@ SearchBar.propTypes = {
   placeholder: PropTypes.string,
   additionalActions: PropTypes.oneOfType([PropTypes.array, PropTypes.element]),
   bordered: PropTypes.bool,
-  autoFocus: PropTypes.bool,
+  autoFocus: PropTypes.bool
 };
 
 export default SearchBar;

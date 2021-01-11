@@ -18,7 +18,7 @@ class NewLineToBr extends React.Component {
 }
 
 NewLineToBr.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
 };
 
 export default NewLineToBr;

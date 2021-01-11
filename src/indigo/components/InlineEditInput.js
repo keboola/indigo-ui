@@ -98,7 +98,7 @@ InlineEditTextInput.propTypes = {
   isValid: PropTypes.bool,
   editTooltip: PropTypes.string,
   tooltipPlacement: PropTypes.string,
-  placeholder: PropTypes.string,
+  placeholder: PropTypes.string
 };
 
 InlineEditTextInput.defaultProps = {
@@ -106,7 +106,7 @@ InlineEditTextInput.defaultProps = {
   editTooltip: 'Click to edit',
   tooltipPlacement: 'top',
   isSaving: false,
-  isEditing: false,
+  isEditing: false
 };
 
 export default InlineEditTextInput;

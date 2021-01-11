@@ -11,7 +11,7 @@ describe('<Tree />', () => {
         data={fromJS({
           config: '337955292',
           component: 'keboola.ex-db-mysql',
-          mode: 'run',
+          mode: 'run'
         })}
       />
     );
@@ -24,7 +24,7 @@ describe('<Tree />', () => {
           config: '337955292',
           component: 'keboola.ex-db-mysql',
           mode: 'run',
-          password: 'pass',
+          password: 'pass'
         })}
       />
     );

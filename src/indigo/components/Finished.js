@@ -21,11 +21,11 @@ class Finished extends React.Component {
 
 Finished.propTypes = {
   endTime: PropTypes.string,
-  showIcon: PropTypes.bool,
+  showIcon: PropTypes.bool
 };
 
 Finished.defaultProps = {
-  showIcon: false,
+  showIcon: false
 };
 
 export default Finished;

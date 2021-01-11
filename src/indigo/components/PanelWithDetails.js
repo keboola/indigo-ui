@@ -16,7 +16,7 @@ class PanelWithDetails extends React.Component {
 
     this.state = {
       expanded: props.defaultExpanded,
-      panelHeaderTitle: props.defaultExpanded ? props.labelCollapse : props.labelOpen,
+      panelHeaderTitle: props.defaultExpanded ? props.labelCollapse : props.labelOpen
     };
 
     this.toggleExpanded = this.toggleExpanded.bind(this);
@@ -29,7 +29,7 @@ class PanelWithDetails extends React.Component {
         expanded={this.state.expanded}
         className={classnames('panel-show-details', `panel-show-details-${this.props.placement}`, {
           'panel-preview': !!this.props.preview,
-          [`panel-preview-${this.props.preview}`]: !!this.props.preview,
+          [`panel-preview-${this.props.preview}`]: !!this.props.preview
         })}
       >
         <Panel.Heading>
@@ -53,7 +53,7 @@ class PanelWithDetails extends React.Component {
   toggleExpanded() {
     this.setState((prevState) => ({
       expanded: !prevState.expanded,
-      panelHeaderTitle: !prevState.expanded ? this.props.labelCollapse : this.props.labelOpen,
+      panelHeaderTitle: !prevState.expanded ? this.props.labelCollapse : this.props.labelOpen
     }));
   }
 }
@@ -64,14 +64,14 @@ PanelWithDetails.propTypes = {
   labelOpen: PropTypes.node,
   children: PropTypes.any.isRequired,
   placement: PropTypes.oneOf([PLACEMENT_BOTTOM, PLACEMENT_TOP]),
-  preview: PropTypes.oneOf(['normal', 'small']),
+  preview: PropTypes.oneOf(['normal', 'small'])
 };
 
 PanelWithDetails.defaultProps = {
   defaultExpanded: false,
   labelCollapse: 'Hide details',
   labelOpen: 'Show details',
-  placement: PLACEMENT_TOP,
+  placement: PLACEMENT_TOP
 };
 
 export default PanelWithDetails;

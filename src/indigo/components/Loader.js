@@ -18,7 +18,7 @@ class Loader extends React.Component {
 }
 
 Loader.propTypes = {
-  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 };
 
 export default Loader;

@@ -39,11 +39,11 @@ Duration.propTypes = {
   startTime: PropTypes.string,
   endTime: PropTypes.string,
   duration: PropTypes.number,
-  showIcon: PropTypes.bool,
+  showIcon: PropTypes.bool
 };
 
 Duration.defaultProps = {
-  showIcon: false,
+  showIcon: false
 };
 
 export default Duration;

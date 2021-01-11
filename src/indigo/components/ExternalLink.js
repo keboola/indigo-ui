@@ -17,7 +17,7 @@ const ExternalLink = ({ href, children, className, ...props }) => (
 ExternalLink.propTypes = {
   href: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 };
 
 export default ExternalLink;

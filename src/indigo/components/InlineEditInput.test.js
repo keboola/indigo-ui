@@ -8,7 +8,7 @@ describe('<InlineEditInput />', () => {
     onEditStart: () => null,
     onEditCancel: () => null,
     onEditChange: () => null,
-    onEditSubmit: () => null,
+    onEditSubmit: () => null
   };
 
   it('InlineEditInput - default', () => {

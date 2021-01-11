@@ -15,7 +15,7 @@ class Tree extends React.Component {
 
 Tree.propTypes = {
   data: PropTypes.object.isRequired,
-  onClick: PropTypes.func,
+  onClick: PropTypes.func
 };
 
 export default Tree;

@@ -15,7 +15,7 @@ const statusColorMap = {
   waiting: 'default',
   cancelled: 'canceled',
   terminating: 'canceled',
-  terminated: 'canceled',
+  terminated: 'canceled'
 };
 
 class StatusCircle extends React.Component {
@@ -43,7 +43,7 @@ class StatusCircle extends React.Component {
 
 StatusCircle.propTypes = {
   status: PropTypes.string,
-  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 };
 
 export default StatusCircle;

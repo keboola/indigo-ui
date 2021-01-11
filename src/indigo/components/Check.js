@@ -20,11 +20,11 @@ class Check extends React.Component {
 Check.propTypes = {
   isChecked: PropTypes.bool.isRequired,
   fixedWidth: PropTypes.bool,
-  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 };
 
 Check.defaultProps = {
-  fixedWidth: false,
+  fixedWidth: false
 };
 
 export default Check;

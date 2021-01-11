@@ -71,7 +71,7 @@ ConfirmButtons.defaultProps = {
   isSaving: false,
   isDisabled: false,
   showSave: true,
-  showCancel: true,
+  showCancel: true
 };
 
 ConfirmButtons.propTypes = {
@@ -86,7 +86,7 @@ ConfirmButtons.propTypes = {
   showCancel: PropTypes.bool,
   showSave: PropTypes.bool,
   className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-  children: PropTypes.any,
+  children: PropTypes.any
 };
 
 export default ConfirmButtons;

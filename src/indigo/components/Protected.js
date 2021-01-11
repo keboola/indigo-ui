@@ -8,7 +8,7 @@ class Protected extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isProtected: true,
+      isProtected: true
     };
   }
 
@@ -36,7 +36,7 @@ class Protected extends React.Component {
 
 Protected.propTypes = {
   children: PropTypes.any,
-  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 };
 
 export default Protected;

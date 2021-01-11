@@ -22,7 +22,9 @@
     "@storybook/react": "5.3.10",
     "@storybook/theming": "5.3.10",
     "classnames": "^2.2.6",
+    "eslint-config-prettier": "^7.1.0",
     "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.3.1",
     "grunt": "^1.3.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-less": "^2.0.0",
@@ -69,6 +71,9 @@
   },
   "eslintConfig": {
     "extends": [
+      "plugin:prettier/recommended",
+      "prettier/react",
+      "prettier/standard",
       "react-app"
     ]
   },

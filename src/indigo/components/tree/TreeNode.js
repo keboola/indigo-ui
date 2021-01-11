@@ -45,7 +45,7 @@ class TreeNode extends React.Component {
 }
 
 TreeNode.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 };
 
 export default TreeNode;
