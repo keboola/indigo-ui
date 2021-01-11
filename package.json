@@ -1,7 +1,56 @@
 {
   "name": "@keboola/indigo-ui",
-  "description": "Keboola UI library",
   "version": "13.0.0",
+  "description": "Keboola UI library",
+  "keywords": [
+    "keboola",
+    "ui"
+  ],
+  "homepage": "https://github.com/keboola/indigo-ui",
+  "bugs": {
+    "url": "https://github.com/keboola/indigo-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/keboola/indigo-ui.git"
+  },
+  "license": "MIT",
+  "author": "Keboola",
+  "main": "lib/components/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build-dev-css": "grunt build-dev-css",
+    "build-lib": "babel src/indigo --out-dir lib --copy-files --no-copy-ignored --ignore src/**/*.test.js",
+    "build-storybook": "build-storybook -s public -o build",
+    "eslint": "eslint src",
+    "eslint:fix": "eslint src --fix ",
+    "prepare-prod-resources": "grunt prepare-prod-resources",
+    "remove-snapshots-from-lib": "find lib -type d -name __snapshots__ | xargs rm -rf",
+    "run-storybook": "start-storybook -p 9009 -s public",
+    "storybook": "npm-run-all -p watch-dev-css run-storybook",
+    "stylelint": "grunt stylelint",
+    "test": "react-scripts test --env=jsdom",
+    "watch-dev-css": "npm run build-dev-css && grunt watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": "yarn eslint:fix",
+    "src/**/*.less": "prettier --write src/**/*.less"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:prettier/recommended",
+      "prettier/react",
+      "prettier/standard",
+      "react-app"
+    ]
+  },
   "dependencies": {
     "bootstrap": "^3.4.1",
     "react-input-autosize": "^2.2.2"
@@ -30,7 +79,9 @@
     "grunt-contrib-less": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-stylelint": "^0.16.0",
+    "husky": "^4.3.7",
     "immutable": "^3.8.2",
+    "lint-staged": "^10.5.3",
     "mockdate": "^3.0.2",
     "moment": "^2.24.0",
     "npm-run-all": "^4.1.5",
@@ -54,45 +105,5 @@
     "react": "^16.8.6",
     "react-bootstrap": "^0.33.1",
     "react-dom": "^16.8.6"
-  },
-  "scripts": {
-    "build-lib": "babel src/indigo --out-dir lib --copy-files --no-copy-ignored --ignore src/**/*.test.js",
-    "remove-snapshots-from-lib": "find lib -type d -name __snapshots__ | xargs rm -rf",
-    "test": "react-scripts test --env=jsdom",
-    "run-storybook": "start-storybook -p 9009 -s public",
-    "storybook": "npm-run-all -p watch-dev-css run-storybook",
-    "build-dev-css": "grunt build-dev-css",
-    "prepare-prod-resources": "grunt prepare-prod-resources",
-    "watch-dev-css": "npm run build-dev-css && grunt watch",
-    "stylelint": "grunt stylelint",
-    "build-storybook": "build-storybook -s public -o build",
-    "eslint": "eslint src",
-    "eslint:fix": "eslint src --fix "
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:prettier/recommended",
-      "prettier/react",
-      "prettier/standard",
-      "react-app"
-    ]
-  },
-  "main": "lib/components/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/keboola/indigo-ui.git"
-  },
-  "keywords": [
-    "keboola",
-    "ui"
-  ],
-  "author": "Keboola",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/keboola/indigo-ui/issues"
-  },
-  "homepage": "https://github.com/keboola/indigo-ui",
-  "files": [
-    "lib"
-  ]
+  }
 }
