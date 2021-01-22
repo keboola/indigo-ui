@@ -6,7 +6,7 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 
 ## Development
 
-1. Make sure you have Node 12 installed `node -v`
+1. Make sure you have Node 14 installed `node -v`
 2. Install grunt: `yarn global add grunt-cli`
 3. Install dependencies: `yarn`
 4. Run storybook `yarn storybook`
