@@ -11,6 +11,7 @@ install:
 jobs:
   include:
     - stage: test
+      name: "Run stylelint; Run tests; Build storybook"
       script:
         - set -e
         - yarn stylelint
@@ -18,6 +19,7 @@ jobs:
         - yarn build-dev-css
         - yarn build-storybook
     - stage: test
+      name: "Build lib"
       script: yarn build-lib
 
     - stage: deploy storybook
