@@ -53,7 +53,7 @@ export default class InlineEditInputExample extends React.Component {
           text={this.state.text}
           isSaving={this.state.isSaving}
           editTooltip="Click to edit"
-          placeholder="Click to edit"
+          placeholder={this.state.isEditing ? 'Writer name' : 'Click to edit'}
         />
       </h1>
     );
