@@ -4,7 +4,7 @@
   "version": "13.0.0",
   "dependencies": {
     "bootstrap": "^3.4.1",
-    "react-input-autosize": "^2.2.2"
+    "react-input-autosize": "^3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
@@ -12,8 +12,8 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@storybook/addon-actions": "5.3.10",
     "@storybook/addon-info": "5.3.10",
@@ -43,24 +43,24 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "prop-types": "^15.7.2",
-    "react": "~16.8.6",
+    "react": "^16.14.0",
     "react-bootstrap": "^0.33.1",
-    "react-dom": "~16.8.6",
-    "react-scripts": "^4.0.1",
-    "react-test-renderer": "~16.8.6",
+    "react-dom": "^16.14.0",
+    "react-scripts": "^4.0.3",
+    "react-test-renderer": "^16.14.0",
     "stylelint": "^13.8.0"
   },
   "peerDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.21",
-    "@fortawesome/free-solid-svg-icons": "^5.10.1",
-    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "classnames": "^2.2.6",
-    "immutable": "^3.7.3",
-    "moment": "^2.22.2",
+    "immutable": "~3.7.3",
+    "moment": "^2.24.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
+    "react": "^16.14.0",
     "react-bootstrap": "^0.33.1",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.14.0"
   },
   "devEngines": {
     "node": "8.x",
