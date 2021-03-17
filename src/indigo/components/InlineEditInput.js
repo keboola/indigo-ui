@@ -12,8 +12,6 @@ class InlineEditTextInput extends React.Component {
   constructor(props) {
     super(props);
 
-    this.controlRef = null;
-
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleKeyDown = this.handleKeyDown.bind(this);
@@ -27,12 +25,6 @@ class InlineEditTextInput extends React.Component {
     return this.renderStaticInput();
   }
 
-  componentDidUpdate(prevProps) {
-    if (!prevProps.isEditing && this.props.isEditing) {
-      this.controlRef.focus();
-    }
-  }
-
   renderEditInput() {
     return (
       <Form inline className="inline-edit-input" onSubmit={this.handleSubmit}>
@@ -42,9 +34,7 @@ class InlineEditTextInput extends React.Component {
           placeholder={this.props.placeholder}
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDown}
-          inputRef={(ref) => {
-            this.controlRef = ref;
-          }}
+          inputRef={(ref) => ref?.focus()}
         />
         <Button
           type="submit"
