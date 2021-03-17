@@ -39,6 +39,7 @@ class InlineEditTextInput extends React.Component {
         <AutosizeInput
           inputClassName="form-control inline-edit-input-control"
           value={this.props.text}
+          placeholder={this.props.placeholder}
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDown}
           inputRef={(ref) => {
