@@ -16,6 +16,7 @@ class InlineEditTextInput extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleKeyDown = this.handleKeyDown.bind(this);
   }
 
   render() {
@@ -39,6 +40,7 @@ class InlineEditTextInput extends React.Component {
           inputClassName="form-control inline-edit-input-control"
           value={this.props.text}
           onChange={this.handleChange}
+          onKeyDown={this.handleKeyDown}
           inputRef={(ref) => {
             this.controlRef = ref;
           }}
@@ -75,6 +77,12 @@ class InlineEditTextInput extends React.Component {
 
   renderTooltip() {
     return <Tooltip id="inline-edit-input-tooltip">{this.props.editTooltip}</Tooltip>;
+  }
+
+  handleKeyDown(e) {
+    if (['Esc', 'Escape'].includes(e.key)) {
+      this.props.onEditCancel();
+    }
   }
 
   handleChange(e) {
