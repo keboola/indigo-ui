@@ -12,10 +12,9 @@ class InlineEditTextInput extends React.Component {
   constructor(props) {
     super(props);
 
-    this.controlRef = null;
-
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleKeyDown = this.handleKeyDown.bind(this);
   }
 
   render() {
@@ -26,22 +25,16 @@ class InlineEditTextInput extends React.Component {
     return this.renderStaticInput();
   }
 
-  componentDidUpdate(prevProps) {
-    if (!prevProps.isEditing && this.props.isEditing) {
-      this.controlRef.focus();
-    }
-  }
-
   renderEditInput() {
     return (
       <Form inline className="inline-edit-input" onSubmit={this.handleSubmit}>
         <AutosizeInput
           inputClassName="form-control inline-edit-input-control"
           value={this.props.text}
+          placeholder={this.props.placeholder}
           onChange={this.handleChange}
-          inputRef={(ref) => {
-            this.controlRef = ref;
-          }}
+          onKeyDown={this.handleKeyDown}
+          inputRef={(ref) => ref?.focus()}
         />
         <Button
           type="submit"
@@ -67,7 +60,9 @@ class InlineEditTextInput extends React.Component {
           ) : (
             <span className="text-muted">{this.props.placeholder}</span>
           )}
-          <FontAwesomeIcon icon={faPen} fixedWidth className="icon-addon-left" />
+          {this.props.showEditIcon && (
+            <FontAwesomeIcon icon={faPen} fixedWidth className="icon-addon-left" />
+          )}
         </span>
       </OverlayTrigger>
     );
@@ -75,6 +70,12 @@ class InlineEditTextInput extends React.Component {
 
   renderTooltip() {
     return <Tooltip id="inline-edit-input-tooltip">{this.props.editTooltip}</Tooltip>;
+  }
+
+  handleKeyDown(e) {
+    if (['Esc', 'Escape'].includes(e.key)) {
+      this.props.onEditCancel();
+    }
   }
 
   handleChange(e) {
@@ -99,6 +100,7 @@ InlineEditTextInput.propTypes = {
   editTooltip: PropTypes.string,
   tooltipPlacement: PropTypes.string,
   placeholder: PropTypes.string,
+  showEditIcon: PropTypes.bool,
 };
 
 InlineEditTextInput.defaultProps = {
@@ -107,6 +109,7 @@ InlineEditTextInput.defaultProps = {
   tooltipPlacement: 'top',
   isSaving: false,
   isEditing: false,
+  showEditIcon: true,
 };
 
 export default InlineEditTextInput;

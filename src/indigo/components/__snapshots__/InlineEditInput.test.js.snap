@@ -49,6 +49,8 @@ exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is
     <input
       className="form-control inline-edit-input-control"
       onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Click to edit"
       style={
         Object {
           "boxSizing": "content-box",
@@ -70,6 +72,21 @@ exports[`<InlineEditInput /> InlineEditInput - disabled save button when text is
       }
     >
       
+    </div>
+    <div
+      style={
+        Object {
+          "height": 0,
+          "left": 0,
+          "overflow": "scroll",
+          "position": "absolute",
+          "top": 0,
+          "visibility": "hidden",
+          "whiteSpace": "pre",
+        }
+      }
+    >
+      Click to edit
     </div>
   </div>
   <button
@@ -138,6 +155,8 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
     <input
       className="form-control inline-edit-input-control"
       onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Click to edit"
       style={
         Object {
           "boxSizing": "content-box",
@@ -159,6 +178,21 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
       }
     >
       
+    </div>
+    <div
+      style={
+        Object {
+          "height": 0,
+          "left": 0,
+          "overflow": "scroll",
+          "position": "absolute",
+          "top": 0,
+          "visibility": "hidden",
+          "whiteSpace": "pre",
+        }
+      }
+    >
+      Click to edit
     </div>
   </div>
   <button
@@ -261,6 +295,8 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
     <input
       className="form-control inline-edit-input-control"
       onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Click to edit"
       style={
         Object {
           "boxSizing": "content-box",
@@ -282,6 +318,21 @@ exports[`<InlineEditInput /> InlineEditInput - saving in edit mode 1`] = `
       }
     >
       
+    </div>
+    <div
+      style={
+        Object {
+          "height": 0,
+          "left": 0,
+          "overflow": "scroll",
+          "position": "absolute",
+          "top": 0,
+          "visibility": "hidden",
+          "whiteSpace": "pre",
+        }
+      }
+    >
+      Click to edit
     </div>
   </div>
   <button
