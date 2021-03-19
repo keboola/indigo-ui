@@ -60,7 +60,9 @@ class InlineEditTextInput extends React.Component {
           ) : (
             <span className="text-muted">{this.props.placeholder}</span>
           )}
-          <FontAwesomeIcon icon={faPen} fixedWidth className="icon-addon-left" />
+          {this.props.showEditIcon && (
+            <FontAwesomeIcon icon={faPen} fixedWidth className="icon-addon-left" />
+          )}
         </span>
       </OverlayTrigger>
     );
@@ -98,6 +100,7 @@ InlineEditTextInput.propTypes = {
   editTooltip: PropTypes.string,
   tooltipPlacement: PropTypes.string,
   placeholder: PropTypes.string,
+  showEditIcon: PropTypes.bool,
 };
 
 InlineEditTextInput.defaultProps = {
@@ -106,6 +109,7 @@ InlineEditTextInput.defaultProps = {
   tooltipPlacement: 'top',
   isSaving: false,
   isEditing: false,
+  showEditIcon: true,
 };
 
 export default InlineEditTextInput;
