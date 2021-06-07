@@ -42,7 +42,7 @@ class ConfirmButtons extends React.Component {
             {this.props.isSaving ? (
               <Loader className="icon-addon-right" />
             ) : (
-              this.props.saveStyle !== 'danger' && (
+              ['success', 'primary'].includes(this.props.saveStyle) && (
                 <FontAwesomeIcon icon={faCheckCircle} className="icon-addon-right" />
               )
             )}
