@@ -63,16 +63,12 @@
     "react-dom": "^16.14.0",
     "react-input-autosize": "^3.0.0"
   },
-  "devEngines": {
-    "node": "8.x",
-    "npm": "5.x"
-  },
   "scripts": {
+    "dev": "npm-run-all -p watch-dev-css run-storybook",
     "build-lib": "babel src/indigo --out-dir lib --copy-files --no-copy-ignored --ignore src/**/*.test.js",
     "remove-snapshots-from-lib": "find lib -type d -name __snapshots__ | xargs rm -rf",
     "test": "react-scripts test --env=jsdom",
     "run-storybook": "start-storybook -p 9009 -s public",
-    "storybook": "npm-run-all -p watch-dev-css run-storybook",
     "build-dev-css": "grunt build-dev-css",
     "prepare-prod-resources": "grunt prepare-prod-resources",
     "watch-dev-css": "npm run build-dev-css && grunt watch",
