@@ -14,21 +14,13 @@ class ConfirmButtons extends React.Component {
 
     return (
       <ButtonToolbar className={classnames('btn-toolbar-confirm', this.props.className)}>
-        {this.renderLoader()}
+        {this.props.isSaving && <Loader />}
         {this.props.children}
         {!this.props.showCancel && ' '}
         {this.renderCancelButton()}
         {this.renderSaveButton()}
       </ButtonToolbar>
     );
-  }
-
-  renderLoader() {
-    if (!this.props.isSaving) {
-      return null;
-    }
-
-    return <Loader />;
   }
 
   renderSaveButton() {
