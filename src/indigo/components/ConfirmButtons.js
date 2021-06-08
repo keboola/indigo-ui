@@ -1,28 +1,26 @@
 import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons/faCheckCircle';
 import { Button, ButtonToolbar } from 'react-bootstrap';
 import Loader from './Loader';
 
 class ConfirmButtons extends React.Component {
   render() {
+    if (this.props.block) {
+      return this.renderSaveButton();
+    }
+
     return (
       <ButtonToolbar className={classnames('btn-toolbar-confirm', this.props.className)}>
-        {this.renderLoader()}
+        {this.props.isSaving && <Loader />}
         {this.props.children}
         {!this.props.showCancel && ' '}
         {this.renderCancelButton()}
         {this.renderSaveButton()}
       </ButtonToolbar>
     );
-  }
-
-  renderLoader() {
-    if (!this.props.isSaving) {
-      return null;
-    }
-
-    return <Loader />;
   }
 
   renderSaveButton() {
@@ -33,11 +31,23 @@ class ConfirmButtons extends React.Component {
     return (
       <Button
         className="btn-confirm"
+        block={this.props.block}
         type={this.props.saveButtonType}
         bsStyle={this.props.saveStyle}
         disabled={this.props.isSaving || this.props.isDisabled}
         onClick={this.props.onSave}
       >
+        {this.props.block && (
+          <>
+            {this.props.isSaving ? (
+              <Loader className="icon-addon-right" />
+            ) : (
+              ['success', 'primary'].includes(this.props.saveStyle) && (
+                <FontAwesomeIcon icon={faCheckCircle} className="icon-addon-right" />
+              )
+            )}
+          </>
+        )}
         {this.props.saveLabel}
       </Button>
     );
@@ -72,6 +82,7 @@ ConfirmButtons.defaultProps = {
   isDisabled: false,
   showSave: true,
   showCancel: true,
+  block: false,
 };
 
 ConfirmButtons.propTypes = {
@@ -85,6 +96,7 @@ ConfirmButtons.propTypes = {
   saveButtonType: PropTypes.oneOf(['button', 'submit']),
   showCancel: PropTypes.bool,
   showSave: PropTypes.bool,
+  block: PropTypes.bool,
   className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   children: PropTypes.any,
 };

@@ -6,8 +6,11 @@ import ConfirmButtons from '../../indigo/components/ConfirmButtons';
 
 storiesOf('ConfirmButtons', module)
   .add('Basic Init', () => <ConfirmButtons />)
+  .add('Block button', () => <ConfirmButtons block />)
   .add('Saving', () => <ConfirmButtons isSaving />)
+  .add('Block saving', () => <ConfirmButtons block isSaving />)
   .add('Disabled', () => <ConfirmButtons isDisabled />)
+  .add('Block danger', () => <ConfirmButtons block saveStyle="danger" />)
   .add('Show Save button', () => <ConfirmButtons showSave={false} />)
   .add('Show Cancel button', () => <ConfirmButtons showCancel={false} />)
   .add('Additional buttons', () => (
