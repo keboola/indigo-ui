@@ -1,17 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import moment from 'moment';
 import { boolean } from '@storybook/addon-knobs';
+import dayjs from '../../indigo/components/date';
 import Duration from '../../indigo/components/Duration';
 
 const now = new Date();
-const demoDatetime1 = moment(now)
+const demoDatetime1 = dayjs(now)
   .format('YYYY-MM-DDTHH:mm:ssZZ')
   .toString();
-const demoDatetime2 = moment(now.getTime() + 123456)
+const demoDatetime2 = dayjs(now.getTime() + 123456)
   .format('YYYY-MM-DDTHH:mm:ssZZ')
   .toString();
-const demoDatetime3 = moment(now.getTime() + 123456789)
+const demoDatetime3 = dayjs(now.getTime() + 123456789)
   .format('YYYY-MM-DDTHH:mm:ssZZ')
   .toString();
 const demoSecondCount = 1586.36943;

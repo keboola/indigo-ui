@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import moment from 'moment';
+import dayjs from './date';
 import { timeInWords, durationFrom } from './durationHelpers';
 
 class DurationDynamic extends React.Component {
@@ -8,7 +8,7 @@ class DurationDynamic extends React.Component {
     super(props);
     this.tick = this.tick.bind(this);
     this.state = {
-      endTime: moment().format(),
+      endTime: dayjs().format(),
     };
   }
 
@@ -22,7 +22,7 @@ class DurationDynamic extends React.Component {
 
   tick() {
     this.setState({
-      endTime: moment().format(),
+      endTime: dayjs().format(),
     });
   }
 
