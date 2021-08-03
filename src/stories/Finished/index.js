@@ -1,11 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import moment from 'moment';
 import { boolean } from '@storybook/addon-knobs';
+import dayjs from '../../indigo/components/date';
 import Finished from '../../indigo/components/Finished';
 
 const now = new Date();
-const demoTimestamp = moment(now.getTime() - 123456)
+const demoTimestamp = dayjs(now.getTime() - 123456)
   .format('YYYY-MM-DDTHH:mm:ssZZ')
   .toString();
 

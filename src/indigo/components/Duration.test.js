@@ -1,6 +1,6 @@
 import React from 'react';
-import moment from 'moment';
 import MockDate from 'mockdate';
+import dayjs from './date';
 import { matchesSnapshot } from '../../tests';
 import Duration from './Duration';
 
@@ -10,7 +10,7 @@ const time3 = '2018-11-29T15:11:09+0100';
 
 MockDate.set(time1);
 
-const timePast = moment(moment(time1).valueOf() - 123456)
+const timePast = dayjs(dayjs(time1).valueOf() - 123456)
   .format('YYYY-MM-DDTHH:mm:ssZZ')
   .toString();
 
