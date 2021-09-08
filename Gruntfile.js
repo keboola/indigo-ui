@@ -30,7 +30,7 @@ module.exports = (grunt) => {
     },
     watch: {
       less: {
-        files: ['src/styles/indigo-storybook.less', 'src/indigo/less/*.less'],
+        files: ['src/styles/indigo-storybook.less', 'src/indigo/less/**/*.less'],
         tasks: ['less:development', 'stylelint'],
         options: {
           spawn: false,
