@@ -44,7 +44,14 @@ class InlineEditTextInput extends React.Component {
         >
           {this.props.isSaving ? <Loader /> : <FontAwesomeIcon icon={faCheck} />}
         </Button>
-        <Button type="reset" disabled={this.props.isSaving} onClick={this.props.onEditCancel}>
+        <Button
+          type="reset"
+          disabled={this.props.isSaving}
+          onClick={(event) => {
+            event.preventDefault();
+            this.props.onEditCancel();
+          }}
+        >
           <FontAwesomeIcon icon={faTimes} />
         </Button>
       </Form>
@@ -54,7 +61,13 @@ class InlineEditTextInput extends React.Component {
   renderStaticInput() {
     return (
       <OverlayTrigger placement={this.props.tooltipPlacement} overlay={this.renderTooltip()}>
-        <span className="inline-edit-input-edit" onClick={this.props.onEditStart}>
+        <span
+          className="inline-edit-input-edit"
+          onClick={(event) => {
+            event.preventDefault();
+            this.props.onEditStart();
+          }}
+        >
           {this.props.text ? (
             this.props.text
           ) : (
@@ -110,6 +123,7 @@ InlineEditTextInput.defaultProps = {
   isSaving: false,
   isEditing: false,
   showEditIcon: true,
+  isValid: true,
 };
 
 export default InlineEditTextInput;
