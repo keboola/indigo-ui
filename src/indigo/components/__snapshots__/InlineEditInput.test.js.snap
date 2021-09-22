@@ -197,7 +197,7 @@ exports[`<InlineEditInput /> InlineEditInput - edit mode 1`] = `
   </div>
   <button
     className="btn btn-primary"
-    disabled={true}
+    disabled={false}
     onClick={[Function]}
     type="submit"
   >
