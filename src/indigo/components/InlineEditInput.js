@@ -110,6 +110,7 @@ InlineEditTextInput.defaultProps = {
   isSaving: false,
   isEditing: false,
   showEditIcon: true,
+  isValid: true,
 };
 
 export default InlineEditTextInput;
