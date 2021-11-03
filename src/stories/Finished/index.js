@@ -1,5 +1,6 @@
 import React from 'react';
 import { boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
 import dayjs from '../../indigo/components/date';
 import Finished from '../../indigo/components/Finished';
 
