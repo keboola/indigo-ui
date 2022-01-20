@@ -2,6 +2,9 @@
   "name": "@keboola/indigo-ui",
   "description": "Keboola UI library",
   "version": "17.1.0",
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
     "bootstrap": "^3.4.1"
   },
