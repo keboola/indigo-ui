@@ -30,7 +30,7 @@ class ConfirmButtons extends React.Component {
 
     return (
       <Button
-        className="btn-confirm"
+        className={classnames('btn-confirm', this.props.saveButtonClass)}
         block={this.props.block}
         type={this.props.saveButtonType}
         bsStyle={this.props.saveStyle}
@@ -98,6 +98,7 @@ ConfirmButtons.propTypes = {
   showSave: PropTypes.bool,
   block: PropTypes.bool,
   className: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  saveButtonClass: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   children: PropTypes.any,
 };
 
