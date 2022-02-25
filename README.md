@@ -1,6 +1,6 @@
 # Indigo UI
 
-[![Build Status](https://travis-ci.com/keboola/indigo-ui.svg?branch=master)](https://travis-ci.com/keboola/indigo-ui) [![npm](https://img.shields.io/npm/v/@keboola/indigo-ui.svg)](https://yarnpkg.com/en/package/@keboola/indigo-ui) [![license](https://img.shields.io/github/license/keboola/indigo-ui.svg)](https://github.com/keboola/indigo-ui/blob/master/LICENSE)
+[![Build Status](https://app.travis-ci.com/keboola/indigo-ui.svg?branch=master)](https://app.travis-ci.com/keboola/indigo-ui)
 
 Indigo UI library, its CSS and React components. Also Styleguide app showing usages of this library.
 
@@ -79,15 +79,17 @@ First, check the content of `.travis.yml` file and documentation about
 Steps:
 
 1. Make sure everything is working as expected
-2. Prepare new version with `yarn version` command. Just follow instructions. This command should
-   create new commit (with
-   version change in `package.json`) and tag for you. **There's no need to change `package.json`
-   manually or create tag manually.**
-3. Push to `master` branch - e.g `git push origin master`
-4. Check if everything is as expected
-5. Push newly created tag - e.g. `git push origin v2.0.0-beta-3` <- This triggers deploy to npmjs!
-6. Check package in npmjs registry, try to install it or update to newer version from some project
-7. Write release notes [keboola/indigo-ui/releases](https://github.com/keboola/indigo-ui/releases)
+2. Make sure youu are on a `master` branch
+3. Prepare new version with `yarn version` command
+   - Just follow instructions
+   - This command should create new commit (with version change in `package.json`) and tag for you.
+   - **There's no need to change `package.json` manually or create tag manually.**
+4. Push to `master` branch - e.g `git push origin master`
+5. Check if everything is as expected (you can wait until `master` branch is deployed)
+6. Push newly created tag - e.g. `git push origin v2.0.0-beta-3` <- This triggers deploy to npmjs!
+7. Check package in npmjs registry
+8. Try to install it or update to newer version from some project
+9. Write release notes [keboola/indigo-ui/releases](https://github.com/keboola/indigo-ui/releases)
 
 ## FAQ
 
