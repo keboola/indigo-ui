@@ -5,41 +5,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons/faCircle';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons/faCheckCircle';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons/faTimesCircle';
+import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons/faExclamationCircle';
 
-const statusColorMap = {
-  success: 'success',
-  error: 'danger',
-  warn: 'danger',
-  warning: 'danger',
-  processing: 'warning',
-  waiting: 'default',
-  cancelled: 'canceled',
-  terminating: 'canceled',
-  terminated: 'canceled',
+const statusMap = {
+  success: { status: 'success', icon: faCheckCircle },
+  error: { status: 'danger', icon: faExclamationCircle },
+  warn: { status: 'danger', icon: faTimesCircle },
+  warning: { status: 'danger', icon: faTimesCircle },
+  processing: { status: 'warning', icon: faCircle },
+  waiting: { status: 'default', icon: faCircle },
+  cancelled: { status: 'default', icon: faExclamationCircle },
+  terminating: { status: 'default', icon: faExclamationCircle },
+  terminated: { status: 'default', icon: faExclamationCircle },
 };
 
-class StatusCircle extends React.Component {
-  render() {
-    if (this.props.status === 'success') {
-      return this.renderStatusIcon('success', faCheckCircle);
-    }
-
-    if (['error', 'warn', 'warning'].includes(this.props.status)) {
-      return this.renderStatusIcon('danger', faTimesCircle);
-    }
-
-    return this.renderStatusIcon(statusColorMap[this.props.status]);
-  }
-
-  renderStatusIcon(status = 'default', icon = faCircle) {
-    return (
-      <FontAwesomeIcon
-        icon={icon}
-        className={classnames(`status-circle-${status}`, this.props.className)}
-      />
-    );
-  }
-}
+const StatusCircle = (props) => {
+  const { status = 'default', icon = faCircle } = statusMap[props.status] ?? {};
+  return (
+    <FontAwesomeIcon
+      icon={icon}
+      className={classnames(`status-circle-${status}`, props.className)}
+    />
+  );
+};
 
 StatusCircle.propTypes = {
   status: PropTypes.string,
