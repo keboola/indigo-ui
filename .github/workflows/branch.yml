@@ -1,0 +1,52 @@
+name: Test and build
+env:
+  KBC_NODE_VERSION: "16.x"
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Setup node"
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.KBC_NODE_VERSION }}
+          cache: 'yarn'
+      - name: "Cache node_modules"
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ env.KBC_NODE_VERSION }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
+      - name: "Install, run tests, build CSS and Storybook"
+        run: |
+          yarn
+          yarn stylelint
+          yarn test
+          yarn build-dev-css
+          yarn build-storybook
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Setup node"
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.KBC_NODE_VERSION }}
+          cache: 'yarn'
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ env.KBC_NODE_VERSION }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
+      - name: "Install, build library"
+        run: |
+          yarn
+          yarn build-lib
