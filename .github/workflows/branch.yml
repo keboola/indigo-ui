@@ -11,6 +11,7 @@ on:
 
 jobs:
   test:
+    name: "Test"
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout"
@@ -34,6 +35,7 @@ jobs:
           yarn build-storybook
 
   build:
+    name: "Build lib"
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout"
@@ -54,6 +56,7 @@ jobs:
           yarn build-lib
 
   deploy-storybook:
+    name: "Deploy Storybook on main"
     if: github.ref == 'refs/heads/main'
     needs:
       - test
