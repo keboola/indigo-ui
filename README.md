@@ -114,3 +114,7 @@ npm run docs
 ```
 
 Open browser at `localhost:4000`
+
+## License
+
+MIT licensed, see [LICENSE](./LICENSE) file.
