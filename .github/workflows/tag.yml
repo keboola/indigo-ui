@@ -20,6 +20,7 @@ jobs:
         with:
           node-version: ${{ env.KBC_NODE_VERSION }}
           cache: 'yarn'
+          registry-url: "https://registry.npmjs.org"
       - name: "Cache node_modules"
         uses: actions/cache@v2
         with:
