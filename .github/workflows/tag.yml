@@ -1,0 +1,37 @@
+name: "Build on tag"
+env:
+  KBC_NODE_VERSION: "16.x"
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+
+  deploy-library:
+    name: "Deploy library to NPM"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Setup node"
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.KBC_NODE_VERSION }}
+          cache: 'yarn'
+      - name: "Cache node_modules"
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ env.KBC_NODE_VERSION }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
+      - name: "Build library"
+        run: |
+          yarn
+          yarn build-lib
+          yarn remove-snapshots-from-lib
+          find lib
+      - name: "Deploy to NPM"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn publish

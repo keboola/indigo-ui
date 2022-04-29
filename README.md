@@ -1,6 +1,6 @@
 # Indigo UI
 
-[![Build Status](https://app.travis-ci.com/keboola/indigo-ui.svg?branch=master)](https://app.travis-ci.com/keboola/indigo-ui)
+[![Build on tag](https://github.com/keboola/indigo-ui/actions/workflows/tag.yml/badge.svg)](https://github.com/keboola/indigo-ui/actions/workflows/tag.yml)
 
 Indigo UI library, its CSS and React components. Also Styleguide app showing usages of this library.
 
@@ -62,12 +62,8 @@ First, check the content of `.travis.yml` file and documentation about
 
 ### Storybook
 
-- Storybook is deployed on every push to `master` branch. There's `"$TRAVIS_BRANCH" = "master"`
-  condition in `.travis.yml`.
-- The `deploy-storybook.sh` script is responsible for deploying. Basically, it's a "home made"
-  replacement for Travis `deploy` section, since that section is used for something else (covered
-  bellow).
-- After successful deployment, the Storybook build will be available online
+- Storybook is deployed on every push to `main` branch
+- After successful deployment, the Storybook build will be available online at https://indigo.keboola.com
 
 #### Releasing new version
 
@@ -79,13 +75,13 @@ First, check the content of `.travis.yml` file and documentation about
 Steps:
 
 1. Make sure everything is working as expected
-2. Make sure youu are on a `master` branch
+2. Make sure you are on a `main` branch
 3. Prepare new version with `yarn version` command
    - Just follow instructions
    - This command should create new commit (with version change in `package.json`) and tag for you.
    - **There's no need to change `package.json` manually or create tag manually.**
-4. Push to `master` branch - e.g `git push origin master`
-5. Check if everything is as expected (you can wait until `master` branch is deployed)
+4. Push to `main` branch - e.g `git push origin main`
+5. Check if everything is as expected (you can wait until `main` branch is deployed)
 6. Push newly created tag - e.g. `git push origin v2.0.0-beta-3` <- This triggers deploy to npmjs!
 7. Check package in npmjs registry
 8. Try to install it or update to newer version from some project
@@ -114,3 +110,7 @@ npm run docs
 ```
 
 Open browser at `localhost:4000`
+
+## License
+
+MIT licensed, see [LICENSE](./LICENSE) file.
