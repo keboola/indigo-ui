@@ -1,7 +1,7 @@
 {
   "name": "@keboola/indigo-ui",
   "description": "Keboola UI library",
-  "version": "17.3.0",
+  "version": "17.3.1",
   "engines": {
     "node": "^14 || >=16"
   },
