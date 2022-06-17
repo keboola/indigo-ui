@@ -10,7 +10,6 @@ import PanelWithDetails from './PanelWithDetails';
 import Finished from './Finished';
 import InlineEditInput from './InlineEditInput';
 import Duration from './Duration';
-import StatusCircle from './StatusCircle';
 import ConfirmButtons from './ConfirmButtons';
 
 export {
@@ -26,6 +25,5 @@ export {
   Finished,
   InlineEditInput,
   Duration,
-  StatusCircle,
   ConfirmButtons,
 };
