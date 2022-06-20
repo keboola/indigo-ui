@@ -9,7 +9,6 @@ import ExternalLink from './ExternalLink';
 import PanelWithDetails from './PanelWithDetails';
 import Finished from './Finished';
 import InlineEditInput from './InlineEditInput';
-import Duration from './Duration';
 import ConfirmButtons from './ConfirmButtons';
 
 export {
@@ -24,6 +23,5 @@ export {
   SearchBar,
   Finished,
   InlineEditInput,
-  Duration,
   ConfirmButtons,
 };
