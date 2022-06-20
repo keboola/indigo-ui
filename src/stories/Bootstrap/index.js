@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog } from '@fortawesome/free-solid-svg-icons/faCog';
+import { faGear } from '@fortawesome/free-solid-svg-icons/faGear';
 import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus';
 import { faTrash } from '@fortawesome/free-solid-svg-icons/faTrash';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons/faCheckCircle';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons/faCircleCheck';
 import {
   Button,
   ButtonGroup,
@@ -54,11 +54,11 @@ storiesOf('Bootstrap', module)
       <h2>With icon</h2>
       <ButtonToolbar>
         <Button>
-          <FontAwesomeIcon icon={faCog} className="icon-addon-right" />
+          <FontAwesomeIcon icon={faGear} className="icon-addon-right" />
           Default
         </Button>
         <Button bsStyle="primary">
-          <FontAwesomeIcon icon={faCheckCircle} className="icon-addon-right" />
+          <FontAwesomeIcon icon={faCircleCheck} className="icon-addon-right" />
           Primary
         </Button>
         <Button bsStyle="success">
@@ -88,7 +88,7 @@ storiesOf('Bootstrap', module)
       <h2>Small with icon</h2>
       <ButtonToolbar>
         <Button bsSize="sm">
-          <FontAwesomeIcon icon={faCog} className="icon-addon-right" />
+          <FontAwesomeIcon icon={faGear} className="icon-addon-right" />
           Default
         </Button>
         <Button bsSize="sm" bsStyle="success">

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Form, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
+import { faXmark } from '@fortawesome/free-solid-svg-icons/faXmark';
 import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
 import { faPen } from '@fortawesome/free-solid-svg-icons/faPen';
 import AutosizeInput from 'react-input-autosize';
@@ -52,7 +52,7 @@ class InlineEditTextInput extends React.Component {
             this.props.onEditCancel();
           }}
         >
-          <FontAwesomeIcon icon={faTimes} />
+          <FontAwesomeIcon icon={faXmark} />
         </Button>
       </Form>
     );

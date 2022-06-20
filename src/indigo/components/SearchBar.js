@@ -3,8 +3,8 @@ import { FormControl, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons/faSearch';
-import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass';
+import { faXmark } from '@fortawesome/free-solid-svg-icons/faXmark';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -68,10 +68,10 @@ class SearchBar extends React.Component {
               }
             }}
           />
-          <FontAwesomeIcon icon={faSearch} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
           {this.props.query && (
             <Button bsStyle="link" className="searchbar-clear-btn" onClick={this.handleClear}>
-              <FontAwesomeIcon icon={faTimes} />
+              <FontAwesomeIcon icon={faXmark} />
             </Button>
           )}
         </form>
