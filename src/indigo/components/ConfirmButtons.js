@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons/faCheckCircle';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons/faCircleCheck';
 import { Button, ButtonToolbar } from 'react-bootstrap';
 import Loader from './Loader';
 
@@ -43,7 +43,7 @@ class ConfirmButtons extends React.Component {
               <Loader className="icon-addon-right" />
             ) : (
               ['success', 'primary'].includes(this.props.saveStyle) && (
-                <FontAwesomeIcon icon={faCheckCircle} className="icon-addon-right" />
+                <FontAwesomeIcon icon={faCircleCheck} className="icon-addon-right" />
               )
             )}
           </>

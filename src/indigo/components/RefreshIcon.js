@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSync } from '@fortawesome/free-solid-svg-icons/faSync';
+import { faArrowsRotate } from '@fortawesome/free-solid-svg-icons/faArrowsRotate';
 import Loader from './Loader';
 
 class RefreshIcon extends React.Component {
@@ -15,7 +15,7 @@ class RefreshIcon extends React.Component {
           <Loader className={classnames(this.props.className)} />
         ) : (
           <FontAwesomeIcon
-            icon={faSync}
+            icon={faArrowsRotate}
             fixedWidth
             className={classnames('icon-clickable', this.props.className)}
             {...remaining}
