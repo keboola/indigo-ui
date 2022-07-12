@@ -48,7 +48,6 @@
     "react": "^16.14.0",
     "react-bootstrap": "^0.33.1",
     "react-dom": "^16.14.0",
-    "react-input-autosize": "^3.0.0",
     "react-scripts": "^4.0.3",
     "react-test-renderer": "^16.14.0",
     "stylelint": "^13.13.1"
@@ -63,8 +62,7 @@
     "prop-types": "^15.8.1",
     "react": "^16.14.0",
     "react-bootstrap": "^0.33.1",
-    "react-dom": "^16.14.0",
-    "react-input-autosize": "^3.0.0"
+    "react-dom": "^16.14.0"
   },
   "scripts": {
     "dev": "npm-run-all -p watch-dev-css run-storybook",

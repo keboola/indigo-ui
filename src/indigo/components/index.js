@@ -8,7 +8,6 @@ import SearchBar from './SearchBar';
 import ExternalLink from './ExternalLink';
 import PanelWithDetails from './PanelWithDetails';
 import Finished from './Finished';
-import InlineEditInput from './InlineEditInput';
 import ConfirmButtons from './ConfirmButtons';
 
 export {
@@ -22,6 +21,5 @@ export {
   Tree,
   SearchBar,
   Finished,
-  InlineEditInput,
   ConfirmButtons,
 };
