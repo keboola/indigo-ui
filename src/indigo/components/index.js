@@ -2,7 +2,6 @@ import Check from './Check';
 import Loader from './Loader';
 import RefreshIcon from './RefreshIcon';
 import Protected from './Protected';
-import Tree from './Tree';
 import NewLineToBr from './NewLineToBr';
 import SearchBar from './SearchBar';
 import ExternalLink from './ExternalLink';
@@ -18,7 +17,6 @@ export {
   PanelWithDetails,
   Protected,
   RefreshIcon,
-  Tree,
   SearchBar,
   Finished,
   ConfirmButtons,
