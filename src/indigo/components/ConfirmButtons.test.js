@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { matchesSnapshot } from '../../tests';
 import ConfirmButtons from './ConfirmButtons';
 
-describe('<Check />', () => {
+describe('<ConfirmButtons />', () => {
   it('Basic Init', () => {
     matchesSnapshot(<ConfirmButtons onSave={() => null} isSaving={false} />);
   });

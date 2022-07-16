@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Check /> Additional buttons 1`] = `
+exports[`<ConfirmButtons /> Additional buttons 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
@@ -31,7 +31,7 @@ exports[`<Check /> Additional buttons 1`] = `
 </div>
 `;
 
-exports[`<Check /> Additional class 1`] = `
+exports[`<ConfirmButtons /> Additional class 1`] = `
 <div
   className="clearfix"
 >
@@ -59,7 +59,7 @@ exports[`<Check /> Additional class 1`] = `
 </div>
 `;
 
-exports[`<Check /> Basic Init 1`] = `
+exports[`<ConfirmButtons /> Basic Init 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
@@ -83,7 +83,7 @@ exports[`<Check /> Basic Init 1`] = `
 </div>
 `;
 
-exports[`<Check /> Cancel label 1`] = `
+exports[`<ConfirmButtons /> Cancel label 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
@@ -107,7 +107,7 @@ exports[`<Check /> Cancel label 1`] = `
 </div>
 `;
 
-exports[`<Check /> Disabled 1`] = `
+exports[`<ConfirmButtons /> Disabled 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
@@ -131,7 +131,7 @@ exports[`<Check /> Disabled 1`] = `
 </div>
 `;
 
-exports[`<Check /> Save button style 1`] = `
+exports[`<ConfirmButtons /> Save button style 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
@@ -155,7 +155,7 @@ exports[`<Check /> Save button style 1`] = `
 </div>
 `;
 
-exports[`<Check /> Save button type 1`] = `
+exports[`<ConfirmButtons /> Save button type 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
@@ -179,7 +179,7 @@ exports[`<Check /> Save button type 1`] = `
 </div>
 `;
 
-exports[`<Check /> Save label 1`] = `
+exports[`<ConfirmButtons /> Save label 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
@@ -203,7 +203,7 @@ exports[`<Check /> Save label 1`] = `
 </div>
 `;
 
-exports[`<Check /> Saving 1`] = `
+exports[`<ConfirmButtons /> Saving 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
@@ -244,7 +244,7 @@ exports[`<Check /> Saving 1`] = `
 </div>
 `;
 
-exports[`<Check /> Show Cancel button 1`] = `
+exports[`<ConfirmButtons /> Show Cancel button 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
@@ -261,7 +261,7 @@ exports[`<Check /> Show Cancel button 1`] = `
 </div>
 `;
 
-exports[`<Check /> Show Save button 1`] = `
+exports[`<ConfirmButtons /> Show Save button 1`] = `
 <div
   className="btn-toolbar-confirm btn-toolbar"
   role="toolbar"
