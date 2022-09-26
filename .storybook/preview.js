@@ -4,9 +4,6 @@ import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
 import { create } from '@storybook/theming/create';
 
-// Load all components, so we can lint them. Do not remove.
-import components from '../src/indigo/components';
-
 addParameters({
   options: {
     theme: create({
