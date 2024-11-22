@@ -12,12 +12,6 @@ Indigo UI library, its CSS and React components. Also Styleguide app showing usa
 4. Run storybook `yarn dev`
 5. Open browser at [http://localhost:9009/](http://localhost:9009/)
 
-### Docker
-
-1. Build: `docker-compose build` (See `Dockerfile` to check what's inside)
-2. Run container: `docker-compose run --rm --service-ports node`
-3. Continue from step 3. (including) in section above (`yarn`, `yarn dev`, ...)
-
 ### Available commands
 
 - `yarn dev`: Start Storybook server
